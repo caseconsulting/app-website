@@ -35,7 +35,7 @@
     <div class="bptw">
       <a class="navbar-brand u-header__log">
         <img
-          src="./assets/custom/img/awards/2018_BPTW_logo_C1.png"
+          src="../assets/custom/img/awards/2018_BPTW_logo_C1.png"
           alt="Best places to work 2018 logo"
           class="nav-pad"
         >
