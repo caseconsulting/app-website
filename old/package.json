@@ -1,9 +1,0 @@
-{
-  "devDependencies": {
-    "vuepress": "next"
-  },
-  "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
-  }
-}
