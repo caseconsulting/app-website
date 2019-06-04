@@ -11,6 +11,7 @@
     <app-benefits></app-benefits>
     <app-careers></app-careers>
     <app-internship></app-internship>
+    <app-numbers></app-numbers>
     
   </div>
 </template>
@@ -22,6 +23,7 @@ import About from './components/About';
 import Benefits from './components/Benefits';
 import Careers from './components/Careers';
 import Internship from './components/Internship';
+import Numbers from './components/Numbers';
 
 
 export default {
@@ -31,7 +33,8 @@ export default {
     'app-about': About,
     'app-benefits': Benefits,
     'app-careers': Careers, 
-    'app-internship': Internship
+    'app-internship': Internship,
+    'app-numbers': Numbers
     
   }
 }
