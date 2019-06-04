@@ -22,7 +22,7 @@
                 <a href="#careers" class="nav-link p-0">Careers</a>
                 </li>
                 <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                <a href="#intern" class="nav-link p-0">Internship</a
+                <a href="#intern" class="nav-link p-0">Internship</a>
                     </li>
                 <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
                 <a href="#numbers" class="nav-link p-0">Numbers</a>
