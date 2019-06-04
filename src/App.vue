@@ -12,7 +12,8 @@
     <app-careers></app-careers>
     <app-internship></app-internship>
     <app-numbers></app-numbers>
-    
+    <app-awards></app-awards>
+    <app-events></app-events>
   </div>
 </template>
 
@@ -24,7 +25,8 @@ import Benefits from './components/Benefits';
 import Careers from './components/Careers';
 import Internship from './components/Internship';
 import Numbers from './components/Numbers';
-
+import Awards from './components/Awards';
+import Events from './components/Events';
 
 export default {
   components: {
@@ -34,8 +36,9 @@ export default {
     'app-benefits': Benefits,
     'app-careers': Careers, 
     'app-internship': Internship,
-    'app-numbers': Numbers
-    
+    'app-numbers': Numbers,
+    'app-awards': Awards,
+    'app-events': Events,
   }
 }
 </script>
