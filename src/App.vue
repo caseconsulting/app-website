@@ -9,6 +9,7 @@
     <router-view /> -->
     <app-about></app-about>
     <app-benefits></app-benefits>
+    <app-careers></app-careers>
   </div>
 </template>
 
@@ -17,13 +18,15 @@ import Navigation from './components/Navigation';
 import Header from './components/Header';
 import About from './components/About';
 import Benefits from './components/Benefits';
+import Careers from './components/Careers';
 
 export default {
   components: {
     'app-navigation': Navigation,
     'app-header': Header,
     'app-about': About,
-    'app-benefits': Benefits
+    'app-benefits': Benefits,
+    'app-careers': Careers
   }
 }
 </script>
