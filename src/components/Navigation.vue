@@ -1,7 +1,7 @@
 <template>
   <!-- Navigation -->
   <div>
-    <div class="collapse navbar-collapse align-items-center flex-sm-row" id="navBar">
+    <div class="align-items-center flex-sm-row" id="navBar">
       <ul
         id="js-scroll-nav"
         class="navbar-nav text-uppercase g-font-weight-700 g-font-size-11 g-pt-20 g-pt-5--lg ml-auto"
