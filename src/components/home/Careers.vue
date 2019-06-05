@@ -26,19 +26,30 @@
                 <row>
                   <div class="col-md-8 offset-md-2">
                     <p class="g-color-white">
-                      Develops, implements, and tests software to meet specific
-                      project requirements. Personnel are recognized experts who
-                      are assigned to specific high risk or complex projects but
-                      are also used to mentor junior personnel and provide ad-hoc
-                      support to other projects when needed. Lead development
-                      activities of teams, are assigned to large complex
-                      projects, and support the preparation of cost and schedule
-                      estimates. Lead development activities for smaller less
-                      complex projects and support the preparation of cost and
-                      schedule estimates for those types of projects. Support
-                      development activities and may be the developer for small
-                      projects. Responsible for development efforts of simple
-                      applications to small less complex tasks.
+                      <strong>Who you are...</strong> 
+                      <br>
+                      <ul>
+                        <li>A software developer who works to master a wide variety of programming skills and apply those skills in an agile work environment to create complete applications.</li>
+                      </ul>
+                      <br>
+                      <strong>What you'll be doing...</strong> 
+                      <br>
+                      <ul>
+                        <li>Designing modern, responsive web applications using frameworks such as Bootstrap and Material Design</li>
+                        <li>Creating single-page-applications using frameworks such as Angular, Vue, and React</li>
+                        <li>Building RESTful APIs using frameworks such as Ruby on Rails and Node.js</li>
+                        <li>Persisting application state using both hosted storage solutions such as MySQL and Oracle as well as cloud-based storage solutions such as DynamoDB and Aurora</li>
+                        <li>Writing clean, unit-tested code in languages such as Java, Ruby, and JavaScript</li>
+                        <li>Researching and applying open source software solutions</li>
+                        <li>Implementing DevOps tools and processes for continuous integration and deployment</li>
+                        <li>Deploying applications in a serverless cloud environment using Amazon Web Services</li>
+                        <li>Working in an agile, collaborative environment both with colleagues and customers</li>
+                        <li>Growing your career through on-going technical training, conferences, and certifications</li>
+                      </ul>
+                      
+                      
+                      
+                      
                     </p>
                   </div>
                 </row>
