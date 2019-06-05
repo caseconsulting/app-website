@@ -8,10 +8,10 @@
           </div>
           <div class="container g-pb-30">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item"><a class="nav-link active" id="developer-tab" data-toggle="tab" href="#developer" role="tab" aria-controls="developer-tab" aria-selected="false">Developer</a></li>
+              <li class="nav-item"><a class="nav-link active" id="developer-tab" data-toggle="tab" href="#developer" role="tab" aria-controls="developer-tab" aria-selected="false">Software Developer</a></li>
               <li class="nav-item"><a class="nav-link" id="project-manager-tab" data-toggle="tab" href="#project-manager" role="tab" aria-controls="pm-tab" aria-selected="true">Project Manager</a></li>
               <li class="nav-item"><a class="nav-link" id="system-engineer-tab" data-toggle="tab" href="#system-engineer" role="tab" aria-controls="syseng-tab" aria-selected="false">System Engineer</a></li>
-              <li class="nav-item"><a class="nav-link" id="system-integrator-tab" data-toggle="tab" href="#system-integrator" role="tab" aria-controls="integrator-tab" aria-selected="false">System Integrator</a></li>
+              <li class="nav-item"><a class="nav-link" id="cloud-engineer-tab" data-toggle="tab" href="#cloud-engineer" role="tab" aria-controls="cloud-tab" aria-selected="false">Cloud Engineer</a></li>
               <li class="nav-item"><a class="nav-link" id="system-administrator-tab" data-toggle="tab" href="#system-administrator" role="tab" aria-controls="admin-tab" aria-selected="false">System Administrator</a></li>
             </ul>
             <div class="tab-content" id="myTabContent">
@@ -19,7 +19,7 @@
                 <row>
                   <div class="col-md-8 offset-md-2">
                     <h3 class="text-uppercase g-color-white">
-                        <strong id="developer-tab">Developer</strong>
+                        <strong id="developer-tab">Software Developer</strong>
                       </h3>
                   </div>
                 </row>
@@ -110,21 +110,37 @@
                   </div>
                 </row>
               </div>
-              <div class="tab-pane fade" id="system-integrator" role="tabpanel" aria-labelledby="integrator-tab">
+              <div class="tab-pane fade" id="cloud-engineer" role="tabpanel" aria-labelledby="cloud-tab">
                 <row>
                   <div class="col-md-8 offset-md-2">
                     <h3 class="text-uppercase g-color-white">
-                        <strong id="integrator-tab">System Integrator</strong>
+                        <strong id="cloud-tab">Cloud Engineer</strong>
                       </h3>
                   </div>
                 </row>
                 <row>
                   <div class="col-md-8 offset-md-2">
-                    <p class="g-color-white"> Provides a total systems perspective including a technical understanding of relationships, dependencies and requirements of hardware and software components for a project. Must be knowledgeable in computer systems and gathering/identifying
-                      requirements. Must be knowledgeable in life-cycle support, including maintenance, administration, and management. Creates, drafts and/or reviews program documentation, generates formal review documentation, and participates in system
-                      and program reviews. Reviews program plans, identifies inconsistencies. Coordinates, supports and participates in program meetings and reviews. Assists in the evaluation of software and associated documentation. Participates in formal
-                      and informal reviews to determine quality. Must be able to track project studies, plans, actions items, take minutes, etc. Provides frequent contact with customers, trace ability within program documents, and the overall computing
-                      environment and architecture. Manages/updates the master schedule. Ensures coordination and information flow occur between all programs and organizational managers.
+                    <p class="g-color-white">
+                      <strong>Who you are... </strong> 
+                      <br>
+                      <ul>
+                        <li>An expert in architecting, designing and building solutions. A certified AWS Solutions Architect, SysOps Administrator, DevOps Architect, or interested in obtaining the certification.</li>
+                      </ul>
+                      <br>
+                      <strong>What you'll be doing...</strong> 
+                      <br>
+                      <ul>
+                        <li>Architecting, designing, and building medium to large-scale enterprise systems with a focus on Cloud migration and AWS solutions</li>
+                        <li>Migrate existing applications to AWS</li>
+                        <li>Identify appropriate use of AWS operational best practices techniques and procedures</li>
+                        <li>Applying enterprise architecture directives and network requirements</li>
+                        <li>Designing interfaces with external systems</li>
+                        <li>AWS Certifications – Highly Desired</li>
+                        <li>AWS Certified Solutions Architect – Associate or Professional</li>
+                        <li>AWS Certified SysOps Administrator – Associate</li>
+                        <li>AWS Certified DevOps Engineer – Professional</li>
+                        <li>AWS Certified Security – Specialty</li>
+                      </ul>
                     </p>
                   </div>
                 </row>
