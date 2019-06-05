@@ -159,22 +159,16 @@
                       <strong>Who you are... </strong> 
                       <br>
                       <ul>
-                        <li>An expert in architecting, designing and building solutions. A certified AWS Solutions Architect, SysOps Administrator, DevOps Architect, or interested in obtaining the certification.</li>
+                        <li>Known for strong analytical and problem-solving skills, with experience building, training, and deploying machine learning models and possess an insatiable curiosity for what can be uncovered among the masses of data.</li>
                       </ul>
                       <br>
                       <strong>What you'll be doing...</strong> 
                       <br>
                       <ul>
-                        <li>Architecting, designing, and building medium to large-scale enterprise systems with a focus on Cloud migration and AWS solutions</li>
-                        <li>Migrate existing applications to AWS</li>
-                        <li>Identify appropriate use of AWS operational best practices techniques and procedures</li>
-                        <li>Applying enterprise architecture directives and network requirements</li>
-                        <li>Designing interfaces with external systems</li>
-                        <li>AWS Certifications – Highly Desired</li>
-                        <li>AWS Certified Solutions Architect – Associate or Professional</li>
-                        <li>AWS Certified SysOps Administrator – Associate</li>
-                        <li>AWS Certified DevOps Engineer – Professional</li>
-                        <li>AWS Certified Security – Specialty</li>
+                        <li>Utilizing AI/ML cloud services (AWS, Google, Azure) to tackle the customer's largest problem area, and helping to establish a solid foundation upon which to expand</li>
+                        <li>Using data analysis to inform mission organizations of data gaps, data coverage, and value to analytics/targeting</li>
+                        <li>Cleaning and preparing large datasets for machine learning experiments</li>
+                        <li>Utilizing various machine learning libraries, such as pytorch, and tools like TensorFlow, APache Spark, OpenCV, Caffe, and Python to discover new insights in large amounts of data</li>
                       </ul>
                     </p>
                   </div>
