@@ -61,10 +61,21 @@
                 <row>
                   <div class="col-md-8 offset-md-2">
                     <p class="g-color-white">
-                      The Project Manager shall work with their Manager and other representatives to achieve the objectives of the project they are assigned to. The Project Manager is responsible for the overall management of the specific project (s) and
-                      insuring that the technical solutions and schedules are implemented in a timely manner. The PM is responsible for all aspects of the project including cost schedules, documentation preparation and customer interaction; Ensures that
-                      all control gates are met on schedule; Performs organizational wide integration planning and interfaces to other functional systems; ensures that the project team members are fully utilized or are made available to support other projects
-                      to meet the requirements.
+                      <strong>Who you are... </strong> 
+                      <br>
+                      <ul>
+                        <li>A leader that enjoys building and guiding project teams to deliver first-class solutions. A critical thinker that enjoys responsibility and has excellent communication skills.</li>
+                      </ul>
+                      <br>
+                      <strong>What you'll be doing...</strong> 
+                      <br>
+                      <ul>
+                        <li>Work closely with customers to capture needs and ensure the team is meeting those requirements</li>
+                        <li>Form teams and guide them to delivery of solutions that exceed the customers' expectations</li>
+                        <li>Work to identify and remove impediments for engineering teams</li>
+                        <li>Help individuals meet professional development goals</li>
+                        <li>Track and manage team progress, risks and dependencies, and use your communication skills to ensure customers, teammates and management are informed</li>
+                      </ul>
                     </p>
                   </div>
                 </row>
