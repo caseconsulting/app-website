@@ -29,7 +29,7 @@
           <row>
             <div class="text-center">
               <!-- <a href="./intern.html" type="button" class="btn" role="button"> Learn More </a> -->
-              <router-link tag="button" to="/internship" active-class="active" exact>
+              <router-link tag="button" to="/intern" active-class="active" exact>
                 <a>Learn More</a>
               </router-link>
             </div>
