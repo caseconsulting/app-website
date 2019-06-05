@@ -46,10 +46,6 @@
                         <li>Working in an agile, collaborative environment both with colleagues and customers</li>
                         <li>Growing your career through on-going technical training, conferences, and certifications</li>
                       </ul>
-                      
-                      
-                      
-                      
                     </p>
                   </div>
                 </row>
