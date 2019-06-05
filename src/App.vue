@@ -2,6 +2,7 @@
   <div id="app">
     <!-- <app-navigation></app-navigation> -->
     <app-header></app-header>
+    <app-introSlide></app-introSlide>
     <!--<div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -19,8 +20,8 @@
 </template>
 
 <script>
-import Navigation from './components/Navigation';
 import Header from './components/Header';
+import IntroSlide from './components/IntroSlide';
 import About from './components/About';
 import Benefits from './components/Benefits';
 import Careers from './components/Careers';
@@ -32,8 +33,8 @@ import Contact from './components/Contact';
 
 export default {
   components: {
-    'app-navigation': Navigation,
     'app-header': Header,
+    'app-introSlide': IntroSlide,
     'app-about': About,
     'app-benefits': Benefits,
     'app-careers': Careers, 
