@@ -13,6 +13,8 @@
               <li class="nav-item"><a class="nav-link" id="system-engineer-tab" data-toggle="tab" href="#system-engineer" role="tab" aria-controls="syseng-tab" aria-selected="false">System Engineer</a></li>
               <li class="nav-item"><a class="nav-link" id="cloud-engineer-tab" data-toggle="tab" href="#cloud-engineer" role="tab" aria-controls="cloud-tab" aria-selected="false">Cloud Engineer</a></li>
               <li class="nav-item"><a class="nav-link" id="data-scientist-tab" data-toggle="tab" href="#data-scientist" role="tab" aria-controls="data-tab" aria-selected="false">Data Scientist</a></li>
+              <li class="nav-item"><a class="nav-link" id="quality-assurance-tester-tab" data-toggle="tab" href="#quality-assurance-tester" role="tab" aria-controls="tester-tab" aria-selected="false">Quality Assurance/Tester</a></li>
+              <li class="nav-item"><a class="nav-link" id="intern-role-tab" data-toggle="tab" href="#intern-role" role="tab" aria-controls="intern-tab" aria-selected="false">Intern</a></li>
             </ul>
             <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade show active" id="developer" role="tabpanel" aria-labelledby="developer-tab">
@@ -169,6 +171,71 @@
                         <li>Using data analysis to inform mission organizations of data gaps, data coverage, and value to analytics/targeting</li>
                         <li>Cleaning and preparing large datasets for machine learning experiments</li>
                         <li>Utilizing various machine learning libraries, such as pytorch, and tools like TensorFlow, APache Spark, OpenCV, Caffe, and Python to discover new insights in large amounts of data</li>
+                      </ul>
+                    </p>
+                  </div>
+                </row>
+              </div>
+              <div class="tab-pane fade" id="quality-assurance-tester" role="tabpanel" aria-labelledby="tester-tab">
+                <row>
+                  <div class="col-md-8 offset-md-2">
+                    <h3 class="text-uppercase g-color-white">
+                        <strong id="tester-tab">Quality Assurance/Tester</strong>
+                      </h3>
+                  </div>
+                </row>
+                <row>
+                  <div class="col-md-8 offset-md-2">
+                    <p class="g-color-white"> 
+                      <strong>Who you are... </strong> 
+                      <br>
+                      <ul>
+                        <li>A detail-oriented person interested in becoming an integral part of a development team that is highly focused on quality software solutions.</li>
+                      </ul>
+                      <br>
+                      <strong>What you'll be doing...</strong> 
+                      <br>
+                      <ul>
+                        <li>Communicating and collaborating with the development and requirements teams to coordinate testing web-based applications and web services built using AWS technologies.</li>
+                        <li>Developing test plans for manual and/or automated testing, writing test scripts or procedures and executing these for unit, process, functional, system integration and acceptance testing.</li>
+                        <li>Documenting the successes and failures of all executed test plans, procedures and scripts; including managing defects discovered via a defect tracking tool.</li>
+                        <li>Following Agile development methodologies.</li>
+                        <li>Using problem-solving skills to analyze and identify defect causes or scenarios to reproduce defects enabling defect correction.</li>
+                      </ul>
+                    </p>
+                  </div>
+                </row>
+              </div>
+              <div class="tab-pane fade" id="intern-role" role="tabpanel" aria-labelledby="intern-tab">
+                <row>
+                  <div class="col-md-8 offset-md-2">
+                    <h3 class="text-uppercase g-color-white">
+                        <strong id="intern-tab">Intern</strong>
+                      </h3>
+                  </div>
+                </row>
+                <row>
+                  <div class="col-md-8 offset-md-2">
+                    <p class="g-color-white"> 
+                      <strong>Who you are... </strong> 
+                      <br>
+                      <ul>
+                        <li>A Rock Star Student interested in real-world experience. A True Team Player that enjoys collaborating and working side by side with exceptionally talented and experienced developers. Looking to solve problems, gain exposure and pursue your interests in software development.</li>
+                      </ul>
+                      <br>
+                      <strong>What you'll be doing...</strong> 
+                      <br>
+                      <ul>
+                        <li>Designing modern, responsive web applications using frameworks such as Bootstrap and Material Design</li>
+                        <li>Working with fellow interns to implement the best user experience possible</li>
+                        <li>Designing and implementing features in existing and new products that will be used by the company</li>
+                        <li>Creating single-page-applications using frameworks such as Angular, Vue, and React</li>
+                        <li>Building RESTful APIs using frameworks such as Ruby on Rails and Node.js</li>
+                        <li>Persisting application state using both hosted storage solutions such as MySQL and Oracle as well as cloud-based storage solutions such as DynamoDB and Aurora</li>
+                        <li>Writing clean, unit-tested code in languages such as Java, Ruby, and JavaScript</li>
+                        <li>Deploying applications in a serverless cloud environment using Amazon Web Services</li>
+                        <li>Working in an agile, collaborative environment both with fellow interns and software professionals</li>
+                        <li>Reviewing and providing detailed feedback on documentation and test plans for features</li>
                       </ul>
                     </p>
                   </div>
