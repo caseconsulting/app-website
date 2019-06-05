@@ -26,7 +26,8 @@
           <div class="container g-pb-30">
             <row>
               <div class="text-center">
-                <a href="./intern.html" type="button" class="btn" role="button"> Learn More </a>
+                <!-- <a href="./intern.html" type="button" class="btn" role="button"> Learn More </a> -->
+                <router-link tag="button" to='/intern' active-class="active" exact><a>Learn More</a></router-link>
               </div>
             </row>
           </div>
