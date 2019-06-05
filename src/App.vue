@@ -14,6 +14,7 @@
     <app-numbers></app-numbers>
     <app-awards></app-awards>
     <app-events></app-events>
+    <app-contact></app-contact>
   </div>
 </template>
 
@@ -27,6 +28,7 @@ import Internship from './components/Internship';
 import Numbers from './components/Numbers';
 import Awards from './components/Awards';
 import Events from './components/Events';
+import Contact from './components/Contact';
 
 export default {
   components: {
@@ -39,6 +41,7 @@ export default {
     'app-numbers': Numbers,
     'app-awards': Awards,
     'app-events': Events,
+    'app-contact': Contact
   }
 }
 </script>
