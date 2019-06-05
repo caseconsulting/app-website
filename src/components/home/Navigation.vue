@@ -40,7 +40,7 @@
             </div>
             <div class="bptw">
             <a class="navbar-brand u-header__log">
-                <img src="../../../public/assets/custom/img/awards/2018_BPTW_logo_C1.png" alt="Best places to work 2018 logo" class ="nav-pad">
+                <img src="../../../public/assets/custom/img/awards/2019_BPTW_logo.png" alt="Best places to work 2019 logo" class ="nav-pad">
                 </a>
             </div>
             <!-- End Navigation -->
