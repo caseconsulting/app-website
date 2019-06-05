@@ -16,6 +16,7 @@ export default new Router({
     },
     {
       path: "/intern",
+      name: "intern",
       componenet: Intern
     },
     { path: "*", redirect: "/" }

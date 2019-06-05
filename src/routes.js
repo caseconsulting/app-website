@@ -1,15 +1,16 @@
 import Intern from "./components/intern/Intern.vue";
-//import Home from "./components/home/Home.vue";
-import Home from "./App.vue";
+import Home from "./components/home/Home.vue";
+
 
 export const routes = [
   {
-    path: "",
+    path: "/",
     name: "home",
     component: Home
   },
   {
     path: "/internship",
+    name: "internship",
     componenet: Intern
   },
   { path: "*", redirect: "/" }
