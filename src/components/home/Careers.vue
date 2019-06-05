@@ -12,7 +12,7 @@
               <li class="nav-item"><a class="nav-link" id="project-manager-tab" data-toggle="tab" href="#project-manager" role="tab" aria-controls="pm-tab" aria-selected="true">Project Manager</a></li>
               <li class="nav-item"><a class="nav-link" id="system-engineer-tab" data-toggle="tab" href="#system-engineer" role="tab" aria-controls="syseng-tab" aria-selected="false">System Engineer</a></li>
               <li class="nav-item"><a class="nav-link" id="cloud-engineer-tab" data-toggle="tab" href="#cloud-engineer" role="tab" aria-controls="cloud-tab" aria-selected="false">Cloud Engineer</a></li>
-              <li class="nav-item"><a class="nav-link" id="system-administrator-tab" data-toggle="tab" href="#system-administrator" role="tab" aria-controls="admin-tab" aria-selected="false">System Administrator</a></li>
+              <li class="nav-item"><a class="nav-link" id="data-scientist-tab" data-toggle="tab" href="#data-scientist" role="tab" aria-controls="data-tab" aria-selected="false">Data Scientist</a></li>
             </ul>
             <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade show active" id="developer" role="tabpanel" aria-labelledby="developer-tab">
@@ -145,23 +145,37 @@
                   </div>
                 </row>
               </div>
-              <div class="tab-pane fade" id="system-administrator" role="tabpanel" aria-labelledby="admin-tab">
+              <div class="tab-pane fade" id="data-scientist" role="tabpanel" aria-labelledby="data-tab">
                 <row>
                   <div class="col-md-8 offset-md-2">
                     <h3 class="text-uppercase g-color-white">
-                        <strong id="admin-tab">System Administrator</strong>
+                        <strong id="data-tab">Data Scientist</strong>
                       </h3>
                   </div>
                 </row>
                 <row>
                   <div class="col-md-8 offset-md-2">
-                    <p class="g-color-white"> Coordinates and/or performs the O&amp;M activities for Unix or Windows servers. Develops and documents the full range of SOPs and schedules for O&amp;M activities. Identifies recurring O&amp;M problems and recommends steps to reduce
-                      the severity and frequency of the problems. Assists application developers in testing and debugging new programs to ensure compatibility with existing server technologies. Troubleshoots and resolves installation problems; documents
-                      procedures for problem resolution. Consults with support teams, help desks, customers, and other technical staff in the resolution of server related problems. Provides first tier support to storage area network and enterprise storage
-                      systems. Performs server and storage capacity planning for the most complex and critical systems. Recommends and implements process and tool improvements to improve the efficiency and effectiveness of the organization's change management
-                      and configuration management processes and systems. Plans for transition of the development and/or production environment to new technology. Recommends and plans server recapitalization. Performs server performance tuning. Baselines
-                      and forecasts server performance data and tunes server hardware and software configurations. Utilizes system software to monitor the performance of system files; manages system data to maintain performance efficiencies. Studies system
-                      requirements to determine proper server installation methods and procedures. May provide 24x7 operational support.
+                    <p class="g-color-white"> 
+                      <strong>Who you are... </strong> 
+                      <br>
+                      <ul>
+                        <li>An expert in architecting, designing and building solutions. A certified AWS Solutions Architect, SysOps Administrator, DevOps Architect, or interested in obtaining the certification.</li>
+                      </ul>
+                      <br>
+                      <strong>What you'll be doing...</strong> 
+                      <br>
+                      <ul>
+                        <li>Architecting, designing, and building medium to large-scale enterprise systems with a focus on Cloud migration and AWS solutions</li>
+                        <li>Migrate existing applications to AWS</li>
+                        <li>Identify appropriate use of AWS operational best practices techniques and procedures</li>
+                        <li>Applying enterprise architecture directives and network requirements</li>
+                        <li>Designing interfaces with external systems</li>
+                        <li>AWS Certifications – Highly Desired</li>
+                        <li>AWS Certified Solutions Architect – Associate or Professional</li>
+                        <li>AWS Certified SysOps Administrator – Associate</li>
+                        <li>AWS Certified DevOps Engineer – Professional</li>
+                        <li>AWS Certified Security – Specialty</li>
+                      </ul>
                     </p>
                   </div>
                 </row>
