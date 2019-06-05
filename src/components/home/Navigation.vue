@@ -5,7 +5,7 @@
         <div class="container-fluid justify-content-between g-pos-rel">
             <!-- Logo -->
             <a href="#body" class="js-go-to navbar-brand u-header__logo" data-type="static">
-            <img class="u-header__logo-img u-header__logo-img--main g-width-110" src="../../public/assets/custom/img/case/logo-banner.gif" alt="Case Consulting, Inc.">
+            <img class="u-header__logo-img u-header__logo-img--main g-width-110" src="../../../public/assets/custom/img/case/logo-banner.gif" alt="Case Consulting, Inc.">
             </a>
             <!-- End Logo -->
 
@@ -40,7 +40,7 @@
             </div>
             <div class="bptw">
             <a class="navbar-brand u-header__log">
-                <img src="../../public/assets/custom/img/awards/2018_BPTW_logo_C1.png" alt="Best places to work 2018 logo" class ="nav-pad">
+                <img src="../../../public/assets/custom/img/awards/2018_BPTW_logo_C1.png" alt="Best places to work 2018 logo" class ="nav-pad">
                 </a>
             </div>
             <!-- End Navigation -->

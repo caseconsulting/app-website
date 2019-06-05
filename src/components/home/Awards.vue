@@ -15,14 +15,14 @@
                     <div class="col-md-6">
                       <a href="https://www.bizjournals.com/washington/news/2017/05/05/these-are-the-best-places-to-work-in-greater.html"
                         target="_blank" rel="noopener" border="0">
-                        <img src="../../public/assets/custom/img/awards/2017_BPTW_HONOREE.png" alt=""
+                        <img src="../../../public/assets/custom/img/awards/2017_BPTW_HONOREE.png" alt=""
                           class="rounded-circle img-fluid mobile-image award-shadow" />
                       </a>
                     </div>
                     <div class="col-md-6 award-overlapped">
                       <a href="https://www.bizjournals.com/washington/news/2018/04/13/see-the-best-places-to-work-in-greater-washington.html"
                         target="_blank" rel="noopener" border="0">
-                        <img src="../../public/assets/custom/img/awards/2018_BPTW_HONOREE.png" alt=""
+                        <img src= "../../../public/assets/custom/img/awards/2018_BPTW_HONOREE.png" alt=""
                           class="rounded-circle img-fluid mobile-image award-shadow" />
                       </a>
                     </div>
@@ -54,3 +54,4 @@
       </section>
       <!-- End Awards Section -->
 </template>
+

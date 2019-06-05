@@ -20,16 +20,16 @@
 </template>
 
 <script>
-import Header from './components/Header';
-import IntroSlide from './components/IntroSlide';
-import About from './components/About';
-import Benefits from './components/Benefits';
-import Careers from './components/Careers';
-import Internship from './components/Internship';
-import Numbers from './components/Numbers';
-import Awards from './components/Awards';
-import Events from './components/Events';
-import Contact from './components/Contact';
+import Header from './components/home/Header';
+import IntroSlide from './components/home/IntroSlide';
+import About from './components/home/About';
+import Benefits from './components/home/Benefits';
+import Careers from './components/home/Careers';
+import Internship from './components/home/Internship';
+import Numbers from './components/home/Numbers';
+import Awards from './components/home/Awards';
+import Events from './components/home/Events';
+import Contact from './components/home/Contact';
 
 export default {
   components: {
