@@ -6,6 +6,17 @@
             <div class="u-heading-v2-2--bottom g-brd-primary g-mb-20">
               <h2 class="text-uppercase u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md g-color-white">Careers</h2> </div>
           </div>
+          <div class="whycase g-color-white text-center">
+            <p>Why Case?</p>
+
+            <p>
+              <ul>
+                <strong>You do absolutely exceptional work, everyday.</strong> You have high standards and love to build great products
+              </ul>
+            </p>
+            <br>
+
+          </div>
           <div class="container g-pb-30">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item"><a class="nav-link active" id="developer-tab" data-toggle="tab" href="#developer" role="tab" aria-controls="developer-tab" aria-selected="false">Software Developer</a></li>
