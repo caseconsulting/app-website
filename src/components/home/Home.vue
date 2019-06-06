@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- <app-navigation></app-navigation> -->
-    <app-header></app-header>
+    <!-- <app-header></app-header> -->
     <app-introSlide></app-introSlide>
     <!--<div id="nav">
       <router-link to="/">Home</router-link> |
@@ -47,4 +47,3 @@ export default {
   }
 };
 </script>
-
