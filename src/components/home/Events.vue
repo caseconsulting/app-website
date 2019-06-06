@@ -10,6 +10,36 @@
           <div class="col-sm-10 offset-sm-1">
             <div class="card-deck g-mx-20 g-my-20">
               <div class="card">
+                <img class=" event-images" src="https://res.cloudinary.com/consultwithcase/image/upload/v1559827387/website/Screen_Shot_2019-06-06_at_9.21.52_AM.png" alt="2019 RailsConf">
+                <div class="card-body">
+                  <h4 class="card-title"><a href="https://photos.app.goo.gl/KGfxABoykFm1SkBn8" target="_blank" rel="noopener">2019 RailsConf</a></h4>
+                  <p class="card-text">Two of our employees learned a lot at the RailsConf in Minneapolis, MN this year!</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class=" event-images" src="https://res.cloudinary.com/consultwithcase/image/upload/v1535029084/website/IMG_5303.jpg" alt="2018 Summer Internship">
+                <div class="card-body">
+                  <h4 class="card-title"><a href="https://photos.app.goo.gl/K1HsUTjAbVQ8sBUY8" target="_blank" rel="noopener">2018 Summer Internship</a></h4>
+                  <p class="card-text">We had an awesome summer with our interns which included several presentations to the company, seeing Solo: A Star Wars Story, taking in a D.C. United game in a downpour, and some Top Golf!</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class=" event-images" src="http://res.cloudinary.com/consultwithcase/image/upload/c_crop,g_custom:faces,h_738,w_1045/v1535029083/website/IMG_4328.jpg" alt="Solo: A Star Wars Story">
+                <div class="card-body">
+                  <h4 class="card-title"><a href="https://photos.app.goo.gl/WUShWChoVdi4DCep9" target="_blank" rel="noopener">Solo: A Star Wars Story</a></h4>
+                  <p class="card-text">We got the internship kicked off with a company movie event to see Solo: A Star Wars Story.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-10 offset-sm-1">
+            <div class="card-deck g-mx-20 g-my-20">
+              <div class="card">
                 <img class=" event-images" src="https://res.cloudinary.com/consultwithcase/image/upload/c_crop,g_center,h_811,w_1082/v1535029085/website/2018_leesburg_race.jpg" alt="2018 Leesburg 5k/20k Race">
                 <div class="card-body">
                   <h4 class="card-title"><a href="https://photos.app.goo.gl/Xz9Pd53AhmMiF6Fw5" target="_blank" rel="noopener">2018 Leesburg 5k/20k</a></h4>
