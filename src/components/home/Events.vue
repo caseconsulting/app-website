@@ -18,10 +18,11 @@
               </div>
 
               <div class="card">
-                <img class=" event-images" src="https://res.cloudinary.com/consultwithcase/image/upload/v1535029084/website/IMG_5303.jpg" alt="2018 Summer Internship">
+                <img class=" event-images" src="https://res.cloudinary.com/consultwithcase/image/upload/v1559827815/website/Screen_Shot_2019-06-06_at_9.28.59_AM.png" alt="2019 Wreaths Across America">
                 <div class="card-body">
-                  <h4 class="card-title"><a href="https://photos.app.goo.gl/K1HsUTjAbVQ8sBUY8" target="_blank" rel="noopener">2018 Summer Internship</a></h4>
-                  <p class="card-text">We had an awesome summer with our interns which included several presentations to the company, seeing Solo: A Star Wars Story, taking in a D.C. United game in a downpour, and some Top Golf!</p>
+                  <h4 class="card-title"><a href="https://photos.app.goo.gl/UUa7owWyjw1LbQSq9" target="_blank" rel="noopener">2019 Wreaths Across America</a></h4>
+                  <p class="card-text"> On January 19, several employees helped clean-up wreaths at Arlington National Cemetery as part of the Wreaths Across America program. 
+                                        Case employees were more than happy to put in a little work to honor those that are laid to rest in Arlington.</p>
                 </div>
               </div>
 
