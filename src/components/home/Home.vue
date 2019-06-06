@@ -1,14 +1,6 @@
 <template>
   <div id="app">
-    <!-- <app-navigation></app-navigation> -->
-    <!-- <app-header></app-header> -->
     <app-introSlide></app-introSlide>
-    <!--<div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />-->
-
     <app-about></app-about>
     <app-benefits></app-benefits>
     <app-careers></app-careers>
@@ -21,7 +13,6 @@
 </template>
 
 <script>
-import Header from "./Header";
 import IntroSlide from "./IntroSlide";
 import About from "./About";
 import Benefits from "./Benefits";
@@ -34,7 +25,6 @@ import Contact from "./Contact";
 
 export default {
   components: {
-    "app-header": Header,
     "app-introSlide": IntroSlide,
     "app-about": About,
     "app-benefits": Benefits,
