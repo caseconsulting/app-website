@@ -6,12 +6,19 @@
             <div class="u-heading-v2-2--bottom g-brd-primary g-mb-20">
               <h2 class="text-uppercase u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md g-color-white">Careers</h2> </div>
           </div>
-          <div class="whycase g-color-white text-center">
-            <p>Why Case?</p>
-
+          <div class="whycase g-color-white container col-md-8 offset-md-2">
+            <h3 class="text-uppercase g-color-white" > <strong>Why Case?</strong></h3>
+            <br>
             <p>
               <ul>
-                <strong>You do absolutely exceptional work, everyday.</strong> You have high standards and love to build great products
+                <li><strong>You do absolutely exceptional work, everyday.</strong></li>
+                <li>You have high standards and love to build great products</li>
+                <li>You like to attack and solve problems quickly not watch from the sidelines</li>
+                <li>You are <strong>highly technical</strong> and love technology</li>
+                <li>You are <strong>endlessly curious</strong>, looking for 'your people' who enjoy learning and growing together</li>
+                <li>You want to build memorable and useful solutions that make an impact</li>
+                <li>You are <strong>experienced</strong> designing and implementing solutions for complex problems</li>
+                <li>This position requires a TS/SCI with poly (or suitability to acquire one)</li>
               </ul>
             </p>
             <br>
