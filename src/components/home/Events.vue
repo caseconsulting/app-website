@@ -27,10 +27,10 @@
               </div>
 
               <div class="card">
-                <img class=" event-images" src="http://res.cloudinary.com/consultwithcase/image/upload/c_crop,g_custom:faces,h_738,w_1045/v1535029083/website/IMG_4328.jpg" alt="Solo: A Star Wars Story">
+                <img class=" event-images" src="https://res.cloudinary.com/consultwithcase/image/upload/v1559835731/website/Screen_Shot_2019-06-06_at_11.41.44_AM.png" alt="2018 Holiday Party">
                 <div class="card-body">
-                  <h4 class="card-title"><a href="https://photos.app.goo.gl/WUShWChoVdi4DCep9" target="_blank" rel="noopener">Solo: A Star Wars Story</a></h4>
-                  <p class="card-text">We got the internship kicked off with a company movie event to see Solo: A Star Wars Story.</p>
+                  <h4 class="card-title"><a href="https://photos.app.goo.gl/ZsHRWrR6HXBvmZwr7" target="_blank" rel="noopener">2018 Holiday Party</a></h4>
+                  <p class="card-text">Employees and their loved ones had a great time at our annual holiday party! This year the party was held at Top Golf and featured an evening of giving, food, golf, and fun.</p>
                 </div>
               </div>
             </div>
