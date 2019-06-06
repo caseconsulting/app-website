@@ -13,6 +13,7 @@
               <ul>
                 <li><strong>You do absolutely exceptional work, everyday.</strong></li>
                 <li>You have high standards and love to build great products</li>
+                <li>You want to write software that sets the bar by which other teams/projects are measured</li>
                 <li>You like to attack and solve problems quickly not watch from the sidelines</li>
                 <li>You are <strong>highly technical</strong> and love technology</li>
                 <li>You are <strong>endlessly curious</strong>, looking for 'your people' who enjoy learning and growing together</li>
