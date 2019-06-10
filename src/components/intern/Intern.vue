@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import Slider from "./Slider.vue";
+import Slider from "../IntroSlide.vue";
 import About from "./About.vue";
 import Requirements from "./Requirements.vue";
 import InternApply from "./InternApply.vue";

@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import IntroSlide from "./IntroSlide";
+import IntroSlide from "../IntroSlide";
 import About from "./About";
 import Benefits from "./Benefits";
 import Careers from "./Careers";

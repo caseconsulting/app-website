@@ -6,7 +6,7 @@
           <ul>
             <!-- SLIDE  -->
             <li style="text-align: center;" data-index="rs-68" data-transition="zoomout" data-slotamount="default" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="assets/img-temp/promo/img1.jpg" data-rotate="0" data-saveperformance="off" data-title="Intro">
-              <img src="../../../public/assets/custom/img/online/developer-min.jpg" alt="Image description" data-bgposition="50% 10%" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+              <img :src="finalSlide[0].link" alt="Image description" data-bgposition="50% 10%" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
               <!-- LAYERS -->
               <!-- LAYER NR. 1 -->
               <div id="promoSliderLayer10" class="tp-caption tp-shape tp-shapewrapper rs-parallaxlevel-0" style="z-index: 5; background-color: rgba(78, 67, 83, .4); border-color: rgba(78, 67, 83, .5);" data-x="['center','center','center','center']" data-y="['middle','middle','middle','middle']"
@@ -18,9 +18,13 @@
                 data-hoffset="['0','0','0','0']" data-voffset="['-60','-60','-22','-29']" data-fontsize="['60','60','60','40']" data-lineheight="['64','64','64','44']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;"
                 data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;"
                 data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
-                Software Oriented
+                <div v-for="slideInfo in finalSlide" :key="slideInfo.title">
+                  {{ slideInfo.title }}
+                  <br>
+                </div>
+                <!-- Software Oriented
                 <br>
-                Customer Focused
+                Customer Focused -->
               </div>
               <!-- LAYER NR. 4 -->
               <div id="promoSliderLayer4" class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-0" style="z-index: 8; white-space: nowrap; text-align: center; text-transform: uppercase;" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
@@ -44,75 +48,94 @@
 </template>
 
  <script>
-        export default {
-      mounted() {
-         var tpj = jQuery,
-        promoSlider;
-      
-        if (tpj('#promoSlider').revolution == undefined) {
-          revslider_showDoubleJqueryError('#promoSlider');
-        } else {
-          promoSlider = tpj('#promoSlider').show().revolution({
-            sliderType: 'hero',
-            jsFileLocation: '../../revolution/js/',
-            sliderLayout: 'fullwidth',
-            dottedOverlay: 'none',
-            delay: 9000,
-            navigation: {},
-            responsiveLevels: [1240, 1024,
-              778, 480
-            ],
-            gridwidth: [1240, 1024, 778,
-              480
-            ],
-            gridheight: [600, 500, 400,
-              300
-            ],
-            lazyType: 'none',
-            parallax: {
-              type: 'mouse',
-              origo: 'slidercenter',
-              speed: 2000,
-              levels: [2, 3, 4, 5, 6,
-                7, 12, 16, 10,
-                50
-              ]
-            },
-            shadow: 0,
-            spinner: 'off',
-            autoHeight: 'off',
-            disableProgressBar: 'on',
-            hideThumbsOnMobile: 'off',
-            hideSliderAtLimit: 0,
-            hideCaptionAtLimit: 0,
-            hideAllCaptionAtLilmit: 0,
-            debugMode: false,
-            fallbacks: {
-              simplifyAll: 'off',
-              disableFocusListener: false
+  import HomeSlider from "../data/HomeSlider.js";
+  import InternSlider from "../data/InternSlider.js";
+
+      export default {
+        data: function() {
+          return {
+            homeSlider: HomeSlider,
+            internSlider: InternSlider
+          };
+        },
+        computed: {
+          finalSlide() {
+            if (this.$route.path==='/') {
+              return this.homeSlider;
             }
+            else if (this.$route.path === '/intern') {
+               return this.internSlider;
+          }
+          }
+        },
+        mounted() {
+          var tpj = jQuery,
+          promoSlider;
+        
+          if (tpj('#promoSlider').revolution == undefined) {
+            revslider_showDoubleJqueryError('#promoSlider');
+          } else {
+            promoSlider = tpj('#promoSlider').show().revolution({
+              sliderType: 'hero',
+              jsFileLocation: '../../revolution/js/',
+              sliderLayout: 'fullwidth',
+              dottedOverlay: 'none',
+              delay: 9000,
+              navigation: {},
+              responsiveLevels: [1240, 1024,
+                778, 480
+              ],
+              gridwidth: [1240, 1024, 778,
+                480
+              ],
+              gridheight: [600, 500, 400,
+                300
+              ],
+              lazyType: 'none',
+              parallax: {
+                type: 'mouse',
+                origo: 'slidercenter',
+                speed: 2000,
+                levels: [2, 3, 4, 5, 6,
+                  7, 12, 16, 10,
+                  50
+                ]
+              },
+              shadow: 0,
+              spinner: 'off',
+              autoHeight: 'off',
+              disableProgressBar: 'on',
+              hideThumbsOnMobile: 'off',
+              hideSliderAtLimit: 0,
+              hideCaptionAtLimit: 0,
+              hideAllCaptionAtLilmit: 0,
+              debugMode: false,
+              fallbacks: {
+                simplifyAll: 'off',
+                disableFocusListener: false
+              }
+            });
+          }
+        
+          $(document).on('ready', function() {
+            // initialization of carousel
+            $.HSCore.components.HSCarousel.init('.js-carousel');
+
+            // initialization of header
+            $.HSCore.components.HSHeader.init($('#js-header'));
+            $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+            // initialization of go to section
+            $.HSCore.components.HSGoTo.init('.js-go-to');
           });
-        }
+
+          $(window).on('load', function() {
+            // initialization of HSScrollNav
+            $.HSCore.components.HSScrollNav.init($('#js-scroll-nav'), {
+              duration: 700
+            });
+          });
       
-      $(document).on('ready', function() {
-        // initialization of carousel
-        $.HSCore.components.HSCarousel.init('.js-carousel');
-
-        // initialization of header
-        $.HSCore.components.HSHeader.init($('#js-header'));
-        $.HSCore.helpers.HSHamburgers.init('.hamburger');
-
-        // initialization of go to section
-        $.HSCore.components.HSGoTo.init('.js-go-to');
-      });
-
-      $(window).on('load', function() {
-        // initialization of HSScrollNav
-        $.HSCore.components.HSScrollNav.init($('#js-scroll-nav'), {
-          duration: 700
-        });
-      });
-    
-      }
         }
+      }
     </script>
