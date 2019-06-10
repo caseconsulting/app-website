@@ -37,23 +37,23 @@
             </ul>
             <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade show active" id="developer" role="tabpanel" aria-labelledby="developer-tab">
-                <row>
+                <div>
                   <div class="col-md-8 offset-md-2">
                     <h3 class="text-uppercase g-color-white">
                         <strong id="developer-tab">Software Developer</strong>
                       </h3>
                   </div>
-                </row>
-                <row>
+                </div>
+                <div>
                   <div class="col-md-8 offset-md-2">
                     <p class="g-color-white">
-                      <strong>Who you are... </strong> 
+                      <strong>Who you are... </strong>
                       <br>
                       <ul>
                         <li>A software developer who works to master a wide variety of programming skills and apply those skills in an agile work environment to create complete applications.</li>
                       </ul>
                       <br>
-                      <strong>What you'll be doing...</strong> 
+                      <strong>What you'll be doing...</strong>
                       <br>
                       <ul>
                         <li>Designing modern, responsive web applications using frameworks such as Bootstrap and Material Design</li>
@@ -69,26 +69,26 @@
                       </ul>
                     </p>
                   </div>
-                </row>
+                </div>
               </div>
               <div class="tab-pane fade" id="project-manager" role="tabpanel" aria-labelledby="pm-tab">
-                <row>
+                <div>
                   <div class="col-md-8 offset-md-2">
                     <h3 class="text-uppercase g-color-white">
                       <strong id="pm-tab">Project Manager</strong>
                     </h3>
                   </div>
-                </row>
-                <row>
+                </div>
+                <div>
                   <div class="col-md-8 offset-md-2">
                     <p class="g-color-white">
-                      <strong>Who you are... </strong> 
+                      <strong>Who you are... </strong>
                       <br>
                       <ul>
                         <li>A leader that enjoys building and guiding project teams to deliver first-class solutions. A critical thinker that enjoys responsibility and has excellent communication skills.</li>
                       </ul>
                       <br>
-                      <strong>What you'll be doing...</strong> 
+                      <strong>What you'll be doing...</strong>
                       <br>
                       <ul>
                         <li>Work closely with customers to capture needs and ensure the team is meeting those requirements</li>
@@ -99,24 +99,24 @@
                       </ul>
                     </p>
                   </div>
-                </row>
+                </div>
               </div>
               <div class="tab-pane fade" id="system-engineer" role="tabpanel" aria-labelledby="syseng-tab">
-                <row>
+                <div>
                   <div class="col-md-8 offset-md-2">
                     <h3 class="text-uppercase g-color-white"><strong id="syseng-tab">System Engineer</strong></h3>
                   </div>
-                </row>
-                <row>
+                </div>
+                <div>
                   <div class="col-md-8 offset-md-2">
                     <p class="g-color-white">
-                      <strong>Who you are... </strong> 
+                      <strong>Who you are... </strong>
                       <br>
                       <ul>
                         <li>A leader that enjoys out-of-the box thinking and problem-solving. A critical thinker that enjoys tackling and solving the toughest problems.</li>
                       </ul>
                       <br>
-                      <strong>What you'll be doing...</strong> 
+                      <strong>What you'll be doing...</strong>
                       <br>
                       <ul>
                         <li>Designing modern, responsive web applications using frameworks such as Bootstrap and Material Design</li>
@@ -129,26 +129,26 @@
                       </ul>
                     </p>
                   </div>
-                </row>
+                </div>
               </div>
               <div class="tab-pane fade" id="cloud-engineer" role="tabpanel" aria-labelledby="cloud-tab">
-                <row>
+                <div>
                   <div class="col-md-8 offset-md-2">
                     <h3 class="text-uppercase g-color-white">
                         <strong id="cloud-tab">Cloud Engineer</strong>
                       </h3>
                   </div>
-                </row>
-                <row>
+                </div>
+                <div>
                   <div class="col-md-8 offset-md-2">
                     <p class="g-color-white">
-                      <strong>Who you are... </strong> 
+                      <strong>Who you are... </strong>
                       <br>
                       <ul>
                         <li>An expert in architecting, designing and building solutions. A certified AWS Solutions Architect, SysOps Administrator, DevOps Architect, or interested in obtaining the certification.</li>
                       </ul>
                       <br>
-                      <strong>What you'll be doing...</strong> 
+                      <strong>What you'll be doing...</strong>
                       <br>
                       <ul>
                         <li>Architecting, designing, and building medium to large-scale enterprise systems with a focus on Cloud migration and AWS solutions</li>
@@ -164,26 +164,26 @@
                       </ul>
                     </p>
                   </div>
-                </row>
+                </div>
               </div>
               <div class="tab-pane fade" id="data-scientist" role="tabpanel" aria-labelledby="data-tab">
-                <row>
+                <div>
                   <div class="col-md-8 offset-md-2">
                     <h3 class="text-uppercase g-color-white">
                         <strong id="data-tab">Data Scientist</strong>
                       </h3>
                   </div>
-                </row>
-                <row>
+                </div>
+                <div>
                   <div class="col-md-8 offset-md-2">
-                    <p class="g-color-white"> 
-                      <strong>Who you are... </strong> 
+                    <p class="g-color-white">
+                      <strong>Who you are... </strong>
                       <br>
                       <ul>
                         <li>Known for strong analytical and problem-solving skills, with experience building, training, and deploying machine learning models and possess an insatiable curiosity for what can be uncovered among the masses of data.</li>
                       </ul>
                       <br>
-                      <strong>What you'll be doing...</strong> 
+                      <strong>What you'll be doing...</strong>
                       <br>
                       <ul>
                         <li>Utilizing AI/ML cloud services (AWS, Google, Azure) to tackle the customer's largest problem area, and helping to establish a solid foundation upon which to expand</li>
@@ -193,26 +193,26 @@
                       </ul>
                     </p>
                   </div>
-                </row>
+                </div>
               </div>
               <div class="tab-pane fade" id="quality-assurance-tester" role="tabpanel" aria-labelledby="tester-tab">
-                <row>
+                <div>
                   <div class="col-md-8 offset-md-2">
                     <h3 class="text-uppercase g-color-white">
                         <strong id="tester-tab">Quality Assurance/Tester</strong>
                       </h3>
                   </div>
-                </row>
-                <row>
+                </div>
+                <div>
                   <div class="col-md-8 offset-md-2">
-                    <p class="g-color-white"> 
-                      <strong>Who you are... </strong> 
+                    <p class="g-color-white">
+                      <strong>Who you are... </strong>
                       <br>
                       <ul>
                         <li>A detail-oriented person interested in becoming an integral part of a development team that is highly focused on quality software solutions.</li>
                       </ul>
                       <br>
-                      <strong>What you'll be doing...</strong> 
+                      <strong>What you'll be doing...</strong>
                       <br>
                       <ul>
                         <li>Communicating and collaborating with the development and requirements teams to coordinate testing web-based applications and web services built using AWS technologies.</li>
@@ -223,26 +223,26 @@
                       </ul>
                     </p>
                   </div>
-                </row>
+                </div>
               </div>
               <div class="tab-pane fade" id="intern-role" role="tabpanel" aria-labelledby="intern-tab">
-                <row>
+                <div>
                   <div class="col-md-8 offset-md-2">
                     <h3 class="text-uppercase g-color-white">
                         <strong id="intern-tab">Intern</strong>
                       </h3>
                   </div>
-                </row>
-                <row>
+                </div>
+                <div>
                   <div class="col-md-8 offset-md-2">
-                    <p class="g-color-white"> 
-                      <strong>Who you are... </strong> 
+                    <p class="g-color-white">
+                      <strong>Who you are... </strong>
                       <br>
                       <ul>
                         <li>A Rock Star Student interested in real-world experience. A True Team Player that enjoys collaborating and working side by side with exceptionally talented and experienced developers. Looking to solve problems, gain exposure and pursue your interests in software development.</li>
                       </ul>
                       <br>
-                      <strong>What you'll be doing...</strong> 
+                      <strong>What you'll be doing...</strong>
                       <br>
                       <ul>
                         <li>Designing modern, responsive web applications using frameworks such as Bootstrap and Material Design</li>
@@ -258,7 +258,7 @@
                       </ul>
                     </p>
                   </div>
-                </row>
+                </div>
               </div><br/><br />
             </div>
           </div>
