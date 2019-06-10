@@ -295,6 +295,16 @@ a:active {
   border: none;
 }
 
+.card-deck {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: .5rem;
+}
+
+.card {
+  max-width: 300px;
+}
+
 /*Career nav-tabs*/
 
 .nav-tabs > li {
@@ -339,6 +349,13 @@ a:active {
 }
 
 /*Event styles*/
+
+.event-images {
+  max-height: 300px;
+  width: auto;
+  /* max-width: 300px;
+  height: auto; */
+}
 
 h5 strong a {
   color: white;
@@ -505,11 +522,6 @@ h5 strong a:hover {
   width: 115px;
 }
 
-.event-images {
-  max-height: 300px;
-  width: auto;
-}
-
 .intern-background {
   /* The image used */
   background-image: url("../img/office/kitchen_edit.jpg");
@@ -550,3 +562,5 @@ filter: blur(5px); // Browser Specific
   background-color: rgba(0, 0, 0, 0.4);
   /* transparent background */
 }
+
+

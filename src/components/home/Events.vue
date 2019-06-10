@@ -6,11 +6,12 @@
             <h2 class="text-uppercase u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md">Events</h2> </div>
         </div>
 
+
         <div class="row">
           <div class="col-sm-10 offset-sm-1">
             <div class="card-deck g-mx-20 g-my-20">
               <div class="card">
-                <img class=" event-images" src="https://res.cloudinary.com/consultwithcase/image/upload/v1559827387/website/Screen_Shot_2019-06-06_at_9.21.52_AM.png" alt="2019 RailsConf">
+                <img class="event-images" src="https://res.cloudinary.com/consultwithcase/image/upload/v1559827387/website/Screen_Shot_2019-06-06_at_9.21.52_AM.png" alt="2019 RailsConf">
                 <div class="card-body">
                   <h4 class="card-title"><a href="https://photos.app.goo.gl/KGfxABoykFm1SkBn8" target="_blank" rel="noopener">2019 RailsConf</a></h4>
                   <p class="card-text">Two of our employees learned a lot at the RailsConf in Minneapolis, MN this year!</p>
@@ -33,12 +34,12 @@
                   <p class="card-text">Employees and their loved ones had a great time at our annual holiday party! This year the party was held at Top Golf and featured an evening of giving, food, golf, and fun.</p>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
 
         <div class="collapse" id="collapseEvents">
-          <div class="row">
             <div class="col-sm-10 offset-sm-1">
               <div class="card-deck g-mx-20 g-my-20">
                 <div class="card">
@@ -64,13 +65,7 @@
                     <p class="card-text">We had an awesome summer with our interns which included several presentations to the company, seeing Solo: A Star Wars Story, taking in a D.C. United game in a downpour, and some Top Golf!</p>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-10 offset-sm-1">
-              <div class="card-deck g-mx-20 g-my-20">
+              
                 <div class="card">
                   <img class=" event-images" src="http://res.cloudinary.com/consultwithcase/image/upload/c_crop,g_custom:faces,h_738,w_1045/v1535029083/website/IMG_4328.jpg" alt="Solo: A Star Wars Story">
                   <div class="card-body">
@@ -94,13 +89,7 @@
                     <p class="card-text">This year we had a record number of employees go to AWS re:Invent in Las Vegas!</p>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-10 offset-sm-1">
-              <div class="card-deck g-mx-20 g-my-20">
+              
                 <div class="card"> 
                   <img class=" event-images" src="https://res.cloudinary.com/consultwithcase/image/upload/v1535029078/website/DSC_5279.jpg" alt="2017 Family Picnic">
                   <div class="card-body">
@@ -124,13 +113,7 @@
                     <p class="card-text">Big changes for Case Consulting in 2017 as we moved to new offices and embarked on our inaugural Summer Internship program!</p>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-10 offset-sm-1">
-              <div class="card-deck g-mx-20 g-my-20">
+              
                 <div class="card">
                   <img class=" event-images" src="https://res.cloudinary.com/consultwithcase/image/upload/v1535029081/website/IMG_0611.jpg" alt="2017 Best Places to Work">
                   <div class="card-body">
@@ -155,13 +138,7 @@
                     <p class="card-text">Two of our employees learned a lot while taking in some of the sights at Serverless Conf in Austin, Texas!</p>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-10 offset-sm-1">
-              <div class="card-deck g-mx-20 g-my-20">
+              
                 <div class="card">
                   <img class=" event-images" src="https://res.cloudinary.com/consultwithcase/image/upload/v1535029077/website/case-consulting-holiday-party-2016_30884154854_o.jpg" alt="2016 Holiday Party">
                   <div class="card-body">
@@ -185,13 +162,7 @@
                     <p class="card-text">Case Consulting was well represented at AWS re:Invent this year. Employees enjoyed all of the talks and after-hours events and can't wait to go back next year.</p>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-10 offset-sm-1">
-              <div class="card-deck g-mx-20 g-my-20">
+              
                 <div class="card">
                   <img class=" event-images" src="https://res.cloudinary.com/consultwithcase/image/upload/v1535029090/website/IMG_20161216_164441944.jpg" alt="Rogue One: A Star Wars Movie">
                   <div class="card-body">
@@ -217,7 +188,6 @@
                 </div>
               </div>
             </div>
-          </div>
         </div>
 
         <div class="text-center">
