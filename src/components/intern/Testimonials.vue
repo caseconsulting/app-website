@@ -101,7 +101,14 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
   </section>
   <!-- End Section Content -->
 </template>
+
+<style scoped>
+.carousel {
+  height: 600px;
+  overflow: hidden;
+}
+</style>
