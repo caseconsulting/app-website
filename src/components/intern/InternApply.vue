@@ -1,6 +1,6 @@
 <template>
   <!-- FAQ Section Content -->
-  <section id="faq">
+  <section id="apply">
     <div class="container-fluid">
       <div class="g-pt-100 g-pb-30">
         <div class="container text-center g-max-width-750 g-mb-20 g-pt-10">
@@ -31,7 +31,7 @@ import Question from "./Question.vue";
 export default {
   data: function() {
     return {
-      glanceQuestions: GlanceData,
+      glanceQuestions: GlanceData
     };
   },
   components: {

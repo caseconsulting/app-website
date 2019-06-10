@@ -1,5 +1,5 @@
 <template>
-  <section id="Testimonial" class="testimonial">
+  <section id="testimonials" class="testimonial">
     <div class="g-pt-100 g-pb-30">
       <div class="container text-center g-max-width-750 g-mb-20 g-pt-10">
         <div class="u-heading-v2-2--bottom g-brd-primary g-mb-20">
@@ -92,7 +92,7 @@
                 "My summer internship with Case Consulting provided me with a solid foundation for full-stack web application development that was lacking from my college education. Having the opportunity to work in an Agile environment with bleeding-edge technologies
                 and experiencing how a software company operates has really prepared me for my career after graduation. Working in a collaborative team of other interns helped me to realize my own strengths as a developer, and we had an awesome time building
                 an application that we are really proud of, under the guidance of the knowledgeable and approachable senior developers at Case. I would eagerly recommend an internship with Case to anyone with a desire to learn AWS, JavaScript, or web
-                application development, without hesitation." 
+                application development, without hesitation."
                                 <template>
                   <div style="text-align:right;">- Joseph Thompson, 2018 Intern</div>
                 </template>
