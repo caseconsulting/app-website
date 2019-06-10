@@ -1,6 +1,6 @@
 <template>
     <!-- About Section Content -->
-    <section id="overview" class="g-py-20">
+    <section id="about" class="g-py-20">
       <div class="container text-center g-max-width-750 g-mb-20">
         <div class="u-heading-v2-2--bottom g-brd-primary g-mb-20">
           <h2
