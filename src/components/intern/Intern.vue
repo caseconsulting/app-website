@@ -4,6 +4,7 @@
     <intern-slider></intern-slider>
     <intern-about></intern-about>
     <intern-requirements></intern-requirements>
+    <intern-apply></intern-apply>
     <intern-faq></intern-faq>
     <intern-testimonials></intern-testimonials>
     <contact></contact>
@@ -15,6 +16,7 @@
 import Slider from "./Slider.vue";
 import About from "./About.vue";
 import Requirements from "./Requirements.vue";
+import InternApply from "./InternApply.vue";
 import FAQ from "./FAQ.vue";
 import Testimonials from "./Testimonials.vue";
 import Contact from "../home/Contact.vue";
@@ -24,6 +26,7 @@ export default {
     "intern-slider": Slider,
     "intern-about": About,
     "intern-requirements": Requirements,
+    "intern-apply": InternApply,
     "intern-faq": FAQ,
     "intern-testimonials": Testimonials,
     contact: Contact
