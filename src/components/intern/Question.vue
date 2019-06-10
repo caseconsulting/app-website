@@ -34,9 +34,12 @@
 
 export default {
   props: ['faq', 'color'], 
-  data: {
-    isInfo: true
+  data: function() {
+    return { 
+      isInfo: true
+    };
   }
 };
+
 
 </script>
