@@ -7,7 +7,6 @@
     <intern-apply></intern-apply>
     <intern-faq></intern-faq>
     <intern-testimonials></intern-testimonials>
-    <contact></contact>
     <!-- End Section Content -->
   </div>
 </template>
@@ -19,7 +18,6 @@ import Requirements from "./Requirements.vue";
 import InternApply from "./InternApply.vue";
 import FAQ from "./FAQ.vue";
 import Testimonials from "./Testimonials.vue";
-import Contact from "../home/Contact.vue";
 
 export default {
   components: {
@@ -29,7 +27,6 @@ export default {
     "intern-apply": InternApply,
     "intern-faq": FAQ,
     "intern-testimonials": Testimonials,
-    contact: Contact
   }
 };
 </script>

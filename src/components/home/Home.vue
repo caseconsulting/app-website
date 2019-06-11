@@ -8,7 +8,6 @@
     <app-numbers></app-numbers>
     <app-awards></app-awards>
     <app-events></app-events>
-    <app-contact></app-contact>
   </div>
 </template>
 
@@ -21,7 +20,6 @@ import Internship from "./Internship";
 import Numbers from "./Numbers";
 import Awards from "./Awards";
 import Events from "./Events";
-import Contact from "./Contact";
 
 export default {
   components: {
@@ -32,7 +30,6 @@ export default {
     "app-numbers": Numbers,
     "app-awards": Awards,
     "app-events": Events,
-    "app-contact": Contact,
     "app-intern": Internship
   }
 };
