@@ -79,7 +79,7 @@ export default {
           ref: "#about"
         },
         {
-          name: "Requiements",
+          name: "Requirements",
           ref: "#requirements"
         },
         {
