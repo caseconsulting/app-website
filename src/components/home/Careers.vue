@@ -8,8 +8,7 @@
           </div>
           <div class="whycase g-color-white container col-md-8 offset-md-2">
             <h3 class="text-uppercase g-color-white" > <strong>Why Case?</strong></h3>
-            <br>
-            <p>
+            <p class="col-xl">
               <ul>
                 <li><strong>You do absolutely exceptional work, everyday.</strong></li>
                 <li>You have high standards and love to build great products</li>
@@ -20,10 +19,10 @@
                 <li>You want to build memorable and useful solutions that make an impact</li>
                 <li>You are <strong>experienced</strong> designing and implementing solutions for complex problems</li>
                 <li>This position requires a TS/SCI with poly (or suitability to acquire one)</li>
+                
               </ul>
             </p>
             <br>
-
           </div>
           <div class="container g-pb-30">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -259,10 +258,24 @@
                     </p>
                   </div>
                 </div>
-              </div><br/><br />
+              </div>
             </div>
           </div>
         </div>
+        <!-- Apply Button -->
+        <div class="container g-pb-30 col-xl-2">
+          <div class="text-center">
+             <router-link to="/intern" active-class="active" exact>
+                 <button id="promoSliderLayer7" class="tp-caption NotGeneric-CallToAction rev-btn rs-parallaxlevel-0" style="background-color: #E74C3C ; z-index: 9; font-weight: bold; white-space: nowrap; outline: none; box-shadow: none; box-sizing: border-box; text-transform: uppercase; border-width: 2px;"
+                   data-x="['center','center','center','center']" data-y="['middle','middle','middle','middle']" data-hoffset="['0','0','0','0']" data-voffset="['134','134','80','65']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;"
+                   data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);cursor:pointer;" data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeInOut;" data-transform_out="y:[175%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                   data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1250" data-splitin="none" data-splitout="none" data-actions='[{"event":"click","action":"scrollbelow","offset":"-90px"}]' data-responsive_offset="on" data-responsive="off">Apply Now
+                 </button>
+               </router-link>
+            </div>
+        </div>
+        <br>
+        <!-- End Apply Button  -->
       </section>
       <!-- End Section Content -->
 </template>
