@@ -27,7 +27,7 @@
           <img class="logos" src="/assets/custom/img/logos/NodeJS.png">
         </div>
         <div class="offset-1 d-flex align-items-center logos-mobile">
-          <img class="logos" src="/public/assets/custom/img/logos/Vue.png">
+          <img class="logos" src="/assets/custom/img/logos/Vue.png">
         </div>
       </div>
     </div>
