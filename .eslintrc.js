@@ -1,14 +1,21 @@
 module.exports = {
   root: true,
+  parserOptions: {
+    parser: "babel-eslint",
+    ecmaVersion: 8,
+    sourceType: 'module'
+  },
   env: {
+    es6: true,
+    browser: true,
+    jest: true,
     node: true
   },
-  extends: ["plugin:vue/essential", "@vue/prettier"],
+  extends: ['eslint:recommended', 'plugin:vue/essential', '@vue/prettier'],
   rules: {
+    // allow console during development
     "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
+    // allow debugger during development
     "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off"
-  },
-  parserOptions: {
-    parser: "babel-eslint"
   }
 };
