@@ -12,6 +12,7 @@
     >
       <app-home-navigation v-if="$route.path==='/'"></app-home-navigation>
       <app-intern-navigation v-if="$route.path==='/intern'"></app-intern-navigation>
+      <app-apply-navigation v-if="$route.path==='/apply-form'"></app-apply-navigation>
     </div>
   </header>
   <!-- End Header -->
@@ -20,11 +21,13 @@
 <script>
 import HomeNavigation from './Navigation';
 import InternNavigation from '../intern/Navigation.vue';
+import ApplyNavigation from '../ApplyForm/Navigation.vue';
 
 export default {
   components: {
     'app-home-navigation': HomeNavigation,
-    'app-intern-navigation': InternNavigation
+    'app-intern-navigation': InternNavigation,
+    'app-apply-navigation': ApplyNavigation
   }
 };
 </script>

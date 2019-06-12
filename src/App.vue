@@ -2,7 +2,7 @@
   <div id="app">
     <app-header></app-header>
     <router-view></router-view>
-    <app-contact></app-contact>
+    <app-contact v-if="$route.path==='/' || $route.path==='/intern'"></app-contact>
   </div>
 </template>
 

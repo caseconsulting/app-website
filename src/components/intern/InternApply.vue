@@ -19,7 +19,7 @@
           ></question>
           <div class="container g-pb-30 col-xl-2">
             <div class="text-center">
-              <router-link to="/intern" active-class="active" exact>
+              <router-link to="/apply-form" active-class="active" exact>
                 <button
                   id="promoSliderLayer7"
                   class="tp-caption NotGeneric-CallToAction rev-btn rs-parallaxlevel-0"

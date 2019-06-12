@@ -1,5 +1,6 @@
 import Intern from './components/intern/Intern.vue';
 import Home from './components/home/Home.vue';
+import ApplyForm from './components/ApplyForm/Form.vue';
 
 export const routes = [
   {
@@ -14,6 +15,13 @@ export const routes = [
     name: 'internship',
     components: {
       default: Intern
+    }
+  },
+  {
+    path: '/apply-form',
+    name: 'apply',
+    components: {
+      default: ApplyForm
     }
   },
   { path: '*', redirect: '/' }
