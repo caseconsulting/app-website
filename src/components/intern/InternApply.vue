@@ -40,7 +40,7 @@
                   data-start="1250"
                   data-splitin="none"
                   data-splitout="none"
-                  data-actions="[{"event":"click","action":"scrollbelow","offset":"-90px"}]"
+                  data-actions="[{'event':'click','action':'scrollbelow','offset':'-90px'}]"
                   data-responsive_offset="on"
                   data-responsive="off"
                 >Apply Now</button>
