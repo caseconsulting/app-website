@@ -7,12 +7,10 @@
           <div class="u-heading-v2-2--bottom g-brd-primary g-mb-20">
             <h2
               class="text-uppercase u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md"
-            >
-              Apply
-            </h2>
+            >Apply</h2>
           </div>
         </div>
-        <br />
+        <br>
         <div class="container">
           <question
             v-for="applyQuestion in applyQuestions"
@@ -42,25 +40,23 @@
                   data-start="1250"
                   data-splitin="none"
                   data-splitout="none"
-                  data-actions='[{"event":"click","action":"scrollbelow","offset":"-90px"}]'
+                  data-actions="[{"event":"click","action":"scrollbelow","offset":"-90px"}]"
                   data-responsive_offset="on"
                   data-responsive="off"
-                >
-                  Apply Now
-                </button>
+                >Apply Now</button>
               </router-link>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <br />
+    <br>
   </section>
 </template>
 
 <script>
-import applyData from "../../data/InternApply.js";
-import Question from "./Question.vue";
+import applyData from '../../data/InternApply.js';
+import Question from './Question.vue';
 
 export default {
   data: function() {

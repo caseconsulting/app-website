@@ -1,1 +1,1 @@
-export const ASSET_PATH = "../../../public";
+export const ASSET_PATH = '../../../public';

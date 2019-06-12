@@ -12,25 +12,25 @@
 </template>
 
 <script>
-import IntroSlide from "../IntroSlide";
-import About from "./About";
-import Benefits from "./Benefits";
-import Careers from "./Careers";
-import Internship from "./Internship";
-import Numbers from "./Numbers";
-import Awards from "./Awards";
-import Events from "./Events";
+import IntroSlide from '../IntroSlide';
+import About from './About';
+import Benefits from './Benefits';
+import Careers from './Careers';
+import Internship from './Internship';
+import Numbers from './Numbers';
+import Awards from './Awards';
+import Events from './Events';
 
 export default {
   components: {
-    "app-introSlide": IntroSlide,
-    "app-about": About,
-    "app-benefits": Benefits,
-    "app-careers": Careers,
-    "app-numbers": Numbers,
-    "app-awards": Awards,
-    "app-events": Events,
-    "app-intern": Internship
+    'app-introSlide': IntroSlide,
+    'app-about': About,
+    'app-benefits': Benefits,
+    'app-careers': Careers,
+    'app-numbers': Numbers,
+    'app-awards': Awards,
+    'app-events': Events,
+    'app-intern': Internship
   }
 };
 </script>

@@ -20,11 +20,13 @@
                     href="https://www.bizjournals.com/washington/news/2017/05/05/these-are-the-best-places-to-work-in-greater.html"
                     target="_blank"
                     rel="noopener"
-                    border="0">
+                    border="0"
+                  >
                     <img
                       src="../../../public/assets/custom/img/awards/2017_BPTW_HONOREE.png"
                       alt
-                      class="rounded-circle img-fluid mobile-image award-shadow">
+                      class="rounded-circle img-fluid mobile-image award-shadow"
+                    >
                   </a>
                 </div>
                 <div class="col-md-6 award-overlapped">
@@ -32,11 +34,13 @@
                     href="https://www.bizjournals.com/washington/news/2018/04/13/see-the-best-places-to-work-in-greater-washington.html"
                     target="_blank"
                     rel="noopener"
-                    border="0">
+                    border="0"
+                  >
                     <img
                       src="../../../public/assets/custom/img/awards/2018_BPTW_HONOREE.png"
                       alt
-                      class="rounded-circle img-fluid mobile-image award-shadow">
+                      class="rounded-circle img-fluid mobile-image award-shadow"
+                    >
                   </a>
                 </div>
                 <div class="col-md-6 award-overlapped-second">
@@ -44,11 +48,13 @@
                     href="https://www.bizjournals.com/washington/subscriber-only/2019/05/17/best-places-to-work-medium-companies.html"
                     target="_blank"
                     rel="noopener"
-                    border="0">
+                    border="0"
+                  >
                     <img
                       src="../../../public/assets/custom/img/awards/bptw2019.jpg"
                       alt
-                      class="rounded-circle img-fluid mobile-image award-shadow">
+                      class="rounded-circle img-fluid mobile-image award-shadow"
+                    >
                   </a>
                 </div>
               </div>

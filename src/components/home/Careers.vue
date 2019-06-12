@@ -439,13 +439,11 @@
             data-actions="[{'event':'click','action':'scrollbelow','offset':'-90px'}]"
             data-responsive_offset="on"
             data-responsive="off"
-          >
-            Apply Now
-          </button>
+          >Apply Now</button>
         </router-link>
       </div>
     </div>
-    <br />>
+    <br>>
     <!-- End Apply Button  -->
   </section>
   <!-- End Section Content -->

@@ -1,18 +1,13 @@
 <template>
   <div>
     <!-- Internship Section Content -->
-    <section
-      id="intern"
-      class="g-text-color-2 no-column-space intern-background"
-    >
+    <section id="intern" class="g-text-color-2 no-column-space intern-background">
       <div class="container-fluid">
         <div class="container text-center g-max-width-750 g-mb-20 g-pt-70">
           <div class="u-heading-v2-2--bottom g-brd-primary g-mb-20">
             <h2
               class="text-uppercase u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md g-color-white"
-            >
-              Summer Internship
-            </h2>
+            >Summer Internship</h2>
           </div>
           <p class="g-color-white">
             Summer Internships take place from May to August in the Make Offices
@@ -53,12 +48,10 @@
                 data-start="1250"
                 data-splitin="none"
                 data-splitout="none"
-                data-actions='[{"event":"click","action":"scrollbelow","offset":"-90px"}]'
+                data-actions="[{"event":"click","action":"scrollbelow","offset":"-90px"}]"
                 data-responsive_offset="on"
                 data-responsive="off"
-              >
-                Learn More
-              </button>
+              >Learn More</button>
             </router-link>
           </div>
           <!-- </div> -->
