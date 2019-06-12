@@ -47,22 +47,6 @@
     <!-- <link rel="shortcut icon" type="image/png" href="/assets/custom/img/case/navLogo.png" /> -->
   </head>
   <body>
-    <main class="g-pt-65 g-pt-90--md">
-      <div id="app"></div>
-
-      <a
-        class="js-go-to rounded-0 u-go-to-v1"
-        href="#! "
-        data-type="fixed "
-        data-position='{ "bottom ": 15, "right ": 15 }'
-        data-offset-top="400 "
-        data-compensation="#js-header"
-        data-show-effect="zoomIn "
-      >
-        <i class="hs-icon hs-icon-arrow-top "></i>
-      </a>
-    </main>
-
     <!-- JS Global Compulsory -->
     <script src="/assets/vendor/jquery/jquery.min.js "></script>
     <script src="/assets/vendor/jquery-migrate/jquery-migrate.min.js "></script>
@@ -84,7 +68,7 @@
     <script src="/assets/vendor/revolution-slider/revolution-addons/slicey/js/revolution.addon.slicey.min.js"></script>
     <script src="/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.actions.min.js "></script>
 
-    <!--<script src="./assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.carousel.min.js "></script>-->
+    <script src="./assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.carousel.min.js "></script>
     <script src="/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.kenburn.min.js "></script>
     <script src="/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.layeranimation.min.js "></script>
     <script src="/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.migration.min.js "></script>
@@ -102,9 +86,24 @@
     <script src="/assets/vendor/unity/js/components/hs.scroll-nav.js "></script>
     <script src="/assets/vendor/unity/js/components/hs.carousel.js "></script>
     <script src="/assets/vendor/unity/js/components/hs.go-to.js "></script>
-    <!-- JS Customization
-      <script src="./assets/js/custom.js "></script>
-      -->
+    <!-- JS Customization -->
+    <!-- <script src="/assets/js/custom.js "></script> -->
+
     <!-- JS Plugins Init. -->
+    <main class="g-pt-65 g-pt-90--md">
+      <div id="app"></div>
+
+      <a
+        class="js-go-to rounded-0 u-go-to-v1"
+        href="#! "
+        data-type="fixed "
+        data-position='{ "bottom ": 15, "right ": 15 }'
+        data-offset-top="400 "
+        data-compensation="#js-header"
+        data-show-effect="zoomIn "
+      >
+        <i class="hs-icon hs-icon-arrow-top "></i>
+      </a>
+    </main>
   </body>
 </html>
