@@ -18,16 +18,16 @@
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="d-flex align-items-center logos-mobile">
-          <img class="logos" src="../../../public/assets/custom/img/logos/AWS.png">
+          <img class="logos" src="/assets/custom/img/logos/AWS.png">
         </div>
         <div class="offset-1 d-flex align-items-center logos-mobile">
-          <img class="logos" src="../../../public/assets/custom/img/logos/Javascript.png">
+          <img class="logos" src="/assets/custom/img/logos/Javascript.png">
         </div>
         <div class="offset-1 d-flex align-items-center logos-mobile">
-          <img class="logos" src="../../../public/assets/custom/img/logos/NodeJS.png">
+          <img class="logos" src="/assets/custom/img/logos/NodeJS.png">
         </div>
         <div class="offset-1 d-flex align-items-center logos-mobile">
-          <img class="logos" src="../../../public/assets/custom/img/logos/Vue.png">
+          <img class="logos" src="/public/assets/custom/img/logos/Vue.png">
         </div>
       </div>
     </div>

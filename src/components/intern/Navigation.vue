@@ -5,7 +5,7 @@
       <a href="./index.html" class="navbar-brand u-header__logo" data-type="static">
         <img
           class="u-header__logo-img u-header__logo-img--main g-width-110"
-          src="../../../public/assets/custom/img/case/logo-banner.gif"
+          src="/assets/custom/img/case/logo-banner.gif"
           alt="Case Consulting, Inc."
         >
       </a>
@@ -20,17 +20,24 @@
           <a class="nav-link p-0">Home</a>
           </router-link>-->
 
+          <router-link tag="li" to="/" class="g-mr-30--lg g-mb-7 g-mb-0--lg" active-class="active">
+            <a class="nav-link p-0">Home</a>
+          </router-link>
           <li
             v-for="section in Sections"
             :key="section.name"
             class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg"
           >
-            <a :href="section.ref" class="nav-link p-0">{{ section.name }}</a>
+            <a
+              v-if="section.name !== 'Home'"
+              :href="section.ref"
+              class="nav-link p-0"
+            >{{ section.name }}</a>
           </li>
         </ul>
         <a class="navbar-brand u-header__log">
           <img
-            src="../../../public/assets/custom/img/awards/2018_BPTW_logo_C1.png"
+            src="/assets/custom/img/awards/2018_BPTW_logo_C1.png"
             alt="Best places to work 2018 logo"
             class="nav-pad"
           >
@@ -63,10 +70,10 @@ export default {
   data: function() {
     return {
       Sections: [
-        {
-          name: 'Home',
-          ref: '/'
-        },
+        // {
+        //   name: 'Home',
+        //   ref: '/'
+        // },
         {
           name: 'About',
           ref: '#about'
