@@ -130,7 +130,7 @@
             data-start="1250"
             data-splitin="none"
             data-splitout="none"
-            data-actions="[{'event':'click','action':'scrollbelow','offset':'-90px'}]"
+            :data-actions="dataActions"
             data-responsive_offset="on"
             data-responsive="off"
           >Learn More</div>
@@ -151,7 +151,8 @@ export default {
   data: function() {
     return {
       homeSlider: HomeSlider,
-      internSlider: InternSlider
+      internSlider: InternSlider,
+      dataActions: '[{ "event": "click", "action": "scrollbelow", "offset": "-90px" }]'
     };
   },
   computed: {
