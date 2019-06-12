@@ -146,7 +146,7 @@
  <script>
 import HomeSlider from '../data/HomeSlider.js';
 import InternSlider from '../data/InternSlider.js';
-
+import * as HSCore from './hs.scroll-nav';
 export default {
   data: function() {
     return {
@@ -216,13 +216,6 @@ export default {
 
       // initialization of go to section
       $.HSCore.components.HSGoTo.init('.js-go-to');
-    });
-
-    $(window).on('load', function() {
-      // initialization of HSScrollNav
-      $.HSCore.components.HSScrollNav.init($('#js-scroll-nav'), {
-        duration: 700
-      });
     });
   }
 };
