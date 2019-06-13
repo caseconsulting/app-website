@@ -371,6 +371,7 @@ a:active {
 .event-images {
   max-height: 300px;
   width: auto;
+  object-fit: cover;
 }
 
 h5 strong a {
