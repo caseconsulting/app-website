@@ -73,6 +73,19 @@ body {
   margin-top: 75px;
 }
 @media only screen and (max-width: 767px) {
+  /* Internship page formatted for iphone (show button) */
+  .intern-background {
+    /* The image used */
+    background-image: url('../img/office/kitchen_edit.jpg');
+    /* Set a specific height */
+    height: 800px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .mobile-image {
     max-height: 125px;
   }
@@ -542,7 +555,8 @@ h5 strong a:hover {
   /* The image used */
   background-image: url('../img/office/kitchen_edit.jpg');
   /* Set a specific height */
-  height: 700px;
+  padding-bottom: 200px;
+  /* height: 700px; */
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;

@@ -443,7 +443,7 @@
         </router-link>
       </div>
     </div>
-    <br>>
+    <br>
     <!-- End Apply Button  -->
   </section>
   <!-- End Section Content -->
