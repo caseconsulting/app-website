@@ -8,7 +8,7 @@
       </div>
     </div>
 
-    <div>
+    <div class="container">
       <form class="form-horizontal" action="/action_page.php">
         <div class="form-group">
           <label class="control-label col-sm-2" for="name">First Name:</label>
