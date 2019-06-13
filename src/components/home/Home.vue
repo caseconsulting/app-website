@@ -31,6 +31,9 @@ export default {
     'app-awards': Awards,
     'app-events': Events,
     'app-intern': Internship
+  },
+  mounted() {
+    window.scrollTo(0, 0);
   }
 };
 </script>

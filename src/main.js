@@ -4,8 +4,10 @@ import App from './App.vue';
 // import router from "./router";
 import store from './store';
 import { routes } from './routes';
+//import * as HSCore from './assets/vendor/unity/js/hs.core';
 
 Vue.use(VueRouter);
+//Vue.use(HSCore);
 
 const router = new VueRouter({
   routes,

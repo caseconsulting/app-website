@@ -27,6 +27,9 @@ export default {
     'intern-apply': InternApply,
     'intern-faq': FAQ,
     'intern-testimonials': Testimonials
+  },
+  mounted() {
+    window.scrollTo(0, 0);
   }
 };
 </script>
