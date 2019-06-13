@@ -31,10 +31,10 @@
               <!--Intern at top of slide -->
               <div class="row">
                 <div class="col-md-2" style="text-align:center">
-                  <img :src="test.intern1.image" class="rounded-circle potrait">
+                  <img :src="test.intern1.image" class="rounded-circle potrait test-img">
                 </div>
                 <div class="col-md-10">
-                  <p class="g-color-white" style="text-align:justify;">
+                  <p class="g-color-white test-par" style="text-align:justify;">
                     "{{test.intern1.quote[0]}}"
                     <template>
                       <div style="text-align:right;">- {{test.intern1.name}}</div>
@@ -43,9 +43,9 @@
                 </div>
               </div>
               <!--Intern at bottom of slide only displays if second intern is indicated on page -->
-              <div v-if="test.intern2" class="row" style="margin-top:75px;">
+              <div v-if="test.intern2" class="row test-row">
                 <div class="col-md-10">
-                  <p class="g-color-white" style="text-align:justify;">
+                  <p class="g-color-white test-par" style="text-align:justify;">
                     "{{test.intern2.quote[0]}}"
                     <template>
                       <div style="text-align:right;">- {{test.intern2.name}}</div>
@@ -55,7 +55,7 @@
                 <div class="col-md-2 order-md-2" style="text-align:center">
                   <img
                     :src="test.intern2.image"
-                    class="rounded-circle potrait"
+                    class="rounded-circle potrait test-image"
                     style="text-align:center"
                   >
                 </div>
