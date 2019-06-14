@@ -61,43 +61,48 @@
           </div>
         </div>
         <br>
-        <div class="form-group">
-          <div class="col-xl-12">
-            <label class="control-label" for="uploadResume">Upload Resume</label>
-            <b-form-file
-              v-model="file"
-              :state="Boolean(file)"
-              placeholder="Choose a file..."
-              drop-placeholder="Drop file here..."
-            ></b-form-file>
-            <div class="mt-3">Selected file: {{ file ? file.name : '' }}</div>
-          </div>
-        </div>
-        <br>
-        <div class="form-group">
-          <div class="col-xl-12">
-            <label class="control-label" for="comments">Comments:</label>
-            <textarea class="form-control" rows="5" placeholder="Comments" id="comments"></textarea>
-          </div>
-        </div>
-        <br>
-        <div class="form-group">
-          <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-success">Submit</button>
-          </div>
-        </div>
       </form>
+      <div>
+        <div class="col-xl-12">
+          <label class="control-label" for="uploadResume">Upload Resume</label>
+          <vue-dropzone
+            ref="dropzone"
+            id="drop1"
+            :options="dropOptions"
+            @vdropzone-thumbnail="vfileAdded"
+          ></vue-dropzone>
+          <br>
+          <button class="btn btn-default" @click="removeAllFiles">Remove All Files</button>
+
+          <p v-for="file in files" :key="file">{{file}}</p>
+        </div>
+      </div>
+      <br>
+      <div>
+        <div class="col-xl-12">
+          <label class="control-label" for="comments">Comments:</label>
+          <textarea class="form-control" rows="5" placeholder="Comments" id="comments"></textarea>
+        </div>
+      </div>
+      <br>
+      <div>
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+      </div>
     </div>
   </section>
 </template>
 <script>
 import Multiselect from 'vue-multiselect';
 import { BFormFile } from 'bootstrap-vue';
+import vueDropzone from 'vue2-dropzone';
 
 export default {
   components: {
     Multiselect,
-    BFormFile
+    BFormFile,
+    vueDropzone
   },
   data() {
     return {
@@ -114,10 +119,34 @@ export default {
       ],
       hearAboutUs: null,
       hearOptions: ['Website', 'LinkedIn', 'Facebook', 'Indeed', 'Glassdoor', 'Referral', 'Other'],
-      file: null
+      files: [],
+      dropOptions: {
+        url: 'https://httpbin.org/post',
+        maxFilesize: 2,
+        maxFiles: 4,
+        chunking: true,
+        chunkSize: 500,
+        thumbnailWidth: 150,
+        thumbnailHeight: 150
+      }
     };
+  },
+  methods: {
+    removeAllFiles() {
+      this.$refs.dropzone.removeAllFiles();
+      this.files = [];
+    },
+    try() {
+      return false;
+    },
+    vfileAdded(file) {
+      console.log(file.name);
+      console.log(file.dataURL);
+      this.files.push(file.name);
+    }
   }
 };
 </script>
 
 <style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
+<style src="vue2-dropzone/dist/vue2Dropzone.min.css"></style>
