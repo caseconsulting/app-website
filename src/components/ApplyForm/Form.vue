@@ -1,5 +1,5 @@
 <template>
-  <section id="events" class="g-theme-bg-gray-light-v1 g-py-50">
+  <section id="apply" class="g-theme-bg-gray-light-v1 g-py-50">
     <div class="applyForm container col-sm-8 col-xl-6 col-lg-8 col-xs-9">
       <div class="container text-center g-max-width-750 g-mb-20 g-pt-10 g-pb-10">
         <div class="u-heading-v2-2--bottom g-brd-primary g-mb-20">
@@ -87,7 +87,7 @@
       <br>
       <div>
         <div class="col-sm-offset-2 col-sm-10">
-          <button type="submit" class="btn btn-success">Submit</button>
+          <button type="submit" class="btn btn-primary" style="opacity: 0.8;">Submit</button>
         </div>
       </div>
     </div>
@@ -95,13 +95,13 @@
 </template>
 <script>
 import Multiselect from 'vue-multiselect';
-import { BFormFile } from 'bootstrap-vue';
+// import { BFormFile } from 'bootstrap-vue';
 import vueDropzone from 'vue2-dropzone';
 
 export default {
   components: {
     Multiselect,
-    BFormFile,
+    // BFormFile,
     vueDropzone
   },
   data() {
