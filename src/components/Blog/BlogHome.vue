@@ -1,22 +1,24 @@
 <template>
   <section id="blogHome">
-    <label for="search">Title Search:</label>
-    <input type="text" id="title" placeholder="Blog Title" />
-    <label for="search">Tag Search:</label>
-    <input type="text" id="tag" placeholder="#tags" />
-
     <!-- Search Bar from https://bootsnipp.com/snippets/GaeQR -->
     <div class="container h-100">
       <div class="d-flex justify-content-center h-100">
         <div class="searchbar">
-          <input class="search_input" type="text" v-model="filterText" placeholder="Search Title..." />
-          <button href="#" class="search_icon"><i class="fas fa-search"></i></button>
+          <input
+            class="search_input"
+            type="text"
+            @keydown.enter="filterText = inputedText"
+            v-model="inputedText"
+            placeholder="Search Title..."
+          />
+          <button href="#" @click="filterText = inputedText" class="search_icon"><i class="fas fa-search"></i></button>
         </div>
       </div>
     </div>
     <!-- end search bar -->
 
-    <blog-post v-for="post in dataPosts" :key="post.title" :post="post"></blog-post>
+    <blog-post v-for="post in filteredPosts" :key="post.title" :post="post"></blog-post>
+    <h3 v-if="!filteredPosts.length">No results match search</h3>
   </section>
 </template>
 
@@ -28,27 +30,29 @@ export default {
   data: function() {
     return {
       dataPosts: dataPosts,
+      inputedText: '',
       filterText: ''
     };
   },
   components: {
     'blog-post': blogPost
   },
-  methods: {
-    find: (items, text) => {
-      text = text.split(' ');
-      return items.filter(function(item) {
+  computed: {
+    filteredPosts() {
+      let f = this.filterText;
+      let text = f.toLowerCase().split(' ');
+      return dataPosts.filter(function(item) {
         return text.every(function(el) {
-          return item.content.indexOf(el) > -1;
+          return item.title.toLowerCase().indexOf(el) > -1;
         });
       });
     }
   },
-  computed: {
-    filteredPosts() {
-      return this.dataPosts.filter(element => {
-        return element.Title(this.filterText);
-      });
+  watch: {
+    inputedText: function() {
+      if (!this.inputedText.length) {
+        this.filterText = '';
+      }
     }
   }
 };
