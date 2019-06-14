@@ -1,6 +1,6 @@
 <template>
   <section id="events" class="g-theme-bg-gray-light-v1 g-py-50">
-    <div class="applyForm container col-sm-8">
+    <div class="applyForm container col-sm-8 col-xl-6 col-lg-8 col-xs-9">
       <div class="container text-center g-max-width-750 g-mb-20 g-pt-10 g-pb-10">
         <div class="u-heading-v2-2--bottom g-brd-primary g-mb-20">
           <h2
@@ -60,18 +60,30 @@
             ></textarea>
           </div>
         </div>
+        <br>
         <div class="form-group">
-          <div class="col-sm-offset-2 col-sm-10">
-            <div class="checkbox">
-              <label>
-                <input type="checkbox"> Remember me
-              </label>
-            </div>
+          <div class="col-xl-12">
+            <label class="control-label" for="uploadResume">Upload Resume</label>
+            <b-form-file
+              v-model="file"
+              :state="Boolean(file)"
+              placeholder="Choose a file..."
+              drop-placeholder="Drop file here..."
+            ></b-form-file>
+            <div class="mt-3">Selected file: {{ file ? file.name : '' }}</div>
           </div>
         </div>
+        <br>
+        <div class="form-group">
+          <div class="col-xl-12">
+            <label class="control-label" for="comments">Comments:</label>
+            <textarea class="form-control" rows="5" placeholder="Comments" id="comments"></textarea>
+          </div>
+        </div>
+        <br>
         <div class="form-group">
           <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="submit" class="btn btn-success">Submit</button>
           </div>
         </div>
       </form>
@@ -80,10 +92,12 @@
 </template>
 <script>
 import Multiselect from 'vue-multiselect';
+import { BFormFile } from 'bootstrap-vue';
 
 export default {
   components: {
-    Multiselect
+    Multiselect,
+    BFormFile
   },
   data() {
     return {
@@ -99,7 +113,8 @@ export default {
         'Other'
       ],
       hearAboutUs: null,
-      hearOptions: ['Website', 'LinkedIn', 'Facebook', 'Indeed', 'Glassdoor', 'Referral', 'Other']
+      hearOptions: ['Website', 'LinkedIn', 'Facebook', 'Indeed', 'Glassdoor', 'Referral', 'Other'],
+      file: null
     };
   }
 };
