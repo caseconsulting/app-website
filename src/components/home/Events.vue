@@ -9,96 +9,90 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-sm-10 offset-sm-1">
-        <div class="card-deck g-mx-20 g-my-20">
-          <div class="card">
-            <img
-              class="event-images"
-              src="https://res.cloudinary.com/consultwithcase/image/upload/v1559827387/website/Screen_Shot_2019-06-06_at_9.21.52_AM.png"
-              alt="2019 RailsConf"
-            >
-            <div class="card-body">
-              <h4 class="card-title">
-                <a
-                  href="https://photos.app.goo.gl/KGfxABoykFm1SkBn8"
-                  target="_blank"
-                  rel="noopener"
-                >2019 RailsConf</a>
-              </h4>
-              <p
-                class="card-text"
-              >Two of our employees learned a lot at the RailsConf in Minneapolis, MN this year!</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <img
-              class="event-images"
-              src="https://res.cloudinary.com/consultwithcase/image/upload/v1559827815/website/Screen_Shot_2019-06-06_at_9.28.59_AM.png"
-              alt="2019 Wreaths Across America"
-            >
-            <div class="card-body">
-              <h4 class="card-title">
-                <a
-                  href="https://photos.app.goo.gl/UUa7owWyjw1LbQSq9"
-                  target="_blank"
-                  rel="noopener"
-                >2019 Wreaths Across America</a>
-              </h4>
-              <p class="card-text">
-                On January 19, several employees helped clean-up wreaths at Arlington National Cemetery as part of the Wreaths Across America program.
-                Case employees were more than happy to put in a little work to honor those that are laid to rest in Arlington.
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <img
-              class="event-images"
-              src="https://res.cloudinary.com/consultwithcase/image/upload/v1559835731/website/Screen_Shot_2019-06-06_at_11.41.44_AM.png"
-              alt="2018 Holiday Party"
-            >
-            <div class="card-body">
-              <h4 class="card-title">
-                <a
-                  href="https://photos.app.goo.gl/ZsHRWrR6HXBvmZwr7"
-                  target="_blank"
-                  rel="noopener"
-                >2018 Holiday Party</a>
-              </h4>
-              <p
-                class="card-text"
-              >Employees and their loved ones had a great time at our annual holiday party! This year the party was held at Top Golf and featured an evening of giving, food, golf, and fun.</p>
-            </div>
+    <div class="col-sm-10 offset-sm-1">
+      <div class="card-deck g-mx-20 g-my-20">
+        <div class="card">
+          <img
+            class="event-images"
+            src="https://res.cloudinary.com/consultwithcase/image/upload/v1559827387/website/Screen_Shot_2019-06-06_at_9.21.52_AM.png"
+            alt="2019 RailsConf"
+          >
+          <div class="card-body">
+            <h4 class="card-title">
+              <a
+                href="https://photos.app.goo.gl/KGfxABoykFm1SkBn8"
+                target="_blank"
+                rel="noopener"
+              >2019 RailsConf</a>
+            </h4>
+            <p
+              class="card-text"
+            >Two of our employees learned a lot at the RailsConf in Minneapolis, MN this year!</p>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="collapse" id="collapseEvents">
-      <div class="col-sm-10 offset-sm-1">
-        <div class="card-deck g-mx-20 g-my-20">
-          <div class="card">
-            <img
-              class="event-images"
-              src="https://res.cloudinary.com/consultwithcase/image/upload/v1559835314/website/Screen_Shot_2019-06-06_at_11.34.50_AM.png"
-              alt="2018 Family Picnic"
-            >
-            <div class="card-body">
-              <h4 class="card-title">
-                <a
-                  href="https://photos.app.goo.gl/PgjqwnBVNV57PkEr6"
-                  target="_blank"
-                  rel="noopener"
-                >2018 Family Picnic</a>
-              </h4>
-              <p
-                class="card-text"
-              >Another awesome family picnic for the books! Our employees and their families had a great time enjoying the face painting, ponies, and bounce house.</p>
-            </div>
+        <div class="card">
+          <img
+            class="event-images"
+            src="https://res.cloudinary.com/consultwithcase/image/upload/v1559827815/website/Screen_Shot_2019-06-06_at_9.28.59_AM.png"
+            alt="2019 Wreaths Across America"
+          >
+          <div class="card-body">
+            <h4 class="card-title">
+              <a
+                href="https://photos.app.goo.gl/UUa7owWyjw1LbQSq9"
+                target="_blank"
+                rel="noopener"
+              >2019 Wreaths Across America</a>
+            </h4>
+            <p class="card-text">
+              On January 19, several employees helped clean-up wreaths at Arlington National Cemetery as part of the Wreaths Across America program.
+              Case employees were more than happy to put in a little work to honor those that are laid to rest in Arlington.
+            </p>
           </div>
+        </div>
 
+        <div class="card">
+          <img
+            class="event-images"
+            src="https://res.cloudinary.com/consultwithcase/image/upload/v1559835731/website/Screen_Shot_2019-06-06_at_11.41.44_AM.png"
+            alt="2018 Holiday Party"
+          >
+          <div class="card-body">
+            <h4 class="card-title">
+              <a
+                href="https://photos.app.goo.gl/ZsHRWrR6HXBvmZwr7"
+                target="_blank"
+                rel="noopener"
+              >2018 Holiday Party</a>
+            </h4>
+            <p
+              class="card-text"
+            >Employees and their loved ones had a great time at our annual holiday party! This year the party was held at Top Golf and featured an evening of giving, food, golf, and fun.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            class="event-images"
+            src="https://res.cloudinary.com/consultwithcase/image/upload/v1560516962/website/Screen_Shot_2019-06-14_at_8.51.40_AM.png"
+            alt="2018 Family Picnic"
+          >
+          <div class="card-body">
+            <h4 class="card-title">
+              <a
+                href="https://photos.app.goo.gl/PgjqwnBVNV57PkEr6"
+                target="_blank"
+                rel="noopener"
+              >2018 Family Picnic</a>
+            </h4>
+            <p
+              class="card-text"
+            >Another awesome family picnic for the books! Our employees and their families had a great time enjoying the face painting, ponies, and bounce house.</p>
+          </div>
+        </div>
+
+        <div class="demo collapse">
           <div class="card">
             <img
               class="event-images"
@@ -118,7 +112,9 @@
               >Many employees ran in the 2018 Leesburg 5k/20k race. We also had a really fun design for the race shirt thanks to the daughter of a Case Employee!</p>
             </div>
           </div>
+        </div>
 
+        <div class="demo collapse">
           <div class="card">
             <img
               class="event-images"
@@ -138,7 +134,9 @@
               >We had an awesome summer with our interns which included several presentations to the company, seeing Solo: A Star Wars Story, taking in a D.C. United game in a downpour, and some Top Golf!</p>
             </div>
           </div>
+        </div>
 
+        <div class="demo collapse">
           <div class="card">
             <img
               class="event-images"
@@ -158,7 +156,9 @@
               >We got the internship kicked off with a company movie event to see Solo: A Star Wars Story.</p>
             </div>
           </div>
+        </div>
 
+        <div class="demo collapse">
           <div class="card">
             <img
               class="event-images"
@@ -178,7 +178,9 @@
               >Employees and loved ones enjoyed a night of bocce, bowling, food, and drinks at Pinstripes in Georgetown.</p>
             </div>
           </div>
+        </div>
 
+        <div class="demo collapse">
           <div class="card">
             <img
               class="event-images"
@@ -198,7 +200,9 @@
               >This year we had a record number of employees go to AWS re:Invent in Las Vegas!</p>
             </div>
           </div>
+        </div>
 
+        <div class="demo collapse">
           <div class="card">
             <img
               class="event-images"
@@ -218,7 +222,9 @@
               >We always have a good time getting together with each other and our families. This year we had ponies, a bounce house, face painting, and a whole lot of fun! Thanks to everyone for coming out!</p>
             </div>
           </div>
+        </div>
 
+        <div class="demo collapse">
           <div class="card">
             <img
               class="event-images"
@@ -238,7 +244,9 @@
               >Several employees attended the Virginia Tech Computer Science Resources Consortium Career Fair in search of another group of interns for the Summer of 2018!</p>
             </div>
           </div>
+        </div>
 
+        <div class="demo collapse">
           <div class="card">
             <img
               class="event-images"
@@ -258,7 +266,9 @@
               >Big changes for Case Consulting in 2017 as we moved to new offices and embarked on our inaugural Summer Internship program!</p>
             </div>
           </div>
+        </div>
 
+        <div class="demo collapse">
           <div class="card">
             <img
               class="event-images"
@@ -278,7 +288,9 @@
               >Several of our employees attended the Washington Business Journal's 2017 Best Places to Work ceremony in Washington D.C.</p>
             </div>
           </div>
+        </div>
 
+        <div class="demo collapse">
           <div class="card">
             <img
               class="event-images"
@@ -298,7 +310,9 @@
               >Employees always have a good time at our monthly game nights in our wonderful office space.</p>
             </div>
           </div>
+        </div>
 
+        <div class="demo collapse">
           <div class="card">
             <img
               class="event-images"
@@ -318,7 +332,9 @@
               >Two of our employees learned a lot while taking in some of the sights at Serverless Conf in Austin, Texas!</p>
             </div>
           </div>
+        </div>
 
+        <div class="demo collapse">
           <div class="card">
             <img
               class="event-images"
@@ -338,7 +354,9 @@
               >Employees and their loved ones had a great time at our annual holiday party. This year the party was held at Stone Tower Winery in Leesburg and featured an evening of giving, food, poker, and fun.</p>
             </div>
           </div>
+        </div>
 
+        <div class="demo collapse">
           <div class="card">
             <img
               class="event-images"
@@ -358,7 +376,9 @@
               >Our annual Summer picnic is always a blast for employees and their families and this year was no different. The kids (and some adults) enjoyed the inflatable obstacle course and face painting.</p>
             </div>
           </div>
+        </div>
 
+        <div class="demo collapse">
           <div class="card">
             <img
               class="event-images"
@@ -378,7 +398,9 @@
               >Case Consulting was well represented at AWS re:Invent this year. Employees enjoyed all of the talks and after-hours events and can't wait to go back next year.</p>
             </div>
           </div>
+        </div>
 
+        <div class="demo collapse">
           <div class="card">
             <img
               class="event-images"
@@ -398,7 +420,9 @@
               >The force is strong with us as we watched Rogue One at the Alamo Drafthouse.</p>
             </div>
           </div>
+        </div>
 
+        <div class="demo collapse">
           <div class="card">
             <img
               class="event-images"
@@ -418,7 +442,9 @@
               >Employees and their loved ones enjoyed a night out at Salamander Resort and Spa to celebrate the holiday season.</p>
             </div>
           </div>
+        </div>
 
+        <div class="demo collapse">
           <div class="card">
             <img
               class="event-images"
@@ -443,6 +469,31 @@
     </div>
 
     <div class="text-center">
+      <button
+        type="button"
+        class="btn btn-primary btn-lg"
+        data-toggle="collapse"
+        data-target=".demo"
+      >Simple collapsible</button>
+    </div>
+
+    <div class="text-center">
+      <a
+        type="button"
+        class="btn btn-primary btn-lg"
+        data-toggle="collapse"
+        data-target=".demo"
+        aria-controls="collapseEvents"
+      >
+        <span class="collapsed">
+          <i class="fas fa-chevron-down"></i>
+        </span>
+        <span class="expanded">
+          <i class="fas fa-chevron-up"></i>
+        </span>
+      </a>
+    </div>
+    <!-- <div class="text-center">
       <a
         href="#collapseEvents"
         class="btn btn-primary btn-lg collapseButton"
@@ -457,7 +508,7 @@
           <i class="fas fa-chevron-up"></i>
         </span>
       </a>
-    </div>
+    </div>-->
     <!-- Row End -->
   </section>
   <!-- End Section Content -->
