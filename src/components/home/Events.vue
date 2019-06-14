@@ -467,7 +467,7 @@
         </div>
       </div>
     </div>
-
+    <!-- 
     <div class="text-center">
       <button
         type="button"
@@ -475,7 +475,7 @@
         data-toggle="collapse"
         data-target=".demo"
       >Simple collapsible</button>
-    </div>
+    </div>-->
 
     <div class="text-center">
       <a
