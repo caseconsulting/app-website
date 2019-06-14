@@ -501,7 +501,7 @@
         aria-expanded="false"
         aria-controls="collapseEvents"
       >
-        <span class="collapsed">
+        <span class="collapsed"> 
           <i class="fas fa-chevron-down"></i>
         </span>
         <span class="expanded">
