@@ -10,28 +10,32 @@
       </div>
 
       <form class="form-horizontal" action="/action_page.php">
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="name">First Name:</label>
-          <div class="col-sm-6">
-            <input type="name" class="form-control" id="firstName" placeholder="First Name">
+        <div class="row">
+          <div class="col">
+            <div class="col">
+              <label class="control-label" for="name">First Name:</label>
+              <input type="name" class="form-control" id="firstName" placeholder="First Name">
+            </div>
+          </div>
+          <div class="col">
+            <div class="col">
+              <label class="control-label" for="name">Last Name:</label>
+              <input type="name" class="form-control" id="lastName" placeholder="Last Name">
+            </div>
           </div>
         </div>
+        <br>
         <div class="form-group">
-          <label class="control-label col-sm-2" for="name">Last Name:</label>
-          <div class="col-sm-6">
-            <input type="name" class="form-control" id="lastName" placeholder="Last Name">
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="email">Email:</label>
-          <div class="col-sm-6">
+          <div class="col-xl-12">
+            <label class="control-label" for="email">Email:</label>
             <input type="email" class="form-control" id="email" placeholder="Enter email">
           </div>
         </div>
+        <br>
         <div class="form-group">
-          <label class="control-label col-sm-2" for="email">Email:</label>
-          <div class="col-sm-6">
-            <input type="email" class="form-control" id="email" placeholder="Enter email">
+          <div class="col-xl-12">
+            <label class="control-label" for="job">Job-Titles:</label>
+            <multiselect v-model="jobTitles" :options="options" :multiple="true" id="job"></multiselect>
           </div>
         </div>
         <div class="form-group">
@@ -52,3 +56,29 @@
     </div>
   </section>
 </template>
+<script>
+import Multiselect from 'vue-multiselect';
+
+export default {
+  components: {
+    Multiselect
+  },
+  data() {
+    return {
+      jobTitles: null,
+      options: [
+        'Software Developer',
+        'Project Manager',
+        'System Engineer',
+        'Cloud Engineer',
+        'Data Scientist',
+        'Quality Assurance/Tester',
+        'Intern',
+        'Other'
+      ]
+    };
+  }
+};
+</script>
+
+<style src="vue-multiselect/dist/vue-multiselect.min.css"></style>

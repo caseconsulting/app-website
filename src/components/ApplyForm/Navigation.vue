@@ -23,7 +23,7 @@
           <router-link tag="li" to="/" class="g-mr-30--lg g-mb-7 g-mb-0--lg" active-class="active">
             <a class="nav-link p-0">Home</a>
           </router-link>
-          <li
+          <!-- <li
             v-for="section in Sections"
             :key="section.name"
             class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg"
@@ -33,7 +33,7 @@
               :href="section.ref"
               class="nav-link p-0"
             >{{ section.name }}</a>
-          </li>
+          </li>-->
         </ul>
         <a class="navbar-brand u-header__log">
           <img
