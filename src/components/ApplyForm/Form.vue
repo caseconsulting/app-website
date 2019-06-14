@@ -35,7 +35,29 @@
         <div class="form-group">
           <div class="col-xl-12">
             <label class="control-label" for="job">Job-Titles:</label>
-            <multiselect v-model="jobTitles" :options="options" :multiple="true" id="job"></multiselect>
+            <multiselect v-model="jobTitles" :options="jobOptions" :multiple="true" id="job"></multiselect>
+            <br v-if="jobTitles && jobTitles.includes('Other')">
+            <textarea
+              v-if="jobTitles && jobTitles.includes('Other')"
+              class="form-control"
+              rows="5"
+              placeholder="Other"
+              id="other"
+            ></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-xl-12">
+            <label class="control-label" for="job">How did you hear about us?:</label>
+            <multiselect v-model="hearAboutUs" :options="hearOptions" :multiple="true" id="job"></multiselect>
+            <br v-if="hearAboutUs && hearAboutUs.includes('Other')">
+            <textarea
+              v-if="hearAboutUs && hearAboutUs.includes('Other')"
+              class="form-control"
+              rows="5"
+              placeholder="Other"
+              id="other"
+            ></textarea>
           </div>
         </div>
         <div class="form-group">
@@ -66,7 +88,7 @@ export default {
   data() {
     return {
       jobTitles: null,
-      options: [
+      jobOptions: [
         'Software Developer',
         'Project Manager',
         'System Engineer',
@@ -75,7 +97,9 @@ export default {
         'Quality Assurance/Tester',
         'Intern',
         'Other'
-      ]
+      ],
+      hearAboutUs: null,
+      hearOptions: ['Website', 'LinkedIn', 'Facebook', 'Indeed', 'Glassdoor', 'Referral', 'Other']
     };
   }
 };
