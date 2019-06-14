@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "eslint": "eslint . --ext .js --ignore-path .jshintignore --fix",
     "lint": "vue-cli-service lint",
+    "serve": "vue-cli-service serve",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",
     "validate": "npm ls"
@@ -38,8 +39,6 @@
     "vue-template-compiler": "^2.6.10"
   },
   "pre-commit": [
-    "validate",
-    "jshint",
-    "eslint"
+    "validate"
   ]
 }
