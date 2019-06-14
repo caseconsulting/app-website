@@ -479,11 +479,12 @@
 
     <div class="text-center">
       <a
-        type="button"
+        href="#collapseEvents"
         class="btn btn-primary btn-lg"
         data-toggle="collapse"
         data-target=".demo"
         aria-controls="collapseEvents"
+        aria-expanded="false"
       >
         <span class="collapsed">
           <i class="fas fa-chevron-down"></i>

@@ -336,6 +336,16 @@ a:active {
   max-width: 300px;
 }
 
+.btn-primary {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+.btn-primary:hover {
+  color: #ffffff;
+  background-color: #ffffff;
+  border-color: #e64433;
+}
+
 /*Career nav-tabs*/
 
 .nav-tabs > li {
