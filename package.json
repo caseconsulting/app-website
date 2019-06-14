@@ -31,6 +31,7 @@
     "babel-jest": "^23.6.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "jshint": "^2.10.2",
     "node-sass": "^4.9.0",
     "precommit-hook": "^3.0.0",
     "sass-loader": "^7.1.0",
@@ -38,9 +39,7 @@
   },
   "pre-commit": [
     "validate",
-    "ddescribe-iit",
     "jshint",
-    "eslint",
-    "jasmine-ci"
+    "eslint"
   ]
 }
