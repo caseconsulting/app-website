@@ -1,6 +1,7 @@
 export default [
   //first slide
   {
+    slide: 1,
     first: true, //first slide needs to have id of active
     intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535720007/website/interns/fahad.jpg',
@@ -24,6 +25,7 @@ export default [
   },
   //second slide
   {
+    slide: 2,
     intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535719942/website/interns/andrew.gif',
       quote: [
@@ -46,6 +48,7 @@ export default [
   },
   //third slide
   {
+    slide: 3,
     intern1: {
       image:
         'https://res.cloudinary.com/consultwithcase/image/upload/c_scale,w_160/v1536585437/website/interns/joe.gif',
