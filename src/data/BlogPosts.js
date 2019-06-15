@@ -7,7 +7,7 @@ export default [
     tags: [
       { name: 'consultWithCase' },
       { name: 'weDoingGood' },
-      { name: '#armyStrong' },
+      { name: 'armyStrong' },
       { name: 'letsGetBreadToday' },
       { name: 'scroll>>>>>>>>>>>>>>' },
       { name: 'lit' }

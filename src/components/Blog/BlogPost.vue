@@ -5,13 +5,15 @@
         {{ post.title }}
       </div>
 
-      <img class="img" :src="post.image" alt="Alps" />
-      <div class="description">
-        <div>
+      <div class="row">
+        <div class="pic col-sm-4">
+          <img class="img" :src="post.image" alt="post.title" />
+        </div>
+        <div class="description col-sm-8">
           {{ post.description }}
-          <strong>[read more]</strong>
         </div>
       </div>
+
       <div class="tagsScroll">
         <a href="#tag" v-for="tag in post.tags" :key="tag.name">#{{ tag.name }}</a>
       </div>
@@ -31,8 +33,7 @@ export default {
 
 <style>
 .post {
-  width: 600px;
-  margin: 30px auto;
+  margin: 30px;
   border: 1px solid #eee;
   padding: 20px;
   box-shadow: 0 2px 3px #ccc;
@@ -42,8 +43,19 @@ export default {
   font-size: 32px;
 }
 
+.postBody {
+}
+
 .img {
-  max-width: 560px;
+  width: 100%;
+}
+
+.description {
+  text-align: justify;
+}
+
+.readMore {
+  font-weight: bold;
 }
 
 .tagsScroll {

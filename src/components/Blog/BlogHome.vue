@@ -11,7 +11,9 @@
             v-model="inputedText"
             placeholder="Search Title..."
           />
-          <button href="#" @click="filterText = inputedText" class="search_icon"><i class="fas fa-search"></i></button>
+          <button href="#" @click="filterText = inputedText" class="search_icon">
+            <i class="fas fa-search"></i>
+          </button>
         </div>
       </div>
     </div>
