@@ -44,7 +44,7 @@
         <div class="form-group">
           <div class="col-xl-12">
             <div class="input" :class="{ invalid: !valid.jobTitles }">
-              <label class="control-label" for="job">*Job-Titles:</label>
+              <label class="control-label" for="job">*Job Title:</label>
               <multiselect v-model="jobTitles" :options="jobOptions" :multiple="true" id="job"></multiselect>
 
               <div
@@ -148,7 +148,7 @@ export default {
       firstName: '',
       lastName: '',
       email: '',
-      jobTitles: null,
+      jobTitles: [],
       otherJobTitle: '',
       jobOptions: [
         'Software Developer',
@@ -164,13 +164,20 @@ export default {
       hearOptions: ['Website', 'LinkedIn', 'Facebook', 'Indeed', 'Glassdoor', 'Referral', 'Other'],
       files: [],
       dropOptions: {
-        url: 'https://httpbin.org/post',
-        maxFilesize: 2,
-        maxFiles: 4,
-        chunking: true,
-        chunkSize: 500,
-        thumbnailWidth: 150,
-        thumbnailHeight: 150
+        init: function() {
+          this.on('addedfile', function(file) {
+            if (!file.type.match(/image.*/)) {
+              this.emit('thumbnail', file, '/assets/logo.png');
+            }
+          });
+        },
+        acceptedFiles: 'image/jpeg,application/pdf,text/plain',
+
+        url: 'https://httpbin.org/post'
+        // maxFilesize: 2,
+        //maxFiles: 4,
+        // thumbnailWidth: 150,
+        // thumbnailHeight: 150
       },
       comments: ''
     };
@@ -187,16 +194,16 @@ export default {
       email
     },
     jobTitles: {
-      notEmpty: val => {
-        return val !== null && val.length > 0;
+      hasJobTitle: val => {
+        return val && val.length > 0;
       }
     },
     otherJobTitle: {
       required
     },
-    resume: {
-      notEmpty: val => {
-        return val.length > 0;
+    files: {
+      hasFiles: val => {
+        return val && val.length > 0;
       }
     }
   },
@@ -214,8 +221,6 @@ export default {
       return false;
     },
     vfileAdded(file) {
-      console.log(file.name);
-      console.log(file.dataURL);
       this.files.push(file.name);
     },
     onSubmit() {
@@ -229,13 +234,13 @@ export default {
       this.valid.email = this.$v.email.email && this.$v.email.required;
 
       this.$v.jobTitles.$touch();
-      this.valid.jobTitles = this.$v.jobTitles.error;
+      this.valid.jobTitles = this.$v.jobTitles.hasJobTitle;
 
       this.$v.otherJobTitle.$touch();
       this.valid.otherJobTitle = this.$v.otherJobTitle.required;
 
-      this.$v.resume.$touch();
-      this.valid.resume = this.$v.resume.error;
+      this.$v.files.$touch();
+      this.valid.resume = this.$v.files.hasFiles;
     }
   }
 };
