@@ -5,9 +5,7 @@
         <h2
           class="text-uppercase u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md"
           style="margin-top:100px"
-        >
-          Testimonials
-        </h2>
+        >Testimonials</h2>
       </div>
     </div>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -22,16 +20,25 @@
       </ol>
 
       <div class="carousel-inner">
-        <div v-for="test in testimonials" :key="test.slide" :class="carousel(test.first)" data-interval="10000">
+        <div
+          v-for="test in testimonials"
+          :key="test.slide"
+          :class="carousel(test.first)"
+          data-interval="10000"
+        >
           <div class="container text-center g-max-width-750 g-mb-20 g-pt-10" alt="First slide">
             <div class="container">
               <!--Intern at top of slide -->
               <div class="row">
                 <div class="col-md-2" style="text-align:center">
-                  <img :src="test.intern1.image" class="rounded-circle potrait test-img" />
+                  <img
+                    :src="test.intern1.image"
+                    class="rounded-circle potrait test-image"
+                    style="margin-bottom: 15px;"
+                  >
                 </div>
                 <div class="col-md-10">
-                  <p class="test-par" style="text-align:justify;">
+                  <p class="test-par" style="text-align:justify; margin-left:15px;">
                     "{{ test.intern1.quote[0] }}"
                     <template>
                       <div style="text-align:right;">- {{ test.intern1.name }}</div>
@@ -50,19 +57,37 @@
                   </p>
                 </div>
                 <div class="col-md-2 order-md-2" style="text-align:center">
-                  <img :src="test.intern2.image" class="rounded-circle potrait test-image" style="text-align:center" />
+                  <img
+                    :src="test.intern2.image"
+                    class="rounded-circle potrait test-image"
+                    style="text-align:center"
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span><img src="/assets/custom/img/online/leftArrow.png"/></span>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span>
+          <img src="/assets/custom/img/online/leftArrow.png">
+        </span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span><img src="/assets/custom/img/online/rightARrow.png"/></span>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span>
+          <img src="/assets/custom/img/online/rightARrow.png">
+        </span>
         <span class="sr-only">Next</span>
       </a>
     </div>
@@ -98,5 +123,12 @@ export default {
 .carousel {
   height: 600px;
   overflow: hidden;
+}
+
+.carousel-indicators li {
+  background-color: gray;
+}
+.carousel-indicators .active {
+  background-color: darkgray;
 }
 </style>
