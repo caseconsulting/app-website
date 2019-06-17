@@ -20771,7 +20771,7 @@ li:last-child .u-dot-line-v2::after, li:last-child
   }
   [role="tablist"]:not([data-tabs-mobile-type="slide-up-down"]):not(
   [data-tabs-mobile-type="accordion"]) {
-    border-color: #e74c3c;
+    border-color: white;
   }
   [role="tablist"]:not([data-tabs-mobile-type="slide-up-down"]):not(
   [data-tabs-mobile-type="accordion"]) .nav-item > a,
