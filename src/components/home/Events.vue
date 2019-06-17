@@ -55,7 +55,7 @@
         <div class="card">
           <img
             class="event-images"
-            src="https://res.cloudinary.com/consultwithcase/image/upload/v1559835731/website/Screen_Shot_2019-06-06_at_11.41.44_AM.png"
+            src="https://res.cloudinary.com/consultwithcase/image/upload/v1560788481/website/Screen_Shot_2019-06-17_at_12.20.29_PM.png"
             alt="2018 Holiday Party"
           >
           <div class="card-body">
@@ -92,7 +92,7 @@
           </div>
         </div>
 
-        <div class="demo collapse">
+        <div class="collapsedEvent collapse">
           <div class="card">
             <img
               class="event-images"
@@ -114,7 +114,7 @@
           </div>
         </div>
 
-        <div class="demo collapse">
+        <div class="collapsedEvent collapse">
           <div class="card">
             <img
               class="event-images"
@@ -136,7 +136,7 @@
           </div>
         </div>
 
-        <div class="demo collapse">
+        <div class="collapsedEvent collapse">
           <div class="card">
             <img
               class="event-images"
@@ -158,7 +158,7 @@
           </div>
         </div>
 
-        <div class="demo collapse">
+        <div class="collapsedEvent collapse">
           <div class="card">
             <img
               class="event-images"
@@ -180,7 +180,7 @@
           </div>
         </div>
 
-        <div class="demo collapse">
+        <div class="collapsedEvent collapse">
           <div class="card">
             <img
               class="event-images"
@@ -202,7 +202,7 @@
           </div>
         </div>
 
-        <div class="demo collapse">
+        <div class="collapsedEvent collapse">
           <div class="card">
             <img
               class="event-images"
@@ -224,7 +224,7 @@
           </div>
         </div>
 
-        <div class="demo collapse">
+        <div class="collapsedEvent collapse">
           <div class="card">
             <img
               class="event-images"
@@ -246,7 +246,7 @@
           </div>
         </div>
 
-        <div class="demo collapse">
+        <div class="collapsedEvent collapse">
           <div class="card">
             <img
               class="event-images"
@@ -268,7 +268,7 @@
           </div>
         </div>
 
-        <div class="demo collapse">
+        <div class="collapsedEvent collapse">
           <div class="card">
             <img
               class="event-images"
@@ -290,7 +290,7 @@
           </div>
         </div>
 
-        <div class="demo collapse">
+        <div class="collapsedEvent collapse">
           <div class="card">
             <img
               class="event-images"
@@ -312,7 +312,7 @@
           </div>
         </div>
 
-        <div class="demo collapse">
+        <div class="collapsedEvent collapse">
           <div class="card">
             <img
               class="event-images"
@@ -334,7 +334,7 @@
           </div>
         </div>
 
-        <div class="demo collapse">
+        <div class="collapsedEvent collapse">
           <div class="card">
             <img
               class="event-images"
@@ -356,7 +356,7 @@
           </div>
         </div>
 
-        <div class="demo collapse">
+        <div class="collapsedEvent collapse">
           <div class="card">
             <img
               class="event-images"
@@ -378,7 +378,7 @@
           </div>
         </div>
 
-        <div class="demo collapse">
+        <div class="collapsedEvent collapse">
           <div class="card">
             <img
               class="event-images"
@@ -400,7 +400,7 @@
           </div>
         </div>
 
-        <div class="demo collapse">
+        <div class="collapsedEvent collapse">
           <div class="card">
             <img
               class="event-images"
@@ -422,7 +422,7 @@
           </div>
         </div>
 
-        <div class="demo collapse">
+        <div class="collapsedEvent collapse">
           <div class="card">
             <img
               class="event-images"
@@ -444,7 +444,7 @@
           </div>
         </div>
 
-        <div class="demo collapse">
+        <div class="collapsedEvent collapse">
           <div class="card">
             <img
               class="event-images"
@@ -473,7 +473,7 @@
         href="#collapseEvents"
         class="btn btn-primary btn-lg"
         data-toggle="collapse"
-        data-target=".demo"
+        data-target=".collapsedEvent"
         aria-controls="collapseEvents"
         aria-expanded="false"
       >
