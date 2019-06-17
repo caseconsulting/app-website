@@ -123,7 +123,7 @@
 import Multiselect from 'vue-multiselect';
 // import { BFormFile } from 'bootstrap-vue';
 import vueDropzone from 'vue2-dropzone';
-import { required, email, minLength } from 'vuelidate/lib/validators';
+import { required, email } from 'vuelidate/lib/validators';
 
 // function jobTitlesNotEmpty() {
 //   return this.jobTitles != null && this.jobTitles.length > 0;
