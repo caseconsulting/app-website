@@ -1,0 +1,3 @@
+# Blocks all bots from the apply-form
+User-agent: *
+Disallow: /apply-form
