@@ -9,7 +9,7 @@
     "serve": "vue-cli-service serve",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",
-    "validate": "npm ls"
+    "validate": "npm ci"
   },
   "dependencies": {
     "bootstrap-vue": "^2.0.0-rc.23",
