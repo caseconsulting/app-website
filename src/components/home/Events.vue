@@ -140,7 +140,7 @@
           <div class="card">
             <img
               class="event-images"
-              src="http://res.cloudinary.com/consultwithcase/image/upload/c_crop,g_custom:faces,h_738,w_1045/v1535029083/website/IMG_4328.jpg"
+              src="https://res.cloudinary.com/consultwithcase/image/upload/c_crop,g_custom:faces,h_738,w_1045/v1535029083/website/IMG_4328.jpg"
               alt="Solo: A Star Wars Story"
             >
             <div class="card-body">
@@ -467,15 +467,6 @@
         </div>
       </div>
     </div>
-    <!-- 
-    <div class="text-center">
-      <button
-        type="button"
-        class="btn btn-primary btn-lg"
-        data-toggle="collapse"
-        data-target=".demo"
-      >Simple collapsible</button>
-    </div>-->
 
     <div class="text-center">
       <a
@@ -494,22 +485,6 @@
         </span>
       </a>
     </div>
-    <!-- <div class="text-center">
-      <a
-        href="#collapseEvents"
-        class="btn btn-primary btn-lg collapseButton"
-        data-toggle="collapse"
-        aria-expanded="false"
-        aria-controls="collapseEvents"
-      >
-        <span class="collapsed"> 
-          <i class="fas fa-chevron-down"></i>
-        </span>
-        <span class="expanded">
-          <i class="fas fa-chevron-up"></i>
-        </span>
-      </a>
-    </div>-->
     <!-- Row End -->
   </section>
   <!-- End Section Content -->
