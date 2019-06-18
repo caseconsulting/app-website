@@ -5,9 +5,9 @@
       <div class="g-pt-100 g-pb-30">
         <div class="container text-center g-pt-10">
           <div class="u-heading-v2-2--bottom g-brd-primary">
-            <h2
-              class="text-uppercase u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md"
-            >Case by the Numbers</h2>
+            <h2 class="text-uppercase u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md">
+              Case by the Numbers
+            </h2>
           </div>
         </div>
         <div class="row">
@@ -38,11 +38,11 @@
         </div>
       </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
   </section>
   <!-- End Section Content -->
 </template>

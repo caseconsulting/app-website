@@ -6,7 +6,9 @@
         <div class="u-heading-v2-2--bottom g-brd-primary g-mb-20">
           <h2
             class="text-uppercase u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md g-color-white"
-          >Summer Internship</h2>
+          >
+            Summer Internship
+          </h2>
         </div>
         <p class="g-color-white">
           Summer Internships take place from May to August in the Make Offices in Reston, Virginia, within the
@@ -30,7 +32,8 @@
           data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
           data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);cursor:pointer;"
           role="button"
-        >Learn More</a>
+          >Learn More</a
+        >
         <!-- <button
             id="promoSliderLayer7"
             class="tp-caption NotGeneric-CallToAction rev-btn rs-parallaxlevel-0"
