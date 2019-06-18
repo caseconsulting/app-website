@@ -87,9 +87,19 @@
           </div>
         </div>
       </div>
-      <br />
-      <br />
     </div>
+    <!-- Numbers Section Content -->
+    <app-numbers></app-numbers>
+    <!-- End Numbers Section -->
   </section>
   <!-- End Awards Section -->
 </template>
+
+<script>
+import Numbers from './Numbers';
+export default {
+  components: {
+    'app-numbers': Numbers
+  }
+};
+</script>

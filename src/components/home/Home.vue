@@ -5,8 +5,8 @@
     <app-benefits></app-benefits>
     <app-careers></app-careers>
     <app-intern></app-intern>
-    <app-numbers></app-numbers>
     <app-awards></app-awards>
+    <!-- <app-numbers></app-numbers> -->
     <app-events></app-events>
   </div>
 </template>
@@ -17,7 +17,6 @@ import About from './About';
 import Benefits from './Benefits';
 import Careers from './Careers';
 import Internship from './Internship';
-import Numbers from './Numbers';
 import Awards from './Awards';
 import Events from './Events';
 
@@ -27,7 +26,6 @@ export default {
     'app-about': About,
     'app-benefits': Benefits,
     'app-careers': Careers,
-    'app-numbers': Numbers,
     'app-awards': Awards,
     'app-events': Events,
     'app-intern': Internship
