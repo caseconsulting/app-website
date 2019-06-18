@@ -20,9 +20,9 @@
           <a class="nav-link p-0">Home</a>
           </router-link>-->
 
-          <router-link tag="li" to="/" class="g-mr-30--lg g-mb-7 g-mb-0--lg" active-class="active">
-            <a class="nav-link p-0">Home</a>
-          </router-link>
+          <li class="g-mr-30--lg g-mb-7 g-mb-0--lg" active-class="active">
+            <a href="/" class="nav-link p-0">Home</a>
+          </li>
           <!-- <li
             v-for="section in Sections"
             :key="section.name"
