@@ -10,9 +10,9 @@
       data-header-fix-moment-exclude="g-py-18--md"
       data-header-fix-moment-classes="u-shadow-v18 g-py-13--md"
     >
-      <app-home-navigation v-if="$route.path === '/'"></app-home-navigation>
-      <app-intern-navigation v-if="$route.path === '/intern'"></app-intern-navigation>
-      <app-apply-navigation v-if="$route.path === '/apply-form'"></app-apply-navigation>
+      <app-home-navigation v-if="this.$options.parent.$options._componentTag === 'app-home'"></app-home-navigation>
+      <app-intern-navigation v-if="this.$options.parent.$options._componentTag === 'app-intern'"></app-intern-navigation>
+      <app-apply-navigation v-if="this.$options.parent.$options._componentTag === 'app-apply'"></app-apply-navigation>
     </div>
   </header>
   <!-- End Header -->

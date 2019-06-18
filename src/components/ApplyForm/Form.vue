@@ -1,129 +1,156 @@
 <template>
-  <section id="apply" class="g-theme-bg-gray-light-v1 g-py-50">
-    <div class="applyForm container col-sm-8 col-xl-6 col-lg-8 col-xs-9">
-      <div class="container text-center g-max-width-750 g-mb-20 g-pt-10 g-pb-10">
-        <div class="u-heading-v2-2--bottom g-brd-primary g-mb-20">
-          <h2 class="text-uppercase u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md">
-            Job Application
-          </h2>
+  <div>
+    <form-header></form-header>
+    <section id="apply" class="g-theme-bg-gray-light-v1 g-py-50">
+      <div class="applyForm container col-sm-8 col-xl-6 col-lg-8 col-xs-9">
+        <div class="container text-center g-max-width-750 g-mb-20 g-pt-10 g-pb-10">
+          <div class="u-heading-v2-2--bottom g-brd-primary g-mb-20">
+            <h2
+              class="text-uppercase u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md"
+            >Job Application</h2>
+          </div>
         </div>
-      </div>
 
-      <form @submit.prevent="onSubmit" class="form-horizontal">
-        <div class="row">
-          <div class="col">
+        <form @submit.prevent="onSubmit" class="form-horizontal">
+          <div class="row">
             <div class="col">
-              <div class="input" :class="{ invalid: !valid.firstName }">
-                <label class="control-label" for="name">*First Name:</label>
-                <input type="name" class="form-control" id="firstName" v-model="firstName" placeholder="First Name" />
-                <p class="invalidMsg" v-if="!valid.firstName">First name can't be blank</p>
+              <div class="col">
+                <div class="input" :class="{ invalid: !valid.firstName }">
+                  <label class="control-label" for="name">*First Name:</label>
+                  <input
+                    type="name"
+                    class="form-control"
+                    id="firstName"
+                    v-model="firstName"
+                    placeholder="First Name"
+                  >
+                  <p class="invalidMsg" v-if="!valid.firstName">First name can't be blank</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="col">
+                <div class="input" :class="{ invalid: !valid.lastName }">
+                  <label class="control-label" for="name">*Last Name:</label>
+                  <input
+                    type="name"
+                    class="form-control"
+                    id="lastName"
+                    v-model="lastName"
+                    placeholder="Last Name"
+                  >
+                  <p class="invalidMsg" v-if="!valid.lastName">Last name can't be blank</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="col">
-              <div class="input" :class="{ invalid: !valid.lastName }">
-                <label class="control-label" for="name">*Last Name:</label>
-                <input type="name" class="form-control" id="lastName" v-model="lastName" placeholder="Last Name" />
-                <p class="invalidMsg" v-if="!valid.lastName">Last name can't be blank</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br />
-        <div class="form-group">
-          <div class="col-xl-12">
-            <div class="input" :class="{ invalid: !valid.email }">
-              <label class="control-label" for="email">*Email:</label>
-              <input type="text" class="form-control" id="email" placeholder="Enter email" v-model="email" />
-              <p class="invalidMsg" v-if="!valid.email">Please provide a valid email address.</p>
-            </div>
-          </div>
-        </div>
-        <br />
-        <div class="form-group">
-          <div class="col-xl-12">
-            <div class="input" :class="{ invalid: !valid.jobTitles }">
-              <label class="control-label" for="job">*Job Title:</label>
-              <multiselect v-model="jobTitles" :options="jobOptions" :multiple="true" id="job"></multiselect>
-
-              <div
-                class="input"
-                :class="{ invalid: !valid.otherJobTitle }"
-                v-if="jobTitles && jobTitles.includes('Other')"
-              >
-                <br />
-                <textarea
-                  v-if="jobTitles && jobTitles.includes('Other')"
+          <br>
+          <div class="form-group">
+            <div class="col-xl-12">
+              <div class="input" :class="{ invalid: !valid.email }">
+                <label class="control-label" for="email">*Email:</label>
+                <input
+                  type="text"
                   class="form-control"
-                  rows="5"
-                  placeholder="Other"
-                  id="other"
-                  v-model="otherJobTitle"
-                ></textarea>
-                <p class="invalidMsg" v-if="!valid.otherJobTitle">Other job title can't be blank</p>
+                  id="email"
+                  placeholder="Enter email"
+                  v-model="email"
+                >
+                <p class="invalidMsg" v-if="!valid.email">Please provide a valid email address.</p>
               </div>
-              <p class="invalidMsg" v-if="!valid.jobTitles">Please select at least one job title.</p>
             </div>
           </div>
-        </div>
-        <div class="form-group">
-          <div class="col-xl-12">
-            <label class="control-label" for="job">How did you hear about us?:</label>
-            <multiselect v-model="hearAboutUs" :options="hearOptions" :multiple="true" id="job"></multiselect>
-            <br v-if="hearAboutUs && hearAboutUs.includes('Other')" />
-            <textarea
-              v-if="hearAboutUs && hearAboutUs.includes('Other')"
-              class="form-control"
-              rows="5"
-              placeholder="Other"
-              id="other"
-            ></textarea>
-          </div>
-        </div>
-        <br />
-        <div>
-          <div class="col-xl-12">
-            <div class="input" :class="{ invalid: !valid.resume }">
-              <label class="control-label" for="uploadResume">*Upload Resume</label>
-              <vue-dropzone
-                ref="dropzone"
-                id="drop1"
-                :options="dropOptions"
-                @vdropzone-thumbnail="vfileAdded"
-              ></vue-dropzone>
-              <p class="invalidMsg" v-if="!valid.resume">Please upload a resume</p>
+          <br>
+          <div class="form-group">
+            <div class="col-xl-12">
+              <div class="input" :class="{ invalid: !valid.jobTitles }">
+                <label class="control-label" for="job">*Job Title:</label>
+                <multiselect v-model="jobTitles" :options="jobOptions" :multiple="true" id="job"></multiselect>
 
-              <br />
-              <button class="btn btn-default" @click="removeAllFiles">Remove All Files</button>
-
-              <p v-for="file in files" :key="file">{{ file }}</p>
+                <div
+                  class="input"
+                  :class="{ invalid: !valid.otherJobTitle }"
+                  v-if="jobTitles && jobTitles.includes('Other')"
+                >
+                  <br>
+                  <textarea
+                    v-if="jobTitles && jobTitles.includes('Other')"
+                    class="form-control"
+                    rows="5"
+                    placeholder="Other"
+                    id="other"
+                    v-model="otherJobTitle"
+                  ></textarea>
+                  <p class="invalidMsg" v-if="!valid.otherJobTitle">Other job title can't be blank</p>
+                </div>
+                <p class="invalidMsg" v-if="!valid.jobTitles">Please select at least one job title.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <br />
-        <div>
-          <div class="col-xl-12">
-            <label class="control-label" for="comments">Comments:</label>
-            <textarea class="form-control" rows="5" placeholder="Comments" v-model="comments" id="comments"></textarea>
+          <div class="form-group">
+            <div class="col-xl-12">
+              <label class="control-label" for="job">How did you hear about us?:</label>
+              <multiselect v-model="hearAboutUs" :options="hearOptions" :multiple="true" id="job"></multiselect>
+              <br v-if="hearAboutUs && hearAboutUs.includes('Other')">
+              <textarea
+                v-if="hearAboutUs && hearAboutUs.includes('Other')"
+                class="form-control"
+                rows="5"
+                placeholder="Other"
+                id="other"
+              ></textarea>
+            </div>
           </div>
-        </div>
-        <br />
-        <div>
-          <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-success" style="opacity: 0.8;">Submit</button>
+          <br>
+          <div>
+            <div class="col-xl-12">
+              <div class="input" :class="{ invalid: !valid.resume }">
+                <label class="control-label" for="uploadResume">*Upload Resume</label>
+                <vue-dropzone
+                  ref="dropzone"
+                  id="drop1"
+                  :options="dropOptions"
+                  @vdropzone-thumbnail="vfileAdded"
+                ></vue-dropzone>
+                <p class="invalidMsg" v-if="!valid.resume">Please upload a resume</p>
+
+                <br>
+                <button class="btn btn-default" @click="removeAllFiles">Remove All Files</button>
+
+                <p v-for="file in files" :key="file">{{ file }}</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </form>
-    </div>
-  </section>
+          <br>
+          <div>
+            <div class="col-xl-12">
+              <label class="control-label" for="comments">Comments:</label>
+              <textarea
+                class="form-control"
+                rows="5"
+                placeholder="Comments"
+                v-model="comments"
+                id="comments"
+              ></textarea>
+            </div>
+          </div>
+          <br>
+          <div>
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-success" style="opacity: 0.8;">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
 </template>
 <script>
 import Multiselect from 'vue-multiselect';
 // import { BFormFile } from 'bootstrap-vue';
 import vueDropzone from 'vue2-dropzone';
 import { required, email } from 'vuelidate/lib/validators';
-
+import Header from '../home/Header.vue';
 // function jobTitlesNotEmpty() {
 //   return this.jobTitles != null && this.jobTitles.length > 0;
 // }
@@ -210,7 +237,8 @@ export default {
   components: {
     Multiselect,
     // BFormFile,
-    vueDropzone
+    vueDropzone,
+    formHeader: Header
   },
   methods: {
     removeAllFiles() {

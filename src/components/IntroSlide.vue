@@ -2,7 +2,12 @@
   <!-- Section Content -->
   <section class="rev_slider_wrapper fullwidthbanner-container" data-alias="image-hero20">
     <!-- START REVOLUTION SLIDER 5.0.7 fullwidth mode -->
-    <div id="promoSlider" class="rev_slider fullwidthabanner" style="display: none;" data-version="5.0.7">
+    <div
+      id="promoSlider"
+      class="rev_slider fullwidthabanner"
+      style="display: none;"
+      data-version="5.0.7"
+    >
       <ul>
         <!-- SLIDE  -->
         <li
@@ -27,7 +32,7 @@
             data-bgparallax="10"
             class="rev-slidebg"
             data-no-retina
-          />
+          >
           <!-- LAYERS -->
           <!-- LAYER NR. 1 -->
           <div
@@ -75,7 +80,7 @@
           >
             <div v-for="slideInfo in finalSlide" :key="slideInfo.title">
               {{ slideInfo.title }}
-              <br />
+              <br>
             </div>
             <!-- Software Oriented
                 <br>
@@ -128,9 +133,7 @@
             :data-actions="dataActions"
             data-responsive_offset="on"
             data-responsive="off"
-          >
-            Learn More
-          </div>
+          >Learn More</div>
         </li>
       </ul>
       <div class="tp-static-layers"></div>
@@ -154,63 +157,13 @@ export default {
   },
   computed: {
     finalSlide() {
-      if (this.$route.path === '/') {
+      if (this.$options.parent.$options._componentTag === 'app-home') {
         return this.homeSlider;
-      } else if (this.$route.path === '/intern') {
+      } else if (this.$options.parent.$options._componentTag === 'app-intern') {
         return this.internSlider;
       }
       return undefined;
     }
-  },
-  mounted() {
-    // var tpj = jQuery,
-    //   promoSlider;
-    // if (tpj('#promoSlider').revolution == undefined) {
-    //   revslider_showDoubleJqueryError('#promoSlider');
-    // } else {
-    //   promoSlider = tpj('#promoSlider')
-    //     .show()
-    //     .revolution({
-    //       sliderType: 'hero',
-    //       jsFileLocation: '../../revolution/js/',
-    //       sliderLayout: 'fullwidth',
-    //       dottedOverlay: 'none',
-    //       delay: 9000,
-    //       navigation: {},
-    //       responsiveLevels: [1240, 1024, 778, 480],
-    //       gridwidth: [1240, 1024, 778, 480],
-    //       gridheight: [600, 500, 400, 300],
-    //       lazyType: 'none',
-    //       parallax: {
-    //         type: 'mouse',
-    //         origo: 'slidercenter',
-    //         speed: 2000,
-    //         levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50]
-    //       },
-    //       shadow: 0,
-    //       spinner: 'off',
-    //       autoHeight: 'off',
-    //       disableProgressBar: 'on',
-    //       hideThumbsOnMobile: 'off',
-    //       hideSliderAtLimit: 0,
-    //       hideCaptionAtLimit: 0,
-    //       hideAllCaptionAtLilmit: 0,
-    //       debugMode: false,
-    //       fallbacks: {
-    //         simplifyAll: 'off',
-    //         disableFocusListener: false
-    //       }
-    //     });
-    // }
-    // $(document).on('ready', function() {
-    //   // initialization of carousel
-    //   $.HSCore.components.HSCarousel.init('.js-carousel');
-    //   // initialization of header
-    //   $.HSCore.components.HSHeader.init($('#js-header'));
-    //   $.HSCore.helpers.HSHamburgers.init('.hamburger');
-    //   // initialization of go to section
-    //   $.HSCore.components.HSGoTo.init('.js-go-to');
-    // });
   }
 };
 </script>

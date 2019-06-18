@@ -1,5 +1,7 @@
 <template>
-  <div id="app">
+  <!-- <div id="app"> -->
+  <div>
+    <app-header></app-header>
     <app-introSlide></app-introSlide>
     <app-about></app-about>
     <app-benefits></app-benefits>
@@ -8,6 +10,7 @@
     <app-awards></app-awards>
     <!-- <app-numbers></app-numbers> -->
     <app-events></app-events>
+    <app-contact></app-contact>
   </div>
 </template>
 
@@ -19,6 +22,8 @@ import Careers from './Careers';
 import Internship from './Internship';
 import Awards from './Awards';
 import Events from './Events';
+import Header from './Header';
+import Contact from './Contact';
 
 export default {
   components: {
@@ -28,7 +33,9 @@ export default {
     'app-careers': Careers,
     'app-awards': Awards,
     'app-events': Events,
-    'app-intern': Internship
+    'app-intern': Internship,
+    'app-header': Header,
+    'app-contact': Contact
   },
   mounted() {
     window.scrollTo(0, 0);
