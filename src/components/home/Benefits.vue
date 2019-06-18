@@ -4,13 +4,12 @@
     <section id="benefits" class="g-py-100">
       <div class="container text-center g-max-width-750 g-mb-70">
         <div class="u-heading-v2-2--bottom g-brd-primary g-mb-20">
-          <h2
-            class="text-uppercase u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md"
-          >Benefits</h2>
+          <h2 class="text-uppercase u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md">
+            Benefits
+          </h2>
         </div>
         <p class="mb-0">
-          Case Consulting recognizes that employees are its number one asset and
-          therefore offers a salary and
+          Case Consulting recognizes that employees are its number one asset and therefore offers a salary and
           <a
             href="https://drive.google.com/file/d/1cBQzuO4g8YEcYskbQqj_MS3sNxIEMUh2/view?usp=sharing"
             target="_blank"
@@ -36,26 +35,19 @@
                 <h3 class="h5 text-uppercase g-font-weight-800">Retirement</h3>
                 <ul class="list-unstyled g-font-size-12 g-mb-30 g-mb-0--md">
                   <li class="g-pos-rel g-pl-10 g-mb-15">
-                    <i
-                      class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"
-                    ></i>
+                    <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
                     <p class="list_elem">
                       Monthly contribution of 3% of your salary in your
-                      <a href="https://www.sharebuilder401k.com/">401k</a>, without the requirement of an employee contribution
+                      <a href="https://www.sharebuilder401k.com/">401k</a>, without the requirement of an employee
+                      contribution
                     </p>
                   </li>
                   <li class="g-pos-rel g-pl-10 g-mb-15">
-                    <i
-                      class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"
-                    ></i>
-                    <p
-                      class="list_elem"
-                    >Annual lump-sum profit sharing of 10%, deposited at the end of each year</p>
+                    <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
+                    <p class="list_elem">Annual lump-sum profit sharing of 10%, deposited at the end of each year</p>
                   </li>
                   <li class="g-pos-rel g-pl-10 g-mb-15">
-                    <i
-                      class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"
-                    ></i>
+                    <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
                     <p class="list_elem">Employees are immediately fully vested in the plan</p>
                   </li>
                 </ul>
@@ -76,36 +68,20 @@
                 <h3 class="h5 text-uppercase g-font-weight-800">Health Care</h3>
                 <ul class="list-unstyled g-font-size-12 g-mb-30 g-mb-0--md">
                   <li class="g-pos-rel g-pl-10 g-mb-15">
-                    <i
-                      class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"
-                    ></i>
-                    <p
-                      class="list_elem"
-                    >Full Medical, Dental, and Vision insurance coverage (company paid premiums)</p>
+                    <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
+                    <p class="list_elem">Full Medical, Dental, and Vision insurance coverage (company paid premiums)</p>
                   </li>
                   <li class="g-pos-rel g-pl-10 g-mb-15">
-                    <i
-                      class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"
-                    ></i>
-                    <p
-                      class="list_elem"
-                    >Health Savings Account (HSA) and Flexible Spending Account (FSA) options</p>
+                    <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
+                    <p class="list_elem">Health Savings Account (HSA) and Flexible Spending Account (FSA) options</p>
                   </li>
                   <li class="g-pos-rel g-pl-10 g-mb-15">
-                    <i
-                      class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"
-                    ></i>
-                    <p
-                      class="list_elem"
-                    >Short Term Disability, Long Term Disability, and Life Insurance</p>
+                    <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
+                    <p class="list_elem">Short Term Disability, Long Term Disability, and Life Insurance</p>
                   </li>
                   <li class="g-pos-rel g-pl-10 g-mb-15">
-                    <i
-                      class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"
-                    ></i>
-                    <p
-                      class="list_elem"
-                    >Dependent Care Account providing tax-deferred savings for child care</p>
+                    <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
+                    <p class="list_elem">Dependent Care Account providing tax-deferred savings for child care</p>
                   </li>
                 </ul>
               </div>
@@ -129,17 +105,14 @@
                 <h3 class="h5 text-uppercase g-font-weight-800">Technology Package</h3>
                 <ul class="list-unstyled g-font-size-12 g-mb-30 g-mb-0--md">
                   <li class="g-pos-rel g-pl-10 g-mb-15">
-                    <i
-                      class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"
-                    ></i>
-                    <p
-                      class="list_elem"
-                    >$1,800 per calendar year towards purchase of employee computer/tablet or other technology related device</p>
+                    <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
+                    <p class="list_elem">
+                      $1,800 per calendar year towards purchase of employee computer/tablet or other technology related
+                      device
+                    </p>
                   </li>
                   <li class="g-pos-rel g-pl-10 g-mb-15">
-                    <i
-                      class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"
-                    ></i>
+                    <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
                     <p class="list_elem">Verizon 4G Mobile Wi-Fi Hotspot</p>
                   </li>
                 </ul>
@@ -159,26 +132,16 @@
                 <h3 class="h5 text-uppercase g-font-weight-800">Professional Development</h3>
                 <ul class="list-unstyled g-font-size-12 g-mb-30 g-mb-0--md">
                   <li class="g-pos-rel g-pl-10 g-mb-15">
-                    <i
-                      class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"
-                    ></i>
+                    <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
                     <p class="list_elem">$3,500 per year towards professional development</p>
                   </li>
                   <li class="g-pos-rel g-pl-10 g-mb-15">
-                    <i
-                      class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"
-                    ></i>
-                    <p
-                      class="list_elem"
-                    >Includes certifications, screencasts, CBTs, conferences, books, etc.</p>
+                    <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
+                    <p class="list_elem">Includes certifications, screencasts, CBTs, conferences, books, etc.</p>
                   </li>
                   <li class="g-pos-rel g-pl-10 g-mb-15">
-                    <i
-                      class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"
-                    ></i>
-                    <p
-                      class="list_elem"
-                    >3 days per year of PTO for professional development and certification</p>
+                    <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
+                    <p class="list_elem">3 days per year of PTO for professional development and certification</p>
                   </li>
                 </ul>
               </div>
@@ -200,27 +163,19 @@
                 <h3 class="h5 text-uppercase g-font-weight-800">Bonuses</h3>
                 <ul class="list-unstyled g-font-size-12 g-mb-30 g-mb-0--md">
                   <li class="g-pos-rel g-pl-10 g-mb-15">
-                    <i
-                      class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"
-                    ></i>
+                    <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
                     <p class="list_elem">$5,000 referral bonus for fully-cleared candidates</p>
                   </li>
                   <li class="g-pos-rel g-pl-10 g-mb-15">
-                    <i
-                      class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"
-                    ></i>
+                    <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
                     <p class="list_elem">$2,500 referral bonus for uncleared candidates</p>
                   </li>
                   <li class="g-pos-rel g-pl-10 g-mb-15">
-                    <i
-                      class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"
-                    ></i>
+                    <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
                     <p class="list_elem">Spot bonuses for employee accomplishments</p>
                   </li>
                   <li class="g-pos-rel g-pl-10 g-mb-15">
-                    <i
-                      class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"
-                    ></i>
+                    <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
                     <p class="list_elem">High 5 bonuses for colleague recognition</p>
                   </li>
                 </ul>
@@ -239,17 +194,13 @@
                 <h3 class="h5 text-uppercase g-font-weight-800">Time Off</h3>
                 <ul class="list-unstyled g-font-size-12 g-mb-30 g-mb-0--md">
                   <li class="g-pos-rel g-pl-10 g-mb-15">
-                    <i
-                      class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"
-                    ></i>
-                    <p
-                      class="list_elem"
-                    >34 days of leave each year (20 PTO, 10 holidays, 3 training days, and 1 volunteer day)</p>
+                    <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
+                    <p class="list_elem">
+                      34 days of leave each year (20 PTO, 10 holidays, 3 training days, and 1 volunteer day)
+                    </p>
                   </li>
                   <li class="g-pos-rel g-pl-10 g-mb-15">
-                    <i
-                      class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"
-                    ></i>
+                    <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
                     <p class="list_elem">1 week leave of absence every 5th anniversary</p>
                   </li>
                 </ul>

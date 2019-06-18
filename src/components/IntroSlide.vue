@@ -2,12 +2,7 @@
   <!-- Section Content -->
   <section class="rev_slider_wrapper fullwidthbanner-container" data-alias="image-hero20">
     <!-- START REVOLUTION SLIDER 5.0.7 fullwidth mode -->
-    <div
-      id="promoSlider"
-      class="rev_slider fullwidthabanner"
-      style="display: none;"
-      data-version="5.0.7"
-    >
+    <div id="promoSlider" class="rev_slider fullwidthabanner" style="display: none;" data-version="5.0.7">
       <ul>
         <!-- SLIDE  -->
         <li
@@ -32,7 +27,7 @@
             data-bgparallax="10"
             class="rev-slidebg"
             data-no-retina
-          >
+          />
           <!-- LAYERS -->
           <!-- LAYER NR. 1 -->
           <div
@@ -80,7 +75,7 @@
           >
             <div v-for="slideInfo in finalSlide" :key="slideInfo.title">
               {{ slideInfo.title }}
-              <br>
+              <br />
             </div>
             <!-- Software Oriented
                 <br>
@@ -133,7 +128,9 @@
             :data-actions="dataActions"
             data-responsive_offset="on"
             data-responsive="off"
-          >Learn More</div>
+          >
+            Learn More
+          </div>
         </li>
       </ul>
       <div class="tp-static-layers"></div>
@@ -143,10 +140,10 @@
   <!-- END REVOLUTION SLIDER -->
 </template>
 
- <script>
+<script>
 import HomeSlider from '../data/HomeSlider.js';
 import InternSlider from '../data/InternSlider.js';
-import * as HSCore from './hs.scroll-nav';
+
 export default {
   data: function() {
     return {
@@ -162,6 +159,7 @@ export default {
       } else if (this.$route.path === '/intern') {
         return this.internSlider;
       }
+      return undefined;
     }
   },
   mounted() {

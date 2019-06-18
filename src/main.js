@@ -8,6 +8,9 @@ import Vuelidate from 'vuelidate';
 import store from './store';
 import { routes } from './routes';
 //import * as HSCore from './assets/vendor/unity/js/hs.core';
+//import VueGoogleCharts from 'vue-google-charts';
+
+//Vue.use(VueGoogleCharts);
 
 Vue.use(Vuelidate);
 Vue.use(VueRouter);

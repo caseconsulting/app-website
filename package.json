@@ -46,6 +46,7 @@
     "vuepress": "^1.0.1"
   },
   "pre-commit": [
-    "validate"
+    "validate",
+    "lint"
   ]
 }

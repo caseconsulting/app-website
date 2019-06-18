@@ -19,20 +19,19 @@
           <!-- <router-link tag="li" to="/" class="g-mr-30--lg g-mb-7 g-mb-0--lg" active-class="active">
           <a class="nav-link p-0">Home</a>
           </router-link>-->
+          <!-- <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg" active-class="active">
+            <a href="/">Home</a>
+          </li>-->
 
-          <router-link tag="li" to="/" class="g-mr-30--lg g-mb-7 g-mb-0--lg" active-class="active">
+          <!-- <router-link tag="li" to="/" class="g-mr-30--lg g-mb-7 g-mb-0--lg" active-class="active">
             <a class="nav-link p-0">Home</a>
-          </router-link>
+          </router-link>-->
           <li
             v-for="section in Sections"
             :key="section.name"
             class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg"
           >
-            <a
-              v-if="section.name !== 'Home'"
-              :href="section.ref"
-              class="nav-link p-0"
-            >{{ section.name }}</a>
+            <a :href="section.ref" class="nav-link p-0">{{ section.name }}</a>
           </li>
         </ul>
         <a class="navbar-brand u-header__log">
@@ -70,10 +69,10 @@ export default {
   data: function() {
     return {
       Sections: [
-        // {
-        //   name: 'Home',
-        //   ref: '/'
-        // },
+        {
+          name: 'Home',
+          ref: '/'
+        },
         {
           name: 'About',
           ref: '#about'
@@ -102,13 +101,12 @@ export default {
     };
   },
   mounted() {
-    var tpj = jQuery,
-      promoSlider;
-
-    // initialization of HSScrollNav
-    $.HSCore.components.HSScrollNav.init($('#js-scroll-nav'), {
-      duration: 700
-    });
+    // var tpj = jQuery,
+    //   promoSlider;
+    // // initialization of HSScrollNav
+    // $.HSCore.components.HSScrollNav.init($('#js-scroll-nav'), {
+    //   duration: 700
+    // });
   }
 };
 </script>

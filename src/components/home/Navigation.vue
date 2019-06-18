@@ -81,13 +81,12 @@
 <script>
 export default {
   mounted() {
-    var tpj = jQuery,
-      promoSlider;
-
-    // initialization of HSScrollNav
-    $.HSCore.components.HSScrollNav.init($('#js-scroll-nav'), {
-      duration: 700
-    });
+    // var tpj = jQuery,
+    //   promoSlider;
+    // // initialization of HSScrollNav
+    // $.HSCore.components.HSScrollNav.init($('#js-scroll-nav'), {
+    //   duration: 700
+    // });
   }
 };
 </script>

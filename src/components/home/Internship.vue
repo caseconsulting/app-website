@@ -9,24 +9,29 @@
           >Summer Internship</h2>
         </div>
         <p class="g-color-white">
-          Summer Internships take place from May to August in the Make Offices
-          in Reston, Virginia, within the metropolitan area of Washington,
-          D.C. The interns will design and implement software applications as
-          part of a collaborative team of interns and professional software
-          developers. The intern will gain experience in full stack
-          development using modern web technologies, including Amazon Web
-          Services (AWS). Interns will also learn best practices in version
-          control systems using GitHub, and will incorporate Agile
-          methodologies for self-organization and regular delivery of code for
-          production. The intern will develop communication skills with
-          customers to produce useful software for the client.
+          Summer Internships take place from May to August in the Make Offices in Reston, Virginia, within the
+          metropolitan area of Washington, D.C. The interns will design and implement software applications as part of a
+          collaborative team of interns and professional software developers. The intern will gain experience in full
+          stack development using modern web technologies, including Amazon Web Services (AWS). Interns will also learn
+          best practices in version control systems using GitHub, and will incorporate Agile methodologies for
+          self-organization and regular delivery of code for production. The intern will develop communication skills
+          with customers to produce useful software for the client.
         </p>
       </div>
       <div class="container g-pb-30 text-center">
         <!-- </row> -->
         <!-- <a href="./intern.html" type="button" class="btn" role="button"> Learn More </a> -->
-        <router-link to="/intern" active-class="active" exact>
-          <button
+        <!-- <router-link to="/intern" active-class="active" exact> -->
+        <a
+          href="/intern"
+          type="button"
+          class="tp-caption NotGeneric-CallToAction rev-btn rs-parallaxlevel-0"
+          style="z-index: 9; font-weight: bold; white-space: nowrap; outline: none; box-shadow: none; box-sizing: border-box; text-transform: uppercase; border-width: 2px;"
+          data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+          data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);cursor:pointer;"
+          role="button"
+        >Learn More</a>
+        <!-- <button
             id="promoSliderLayer7"
             class="tp-caption NotGeneric-CallToAction rev-btn rs-parallaxlevel-0"
             style="z-index: 9; font-weight: bold; white-space: nowrap; outline: none; box-shadow: none; box-sizing: border-box; text-transform: uppercase; border-width: 2px;"
@@ -49,8 +54,10 @@
             data-actions="[{'event':'click','action':'scrollbelow','offset':'-90px'}]"
             data-responsive_offset="on"
             data-responsive="off"
-          >Learn More</button>
-        </router-link>
+          >
+            Learn More
+        </button>-->
+        <!-- </router-link> -->
         <!-- </div> -->
       </div>
     </div>

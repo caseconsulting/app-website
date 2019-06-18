@@ -6,7 +6,9 @@
         <div class="u-heading-v2-2--bottom g-brd-primary g-mb-20">
           <h2
             class="text-uppercase u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md g-color-white"
-          >Requirements</h2>
+          >
+            Requirements
+          </h2>
         </div>
       </div>
       <div class="container">
