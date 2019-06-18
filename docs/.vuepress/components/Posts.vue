@@ -2,15 +2,11 @@
   <div class="posts" v-if="posts.length">
     <div class="post" v-for="post in posts">
       <router-link :to="post.path">
+        <h2 class="title">{{ post.frontmatter.title }}</h2>
         <div>
-          <img
-            v-if="post.frontmatter.image"
-            :src="$withBase(post.frontmatter.image)"
-            alt=""
-          />
+          <img class="blogImage" v-if="post.frontmatter.image" :src="$withBase(post.frontmatter.image)" alt="" />
         </div>
-        <h2>{{ post.frontmatter.title }}</h2>
-        <p>{{ post.frontmatter.description }}</p>
+        <p class="description">{{ post.frontmatter.description }}</p>
       </router-link>
     </div>
   </div>
@@ -18,7 +14,7 @@
 
 <script>
 export default {
-  props: ["page"],
+  props: ['page'],
   computed: {
     posts() {
       let currentPage = this.page ? this.page : this.$page.path;

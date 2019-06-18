@@ -1,0 +1,63 @@
+<template>
+  <nav class="navbar navbar-expand-lg g-py-0">
+    <div class="container-fluid g-pos-rel">
+      <!-- Logo -->
+      <a href="./case-cares" class="navbar-brand u-header__logo" data-type="static">
+        <img
+          class="u-header__logo-img u-header__logo-img--main g-width-110"
+          src="../public/img/case/logo-banner.gif"
+          alt="Case Consulting, Inc."
+        />
+      </a>
+      <!-- End Logo -->
+      <!-- Navigation -->
+      <div class="collapse navbar-collapse align-items-center flex-sm-row" id="navBar">
+        <ul
+          id="js-scroll-nav"
+          class="navbar-nav text-uppercase g-font-weight-700 g-font-size-11 g-pt-20 g-pt-5--lg ml-auto"
+        >
+          <li v-for="section in Sections" :key="section.name" class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
+            <a :href="section.ref" class="nav-link p-0">{{ section.name }}</a>
+          </li>
+        </ul>
+      </div>
+      <!-- End Navigation -->
+      <!-- Responsive Toggle Button -->
+      <button
+        class="navbar-toggler btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-20 g-right-0"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="navBar"
+        data-toggle="collapse"
+        data-target="#navBar"
+      >
+        <span class="hamburger hamburger--slider">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </span>
+      </button>
+      <!-- End Responsive Toggle Button -->
+    </div>
+  </nav>
+</template>
+
+<script>
+export default {
+  data: function() {
+    return {
+      Sections: [
+        {
+          name: 'Home',
+          ref: '/'
+        },
+        {
+          name: 'Case-Cares',
+          ref: '/case-cares'
+        }
+      ]
+    };
+  }
+};
+</script>
