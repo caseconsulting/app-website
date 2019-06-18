@@ -9,7 +9,7 @@
             class="u-header__logo-img u-header__logo-img--main g-width-110"
             src="/assets/custom/img/case/logo-banner.gif"
             alt="Case Consulting, Inc."
-          />
+          >
         </a>
         <!-- End Logo -->
 
@@ -32,9 +32,6 @@
               <a href="#intern" class="nav-link p-0">Internship</a>
             </li>
             <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-              <a href="#numbers" class="nav-link p-0">Numbers</a>
-            </li>
-            <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
               <a href="#awards" class="nav-link p-0">Awards</a>
             </li>
             <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
@@ -51,7 +48,7 @@
               src="/assets/custom/img/awards/2019_BPTW_logo.png"
               alt="Best places to work 2019 logo"
               class="nav-pad"
-            />
+            >
           </a>
         </div>
         <!-- End Navigation -->
@@ -78,15 +75,3 @@
   <!-- End Navigation -->
 </template>
 
-<script>
-export default {
-  mounted() {
-    // var tpj = jQuery,
-    //   promoSlider;
-    // // initialization of HSScrollNav
-    // $.HSCore.components.HSScrollNav.init($('#js-scroll-nav'), {
-    //   duration: 700
-    // });
-  }
-};
-</script>
