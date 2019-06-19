@@ -268,10 +268,10 @@ export default {
 
         const baseUrl = process.env.VUE_APP_API;
         const response = await axios.post(`${baseUrl}/apply`, data);
-        console.log(response);
+        console.log(response); // eslint-disable-line no-console
         return response;
       } catch (err) {
-        console.error(err);
+        console.error(err); // eslint-disable-line no-console
         return err;
       }
     }
