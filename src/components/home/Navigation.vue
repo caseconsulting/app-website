@@ -9,7 +9,7 @@
             class="u-header__logo-img u-header__logo-img--main g-width-110"
             src="/assets/custom/img/case/logo-banner.gif"
             alt="Case Consulting, Inc."
-          />
+          >
         </a>
         <!-- End Logo -->
 
@@ -48,7 +48,7 @@
               src="/assets/custom/img/awards/2019_BPTW_logo.png"
               alt="Best places to work 2019 logo"
               class="nav-pad"
-            />
+            >
           </a>
         </div>
         <!-- End Navigation -->
@@ -74,3 +74,16 @@
   </div>
   <!-- End Navigation -->
 </template>
+
+<script>
+export default {
+  mounted() {
+    // var tpj = jQuery,
+    //   promoSlider;
+    // // initialization of HSScrollNav
+    // $.HSCore.components.HSScrollNav.init($('#js-scroll-nav'), {
+    //   duration: 700
+    // });
+  }
+};
+</script>
