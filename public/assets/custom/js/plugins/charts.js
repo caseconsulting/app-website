@@ -1,9 +1,6 @@
 window.onload = function() {
   Chart.defaults.global.defaultFontColor = 'white';
 
-  //var colors = ['#e7982d', '#ffe4b9', '#f6644b', '#ec303b', '#3a8181', '#34495e']; PUMPKIN?
-  // var colors = ['#821121', '#D0EAFF', '#561420', '#333333', '#CCCCCC', '#FCFCFC'];
-  //var colors = ['#6194BC', '#A5D1F3', '#D0EAFF', '#E4001B', '#ECECEC', '#606060'];
   var colors = ['#99cc57', '#3eb0e3', '#fdb757', '#e90d8d', '#865fa9', 'lightgray', 'white'];
   //var colors = ['#2ecc71', '#3498db', '#9b59b6', '#f1c40f', '#e74c3c', '#34495e']; OG
 
@@ -22,6 +19,8 @@ window.onload = function() {
         ]
       },
       options: {
+        maintainAspectRatio: false,
+        responsive: true,
         legend: {
           display: false
         },
@@ -48,6 +47,8 @@ window.onload = function() {
         labels: ['Bachelors Degree', 'Masters Degree']
       },
       options: {
+        maintainAspectRatio: false,
+        responsive: true,
         legend: {
           display: false
         },
@@ -96,6 +97,8 @@ window.onload = function() {
         ]
       },
       options: {
+        maintainAspectRatio: false,
+        responsive: true,
         legend: {
           display: false
         },
