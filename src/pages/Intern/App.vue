@@ -12,10 +12,8 @@ export default {
     appIntern: Intern
   },
   created() {
-
     window.onpopstate = function() {
       history.replaceState(null, '/intern', '/intern');
-
     };
   }
 };

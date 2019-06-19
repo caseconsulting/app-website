@@ -13,11 +13,7 @@ export default {
   },
 
   created() {
-
-
-
     window.onpushstate = function() {
-      
       history.replaceState(null, '/', '/');
     };
   }
