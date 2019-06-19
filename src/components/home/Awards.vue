@@ -2,16 +2,14 @@
   <!-- Awards Section Content -->
   <section id="awards" class="g-theme-bg-color-1 g-text-color-2 g-pt-10 g-pb-10">
     <div>
-      <br />
-      <br />
+      <br>
+      <br>
       <div class="u-heading-v2-2--bottom text-center g-brd-primary g-mb-20">
         <h2
           class="text-uppercase text-center u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md g-color-white"
-        >
-          Awards
-        </h2>
+        >Awards</h2>
       </div>
-      <br />
+      <br>
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -28,7 +26,7 @@
                       src="../../../public/assets/custom/img/awards/2017_BPTW_HONOREE.png"
                       alt
                       class="rounded-circle img-fluid mobile-image award-shadow"
-                    />
+                    >
                   </a>
                 </div>
                 <div class="col-md-6 award-overlapped">
@@ -42,7 +40,7 @@
                       src="../../../public/assets/custom/img/awards/2018_BPTW_HONOREE.png"
                       alt
                       class="rounded-circle img-fluid mobile-image award-shadow"
-                    />
+                    >
                   </a>
                 </div>
                 <div class="col-md-6 award-overlapped-second">
@@ -56,7 +54,7 @@
                       src="../../../public/assets/custom/img/awards/bptw2019.jpg"
                       alt
                       class="rounded-circle img-fluid mobile-image award-shadow"
-                    />
+                    >
                   </a>
                 </div>
               </div>
@@ -67,8 +65,8 @@
               The Washington Business Journal's Best Places to Work program honors Greater Washington area companies
               that score highest in annual employee engagement. For the 3rd year in a row, Case Consulting Inc. has been
               recognized as one of the best places to work among small and medium companies:
-              <br />
-              <br />
+              <br>
+              <br>
             </p>
             <ul class="list-unstyled g-font-size-12 g-mb-30 g-mb-0--md">
               <li class="g-pos-rel g-pl-10 g-mb-15">

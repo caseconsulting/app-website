@@ -1,6 +1,24 @@
 window.onload = function() {
   Chart.defaults.global.defaultFontColor = 'white';
 
+  // draw = Chart.controllers.horizontalBar.prototype.draw;
+  // Chart.controllers.horizontalBar = Chart.controllers.horizontalBar.extend({
+  //   draw: function() {
+  //     draw.apply(this, arguments);
+  //     let ctx = this.chart.chart.ctx;
+  //     let _stroke = ctx.stroke;
+  //     ctx.stroke = function() {
+  //       ctx.save();
+  //       ctx.shadowColor = 'black';
+  //       ctx.shadowBlur = 10;
+  //       ctx.shadowOffsetX = 0;
+  //       ctx.shadowOffsetY = 5;
+  //       _stroke.apply(this, arguments);
+  //       ctx.restore();
+  //     };
+  //   }
+  // });
+
   var colors = ['#99cc57', '#3eb0e3', '#fdb757', '#e90d8d', '#865fa9', 'lightgray', 'white'];
   //var colors = ['#2ecc71', '#3498db', '#9b59b6', '#f1c40f', '#e74c3c', '#34495e']; OG
 
@@ -20,13 +38,13 @@ window.onload = function() {
       },
       options: {
         maintainAspectRatio: false,
-        responsive: true,
+        responsive: false,
         legend: {
           display: false
         },
         elements: {
           arc: {
-            borderWidth: 0
+            borderWidth: 1
           }
         }
       }
@@ -49,6 +67,12 @@ window.onload = function() {
       options: {
         maintainAspectRatio: false,
         responsive: true,
+        elements: {
+          rectangle: {
+            borderWidth: 1,
+            borderColor: 'white'
+          }
+        },
         legend: {
           display: false
         },
@@ -57,15 +81,18 @@ window.onload = function() {
             {
               ticks: {
                 min: 0,
-                max: 100
+                max: 100,
+                callback: function(value, index, values) {
+                  return value + '%';
+                }
               },
               gridLines: {
                 display: false,
                 drawBorder: false
               },
               scaleLabel: {
-                display: true,
-                labelString: '%'
+                display: false,
+                labelString: 'Percent %'
               }
             }
           ],
@@ -73,7 +100,8 @@ window.onload = function() {
             {
               gridLines: {
                 display: false,
-                drawBorder: false
+                drawBorder: true,
+                color: 'white'
               }
             }
           ]
@@ -104,7 +132,7 @@ window.onload = function() {
         },
         elements: {
           arc: {
-            borderWidth: 0
+            borderWidth: 1
           }
         }
       }
