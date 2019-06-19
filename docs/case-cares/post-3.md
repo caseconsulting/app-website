@@ -1,9 +1,10 @@
 ---
-image: /example-image.jpg
+image: /charlotte.jpg
 title: Men's Shelter of Charlotte
 author: Karen Katilie
 description: John and I started volunteering with the Men's Shelter of Charlotte this summer as a way to continue the work done by our daughter, Brandy.
 date: 12-17-18 (mm-dd-yy)
+tags: ['tag1', 'tag2', 'tag3', 'tag4', 'tag5']
 ---
 
 John and I started volunteering with the Men's Shelter of Charlotte this summer as a way to continue the work done by our daughter, Brandy.
