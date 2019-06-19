@@ -4,7 +4,11 @@ title: Men's Shelter of Charlotte
 author: Karen Katilie
 description: Volunteering at the shelter makes me realize how fortunate I have been - being born into a middle class family, having educational opportunities given to me and not having any major health issues.
 date: 03-17-19 (mm-dd-yy)
+tags: ['tag3', 'tag4', 'tag5']
 ---
+
+<!-- Adding Tags to Vuepress -->
+<TagLinks />
 
 John and I were at the men's shelter today for our monthly volunteering. The last several months, we served lunch to approximately 175 men. Today, we served lunch to 115. While it would be nice to say there are few men in need of help, this is more likely due to the nicer weather.
 

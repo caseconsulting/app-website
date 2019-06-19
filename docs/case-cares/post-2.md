@@ -6,6 +6,9 @@ description: Along with friends from our church and my brother-in-law & sister-i
 date: 12-15-18 (mm-dd-yy)
 ---
 
+<!-- Adding Tags to Vuepress -->
+<TagLinks />
+
 Along with friends from our church and my brother-in-law & sister-in-law, my family and I volunteered a few hours of our time at the Operation Christmas Child distribution center in Columbia, MD on December 7th.
 
 Operation Christmas Child is one of the many outreach ministries of Samaritans Purse, a nondenominational, Christian organization providing spiritual and physical aid to hurting people around the world. The ministry involves people giving of their time and money to pack shoeboxes with items to bless children in need around the world.
