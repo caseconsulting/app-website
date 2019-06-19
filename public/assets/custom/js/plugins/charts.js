@@ -126,7 +126,7 @@ window.onload = function() {
       },
       options: {
         maintainAspectRatio: false,
-        responsive: true,
+        responsive: false,
         legend: {
           display: false
         },
