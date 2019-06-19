@@ -1,5 +1,4 @@
-// import Vue from 'vue';
-// import BootstrapVue from 'bootstrap-vue';
+import BootstrapVue from 'bootstrap-vue';
 
 export default ({
   Vue, // the version of Vue being used in the VuePress app
@@ -7,5 +6,6 @@ export default ({
   router, // the router instance for the app
   siteData // site metadata
 }) => {
-  // Vue.use(BootstrapVue);
+  // ...apply enhancements to the app
+  Vue.use(BootstrapVue);
 };
