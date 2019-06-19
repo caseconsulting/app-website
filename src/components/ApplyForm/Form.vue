@@ -133,6 +133,7 @@ import Multiselect from 'vue-multiselect';
 import vueDropzone from 'vue2-dropzone';
 import { required, email } from 'vuelidate/lib/validators';
 import Header from '../home/Header.vue';
+import axios from 'axios';
 // function jobTitlesNotEmpty() {
 //   return this.jobTitles != null && this.jobTitles.length > 0;
 // }
@@ -171,6 +172,7 @@ export default {
       ],
       hearAboutUs: null,
       hearOptions: ['Website', 'LinkedIn', 'Facebook', 'Indeed', 'Glassdoor', 'Referral', 'Other'],
+      otherHearAboutUs: '',
       files: [],
       dropOptions: {
         init: function() {
@@ -233,7 +235,7 @@ export default {
     vfileAdded(file) {
       this.files.push(file.name);
     },
-    onSubmit() {
+    async onSubmit() {
       this.$v.firstName.$touch();
       this.valid.firstName = this.$v.firstName.required;
 
@@ -251,6 +253,27 @@ export default {
 
       this.$v.files.$touch();
       this.valid.resume = this.$v.files.hasFiles;
+
+      try {
+        const data = {
+          firstName: this.firstName,
+          lastName: this.lastName,
+          email: this.email,
+          jobTitles: this.jobTitles,
+          otherJobTitle: this.otherJobTitle,
+          hearAboutUs: this.hearAboutUs,
+          otherHearAboutUs: this.otherHearAboutUs,
+          comments: this.comments
+        };
+
+        const baseUrl = process.env.VUE_APP_API;
+        const response = await axios.post(`${baseUrl}/apply`, data);
+        console.log(response);
+        return response;
+      } catch (err) {
+        console.error(err);
+        return err;
+      }
     }
   }
 };
