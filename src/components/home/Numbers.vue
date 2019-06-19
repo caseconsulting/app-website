@@ -6,9 +6,7 @@
         <div class="text-center">
           <h1
             class="text-uppercase text-center u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-30--md g-color-white"
-          >
-            Case by the Numbers
-          </h1>
+          >Case by the Numbers</h1>
           <div class="u-heading-v2-2--bottom g-brd-primary"></div>
         </div>
         <div class="row">
@@ -30,7 +28,7 @@
               <div>
                 <canvas
                   id="bar"
-                  style="max-width: 350px; padding-left: 0; padding-right: 0; margin-left: auto; margin-right: auto; display: block; width: 800px;"
+                  style="max-width: 350px; padding-left: 0; padding-right: 0; margin-left: auto; margin-right: auto; display: block;"
                 ></canvas>
               </div>
             </div>
@@ -50,7 +48,7 @@
         </div>
       </div>
     </div>
-    <br />
+    <br>
   </section>
   <!-- End Section Content -->
 </template>

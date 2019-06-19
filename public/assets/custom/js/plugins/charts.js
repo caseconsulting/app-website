@@ -66,7 +66,7 @@ window.onload = function() {
       },
       options: {
         maintainAspectRatio: false,
-        responsive: true,
+        responsive: false,
         elements: {
           rectangle: {
             borderWidth: 1,
