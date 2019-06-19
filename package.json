@@ -16,7 +16,6 @@
   "dependencies": {
     "bootstrap-vue": "^2.0.0-rc.23",
     "core-js": "^2.6.5",
-    "jquery": "^3.4.1",
     "prettier": "^1.18.2",
     "vue": "^2.6.10",
     "vue-multiselect": "^2.1.6",
