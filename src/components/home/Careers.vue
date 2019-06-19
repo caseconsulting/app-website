@@ -6,9 +6,7 @@
         <div class="u-heading-v2-2--bottom g-brd-primary g-mb-20">
           <h2
             class="text-uppercase u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md g-color-white"
-          >
-            Careers
-          </h2>
+          >Careers</h2>
         </div>
       </div>
       <div class="whycase g-color-white container col-md-8 offset-md-2">
@@ -21,12 +19,8 @@
               <strong>You do absolutely exceptional work, everyday.</strong>
             </li>
             <li>You have high standards and love to build great products</li>
-            <li>
-              You want to write software that sets the bar by which other teams/projects are measured
-            </li>
-            <li>
-              You like to attack and solve problems quickly not watch from the sidelines
-            </li>
+            <li>You want to write software that sets the bar by which other teams/projects are measured</li>
+            <li>You like to attack and solve problems quickly not watch from the sidelines</li>
             <li>
               You are
               <strong>highly technical</strong> and love technology
@@ -40,12 +34,10 @@
               You are
               <strong>experienced</strong> designing and implementing solutions for complex problems
             </li>
-            <li>
-              This position requires a TS/SCI with poly (or suitability to acquire one)
-            </li>
+            <li>This position requires a TS/SCI with poly (or suitability to acquire one)</li>
           </ul>
         </div>
-        <br />
+        <br>
       </div>
       <div class="container g-pb-30">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -58,8 +50,7 @@
               role="tab"
               aria-controls="developer-tab"
               aria-selected="false"
-              >Software Developer</a
-            >
+            >Software Developer</a>
           </li>
           <li class="nav-item">
             <a
@@ -70,8 +61,7 @@
               role="tab"
               aria-controls="pm-tab"
               aria-selected="true"
-              >Project Manager</a
-            >
+            >Project Manager</a>
           </li>
           <li class="nav-item">
             <a
@@ -82,8 +72,7 @@
               role="tab"
               aria-controls="syseng-tab"
               aria-selected="false"
-              >System Engineer</a
-            >
+            >System Engineer</a>
           </li>
           <li class="nav-item">
             <a
@@ -94,8 +83,7 @@
               role="tab"
               aria-controls="cloud-tab"
               aria-selected="false"
-              >Cloud Engineer</a
-            >
+            >Cloud Engineer</a>
           </li>
           <li class="nav-item">
             <a
@@ -106,8 +94,7 @@
               role="tab"
               aria-controls="data-tab"
               aria-selected="false"
-              >Data Scientist</a
-            >
+            >Data Scientist</a>
           </li>
           <li class="nav-item">
             <a
@@ -118,8 +105,7 @@
               role="tab"
               aria-controls="tester-tab"
               aria-selected="false"
-              >Quality Assurance/Tester</a
-            >
+            >Quality Assurance/Tester</a>
           </li>
           <li class="nav-item">
             <a
@@ -130,12 +116,16 @@
               role="tab"
               aria-controls="intern-tab"
               aria-selected="false"
-              >Intern</a
-            >
+            >Intern</a>
           </li>
         </ul>
         <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="developer" role="tabpanel" aria-labelledby="developer-tab">
+          <div
+            class="tab-pane fade show active"
+            id="developer"
+            role="tabpanel"
+            aria-labelledby="developer-tab"
+          >
             <div>
               <div class="col-md-8 offset-md-2">
                 <h3 class="text-uppercase g-color-white">
@@ -147,47 +137,33 @@
               <div class="col-md-8 offset-md-2">
                 <div class="g-color-white g-font-size-16">
                   <strong>Who you are...</strong>
-                  <br />
+                  <br>
                   <ul>
                     <li>
                       A software developer who works to master a wide variety of programming skills and apply those
                       skills in an agile work environment to create complete applications.
                     </li>
                   </ul>
-                  <br />
+                  <br>
                   <strong>What you'll be doing...</strong>
-                  <br />
+                  <br>
                   <ul>
                     <li>
                       Designing modern, responsive web applications using frameworks such as Bootstrap and Material
                       Design
                     </li>
-                    <li>
-                      Creating single-page-applications using frameworks such as Angular, Vue, and React
-                    </li>
-                    <li>
-                      Building RESTful APIs using frameworks such as Ruby on Rails and Node.js
-                    </li>
+                    <li>Creating single-page-applications using frameworks such as Angular, Vue, and React</li>
+                    <li>Building RESTful APIs using frameworks such as Ruby on Rails and Node.js</li>
                     <li>
                       Persisting application state using both hosted storage solutions such as MySQL and Oracle as well
                       as cloud-based storage solutions such as DynamoDB and Aurora
                     </li>
-                    <li>
-                      Writing clean, unit-tested code in languages such as Java, Ruby, and JavaScript
-                    </li>
+                    <li>Writing clean, unit-tested code in languages such as Java, Ruby, and JavaScript</li>
                     <li>Researching and applying open source software solutions</li>
-                    <li>
-                      Implementing DevOps tools and processes for continuous integration and deployment
-                    </li>
-                    <li>
-                      Deploying applications in a serverless cloud environment using Amazon Web Services
-                    </li>
-                    <li>
-                      Working in an agile, collaborative environment both with colleagues and customers
-                    </li>
-                    <li>
-                      Growing your career through on-going technical training, conferences, and certifications
-                    </li>
+                    <li>Implementing DevOps tools and processes for continuous integration and deployment</li>
+                    <li>Deploying applications in a serverless cloud environment using Amazon Web Services</li>
+                    <li>Working in an agile, collaborative environment both with colleagues and customers</li>
+                    <li>Growing your career through on-going technical training, conferences, and certifications</li>
                   </ul>
                 </div>
               </div>
@@ -205,20 +181,18 @@
               <div class="col-md-8 offset-md-2">
                 <div class="g-color-white g-font-size-16">
                   <strong>Who you are...</strong>
-                  <br />
+                  <br>
                   <ul>
                     <li>
                       A leader that enjoys building and guiding project teams to deliver first-class solutions. A
                       critical thinker that enjoys responsibility and has excellent communication skills.
                     </li>
                   </ul>
-                  <br />
+                  <br>
                   <strong>What you'll be doing...</strong>
-                  <br />
+                  <br>
                   <ul>
-                    <li>
-                      Work closely with customers to capture needs and ensure the team is meeting those requirements
-                    </li>
+                    <li>Work closely with customers to capture needs and ensure the team is meeting those requirements</li>
                     <li>Form teams and guide them to delivery of solutions that exceed the customers' expectations</li>
                     <li>Work to identify and remove impediments for engineering teams</li>
                     <li>Help individuals meet professional development goals</li>
@@ -231,7 +205,12 @@
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="system-engineer" role="tabpanel" aria-labelledby="syseng-tab">
+          <div
+            class="tab-pane fade"
+            id="system-engineer"
+            role="tabpanel"
+            aria-labelledby="syseng-tab"
+          >
             <div>
               <div class="col-md-8 offset-md-2">
                 <h3 class="text-uppercase g-color-white">
@@ -243,16 +222,16 @@
               <div class="col-md-8 offset-md-2">
                 <div class="g-color-white g-font-size-16">
                   <strong>Who you are...</strong>
-                  <br />
+                  <br>
                   <ul>
                     <li>
                       A leader that enjoys out-of-the box thinking and problem-solving. A critical thinker that enjoys
                       tackling and solving the toughest problems.
                     </li>
                   </ul>
-                  <br />
+                  <br>
                   <strong>What you'll be doing...</strong>
-                  <br />
+                  <br>
                   <ul>
                     <li>
                       Designing modern, responsive web applications using frameworks such as Bootstrap and Material
@@ -272,7 +251,12 @@
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="cloud-engineer" role="tabpanel" aria-labelledby="cloud-tab">
+          <div
+            class="tab-pane fade"
+            id="cloud-engineer"
+            role="tabpanel"
+            aria-labelledby="cloud-tab"
+          >
             <div>
               <div class="col-md-8 offset-md-2">
                 <h3 class="text-uppercase g-color-white">
@@ -284,16 +268,16 @@
               <div class="col-md-8 offset-md-2">
                 <div class="g-color-white g-font-size-16">
                   <strong>Who you are...</strong>
-                  <br />
+                  <br>
                   <ul>
                     <li>
                       An expert in architecting, designing and building solutions. A certified AWS Solutions Architect,
                       SysOps Administrator, DevOps Architect, or interested in obtaining the certification.
                     </li>
                   </ul>
-                  <br />
+                  <br>
                   <strong>What you'll be doing...</strong>
-                  <br />
+                  <br>
                   <ul>
                     <li>
                       Architecting, designing, and building medium to large-scale enterprise systems with a focus on
@@ -325,7 +309,7 @@
               <div class="col-md-8 offset-md-2">
                 <div class="g-color-white g-font-size-16">
                   <strong>Who you are...</strong>
-                  <br />
+                  <br>
                   <ul>
                     <li>
                       Known for strong analytical and problem-solving skills, with experience building, training, and
@@ -333,9 +317,9 @@
                       among the masses of data.
                     </li>
                   </ul>
-                  <br />
+                  <br>
                   <strong>What you'll be doing...</strong>
-                  <br />
+                  <br>
                   <ul>
                     <li>
                       Utilizing AI/ML cloud services (AWS, Google, Azure) to tackle the customer's largest problem area,
@@ -355,7 +339,12 @@
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="quality-assurance-tester" role="tabpanel" aria-labelledby="tester-tab">
+          <div
+            class="tab-pane fade"
+            id="quality-assurance-tester"
+            role="tabpanel"
+            aria-labelledby="tester-tab"
+          >
             <div>
               <div class="col-md-8 offset-md-2">
                 <h3 class="text-uppercase g-color-white">
@@ -367,16 +356,16 @@
               <div class="col-md-8 offset-md-2">
                 <div class="g-color-white g-font-size-16">
                   <strong>Who you are...</strong>
-                  <br />
+                  <br>
                   <ul>
                     <li>
                       A detail-oriented person interested in becoming an integral part of a development team that is
                       highly focused on quality software solutions.
                     </li>
                   </ul>
-                  <br />
+                  <br>
                   <strong>What you'll be doing...</strong>
-                  <br />
+                  <br>
                   <ul>
                     <li>
                       Communicating and collaborating with the development and requirements teams to coordinate testing
@@ -412,7 +401,7 @@
               <div class="col-md-8 offset-md-2">
                 <div class="g-color-white g-font-size-16">
                   <strong>Who you are...</strong>
-                  <br />
+                  <br>
                   <ul>
                     <li>
                       A Rock Star Student interested in real-world experience. A True Team Player that enjoys
@@ -420,18 +409,16 @@
                       Looking to solve problems, gain exposure and pursue your interests in software development.
                     </li>
                   </ul>
-                  <br />
+                  <br>
                   <strong>What you'll be doing...</strong>
-                  <br />
+                  <br>
                   <ul>
                     <li>
                       Designing modern, responsive web applications using frameworks such as Bootstrap and Material
                       Design
                     </li>
                     <li>Working with fellow interns to implement the best user experience possible</li>
-                    <li>
-                      Designing and implementing features in existing and new products that will be used by the company
-                    </li>
+                    <li>Designing and implementing features in existing and new products that will be used by the company</li>
                     <li>Creating single-page-applications using frameworks such as Angular, Vue, and React</li>
                     <li>Building RESTful APIs using frameworks such as Ruby on Rails and Node.js</li>
                     <li>
@@ -440,9 +427,7 @@
                     </li>
                     <li>Writing clean, unit-tested code in languages such as Java, Ruby, and JavaScript</li>
                     <li>Deploying applications in a serverless cloud environment using Amazon Web Services</li>
-                    <li>
-                      Working in an agile, collaborative environment both with fellow interns and software professionals
-                    </li>
+                    <li>Working in an agile, collaborative environment both with fellow interns and software professionals</li>
                     <li>Reviewing and providing detailed feedback on documentation and test plans for features</li>
                   </ul>
                 </div>
@@ -453,8 +438,12 @@
       </div>
     </div>
     <!-- Apply Button -->
-    <apply-button></apply-button>
-    <br />
+    <apply-button hidden></apply-button>
+    <div class="g-color-white g-font-size-16 text-center">
+      <!-- temporary -->
+      <strong>Send an email to info@consultwithcase.com to apply!</strong>
+    </div>
+    <br>
     <!-- End Apply Button  -->
   </section>
   <!-- End Section Content -->
