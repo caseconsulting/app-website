@@ -30,6 +30,8 @@ Download this file to the project root directory:
 aws s3 cp s3://case-consulting-website-code/.env .env
 ```
 
+## Application tasks
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
