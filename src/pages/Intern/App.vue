@@ -10,6 +10,13 @@ export default {
   name: 'Intern',
   components: {
     appIntern: Intern
+  },
+  created() {
+
+    window.onpopstate = function() {
+      history.replaceState(null, '/intern', '/intern');
+
+    };
   }
 };
 </script>
