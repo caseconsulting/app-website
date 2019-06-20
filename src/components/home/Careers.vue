@@ -436,8 +436,9 @@
     <apply-button hidden></apply-button>
     <div class="g-color-white g-font-size-16 text-center">
       <!-- temporary -->
-      <strong>Send an email to info@consultwithcase.com to apply!</strong>
+      <strong style="font-size: 18px;">Send an email to info@consultwithcase.com to apply!</strong>
     </div>
+    <br />
     <br />
     <!-- End Apply Button  -->
   </section>

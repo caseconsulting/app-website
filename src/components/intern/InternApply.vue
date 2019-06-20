@@ -20,7 +20,7 @@
           <apply-button hidden></apply-button>
           <div class="g-font-size-16 text-center">
             <!-- temporary -->
-            <strong>Send an email to info@consultwithcase.com to apply!</strong>
+            <strong style="color: #E74C3C;">Send an email to info@consultwithcase.com to apply!</strong>
           </div>
         </div>
       </div>
