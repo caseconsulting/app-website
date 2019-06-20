@@ -2,7 +2,7 @@ export default [
   {
     id: 21,
     iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/v1559827387/website/Screen_Shot_2019-06-06_at_9.21.52_AM.png',
+      'https://res.cloudinary.com/consultwithcase/image/upload/v1559827387/website/Screen_Shot_2019-06-06_at_9.21.52_AM.webp',
     title: '2019 RailsConf',
     driveLink: 'https://photos.app.goo.gl/KGfxABoykFm1SkBn8',
     descrip: ['Two of our employees learned a lot at the RailsConf in Minneapolis, MN this year!']
@@ -10,7 +10,7 @@ export default [
   {
     id: 20,
     iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/v1559827815/website/Screen_Shot_2019-06-06_at_9.28.59_AM.png',
+      'https://res.cloudinary.com/consultwithcase/image/upload/v1559827815/website/Screen_Shot_2019-06-06_at_9.28.59_AM.webp',
     title: '2019 Wreaths Across America',
     driveLink: 'https://photos.app.goo.gl/UUa7owWyjw1LbQSq9',
     descrip: [
@@ -20,7 +20,7 @@ export default [
   {
     id: 19,
     iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/v1560788481/website/Screen_Shot_2019-06-17_at_12.20.29_PM.png',
+      'https://res.cloudinary.com/consultwithcase/image/upload/v1560788481/website/Screen_Shot_2019-06-17_at_12.20.29_PM.webp',
     title: '2018 Holiday Party',
     driveLink: 'https://photos.app.goo.gl/ZsHRWrR6HXBvmZwr7',
     descrip: [
@@ -30,7 +30,7 @@ export default [
   {
     id: 18,
     iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/v1560516962/website/Screen_Shot_2019-06-14_at_8.51.40_AM.png',
+      'https://res.cloudinary.com/consultwithcase/image/upload/v1560516962/website/Screen_Shot_2019-06-14_at_8.51.40_AM.webp',
     title: '2018 Family Picnic',
     driveLink: 'https://photos.app.goo.gl/PgjqwnBVNV57PkEr6',
     descrip: [
@@ -40,7 +40,7 @@ export default [
   {
     id: 17,
     iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/c_crop,g_center,h_811,w_1082/v1535029085/website/2018_leesburg_race.jpg',
+      'https://res.cloudinary.com/consultwithcase/image/upload/c_crop,g_center,h_811,w_1082/v1535029085/website/2018_leesburg_race.webp',
     title: '2018 Leesburg 5k/20k',
     driveLink: 'https://photos.app.goo.gl/Xz9Pd53AhmMiF6Fw5',
     descrip: [
@@ -49,7 +49,7 @@ export default [
   },
   {
     id: 16,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029084/website/IMG_5303.jpg',
+    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029084/website/IMG_5303.webp',
     title: '2018 Summer Internship',
     driveLink: 'https://photos.app.goo.gl/K1HsUTjAbVQ8sBUY8',
     descrip: [
@@ -59,14 +59,14 @@ export default [
   {
     id: 15,
     iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/c_crop,g_custom:faces,h_738,w_1045/v1535029083/website/IMG_4328.jpg',
+      'https://res.cloudinary.com/consultwithcase/image/upload/c_crop,g_custom:faces,h_738,w_1045/v1535029083/website/IMG_4328.webp',
     title: 'Solo: A Star Wars Story',
     driveLink: 'https://photos.app.goo.gl/WUShWChoVdi4DCep9',
     descrip: ['We got the internship kicked off with a company movie event to see Solo: A Star Wars Story.']
   },
   {
     id: 14,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029079/website/DSC_8859.jpg',
+    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029079/website/DSC_8859.webp',
     title: '2017 Holiday Party',
     driveLink: 'https://photos.app.goo.gl/2U6zL2tz3Lou17ca2',
     descrip: [
@@ -75,14 +75,14 @@ export default [
   },
   {
     id: 13,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029086/website/IMG_6485.jpg',
+    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029086/website/IMG_6485.webp',
     title: '2017 AWS re:Invent',
     driveLink: 'https://photos.app.goo.gl/wg2bTokQI4RkM3WA3',
     descrip: ['This year we had a record number of employees go to AWS re:Invent in Las Vegas!']
   },
   {
     id: 12,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029078/website/DSC_5279.jpg',
+    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029078/website/DSC_5279.webp',
     title: '2017 Family Picnic',
     driveLink: 'https://photos.app.goo.gl/8RefFAJ1i7EY6yqT2',
     descrip: [
@@ -92,7 +92,7 @@ export default [
   {
     id: 11,
     iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/v1535029075/website/AB880EA9-3749-4AB6-92E8-7F05B63A6A24.jpg',
+      'https://res.cloudinary.com/consultwithcase/image/upload/v1535029075/website/AB880EA9-3749-4AB6-92E8-7F05B63A6A24.webp',
     title: 'Recruiting @ VT CSRC Career Fair',
     driveLink: 'https://photos.app.goo.gl/mckEE6nkiRxVkaGh1',
     descrip: [
@@ -101,7 +101,7 @@ export default [
   },
   {
     id: 10,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029082/website/IMG_1002.jpg',
+    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029082/website/IMG_1002.webp',
     title: '2017 Summer Internship',
     driveLink: 'https://goo.gl/photos/G1P76LwSpCGRwUqb6',
     descrip: [
@@ -110,7 +110,7 @@ export default [
   },
   {
     id: 9,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029081/website/IMG_0611.jpg',
+    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029081/website/IMG_0611.webp',
     title: '2017 Best Places to Work',
     driveLink: 'https://goo.gl/photos/6YXNHMP7mbY6MJid9',
     descrip: [
@@ -120,14 +120,14 @@ export default [
   {
     id: 8,
     iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/v1535029074/website/52237478987__477B81CD-3FD9-489A-9462-DFC6F13C3CE9.jpg',
+      'https://res.cloudinary.com/consultwithcase/image/upload/v1535029074/website/52237478987__477B81CD-3FD9-489A-9462-DFC6F13C3CE9.webp',
     title: 'Game Nights',
     driveLink: 'https://photos.app.goo.gl/xsfrqKKkmplU1D133',
     descrip: ['Employees always have a good time at our monthly game nights in our wonderful office space.']
   },
   {
     id: 7,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029080/website/IMG_0110.jpg',
+    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029080/website/IMG_0110.webp',
     title: '2017 Serverless Conf',
     driveLink: 'https://goo.gl/photos/4T3HKxNofJPSDrqt8',
     descrip: [
@@ -137,7 +137,7 @@ export default [
   {
     id: 6,
     iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/v1535029077/website/case-consulting-holiday-party-2016_30884154854_o.jpg',
+      'https://res.cloudinary.com/consultwithcase/image/upload/v1535029077/website/case-consulting-holiday-party-2016_30884154854_o.webp',
     title: '2016 Holiday Party',
     driveLink: 'https://goo.gl/photos/BvT9SvVD4zVXMSw5A',
     descrip: [
@@ -147,7 +147,7 @@ export default [
   {
     id: 5,
     iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/v1535029073/website/2016-case-consulting-family-picnic_29175329344_o.jpg',
+      'https://res.cloudinary.com/consultwithcase/image/upload/v1535029073/website/2016-case-consulting-family-picnic_29175329344_o.webp',
     title: '2016 Family Picnic',
     driveLink: 'https://goo.gl/photos/XvmL1Vp7FEAdjzYL6',
     descrip: [
@@ -156,7 +156,7 @@ export default [
   },
   {
     id: 4,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029089/website/IMG_20161130_114803187.jpg',
+    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029089/website/IMG_20161130_114803187.webp',
     title: 're:Invent 2016',
     driveLink: 'https://goo.gl/photos/vfdM1cf6bihNDoNcA',
     descrip: [
@@ -165,7 +165,7 @@ export default [
   },
   {
     id: 3,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029090/website/IMG_20161216_164441944.jpg',
+    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029090/website/IMG_20161216_164441944.webp',
     title: 'Rogue One: A Star Wars Movie',
     driveLink: 'https://goo.gl/photos/qNT8KHuR7HTLq3tK6',
     descrip: ['The force is strong with us as we watched Rogue One at the Alamo Drafthouse.']
@@ -173,7 +173,7 @@ export default [
   {
     id: 2,
     iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/v1535029076/website/case-consulting-holiday-party-2015_23844271536_o.jpg',
+      'https://res.cloudinary.com/consultwithcase/image/upload/v1535029076/website/case-consulting-holiday-party-2015_23844271536_o.webp',
     title: '2015 Holiday Party',
     driveLink: 'https://goo.gl/photos/AE3Jadpp3fcPvF4o9',
     descrip: [
@@ -182,7 +182,7 @@ export default [
   },
   {
     id: 1,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029088/website/IMG_20151218_161108726.jpg',
+    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029088/website/IMG_20151218_161108726.webp',
     title: 'Star Wars: The Force Awakens',
     driveLink: 'https://goo.gl/photos/fkL6C2WmdvT9mFpg9',
     descrip: ['Several employees viewed the latest Star Wars movie at the Udvar Hazy IMAX theater.']
