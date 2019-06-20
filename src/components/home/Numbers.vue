@@ -6,12 +6,10 @@
         <div class="text-center">
           <h1
             class="text-uppercase text-center u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-30--md g-color-white"
-          >
-            Case by the Numbers
-          </h1>
+          >Case by the Numbers</h1>
           <div class="u-heading-v2-2--bottom g-brd-primary"></div>
         </div>
-        <br />>
+        <br>
         <div class="row">
           <div class="col-xl-4">
             <div class="pie-container">
@@ -51,7 +49,7 @@
         </div>
       </div>
     </div>
-    <br />
+    <br>
   </section>
   <!-- End Section Content -->
 </template>
