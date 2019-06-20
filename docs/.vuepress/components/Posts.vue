@@ -8,6 +8,7 @@
         </div>
         <p class="description">{{ post.frontmatter.description }}</p>
       </router-link>
+      <TagLinks :tags="post.frontmatter.tags"></TagLinks>
     </div>
   </div>
 </template>
