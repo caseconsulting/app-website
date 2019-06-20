@@ -182,7 +182,8 @@ export default {
             }
           });
         },
-        acceptedFiles: 'image/jpeg,application/pdf,text/plain',
+        acceptedFiles:
+          'image/jpeg, image/gif, application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document',
 
         url: 'https://httpbin.org/post'
         // maxFilesize: 2,
@@ -235,6 +236,14 @@ export default {
     vfileAdded(file) {
       this.files.push(file.name);
     },
+    isAllValid() {
+      for (const v of Object.values(this.valid)) {
+        if (!v) {
+          return false;
+        }
+      }
+      return true;
+    },
     async onSubmit() {
       this.$v.firstName.$touch();
       this.valid.firstName = this.$v.firstName.required;
@@ -248,31 +257,37 @@ export default {
       this.$v.jobTitles.$touch();
       this.valid.jobTitles = this.$v.jobTitles.hasJobTitle;
 
-      this.$v.otherJobTitle.$touch();
-      this.valid.otherJobTitle = this.$v.otherJobTitle.required;
+      if (this.jobTitles.includes('Other')) {
+        this.$v.otherJobTitle.$touch();
+        this.valid.otherJobTitle = this.$v.otherJobTitle.required;
+      } else {
+        this.valid.otherJobTitle = true;
+      }
 
       this.$v.files.$touch();
       this.valid.resume = this.$v.files.hasFiles;
 
-      try {
-        const data = {
-          firstName: this.firstName,
-          lastName: this.lastName,
-          email: this.email,
-          jobTitles: this.jobTitles,
-          otherJobTitle: this.otherJobTitle,
-          hearAboutUs: this.hearAboutUs,
-          otherHearAboutUs: this.otherHearAboutUs,
-          comments: this.comments
-        };
+      if (this.isAllValid()) {
+        try {
+          const data = {
+            firstName: this.firstName,
+            lastName: this.lastName,
+            email: this.email,
+            jobTitles: this.jobTitles,
+            otherJobTitle: this.otherJobTitle,
+            hearAboutUs: this.hearAboutUs,
+            otherHearAboutUs: this.otherHearAboutUs,
+            comments: this.comments
+          };
 
-        const baseUrl = process.env.VUE_APP_API;
-        const response = await axios.post(`${baseUrl}/apply`, data);
-        console.log(response); // eslint-disable-line no-console
-        return response;
-      } catch (err) {
-        console.error(err); // eslint-disable-line no-console
-        return err;
+          const baseUrl = process.env.VUE_APP_API;
+          const response = await axios.post(`${baseUrl}/apply`, data);
+          console.log(response); // eslint-disable-line no-console
+          return response;
+        } catch (err) {
+          console.error(err); // eslint-disable-line no-console
+          return err;
+        }
       }
     }
   }
