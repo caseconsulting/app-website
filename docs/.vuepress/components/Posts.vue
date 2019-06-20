@@ -3,7 +3,9 @@
     <div class="post" v-for="post in posts">
       <div class="w3-display-container">
         <router-link :to="post.path">
-          <div class="w3-display-topright w3-display-hover"><p>hello</p></div>
+          <div class="w3-display-topright w3-display-hover">
+            <p>{{ getTopic(post.path) }}</p>
+          </div>
           <h2 class="title">{{ post.frontmatter.title }}</h2>
           <p class="meta">
             Posted on {{ post.frontmatter.date.slice(0, 8) }} by
@@ -15,7 +17,9 @@
           <p class="description">{{ post.frontmatter.description }}</p>
         </router-link>
       </div>
-      <TagLinks :tags="post.frontmatter.tags"></TagLinks>
+      <div class="tagsHome">
+        <TagLinks :tags="post.frontmatter.tags"></TagLinks>
+      </div>
     </div>
   </div>
 </template>

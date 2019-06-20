@@ -31,7 +31,6 @@ max-width: 435px
 .post {
   margin-top: 30px;
   border: 1px solid #eee;
-  padding: 20px;
   box-shadow: 0 2px 3px #ccc;
   background-color: white;
 }
@@ -94,8 +93,11 @@ padding-bottom: 0.25rem;
 }
 
 .w3-display-container {
-  position:relative;
-  width: 400px;
+padding-top: 20px;
+padding-left: 20px;
+padding-right: 20px;
+position:relative;
+width: 400px;
 }
 
 .w3-display-container:hover .w3-display-hover {
@@ -112,6 +114,20 @@ padding-bottom: 0.25rem;
 
 .w3-display-topright {
   position:absolute;
+  margin-right: 20px;
+  margin-top: 6px;
   right:0;
   top:0;
+}
+
+.w3-display-topright p {
+line-height: 0;
+font-size: 13px;
+color: gray;
+}
+
+.tagsHome {
+padding-bottom: 20px;
+padding-left: 20px;
+padding-right: 20px;
 }
