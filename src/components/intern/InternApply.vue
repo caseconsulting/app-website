@@ -5,12 +5,12 @@
       <div class="g-pt-100 g-pb-30">
         <div class="container text-center g-max-width-750 g-mb-20 g-pt-10">
           <div class="u-heading-v2-2--bottom g-brd-primary g-mb-20">
-            <h2
-              class="text-uppercase u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md"
-            >Apply</h2>
+            <h2 class="text-uppercase u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md">
+              Apply
+            </h2>
           </div>
         </div>
-        <br>
+        <br />
         <div class="container">
           <question
             v-for="applyQuestion in applyQuestions"
@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-    <br>
+    <br />
   </section>
 </template>
 
