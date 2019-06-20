@@ -1,13 +1,20 @@
 <template>
   <div class="posts" v-if="posts.length">
     <div class="post" v-for="post in posts">
-      <router-link :to="post.path">
-        <h2 class="title">{{ post.frontmatter.title }}</h2>
-        <div>
-          <img class="blogImage" v-if="post.frontmatter.image" :src="$withBase(post.frontmatter.image)" alt="" />
-        </div>
-        <p class="description">{{ post.frontmatter.description }}</p>
-      </router-link>
+      <div class="w3-display-container">
+        <router-link :to="post.path">
+          <div class="w3-display-topright w3-display-hover"><p>hello</p></div>
+          <h2 class="title">{{ post.frontmatter.title }}</h2>
+          <p class="meta">
+            Posted on {{ post.frontmatter.date.slice(0, 8) }} by
+            {{ post.frontmatter.author }}
+          </p>
+          <div>
+            <img class="blogImage" v-if="post.frontmatter.image" :src="$withBase(post.frontmatter.image)" alt="" />
+          </div>
+          <p class="description">{{ post.frontmatter.description }}</p>
+        </router-link>
+      </div>
       <TagLinks :tags="post.frontmatter.tags"></TagLinks>
     </div>
   </div>
@@ -15,6 +22,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      date: ''
+    };
+  },
   props: ['page'],
   computed: {
     posts() {
@@ -27,6 +39,21 @@ export default {
           return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
         });
       return posts;
+    }
+  },
+  methods: {
+    getTopic(path) {
+      let topic = path.split('/');
+      switch (topic[1]) {
+        case 'case-cares':
+          return 'Case Cares';
+        case 'new-hires':
+          return 'New Hires';
+        case 'awards':
+          return 'Awards';
+        default:
+          return 'No Topic';
+      }
     }
   }
 };

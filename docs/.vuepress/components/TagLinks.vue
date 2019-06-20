@@ -21,22 +21,3 @@ export default {
   props: ['tags']
 };
 </script>
-
-<style>
-.tagBar {
-}
-
-.tagsScroll {
-  overflow: auto;
-  white-space: nowrap;
-}
-
-.tagsScroll::-webkit-scrollbar {
-  display: none;
-}
-
-.tagsScroll a {
-  margin-right: 10px;
-  color: #ccc;
-}
-</style>
