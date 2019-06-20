@@ -175,21 +175,23 @@ export default {
       otherHearAboutUs: '',
       files: [],
       dropOptions: {
+        // thumbnailWidth: '50',
+        // thumbnailHeight: '50',
         init: function() {
           this.on('addedfile', function(file) {
-            if (!file.type.match(/image.*/)) {
-              this.emit('thumbnail', file, '/assets/logo.png');
+            if (file.type.match(/application.pdf/)) {
+              this.emit('thumbnail', file, '/assets/pdfThumbnail.png');
+            } else if (file.type.match(/application.vnd.openxmlformats-officedocument.wordprocessingml.document/)) {
+              this.emit('thumbnail', file, '/assets/pdfThumbnail.png');
             }
           });
         },
         acceptedFiles:
-          'image/jpeg, image/gif, application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+          'image/jpeg, image/png, image/gif, application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document',
 
         url: 'https://httpbin.org/post'
         // maxFilesize: 2,
-        //maxFiles: 4,
-        // thumbnailWidth: 150,
-        // thumbnailHeight: 150
+        //maxFiles: 4
       },
       comments: ''
     };
