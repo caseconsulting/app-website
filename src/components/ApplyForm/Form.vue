@@ -91,13 +91,14 @@
                 <vue-dropzone
                   ref="dropzone"
                   id="drop1"
-                  :options="dropOptions"
                   @vdropzone-thumbnail="vfileAdded"
+                  @vdropzone-removed-file="removeFile"
+                  :options="dropOptions"
                 ></vue-dropzone>
                 <p class="invalidMsg" v-if="!valid.resume">Please upload a resume</p>
 
-                <br />
-                <button class="btn btn-default" @click="removeAllFiles">Remove All Files</button>
+                <!-- <br /> -->
+                <!-- <button class="btn btn-default" @click="removeAllFiles">Remove All Files</button> -->
 
                 <p v-for="file in files" :key="file">{{ file }}</p>
               </div>
@@ -174,9 +175,10 @@ export default {
       hearOptions: ['Website', 'LinkedIn', 'Facebook', 'Indeed', 'Glassdoor', 'Referral', 'Other'],
       otherHearAboutUs: '',
       files: [],
+      //dropZone Options
       dropOptions: {
-        // thumbnailWidth: '50',
-        // thumbnailHeight: '50',
+         thumbnailWidth: '150',
+         thumbnailHeight: '150',
         init: function() {
           this.on('addedfile', function(file) {
             if (file.type.match(/application.pdf/)) {
@@ -189,7 +191,8 @@ export default {
         acceptedFiles:
           'image/jpeg, image/png, image/gif, application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document',
 
-        url: 'https://httpbin.org/post'
+        url: 'https://httpbin.org/post',
+        addRemoveLinks: true
         // maxFilesize: 2,
         //maxFiles: 4
       },
@@ -228,9 +231,14 @@ export default {
     formHeader: Header
   },
   methods: {
-    removeAllFiles() {
-      this.$refs.dropzone.removeAllFiles();
-      this.files = [];
+    // removeAllFiles() {
+    //   this.$refs.dropzone.removeAllFiles();
+    //   this.files = [];
+    // },
+    removeFile(file) {
+      let fileName = file.name;
+      this.files = this.files.filter(e => e !== fileName);
+
     },
     try() {
       return false;
@@ -316,5 +324,13 @@ export default {
 
 .form-control:focus {
   border-color: #42b883;
+}
+
+a.dz.remove {
+  color: red;
+}
+
+.vue-dropzone>.dz-preview .dz-remove{
+ border: 1px #fff solid !important;
 }
 </style>
