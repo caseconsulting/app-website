@@ -177,8 +177,8 @@ export default {
       files: [],
       //dropZone Options
       dropOptions: {
-         thumbnailWidth: '150',
-         thumbnailHeight: '150',
+        thumbnailWidth: '150',
+        thumbnailHeight: '150',
         init: function() {
           this.on('addedfile', function(file) {
             if (file.type.match(/application.pdf/)) {
@@ -238,7 +238,6 @@ export default {
     removeFile(file) {
       let fileName = file.name;
       this.files = this.files.filter(e => e !== fileName);
-
     },
     try() {
       return false;
@@ -330,7 +329,7 @@ a.dz.remove {
   color: red;
 }
 
-.vue-dropzone>.dz-preview .dz-remove{
- border: 1px #fff solid !important;
+.vue-dropzone > .dz-preview .dz-remove {
+  border: 1px #fff solid !important;
 }
 </style>
