@@ -94,6 +94,9 @@
                   @vdropzone-thumbnail="vfileAdded"
                   @vdropzone-removed-file="removeFile"
                   :options="dropOptions"
+                  :awss3="awss3"
+                  @vdropzone-s3-upload-error="s3UploadError"
+                  @vdropzone-s3-upload-success="s3UploadSuccess"
                 ></vue-dropzone>
                 <p class="invalidMsg" v-if="!valid.resume">Please upload a resume</p>
 
@@ -135,6 +138,8 @@ import vueDropzone from 'vue2-dropzone';
 import { required, email } from 'vuelidate/lib/validators';
 import Header from '../home/Header.vue';
 import axios from 'axios';
+import { uuid } from 'vue-uuid';
+
 // function jobTitlesNotEmpty() {
 //   return this.jobTitles != null && this.jobTitles.length > 0;
 // }
@@ -175,6 +180,7 @@ export default {
       hearOptions: ['Website', 'LinkedIn', 'Facebook', 'Indeed', 'Glassdoor', 'Referral', 'Other'],
       otherHearAboutUs: '',
       files: [],
+      uploads: [],
       //dropZone Options
       dropOptions: {
         thumbnailWidth: '150',
@@ -190,11 +196,21 @@ export default {
         },
         acceptedFiles:
           'image/jpeg, image/png, image/gif, application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-
-        url: 'https://httpbin.org/post',
+        renameFile: file => {
+          return uuid.v4() + '/' + file.name;
+        },
+        // url: '/',
         addRemoveLinks: true
         // maxFilesize: 2,
         //maxFiles: 4
+      },
+      awss3: {
+        signingURL: file => {
+          return `${process.env.VUE_APP_API}/upload/` + file.upload.filename;
+        },
+        headers: {},
+        params: {},
+        sendFileToServer: false
       },
       comments: ''
     };
@@ -231,6 +247,13 @@ export default {
     formHeader: Header
   },
   methods: {
+    s3UploadError(errorMessage) {
+      console.error('Error uploading:', errorMessage);
+    },
+    s3UploadSuccess(s3ObjectLocation) {
+      console.log('Upload was successful');
+      this.uploads.push(s3ObjectLocation);
+    },
     // removeAllFiles() {
     //   this.$refs.dropzone.removeAllFiles();
     //   this.files = [];
@@ -286,7 +309,8 @@ export default {
             otherJobTitle: this.otherJobTitle,
             hearAboutUs: this.hearAboutUs,
             otherHearAboutUs: this.otherHearAboutUs,
-            comments: this.comments
+            comments: this.comments,
+            fileNames: [] // TODO: Add uploaded file names
           };
 
           const baseUrl = process.env.VUE_APP_API;
