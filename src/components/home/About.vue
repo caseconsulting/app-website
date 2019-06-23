@@ -6,26 +6,21 @@
       <div class="row d-flex align-items-stretch no-gutters">
         <div class="col-md-4 g-parent g-bg-white">
           <!-- Article -->
-          <article
-            class="d-flex flex-wrap text-center g-color-gray-dark-v3"
-            style="min-height: 100%"
-          >
+          <article class="d-flex flex-wrap text-center g-color-gray-dark-v3" style="min-height: 100%">
             <div class="order-2 w-100">
               <img
                 class="w-100 img-fluid"
                 style="min-height: 100%"
                 src="https://res.cloudinary.com/consultwithcase/image/upload/v1561333506/website/home/sepia_desk.webp"
                 alt="Sepia Desk"
-              >
+              />
             </div>
             <div
               id="work-that-matters"
               class="order-1 w-100 g-z-index-1 g-py-50 g-py-100--md g-px-15 g-px-50--md"
               style="min-height: 100%"
             >
-              <h3
-                class="text-uppercase g-line-height-1_1 g-font-weight-800 g-font-size-25 g-font-size-30--md g-mb-20"
-              >
+              <h3 class="text-uppercase g-line-height-1_1 g-font-weight-800 g-font-size-25 g-font-size-30--md g-mb-20">
                 <strong>Work that Matters</strong>
               </h3>
               <p class="mb-0">
@@ -46,7 +41,7 @@
                 style="min-height: 100%"
                 src="https://res.cloudinary.com/consultwithcase/image/upload/v1561333509/website/home/meeting-min.webp"
                 alt="Meeting"
-              >
+              />
             </div>
             <div
               class="order-md-2 w-100 g-z-index-1 g-py-50 g-py-100--md g-px-15 g-px-50--md g-theme-bg-color-1"
@@ -54,7 +49,9 @@
             >
               <h3
                 class="text-uppercase g-line-height-1_1 g-font-weight-800 g-font-size-25 g-font-size-30--md g-color-white g-mb-20"
-              >Clients that care</h3>
+              >
+                Clients that care
+              </h3>
               <div class="u-heading-v2-2--top g-brd-primary"></div>
               <p class="g-color-gray-light-v4 mb-0">
                 We provide top-notch IT staff to Commercial and Federal Government customers with experience in
@@ -67,26 +64,21 @@
         </div>
         <div class="col-md-4 g-parent g-bg-white">
           <!-- Article -->
-          <article
-            class="d-flex flex-wrap text-center g-color-gray-dark-v3"
-            style="min-height: 100%"
-          >
+          <article class="d-flex flex-wrap text-center g-color-gray-dark-v3" style="min-height: 100%">
             <div class="order-2 w-100">
               <img
                 class="w-100 img-fluid"
                 style="min-height: 100%"
                 src="../../../public/assets/custom/img/online/suit.jpg"
                 alt="Image description"
-              >
+              />
             </div>
             <div
               id="leaders-that-captivate"
               class="order-1 w-100 g-z-index-1 g-py-50 g-py-100--md g-px-15 g-px-50--md"
               style="min-height: 100%"
             >
-              <h3
-                class="text-uppercase g-line-height-1_1 g-font-weight-800 g-font-size-25 g-font-size-30--md g-mb-20"
-              >
+              <h3 class="text-uppercase g-line-height-1_1 g-font-weight-800 g-font-size-25 g-font-size-30--md g-mb-20">
                 <strong>Leaders that captivate</strong>
               </h3>
               <p class="mb-0">
