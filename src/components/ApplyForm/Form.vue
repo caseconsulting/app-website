@@ -203,7 +203,7 @@ export default {
         // },
         // url: '/',
         addRemoveLinks: true,
-        maxFilesize: 6,
+        maxFilesize: 6
         //maxFiles: 4
       },
       awss3: {
