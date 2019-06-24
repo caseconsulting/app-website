@@ -273,11 +273,6 @@ export default {
     formHeader: Header
   },
   methods: {
-    // dropError(file, message, xhr) {
-    //   alert(message);
-    //   //this.removeFile(file);
-    //   this.$refs.vueDropzone.removeFile(file);
-    // },
     s3UploadError(errorMessage) {
       console.error('Error uploading:', errorMessage);
     },
