@@ -7,8 +7,8 @@ date: 12-10-18 (mm-dd-yy)
 tags: ['tag1', 'tag2', 'tag3', 'tag4', 'tag5', 'tag6', 'tag7', 'tag8', 'tag9', 'tag10']
 ---
 
-<!-- Adding Tags to Vuepress -->
-<TagLinks />
+<BlogPost>
+<p>
 
 <!-- Read More -->
 
@@ -34,3 +34,6 @@ Overall the four hours I spent were well worth it. It made me go back and think 
 If you'd like to learn more about the Loudoun County Salvation Army efforts, visit their Facebook page at - - > https://www.facebook.com/SalvationArmyLoudoun/
 
 Again, thank you CASE Cares!! - Bobby G. (my buddies John in Nats gear and Ronan in plaid, Bobby G in sweatshirt, and my nephew Kyle in the back)
+
+</p>
+</BlogPost>

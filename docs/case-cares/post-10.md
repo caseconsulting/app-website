@@ -1,5 +1,6 @@
 ---
-image: /charlotte2.jpg
+image: /charlotte.jpg
+postImage: /charlotte2.jpg
 title: Men's Shelter of Charlotte
 author: Karen Katilie
 description: Volunteering at the shelter makes me realize how fortunate I have been - being born into a middle class family, having educational opportunities given to me and not having any major health issues.

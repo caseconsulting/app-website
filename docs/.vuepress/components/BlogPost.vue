@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 class="title">{{ $page.frontmatter.title }}</h2>
-    <img class="mainImage" :src="$withBase($page.frontmatter.image)" />
+    <img class="mainImage" v-if="$page.frontmatter.postImage" :src="$withBase($page.frontmatter.postImage)" />
     <div class="content">
       <p>{{ $page.frontmatter.author }}</p>
       <p>{{ $page.frontmatter.date.slice(0, 8) }}</p>

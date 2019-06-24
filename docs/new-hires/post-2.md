@@ -7,7 +7,10 @@ date: 03-1-19 (mm-dd-yy)
 tags: ['tag3', 'tag4', 'tag5']
 ---
 
-<!-- Adding Tags to Vuepress -->
-<TagLinks />
+<BlogPost>
+<p>
 
 New hire 2 paragraph
+
+</p>
+</BlogPost>
