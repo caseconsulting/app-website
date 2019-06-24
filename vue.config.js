@@ -14,7 +14,7 @@ module.exports = {
     },
     'apply-form': {
       entry: './src/pages/Apply/main.js',
-      template: 'public/index.html',
+      template: 'public/jobApplication.html',
       title: 'Apply',
       chunks: ['chunk-vendors', 'chunk-common', 'apply-form']
     }
