@@ -214,10 +214,10 @@ export default {
             }
           });
 
-          // this.on('error', function(file, message) {
-          //   alert(message);
-          //   this.removeFile(file);
-          // });
+          this.on('error', function(file, message) {
+            alert(message);
+            this.removeFile(file);
+          });
         },
         acceptedFiles:
           'image/jpeg, image/png, image/gif, application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document',
