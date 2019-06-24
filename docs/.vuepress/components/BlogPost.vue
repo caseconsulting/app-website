@@ -7,7 +7,6 @@
       <p>{{ $page.frontmatter.date.slice(0, 8) }}</p>
       <p><slot></slot></p>
       <TagLinks />
-      <p class="topic">{{ getTopic($page.path) }}</p>
     </div>
   </div>
 </template>
@@ -31,27 +30,3 @@ export default {
   }
 };
 </script>
-
-<style>
-p {
-  text-align: justify;
-}
-
-.mainImage {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-.content {
-  width: 650px !important;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.topic {
-  text-align: center;
-}
-</style>

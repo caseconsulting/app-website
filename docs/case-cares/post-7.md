@@ -4,6 +4,8 @@ title: Volunteering at Armstrong Elementary School in Reston
 author: Diane Gallagher
 description: On Thursday, December 20th, I volunteered as a chaperone on a field trip with 3 self-contained autism classes.  The trip was to the “We Rock the Spectrum Kid’s Gym” in Sterling, Virginia.
 date: 12-31-18 (mm-dd-yy)
+prev: ./post-8.md
+next: ./post-6.md
 ---
 
 <BlogPost>

@@ -6,6 +6,7 @@ author: Karen Katilie
 description: Volunteering at the shelter makes me realize how fortunate I have been - being born into a middle class family, having educational opportunities given to me and not having any major health issues.
 date: 03-17-19 (mm-dd-yy)
 tags: ['tag1', 'tag2']
+next: ./post-9.md
 ---
 
 <BlogPost>

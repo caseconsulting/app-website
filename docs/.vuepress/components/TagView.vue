@@ -39,15 +39,7 @@ export default {
       let currentPage = this.page ? this.page : this.$page.path;
       let posts = this.$site.pages
         .filter(x => {
-          // if (x.frontmatter.tags) {
-          //   //  console.log(x.frontmatter.tags.includes('tag1'));
-          // }
-          // console.log('\n\n\n');
-          // console.log(x.path.match(new RegExp(`('/')(?=.*html)`)));
-          // console.log(`${currentPage}`)
-          // console.log('here');
-          // console.log(x.path.match(new RegExp(`(${currentPage})(?=.*html)`)));
-          return x.path.match(new RegExp(`(${currentPage})(?=.*html)`));
+          return x.frontmatter.tags && x.frontmatter.tags.includes('tag1');
         })
         .sort((a, b) => {
           return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
