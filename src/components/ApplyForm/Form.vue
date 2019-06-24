@@ -198,17 +198,21 @@ export default {
         },
         acceptedFiles:
           'image/jpeg, image/png, image/gif, application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-        renameFile: file => {
-          return uuid.v4() + '/' + file.name;
-        },
+        // renameFile: file => {
+        //   return uuid.v4() + '/' + file.name;
+        // },
         // url: '/',
-        addRemoveLinks: true
-        // maxFilesize: 2,
+        addRemoveLinks: true,
+        maxFilesize: 6,
         //maxFiles: 4
       },
       awss3: {
+        renameFile: file => {
+          return uuid.v4() + '/' + file.name;
+        },
         signingURL: file => {
           return `${process.env.VUE_APP_API}/upload/` + file.upload.filename;
+          // return `https://dev.apply.consultwithcase.com/upload/` + file.upload.filename;
         },
         headers: {},
         params: {},
