@@ -188,9 +188,11 @@ export default {
         init: function() {
           this.on('addedfile', function(file) {
             if (file.type.match(/application.pdf/)) {
-              this.emit('thumbnail', file, '/assets/pdfThumbnail.png');
+              this.emit('thumbnail', file, '/assets/custom/img/icons/pdfIcon.png');
+            } else if (file.type.match(/application.msword/)) {
+              this.emit('thumbnail', file, '/assets/custom/img/icons/docIcon.png');
             } else if (file.type.match(/application.vnd.openxmlformats-officedocument.wordprocessingml.document/)) {
-              this.emit('thumbnail', file, '/assets/pdfThumbnail.png');
+              this.emit('thumbnail', file, '/assets/custom/img/icons/docxIcon.png');
             }
           });
         },
