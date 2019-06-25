@@ -10,7 +10,7 @@
             @keydown.enter="filterText = inputedText"
             v-model="inputedText"
             placeholder="Search Title..."
-          >
+          />
           <button href="#" @click="filterText = inputedText" class="search_icon">
             <i class="fas fa-search"></i>
           </button>
