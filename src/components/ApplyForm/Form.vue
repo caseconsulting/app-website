@@ -367,6 +367,7 @@ export default {
         this.valid.otherJobTitle = this.$v.otherJobTitle.required;
       } else {
         this.valid.otherJobTitle = true;
+        this.otherJobTitle = '';
       }
 
       if (this.hearAboutUs.includes('Other')) {
@@ -374,6 +375,7 @@ export default {
         this.valid.otherHearAboutUs = this.$v.otherHearAboutUs.required;
       } else {
         this.valid.otherHearAboutUs = true;
+        this.otherHearAboutUs = '';
       }
 
       if (this.hearAboutUs.includes('Employee Referral')) {
@@ -381,6 +383,7 @@ export default {
         this.valid.referralHearAboutUs = this.$v.referralHearAboutUs.required;
       } else {
         this.valid.referralHearAboutUs = true;
+        this.referralHearAboutUs = '';
       }
 
       this.getFiles();
