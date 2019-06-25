@@ -351,11 +351,11 @@ export default {
         this.valid.otherHearAboutUs = true;
       }
 
+      this.getFiles();
+
       this.$v.files.$touch();
       this.valid.resume = this.$v.files.hasFiles;
       /* end client-side validation check */
-
-      this.getFiles();
 
       // process form to back-end if client-side validation passes
       if (this.isAllValid()) {
@@ -372,11 +372,12 @@ export default {
             fileNames: this.files
           };
 
-          this.submitted = true;
-
           // content upload
           const baseUrl = process.env.VUE_APP_API;
           const response = await axios.post(`${baseUrl}/apply`, data);
+
+          this.submitted = true;
+
           console.log(response.data.id);
           console.log(response); // eslint-disable-line no-console
           this.$refs.dropzone.key = response.data.id;
