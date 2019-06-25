@@ -99,7 +99,6 @@
                 <vue-dropzone
                   ref="dropzone"
                   id="drop1"
-                  @vdropzone-thumbnail="vfileAdded"
                   @vdropzone-removed-file="removeFile1"
                   :options="dropOptions"
                   :awss3="awss3"
@@ -211,14 +210,22 @@ export default {
 
             myDropZone.getQueuedFiles().forEach(function(f) {
               if (f.name === file.name) {
-                alert('Cannot upload dublicate file names.');
+                alert('Form cannot have duplicate file names');
                 myDropZone.removeFile(file);
               }
             });
           });
 
           myDropZone.on('error', function(file, message) {
-            alert(message);
+            if (file.size > 6000000) {
+              // error message for max file size (6MB)
+              alert('Files must be less than 6MB');
+            } else if (myDropZone.getQueuedFiles().length >= 3) {
+              // error message for max file number exceeded (3)
+              alert('Form cannot contain more than 3 files');
+            } else {
+              alert(message);
+            }
             myDropZone.removeFile(file);
           });
         },
@@ -302,9 +309,6 @@ export default {
     try() {
       return false;
     },
-    vfileAdded(file) {
-      this.files.push(file.name);
-    },
     isAllValid() {
       for (const v of Object.values(this.valid)) {
         if (!v) {
@@ -370,9 +374,6 @@ export default {
           // file upload
           console.log(this.$refs.dropzone.getQueuedFiles());
           this.$refs.dropzone.processQueue();
-
-          // this.showMe = false;
-          // this.$emit('switched', this.showMe);
 
           return response;
         } catch (err) {
