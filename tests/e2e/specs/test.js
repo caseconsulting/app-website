@@ -1,8 +1,17 @@
 // https://docs.cypress.io/api/introduction/api.html
 
-describe('My First Test', () => {
-  it('Visits the app root url', () => {
+// const getHome = () => cy.get('.home');
+
+describe('WHEN I visit the Home page', () => {
+  beforeEach(() => {
     cy.visit('/');
-    cy.contains('h1', 'Welcome to Your Vue.js App');
+  });
+
+  it('SHOULD have correct title', () => {
+    cy.title().should('eq', 'Case Consulting, Inc.');
+  });
+
+  describe('Navigation', () => {
+    it('', () => {});
   });
 });
