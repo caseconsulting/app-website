@@ -8,9 +8,7 @@
           style="padding-bottom: 0px !important;"
         >
           <div class="u-heading-v2-2--bottom g-brd-primary g-mb-20">
-            <h2
-              class="u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md"
-            >Thank you!</h2>
+            <h2 class="u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md">Thank you!</h2>
           </div>
         </div>
 
@@ -18,17 +16,16 @@
           <div class="submitPage">
             <h5>
               We appreciate your interest in Case Consulting, Inc.
-              <br>
-              <br>Our team will review your application and contact you shortly. In the meantime, if you have any
+              <br />
+              <br />Our team will review your application and contact you shortly. In the meantime, if you have any
               questions you may email
-              <a
-                href="mailto:info@consultwithcase.com."
-                style="color: #4e4353; text-decoration: underline;"
-              >info@consultwithcase.com</a>.
+              <a href="mailto:info@consultwithcase.com." style="color: #4e4353; text-decoration: underline;"
+                >info@consultwithcase.com</a
+              >.
             </h5>
           </div>
         </div>
-        <br>
+        <br />
         <div>
           <div class="col-sm-offset-2 col-sm-10">
             <button type="submit" class="btn btn-success" style="opacity: 0.8;">Return to Home</button>
