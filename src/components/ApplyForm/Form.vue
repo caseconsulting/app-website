@@ -139,6 +139,7 @@ import vueDropzone from 'vue2-dropzone';
 import { required, email } from 'vuelidate/lib/validators';
 import Header from '../home/Header.vue';
 import axios from 'axios';
+
 //import { uuid } from 'vue-uuid';
 
 // function jobTitlesNotEmpty() {
@@ -161,6 +162,7 @@ export default {
         resume: true,
         comments: true
       },
+      submitted: false,
       firstName: '',
       lastName: '',
       email: '',
@@ -176,7 +178,7 @@ export default {
         'Intern',
         'Other'
       ],
-      hearAboutUs: null,
+      hearAboutUs: [],
       hearOptions: ['Website', 'LinkedIn', 'Facebook', 'Indeed', 'Glassdoor', 'Referral', 'Other'],
       otherHearAboutUs: '',
       files: [],
@@ -188,28 +190,27 @@ export default {
         thumbnailHeight: '150',
         key: '',
         init: function() {
-          this.on('addedfile', function(file) {
+          var myDropZone = this;
+          myDropZone.on('addedfile', function(file) {
             if (file.type.match(/application.pdf/)) {
-              this.emit('thumbnail', file, '/assets/custom/img/icons/pdfIcon.png');
+              myDropZone.emit('thumbnail', file, '/assets/custom/img/icons/pdfIcon.png');
             } else if (file.type.match(/application.msword/)) {
-              this.emit('thumbnail', file, '/assets/custom/img/icons/docIcon.png');
+              myDropZone.emit('thumbnail', file, '/assets/custom/img/icons/docIcon.png');
             } else if (file.type.match(/application.vnd.openxmlformats-officedocument.wordprocessingml.document/)) {
-              this.emit('thumbnail', file, '/assets/custom/img/icons/docxIcon.png');
+              myDropZone.emit('thumbnail', file, '/assets/custom/img/icons/docxIcon.png');
             }
 
-            if (file.size > 6000000) {
-              console.log('greater than 6');
-              this.removeFile(file);
-            } else {
-              console.log('less than 6');
-            }
-
-            console.log('finished adding file');
+            myDropZone.getQueuedFiles().forEach(function(f) {
+              if (f.name === file.name) {
+                alert('Cannot upload dublicate file names.');
+                myDropZone.removeFile(file);
+              }
+            });
           });
 
-          this.on('error', function(file, message) {
+          myDropZone.on('error', function(file, message) {
             alert(message);
-            this.removeFile(file);
+            myDropZone.removeFile(file);
           });
         },
         acceptedFiles:
@@ -269,34 +270,6 @@ export default {
     formHeader: Header
   },
   methods: {
-    // processFile(file) {
-    //   if (file.size > 6000000) {
-    //     console.log('greater than 6');
-    //     //this.processQueue();
-    //   } else {
-    //     console.log('less than 6');
-    //     console.log(this.$refs);
-    //     console.log(this.$refs.dropzone.processQueue);
-    //     console.log(this.$refs.dropzone.dropzone);
-    //     console.log(this.$refs.dropzone.isS3);
-    //     const x = file.status;
-    //     var y = this;
-    //     console.log('status: ' + x);
-    //     console.log(this.$refs.dropzone.getQueuedFiles());
-    //     console.log(file);
-    //     console.log('status: ' + file.status);
-    //     var int = setInterval(function() {
-    //       console.log('status: ' + file.status);
-    //       console.log(typeof file.status);
-    //       console.log(y.$refs.dropzone.getQueuedFiles());
-    //       if (y.$refs.dropzone.getQueuedFiles().length > 0) {
-    //         y.$refs.dropzone.processQueue();
-    //         window.clearInterval(int);
-    //       }
-    //     }, 1);
-    //     console.log('okay');
-    //   }
-    // },
     s3UploadError(errorMessage) {
       console.error('Error uploading:', errorMessage);
     },
@@ -305,8 +278,10 @@ export default {
       this.uploads.push(s3ObjectLocation);
     },
     submittedRedirect() {
-      this.showMe = false;
-      this.$emit('switched', this.showMe);
+      if (this.submitted) {
+        this.showMe = false;
+        this.$emit('switched', this.showMe);
+      }
     },
     removeFile1(file) {
       let fileName = file.name;
@@ -346,6 +321,10 @@ export default {
         this.valid.otherJobTitle = true;
       }
 
+      if (this.hearAboutUs.includes('Other')) {
+        console.log('add code here megan!');
+      }
+
       this.$v.files.$touch();
       this.valid.resume = this.$v.files.hasFiles;
 
@@ -362,6 +341,8 @@ export default {
             comments: this.comments,
             fileNames: [] // TODO: Add uploaded file names
           };
+
+          this.submitted = true;
 
           // content upload
           const baseUrl = process.env.VUE_APP_API;
