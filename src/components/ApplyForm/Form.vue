@@ -13,6 +13,7 @@
 
         <form @submit.prevent="onSubmit" class="form-horizontal">
           <div class="row">
+            <!-- First Name Field -->
             <div class="col">
               <div class="col">
                 <div class="input" :class="{ invalid: !valid.firstName }">
@@ -22,6 +23,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- Last Name Field -->
             <div class="col">
               <div class="col">
                 <div class="input" :class="{ invalid: !valid.lastName }">
@@ -33,6 +36,8 @@
             </div>
           </div>
           <br />
+
+          <!-- Email Field -->
           <div class="form-group">
             <div class="col-xl-12">
               <div class="input" :class="{ invalid: !valid.email }">
@@ -43,6 +48,8 @@
             </div>
           </div>
           <br />
+
+          <!-- Job Titles Field -->
           <div class="form-group">
             <div class="col-xl-12">
               <div class="input" :class="{ invalid: !valid.jobTitles }">
@@ -69,6 +76,8 @@
               </div>
             </div>
           </div>
+
+          <!-- How Did You Hear About Us Field -->
           <div class="form-group">
             <div class="col-xl-12">
               <label class="control-label" for="job">How did you hear about us?:</label>
@@ -92,6 +101,8 @@
             </div>
           </div>
           <br />
+
+          <!-- Resume Field -->
           <div>
             <div class="col-xl-12">
               <div class="input" :class="{ invalid: !valid.resume }">
@@ -110,6 +121,8 @@
             </div>
           </div>
           <br />
+
+          <!-- Comments Field -->
           <div>
             <div class="col-xl-12">
               <label class="control-label" for="comments">Comments:</label>
@@ -123,9 +136,17 @@
             </div>
           </div>
           <br />
+
+          <!-- Submit Button -->
           <div>
             <div class="col-sm-offset-2 col-sm-10">
-              <button type="submit" class="btn btn-success" style="opacity: 0.8;">Submit</button>
+              <button v-if="!submitEnabled" class="btn btn-success" type="button" :disabled="submitEnabled">
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Submitting
+              </button>
+              <button v-else type="submit" :disabled="!submitEnabled" class="btn btn-success" style="opacity: 0.8;">
+                Submit
+              </button>
             </div>
           </div>
         </form>
@@ -133,6 +154,7 @@
     </section>
   </div>
 </template>
+
 <script>
 import Multiselect from 'vue-multiselect';
 import vueDropzone from 'vue2-dropzone';
@@ -226,7 +248,8 @@ export default {
         params: {},
         sendFileToServer: false
       },
-      comments: ''
+      comments: '',
+      submitEnabled: true
     };
   },
   validations: {
@@ -263,19 +286,23 @@ export default {
     formHeader: Header
   },
   methods: {
+    // console log error on s3 upload
     s3UploadError(errorMessage) {
       console.error('Error uploading:', errorMessage);
     },
+    // push s3 location on successful upload
     s3UploadSuccess(s3ObjectLocation) {
       console.log('Upload was successful');
       this.uploads.push(s3ObjectLocation);
     },
+    // toggle apply form succesfully submitted page
     submittedRedirect() {
       if (this.submitted) {
         this.showMe = false;
         this.$emit('switched', this.showMe);
       }
     },
+    // populate data.files with dropzone process queue files
     getFiles() {
       for (let i = 0; i < this.$refs.dropzone.getQueuedFiles().length; i++) {
         this.files.push(this.$refs.dropzone.getQueuedFiles()[i].name);
@@ -284,6 +311,7 @@ export default {
     try() {
       return false;
     },
+    // return true if all client-side validation passes
     isAllValid() {
       for (const v of Object.values(this.valid)) {
         if (!v) {
@@ -292,7 +320,11 @@ export default {
       }
       return true;
     },
+    // on form submission
     async onSubmit() {
+      this.submitEnabled = false; // disable submit button during form processing
+
+      /* start client-side validation check */
       this.$v.firstName.$touch();
       this.valid.firstName = this.$v.firstName.required;
 
@@ -319,11 +351,13 @@ export default {
         this.valid.otherHearAboutUs = true;
       }
 
-      this.getFiles();
-
       this.$v.files.$touch();
       this.valid.resume = this.$v.files.hasFiles;
+      /* end client-side validation check */
 
+      this.getFiles();
+
+      // process form to back-end if client-side validation passes
       if (this.isAllValid()) {
         try {
           const data = {
@@ -358,6 +392,8 @@ export default {
           return err;
         }
       }
+
+      this.submitEnabled = true; // reenable submit button after form processing
     }
   }
 };
