@@ -10,7 +10,7 @@
             @keydown.enter="filterText = inputedText"
             v-model="inputedText"
             placeholder="Search Title..."
-          />
+          >
           <button href="#" @click="filterText = inputedText" class="search_icon">
             <i class="fas fa-search"></i>
           </button>
@@ -78,8 +78,6 @@ export default {
   width: 0;
   caret-color: transparent;
   line-height: 40px;
-  width: 400px;
-  caret-color: red;
 }
 
 .search_icon {
@@ -90,7 +88,6 @@ export default {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-
   background: white;
   color: #e74c3c;
 }

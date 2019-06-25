@@ -106,11 +106,6 @@
                   @vdropzone-queue-complete="submittedRedirect"
                 ></vue-dropzone>
                 <p class="invalidMsg" v-if="!valid.resume">Please upload a resume</p>
-
-                <!-- <br /> -->
-                <!-- <button class="btn btn-default" @click="removeAllFiles">Remove All Files</button> -->
-
-                <!-- <p v-for="file in files" :key="file">{{ file }}</p> -->
               </div>
             </div>
           </div>
@@ -140,22 +135,11 @@
 </template>
 <script>
 import Multiselect from 'vue-multiselect';
-// import { BFormFile } from 'bootstrap-vue';
 import vueDropzone from 'vue2-dropzone';
 import { required, email } from 'vuelidate/lib/validators';
 import Header from '../home/Header.vue';
 import axios from 'axios';
 
-//import { uuid } from 'vue-uuid';
-
-// function jobTitlesNotEmpty() {
-//   return this.jobTitles != null && this.jobTitles.length > 0;
-// }
-//
-//
-// function resumeNotEmpty() {
-//   return this.files.length > 0;
-// }
 export default {
   data() {
     return {
@@ -190,7 +174,6 @@ export default {
       otherHearAboutUs: '',
       files: [],
       uploads: [],
-      //dropZone Options
       dropOptions: {
         autoProcessQueue: false,
         thumbnailWidth: '150',
@@ -230,21 +213,14 @@ export default {
         },
         acceptedFiles:
           'image/jpeg, image/png, image/gif, application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-        // renameFile: file => {
-        //   //return uuid.v4() + '/' + file.name;
-        //   return uuid.v4() + '/' + file.name;
-        // },
-        // url: '/',
         addRemoveLinks: true,
         maxFilesize: 6,
         maxFiles: 3
       },
       awss3: {
         signingURL: file => {
-          //console.log('key' + this.$refs.dropzone.key);
           console.log('filesigning: ' + this.$refs.dropzone.key + '/' + file.upload.filename);
           return `${process.env.VUE_APP_API}/upload/` + this.$refs.dropzone.key + '/' + file.upload.filename;
-          // return `https://dev.apply.consultwithcase.com/upload/` + file.upload.filename;
         },
         headers: {},
         params: {},
@@ -283,7 +259,6 @@ export default {
   },
   components: {
     Multiselect,
-    // BFormFile,
     vueDropzone,
     formHeader: Header
   },
@@ -340,7 +315,6 @@ export default {
       if (this.hearAboutUs.includes('Other')) {
         this.$v.otherHearAboutUs.$touch();
         this.valid.otherHearAboutUs = this.$v.otherHearAboutUs.required;
-        // console.log('hear about us other' + this.valid.otherHearAboutUs);
       } else {
         this.valid.otherHearAboutUs = true;
       }
@@ -361,7 +335,7 @@ export default {
             hearAboutUs: this.hearAboutUs,
             otherHearAboutUs: this.otherHearAboutUs,
             comments: this.comments,
-            fileNames: this.files // TODO: Add uploaded file names
+            fileNames: this.files
           };
 
           this.submitted = true;
@@ -373,6 +347,7 @@ export default {
           console.log(response); // eslint-disable-line no-console
           this.$refs.dropzone.key = response.data.id;
           console.log('key' + this.$refs.dropzone.key);
+
           // file upload
           console.log(this.$refs.dropzone.getQueuedFiles());
           this.$refs.dropzone.processQueue();
@@ -398,7 +373,6 @@ export default {
 
 .input.invalid input {
   border: 1px solid red;
-  /* background-color: #ffc9aa; */
 }
 
 .invalidMsg {

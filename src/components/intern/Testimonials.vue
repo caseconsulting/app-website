@@ -111,6 +111,7 @@ export default {
 .carousel-indicators li {
   background-color: gray;
 }
+
 .carousel-indicators .active {
   background-color: darkgray;
 }

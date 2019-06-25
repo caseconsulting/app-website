@@ -8,9 +8,12 @@
     "docs:build": "vuepress build docs",
     "eslint": "eslint . --ext .js --ignore-path .jshintignore --fix",
     "lint": "vue-cli-service lint",
+    "precommit": "npm run validate && npm run lint && npm run stylelint && npm run unit",
     "serve": "vue-cli-service serve",
+    "stylelint": "stylelint 'src/**/*.{css,scss,vue}'",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",
+    "unit": "npm run test:unit",
     "validate": "npm ci"
   },
   "dependencies": {
@@ -43,12 +46,18 @@
     "node-sass": "^4.9.0",
     "precommit-hook": "^3.0.0",
     "sass-loader": "^7.1.0",
+    "stylelint": "^10.1.0",
+    "stylelint-checkstyle-formatter": "^0.1.2",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-processor-html": "^1.0.0",
+    "stylelint-scss": "^3.8.0",
     "vue-template-compiler": "^2.6.10",
     "vuepress": "^1.0.1"
   },
   "pre-commit": [
     "validate",
     "lint",
-    "test:unit"
+    "stylelint",
+    "unit"
   ]
 }

@@ -1,17 +1,13 @@
 <template>
   <section id="blogPost">
     <div class="post">
-      <div class="title">
-        {{ post.title }}
-      </div>
+      <div class="title">{{ post.title }}</div>
 
       <div class="row">
         <div class="pic col-sm-4">
           <img class="img" :src="post.image" alt="post.title" />
         </div>
-        <div class="description col-sm-8">
-          {{ post.description }}
-        </div>
+        <div class="description col-sm-8">{{ post.description }}</div>
       </div>
 
       <div class="tagsScroll">
@@ -41,9 +37,6 @@ export default {
 
 .title {
   font-size: 32px;
-}
-
-.postBody {
 }
 
 .img {
