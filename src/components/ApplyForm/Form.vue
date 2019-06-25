@@ -5,9 +5,9 @@
       <div class="applyForm container col-sm-8 col-xl-6 col-lg-8 col-xs-9">
         <div class="container text-center g-max-width-750 g-mb-20 g-pt-10 g-pb-10">
           <div class="u-heading-v2-2--bottom g-brd-primary g-mb-20">
-            <h2 class="text-uppercase u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md">
-              Job Application
-            </h2>
+            <h2
+              class="text-uppercase u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md"
+            >Job Application</h2>
           </div>
         </div>
 
@@ -17,7 +17,13 @@
               <div class="col">
                 <div class="input" :class="{ invalid: !valid.firstName }">
                   <label class="control-label" for="name">*First Name:</label>
-                  <input type="name" class="form-control" id="firstName" v-model="firstName" placeholder="First Name" />
+                  <input
+                    type="name"
+                    class="form-control"
+                    id="firstName"
+                    v-model="firstName"
+                    placeholder="First Name"
+                  >
                   <p class="invalidMsg" v-if="!valid.firstName">First name can't be blank</p>
                 </div>
               </div>
@@ -26,23 +32,35 @@
               <div class="col">
                 <div class="input" :class="{ invalid: !valid.lastName }">
                   <label class="control-label" for="name">*Last Name:</label>
-                  <input type="name" class="form-control" id="lastName" v-model="lastName" placeholder="Last Name" />
+                  <input
+                    type="name"
+                    class="form-control"
+                    id="lastName"
+                    v-model="lastName"
+                    placeholder="Last Name"
+                  >
                   <p class="invalidMsg" v-if="!valid.lastName">Last name can't be blank</p>
                 </div>
               </div>
             </div>
           </div>
-          <br />
+          <br>
           <div class="form-group">
             <div class="col-xl-12">
               <div class="input" :class="{ invalid: !valid.email }">
                 <label class="control-label" for="email">*Email:</label>
-                <input type="text" class="form-control" id="email" placeholder="Enter email" v-model="email" />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter email"
+                  v-model="email"
+                >
                 <p class="invalidMsg" v-if="!valid.email">Please provide a valid email address.</p>
               </div>
             </div>
           </div>
-          <br />
+          <br>
           <div class="form-group">
             <div class="col-xl-12">
               <div class="input" :class="{ invalid: !valid.jobTitles }">
@@ -54,7 +72,7 @@
                   :class="{ invalid: !valid.otherJobTitle }"
                   v-if="jobTitles && jobTitles.includes('Other')"
                 >
-                  <br />
+                  <br>
                   <textarea
                     v-if="jobTitles && jobTitles.includes('Other')"
                     class="form-control"
@@ -78,7 +96,7 @@
                 :class="{ invalid: !valid.otherHearAboutUs }"
                 v-if="hearAboutUs && hearAboutUs.includes('Other')"
               >
-                <br />
+                <br>
                 <textarea
                   v-if="hearAboutUs && hearAboutUs.includes('Other')"
                   class="form-control"
@@ -91,7 +109,7 @@
               </div>
             </div>
           </div>
-          <br />
+          <br>
           <div>
             <div class="col-xl-12">
               <div class="input" :class="{ invalid: !valid.resume }">
@@ -99,7 +117,6 @@
                 <vue-dropzone
                   ref="dropzone"
                   id="drop1"
-                  @vdropzone-removed-file="removeFile1"
                   :options="dropOptions"
                   :awss3="awss3"
                   @vdropzone-s3-upload-error="s3UploadError"
@@ -111,11 +128,11 @@
                 <!-- <br /> -->
                 <!-- <button class="btn btn-default" @click="removeAllFiles">Remove All Files</button> -->
 
-                <p v-for="file in files" :key="file">{{ file }}</p>
+                <!-- <p v-for="file in files" :key="file">{{ file }}</p> -->
               </div>
             </div>
           </div>
-          <br />
+          <br>
           <div>
             <div class="col-xl-12">
               <label class="control-label" for="comments">Comments:</label>
@@ -128,7 +145,7 @@
               ></textarea>
             </div>
           </div>
-          <br />
+          <br>
           <div>
             <div class="col-sm-offset-2 col-sm-10">
               <button type="submit" class="btn btn-success" style="opacity: 0.8;">Submit</button>
@@ -302,9 +319,10 @@ export default {
         this.$emit('switched', this.showMe);
       }
     },
-    removeFile1(file) {
-      let fileName = file.name;
-      this.files = this.files.filter(e => e !== fileName);
+    getFiles() {
+      for (let i = 0; i < this.$refs.dropzone.getQueuedFiles().length; i++) {
+        this.files.push(this.$refs.dropzone.getQueuedFiles()[i].name);
+      }
     },
     try() {
       return false;
@@ -345,6 +363,8 @@ export default {
         this.valid.otherHearAboutUs = true;
       }
 
+      this.getFiles();
+
       this.$v.files.$touch();
       this.valid.resume = this.$v.files.hasFiles;
 
@@ -359,7 +379,7 @@ export default {
             hearAboutUs: this.hearAboutUs,
             otherHearAboutUs: this.otherHearAboutUs,
             comments: this.comments,
-            fileNames: [] // TODO: Add uploaded file names
+            fileNames: this.files // TODO: Add uploaded file names
           };
 
           this.submitted = true;

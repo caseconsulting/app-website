@@ -7,9 +7,6 @@ import store from '../../store.js';
 
 Vue.use(Vuelidate);
 
-import UUID from 'vue-uuid';
-Vue.use(UUID);
-
 Vue.config.productionTip = false;
 
 new Vue({
