@@ -148,7 +148,6 @@ import { uuid } from 'vue-uuid';
 // function resumeNotEmpty() {
 //   return this.files.length > 0;
 // }
-
 export default {
   data() {
     return {
@@ -183,6 +182,7 @@ export default {
       uploads: [],
       //dropZone Options
       dropOptions: {
+        autoProcessQueue: false,
         thumbnailWidth: '150',
         thumbnailHeight: '150',
         init: function() {
@@ -194,6 +194,15 @@ export default {
             } else if (file.type.match(/application.vnd.openxmlformats-officedocument.wordprocessingml.document/)) {
               this.emit('thumbnail', file, '/assets/custom/img/icons/docxIcon.png');
             }
+
+            if (file.size > 6000000) {
+              console.log('greater than 6');
+              this.removeFile(file);
+            } else {
+              console.log('less than 6');
+            }
+
+            console.log('finished adding file');
           });
 
           this.on('error', function(file, message) {
@@ -213,6 +222,7 @@ export default {
       },
       awss3: {
         signingURL: file => {
+          console.log('filesigning: ' + file.upload.filename);
           return `${process.env.VUE_APP_API}/upload/` + file.upload.filename;
           // return `https://dev.apply.consultwithcase.com/upload/` + file.upload.filename;
         },
@@ -255,6 +265,34 @@ export default {
     formHeader: Header
   },
   methods: {
+    // processFile(file) {
+    //   if (file.size > 6000000) {
+    //     console.log('greater than 6');
+    //     //this.processQueue();
+    //   } else {
+    //     console.log('less than 6');
+    //     console.log(this.$refs);
+    //     console.log(this.$refs.dropzone.processQueue);
+    //     console.log(this.$refs.dropzone.dropzone);
+    //     console.log(this.$refs.dropzone.isS3);
+    //     const x = file.status;
+    //     var y = this;
+    //     console.log('status: ' + x);
+    //     console.log(this.$refs.dropzone.getQueuedFiles());
+    //     console.log(file);
+    //     console.log('status: ' + file.status);
+    //     var int = setInterval(function() {
+    //       console.log('status: ' + file.status);
+    //       console.log(typeof file.status);
+    //       console.log(y.$refs.dropzone.getQueuedFiles());
+    //       if (y.$refs.dropzone.getQueuedFiles().length > 0) {
+    //         y.$refs.dropzone.processQueue();
+    //         window.clearInterval(int);
+    //       }
+    //     }, 1);
+    //     console.log('okay');
+    //   }
+    // },
     s3UploadError(errorMessage) {
       console.error('Error uploading:', errorMessage);
     },
@@ -317,9 +355,15 @@ export default {
             fileNames: [] // TODO: Add uploaded file names
           };
 
+          // content upload
           const baseUrl = process.env.VUE_APP_API;
           const response = await axios.post(`${baseUrl}/apply`, data);
           console.log(response); // eslint-disable-line no-console
+
+          // file upload
+          console.log(this.$refs.dropzone.getQueuedFiles());
+          this.$refs.dropzone.processQueue();
+
           return response;
         } catch (err) {
           console.error(err); // eslint-disable-line no-console
@@ -334,7 +378,7 @@ export default {
 <style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
 <style src="vue2-dropzone/dist/vue2Dropzone.min.css"></style>
 
-<style scoped>
+<style>
 .input.invalid label {
   color: red;
 }
@@ -353,11 +397,11 @@ export default {
   border-color: #42b883;
 }
 
-a.dz.remove {
-  color: red;
+.vue-dropzone > .dz-preview .dz-remove {
+  border: 2px #fff solid !important;
 }
 
-.vue-dropzone > .dz-preview .dz-remove {
-  border: 1px #fff solid !important;
+.dropzone .dz-preview .dz-progress {
+  opacity: 0 !important;
 }
 </style>
