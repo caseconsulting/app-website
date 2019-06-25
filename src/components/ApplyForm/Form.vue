@@ -19,7 +19,7 @@
                 <div class="input" :class="{ invalid: !valid.firstName }">
                   <label class="control-label" for="name">*First Name:</label>
                   <input type="name" class="form-control" id="firstName" v-model="firstName" placeholder="First Name" />
-                  <p class="invalidMsg" v-if="!valid.firstName">First name can't be blank</p>
+                  <p class="invalidMsg" v-if="!valid.firstName">Please enter a first name.</p>
                 </div>
               </div>
             </div>
@@ -30,7 +30,7 @@
                 <div class="input" :class="{ invalid: !valid.lastName }">
                   <label class="control-label" for="name">*Last Name:</label>
                   <input type="name" class="form-control" id="lastName" v-model="lastName" placeholder="Last Name" />
-                  <p class="invalidMsg" v-if="!valid.lastName">Last name can't be blank</p>
+                  <p class="invalidMsg" v-if="!valid.lastName">Please enter a last name.</p>
                 </div>
               </div>
             </div>
@@ -56,6 +56,7 @@
                 <label class="control-label" for="job">*Job Title:</label>
                 <multiselect v-model="jobTitles" :options="jobOptions" :multiple="true" id="job"></multiselect>
 
+                <!-- Other Job Title Text Field -->
                 <div
                   class="input"
                   :class="{ invalid: !valid.otherJobTitle }"
@@ -70,7 +71,7 @@
                     id="other"
                     v-model="otherJobTitle"
                   ></textarea>
-                  <p class="invalidMsg" v-if="!valid.otherJobTitle">Other field can't be blank</p>
+                  <p class="invalidMsg" v-if="!valid.otherJobTitle">Other field cannott be blank.</p>
                 </div>
                 <p class="invalidMsg" v-if="!valid.jobTitles">Please select at least one job title.</p>
               </div>
@@ -82,6 +83,25 @@
             <div class="col-xl-12">
               <label class="control-label" for="job">How did you hear about us?:</label>
               <multiselect v-model="hearAboutUs" :options="hearOptions" :multiple="true" id="job"></multiselect>
+              <!-- Referral Text Field -->
+              <div
+                class="input"
+                :class="{ invalid: !valid.referralHearAboutUs }"
+                v-if="hearAboutUs && hearAboutUs.includes('Employee Referral')"
+              >
+                <br />
+                <textarea
+                  v-if="hearAboutUs && hearAboutUs.includes('Employee Referral')"
+                  class="form-control"
+                  rows="1"
+                  placeholder="Employee Referral"
+                  id="referral"
+                  v-model="referralHearAboutUs"
+                ></textarea>
+                <p class="invalidMsg" v-if="!valid.referralHearAboutUs">Please list who referred you.</p>
+              </div>
+
+              <!-- Other Hear About Us Text Field -->
               <div
                 class="input"
                 :class="{ invalid: !valid.otherHearAboutUs }"
@@ -96,7 +116,7 @@
                   id="other"
                   v-model="otherHearAboutUs"
                 ></textarea>
-                <p class="invalidMsg" v-if="!valid.otherHearAboutUs">Other field can't be blank</p>
+                <p class="invalidMsg" v-if="!valid.otherHearAboutUs">Other field cannot be blank.</p>
               </div>
             </div>
           </div>
@@ -116,7 +136,7 @@
                   @vdropzone-s3-upload-success="s3UploadSuccess"
                   @vdropzone-queue-complete="submittedRedirect"
                 ></vue-dropzone>
-                <p class="invalidMsg" v-if="!valid.resume">Please upload a resume</p>
+                <p class="invalidMsg" v-if="!valid.resume">Please upload a resume.</p>
               </div>
             </div>
           </div>
@@ -173,7 +193,8 @@ export default {
         otherJobTitle: true,
         resume: true,
         comments: true,
-        otherHearAboutUs: true
+        otherHearAboutUs: true,
+        referralHearAboutUs: true
       },
       submitted: false,
       firstName: '',
@@ -192,7 +213,8 @@ export default {
         'Other'
       ],
       hearAboutUs: [],
-      hearOptions: ['Website', 'LinkedIn', 'Facebook', 'Twitter', 'Indeed', 'Glassdoor', 'Referral', 'Other'],
+      hearOptions: ['Website', 'LinkedIn', 'Facebook', 'Twitter', 'Indeed', 'Glassdoor', 'Employee Referral', 'Other'],
+      referralHearAboutUs: '',
       otherHearAboutUs: '',
       files: [],
       uploads: [],
@@ -278,6 +300,9 @@ export default {
     },
     otherHearAboutUs: {
       required
+    },
+    referralHearAboutUs: {
+      required
     }
   },
   components: {
@@ -351,6 +376,13 @@ export default {
         this.valid.otherHearAboutUs = true;
       }
 
+      if (this.hearAboutUs.includes('Employee Referral')) {
+        this.$v.referralHearAboutUs.$touch();
+        this.valid.referralHearAboutUs = this.$v.referralHearAboutUs.required;
+      } else {
+        this.valid.referralHearAboutUs = true;
+      }
+
       this.getFiles();
 
       this.$v.files.$touch();
@@ -367,6 +399,7 @@ export default {
             jobTitles: this.jobTitles,
             otherJobTitle: this.otherJobTitle,
             hearAboutUs: this.hearAboutUs,
+            referralHearAboutUs: this.referralHearAboutUs,
             otherHearAboutUs: this.otherHearAboutUs,
             comments: this.comments,
             fileNames: this.files
