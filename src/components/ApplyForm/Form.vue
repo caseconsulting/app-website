@@ -5,9 +5,9 @@
       <div class="applyForm container col-sm-8 col-xl-6 col-lg-8 col-xs-9">
         <div class="container text-center g-max-width-750 g-mb-20 g-pt-10 g-pb-10">
           <div class="u-heading-v2-2--bottom g-brd-primary g-mb-20">
-            <h2 class="text-uppercase u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md">
-              Job Application
-            </h2>
+            <h2
+              class="text-uppercase u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md"
+            >Job Application</h2>
           </div>
         </div>
 
@@ -17,7 +17,13 @@
               <div class="col">
                 <div class="input" :class="{ invalid: !valid.firstName }">
                   <label class="control-label" for="name">*First Name:</label>
-                  <input type="name" class="form-control" id="firstName" v-model="firstName" placeholder="First Name" />
+                  <input
+                    type="name"
+                    class="form-control"
+                    id="firstName"
+                    v-model="firstName"
+                    placeholder="First Name"
+                  >
                   <p class="invalidMsg" v-if="!valid.firstName">First name can't be blank</p>
                 </div>
               </div>
@@ -26,23 +32,35 @@
               <div class="col">
                 <div class="input" :class="{ invalid: !valid.lastName }">
                   <label class="control-label" for="name">*Last Name:</label>
-                  <input type="name" class="form-control" id="lastName" v-model="lastName" placeholder="Last Name" />
+                  <input
+                    type="name"
+                    class="form-control"
+                    id="lastName"
+                    v-model="lastName"
+                    placeholder="Last Name"
+                  >
                   <p class="invalidMsg" v-if="!valid.lastName">Last name can't be blank</p>
                 </div>
               </div>
             </div>
           </div>
-          <br />
+          <br>
           <div class="form-group">
             <div class="col-xl-12">
               <div class="input" :class="{ invalid: !valid.email }">
                 <label class="control-label" for="email">*Email:</label>
-                <input type="text" class="form-control" id="email" placeholder="Enter email" v-model="email" />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter email"
+                  v-model="email"
+                >
                 <p class="invalidMsg" v-if="!valid.email">Please provide a valid email address.</p>
               </div>
             </div>
           </div>
-          <br />
+          <br>
           <div class="form-group">
             <div class="col-xl-12">
               <div class="input" :class="{ invalid: !valid.jobTitles }">
@@ -54,7 +72,7 @@
                   :class="{ invalid: !valid.otherJobTitle }"
                   v-if="jobTitles && jobTitles.includes('Other')"
                 >
-                  <br />
+                  <br>
                   <textarea
                     v-if="jobTitles && jobTitles.includes('Other')"
                     class="form-control"
@@ -73,7 +91,7 @@
             <div class="col-xl-12">
               <label class="control-label" for="job">How did you hear about us?:</label>
               <multiselect v-model="hearAboutUs" :options="hearOptions" :multiple="true" id="job"></multiselect>
-              <br v-if="hearAboutUs && hearAboutUs.includes('Other')" />
+              <br v-if="hearAboutUs && hearAboutUs.includes('Other')">
               <textarea
                 v-if="hearAboutUs && hearAboutUs.includes('Other')"
                 class="form-control"
@@ -83,7 +101,7 @@
               ></textarea>
             </div>
           </div>
-          <br />
+          <br>
           <div>
             <div class="col-xl-12">
               <div class="input" :class="{ invalid: !valid.resume }">
@@ -97,6 +115,7 @@
                   :awss3="awss3"
                   @vdropzone-s3-upload-error="s3UploadError"
                   @vdropzone-s3-upload-success="s3UploadSuccess"
+                  @vdropzone-queue-complete="submittedRedirect"
                 ></vue-dropzone>
                 <p class="invalidMsg" v-if="!valid.resume">Please upload a resume</p>
 
@@ -107,7 +126,7 @@
               </div>
             </div>
           </div>
-          <br />
+          <br>
           <div>
             <div class="col-xl-12">
               <label class="control-label" for="comments">Comments:</label>
@@ -120,7 +139,7 @@
               ></textarea>
             </div>
           </div>
-          <br />
+          <br>
           <div>
             <div class="col-sm-offset-2 col-sm-10">
               <button type="submit" class="btn btn-success" style="opacity: 0.8;">Submit</button>
@@ -303,6 +322,10 @@ export default {
       console.log('Upload was successful');
       this.uploads.push(s3ObjectLocation);
     },
+    submittedRedirect() {
+      this.showMe = false;
+      this.$emit('switched', this.showMe);
+    },
     removeFile1(file) {
       let fileName = file.name;
       this.files = this.files.filter(e => e !== fileName);
@@ -368,6 +391,9 @@ export default {
           // file upload
           console.log(this.$refs.dropzone.getQueuedFiles());
           this.$refs.dropzone.processQueue();
+
+          // this.showMe = false;
+          // this.$emit('switched', this.showMe);
 
           return response;
         } catch (err) {
