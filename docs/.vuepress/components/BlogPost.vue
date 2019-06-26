@@ -1,20 +1,16 @@
 <template>
   <div>
     <h2 class="title">{{ $page.frontmatter.title }}</h2>
-    <img
-      class="mainImage"
-      v-if="$page.frontmatter.postImage"
-      :src="$withBase($page.frontmatter.postImage)"
-    >
+    <img class="mainImage" v-if="$page.frontmatter.postImage" :src="$withBase($page.frontmatter.postImage)" />
     <div class="content">
       <p>{{ $page.frontmatter.author }}</p>
       <p>{{ $page.frontmatter.date.slice(0, 8) }}</p>
       <p>
         <slot></slot>
       </p>
-      <TagLinks/>
+      <TagLinks />
     </div>
-    <br>
+    <br />
     <ShareButtons :pageTitle="$page.frontmatter.title"></ShareButtons>
   </div>
 </template>

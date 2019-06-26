@@ -9,7 +9,7 @@
             </div>
             <h2 class="title">{{ post.frontmatter.title }}</h2>
             <p class="meta">
-              Posted on {{ post.frontmatter.date.slice(0, 8) }} by
+              <!-- Posted on {{ post.frontmatter.date.slice(0, 8) }} by -->
               {{ post.frontmatter.author }}
             </p>
             <div>
@@ -39,15 +39,24 @@ export default {
       let currentPage = this.page ? this.page : this.$page.path;
       let posts = this.$site.pages
         .filter(x => {
-          // if (x.frontmatter.tags) {
-          //   //  console.log(x.frontmatter.tags.includes('tag1'));
-          // }
-          // console.log('\n\n\n');
-          // console.log(x.path.match(new RegExp(`('/')(?=.*html)`)));
-          // console.log(`${currentPage}`)
-          // console.log('here');
-          // console.log(x.path.match(new RegExp(`(${currentPage})(?=.*html)`)));
-          return x.path.match(new RegExp(`(${currentPage})(?=.*html)`));
+          var hash = window.location.hash.substr(1);
+          if (hash) {
+            console.log(hash);
+            console.log(x.path.split('/')[2]);
+            // if (x.frontmatter.tags) {
+            //   //  console.log(x.frontmatter.tags.includes('tag1'));
+            // }
+            // console.log('\n\n\n');
+            // console.log(x.path.match(new RegExp(`('/')(?=.*html)`)));
+            // console.log(`${currentPage}`)
+            // console.log('here');
+            // console.log(x.path.match(new RegExp(`(${currentPage})(?=.*html)`)));
+
+            console.log(hash === x.path.split('/')[2]);
+            return hash === x.path.split('/')[2];
+          } else {
+            return x.path.match(new RegExp(`(${currentPage})(?=.*html)`));
+          }
         })
         .sort((a, b) => {
           return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
