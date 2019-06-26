@@ -333,9 +333,6 @@ export default {
         this.files.push(this.$refs.dropzone.getQueuedFiles()[i].name);
       }
     },
-    try() {
-      return false;
-    },
     // return true if all client-side validation passes
     isAllValid() {
       for (const v of Object.values(this.valid)) {
@@ -345,23 +342,21 @@ export default {
       }
       return true;
     },
-    // on form submission
-    async onSubmit() {
-      this.submitEnabled = false; // disable submit button during form processing
-
-      /* start client-side validation check */
+    validateFirstName() {
       this.$v.firstName.$touch();
       this.valid.firstName = this.$v.firstName.required;
-
+    },
+    validateLastName() {
       this.$v.lastName.$touch();
       this.valid.lastName = this.$v.lastName.required;
-
+    },
+    validateEmail() {
       this.$v.email.$touch();
       this.valid.email = this.$v.email.email && this.$v.email.required;
-
+    },
+    validateJobTitles() {
       this.$v.jobTitles.$touch();
       this.valid.jobTitles = this.$v.jobTitles.hasJobTitle;
-
       if (this.jobTitles.includes('Other')) {
         this.$v.otherJobTitle.$touch();
         this.valid.otherJobTitle = this.$v.otherJobTitle.required;
@@ -369,7 +364,8 @@ export default {
         this.valid.otherJobTitle = true;
         this.otherJobTitle = '';
       }
-
+    },
+    validateHearAboutUs() {
       if (this.hearAboutUs.includes('Other')) {
         this.$v.otherHearAboutUs.$touch();
         this.valid.otherHearAboutUs = this.$v.otherHearAboutUs.required;
@@ -385,11 +381,22 @@ export default {
         this.valid.referralHearAboutUs = true;
         this.referralHearAboutUs = '';
       }
-
+    },
+    validateResume() {
       this.getFiles();
-
       this.$v.files.$touch();
       this.valid.resume = this.$v.files.hasFiles;
+    },
+    // on form submission
+    async onSubmit() {
+      this.submitEnabled = false; // disable submit button during form processing
+      /* start client-side validation check */
+      this.validateFirstName();
+      this.validateLastName();
+      this.validateEmail();
+      this.validateJobTitles();
+      this.validateHearAboutUs();
+      this.validateResume();
       /* end client-side validation check */
 
       // process form to back-end if client-side validation passes
