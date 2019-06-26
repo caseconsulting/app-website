@@ -3,6 +3,7 @@
     <main class="g-pt-65 g-pt-90--md">
       <Header />
       <section id="bp">
+        <SideBar />
         <Content />
       </section>
     </main>

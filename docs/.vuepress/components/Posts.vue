@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <!-- <SideBar /> -->
     <div class="posts" v-if="posts.length">
       <div class="post" v-for="post in posts">
         <div class="w3-display-container">
