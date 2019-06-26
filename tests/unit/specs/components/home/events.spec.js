@@ -1,8 +1,7 @@
 import Events from '@/components/home/Events.vue';
 import EventsData from '@/data/Events.js';
 
-import { shallowMount /*, createLocalVue*/ } from '@vue/test-utils';
-// const localVue = createLocalVue();
+import { shallowMount } from '@vue/test-utils';
 
 describe('Events.vue', () => {
   let wrapper;
@@ -27,47 +26,54 @@ describe('Events.vue', () => {
     });
   });
 
-  //   describe('getArray', () => {
-  //     let events;
-  //     let origEvents;
+  describe('getArray', () => {
+    beforeEach(() => {
+      wrapper = shallowMount(Events);
+    });
 
-  //     describe('WHEN events is empty', () => {
-  //       beforeEach(() => {
-  //         events = [];
-  //         wrapper = shallowMount(Events, {
-  //           localVue
-  //         });
-  //         origEvents = Events.data().events;
-  //         wrapper.setData({ events });
-  //       });
+    describe('WHEN events is empty', () => {
+      beforeEach(() => {
+        wrapper.setData({ events: [] });
+      });
 
-  //       afterEach(() => wrapper.setData({ events: origEvents }));
+      test('SHOULD return an empty array', () => {
+        expect(wrapper.vm.getArray).toEqual([]);
+      });
+    });
 
-  //       test('SHOULD return an empty array', () => {
-  //         expect(wrapper.vm.getArray).toEqual([]);
-  //       });
-  //     });
+    describe('WHEN events holds less than 5 elements', () => {
+      beforeEach(() => {
+        wrapper.setData({
+          events: [
+            { descrip: ['descrip'] },
+            { descrip: ['descrip'] },
+            { descrip: ['descrip'] },
+            { descrip: ['descrip'] }
+          ]
+        });
+      });
 
-  // describe('WHEN events holds less than 5 elements', () => {
-  //   beforeEach(() => {
-  //     events = [1, 2, 3, 4];
-  //     wrapper = shallowMount(Events, {
-  //       localVue
-  //     });
-  //     origEvents = Events.data().events;
-  //     wrapper.setData({ events });
-  //   });
+      test('SHOULD return an empty array', () => {
+        expect(wrapper.vm.getArray).toEqual([]);
+      });
+    });
 
-  //   afterEach(() => wrapper.setData({ events: origEvents }));
+    describe('When the array has data, 5 or more elements', () => {
+      beforeEach(() => {
+        wrapper.setData({
+          events: [
+            { descrip: ['descrip'] },
+            { descrip: ['descrip'] },
+            { descrip: ['descrip'] },
+            { descrip: ['descrip'] },
+            { descrip: ['descrip5'] }
+          ]
+        });
+      });
 
-  //   test('SHOULD return an empty array', () => {
-  //     expect(wrapper.vm.getArray).toEqual([]);
-  //   });
-  // });
-
-  // test('When the array has data, 5 or more elements', () => {
-  //   wrapper.setData({ events: [1, 2, 3, 4, 5] });
-  //   expect(wrapper.vm.getArray).toEqual([5]);
-  // });
-  //   });
+      test('SHOULD return the fifth element', () => {
+        expect(wrapper.vm.getArray).toEqual([{ descrip: ['descrip5'] }]);
+      });
+    });
+  });
 });
