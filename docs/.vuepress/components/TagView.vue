@@ -30,16 +30,18 @@
 export default {
   data() {
     return {
-      date: ''
+      date: '',
+      tag: ''
     };
   },
   props: ['page'],
   computed: {
     posts() {
+      console.log('PAGE LOAD');
       let currentPage = this.page ? this.page : this.$page.path;
       let posts = this.$site.pages
         .filter(x => {
-          return x.frontmatter.tags && x.frontmatter.tags.includes('tag1');
+          return x.frontmatter.tags && x.frontmatter.tags.includes(this.tag);
         })
         .sort((a, b) => {
           return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
@@ -61,6 +63,10 @@ export default {
           return 'No Topic';
       }
     }
+  },
+  mounted() {
+    console.log('MOUNT');
+    this.tag = window.location.hash.slice(1);
   }
 };
 </script>

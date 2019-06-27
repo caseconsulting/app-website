@@ -9,10 +9,7 @@
               <p>{{ getTopic(post.path) }}</p>
             </div>
             <h2 class="title">{{ post.frontmatter.title }}</h2>
-            <p class="meta">
-              Posted on {{ post.frontmatter.date.slice(0, 8) }} by
-              {{ post.frontmatter.author }}
-            </p>
+            <p class="meta">Posted on {{ post.frontmatter.date.slice(0, 8) }} by {{ post.frontmatter.author }}</p>
             <div>
               <img class="blogImage" v-if="post.frontmatter.image" :src="$withBase(post.frontmatter.image)" alt="" />
             </div>
@@ -40,14 +37,10 @@ export default {
       let currentPage = this.page ? this.page : this.$page.path;
       let posts = this.$site.pages
         .filter(x => {
-          // if (x.frontmatter.tags) {
-          //   //  console.log(x.frontmatter.tags.includes('tag1'));
-          // }
-          // console.log('\n\n\n');
-          // console.log(x.path.match(new RegExp(`('/')(?=.*html)`)));
-          // console.log(`${currentPage}`)
-          // console.log('here');
-          // console.log(x.path.match(new RegExp(`(${currentPage})(?=.*html)`)));
+          if (x.path == '/tags.html') {
+            // console.log('asdflajksdf;lkaj');
+            return null;
+          }
           return x.path.match(new RegExp(`(${currentPage})(?=.*html)`));
         })
         .sort((a, b) => {
