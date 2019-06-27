@@ -2,11 +2,23 @@
   <div class="col-sm-4" style="float:center;">
     <div class="sidenav">
       <h1>Top 10 tags</h1>
-      <p style="float:left;">1.</p>
-      <a href="#">Tag1</a>
-      <a href="#">Tag2</a>
-      <a href="#">Tag3</a>
-      <a href="#">Tag4</a>
+      <div class="row">
+        <div class="number"><p>1.</p></div>
+        <a href="#">Tag1</a>
+      </div>
+
+      <div class="row">
+        <div class="number"><p>2.</p></div>
+        <a href="#">Tag2</a>
+      </div>
+      <div class="row">
+        <div class="number"><p>3.</p></div>
+        <a href="#">Tag3</a>
+      </div>
+      <div class="row">
+        <div class="number"><p>4.</p></div>
+        <a href="#">Tag4</a>
+      </div>
     </div>
   </div>
   <!-- Content here -->
@@ -24,13 +36,17 @@
   left: 18%;
   /* right: 0; */
   /* float: right; */
-  background-color: #111; /* Black */
+
   /* overflow-x: hidden; Disable horizontal scroll */
   margin-top: 10px;
   padding-top: 20px;
   padding-bottom: 10px;
 }
 
+.sidenav .row {
+  border-bottom: 1px solid #818181;
+  padding-top: 10px;
+}
 /* The navigation menu links */
 .sidenav a {
   padding: 6px 8px 6px 16px;
@@ -40,18 +56,46 @@
   display: block;
 }
 
-.sidenav h1 {
+.number {
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  color: #818181;
+
+  display: block;
+}
+
+.arrow {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 23px;
+  font-size: 16px;
   color: #818181;
   display: block;
 }
 
+.sidenav h1 {
+  padding: 6px 8px 6px 16px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  font-size: 23px;
+  color: #818181;
+  display: block;
+  text-align: center;
+}
+
+.sidenav .number p {
+  padding: 10px;
+  border: 1px solid #f1f1f1;
+}
+
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #f1f1f1;
-  background-color: #818181;
+  text-decoration: underline;
+}
+
+.sidenav:hover + .number {
+  background-color: blue;
 }
 
 /* Style page content */
