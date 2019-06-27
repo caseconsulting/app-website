@@ -1,46 +1,39 @@
 <template>
-<section>
-  <head>
-    <link
-      href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css"
-      rel="stylesheet"
-    >
-  </head>
-  <!-- Social Button HTML -->
-  <div style="text-align: center;">
-    <!-- Twitter -->
-    <a
-      :href="twitter"
-      onclick="location.href=this.href + location;return false;"
-      class="btn share-btn twitter"
-    >
-      <i class="fa fa-twitter"></i>
-    </a>
+  <section>
+    <head>
+      <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet" />
+    </head>
+    <!-- Social Button HTML -->
+    <div style="text-align: center;">
+      <!-- Twitter -->
+      <a :href="twitter" onclick="location.href=this.href + location;return false;" class="btn share-btn twitter">
+        <i class="fa fa-twitter"></i>
+      </a>
 
-    <!-- Facebook -->
-    <a href="http://www.facebook.com/sharer/sharer.php?u=" class="btn share-btn facebook">
-      <i class="fa fa-facebook"></i>
-    </a>
+      <!-- Facebook -->
+      <a
+        href="https://www.facebook.com/sharer/sharer.php?u="
+        onclick="location.href=this.href + location;return false;"
+        class="btn share-btn facebook"
+      >
+        <i class="fa fa-facebook"></i>
+      </a>
 
-    <!-- LinkedIn -->
-    <a
-      href="https://www.linkedin.com/sharing/share-offsite/?url="
-      onclick="location.href=this.href + location;return false;"
-      class="btn share-btn linkedin"
-    >
-      <i class="fa fa-linkedin"></i>
-    </a>
+      <!-- LinkedIn -->
+      <a
+        href="https://www.linkedin.com/sharing/share-offsite/?url="
+        onclick="location.href=this.href + location;return false;"
+        class="btn share-btn linkedin"
+      >
+        <i class="fa fa-linkedin"></i>
+      </a>
 
-    <!-- Email -->
-    <a
-      :href="email"
-      onclick="location.href=this.href + location;return false;"
-      class="btn share-btn email"
-    >
-      <i class="fa fa-envelope"></i>
-    </a>
-  </div>
-</section>
+      <!-- Email -->
+      <a :href="email" onclick="location.href=this.href + location;return false;" class="btn share-btn email">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </div>
+  </section>
 </template>
 
 <script>
