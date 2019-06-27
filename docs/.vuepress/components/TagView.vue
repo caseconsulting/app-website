@@ -37,7 +37,7 @@ export default {
   props: ['page'],
   computed: {
     posts() {
-      console.log('PAGE LOAD');
+      this.tag = this.$route.hash.slice(1);
       let currentPage = this.page ? this.page : this.$page.path;
       let posts = this.$site.pages
         .filter(x => {
@@ -63,10 +63,6 @@ export default {
           return 'No Topic';
       }
     }
-  },
-  mounted() {
-    console.log('MOUNT');
-    this.tag = window.location.hash.slice(1);
   }
 };
 </script>

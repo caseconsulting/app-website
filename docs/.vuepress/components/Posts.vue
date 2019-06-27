@@ -38,7 +38,6 @@ export default {
       let posts = this.$site.pages
         .filter(x => {
           if (x.path == '/tags.html') {
-            // console.log('asdflajksdf;lkaj');
             return null;
           }
           return x.path.match(new RegExp(`(${currentPage})(?=.*html)`));
