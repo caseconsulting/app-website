@@ -182,6 +182,137 @@ import { required, email } from 'vuelidate/lib/validators';
 import Header from '../home/Header.vue';
 import axios from 'axios';
 
+// METHODS -----
+// console log error on s3 upload
+function s3UploadError(errorMessage) {
+  console.error('Error uploading:', errorMessage);
+}
+// push s3 location on successful upload
+function s3UploadSuccess(s3ObjectLocation) {
+  console.log('Upload was successful');
+  this.uploads.push(s3ObjectLocation);
+}
+// toggle apply form succesfully submitted page
+function submittedRedirect() {
+  if (this.submitted) {
+    this.showMe = false;
+    this.$emit('switched', this.showMe);
+  }
+}
+// populate data.files with dropzone process queue files
+function getFiles() {
+  for (let i = 0; i < this.$refs.dropzone.getQueuedFiles().length; i++) {
+    this.files.push(this.$refs.dropzone.getQueuedFiles()[i].name);
+  }
+}
+// return true if all client-side validation passes
+function isAllValid() {
+  for (const v of Object.values(this.valid)) {
+    if (!v) {
+      return false;
+    }
+  }
+  return true;
+}
+function validateFirstName() {
+  this.$v.firstName.$touch();
+  this.valid.firstName = this.$v.firstName.required;
+}
+function validateLastName() {
+  this.$v.lastName.$touch();
+  this.valid.lastName = this.$v.lastName.required;
+}
+function validateEmail() {
+  this.$v.email.$touch();
+  this.valid.email = this.$v.email.email && this.$v.email.required;
+}
+function validateJobTitles() {
+  this.$v.jobTitles.$touch();
+  this.valid.jobTitles = this.$v.jobTitles.hasJobTitle;
+  if (this.jobTitles.includes('Other')) {
+    this.$v.otherJobTitle.$touch();
+    this.valid.otherJobTitle = this.$v.otherJobTitle.required;
+  } else {
+    this.valid.otherJobTitle = true;
+    this.otherJobTitle = '';
+  }
+}
+function validateHearAboutUs() {
+  if (this.hearAboutUs.includes('Other')) {
+    this.$v.otherHearAboutUs.$touch();
+    this.valid.otherHearAboutUs = this.$v.otherHearAboutUs.required;
+  } else {
+    this.valid.otherHearAboutUs = true;
+    this.otherHearAboutUs = '';
+  }
+
+  if (this.hearAboutUs.includes('Employee Referral')) {
+    this.$v.referralHearAboutUs.$touch();
+    this.valid.referralHearAboutUs = this.$v.referralHearAboutUs.required;
+  } else {
+    this.valid.referralHearAboutUs = true;
+    this.referralHearAboutUs = '';
+  }
+}
+function validateResume() {
+  this.getFiles();
+  this.$v.files.$touch();
+  this.valid.resume = this.$v.files.hasFiles;
+}
+// on form submission
+async function onSubmit() {
+  this.submitEnabled = false; // disable submit button during form processing
+  /* start client-side validation check */
+  this.validateFirstName();
+  this.validateLastName();
+  this.validateEmail();
+  this.validateJobTitles();
+  this.validateHearAboutUs();
+  this.validateResume();
+  /* end client-side validation check */
+
+  // process form to back-end if client-side validation passes
+  if (this.isAllValid()) {
+    try {
+      const data = {
+        firstName: this.firstName,
+        lastName: this.lastName,
+        email: this.email,
+        jobTitles: this.jobTitles,
+        otherJobTitle: this.otherJobTitle,
+        hearAboutUs: this.hearAboutUs,
+        referralHearAboutUs: this.referralHearAboutUs,
+        otherHearAboutUs: this.otherHearAboutUs,
+        comments: this.comments,
+        fileNames: this.files
+      };
+
+      // content upload
+      const baseUrl = process.env.VUE_APP_API;
+      const response = await axios.post(`${baseUrl}/apply`, data);
+
+      this.submitted = true;
+
+      console.log(response.data.id);
+      console.log(response); // eslint-disable-line no-console
+      this.$refs.dropzone.key = response.data.id;
+      console.log('key' + this.$refs.dropzone.key);
+
+      // file upload
+      console.log(this.$refs.dropzone.getQueuedFiles());
+      this.$refs.dropzone.processQueue();
+
+      return response;
+    } catch (err) {
+      console.error(err); // eslint-disable-line no-console
+      return err;
+    }
+  }
+
+  this.submitEnabled = true; // reenable submit button after form processing
+}
+//END METHODS -----
+
 export default {
   data() {
     return {
@@ -241,7 +372,6 @@ export default {
               }
             });
           });
-
           myDropZone.on('error', function(file, message) {
             if (file.size > 6000000) {
               // error message for max file size (6MB)
@@ -312,133 +442,23 @@ export default {
   },
   methods: {
     // console log error on s3 upload
-    s3UploadError(errorMessage) {
-      console.error('Error uploading:', errorMessage);
-    },
+    s3UploadError,
     // push s3 location on successful upload
-    s3UploadSuccess(s3ObjectLocation) {
-      console.log('Upload was successful');
-      this.uploads.push(s3ObjectLocation);
-    },
+    s3UploadSuccess,
     // toggle apply form succesfully submitted page
-    submittedRedirect() {
-      if (this.submitted) {
-        this.showMe = false;
-        this.$emit('switched', this.showMe);
-      }
-    },
+    submittedRedirect,
     // populate data.files with dropzone process queue files
-    getFiles() {
-      for (let i = 0; i < this.$refs.dropzone.getQueuedFiles().length; i++) {
-        this.files.push(this.$refs.dropzone.getQueuedFiles()[i].name);
-      }
-    },
+    getFiles,
     // return true if all client-side validation passes
-    isAllValid() {
-      for (const v of Object.values(this.valid)) {
-        if (!v) {
-          return false;
-        }
-      }
-      return true;
-    },
-    validateFirstName() {
-      this.$v.firstName.$touch();
-      this.valid.firstName = this.$v.firstName.required;
-    },
-    validateLastName() {
-      this.$v.lastName.$touch();
-      this.valid.lastName = this.$v.lastName.required;
-    },
-    validateEmail() {
-      this.$v.email.$touch();
-      this.valid.email = this.$v.email.email && this.$v.email.required;
-    },
-    validateJobTitles() {
-      this.$v.jobTitles.$touch();
-      this.valid.jobTitles = this.$v.jobTitles.hasJobTitle;
-      if (this.jobTitles.includes('Other')) {
-        this.$v.otherJobTitle.$touch();
-        this.valid.otherJobTitle = this.$v.otherJobTitle.required;
-      } else {
-        this.valid.otherJobTitle = true;
-        this.otherJobTitle = '';
-      }
-    },
-    validateHearAboutUs() {
-      if (this.hearAboutUs.includes('Other')) {
-        this.$v.otherHearAboutUs.$touch();
-        this.valid.otherHearAboutUs = this.$v.otherHearAboutUs.required;
-      } else {
-        this.valid.otherHearAboutUs = true;
-        this.otherHearAboutUs = '';
-      }
-
-      if (this.hearAboutUs.includes('Employee Referral')) {
-        this.$v.referralHearAboutUs.$touch();
-        this.valid.referralHearAboutUs = this.$v.referralHearAboutUs.required;
-      } else {
-        this.valid.referralHearAboutUs = true;
-        this.referralHearAboutUs = '';
-      }
-    },
-    validateResume() {
-      this.getFiles();
-      this.$v.files.$touch();
-      this.valid.resume = this.$v.files.hasFiles;
-    },
+    isAllValid,
+    validateFirstName,
+    validateLastName,
+    validateEmail,
+    validateJobTitles,
+    validateHearAboutUs,
+    validateResume,
     // on form submission
-    async onSubmit() {
-      this.submitEnabled = false; // disable submit button during form processing
-      /* start client-side validation check */
-      this.validateFirstName();
-      this.validateLastName();
-      this.validateEmail();
-      this.validateJobTitles();
-      this.validateHearAboutUs();
-      this.validateResume();
-      /* end client-side validation check */
-
-      // process form to back-end if client-side validation passes
-      if (this.isAllValid()) {
-        try {
-          const data = {
-            firstName: this.firstName,
-            lastName: this.lastName,
-            email: this.email,
-            jobTitles: this.jobTitles,
-            otherJobTitle: this.otherJobTitle,
-            hearAboutUs: this.hearAboutUs,
-            referralHearAboutUs: this.referralHearAboutUs,
-            otherHearAboutUs: this.otherHearAboutUs,
-            comments: this.comments,
-            fileNames: this.files
-          };
-
-          // content upload
-          const baseUrl = process.env.VUE_APP_API;
-          const response = await axios.post(`${baseUrl}/apply`, data);
-
-          this.submitted = true;
-
-          console.log(response.data.id);
-          console.log(response); // eslint-disable-line no-console
-          this.$refs.dropzone.key = response.data.id;
-          console.log('key' + this.$refs.dropzone.key);
-
-          // file upload
-          console.log(this.$refs.dropzone.getQueuedFiles());
-          this.$refs.dropzone.processQueue();
-
-          return response;
-        } catch (err) {
-          console.error(err); // eslint-disable-line no-console
-          return err;
-        }
-      }
-
-      this.submitEnabled = true; // reenable submit button after form processing
-    }
+    onSubmit
   }
 };
 </script>

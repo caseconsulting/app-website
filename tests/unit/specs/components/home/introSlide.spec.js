@@ -1,6 +1,6 @@
 import IntroSlide from '@/components/IntroSlide.vue';
 import HomeSlider from '@/data/HomeSlider.js';
-// import InternSlider from '@/data/InternSlider.js';
+import InternSlider from '@/data/InternSlider.js';
 import { shallowMount } from '@vue/test-utils';
 
 describe('IntroSlide.vue', () => {
@@ -8,17 +8,38 @@ describe('IntroSlide.vue', () => {
 
   describe('', () => {
     beforeEach(() => {
-      //   wrapper = shallowMount(IntroSlide);
+      wrapper = shallowMount(IntroSlide);
     });
 
-    describe('WHEN on the home page', () => {
+    xdescribe('WHEN on the home page', () => {
+      beforeEach(() => {
+        //get onto the home page
+      });
+
       test('SHOULD return home slider', () => {
-        // expect(wrapper.instance().finalSlide()).toEqual(HomeSlider);
+        expect(wrapper.vm.finalSlide).toEqual(HomeSlider);
       });
     });
 
-    xdescribe('WHEN on the intern page', () => {});
+    xdescribe('WHEN on the intern page', () => {
+      beforeEach(() => {
+        //get onto the intern page
+      });
 
-    xdescribe('WHEN on another page', () => {});
+      test('SHOULD return intern slider', () => {
+        expect(wrapper.vm.finalSlide).toEqual(InternSlider);
+      });
+    });
+
+    describe('WHEN on another page', () => {
+      test('SHOULD return empty slider', () => {
+        expect(wrapper.vm.finalSlide).toEqual([
+          {
+            title: '',
+            link: ''
+          }
+        ]);
+      });
+    });
   });
 });
