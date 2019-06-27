@@ -1,20 +1,22 @@
 <template>
-  <div>
-    <h2 class="title">{{ $page.frontmatter.title }}</h2>
-    <img class="mainImage" v-if="$page.frontmatter.postImage" :src="$withBase($page.frontmatter.postImage)" />
-
-    <div class="content">
-      <p>{{ $page.frontmatter.author }}</p>
-      <p>{{ $page.frontmatter.date.slice(0, 8) }}</p>
-      <p>
-        <slot></slot>
-      </p>
-      <TagLinks />
+  <section>
+    <div class="w3-display-container">
+      <h2 class="title">{{ $page.frontmatter.title }}</h2>
+      <div class="w3-display-container ">
+        <img class="mainImage" v-if="$page.frontmatter.postImage" :src="$withBase($page.frontmatter.postImage)" />
+      </div>
+      <div class="content">
+        <p>{{ $page.frontmatter.author }}</p>
+        <p>{{ $page.frontmatter.date.slice(0, 8) }}</p>
+        <p>
+          <slot></slot>
+        </p>
+        <TagLinks />
+        <br />
+      </div>
+      <ShareButtons :pageTitle="$page.frontmatter.title"></ShareButtons>
     </div>
-    <br />
-
-    <ShareButtons :pageTitle="$page.frontmatter.title"></ShareButtons>
-  </div>
+  </section>
 </template>
 
 <script>
