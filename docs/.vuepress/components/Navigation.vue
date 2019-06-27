@@ -68,15 +68,15 @@ export default {
         },
         {
           name: 'Case Cares',
-          ref: '#case-cares'
+          ref: '/case-cares'
         },
         {
           name: 'New Hires',
-          ref: '#new-hires'
+          ref: '/new-hires'
         },
         {
           name: 'Awards',
-          ref: '#awards'
+          ref: '/awards'
         }
       ]
     };
