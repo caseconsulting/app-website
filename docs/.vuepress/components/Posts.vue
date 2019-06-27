@@ -9,10 +9,7 @@
               <p>{{ getTopic(post.path) }}</p>
             </div>
             <h2 class="title">{{ post.frontmatter.title }}</h2>
-            <p class="meta">
-              Posted on {{ post.frontmatter.date.slice(0, 8) }} by
-              {{ post.frontmatter.author }}
-            </p>
+            <p class="meta">Posted on {{ post.frontmatter.date.slice(0, 8) }} by {{ post.frontmatter.author }}</p>
             <div>
               <img class="blogImage" v-if="post.frontmatter.image" :src="$withBase(post.frontmatter.image)" alt="" />
             </div>
@@ -31,24 +28,30 @@
 export default {
   data() {
     return {
-      date: ''
+      date: '',
+      filter: []
     };
   },
   props: ['page'],
   computed: {
     posts() {
+      this.filter = this.$route.hash.split('#');
+      console.log(this.filter);
       let currentPage = this.page ? this.page : this.$page.path;
       let posts = this.$site.pages
         .filter(x => {
-          // if (x.frontmatter.tags) {
-          //   //  console.log(x.frontmatter.tags.includes('tag1'));
-          // }
-          // console.log('\n\n\n');
-          // console.log(x.path.match(new RegExp(`('/')(?=.*html)`)));
-          // console.log(`${currentPage}`)
-          // console.log('here');
-          // console.log(x.path.match(new RegExp(`(${currentPage})(?=.*html)`)));
-          return x.path.match(new RegExp(`(${currentPage})(?=.*html)`));
+          // filter by topic
+          if (this.filter.length <= 2) {
+            if (this.filter.length == 1 || this.filter[1] == 'home') {
+              return x.path.match(new RegExp(`(${currentPage})(?=.*html)`));
+            }
+            return x.path.match(new RegExp(`(/${this.filter[1]}/)(?=.*html)`));
+          }
+
+          // filter by tag
+          if (this.filter[1] == 'tag') {
+            return x.frontmatter.tags && x.frontmatter.tags.includes(this.filter[2]);
+          }
         })
         .sort((a, b) => {
           return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
@@ -72,17 +75,17 @@ export default {
     }
   },
   mounted() {
-    if (localStorage) {
-      if (localStorage.getItem('reloaded')) {
-        // The page was just reloaded. Clear the value from local storage
-        // so that it will reload the next time this page is visited.
-        localStorage.removeItem('reloaded');
-      } else {
-        // Set a flag so that we know not to reload the page twice.
-        localStorage.setItem('reloaded', '1');
-        location.reload();
-      }
-    }
+    // if (localStorage) {
+    //   if (localStorage.getItem('reloaded')) {
+    //     // The page was just reloaded. Clear the value from local storage
+    //     // so that it will reload the next time this page is visited.
+    //     localStorage.removeItem('reloaded');
+    //   } else {
+    //     // Set a flag so that we know not to reload the page twice.
+    //     localStorage.setItem('reloaded', '1');
+    //     location.reload();
+    //   }
+    // }
   }
 };
 </script>
