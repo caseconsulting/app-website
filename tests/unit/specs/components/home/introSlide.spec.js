@@ -4,7 +4,11 @@ import InternSlider from '@/data/InternSlider.js';
 import { shallowMount } from '@vue/test-utils';
 
 describe('IntroSlide.vue', () => {
+<<<<<<< HEAD
   let wrapper;
+=======
+  //   let wrapper;
+>>>>>>> 536-side-bar-with-tags: changed side bar position
 
   describe('', () => {
     beforeEach(() => {
