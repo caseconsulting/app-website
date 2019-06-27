@@ -28,19 +28,29 @@
 export default {
   data() {
     return {
-      date: ''
+      date: '',
+      filter: []
     };
   },
   props: ['page'],
   computed: {
     posts() {
+      this.filter = this.$route.hash.slice(1).split('_');
       let currentPage = this.page ? this.page : this.$page.path;
       let posts = this.$site.pages
         .filter(x => {
-          if (x.path == '/tags.html') {
-            return null;
+          // filter by topic
+          if (this.filter.length <= 1) {
+            if (this.filter[0] == '' || this.filter[0] == 'home') {
+              return x.path.match(new RegExp(`(${currentPage})(?=.*html)`));
+            }
+            return x.path.match(new RegExp(`(/${this.filter[0]}/)(?=.*html)`));
           }
-          return x.path.match(new RegExp(`(${currentPage})(?=.*html)`));
+
+          // filter by tag
+          if (this.filter[0] == 'tag') {
+            return x.frontmatter.tags && x.frontmatter.tags.includes(this.filter[1]);
+          }
         })
         .sort((a, b) => {
           return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
@@ -64,17 +74,17 @@ export default {
     }
   },
   mounted() {
-    if (localStorage) {
-      if (localStorage.getItem('reloaded')) {
-        // The page was just reloaded. Clear the value from local storage
-        // so that it will reload the next time this page is visited.
-        localStorage.removeItem('reloaded');
-      } else {
-        // Set a flag so that we know not to reload the page twice.
-        localStorage.setItem('reloaded', '1');
-        location.reload();
-      }
-    }
+    // if (localStorage) {
+    //   if (localStorage.getItem('reloaded')) {
+    //     // The page was just reloaded. Clear the value from local storage
+    //     // so that it will reload the next time this page is visited.
+    //     localStorage.removeItem('reloaded');
+    //   } else {
+    //     // Set a flag so that we know not to reload the page twice.
+    //     localStorage.setItem('reloaded', '1');
+    //     location.reload();
+    //   }
+    // }
   }
 };
 </script>
