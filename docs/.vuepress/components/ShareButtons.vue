@@ -1,7 +1,7 @@
 <template>
   <section>
     <head>
-      <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet" />
+      <link href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet" />
       <!-- <meta property="og:image" :content="this.pageImage" /> -->
     </head>
     <!-- Social Button HTML -->
