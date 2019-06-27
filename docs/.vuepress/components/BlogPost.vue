@@ -12,10 +12,7 @@
       <TagLinks />
     </div>
     <br />
-    <ShareButtons
-      :pageTitle="$page.frontmatter.title"
-      :pageImage="$withBase($page.frontmatter.postImage)"
-    ></ShareButtons>
+    <ShareButtons :pageTitle="$page.frontmatter.title"></ShareButtons>
   </div>
 </template>
 

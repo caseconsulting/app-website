@@ -2,7 +2,7 @@
   <section>
     <head>
       <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet" />
-      <meta property="og:image" :content="pageImage" />
+      <!-- <meta property="og:image" :content="this.pageImage" /> -->
     </head>
     <!-- Social Button HTML -->
     <div style="text-align: center;">
@@ -12,11 +12,7 @@
       </a>
 
       <!-- Facebook -->
-      <a
-        href="https://www.facebook.com/sharer/sharer.php?u="
-        onclick="location.href=this.href + location;return false;"
-        class="btn share-btn facebook"
-      >
+      <a href="https://www.facebook.com/sharer/sharer.php?u=consultwithcase.com" class="btn share-btn facebook">
         <i class="fa fa-facebook"></i>
       </a>
 
@@ -39,7 +35,7 @@
 
 <script>
 export default {
-  props: ['pageTitle', 'pageImage'],
+  props: ['pageTitle'],
   data() {
     return {
       twitter: 'http://twitter.com/share?url=<URL>&text=' + 'Case Consulting: ' + this.pageTitle + '&via=',
