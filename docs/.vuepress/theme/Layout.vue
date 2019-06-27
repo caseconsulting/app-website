@@ -3,8 +3,13 @@
     <main class="g-pt-65 g-pt-90--md">
       <Header />
       <section id="bp">
-        <SideBar />
-        <Content />
+        <div class="row">
+          <div class="col-sm-4"><SideBar /></div>
+
+          <div class="col-sm-4"><Content /></div>
+
+          <div class="col-sm-4"></div>
+        </div>
       </section>
     </main>
   </div>
