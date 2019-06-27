@@ -2,9 +2,10 @@
   <div class="theme-container">
     <main class="g-pt-65 g-pt-90--md">
       <Header />
-      <section id="bp">
+      <section @click="displaySidebar" id="bp">
         <div class="row">
-          <div class="col-sm-4"><SideBar /></div>
+          <div v-if="sidebar" class="col-sm-4"><SideBar /></div>
+          <div v-else class="col-sm-4"></div>
 
           <div class="col-sm-4"><Content /></div>
 
@@ -17,6 +18,16 @@
 
 <script>
 export default {
+  data() {
+    return { sidebar: false };
+  },
+  methods: {
+    displaySidebar() {
+      var array = document.URL.split('/');
+      console.log(array[array.length - 1] === '');
+      return array[array.length - 1] === '';
+    }
+  },
   mounted() {
     let bootstrapLink = document.createElement('link');
     bootstrapLink.setAttribute('href', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
@@ -33,6 +44,8 @@ export default {
     );
     bootstrapScript.setAttribute('crossorigin', 'anonymous');
     document.head.appendChild(bootstrapScript);
+
+    this.sidebar = this.displaySidebar();
   }
 };
 </script>

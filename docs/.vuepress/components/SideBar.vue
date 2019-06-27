@@ -1,6 +1,6 @@
 <template>
   <div class="col-sm-4" style="float:center;">
-    <div class="sidenav">
+    <div :v-if="displaySidebar" class="sidenav">
       <h1>Top 10 tags</h1>
       <div class="row">
         <div class="number"><p>1.</p></div>
@@ -25,6 +25,15 @@
 </template>
 
 <script>
+export default {
+  methods: {
+    displaySidebar() {
+      var array = document.URL.split('/');
+      console.log(array[array.length - 1] === '');
+      return array[array.length - 1] === '';
+    }
+  }
+};
 </script>
 
 <style scoped>
