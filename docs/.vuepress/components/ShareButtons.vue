@@ -12,7 +12,11 @@
       </a>
 
       <!-- Facebook -->
-      <a href="https://www.facebook.com/sharer/sharer.php?u=consultwithcase.com" class="btn share-btn facebook">
+      <a
+        href="https://www.facebook.com/sharer/sharer.php?u="
+        onclick="location.href=this.href + location;return false;"
+        class="btn share-btn facebook"
+      >
         <i class="fa fa-facebook"></i>
       </a>
 
