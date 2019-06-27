@@ -35,21 +35,22 @@ export default {
   props: ['page'],
   computed: {
     posts() {
-      this.filter = this.$route.hash.slice(1).split('_');
+      this.filter = this.$route.hash.split('#');
+      console.log(this.filter);
       let currentPage = this.page ? this.page : this.$page.path;
       let posts = this.$site.pages
         .filter(x => {
           // filter by topic
-          if (this.filter.length <= 1) {
-            if (this.filter[0] == '' || this.filter[0] == 'home') {
+          if (this.filter.length <= 2) {
+            if (this.filter.length == 1 || this.filter[1] == 'home') {
               return x.path.match(new RegExp(`(${currentPage})(?=.*html)`));
             }
-            return x.path.match(new RegExp(`(/${this.filter[0]}/)(?=.*html)`));
+            return x.path.match(new RegExp(`(/${this.filter[1]}/)(?=.*html)`));
           }
 
           // filter by tag
-          if (this.filter[0] == 'tag') {
-            return x.frontmatter.tags && x.frontmatter.tags.includes(this.filter[1]);
+          if (this.filter[1] == 'tag') {
+            return x.frontmatter.tags && x.frontmatter.tags.includes(this.filter[2]);
           }
         })
         .sort((a, b) => {
