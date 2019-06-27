@@ -2,6 +2,7 @@
   <section>
     <head>
       <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet" />
+      <meta property="og:image" :content="pageImage" />
     </head>
     <!-- Social Button HTML -->
     <div style="text-align: center;">
@@ -38,7 +39,7 @@
 
 <script>
 export default {
-  props: ['pageTitle', 'topic'],
+  props: ['pageTitle', 'pageImage'],
   data() {
     return {
       twitter: 'http://twitter.com/share?url=<URL>&text=' + 'Case Consulting: ' + this.pageTitle + '&via=',
