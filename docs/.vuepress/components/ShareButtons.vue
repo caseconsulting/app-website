@@ -61,12 +61,12 @@ export default {
   box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
   outline: none;
   text-align: center;
-  /* 
+
   user-select: none;
   background-color: transparent;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out; */
+    box-shadow 0.15s ease-in-out;
 }
 .share-btn:hover,
 .share-btn:focus {
