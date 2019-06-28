@@ -123,7 +123,7 @@ export default {
   /* width: 13%; */
   /* width: 200px; Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  left: 18%;
+  left: 10%;
   /* right: 0; */
   /* float: right; */
 

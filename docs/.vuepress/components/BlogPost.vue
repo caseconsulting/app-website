@@ -1,13 +1,16 @@
 <template>
   <section>
     <div class="w3-display-container">
-      <h2 class="title">{{ $page.frontmatter.title }}</h2>
       <div class="w3-display-container ">
+        <h2 class="title">{{ $page.frontmatter.title }}</h2>
         <img class="mainImage" v-if="$page.frontmatter.postImage" :src="$withBase($page.frontmatter.postImage)" />
       </div>
       <div class="content">
-        <p>{{ $page.frontmatter.author }}</p>
-        <p>{{ $page.frontmatter.date.slice(0, 8) }}</p>
+        <p class="meta" style="font-size: 15px; padding-top: 5px;">
+          By
+          <a style="color: #0000EE;">{{ $page.frontmatter.author }}</a> ◆
+          {{ $page.frontmatter.date.slice(0, 8) }}
+        </p>
         <p>
           <slot></slot>
         </p>

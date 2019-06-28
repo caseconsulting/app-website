@@ -20,7 +20,10 @@
               />
             </div>
             <h2 class="title">{{ post.frontmatter.title }}</h2>
-            <p class="meta">Posted on {{ post.frontmatter.date.slice(0, 8) }} by {{ post.frontmatter.author }}</p>
+            <p class="meta">
+              By
+              <a style="color: #0000EE;">{{ post.frontmatter.author }}</a> ◆ {{ post.frontmatter.date.slice(0, 8) }}
+            </p>
             <p class="description">{{ post.frontmatter.description }}</p>
           </router-link>
           <div class="tagsHome">

@@ -1,5 +1,5 @@
 <template>
-  <div class="theme-container" style="background-color: #f6f6f6;">
+  <div class="theme-container">
     <main class="g-pt-65 g-pt-90--md">
       <Header />
       <section id="bp">
@@ -7,7 +7,6 @@
           <!-- <div class="col-sm-4"><SideBar /></div> -->
           <div class="col-sm-4"></div>
           <div class="col-sm-4"><Content /></div>
-
           <div class="col-sm-4"></div>
         </div>
         <div v-else class="row">
