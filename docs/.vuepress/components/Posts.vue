@@ -7,19 +7,25 @@
       <div class="post" v-for="post in posts">
         <div class="w3-display-container">
           <router-link :to="post.path">
-            <div class="w3-display-topright w3-display-hover">
+            <div class="w3-display-topright w3-display-hover" style="padding-top: 5px;">
               <p>{{ getTopic(post.path) }}</p>
+            </div>
+            <div>
+              <img
+                class="blogImage"
+                style="padding-bottom: 5px;"
+                v-if="post.frontmatter.image"
+                :src="$withBase(post.frontmatter.image)"
+                alt=""
+              />
             </div>
             <h2 class="title">{{ post.frontmatter.title }}</h2>
             <p class="meta">Posted on {{ post.frontmatter.date.slice(0, 8) }} by {{ post.frontmatter.author }}</p>
-            <div>
-              <img class="blogImage" v-if="post.frontmatter.image" :src="$withBase(post.frontmatter.image)" alt="" />
-            </div>
             <p class="description">{{ post.frontmatter.description }}</p>
           </router-link>
-        </div>
-        <div class="tagsHome">
-          <TagLinks :tags="post.frontmatter.tags"></TagLinks>
+          <div class="tagsHome">
+            <TagLinks :tags="post.frontmatter.tags"></TagLinks>
+          </div>
         </div>
       </div>
     </div>
@@ -91,3 +97,14 @@ export default {
   }
 };
 </script>
+
+<style>
+.blogImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 300px;
+  max-width: 300px;
+  border-width: 1px solid black;
+}
+</style>

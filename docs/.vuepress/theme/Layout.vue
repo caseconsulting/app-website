@@ -1,5 +1,5 @@
 <template>
-  <div class="theme-container">
+  <div class="theme-container" style="background-color: #f6f6f6;">
     <main class="g-pt-65 g-pt-90--md">
       <Header />
       <section id="bp">
