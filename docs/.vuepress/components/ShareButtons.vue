@@ -7,7 +7,7 @@
     <!-- Social Button HTML -->
     <div style="text-align: center;">
       <!-- Twitter -->
-      <a :href="twitter" onclick="location.href=this.href + location;return false;" class="btn share-btn twitter">
+      <a :href="twitter" onclick="location.href=this.href + location;return false;" class="share-btn twitter">
         <i class="fa fa-twitter"></i>
       </a>
 
@@ -15,7 +15,7 @@
       <a
         href="https://www.facebook.com/sharer/sharer.php?u="
         onclick="location.href=this.href + location;return false;"
-        class="btn share-btn facebook"
+        class="share-btn facebook"
       >
         <i class="fa fa-facebook"></i>
       </a>
@@ -24,13 +24,13 @@
       <a
         href="https://www.linkedin.com/sharing/share-offsite/?url="
         onclick="location.href=this.href + location;return false;"
-        class="btn share-btn linkedin"
+        class="share-btn linkedin"
       >
         <i class="fa fa-linkedin"></i>
       </a>
 
       <!-- Email -->
-      <a :href="email" onclick="location.href=this.href + location;return false;" class="btn share-btn email">
+      <a :href="email" onclick="location.href=this.href + location;return false;" class="share-btn email">
         <i class="fa fa-envelope"></i>
       </a>
     </div>
@@ -61,6 +61,12 @@ export default {
   box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
   outline: none;
   text-align: center;
+
+  user-select: none;
+  background-color: transparent;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
 }
 .share-btn:hover,
 .share-btn:focus {
