@@ -1,10 +1,11 @@
 <template>
-  <div class="col-sm-4" style="float:center;">
-    <div class="sidenav">
-      <h1>Top 5 tags</h1>
+  <div class="sidenav">
+    <!-- <div class="row"> -->
+    <h1>Top 5 tags</h1>
+    <!-- </div> -->
 
-      <!-- <div>{{ tags }}</div> -->
-      <!-- <div v-for="tag in tags" class="row">
+    <!-- <div>{{ tags }}</div> -->
+    <!-- <div v-for="tag in tags" class="row">
         <div class="number"><p>1.</p></div>
         <div class="col">
           <a href="#"> tag </a>
@@ -14,54 +15,53 @@
         </div>
       </div> -->
 
-      <div class="row">
-        <div class="number"><p>1.</p></div>
-        <div class="col">
-          <a href="#">#charity</a>
-        </div>
-        <div class="col">
-          <a style=" font-weight: bold; padding-right: 0px; float: right;" href="#">></a>
-        </div>
+    <div class="row">
+      <div class="number"><p>1.</p></div>
+      <div class="col">
+        <a href="#">#charity</a>
       </div>
-
-      <div class="row">
-        <div class="number"><p>2.</p></div>
-        <div class="col">
-          <a href="#">#schools</a>
-        </div>
-        <div class="col">
-          <a style=" font-weight: bold; padding-right: 0px; float: right;" href="#">></a>
-        </div>
+      <div class="col">
+        <a style=" font-weight: bold; padding-right: 0px; float: right;" href="#">></a>
       </div>
+    </div>
 
-      <div class="row">
-        <div class="number"><p>3.</p></div>
-        <div class="col">
-          <a href="#">#coding</a>
-        </div>
-        <div class="col">
-          <a style=" font-weight: bold; padding-right: 0px; float: right;" href="#">></a>
-        </div>
+    <div class="row">
+      <div class="number"><p>2.</p></div>
+      <div class="col">
+        <a href="#">#schools</a>
       </div>
-
-      <div class="row">
-        <div class="number"><p>4.</p></div>
-        <div class="col">
-          <a href="#">#bloodDrive</a>
-        </div>
-        <div class="col">
-          <a style=" font-weight: bold; padding-right: 0px; float: right;" href="#">></a>
-        </div>
+      <div class="col">
+        <a style=" font-weight: bold; padding-right: 0px; float: right;" href="#">></a>
       </div>
+    </div>
 
-      <div class="row">
-        <div class="number"><p>5.</p></div>
-        <div class="col">
-          <a href="#">#welcomeToCase</a>
-        </div>
-        <div class="col">
-          <a style=" font-weight: bold; padding-right: 0px; float: right;" href="#">></a>
-        </div>
+    <div class="row">
+      <div class="number"><p>3.</p></div>
+      <div class="col">
+        <a href="#">#coding</a>
+      </div>
+      <div class="col">
+        <a style=" font-weight: bold; padding-right: 0px; float: right;" href="#">></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="number"><p>4.</p></div>
+      <div class="col">
+        <a href="#">#bloodDrive</a>
+      </div>
+      <div class="col">
+        <a style=" font-weight: bold; padding-right: 0px; float: right;" href="#">></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="number"><p>5.</p></div>
+      <div class="col">
+        <a href="#">#welcomeToCase</a>
+      </div>
+      <div class="col">
+        <a style=" font-weight: bold; padding-right: 0px; float: right;" href="#">></a>
       </div>
     </div>
   </div>
@@ -124,6 +124,7 @@ export default {
   /* width: 200px; Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   left: 10%;
+  /* background-color: rgb(214, 73, 73); */
   /* right: 0; */
   /* float: right; */
 
@@ -136,6 +137,9 @@ export default {
 .sidenav .row {
   border-bottom: 2px solid lightgray;
   padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* background-color: whitesmoke; */
 }
 
 /* The navigation menu links */
@@ -178,7 +182,7 @@ export default {
 
 .sidenav .number p {
   padding: 10px;
-  border: 2px solid #f1f1f1;
+  border: 2px solid lightgray;
 }
 
 /* When you mouse over the navigation links, change their color */
