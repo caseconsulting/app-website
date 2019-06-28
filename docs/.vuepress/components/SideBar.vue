@@ -123,7 +123,7 @@ export default {
   /* width: 13%; */
   /* width: 200px; Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  left: 10%;
+  left: 6%;
   /* background-color: rgb(214, 73, 73); */
   /* right: 0; */
   /* float: right; */
@@ -212,9 +212,9 @@ export default {
   }
 }
 
-@media screen and (max-width: 850px) {
-  .sidenav a {
-    font-size: 12px;
+@media screen and (max-width: 1000px) {
+  .sidenav {
+    visibility: hidden;
   }
 }
 

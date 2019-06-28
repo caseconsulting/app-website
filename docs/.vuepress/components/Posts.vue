@@ -4,7 +4,7 @@
     <div class="col-sm-4"><SideBar /></div>
 
     <div class="posts" v-if="posts.length">
-      <div class="post" v-for="post in posts">
+      <div class="post" style v-for="post in posts">
         <div class="w3-display-container">
           <router-link :to="post.path">
             <div class="w3-display-topright w3-display-hover" style="padding-top: 5px;">
