@@ -135,6 +135,7 @@
                   @vdropzone-s3-upload-error="s3UploadError"
                   @vdropzone-s3-upload-success="s3UploadSuccess"
                   @vdropzone-queue-complete="submittedRedirect"
+                  @vdropzone-error="handleError"
                 ></vue-dropzone>
                 <p class="invalidMsg" v-if="!valid.resume">Please upload a resume.</p>
               </div>
@@ -185,12 +186,18 @@ import axios from 'axios';
 // METHODS -----
 // console log error on s3 upload
 function s3UploadError(errorMessage) {
+  console.log('s3 error');
   console.error('Error uploading:', errorMessage);
 }
 // push s3 location on successful upload
 function s3UploadSuccess(s3ObjectLocation) {
   console.log('Upload was successful');
   this.uploads.push(s3ObjectLocation);
+}
+function handleError(file, message) {
+  console.log('handle error');
+  console.error(message);
+  alert(message);
 }
 // toggle apply form succesfully submitted page
 function submittedRedirect() {
@@ -294,7 +301,7 @@ async function onSubmit() {
       this.submitted = true;
 
       console.log(response.data.id);
-      console.log(response); // eslint-disable-line no-console
+      console.log('response' + response); // eslint-disable-line no-console
       this.$refs.dropzone.key = response.data.id;
       console.log('key' + this.$refs.dropzone.key);
 
@@ -305,6 +312,7 @@ async function onSubmit() {
       return response;
     } catch (err) {
       console.error(err); // eslint-disable-line no-console
+      console.log('error');
       return err;
     }
   }
@@ -312,7 +320,7 @@ async function onSubmit() {
   this.submitEnabled = true; // reenable submit button after form processing
 }
 //END METHODS -----
-
+//comment
 export default {
   data() {
     return {
@@ -373,6 +381,7 @@ export default {
             });
           });
           myDropZone.on('error', function(file, message) {
+            console.log('on error');
             if (file.size > 6000000) {
               // error message for max file size (6MB)
               alert('Files must be less than 6MB');
@@ -383,6 +392,21 @@ export default {
               alert(message);
             }
             myDropZone.removeFile(file);
+          });
+
+          myDropZone.on('sending', function(file) {
+            console.log('stuck sending');
+            console.log(file);
+            if (!file.s3Signature) {
+              // throw new Error('No s3sig');
+              console.log('no sig');
+              myDropZone.removeFile(file);
+            }
+            // console.log(file.s3Signature);
+            // console.log(file.xhr.status);
+            // console.log(file.xhr.response);
+
+            // console.log(xhr.response);
           });
         },
         acceptedFiles:
@@ -445,7 +469,7 @@ export default {
     s3UploadError,
     // push s3 location on successful upload
     s3UploadSuccess,
-    // toggle apply form succesfully submitted page
+    handleError, // toggle apply form succesfully submitted page
     submittedRedirect,
     // populate data.files with dropzone process queue files
     getFiles,
