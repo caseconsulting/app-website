@@ -1,13 +1,5 @@
 <template>
   <section>
-    <head>
-      <meta charset="utf-8" />
-      <meta name="description" content="not sure yet" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-      <link rel="icon" :href="$withBase($page.frontmatter.postImage)" />
-      <title>++{{ $page.frontmatter.title }}</title>
-    </head>
     <div class="w3-display-container">
       <div class="w3-display-container ">
         <h2 class="title">{{ $page.frontmatter.title }}</h2>
