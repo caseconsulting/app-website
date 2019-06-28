@@ -2,7 +2,7 @@
   <div class="theme-container">
     <main class="g-pt-65 g-pt-90--md">
       <Header />
-      <section @click="displaySidebar" id="bp">
+      <section id="bp">
         <div v-if="sidebar" class="row">
           <!-- <div class="col-sm-4"><SideBar /></div> -->
           <div class="col-sm-4"></div>
@@ -23,7 +23,17 @@
 <script>
 export default {
   data() {
-    return { sidebar: false };
+    return {};
+  },
+  computed: {
+    sidebar: {
+      get() {
+        var array = document.URL.split('/');
+        console.log(array[array.length - 1] === '');
+        return array[array.length - 1] === '';
+      },
+      set(value) {}
+    }
   },
   methods: {
     displaySidebar() {
