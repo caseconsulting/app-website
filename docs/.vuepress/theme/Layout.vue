@@ -4,8 +4,10 @@
       <Header />
       <section @click="displaySidebar" id="bp">
         <div v-if="sidebar" class="row">
-          <div class="col-sm-4"><SideBar /></div>
+          <!-- <div class="col-sm-4"><SideBar /></div> -->
+          <div class="col-sm-4"></div>
           <div class="col-sm-4"><Content /></div>
+
           <div class="col-sm-4"></div>
         </div>
         <div v-else class="row">
