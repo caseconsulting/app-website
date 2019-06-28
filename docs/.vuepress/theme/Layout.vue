@@ -9,7 +9,7 @@
           <div class="col-sm-4"></div>
         </div>
         <div v-else class="row">
-          <div class="col-sm-2" style="width: 400px;"></div>
+          <div class="col-sm-2"></div>
           <div class="col-sm-8"><Content /></div>
           <div class="col-sm-2"></div>
         </div>
@@ -62,26 +62,3 @@ export default {
   // }
 };
 </script>
-
-<style>
-.col-sm-3half,
-.col-sm-8half {
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-@media (min-width: 768px) {
-  .col-sm-3half,
-  .col-sm-8half {
-    float: left;
-  }
-  .col-sm-3half {
-    width: 29.16666667%;
-  }
-  .col-sm-8half {
-    width: 70.83333333%;
-  }
-}
-</style>
