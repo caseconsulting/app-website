@@ -361,6 +361,7 @@ export default {
         thumbnailWidth: '150',
         thumbnailHeight: '150',
         key: '',
+
         init: function() {
           var myDropZone = this;
           myDropZone.on('addedfile', function(file) {
