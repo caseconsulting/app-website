@@ -135,7 +135,6 @@
                   @vdropzone-s3-upload-error="s3UploadError"
                   @vdropzone-s3-upload-success="s3UploadSuccess"
                   @vdropzone-queue-complete="submittedRedirect"
-                  @vdropzone-error="handleError"
                 ></vue-dropzone>
                 <p class="invalidMsg" v-if="!valid.resume">Please upload a resume.</p>
               </div>
@@ -194,11 +193,11 @@ function s3UploadSuccess(s3ObjectLocation) {
   console.log('Upload was successful');
   this.uploads.push(s3ObjectLocation);
 }
-function handleError(file, message) {
-  console.log('handle error');
-  console.error(message);
-  alert(message);
-}
+// function handleError(file, message) {
+//   console.log('handle error');
+//   console.error(message);
+//   alert(message);
+// }
 // toggle apply form succesfully submitted page
 function submittedRedirect() {
   if (this.submitted) {
@@ -381,32 +380,26 @@ export default {
             });
           });
           myDropZone.on('error', function(file, message) {
-            console.log('on error');
             if (file.size > 6000000) {
               // error message for max file size (6MB)
               alert('Files must be less than 6MB');
+              myDropZone.removeFile(file);
             } else if (myDropZone.getQueuedFiles().length >= 3) {
               // error message for max file number exceeded (3)
               alert('Form cannot contain more than 3 files');
+              myDropZone.removeFile(file);
+            } else if (!file.accepted) {
+              alert('Upload Canceled: File type ' + file.type + ' can not be uploaded');
             } else {
               alert(message);
             }
-            myDropZone.removeFile(file);
           });
 
           myDropZone.on('sending', function(file) {
-            console.log('stuck sending');
-            console.log(file);
             if (!file.s3Signature) {
-              // throw new Error('No s3sig');
-              console.log('no sig');
+              file.accepted = false;
               myDropZone.removeFile(file);
             }
-            // console.log(file.s3Signature);
-            // console.log(file.xhr.status);
-            // console.log(file.xhr.response);
-
-            // console.log(xhr.response);
           });
         },
         acceptedFiles:
@@ -469,7 +462,7 @@ export default {
     s3UploadError,
     // push s3 location on successful upload
     s3UploadSuccess,
-    handleError, // toggle apply form succesfully submitted page
+    // toggle apply form succesfully submitted page
     submittedRedirect,
     // populate data.files with dropzone process queue files
     getFiles,
