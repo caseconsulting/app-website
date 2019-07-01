@@ -42,6 +42,14 @@ export default {
     }
   },
   mounted() {
+    // JS Global Compulsory
+    let jQueryScript = document.createElement('script');
+    jQueryScript.setAttribute('src', 'https://code.jquery.com/jquery-3.4.1.min.js');
+    jQueryScript.setAttribute('integrity', 'sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=');
+    jQueryScript.setAttribute('crossorigin', 'anonymous');
+    document.head.appendChild(jQueryScript);
+
+    // bootstrap
     let bootstrapLink = document.createElement('link');
     bootstrapLink.setAttribute('href', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
     bootstrapLink.setAttribute('rel', 'stylesheet');

@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg g-py-0">
-    <div class="container-fluid g-pos-rel">
+    <div class="container-fluid justify-content-between g-pos-rel">
       <!-- Logo -->
       <a href="/" class="navbar-brand u-header__logo" data-type="static">
         <img
