@@ -4,6 +4,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" :content="$page.frontmatter.title" />
     <meta property="og:image" content="https://case-blog.netlify.com/assets/img/case/logo-banner.gif" />
+    <meta property="og:description" :content="$page.frontmatter.description" />
+    <meta property="fb:app_id" content="APPID" />
     <div class="w3-display-container">
       <div class="w3-display-container ">
         <h2 class="title">{{ $page.frontmatter.title }}</h2>
