@@ -1,5 +1,9 @@
 <template>
   <section>
+    <meta property="og:url" content="location" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" :content="$page.frontmatter.title" />
+    <meta property="og:image" :content="$withBase($page.frontmatter.postImage)" />
     <div class="w3-display-container">
       <div class="w3-display-container ">
         <h2 class="title">{{ $page.frontmatter.title }}</h2>
@@ -11,13 +15,14 @@
           <a style="color: #0000EE;">{{ $page.frontmatter.author }}</a> ◆
           {{ $page.frontmatter.date.slice(0, 8) }}
         </p>
-        <p>
-          <slot></slot>
-        </p>
+        <p><slot></slot></p>
         <TagLinks />
         <br />
       </div>
       <ShareButtons :pageTitle="$page.frontmatter.title"></ShareButtons>
+      <br />
+      <!-- <div style="border-top: 2px solid gray;"></div> -->
+      <!-- <br /> -->
     </div>
   </section>
 </template>
