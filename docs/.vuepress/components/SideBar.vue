@@ -256,7 +256,7 @@ export default {
 }
 
 .filterBox {
-  background-color: firebrick;
+  background-color: #e74c3c;
   color: white;
   border: 2px solid lightgray;
 }
