@@ -1,5 +1,5 @@
 <template>
-  <div class="sidenav">
+  <div class="sidenav" style="background color: white">
     <!-- <div class="row"> -->
     <h1 style="font-weight: bold; font-family: inherit;">Top 5 tags</h1>
     <!-- </div> -->
@@ -99,10 +99,6 @@ export default {
   methods: {
     onlyUnique(value, index, self) {
       return self.indexOf(value) === index;
-    },
-    linkTag(tag) {
-      console.log(tag);
-      location.href = this.href + tag;
     }
   },
   computed: {
