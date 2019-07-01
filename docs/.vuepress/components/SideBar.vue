@@ -1,5 +1,5 @@
 <template>
-  <div class="sidenav" style="background color: white">
+  <div class="sidenav head" style="background color: white">
     <!-- <div class="row"> -->
     <h1 style="font-weight: bold; font-family: inherit;">Top 5 tags</h1>
     <!-- </div> -->
@@ -176,6 +176,10 @@ export default {
   box-shadow: 0 2px 3px #ccc;
   background-color: white;
 }
+
+/* .sidenav :hover {
+  background-color: whitesmoke;
+} */
 
 .sidenav .row {
   border-bottom: 2px solid lightgray;

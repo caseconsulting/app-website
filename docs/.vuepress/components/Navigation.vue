@@ -17,20 +17,12 @@
           id="js-scroll-nav"
           class="navbar-nav text-uppercase g-font-weight-700 g-font-size-11 g-pt-20 g-pt-5--lg ml-auto"
         >
-          <!-- <router-link tag="li" to="/" class="g-mr-30--lg g-mb-7 g-mb-0--lg" active-class="active">
-          <a class="nav-link p-0">Home</a>
-          </router-link>-->
-          <!-- <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg" active-class="active">
-            <a href="/">Home</a>
-          </li>-->
-
-          <!-- <router-link tag="li" to="/" class="g-mr-30--lg g-mb-7 g-mb-0--lg" active-class="active">
-            <a class="nav-link p-0">Home</a>
-          </router-link>-->
           <li v-for="section in Sections" :key="section.name" class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
             <a :href="section.ref" class="nav-link p-0">{{ section.name }}</a>
           </li>
         </ul>
+      </div>
+      <div class="bptw">
         <a class="navbar-brand u-header__log">
           <img src="/assets/img/awards/2019_BPTW_logo.png" alt="Best places to work 2019 logo" class="nav-pad" />
         </a>
@@ -64,7 +56,7 @@ export default {
       Sections: [
         {
           name: 'Home',
-          ref: '/#home'
+          ref: '/'
         },
         {
           name: 'Case Cares',
