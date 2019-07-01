@@ -1,5 +1,6 @@
 ---
-image: /charlotte.jpg
+image: /charlotte2.jpg
+postImage: /charlotte2.jpg
 title: Men's Shelter of Charlotte
 author: Karen Katilie
 description: John and I started volunteering with the Men's Shelter of Charlotte this summer as a way to continue the work done by our daughter, Brandy.

@@ -1,5 +1,6 @@
 ---
 image: /watch-dogs.png
+postImage: /watch-dogs2.jpg
 title: Watch D.O.G.S.
 author: Paul Correll
 description: Yesterday, I spent the day as a Watch Dog at Greenville Elementary School where my daughter attends 1st grade. This was my second Watch Dog day since mid-October, and it was just as enjoyable as the first. As you'll see in the schedule below every minute is accounted for and it makes for a tired dog at the end of the day.

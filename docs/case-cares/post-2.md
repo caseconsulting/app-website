@@ -1,5 +1,6 @@
 ---
-image: /IMG_8901.jpg
+image: /IMG_8905.jpg
+postImage: /IMG_8901.jpg
 title: Operation Christmas Child Volunteering
 author: Brian Jackson
 description: Along with friends from our church and my brother-in-law & sister-in-law, my family and I volunteered a few hours of our time at the Operation Christmas Child distribution center in Columbia, MD on December 7th.

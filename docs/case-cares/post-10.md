@@ -1,5 +1,5 @@
 ---
-image: /charlotte.jpg
+image: /charlotte2.jpg
 postImage: /charlotte2.jpg
 title: Men's Shelter of Charlotte
 author: Karen Katilie

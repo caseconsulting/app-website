@@ -1,5 +1,6 @@
 ---
 image: /holidayParty.jpg
+postImage: /holidayParty.jpg
 title: Pathway Home's Resident Holiday Party
 author: Kiran Kuchipudi
 description: On Dec 13th, I volunteered with Pathway Home's Annual Resident Holiday party. The event was hosted to celebrate the holiday season with about 150 residents and 40 volunteers. Pathway Homes is a charitable organization providing non-time-limited housing and supportive services to adults with serious mental illness and co-occurring disabilities in Northern Virginia.
