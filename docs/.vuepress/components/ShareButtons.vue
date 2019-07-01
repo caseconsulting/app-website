@@ -2,7 +2,12 @@
   <section>
     <head>
       <link href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet" />
-      <!-- <meta property="og:image" :content="this.pageImage" /> -->
+      <meta property="og:url" content="location" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" :content="$page.frontmatter.title" />
+      <meta property="og:image" content="https://case-blog.netlify.com/assets/img/case/logo-banner.gif" />
+      <meta property="og:description" :content="$page.frontmatter.description" />
+      <meta property="fb:app_id" content="APPID" />
     </head>
     <!-- Social Button HTML -->
     <div style="text-align: center;">
