@@ -7,11 +7,11 @@
     <div v-for="(tag, index) in tags.slice(0, 5)">
       <div class="row postTag">
         <div class="number">
-          <p>{{ index + 1 }}.</p>
+          <p v-bind:class="[{ filterBox: isRoute(tag) }]">{{ index + 1 }}.</p>
         </div>
         <div class="col">
           <router-link :to="{ path: `/#tag#${tag[0]}` }">
-            <div>
+            <div class="textBox">
               <span style="padding: 6px 90px 6px 16px;">#{{ tag[0] }}</span>
               <span style="font-weight: bold; padding-right: 0px; float: right;">></span>
             </div>
@@ -92,13 +92,20 @@ export default {
   data() {
     return {
       date: '',
-      filter: []
+      f: ''
     };
   },
   props: ['page'],
   methods: {
     onlyUnique(value, index, self) {
       return self.indexOf(value) === index;
+    },
+    isRoute(tag) {
+      this.filter = this.$route.hash.split('#');
+      if (this.filter[1] === 'tag') {
+        return tag[0] === this.filter[2];
+      }
+      return false;
     }
   },
   computed: {
@@ -237,7 +244,18 @@ export default {
   text-decoration: underline;
 }
 
+/*
 .row:hover > .number p {
+  background-color: firebrick;
+  color: white;
+  border: 2px solid lightgray;
+} */
+
+.row:hover > .col .textBox {
+  color: #e74c3c;
+}
+
+.filterBox {
   background-color: firebrick;
   color: white;
   border: 2px solid lightgray;
@@ -277,4 +295,3 @@ export default {
   }
 }
 </style>
-

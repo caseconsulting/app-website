@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg g-py-0">
     <div class="container-fluid justify-content-between g-pos-rel">
       <!-- Logo -->
-      <a href="/" class="navbar-brand u-header__logo" data-type="static">
+      <a href="https://www.consultwithcase.com" class="navbar-brand u-header__logo" data-type="static">
         <img
           class="u-header__logo-img u-header__logo-img--main g-width-110"
           src="/assets/img/case/logo-banner.gif"
@@ -18,7 +18,9 @@
           class="navbar-nav text-uppercase g-font-weight-700 g-font-size-11 g-pt-20 g-pt-5--lg ml-auto"
         >
           <li v-for="section in Sections" :key="section.name" class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-            <a :href="section.ref" class="nav-link p-0">{{ section.name }}</a>
+            <a v-bind:class="[{ filterUnderline: isRoute(section.ref) }]" :href="section.ref" class="nav-link p-0">{{
+              section.name
+            }}</a>
           </li>
         </ul>
       </div>
@@ -56,7 +58,7 @@ export default {
       Sections: [
         {
           name: 'Home',
-          ref: '/'
+          ref: '/#home'
         },
         {
           name: 'Case Cares',
@@ -70,8 +72,25 @@ export default {
           name: 'Awards',
           ref: '/#awards'
         }
-      ]
+      ],
+      hash: ''
     };
+  },
+  methods: {
+    isRoute(ref) {
+      this.filter = this.$route.hash.split('#');
+      if (this.filter.length <= 2) {
+        if (this.filter.length == 1 || this.filter[1] == 'home') {
+          this.hash = 'home';
+        } else {
+          this.hash = this.filter[1];
+        }
+      }
+      if (this.filter[1] == 'tag') {
+        this.hash = this.filter[2];
+      }
+      return this.hash.toLowerCase() === ref.slice(2).toLowerCase();
+    }
   }
 };
 </script>
