@@ -182,6 +182,11 @@ import { required, email } from 'vuelidate/lib/validators';
 import Header from '../home/Header.vue';
 import axios from 'axios';
 
+var successfulSubmission = false;
+var data;
+var baseUrl;
+var response;
+
 // METHODS -----
 // console log error on s3 upload
 function s3UploadError(errorMessage) {
@@ -200,9 +205,18 @@ function s3UploadSuccess(s3ObjectLocation) {
 // }
 // toggle apply form succesfully submitted page
 function submittedRedirect() {
-  if (this.submitted) {
+  console.log('attemptting to redirect');
+  if (successfulSubmission) {
+    console.log('redirect successful');
     this.showMe = false;
     this.$emit('switched', this.showMe);
+  } else {
+    console.log('should not redirect');
+    this.submitEnabled = true; // reenable submit button after form processing
+    // DELETE THE OLD FILES IN DYNAMO AND S3
+    // console.log(`${baseUrl}/apply`);
+    // console.log(data);
+    // console.log(axios.delete(`${baseUrl}/apply`, data));
   }
 }
 // populate data.files with dropzone process queue files
@@ -280,7 +294,7 @@ async function onSubmit() {
   // process form to back-end if client-side validation passes
   if (this.isAllValid()) {
     try {
-      const data = {
+      data = {
         firstName: this.firstName,
         lastName: this.lastName,
         email: this.email,
@@ -294,20 +308,16 @@ async function onSubmit() {
       };
 
       // content upload
-      const baseUrl = process.env.VUE_APP_API;
-      const response = await axios.post(`${baseUrl}/apply`, data);
+      baseUrl = process.env.VUE_APP_API;
+      response = await axios.post(`${baseUrl}/apply`, data);
 
-      this.submitted = true;
+      successfulSubmission = true;
 
-      console.log(response.data.id);
-      console.log('response' + response); // eslint-disable-line no-console
       this.$refs.dropzone.key = response.data.id;
-      console.log('key' + this.$refs.dropzone.key);
 
       // file upload
-      console.log(this.$refs.dropzone.getQueuedFiles());
-      this.$refs.dropzone.processQueue();
 
+      this.$refs.dropzone.processQueue();
       return response;
     } catch (err) {
       console.error(err); // eslint-disable-line no-console
@@ -315,7 +325,6 @@ async function onSubmit() {
       return err;
     }
   }
-
   this.submitEnabled = true; // reenable submit button after form processing
 }
 //END METHODS -----
@@ -334,7 +343,6 @@ export default {
         otherHearAboutUs: true,
         referralHearAboutUs: true
       },
-      submitted: false,
       firstName: '',
       lastName: '',
       email: '',
@@ -390,6 +398,9 @@ export default {
               alert('Form cannot contain more than 3 files');
               myDropZone.removeFile(file);
             } else if (!file.accepted) {
+              alert(message);
+              successfulSubmission = false;
+              console.log('rejected file upload to s3 bucket');
               alert('Upload Canceled: File type ' + file.type + ' can not be uploaded');
             } else {
               alert(message);
@@ -404,7 +415,7 @@ export default {
           });
         },
         acceptedFiles:
-          'image/jpeg, image/png, image/gif, application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+          'image/jpeg, text/plain, image/png, image/gif, application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document',
         addRemoveLinks: true,
         maxFilesize: 6,
         maxFiles: 3
