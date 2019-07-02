@@ -32,6 +32,7 @@
         </div>
       </div>
     </div>
+    <div v-else><h3>No results match search</h3></div>
   </div>
 </template>
 
@@ -47,7 +48,6 @@ export default {
   computed: {
     posts() {
       this.filter = this.$route.hash.split('#');
-      console.log(this.filter);
       let currentPage = this.page ? this.page : this.$page.path;
       let posts = this.$site.pages
         .filter(x => {
@@ -62,6 +62,14 @@ export default {
           // filter by tag
           if (this.filter[1] == 'tag') {
             return x.frontmatter.tags && x.frontmatter.tags.includes(this.filter[2]);
+          }
+
+          // filter by title
+          if (this.filter[1] == 'title') {
+            if (x.frontmatter.title) {
+              return x.frontmatter.title.toLowerCase().indexOf(this.filter[2]) > -1;
+            }
+            return false;
           }
         })
         .sort((a, b) => {

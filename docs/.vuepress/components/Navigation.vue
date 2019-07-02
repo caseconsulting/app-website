@@ -82,14 +82,12 @@ export default {
         return false;
       }
       this.filter = this.$route.hash.split('#');
-      if (this.filter.length <= 2) {
-        if (this.filter.length == 1 || this.filter[1] == 'home') {
-          this.hash = 'home';
-        } else {
-          this.hash = this.filter[1];
-        }
-      }
-      if (this.filter[1] == 'tag') {
+
+      if (this.filter.length <= 1) {
+        this.hash = 'home';
+      } else if (this.filter.length == 2) {
+        this.hash = this.filter[1];
+      } else {
         this.hash = this.filter[2];
       }
       return this.hash.toLowerCase() === ref.slice(2).toLowerCase();

@@ -1,5 +1,9 @@
 <template>
   <div class="sidenav head" style="background color: white">
+    <!-- title and search bar -->
+    <div><TitleSearchBar /></div>
+    <div><TagSearchBar /></div>
+
     <!-- <div class="postTag"> -->
     <h1 style="font-weight: bold; font-family: inherit; font-size: 18px; padding-bottom: 5px;">Top 5 tags</h1>
     <!-- </div> -->
