@@ -5,22 +5,19 @@
     <!-- </div> -->
 
     <div v-for="(tag, index) in tags.slice(0, 5)">
-      <div class="row postTag">
-        <router-link :to="{ path: `/#tag#${tag[0]}` }">
+      <router-link style="padding: 0;" :to="{ path: `/#tag#${tag[0]}` }">
+        <div class="row postTag">
           <div class="number">
             <p v-bind:class="[{ filterBox: isRoute(tag) }]">{{ index + 1 }}.</p>
           </div>
-        </router-link>
-
-        <div class="col">
-          <router-link :to="{ path: `/#tag#${tag[0]}` }">
+          <div class="col">
             <div class="textBox">
               <span style="font-size: 14px; padding: 6px 60px 6px 16px;">#{{ tag[0] }}</span>
-              <p style="font-size: 14px; font-weight: bold; padding-right: 0px; float: right;">></p>
+              <span style="font-size: 14px; font-weight: bold; padding-right: 0px; float: right;">></span>
             </div>
-          </router-link>
+          </div>
         </div>
-      </div>
+      </router-link>
     </div>
   </div>
   <!-- Content here -->
