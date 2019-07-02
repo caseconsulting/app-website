@@ -1,4 +1,8 @@
 ---
+meta:
+  - name: og:image
+    content: /20181208_172621.jpg
+
 image: /20181208_172621.jpg
 postImage: /20181208_172621.jpg
 title: Salvation Army Food Truck

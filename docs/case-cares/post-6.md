@@ -1,4 +1,8 @@
 ---
+meta:
+  - name: og:image
+    content: /carousel.png
+
 image: /carousel.png
 postImage: /carousel.png
 title: King's Cross Church Website Upgrade

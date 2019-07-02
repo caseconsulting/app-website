@@ -1,4 +1,8 @@
 ---
+meta:
+  - name: og:image
+    content: /holidayParty.jpg
+
 image: /holidayParty.jpg
 postImage: /holidayParty.jpg
 title: Pathway Home's Resident Holiday Party

@@ -1,4 +1,8 @@
 ---
+meta:
+  - name: og:image
+    content: /wreaths.jpg
+
 image: /wreaths.jpg
 postImage: /wreaths.jpg
 title: Wreaths Across America Clean-Up

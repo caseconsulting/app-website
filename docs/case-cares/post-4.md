@@ -1,4 +1,8 @@
 ---
+meta:
+  - name: og:image
+    content: /watch-dogs.png
+
 image: /watch-dogs.png
 postImage: /watch-dogs2.jpg
 title: Watch D.O.G.S.

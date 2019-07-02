@@ -1,4 +1,8 @@
 ---
+meta:
+  - name: og:image
+    content: /example.png
+
 image: /example.png
 title: New Hire 1
 author: Bryan Washam

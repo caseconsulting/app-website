@@ -1,4 +1,8 @@
 ---
+meta:
+  - name: og:image
+    content: /charlotte2.jpg
+
 image: /charlotte2.jpg
 postImage: /charlotte2.jpg
 title: Men's Shelter of Charlotte

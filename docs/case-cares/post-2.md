@@ -1,4 +1,8 @@
 ---
+meta:
+  - name: og:image
+    content: /IMG_8905.jpg
+
 image: /IMG_8905.jpg
 postImage: /IMG_8901.jpg
 title: Operation Christmas Child Volunteering

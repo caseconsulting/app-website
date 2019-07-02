@@ -1,4 +1,8 @@
 ---
+meta:
+  - name: og:image
+    content: /example.png
+
 image: /example.png
 title: awards 1
 author: Karen Katilie

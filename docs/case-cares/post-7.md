@@ -1,4 +1,8 @@
 ---
+meta:
+  - name: og:image
+    content: /20181220_083527.jpg
+
 image: /20181220_083527.jpg
 postImage: /20181220_083527.jpg
 title: Volunteering at Armstrong Elementary School in Reston

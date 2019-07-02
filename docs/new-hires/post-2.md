@@ -1,4 +1,8 @@
 ---
+meta:
+  - name: og:image
+    content: /example.png
+    
 image: /example.png
 title: New hire 2
 author: Karen Katilie
