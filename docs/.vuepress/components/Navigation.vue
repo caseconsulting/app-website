@@ -78,6 +78,9 @@ export default {
   },
   methods: {
     isRoute(ref) {
+      if (this.$route.path.slice(-4) == 'html') {
+        return false;
+      }
       this.filter = this.$route.hash.split('#');
       if (this.filter.length <= 2) {
         if (this.filter.length == 1 || this.filter[1] == 'home') {

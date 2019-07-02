@@ -11,8 +11,8 @@
           <a style="color: tomato;">{{ $page.frontmatter.author }}</a> ◆
           {{ $page.frontmatter.date.slice(0, 8) }}
         </p>
-        <p><slot></slot></p>
-        <TagLinks />
+        <p><slot class="link"></slot></p>
+        <TagLinks class="links" />
         <br />
       </div>
       <ShareButtons :pageTitle="$page.frontmatter.title"></ShareButtons>
@@ -40,19 +40,6 @@ export default {
           return 'No Topic';
       }
     }
-  },
-  mounted() {
-    // if (localStorage) {
-    //   if (localStorage.getItem('reloaded')) {
-    //     // The page was just reloaded. Clear the value from local storage
-    //     // so that it will reload the next time this page is visited.
-    //     localStorage.removeItem('reloaded');
-    //   } else {
-    //     // Set a flag so that we know not to reload the page twice.
-    //     localStorage.setItem('reloaded', '1');
-    //     location.reload();
-    //   }
-    // }
   }
 };
 </script>
