@@ -1,8 +1,4 @@
 module.exports = {
-  meta: {
-    name: 'og:image',
-    content: 'https://case-blog.netlify.com/assets/img/case/logo-banner.gif'
-  },
   title: 'Case Consulting Blog',
   head: [
     [
