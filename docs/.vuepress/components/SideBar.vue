@@ -1,7 +1,7 @@
 <template>
   <div class="sidenav head" style="background color: white">
-    <!-- <div class="row"> -->
-    <h1 style="font-weight: bold; font-family: inherit;">Top 5 tags</h1>
+    <!-- <div class="postTag"> -->
+    <h1 style="font-weight: bold; font-family: inherit; font-size: 18px; padding-bottom: 5px;">Top 5 tags</h1>
     <!-- </div> -->
 
     <div v-for="(tag, index) in tags.slice(0, 5)">
@@ -12,77 +12,13 @@
         <div class="col">
           <router-link :to="{ path: `/#tag#${tag[0]}` }">
             <div class="textBox">
-              <span style="padding: 6px 90px 6px 16px;">#{{ tag[0] }}</span>
-              <span style="font-weight: bold; padding-right: 0px; float: right;">></span>
+              <span style="font-size: 14px; padding: 6px 60px 6px 16px;">#{{ tag[0] }}</span>
+              <span style="font-size: 14px; font-weight: bold; padding-right: 0px; float: right;">></span>
             </div>
           </router-link>
         </div>
       </div>
     </div>
-
-    <div class="row postTag">
-      <div class="number">
-        <p>{{ 6 }}.</p>
-      </div>
-      <div class="col">
-        <router-link :to="{ path: `/#tag#tag5` }">
-          <div>
-            <span style="padding: 6px 90px 6px 16px;">#example</span>
-            <span style="font-weight: bold; padding-right: 0px; float: right;">></span>
-          </div>
-        </router-link>
-      </div>
-    </div>
-
-    <!-- <div class="row">
-      <div class="number"><p>1.</p></div>
-      <div class="col">
-        <a href="#">#charity</a>
-      </div>
-      <div class="col">
-        <a style=" font-weight: bold; padding-right: 0px; float: right;" href="#">></a>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="number"><p>2.</p></div>
-      <div class="col">
-        <a href="#">#schools</a>
-      </div>
-      <div class="col">
-        <a style=" font-weight: bold; padding-right: 0px; float: right;" href="#">></a>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="number"><p>3.</p></div>
-      <div class="col">
-        <a href="#">#coding</a>
-      </div>
-      <div class="col">
-        <a style=" font-weight: bold; padding-right: 0px; float: right;" href="#">></a>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="number"><p>4.</p></div>
-      <div class="col">
-        <a href="#">#bloodDrive</a>
-      </div>
-      <div class="col">
-        <a style=" font-weight: bold; padding-right: 0px; float: right;" href="#">></a>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="number"><p>5.</p></div>
-      <div class="col">
-        <a href="#">#welcomeToCase</a>
-      </div>
-      <div class="col">
-        <a style=" font-weight: bold; padding-right: 0px; float: right;" href="#">></a>
-      </div>
-    </div> -->
   </div>
   <!-- Content here -->
 </template>
@@ -127,32 +63,6 @@ export default {
         }
       });
       const mapSort = [...mapZ.entries()].sort((a, b) => b[1] - a[1]);
-
-      // let tags = [];
-
-      // //gets all tags from posts
-      // posts.forEach(post => {
-      //   console.log(post.frontmatter.tags);
-      //   if (post.frontmatter.tags) {
-      //     for (var x = 0; x < post.frontmatter.tags.length; x++) {
-      //       if (tags.contains()) tags.push(post.frontmatter.tags[x]);
-      //     }
-      //   }
-      // });
-
-      // //creates a map to sort tags by key (tag name) and value (number of appearances)
-      // //value originally set to one
-      // var map = new Map();
-      // var unique = tags.filter(this.onlyUnique); //gets all unique tags
-      // for (let value in unique) {
-      //   map.set(unique[value], 0);
-      // }
-
-      // //currently for debug purposes creates array with key value pairs to print
-      // let array = [];
-      // for (var [key, value] of map.entries()) {
-      //   array.push({ key, value });
-      // }
 
       return mapSort;
     }
@@ -210,7 +120,7 @@ export default {
   text-decoration: none;
   font-weight: bold;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   color: #818181;
   display: block;
 }
@@ -235,8 +145,9 @@ export default {
 }
 
 .sidenav .number p {
-  padding: 9px 10px 9px 14px;
+  padding: 7px 9px 7px 13px;
   border: 2px solid lightgray;
+  font-size: 11px;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -244,8 +155,7 @@ export default {
   text-decoration: underline;
 }
 
-/*
-.row:hover > .number p {
+/* .row:hover > .number p {
   background-color: firebrick;
   color: white;
   border: 2px solid lightgray;
@@ -280,18 +190,6 @@ export default {
 @media screen and (max-width: 1000px) {
   .sidenav {
     visibility: hidden;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .sidenav a {
-    font-size: 11px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .sidenav a {
-    font-size: 10px;
   }
 }
 </style>

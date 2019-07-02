@@ -8,7 +8,7 @@
       <div class="content">
         <p class="meta" style="font-size: 15px; padding-top: 5px;">
           By
-          <a style="color: #0000EE;">{{ $page.frontmatter.author }}</a> ◆
+          <a style="color: tomato;">{{ $page.frontmatter.author }}</a> ◆
           {{ $page.frontmatter.date.slice(0, 8) }}
         </p>
         <p><slot></slot></p>

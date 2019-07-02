@@ -4,12 +4,13 @@
     <div class="col-sm-4"><SideBar /></div>
 
     <div class="posts" v-if="posts.length">
-      <div class="post" style v-for="post in posts">
+      <div class="post" style="width: 110%" v-for="post in posts">
         <div class="w3-display-container">
           <router-link :to="post.path">
             <div class="w3-display-topright w3-display-hover" style="padding-top: 5px;">
               <p>{{ getTopic(post.path) }}</p>
             </div>
+            <h2 class="title">{{ post.frontmatter.title }}</h2>
             <div>
               <img
                 class="blogImage"
@@ -19,10 +20,9 @@
                 alt=""
               />
             </div>
-            <h2 class="title">{{ post.frontmatter.title }}</h2>
             <p class="meta">
               By
-              <a style="color: #0000EE;">{{ post.frontmatter.author }}</a> ◆ {{ post.frontmatter.date.slice(0, 8) }}
+              <a style="color: tomato;">{{ post.frontmatter.author }}</a> ◆ {{ post.frontmatter.date.slice(0, 8) }}
             </p>
             <p class="description">{{ post.frontmatter.description }}</p>
           </router-link>

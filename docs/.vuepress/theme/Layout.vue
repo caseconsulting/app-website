@@ -6,7 +6,7 @@
         <div v-if="sidebar" class="row">
           <!-- <div class="col-sm-4"><SideBar /></div> -->
           <div class="col-sm-4"></div>
-          <div class="col-sm-4"><Content /></div>
+          <div class="col-sm-4" style="min-width: 100%;"><Content /></div>
           <div class="col-sm-4"></div>
         </div>
         <div v-else class="row">
@@ -81,3 +81,9 @@ export default {
   // }
 };
 </script>
+
+<style scoped>
+/* .col-sm-4 {
+  min-width: 950%;
+} */
+</style>
