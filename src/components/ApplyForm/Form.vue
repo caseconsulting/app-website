@@ -311,7 +311,7 @@ async function onSubmit() {
       return response;
     } catch (err) {
       console.error(err); // eslint-disable-line no-console
-      console.log('error');
+      alert('Error submitting apply form. Please try again.');
       return err;
     }
   }
