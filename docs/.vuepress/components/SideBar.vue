@@ -6,14 +6,17 @@
 
     <div v-for="(tag, index) in tags.slice(0, 5)">
       <div class="row postTag">
-        <div class="number">
-          <p v-bind:class="[{ filterBox: isRoute(tag) }]">{{ index + 1 }}.</p>
-        </div>
+        <router-link :to="{ path: `/#tag#${tag[0]}` }">
+          <div class="number">
+            <p v-bind:class="[{ filterBox: isRoute(tag) }]">{{ index + 1 }}.</p>
+          </div>
+        </router-link>
+
         <div class="col">
           <router-link :to="{ path: `/#tag#${tag[0]}` }">
             <div class="textBox">
               <span style="font-size: 14px; padding: 6px 60px 6px 16px;">#{{ tag[0] }}</span>
-              <span style="font-size: 14px; font-weight: bold; padding-right: 0px; float: right;">></span>
+              <p style="font-size: 14px; font-weight: bold; padding-right: 0px; float: right;">></p>
             </div>
           </router-link>
         </div>
@@ -151,7 +154,7 @@ export default {
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.sidenav span:hover {
   text-decoration: underline;
 }
 
