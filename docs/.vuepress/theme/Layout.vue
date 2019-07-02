@@ -49,6 +49,12 @@ export default {
     jQueryScript.setAttribute('crossorigin', 'anonymous');
     document.head.appendChild(jQueryScript);
 
+    let jQueryScript2 = document.createElement('script');
+    jQueryScript2.setAttribute('src', 'https://code.jquery.com/jquery-migrate-3.1.0.min.js');
+    jQueryScript2.setAttribute('integrity', 'sha256-ycJeXbll9m7dHKeaPbXBkZH8BuP99SmPm/8q5O+SbBc=');
+    jQueryScript2.setAttribute('crossorigin', 'anonymous');
+    document.head.appendChild(jQueryScript2);
+
     // bootstrap
     let bootstrapLink = document.createElement('link');
     bootstrapLink.setAttribute('href', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
@@ -66,19 +72,16 @@ export default {
     bootstrapScript.setAttribute('crossorigin', 'anonymous');
     document.head.appendChild(bootstrapScript);
 
+    let headerCoreScript = document.createElement('script');
+    headerCoreScript.setAttribute('src', '/assets/vendor/unity/js/hs.core.js ');
+    document.head.appendChild(headerCoreScript);
+
+    // let headerScript = document.createElement('script');
+    // headerScript.setAttribute('src', '/assets/vendor/unity/js/components/hs.header.js ');
+    // document.head.appendChild(headerScript);
+
     this.sidebar = this.displaySidebar();
   }
-  // created() {
-  //   if (localStorage.getItem('reloaded')) {
-  //     // The page was just reloaded. Clear the value from local storage
-  //     // so that it will reload the next time this page is visited.
-  //     localStorage.removeItem('reloaded');
-  //   } else {
-  //     // Set a flag so that we know not to reload the page twice.
-  //     localStorage.setItem('reloaded', '1');
-  //     location.reload();
-  //   }
-  // }
 };
 </script>
 
