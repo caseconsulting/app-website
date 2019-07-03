@@ -40,6 +40,26 @@ export default {
         default:
           return 'No Topic';
       }
+    },
+    next() {
+      let currentPage = this.page ? this.page : this.$page.path;
+      let posts = this.$site.pages
+        .filter(x => {
+          // filter by topic
+          return x.path.match(new RegExp(`(/)(?=.*html)`));
+        })
+        .sort((a, b) => {
+          return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
+        });
+      console.log(posts);
+
+      for (var i = 0; i < posts.length; i++) {
+        if (posts[i].regularPath === this.$page.path) {
+          this.$router.push(posts[(i + 1) % posts.length].regularPath);
+        }
+      }
+
+      //this.$router.push('/case-cares/post-1.html');
     }
   }
 };

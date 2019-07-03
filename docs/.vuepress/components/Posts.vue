@@ -1,7 +1,6 @@
 <template>
   <div class="home">
     <SideBar />
-
     <div class="posts" v-if="posts.length">
       <div class="post" style="width: 110%" v-for="post in posts">
         <div class="w3-display-container">
@@ -40,7 +39,8 @@ export default {
   data() {
     return {
       date: '',
-      filter: []
+      filter: [],
+      orderedPosts: null
     };
   },
   props: ['page'],
@@ -93,17 +93,16 @@ export default {
     }
   },
   mounted() {
-    // if (localStorage) {
-    //   if (localStorage.getItem('reloaded')) {
-    //     // The page was just reloaded. Clear the value from local storage
-    //     // so that it will reload the next time this page is visited.
-    //     localStorage.removeItem('reloaded');
-    //   } else {
-    //     // Set a flag so that we know not to reload the page twice.
-    //     localStorage.setItem('reloaded', '1');
-    //     location.reload();
-    //   }
-    // }
+    let currentPage = this.page ? this.page : this.$page.path;
+    let posts = this.$site.pages
+      .filter(x => {
+        // filter by topic
+        return x.path.match(new RegExp(`(/)(?=.*html)`));
+      })
+      .sort((a, b) => {
+        return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
+      });
+    this.orderedPosts = posts;
   }
 };
 </script>
