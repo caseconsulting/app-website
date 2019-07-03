@@ -1,7 +1,7 @@
 ---
 meta:
   - property: og:image
-    content: https://case-blog.netlify.com/watch-dogs2.jpg
+    content: https://case-blog.netlify.com/watch-dogs.png
 
 image: /watch-dogs.png
 postImage: /watch-dogs2.jpg
