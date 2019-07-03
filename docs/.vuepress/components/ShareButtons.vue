@@ -15,6 +15,7 @@
         href="https://www.facebook.com/sharer/sharer.php?u="
         onclick="location.href=this.href + location;return false;"
         class="share-btn facebook"
+        target="_parent"
       >
         <i class="fa fa-facebook"></i>
       </a>
@@ -24,6 +25,8 @@
         href="https://www.linkedin.com/sharing/share-offsite/?url="
         onclick="location.href=this.href + location;return false;"
         class="share-btn linkedin"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <i class="fa fa-linkedin"></i>
       </a>
@@ -41,7 +44,8 @@ export default {
   props: ['pageTitle'],
   data() {
     return {
-      twitter: 'http://twitter.com/share?url=<URL>&text=' + 'Case Consulting: ' + this.pageTitle + '&via=',
+      twitter:
+        'http://twitter.com/share?url=<URL>&text=' + 'Case Consulting: ' + this.pageTitle + '&via=consultwithcase',
       email: 'mailto:?subject=' + 'Case Consulting: ' + this.pageTitle + '&body='
     };
   }
