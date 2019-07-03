@@ -21,6 +21,15 @@ module.exports = {
         rel: 'stylesheet',
         href: '/assets/css/custom.css'
       }
+    ],
+    /* Apple-icon metadeta tag for case website desktop display */
+    [
+      'link',
+      {
+        rel: 'icon',
+        type: 'image/png',
+        href: '/assets/img/case/navLogo.png'
+      }
     ]
   ],
   description: 'Just playing around',
