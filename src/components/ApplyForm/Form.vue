@@ -183,9 +183,6 @@ import Header from '../home/Header.vue';
 import axios from 'axios';
 
 var successfulSubmission = false;
-var data;
-var baseUrl;
-var response;
 
 // METHODS -----
 // console log error on s3 upload
@@ -294,7 +291,7 @@ async function onSubmit() {
   // process form to back-end if client-side validation passes
   if (this.isAllValid()) {
     try {
-      data = {
+      const data = {
         firstName: this.firstName,
         lastName: this.lastName,
         email: this.email,
@@ -308,8 +305,8 @@ async function onSubmit() {
       };
 
       // content upload
-      baseUrl = process.env.VUE_APP_API;
-      response = await axios.post(`${baseUrl}/apply`, data);
+      const baseUrl = process.env.VUE_APP_API;
+      const response = await axios.post(`${baseUrl}/apply`, data);
 
       successfulSubmission = true;
 
@@ -404,7 +401,6 @@ export default {
               alert('Form cannot contain more than 3 files');
               myDropZone.removeFile(file);
             } else if (!file.accepted) {
-              alert(message);
               successfulSubmission = false;
               console.log('rejected file upload to s3 bucket');
               alert('Upload Canceled: File type ' + file.type + ' can not be uploaded');
