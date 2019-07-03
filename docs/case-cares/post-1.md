@@ -1,6 +1,6 @@
 ---
 meta:
-  - property: og:image
+  - property: "og:image"
     content: /20181208_172621.jpg
 
 image: /20181208_172621.jpg
