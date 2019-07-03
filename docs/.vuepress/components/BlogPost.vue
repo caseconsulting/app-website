@@ -19,6 +19,7 @@
       <br />
       <!-- <div style="border-top: 2px solid gray;"></div> -->
       <!-- <br /> -->
+      <button class="btn btn-primary" @click="next()">nav arrow</button>
     </div>
   </section>
 </template>
