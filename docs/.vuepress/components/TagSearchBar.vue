@@ -1,7 +1,7 @@
 <template>
   <div style="padding-top: 20px">
     <!-- style is temporary fix to see title -->
-    <input type="text" @keydown.enter="setFilter()" v-model="tagText" placeholder="Search By Tag..." /></div
+    <input type="search" @keydown.enter="setFilter()" v-model="tagText" placeholder="Search By Tag..." /></div
 ></template>
 
 <script>

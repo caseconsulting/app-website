@@ -17,6 +17,7 @@
           id="js-scroll-nav"
           class="navbar-nav text-uppercase g-font-weight-700 g-font-size-11 g-pt-20 g-pt-5--lg ml-auto"
         >
+          <TitleSearchBar />
           <li v-for="section in Sections" :key="section.name" class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
             <a v-bind:class="[{ filterUnderline: isRoute(section.ref) }]" :href="section.ref" class="nav-link p-0">{{
               section.name
