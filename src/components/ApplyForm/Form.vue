@@ -369,7 +369,13 @@ export default {
         thumbnailWidth: '150',
         thumbnailHeight: '150',
         key: '',
-
+        acceptedFiles:
+          'image/jpeg, image/png, image/gif, application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+        addRemoveLinks: true,
+        maxFilesize: 6,
+        maxFiles: 3,
+        parallelUploads: 1,
+        timeout: 180000,
         init: function() {
           var myDropZone = this;
           myDropZone.on('addedfile', function(file) {
@@ -413,12 +419,7 @@ export default {
               myDropZone.removeFile(file);
             }
           });
-        },
-        acceptedFiles:
-          'image/jpeg, text/plain, image/png, image/gif, application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-        addRemoveLinks: true,
-        maxFilesize: 6,
-        maxFiles: 3
+        }
       },
       awss3: {
         signingURL: file => {
