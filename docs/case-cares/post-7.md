@@ -1,7 +1,7 @@
 ---
 meta:
   - property: og:image
-    content: /20181220_083527.jpg
+    content: https://case-blog.netlify.com/20181220_083527.jpg
 
 image: /20181220_083527.jpg
 postImage: /20181220_083527.jpg

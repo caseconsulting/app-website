@@ -1,7 +1,7 @@
 ---
 meta:
   - property: og:image
-    content: /holidayParty.jpg
+    content: https://case-blog.netlify.com/holidayParty.jpg
 
 image: /holidayParty.jpg
 postImage: /holidayParty.jpg

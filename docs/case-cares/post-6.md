@@ -1,7 +1,7 @@
 ---
 meta:
   - property: og:image
-    content: /carousel.png
+    content: https://case-blog.netlify.com/carousel.png
 
 image: /carousel.png
 postImage: /carousel.png

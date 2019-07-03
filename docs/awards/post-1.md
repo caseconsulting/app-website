@@ -1,7 +1,7 @@
 ---
 meta:
   - property: og:image
-    content: /example.png
+    content: https://case-blog.netlify.com/example.png
 
 image: /example.png
 title: awards 1

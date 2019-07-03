@@ -1,7 +1,7 @@
 ---
 meta:
   - property: og:image
-    content: /wreaths.jpg
+    content: https://case-blog.netlify.com/wreaths.jpg
 
 image: /wreaths.jpg
 postImage: /wreaths.jpg
