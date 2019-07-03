@@ -22,6 +22,14 @@ module.exports = {
         href: '/assets/css/custom.css'
       }
     ],
+    /* Favicon */
+    [
+      'link',
+      {
+        rel: 'shortcut icon',
+        href: '/assets/img/case/navLogo.png'
+      }
+    ],
     /* Apple-icon metadeta tag for case website desktop display */
     [
       'link',
