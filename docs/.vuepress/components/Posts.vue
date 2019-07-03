@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <!-- <SideBar /> -->
-    <div class="col-sm-4"><SideBar /></div>
+    <SideBar />
 
     <div class="posts" v-if="posts.length">
       <div class="post" style="width: 110%" v-for="post in posts">

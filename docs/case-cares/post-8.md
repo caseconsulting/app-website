@@ -1,6 +1,6 @@
 ---
 meta:
-  - name: og:image
+  - property: og:image
     content: /wreaths.jpg
 
 image: /wreaths.jpg

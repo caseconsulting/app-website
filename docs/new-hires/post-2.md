@@ -1,6 +1,6 @@
 ---
 meta:
-  - name: og:image
+  - property: og:image
     content: /example.png
     
 image: /example.png

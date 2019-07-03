@@ -1,6 +1,6 @@
 ---
 meta:
-  - name: og:image
+  - property: og:image
     content: /charlotte2.jpg
 
 image: /charlotte2.jpg
