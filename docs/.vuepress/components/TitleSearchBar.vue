@@ -46,6 +46,7 @@ export default {
   },
   methods: {
     filterEnter() {
+      console.log('filter');
       if (this.titleText.trim() !== '') {
         this.$router.push(`#title#${this.titleText.toLowerCase()}`);
       } else {
