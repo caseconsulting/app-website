@@ -54,13 +54,16 @@ export default {
       twitter:
         'http://twitter.com/share?url=<URL>&text=' + 'Case Consulting: ' + this.pageTitle + '&via=consultwithcase%20',
       email: 'mailto:?subject=' + 'Case Consulting: ' + this.pageTitle + '&body=',
-      fb: 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.href
+      fb: 'https://www.facebook.com/sharer/sharer.php?u='
     };
   },
   methods: {
     test() {
       console.log(this.fb);
     }
+  },
+  mounted() {
+    this.fb += window.location.href;
   }
 };
 </script>
