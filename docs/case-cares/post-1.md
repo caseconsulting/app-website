@@ -9,8 +9,7 @@ title: Salvation Army Food Truck
 author: Bobby Gannon
 description: I spent a few hours of my volunteer time supporting an effort I've supported a few years now - the local Loudoun County Salvation Army Food Truck. Each week local organizations (civic, community, church) take a turn preparing meals to be distributed to those in need at the Sterling and Leesburg locations. Typically its a hot meal, but can also be sandwiches, etc. Donations are gathered at the organization, placed on the truck , and away we go to hand out food to those in need.
 date: 12-10-18 (mm-dd-yy)
-tags: ['tag1', 'tag2', 'tag3', 'tag4', 'tag5', 'tag6', 'tag7', 'tag8', 'tag9', 'tag10']
-prev: ./post-2.md
+tags: ['LCSA', 'SalvationArmy', 'volunteer', 'giving']
 ---
 
 <BlogPost>

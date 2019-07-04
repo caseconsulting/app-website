@@ -4,6 +4,7 @@ meta:
     content: https://case-blog.netlify.com/example.png
 
 image: /example.png
+postImage: /example.png
 title: Awards 1
 author: Karen Katilie
 description: Test description for awards 1

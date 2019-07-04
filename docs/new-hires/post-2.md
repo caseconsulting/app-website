@@ -2,8 +2,9 @@
 meta:
   - property: og:image
     content: https://case-blog.netlify.com/example.png
-    
+
 image: /example.png
+postImage: /example.png
 title: New hire 2
 author: Karen Katilie
 description: Test description for new hire 2

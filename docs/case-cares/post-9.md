@@ -9,8 +9,6 @@ title: Watch D.O.G.S Day
 author: Bryan Washam
 description: On March 5th I spent the day volunteering at my daughter Emma's school (Round Hill Elementary) as a Watch D.O.G.S dad. The main goals of the program are to increase male role model involvement in education and to provide an extra set of eyes/ears to enhance school security.
 date: 03-05-19 (mm-dd-yy)
-prev: ./post-10.md
-next: ./post-8.md
 ---
 
 <BlogPost>

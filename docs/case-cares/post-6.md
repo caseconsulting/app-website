@@ -9,8 +9,6 @@ title: King's Cross Church Website Upgrade
 author: Brian Mitchell
 description: On Friday December 21, I volunteered with my wife’s church, King’s Cross in Ashburn. They wanted to improve their website (kingscrossva.org), but as a new church they rely on volunteers to provide IT support. They host their site on Squarespace which I hadn’t worked with before, but it turned out to be fairly easy to use.
 date: 12-28-18 (mm-dd-yy)
-prev: ./post-7.md
-next: ./post-5.md
 ---
 
 <BlogPost>

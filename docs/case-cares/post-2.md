@@ -9,9 +9,7 @@ title: Operation Christmas Child Volunteering
 author: Brian Jackson
 description: Along with friends from our church and my brother-in-law & sister-in-law, my family and I volunteered a few hours of our time at the Operation Christmas Child distribution center in Columbia, MD on December 7th.
 date: 12-15-18 (mm-dd-yy)
-tags: ['tag1', 'tag2', 'tag3', 'tag4', 'tag5']
-prev: ./post-3.md
-next: ./post-1.md
+tags: ['holidays', 'Christmas', 'children', 'giving', 'volunteer', 'gifts']
 ---
 
 <BlogPost>
