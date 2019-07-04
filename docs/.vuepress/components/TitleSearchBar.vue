@@ -63,9 +63,9 @@ export default {
     },
     filterFunction() {
       var input, filter, ul, li, a, i, div, txtValue;
-      input = document.getElementById('myInput');
+      input = this.titleText;
       if (input) {
-        filter = input.value.toUpperCase();
+        filter = input.toUpperCase();
         div = document.getElementById('myDropdown');
         a = div.getElementsByTagName('a');
         for (i = 0; i < a.length; i++) {
