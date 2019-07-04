@@ -3,6 +3,7 @@
     <head>
       <link href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet" />
     </head>
+    <button @click="test()">temp</button>
     <!-- Social Button HTML -->
     <div style="text-align: center;">
       <!-- Twitter -->
@@ -10,13 +11,19 @@
         <i class="fa fa-twitter"></i>
       </a>
 
+      <!-- <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" target="_blank">Tweet</a> -->
+
       <!-- Facebook -->
-      <a
+      <!-- <a
         href="https://www.facebook.com/sharer/sharer.php?u="
         onclick="location.href=this.href + location;return false;"
         class="share-btn facebook"
         target="_parent"
       >
+        <i class="fa fa-facebook"></i>
+      </a> -->
+
+      <a :href="fb" class="share-btn facebook" target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
 
@@ -45,13 +52,18 @@ export default {
   data() {
     return {
       twitter:
-        'http://twitter.com/share?url=<URL>&text=' + 'Case Consulting: ' + this.pageTitle + '&via=consultwithcase',
-      email: 'mailto:?subject=' + 'Case Consulting: ' + this.pageTitle + '&body='
+        'http://twitter.com/share?url=<URL>&text=' + 'Case Consulting: ' + this.pageTitle + '&via=consultwithcase%20',
+      email: 'mailto:?subject=' + 'Case Consulting: ' + this.pageTitle + '&body=',
+      fb: 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.href
     };
+  },
+  methods: {
+    test() {
+      console.log(this.fb);
+    }
   }
 };
 </script>
-
 
 <style>
 .share-btn {
