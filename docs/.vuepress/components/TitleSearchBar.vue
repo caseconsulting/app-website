@@ -1,6 +1,6 @@
 <template>
   <div>
-    <head>
+    <!-- <head>
       <link href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet" />
     </head>
     <div style="padding-right: 20px; padding-bottom: 10px; padding-top: 0px;">
@@ -33,80 +33,80 @@
           >
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-export default {
-  data: function() {
-    return {
-      titleText: ''
-    };
-  },
-  methods: {
-    filterEnter() {
-      console.log('filter');
-      if (this.titleText.trim() !== '') {
-        this.$router.push(`#title#${this.titleText.toLowerCase()}`);
-      } else {
-        this.$router.push(`#home`);
-      }
-    },
-    goToPage(path) {
-      this.$router.push(`${path}`);
-    },
-    showDropdown() {
-      document.getElementById('myDropdown').classList.add('show');
-    },
-    noShowDropdown() {
-      document.getElementById('myDropdown').classList.remove('show');
-    },
-    filterFunction() {
-      var input, filter, ul, li, a, i, div, txtValue;
-      input = this.titleText;
-      if (input) {
-        filter = input.toUpperCase();
-        div = document.getElementById('myDropdown');
-        a = div.getElementsByTagName('a');
-        for (i = 0; i < a.length; i++) {
-          txtValue = a[i].textContent || a[i].innerText;
-          if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            a[i].style.display = '';
-          } else {
-            a[i].style.display = 'none';
-          }
-        }
-      }
-    }
-  },
-  computed: {
-    posts() {
-      // let currentPage = this.page ? this.page : this.$page.path;
-      let posts = this.$site.pages.sort((a, b) => {
-        //filter alphabetically
-        if (a.frontmatter.title && b.frontmatter.title) {
-          if (a.frontmatter.title.toLowerCase() < b.frontmatter.title.toLowerCase()) {
-            return -1;
-          }
-          if (a.frontmatter.title.toLowerCase() > b.frontmatter.title.toLowerCase()) {
-            return 1;
-          }
-        }
-        return 0;
-      });
-      return posts;
-    }
-  },
-  mounted() {
-    $(window).click(function() {
-      document.getElementById('myDropdown').classList.remove('show');
-    });
-    $('#myInput').click(function(event) {
-      event.stopPropagation();
-    });
-  }
-};
+// export default {
+//   data: function() {
+//     return {
+//       titleText: ''
+//     };
+//   },
+//   methods: {
+//     filterEnter() {
+//       console.log('filter');
+//       if (this.titleText.trim() !== '') {
+//         this.$router.push(`#title#${this.titleText.toLowerCase()}`);
+//       } else {
+//         this.$router.push(`#home`);
+//       }
+//     },
+//     goToPage(path) {
+//       this.$router.push(`${path}`);
+//     },
+//     showDropdown() {
+//       document.getElementById('myDropdown').classList.add('show');
+//     },
+//     noShowDropdown() {
+//       document.getElementById('myDropdown').classList.remove('show');
+//     },
+//     filterFunction() {
+//       var input, filter, ul, li, a, i, div, txtValue;
+//       input = this.titleText;
+//       if (input) {
+//         filter = input.toUpperCase();
+//         div = document.getElementById('myDropdown');
+//         a = div.getElementsByTagName('a');
+//         for (i = 0; i < a.length; i++) {
+//           txtValue = a[i].textContent || a[i].innerText;
+//           if (txtValue.toUpperCase().indexOf(filter) > -1) {
+//             a[i].style.display = '';
+//           } else {
+//             a[i].style.display = 'none';
+//           }
+//         }
+//       }
+//     }
+//   },
+//   computed: {
+//     posts() {
+//       // let currentPage = this.page ? this.page : this.$page.path;
+//       let posts = this.$site.pages.sort((a, b) => {
+//         //filter alphabetically
+//         if (a.frontmatter.title && b.frontmatter.title) {
+//           if (a.frontmatter.title.toLowerCase() < b.frontmatter.title.toLowerCase()) {
+//             return -1;
+//           }
+//           if (a.frontmatter.title.toLowerCase() > b.frontmatter.title.toLowerCase()) {
+//             return 1;
+//           }
+//         }
+//         return 0;
+//       });
+//       return posts;
+//     }
+//   },
+//   mounted() {
+//     $(window).click(function() {
+//       document.getElementById('myDropdown').classList.remove('show');
+//     });
+//     $('#myInput').click(function(event) {
+//       event.stopPropagation();
+//     });
+//   }
+// };
 </script>
 
 <style scoped>
