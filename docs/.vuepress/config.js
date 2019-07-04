@@ -5,6 +5,14 @@ module.exports = {
       'link',
       {
         rel: 'stylesheet',
+        id: 'bootstrap-css',
+        href: '//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'
+      }
+    ],
+    [
+      'link',
+      {
+        rel: 'stylesheet',
         href: '/assets/vendor/hamburgers/hamburgers.min.css'
       }
     ],

@@ -40,6 +40,14 @@ export default {
     }
   },
   mounted() {
+    // expandable arrow button
+    let s = document.createElement('script');
+    s.setAttribute('src', '//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js');
+    document.head.appendChild(s);
+    let a = document.createElement('script');
+    a.setAttribute('src', '//code.jquery.com/jquery-1.11.1.min.js');
+    document.head.appendChild(a);
+
     // JS Global Compulsory
     let jQueryScript = document.createElement('script');
     jQueryScript.setAttribute('src', 'https://code.jquery.com/jquery-3.4.1.min.js');
