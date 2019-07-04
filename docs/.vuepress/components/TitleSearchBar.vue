@@ -5,34 +5,32 @@
     </head>
     <div style="padding-right: 20px; padding-bottom: 10px; padding-top: 0px;">
       <div>
-        <datalist id="suggestions">
-          <option v-for="post in posts" :value="post.frontmatter.title" />
-        </datalist>
-
-        <!-- <div>
-          <span class="fa fa-search searchIcon"></span>
+        <div id="demo-2" class="searchContainer dropdown">
           <input
-            class="textInput searchBox navbar-nav g-font-weight-700 g-font-size-11 g-pt-20 g-pt-5--lg ml-auto"
-            type="text"
-            autoComplete="on"
-            list="suggestions"
-            @keydown.enter="filterEnter()"
-            v-model="titleText"
-            placeholder="Search..."
-          />
-
-          <input type="submit" value="Search" class="searchButton" @click="filterEnter()" />
-        </div> -->
-
-        <div id="demo-2" class="searchContainer">
-          <input
+            id="myInput"
             class="textInput searchBox navbar-nav g-font-size-11 g-pt-20 g-pt-5--lg ml-auto"
-            type="search"
-            autoComplete="on"
-            list="suggestions"
-            @keydown.enter="filterEnter()"
+            type="text"
+            autoComplete="off"
+            @keydown.enter="
+              filterEnter();
+              noShowDropdown();
+            "
+            :keyup="filterFunction()"
+            @click="showDropdown()"
             v-model="titleText"
           />
+        </div>
+        <div id="myDropdown" class="dropdown-content">
+          <a
+            v-for="post in posts"
+            v-if="post.frontmatter.title"
+            @click="
+              noShowDropdown();
+              goToPage(post.regularPath);
+              titleText = '';
+            "
+            >{{ post.frontmatter.title }}</a
+          >
         </div>
       </div>
     </div>
@@ -53,6 +51,32 @@ export default {
       } else {
         this.$router.push(`#home`);
       }
+    },
+    goToPage(path) {
+      this.$router.push(`${path}`);
+    },
+    showDropdown() {
+      document.getElementById('myDropdown').classList.add('show');
+    },
+    noShowDropdown() {
+      document.getElementById('myDropdown').classList.remove('show');
+    },
+    filterFunction() {
+      var input, filter, ul, li, a, i, div, txtValue;
+      input = document.getElementById('myInput');
+      if (input) {
+        filter = input.value.toUpperCase();
+        div = document.getElementById('myDropdown');
+        a = div.getElementsByTagName('a');
+        for (i = 0; i < a.length; i++) {
+          txtValue = a[i].textContent || a[i].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = '';
+          } else {
+            a[i].style.display = 'none';
+          }
+        }
+      }
     }
   },
   computed: {
@@ -72,11 +96,61 @@ export default {
       });
       return posts;
     }
+  },
+  mounted() {
+    $(window).click(function() {
+      document.getElementById('myDropdown').classList.remove('show');
+    });
+    $('#myInput').click(function(event) {
+      event.stopPropagation();
+    });
   }
 };
 </script>
 
 <style scoped>
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 6px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.list-group {
+  max-height: 300px;
+  margin-bottom: 10px;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+}
+
 .searchContainer {
   width: 250px;
   display: inline-flex;
@@ -88,27 +162,32 @@ export default {
 
 /* search icon disapear header */
 
-input[type='search'] {
+input[type='text'] {
   -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
+  box-sizing: content-box;
   font-size: 100%;
 }
 input::-webkit-search-decoration,
-input::-webkit-search-cancel-button {
+input::-webkit-search-cancel-button,
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+input::-webkit-search-results-button {
   display: none;
 }
 
-input[type='search'] {
+input[type='text'] {
   background: transparent url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
   border: none;
   padding: 9px 10px 8px 32px;
-  width: 100%;
+  /* width: 100%; */
 
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
-input[type='search']:focus {
+input[type='text']:focus {
   width: 100%;
   background-color: #fff;
   border-color: black;
@@ -125,16 +204,16 @@ input::-webkit-input-placeholder {
 }
 
 /* Demo 2 */
-#demo-2 input[type='search'] {
+#demo-2 input[type='text'] {
   width: 15px;
   padding-left: 10px;
   color: transparent;
   cursor: pointer;
 }
-#demo-2 input[type='search']:hover {
+#demo-2 input[type='text']:hover {
   background-color: #fff;
 }
-#demo-2 input[type='search']:focus {
+#demo-2 input[type='text']:focus {
   width: 100%;
   padding-left: 32px;
   padding-top: 32px;
