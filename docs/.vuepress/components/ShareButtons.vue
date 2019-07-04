@@ -6,41 +6,22 @@
     <!-- Social Button HTML -->
     <div style="text-align: center;">
       <!-- Twitter -->
-      <a :href="twitter" onclick="location.href=this.href + location;return false;" class="share-btn twitter">
+      <a :href="twitter()" class="share-btn twitter" target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
 
       <!-- Facebook -->
-      <!-- <a
-        href="https://www.facebook.com/sharer/sharer.php?u="
-        onclick="location.href=this.href + location;return false;"
-        class="share-btn facebook"
-        target="_parent"
-      >
-        <i class="fa fa-facebook"></i>
-      </a> -->
-
       <a :href="facebook()" class="share-btn facebook" target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
 
       <!-- LinkedIn -->
-      <!-- <a
-        href="https://www.linkedin.com/sharing/share-offsite/?url="
-        onclick="location.href=this.href + location;return false;"
-        class="share-btn linkedin"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i class="fa fa-linkedin"></i>
-      </a> -->
-
       <a :href="linkedIn()" class="share-btn linkedin" target="_blank" rel="noopener noreferrer">
         <i class="fa fa-linkedin"></i>
       </a>
 
       <!-- Email -->
-      <a :href="email" onclick="location.href=this.href + location;return false;" class="share-btn email">
+      <a :href="email()" class="share-btn email">
         <i class="fa fa-envelope"></i>
       </a>
     </div>
@@ -52,21 +33,29 @@ export default {
   props: ['pageTitle'],
   data() {
     return {
-      url: '',
-      twitter:
-        'http://twitter.com/share?url=<URL>&text=' + 'Case Consulting: ' + this.pageTitle + '&via=consultwithcase%20',
-      email: 'mailto:?subject=' + 'Case Consulting: ' + this.pageTitle + '&body='
+      url: ''
     };
   },
   methods: {
     test() {
       console.log(this.fb);
     },
+    twitter() {
+      return (
+        'http://twitter.com/share?url=<URL>&text=Case Consulting: ' +
+        this.pageTitle +
+        '&via=consultwithcase%0D' +
+        this.url
+      );
+    },
     facebook() {
       return 'https://www.facebook.com/sharer/sharer.php?u=' + this.url;
     },
     linkedIn() {
       return 'https://www.linkedin.com/sharing/share-offsite/?url=' + this.url;
+    },
+    email() {
+      return 'mailto:?subject=Case Consulting: ' + this.pageTitle + '&body=' + this.url;
     }
   },
   mounted() {
