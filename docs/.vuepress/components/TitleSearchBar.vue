@@ -19,7 +19,7 @@
             v-model="titleText"
           /> -->
         </div>
-        <div id="myDropdown" class="dropdown-content">
+        <!-- <div id="myDropdown" class="dropdown-content">
           <a
             v-for="post in posts"
             v-if="post.frontmatter.title"
@@ -31,7 +31,7 @@
             >{{ post.frontmatter.title }}
           </a>
           <a @click="titleText = ''">NO RESULTS</a>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
