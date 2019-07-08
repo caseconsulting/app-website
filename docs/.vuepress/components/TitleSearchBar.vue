@@ -11,12 +11,14 @@
             class="textInput searchBox navbar-nav g-font-size-11 g-pt-20 g-pt-5--lg ml-auto"
             type="text"
             autoComplete="off"
-            @keydown.enter="
-              filterEnter();
-              noShowDropdown();
+            @keyup="
+              filterFunction;
+              showDropdown;
             "
-            :keyup="filterFunction()"
-            @click="showDropdown()"
+            @keyup.enter="
+              filterEnter();
+              noShowDropdown;
+            "
             v-model="titleText"
           />
         </div>
@@ -25,12 +27,13 @@
             v-for="post in posts"
             v-if="post.frontmatter.title"
             @click="
-              noShowDropdown();
+              noShowDropdown;
               goToPage(post.regularPath);
               titleText = '';
             "
-            >{{ post.frontmatter.title }}</a
-          >
+            >{{ post.frontmatter.title }}
+          </a>
+          <a @click="titleText = ''">NO RESULTS</a>
         </div>
       </div>
     </div>
@@ -46,7 +49,6 @@ export default {
   },
   methods: {
     filterEnter() {
-      console.log('filter');
       if (this.titleText.trim() !== '') {
         this.$router.push(`#title#${this.titleText.toLowerCase()}`);
       } else {
@@ -55,7 +57,9 @@ export default {
     },
     goToPage(path) {
       this.$router.push(`${path}`);
-    },
+    }
+  },
+  computed: {
     showDropdown() {
       document.getElementById('myDropdown').classList.add('show');
     },
@@ -63,24 +67,32 @@ export default {
       document.getElementById('myDropdown').classList.remove('show');
     },
     filterFunction() {
-      var input, filter, ul, li, a, i, div, txtValue;
+      var input, filter, ul, li, a, i, div, txtValue, count;
       input = this.titleText;
       if (input) {
         filter = input.toUpperCase();
-        div = document.getElementById('myDropdown');
-        a = div.getElementsByTagName('a');
-        for (i = 0; i < a.length; i++) {
-          txtValue = a[i].textContent || a[i].innerText;
-          if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            a[i].style.display = '';
-          } else {
-            a[i].style.display = 'none';
-          }
+      } else {
+        filter = '';
+      }
+      div = document.getElementById('myDropdown');
+      a = div.getElementsByTagName('a');
+      count = 0;
+      for (i = 0; i < a.length; i++) {
+        txtValue = a[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1 && txtValue != 'NO RESULTS') {
+          a[i].style.display = '';
+          count++;
+        } else {
+          a[i].style.display = 'none';
         }
       }
-    }
-  },
-  computed: {
+      // Displaying NO RESULTS
+      if (count == 0) {
+        a[a.length - 1].style.display = ''; //since the last <a></a> in the array is NO RESULTS
+      } else {
+        a[a.length - 1].style.display = 'none';
+      }
+    },
     posts() {
       // let currentPage = this.page ? this.page : this.$page.path;
       let posts = this.$site.pages.sort((a, b) => {
