@@ -187,12 +187,12 @@ var successfulSubmission = false;
 // METHODS -----
 // console log error on s3 upload
 function s3UploadError(errorMessage) {
-  console.log('s3 error');
+  // console.log('s3 error');
   console.error('Error uploading:', errorMessage);
 }
 // push s3 location on successful upload
 function s3UploadSuccess(s3ObjectLocation) {
-  console.log('Upload was successful');
+  // console.log('Upload was successful');
   this.uploads.push(s3ObjectLocation);
 }
 // function handleError(file, message) {
@@ -202,13 +202,13 @@ function s3UploadSuccess(s3ObjectLocation) {
 // }
 // toggle apply form succesfully submitted page
 function submittedRedirect() {
-  console.log('attemptting to redirect');
+  // console.log('attemptting to redirect');
   if (successfulSubmission) {
-    console.log('redirect successful');
+    // console.log('redirect successful');
     this.showMe = false;
     this.$emit('switched', this.showMe);
   } else {
-    console.log('should not redirect');
+    // console.log('should not redirect');
     this.submitEnabled = true; // reenable submit button after form processing
     // DELETE THE OLD FILES IN DYNAMO AND S3
     // console.log(`${baseUrl}/apply`);
@@ -404,7 +404,7 @@ export default {
               myDropZone.removeFile(file);
             } else if (!file.accepted) {
               successfulSubmission = false;
-              console.log('rejected file upload to s3 bucket');
+              // console.log('rejected file upload to s3 bucket');
               alert('Upload Canceled: File type ' + file.type + ' can not be uploaded');
             } else {
               alert(message);
@@ -421,7 +421,7 @@ export default {
       },
       awss3: {
         signingURL: file => {
-          console.log('filesigning: ' + this.$refs.dropzone.key + '/' + file.upload.filename);
+          // console.log('filesigning: ' + this.$refs.dropzone.key + '/' + file.upload.filename);
           return `${process.env.VUE_APP_API}/upload/` + this.$refs.dropzone.key + '/' + file.upload.filename;
         },
         headers: {},
