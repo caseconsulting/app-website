@@ -218,6 +218,7 @@ function submittedRedirect() {
 }
 // populate data.files with dropzone process queue files
 function getFiles() {
+  this.files = [];
   for (let i = 0; i < this.$refs.dropzone.getQueuedFiles().length; i++) {
     this.files.push(this.$refs.dropzone.getQueuedFiles()[i].name);
   }
