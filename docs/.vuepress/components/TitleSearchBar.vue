@@ -46,11 +46,11 @@ export default {
   },
   methods: {
     filterEnter() {
-      if (this.titleText.trim() !== '') {
-        this.$router.push(`#title#${this.titleText.toLowerCase()}`);
-      } else {
-        this.$router.push(`#home`);
-      }
+      // if (this.titleText.trim() !== '') {
+      //   this.$router.push(`#title#${this.titleText.toLowerCase()}`);
+      // } else {
+      //   this.$router.push(`#home`);
+      // }
     },
     filterFunction() {
       var input, filter, ul, li, a, i, div, txtValue, count;
