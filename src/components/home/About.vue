@@ -11,7 +11,7 @@
               <img
                 class="w-100 img-fluid"
                 style="min-height: 100%"
-                src="../../../public/assets/custom/img/online/sepia_desk.jpg"
+                src="https://res.cloudinary.com/consultwithcase/image/upload/v1561333506/website/home/sepia_desk.webp"
                 alt="Sepia Desk"
               />
             </div>
@@ -39,7 +39,7 @@
               <img
                 class="w-100 h-100"
                 style="min-height: 100%"
-                src="../../../public/assets/custom/img/online/meeting-min.jpg"
+                src="https://res.cloudinary.com/consultwithcase/image/upload/v1561333509/website/home/meeting-min.webp"
                 alt="Meeting"
               />
             </div>

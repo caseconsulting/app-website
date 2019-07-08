@@ -433,11 +433,10 @@
       </div>
     </div>
     <!-- Apply Button -->
-    <apply-button hidden></apply-button>
-    <div class="g-color-white g-font-size-16 text-center">
-      <!-- temporary -->
+    <apply-button></apply-button>
+    <!-- <div class="g-color-white g-font-size-16 text-center">
       <strong style="font-size: 18px;">Send an email to info@consultwithcase.com to apply!</strong>
-    </div>
+    </div> -->
     <br />
     <br />
     <!-- End Apply Button  -->

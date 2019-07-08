@@ -15,6 +15,7 @@
         v-if="this.$options.parent.$options._componentTag === 'app-intern'"
       ></app-intern-navigation>
       <app-apply-navigation v-if="this.$options.parent.$options._componentTag === 'app-apply'"></app-apply-navigation>
+      <app-apply-navigation v-if="this.$options.parent.$options._componentTag === 'app-submit'"></app-apply-navigation>
     </div>
   </header>
   <!-- End Header -->

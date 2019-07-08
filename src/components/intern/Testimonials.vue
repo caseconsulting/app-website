@@ -67,6 +67,7 @@
         </span>
         <span class="sr-only">Previous</span>
       </a>
+
       <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
         <span>
           <img src="/assets/custom/img/online/rightARrow.png" />
@@ -95,6 +96,7 @@ export default {
     active(first) {
       return first ? 'active' : '';
     },
+
     carousel(first) {
       return first ? 'carousel-item active' : 'carousel-item';
     }
@@ -111,6 +113,7 @@ export default {
 .carousel-indicators li {
   background-color: gray;
 }
+
 .carousel-indicators .active {
   background-color: darkgray;
 }

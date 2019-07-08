@@ -159,7 +159,12 @@ export default {
       } else if (this.$options.parent.$options._componentTag === 'app-intern') {
         return this.internSlider;
       }
-      return undefined;
+      return [
+        {
+          title: '',
+          link: ''
+        }
+      ];
     }
   }
 };

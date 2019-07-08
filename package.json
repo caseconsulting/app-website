@@ -6,21 +6,26 @@
     "build": "vue-cli-service build",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "eslint": "eslint . --ext .js --ignore-path .jshintignore --fix",
+    "eslint": "eslint . --ext .js --ignore-path .eslintignore --fix",
     "lint": "vue-cli-service lint",
+    "precommit": "npm run validate && npm run lint && npm run stylelint && npm run unit",
     "serve": "vue-cli-service serve",
+    "stylelint": "stylelint 'src/**/*.{css,scss,vue}'",
+    "test": "npm run test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",
+    "unit": "npm run test:unit",
     "validate": "npm ci"
   },
   "dependencies": {
     "axios": "^0.19.0",
-    "bootstrap-vue": "^2.0.0-rc.23",
+    "bootstrap-vue": "^2.0.0-rc.24",
     "core-js": "^2.6.5",
     "prettier": "^1.18.2",
     "vue": "^2.6.10",
     "vue-multiselect": "^2.1.6",
     "vue-router": "^3.0.3",
+    "vue-uuid": "^1.1.1",
     "vue2-dropzone": "^3.5.9",
     "vuelidate": "^0.7.4",
     "vuex": "^3.0.1"
@@ -30,24 +35,36 @@
     "@vue/cli-plugin-e2e-cypress": "^3.8.0",
     "@vue/cli-plugin-eslint": "^3.8.0",
     "@vue/cli-plugin-unit-jest": "^3.8.0",
-    "@vue/cli-service": "^3.8.0",
+    "@vue/cli-service": "^3.8.4",
     "@vue/eslint-config-prettier": "^4.0.1",
     "@vue/test-utils": "1.0.0-beta.29",
     "babel-core": "7.0.0-bridge.0",
-    "babel-eslint": "^10.0.1",
+    "babel-eslint": "^10.0.2",
     "babel-jest": "^23.6.0",
     "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
+    "eslint-plugin-vue": "^5.2.3",
     "jshint": "^2.10.2",
     "node-sass": "^4.9.0",
     "precommit-hook": "^3.0.0",
     "sass-loader": "^7.1.0",
+    "stylelint": "^10.1.0",
+    "stylelint-checkstyle-formatter": "^0.1.2",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-processor-html": "^1.0.0",
+    "stylelint-scss": "^3.8.0",
     "vue-template-compiler": "^2.6.10",
-    "vuepress": "^1.0.1"
+    "vuepress": "^1.0.2"
   },
   "pre-commit": [
     "validate",
     "lint",
-    "test:unit"
-  ]
+    "stylelint",
+    "unit"
+  ],
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css,md}": [
+      "eslint --fix src",
+      "git add"
+    ]
+  }
 }

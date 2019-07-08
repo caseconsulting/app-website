@@ -2,13 +2,19 @@
   <div>
     <div class="tagBar">
       <div class="tagsScroll">
-        <!-- show links from md file if no tags prop is binded -->
-        <router-link v-if="!tags" v-for="tag in $page.frontmatter.tags" :key="tag" :to="{ path: `/tags.html#${tag}` }">
+        <!-- show links from md file if no tags prop is binded (individual posts) -->
+        <router-link v-if="!tags" v-for="tag in $page.frontmatter.tags" :key="tag" :to="{ path: `/#tag#${tag}` }">
           #{{ tag }}
         </router-link>
 
-        <!-- show links from binded tags prop -->
-        <router-link v-if="tags" v-for="tag in tags" :key="tag" :to="{ path: `/tags.html#${tag}` }">
+        <!-- show links from binded tags prop (home page) -->
+        <router-link
+          v-if="tags"
+          v-for="tag in tags"
+          :key="tag"
+          :to="{ path: `/#tag#${tag}` }"
+          v-bind:class="[{ tagFocus: isRoute(tag) }]"
+        >
           #{{ tag }}
         </router-link>
       </div>
@@ -18,25 +24,21 @@
 
 <script>
 export default {
-  props: ['tags']
+  props: ['tags'],
+  methods: {
+    isRoute(tag) {
+      this.filter = this.$route.hash.split('#');
+      if (this.filter[1] === 'tag') {
+        return tag === this.filter[2];
+      }
+      return false;
+    }
+  }
 };
 </script>
 
-<style>
-.tagBar {
-}
-
-.tagsScroll {
-  overflow: auto;
-  white-space: nowrap;
-}
-
-.tagsScroll::-webkit-scrollbar {
-  display: none;
-}
-
-.tagsScroll a {
-  margin-right: 10px;
-  color: #ccc;
+<style scoped>
+.tagFocus {
+  color: gray !important;
 }
 </style>
