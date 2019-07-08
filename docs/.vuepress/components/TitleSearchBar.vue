@@ -3,7 +3,7 @@
     <div style="padding-right: 20px; padding-bottom: 10px; padding-top: 0px;">
       <div>
         <div id="demo-2" class="searchContainer dropdown">
-          <!-- <input
+          <input
             id="myInput"
             class="textInput searchBox navbar-nav g-font-size-11 g-pt-20 g-pt-5--lg ml-auto"
             type="text"
@@ -17,7 +17,7 @@
               noShowDropdown();
             "
             v-model="titleText"
-          /> -->
+          />
         </div>
         <!-- <div id="myDropdown" class="dropdown-content">
           <a
