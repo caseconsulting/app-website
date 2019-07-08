@@ -293,15 +293,15 @@ async function onSubmit() {
   if (this.isAllValid()) {
     try {
       const data = {
-        firstName: this.firstName,
-        lastName: this.lastName,
-        email: this.email,
+        firstName: this.firstName.trim(),
+        lastName: this.lastName.trim(),
+        email: this.email.trim(),
         jobTitles: this.jobTitles,
-        otherJobTitle: this.otherJobTitle,
+        otherJobTitle: this.otherJobTitle.trim(),
         hearAboutUs: this.hearAboutUs,
-        referralHearAboutUs: this.referralHearAboutUs,
-        otherHearAboutUs: this.otherHearAboutUs,
-        comments: this.comments,
+        referralHearAboutUs: this.referralHearAboutUs.trim(),
+        otherHearAboutUs: this.otherHearAboutUs.trim(),
+        comments: this.comments.trim(),
         fileNames: this.files
       };
 
