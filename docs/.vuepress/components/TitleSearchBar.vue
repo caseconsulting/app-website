@@ -24,9 +24,9 @@
             v-for="post in posts"
             v-if="post.frontmatter.title"
             @click="
-              noShowDropdown();
+              noShowDropdown()
               // goToPage(post.regularPath);
-              titleText = '';
+              // titleText = '';
             "
             >{{ post.frontmatter.title }}
           </a>
