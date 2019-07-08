@@ -20,14 +20,7 @@
           />
         </div>
         <div id="myDropdown" class="dropdown-content">
-          <a
-            v-for="post in posts"
-            v-if="post.frontmatter.title"
-            @click="
-              //              noShowDropdown()
-              // goToPage(post.regularPath);
-              // titleText = '';
-            "
+          <a v-for="post in posts" v-if="post.frontmatter.title" @click="goToPage(post.regularPath)"
             >{{ post.frontmatter.title }}
           </a>
           <a @click="titleText = ''">NO RESULTS</a>
@@ -81,7 +74,9 @@ export default {
       return input;
     },
     goToPage(path) {
+      noShowDropdown();
       this.$router.push(`${path}`);
+      titleText = '';
     },
     showDropdown() {
       document.getElementById('myDropdown').classList.add('show');
