@@ -98,6 +98,12 @@ export default {
         }
         return 0;
       });
+
+      //remove white spaces
+      posts = posts.filter(function(item) {
+        return item.frontmatter.title;
+      });
+
       return posts;
     }
   },
