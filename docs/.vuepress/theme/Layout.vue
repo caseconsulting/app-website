@@ -56,9 +56,6 @@ export default {
     document.head.appendChild(bootstrapLink);
 
     // expandable arrow button
-    let navArrowBS = document.createElement('script');
-    navArrowBS.setAttribute('src', '//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js');
-    document.head.appendChild(navArrowBS);
 
     // let jQueryScript2 = document.createElement('script');
     // jQueryScript2.setAttribute('src', 'https://code.jquery.com/jquery-migrate-3.1.0.min.js');
