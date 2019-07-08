@@ -9,7 +9,7 @@
             type="text"
             autoComplete="off"
             @keyup="
-              filterFunction;
+              filterFunction();
               showDropdown();
             "
             @keyup.enter="
@@ -52,17 +52,6 @@ export default {
         this.$router.push(`#home`);
       }
     },
-    goToPage(path) {
-      this.$router.push(`${path}`);
-    },
-    showDropdown() {
-      document.getElementById('myDropdown').classList.add('show');
-    },
-    noShowDropdown() {
-      document.getElementById('myDropdown').classList.remove('show');
-    }
-  },
-  computed: {
     filterFunction() {
       var input, filter, ul, li, a, i, div, txtValue, count;
       input = this.titleText;
@@ -91,6 +80,17 @@ export default {
       }
       return input;
     },
+    goToPage(path) {
+      this.$router.push(`${path}`);
+    },
+    showDropdown() {
+      document.getElementById('myDropdown').classList.add('show');
+    },
+    noShowDropdown() {
+      document.getElementById('myDropdown').classList.remove('show');
+    }
+  },
+  computed: {
     posts() {
       // let currentPage = this.page ? this.page : this.$page.path;
       let posts = this.$site.pages.sort((a, b) => {
