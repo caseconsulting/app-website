@@ -56,40 +56,40 @@ export default {
       this.$router.push(`${path}`);
     },
     showDropdown() {
-      // document.getElementById('myDropdown').classList.add('show');
+      document.getElementById('myDropdown').classList.add('show');
     },
     noShowDropdown() {
-      // document.getElementById('myDropdown').classList.remove('show');
+      document.getElementById('myDropdown').classList.remove('show');
     }
   },
   computed: {
     filterFunction() {
-      //   var input, filter, ul, li, a, i, div, txtValue, count;
-      //   input = this.titleText;
-      //   if (input) {
-      //     filter = input.toUpperCase();
-      //   } else {
-      //     filter = '';
-      //   }
-      //   div = document.getElementById('myDropdown');
-      //   a = div.getElementsByTagName('a');
-      //   count = 0;
-      //   for (i = 0; i < a.length; i++) {
-      //     txtValue = a[i].innerText;
-      //     if (txtValue.toUpperCase().indexOf(filter) > -1 && txtValue != 'NO RESULTS') {
-      //       a[i].style.display = '';
-      //       count++;
-      //     } else {
-      //       a[i].style.display = 'none';
-      //     }
-      //   }
-      //   // Displaying NO RESULTS
-      //   if (count == 0) {
-      //     a[a.length - 1].style.display = ''; //since the last <a></a> in the array is NO RESULTS
-      //   } else {
-      //     a[a.length - 1].style.display = 'none';
-      //   }
-      //   return input;
+      var input, filter, ul, li, a, i, div, txtValue, count;
+      input = this.titleText;
+      if (input) {
+        filter = input.toUpperCase();
+      } else {
+        filter = '';
+      }
+      div = document.getElementById('myDropdown');
+      a = div.getElementsByTagName('a');
+      count = 0;
+      for (i = 0; i < a.length; i++) {
+        txtValue = a[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1 && txtValue != 'NO RESULTS') {
+          a[i].style.display = '';
+          count++;
+        } else {
+          a[i].style.display = 'none';
+        }
+      }
+      // Displaying NO RESULTS
+      if (count == 0) {
+        a[a.length - 1].style.display = ''; //since the last <a></a> in the array is NO RESULTS
+      } else {
+        a[a.length - 1].style.display = 'none';
+      }
+      return input;
     },
     posts() {
       // let currentPage = this.page ? this.page : this.$page.path;
@@ -109,12 +109,12 @@ export default {
     }
   },
   mounted() {
-    $(window).click(function() {
-      document.getElementById('myDropdown').classList.remove('show');
-    });
-    $('#myInput').click(function(event) {
-      event.stopPropagation();
-    });
+    // $(window).click(function() {
+    //   document.getElementById('myDropdown').classList.remove('show');
+    // });
+    // $('#myInput').click(function(event) {
+    //   event.stopPropagation();
+    // });
   }
 };
 </script>
