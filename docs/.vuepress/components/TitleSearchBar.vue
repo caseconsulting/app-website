@@ -13,11 +13,11 @@
             autoComplete="off"
             @keyup="
               filterFunction;
-              showDropdown;
+              showDropdown();
             "
             @keyup.enter="
               filterEnter();
-              noShowDropdown;
+              noShowDropdown();
             "
             v-model="titleText"
           />
@@ -27,7 +27,7 @@
             v-for="post in posts"
             v-if="post.frontmatter.title"
             @click="
-              noShowDropdown;
+              noShowDropdown();
               goToPage(post.regularPath);
               titleText = '';
             "
@@ -57,15 +57,15 @@ export default {
     },
     goToPage(path) {
       this.$router.push(`${path}`);
-    }
-  },
-  computed: {
+    },
     showDropdown() {
       document.getElementById('myDropdown').classList.add('show');
     },
     noShowDropdown() {
       document.getElementById('myDropdown').classList.remove('show');
-    },
+    }
+  },
+  computed: {
     filterFunction() {
       var input, filter, ul, li, a, i, div, txtValue, count;
       input = this.titleText;
@@ -92,6 +92,7 @@ export default {
       } else {
         a[a.length - 1].style.display = 'none';
       }
+      return input;
     },
     posts() {
       // let currentPage = this.page ? this.page : this.$page.path;
