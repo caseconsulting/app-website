@@ -371,7 +371,7 @@ export default {
           'image/jpeg, image/png, image/gif, application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document',
         addRemoveLinks: true,
         maxFilesize: 6,
-        maxFiles: 3,
+        maxFiles: 1,
         parallelUploads: 1,
         timeout: 180000,
         init: function() {
@@ -397,9 +397,9 @@ export default {
               // error message for max file size (6MB)
               alert('Files must be less than 6MB');
               myDropZone.removeFile(file);
-            } else if (myDropZone.getQueuedFiles().length >= 3) {
-              // error message for max file number exceeded (3)
-              alert('Form cannot contain more than 3 files');
+            } else if (myDropZone.getQueuedFiles().length >= 1) {
+              // error message for max file number exceeded (1)
+              alert('Form cannot contain more than 1 files');
               myDropZone.removeFile(file);
             } else if (!file.accepted) {
               successfulSubmission = false;
