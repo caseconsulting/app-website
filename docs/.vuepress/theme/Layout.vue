@@ -47,17 +47,6 @@ export default {
     jQueryScript.setAttribute('crossorigin', 'anonymous');
     document.head.appendChild(jQueryScript);
 
-    let jQueryScript2 = document.createElement('script');
-    jQueryScript2.setAttribute('src', 'https://code.jquery.com/jquery-migrate-3.1.0.min.js');
-    jQueryScript2.setAttribute('integrity', 'sha256-ycJeXbll9m7dHKeaPbXBkZH8BuP99SmPm/8q5O+SbBc=');
-    jQueryScript2.setAttribute('crossorigin', 'anonymous');
-    document.head.appendChild(jQueryScript2);
-
-    // expandable arrow button
-    let navArrowBS = document.createElement('script');
-    navArrowBS.setAttribute('src', '//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js');
-    document.head.appendChild(navArrowBS);
-
     // bootstrap
     let bootstrapLink = document.createElement('link');
     bootstrapLink.setAttribute('href', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
@@ -66,22 +55,16 @@ export default {
     bootstrapLink.setAttribute('crossorigin', 'anonymous');
     document.head.appendChild(bootstrapLink);
 
-    let bootstrapScript = document.createElement('script');
-    bootstrapScript.setAttribute('src', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js');
-    bootstrapScript.setAttribute(
-      'integrity',
-      'sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM'
-    );
-    bootstrapScript.setAttribute('crossorigin', 'anonymous');
-    document.head.appendChild(bootstrapScript);
+    // expandable arrow button
+    let navArrowBS = document.createElement('script');
+    navArrowBS.setAttribute('src', '//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js');
+    document.head.appendChild(navArrowBS);
 
-    let headerCoreScript = document.createElement('script');
-    headerCoreScript.setAttribute('src', '/assets/vendor/unity/js/hs.core.js ');
-    document.head.appendChild(headerCoreScript);
-
-    // let headerScript = document.createElement('script');
-    // headerScript.setAttribute('src', '/assets/vendor/unity/js/components/hs.header.js ');
-    // document.head.appendChild(headerScript);
+    // let jQueryScript2 = document.createElement('script');
+    // jQueryScript2.setAttribute('src', 'https://code.jquery.com/jquery-migrate-3.1.0.min.js');
+    // jQueryScript2.setAttribute('integrity', 'sha256-ycJeXbll9m7dHKeaPbXBkZH8BuP99SmPm/8q5O+SbBc=');
+    // jQueryScript2.setAttribute('crossorigin', 'anonymous');
+    // document.head.appendChild(jQueryScript2);
 
     this.sidebar = this.displaySidebar();
   }
