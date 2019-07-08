@@ -2,7 +2,7 @@
   <!-- Header -->
   <header
     id="js-header"
-    class="u-header u-header--sticky-top u-header--change-appearance g-z-index-9999"
+    class="u-header u-header--sticky-top u-header--change-appearance g-z-index-9999 u-shadow-v18"
     data-header-fix-moment="100"
   >
     <div
