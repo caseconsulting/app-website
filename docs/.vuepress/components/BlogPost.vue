@@ -119,6 +119,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+  cursor: pointer;
 }
 
 .nav-form .form-group {
