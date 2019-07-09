@@ -16,6 +16,7 @@
               filterEnter();
               noShowDropdown();
             "
+            @focusout="handleFocusOut"
             v-model="titleText"
           />
         </div>
@@ -37,6 +38,10 @@ export default {
     };
   },
   methods: {
+    handleFocusOut() {
+      console.log('focus out');
+      document.getElementById('myDropdown').classList.remove('show');
+    },
     filterEnter() {
       if (this.titleText.trim() !== '') {
         this.$router.push(`#title#${this.titleText.toLowerCase()}`);
@@ -112,12 +117,12 @@ export default {
     }
   },
   mounted() {
-    $(window).click(function() {
-      document.getElementById('myDropdown').classList.remove('show');
-    });
-    $('#myInput').click(function(event) {
-      event.stopPropagation();
-    });
+    // $(window).click(function() {
+    //   document.getElementById('myDropdown').classList.remove('show');
+    // });
+    // $('#myInput').click(function(event) {
+    //   event.stopPropagation();
+    // });
   }
 };
 </script>
