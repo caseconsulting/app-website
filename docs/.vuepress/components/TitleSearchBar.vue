@@ -20,6 +20,7 @@
           />
         </div>
         <div id="myDropdown" class="dropdown-content">
+          <!-- <a v-if="posts.length >= 5" @click="titleText = ''" style="text-decoration: underline;">TOP 5 RESULTS</a> -->
           <a v-for="post in posts" @click="goToPage(post.regularPath)">{{ post.frontmatter.title }} </a>
           <a @click="titleText = ''">NO RESULTS</a>
         </div>
@@ -37,11 +38,11 @@ export default {
   },
   methods: {
     filterEnter() {
-      // if (this.titleText.trim() !== '') {
-      //   this.$router.push(`#title#${this.titleText.toLowerCase()}`);
-      // } else {
-      //   this.$router.push(`#home`);
-      // }
+      if (this.titleText.trim() !== '') {
+        this.$router.push(`#title#${this.titleText.toLowerCase()}`);
+      } else {
+        this.$router.push(`#home`);
+      }
     },
     filterFunction() {
       var input, filter, ul, li, a, i, div, txtValue, count;
@@ -56,9 +57,11 @@ export default {
       count = 0;
       for (i = 0; i < a.length; i++) {
         txtValue = a[i].innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1 && txtValue != 'NO RESULTS') {
-          a[i].style.display = '';
+        if (count >= 5) {
+          a[i].style.display = 'none';
+        } else if (txtValue.toUpperCase().indexOf(filter) > -1 && txtValue != 'NO RESULTS') {
           count++;
+          a[i].style.display = '';
         } else {
           a[i].style.display = 'none';
         }
@@ -69,6 +72,7 @@ export default {
       } else {
         a[a.length - 1].style.display = 'none';
       }
+      console.log('filter');
       return input;
     },
     goToPage(path) {
@@ -108,12 +112,12 @@ export default {
     }
   },
   mounted() {
-    // $(window).click(function() {
-    //   document.getElementById('myDropdown').classList.remove('show');
-    // });
-    // $('#myInput').click(function(event) {
-    //   event.stopPropagation();
-    // });
+    $(window).click(function() {
+      document.getElementById('myDropdown').classList.remove('show');
+    });
+    $('#myInput').click(function(event) {
+      event.stopPropagation();
+    });
   }
 };
 </script>
