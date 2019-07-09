@@ -39,7 +39,6 @@ export default {
   },
   methods: {
     handleFocusOut() {
-      console.log('focus out');
       document.getElementById('myDropdown').classList.remove('show');
     },
     filterEnter() {
@@ -77,7 +76,6 @@ export default {
       } else {
         a[a.length - 1].style.display = 'none';
       }
-      console.log('filter');
       return input;
     },
     goToPage(path) {
@@ -115,14 +113,6 @@ export default {
 
       return posts;
     }
-  },
-  mounted() {
-    // $(window).click(function() {
-    //   document.getElementById('myDropdown').classList.remove('show');
-    // });
-    // $('#myInput').click(function(event) {
-    //   event.stopPropagation();
-    // });
   }
 };
 </script>
