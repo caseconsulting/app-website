@@ -55,14 +55,6 @@ export default {
     bootstrapLink.setAttribute('crossorigin', 'anonymous');
     document.head.appendChild(bootstrapLink);
 
-    // expandable arrow button
-
-    // let jQueryScript2 = document.createElement('script');
-    // jQueryScript2.setAttribute('src', 'https://code.jquery.com/jquery-migrate-3.1.0.min.js');
-    // jQueryScript2.setAttribute('integrity', 'sha256-ycJeXbll9m7dHKeaPbXBkZH8BuP99SmPm/8q5O+SbBc=');
-    // jQueryScript2.setAttribute('crossorigin', 'anonymous');
-    // document.head.appendChild(jQueryScript2);
-
     this.sidebar = this.displaySidebar();
   }
 };
