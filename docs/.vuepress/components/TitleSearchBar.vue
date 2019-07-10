@@ -162,6 +162,9 @@ export default {
   position: relative;
 }
 
+@media (min-width: 48em) {
+}
+
 .searchContainer {
   width: 250px;
   display: inline-flex;
@@ -198,6 +201,23 @@ input[type='text'] {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
+
+@media (max-width: 48em) {
+  input[type='text'] {
+    width: 100%;
+    background-color: #fff;
+    border-color: black;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3;
+    border-radius: 0.3;
+  }
+
+  .searchContainer {
+    width: 100%;
+    overflow: visible;
+  }
+}
+
 input[type='text']:focus {
   width: 100%;
   background-color: #fff;
@@ -224,6 +244,19 @@ input::-webkit-input-placeholder {
 #demo-2 input[type='text']:hover {
   background-color: #fff;
 }
+
+@media (max-width: 48em) {
+  #demo-2 input[type='text'] {
+    width: 100%;
+    padding-left: 32px;
+    padding-top: 32px;
+    color: #000;
+    background-color: #fff;
+    cursor: auto;
+    border: 1px solid lightgray;
+  }
+}
+
 #demo-2 input[type='text']:focus {
   width: 100%;
   padding-left: 32px;
