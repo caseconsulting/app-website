@@ -7,6 +7,7 @@ Vue.use(Vuelidate);
 describe('Form.vue', () => {
   let wrapper;
 
+  // Validating First Name Test
   describe('validateFirstName', () => {
     beforeEach(() => {
       wrapper = shallowMount(Form);
@@ -45,6 +46,7 @@ describe('Form.vue', () => {
     });
   });
 
+  // Validating Last Name Test
   describe('validateLastName', () => {
     beforeEach(() => {
       wrapper = shallowMount(Form);
@@ -83,6 +85,7 @@ describe('Form.vue', () => {
     });
   });
 
+  // Validating Email Test
   describe('validateEmail', () => {
     beforeEach(() => {
       wrapper = shallowMount(Form);
@@ -136,6 +139,7 @@ describe('Form.vue', () => {
       });
     });
 
+    // Validating Job Titles Test
     describe('validateJobTitles', () => {
       beforeEach(() => {
         wrapper = shallowMount(Form);
@@ -197,6 +201,271 @@ describe('Form.vue', () => {
           expect(wrapper.vm.$data.valid.jobTitles).toEqual(true);
           expect(wrapper.vm.$data.valid.otherJobTitle).toEqual(true);
           expect(wrapper.vm.$data.otherJobTitle).toEqual('Other Software');
+        });
+      });
+    });
+
+    // Validating Hear About Us Test
+    describe('validateHearAboutUs', () => {
+      beforeEach(() => {
+        wrapper = shallowMount(Form);
+      });
+
+      describe('WHEN hearAboutUs box is empty', () => {
+        beforeEach(() => {
+          wrapper.setData({
+            valid: {
+              hearAboutUs: true,
+              otherHearAboutUs: true,
+              referralHearAboutUs: true
+            },
+            hearAboutUs: [],
+            otherHearAboutUs: '',
+            referralHearAboutUs: ''
+          });
+        });
+
+        test('SHOULD pass validation', () => {
+          wrapper.vm.validateHearAboutUs();
+          expect(wrapper.vm.$data.valid.hearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.valid.otherHearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.valid.referralHearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.otherHearAboutUs).toEqual('');
+          expect(wrapper.vm.$data.referralHearAboutUs).toEqual('');
+        });
+      });
+
+      describe('WHEN hearAboutUs box is not empty with other no referal', () => {
+        beforeEach(() => {
+          wrapper.setData({
+            valid: {
+              hearAboutUs: true,
+              otherHearAboutUs: true,
+              referralHearAboutUs: true
+            },
+            hearAboutUs: ['Twitter', 'Facebook', 'Other'],
+            otherHearAboutUs: 'Other',
+            referralHearAboutUs: ''
+          });
+        });
+        test('SHOULD pass validation', () => {
+          wrapper.vm.validateHearAboutUs();
+          expect(wrapper.vm.$data.valid.hearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.valid.otherHearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.otherHearAboutUs).toEqual('Other');
+          expect(wrapper.vm.$data.valid.referralHearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.referralHearAboutUs).toEqual('');
+        });
+      });
+
+      describe('WHEN hearAboutUs box is not empty with no other no referral', () => {
+        beforeEach(() => {
+          wrapper.setData({
+            valid: {
+              hearAboutUs: true,
+              otherHearAboutUs: true,
+              referralHearAboutUs: true
+            },
+            hearAboutUs: ['Twitter', 'Facebook', 'Other'],
+            otherHearAboutUs: '',
+            referralHearAboutUs: ''
+          });
+        });
+        test('SHOULD fail validation', () => {
+          wrapper.vm.validateHearAboutUs();
+          expect(wrapper.vm.$data.valid.hearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.valid.otherHearAboutUs).toEqual(false);
+          expect(wrapper.vm.$data.otherHearAboutUs).toEqual('');
+          expect(wrapper.vm.$data.valid.referralHearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.referralHearAboutUs).toEqual('');
+        });
+      });
+
+      describe('WHEN hearAboutUs box is not empty with no Other no referral', () => {
+        beforeEach(() => {
+          wrapper.setData({
+            valid: {
+              hearAboutUs: true,
+              otherHearAboutUs: true,
+              referralHearAboutUs: true
+            },
+            hearAboutUs: ['Twitter', 'Facebook'],
+            otherHearAboutUs: '',
+            referralHearAboutUs: ''
+          });
+        });
+
+        test('SHOULD pass validation', () => {
+          wrapper.vm.validateHearAboutUs();
+          expect(wrapper.vm.$data.valid.hearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.valid.otherHearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.otherHearAboutUs).toEqual('');
+          expect(wrapper.vm.$data.valid.referralHearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.referralHearAboutUs).toEqual('');
+        });
+      });
+
+      describe('WHEN hearAboutUs box is not empty with other with referal', () => {
+        beforeEach(() => {
+          wrapper.setData({
+            valid: {
+              hearAboutUs: true,
+              otherHearAboutUs: true,
+              referralHearAboutUs: true
+            },
+            hearAboutUs: ['Twitter', 'Facebook', 'Other', 'Employee Referral'],
+            otherHearAboutUs: 'Other',
+            referralHearAboutUs: 'employee'
+          });
+        });
+        test('SHOULD pass validation', () => {
+          wrapper.vm.validateHearAboutUs();
+          expect(wrapper.vm.$data.valid.hearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.valid.otherHearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.otherHearAboutUs).toEqual('Other');
+          expect(wrapper.vm.$data.valid.referralHearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.referralHearAboutUs).toEqual('employee');
+        });
+      });
+
+      describe('WHEN hearAboutUs box is not empty with no other with referral', () => {
+        beforeEach(() => {
+          wrapper.setData({
+            valid: {
+              hearAboutUs: true,
+              otherHearAboutUs: true,
+              referralHearAboutUs: true
+            },
+            hearAboutUs: ['Twitter', 'Facebook', 'Other', 'Employee Referral'],
+            otherHearAboutUs: '',
+            referralHearAboutUs: 'employee'
+          });
+        });
+        test('SHOULD fail validation', () => {
+          wrapper.vm.validateHearAboutUs();
+          expect(wrapper.vm.$data.valid.hearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.valid.otherHearAboutUs).toEqual(false);
+          expect(wrapper.vm.$data.otherHearAboutUs).toEqual('');
+          expect(wrapper.vm.$data.valid.referralHearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.referralHearAboutUs).toEqual('employee');
+        });
+      });
+
+      describe('WHEN hearAboutUs box is not empty with no Other with referral', () => {
+        beforeEach(() => {
+          wrapper.setData({
+            valid: {
+              hearAboutUs: true,
+              otherHearAboutUs: true,
+              referralHearAboutUs: true
+            },
+            hearAboutUs: ['Twitter', 'Facebook', 'Employee Referral'],
+            otherHearAboutUs: '',
+            referralHearAboutUs: 'employee'
+          });
+        });
+
+        test('SHOULD pass validation', () => {
+          wrapper.vm.validateHearAboutUs();
+          expect(wrapper.vm.$data.valid.hearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.valid.otherHearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.otherHearAboutUs).toEqual('');
+          expect(wrapper.vm.$data.valid.referralHearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.referralHearAboutUs).toEqual('employee');
+        });
+      });
+
+      describe('WHEN hearAboutUs box is not empty with no other with referral', () => {
+        beforeEach(() => {
+          wrapper.setData({
+            valid: {
+              hearAboutUs: true,
+              otherHearAboutUs: true,
+              referralHearAboutUs: true
+            },
+            hearAboutUs: ['Twitter', 'Facebook', 'Other', 'Employee Referral'],
+            otherHearAboutUs: '',
+            referralHearAboutUs: 'employee'
+          });
+        });
+        test('SHOULD fail validation', () => {
+          wrapper.vm.validateHearAboutUs();
+          expect(wrapper.vm.$data.valid.hearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.valid.otherHearAboutUs).toEqual(false);
+          expect(wrapper.vm.$data.otherHearAboutUs).toEqual('');
+          expect(wrapper.vm.$data.valid.referralHearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.referralHearAboutUs).toEqual('employee');
+        });
+      });
+
+      describe('WHEN hearAboutUs box is not empty with no Other with referral', () => {
+        beforeEach(() => {
+          wrapper.setData({
+            valid: {
+              hearAboutUs: true,
+              otherHearAboutUs: true,
+              referralHearAboutUs: true
+            },
+            hearAboutUs: ['Twitter', 'Facebook', 'Employee Referral'],
+            otherHearAboutUs: '',
+            referralHearAboutUs: 'employee'
+          });
+        });
+
+        test('SHOULD pass validation', () => {
+          wrapper.vm.validateHearAboutUs();
+          expect(wrapper.vm.$data.valid.hearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.valid.otherHearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.otherHearAboutUs).toEqual('');
+          expect(wrapper.vm.$data.valid.referralHearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.referralHearAboutUs).toEqual('employee');
+        });
+      });
+
+      describe('WHEN hearAboutUs box is not empty with no other missing referral', () => {
+        beforeEach(() => {
+          wrapper.setData({
+            valid: {
+              hearAboutUs: true,
+              otherHearAboutUs: true,
+              referralHearAboutUs: true
+            },
+            hearAboutUs: ['Twitter', 'Facebook', 'Other', 'Employee Referral'],
+            otherHearAboutUs: '',
+            referralHearAboutUs: ''
+          });
+        });
+        test('SHOULD fail validation', () => {
+          wrapper.vm.validateHearAboutUs();
+          expect(wrapper.vm.$data.valid.hearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.valid.otherHearAboutUs).toEqual(false);
+          expect(wrapper.vm.$data.otherHearAboutUs).toEqual('');
+          expect(wrapper.vm.$data.valid.referralHearAboutUs).toEqual(false);
+          expect(wrapper.vm.$data.referralHearAboutUs).toEqual('');
+        });
+      });
+
+      describe('WHEN hearAboutUs box is not empty with no Other missing referral', () => {
+        beforeEach(() => {
+          wrapper.setData({
+            valid: {
+              hearAboutUs: true,
+              otherHearAboutUs: true,
+              referralHearAboutUs: true
+            },
+            hearAboutUs: ['Twitter', 'Facebook', 'Employee Referral'],
+            otherHearAboutUs: '',
+            referralHearAboutUs: ''
+          });
+        });
+
+        test('SHOULD pass validation', () => {
+          wrapper.vm.validateHearAboutUs();
+          expect(wrapper.vm.$data.valid.hearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.valid.otherHearAboutUs).toEqual(true);
+          expect(wrapper.vm.$data.otherHearAboutUs).toEqual('');
+          expect(wrapper.vm.$data.valid.referralHearAboutUs).toEqual(false);
+          expect(wrapper.vm.$data.referralHearAboutUs).toEqual('');
         });
       });
     });
