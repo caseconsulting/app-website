@@ -7,6 +7,70 @@ Vue.use(Vuelidate);
 describe('Form.vue', () => {
   let wrapper;
 
+  // Validating All
+  describe('isAllValid', () => {
+    beforeEach(() => {
+      wrapper = shallowMount(Form);
+    });
+
+    describe('WHEN all fields are valid', () => {
+      beforeEach(() => {
+        wrapper.setData({
+          valid: {
+            firstName: true,
+            lastName: true,
+            email: true,
+            jobTitles: true,
+            hearAboutUs: true
+          }
+        });
+      });
+
+      test('SHOULD pass validation', () => {
+        wrapper.vm.isAllValid();
+        expect(wrapper.vm.isAllValid()).toEqual(true);
+      });
+    });
+
+    describe('WHEN all fields are valid', () => {
+      beforeEach(() => {
+        wrapper.setData({
+          valid: {
+            firstName: false,
+            lastName: false,
+            email: false,
+            jobTitles: false,
+            hearAboutUs: false
+          }
+        });
+      });
+
+      test('SHOULD fail validation', () => {
+        wrapper.vm.isAllValid();
+        expect(wrapper.vm.isAllValid()).toEqual(false);
+      });
+    });
+
+    describe('WHEN some fields are valid and some are invalid', () => {
+      beforeEach(() => {
+        wrapper.setData({
+          valid: {
+            firstName: false,
+            lastName: true,
+            email: false,
+            jobTitles: true,
+            hearAboutUs: false
+          }
+        });
+      });
+
+      test('SHOULD fail validation', () => {
+        wrapper.vm.isAllValid();
+        expect(wrapper.vm.isAllValid()).toEqual(false);
+      });
+    });
+  });
+
   // Validating First Name Test
   describe('validateFirstName', () => {
     beforeEach(() => {
