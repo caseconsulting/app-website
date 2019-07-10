@@ -21,7 +21,6 @@
           />
         </div>
         <div id="myDropdown" class="dropdown-content">
-          <!-- <a v-if="posts.length >= 5" @click="titleText = ''" style="text-decoration: underline;">TOP 5 RESULTS</a> -->
           <a v-for="post in posts" @click="goToPage(post.regularPath)">{{ post.frontmatter.title }} </a>
           <a @click="titleText = ''">NO RESULTS</a>
         </div>
@@ -39,7 +38,10 @@ export default {
   },
   methods: {
     handleFocusOut() {
-      document.getElementById('myDropdown').classList.remove('show');
+      window.setTimeout(function() {
+        document.getElementById('myDropdown').classList.remove('show');
+        this.titleText = '';
+      }, 200);
     },
     filterEnter() {
       if (this.titleText.trim() !== '') {
