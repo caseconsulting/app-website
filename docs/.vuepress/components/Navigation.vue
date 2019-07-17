@@ -87,7 +87,7 @@ export default {
 </script>
 
 <style>
-@media (max-width: 48em) {
+@media (max-width: 62em) {
   .navbar {
     margin-bottom: 0px;
   }
@@ -181,8 +181,9 @@ ul {
 }
 
 /* 48em = 768px */
+/* 62em = 992px */
 
-@media (min-width: 48em) {
+@media (min-width: 62em) {
   li {
     float: left;
   }
