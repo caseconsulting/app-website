@@ -1,8 +1,5 @@
 <template>
   <div>
-    <!-- <head>
-      <link href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet" />
-    </head>
     <div style="padding-right: 20px; padding-bottom: 10px; padding-top: 0px;">
       <div>
         <div id="demo-2" class="searchContainer dropdown">
@@ -11,102 +8,115 @@
             class="textInput searchBox navbar-nav g-font-size-11 g-pt-20 g-pt-5--lg ml-auto"
             type="text"
             autoComplete="off"
-            @keydown.enter="
+            @keyup="
+              filterFunction();
+              showDropdown();
+            "
+            @keyup.enter="
               filterEnter();
               noShowDropdown();
             "
-            :keyup="filterFunction()"
-            @click="showDropdown()"
+            @focusout="handleFocusOut"
             v-model="titleText"
           />
         </div>
         <div id="myDropdown" class="dropdown-content">
-          <a
-            v-for="post in posts"
-            v-if="post.frontmatter.title"
-            @click="
-              noShowDropdown();
-              goToPage(post.regularPath);
-              titleText = '';
-            "
-            >{{ post.frontmatter.title }}</a
-          >
+          <a v-for="post in posts" @click="goToPage(post.regularPath)">{{ post.frontmatter.title }} </a>
+          <a @click="titleText = ''">NO RESULTS</a>
         </div>
       </div>
-    </div> -->
+    </div>
   </div>
 </template>
 
 <script>
-// export default {
-//   data: function() {
-//     return {
-//       titleText: ''
-//     };
-//   },
-//   methods: {
-//     filterEnter() {
-//       console.log('filter');
-//       if (this.titleText.trim() !== '') {
-//         this.$router.push(`#title#${this.titleText.toLowerCase()}`);
-//       } else {
-//         this.$router.push(`#home`);
-//       }
-//     },
-//     goToPage(path) {
-//       this.$router.push(`${path}`);
-//     },
-//     showDropdown() {
-//       document.getElementById('myDropdown').classList.add('show');
-//     },
-//     noShowDropdown() {
-//       document.getElementById('myDropdown').classList.remove('show');
-//     },
-//     filterFunction() {
-//       var input, filter, ul, li, a, i, div, txtValue;
-//       input = this.titleText;
-//       if (input) {
-//         filter = input.toUpperCase();
-//         div = document.getElementById('myDropdown');
-//         a = div.getElementsByTagName('a');
-//         for (i = 0; i < a.length; i++) {
-//           txtValue = a[i].textContent || a[i].innerText;
-//           if (txtValue.toUpperCase().indexOf(filter) > -1) {
-//             a[i].style.display = '';
-//           } else {
-//             a[i].style.display = 'none';
-//           }
-//         }
-//       }
-//     }
-//   },
-//   computed: {
-//     posts() {
-//       // let currentPage = this.page ? this.page : this.$page.path;
-//       let posts = this.$site.pages.sort((a, b) => {
-//         //filter alphabetically
-//         if (a.frontmatter.title && b.frontmatter.title) {
-//           if (a.frontmatter.title.toLowerCase() < b.frontmatter.title.toLowerCase()) {
-//             return -1;
-//           }
-//           if (a.frontmatter.title.toLowerCase() > b.frontmatter.title.toLowerCase()) {
-//             return 1;
-//           }
-//         }
-//         return 0;
-//       });
-//       return posts;
-//     }
-//   },
-//   mounted() {
-//     $(window).click(function() {
-//       document.getElementById('myDropdown').classList.remove('show');
-//     });
-//     $('#myInput').click(function(event) {
-//       event.stopPropagation();
-//     });
-//   }
-// };
+export default {
+  data: function() {
+    return {
+      titleText: ''
+    };
+  },
+  methods: {
+    handleFocusOut() {
+      window.setTimeout(function() {
+        document.getElementById('myDropdown').classList.remove('show');
+        this.titleText = '';
+      }, 200);
+    },
+    filterEnter() {
+      if (this.titleText.trim() !== '') {
+        this.$router.push(`#title#${this.titleText.toLowerCase()}`);
+      } else {
+        this.$router.push(`#home`);
+      }
+    },
+    filterFunction() {
+      var input, filter, ul, li, a, i, div, txtValue, count;
+      input = this.titleText;
+      if (input) {
+        filter = input.toUpperCase();
+      } else {
+        filter = '';
+      }
+      div = document.getElementById('myDropdown');
+      a = div.getElementsByTagName('a');
+      count = 0;
+      for (i = 0; i < a.length; i++) {
+        txtValue = a[i].innerText;
+        if (count >= 5) {
+          a[i].style.display = 'none';
+        } else if (txtValue.toUpperCase().indexOf(filter) > -1 && txtValue != 'NO RESULTS') {
+          count++;
+          a[i].style.display = '';
+        } else {
+          a[i].style.display = 'none';
+        }
+      }
+      // Displaying NO RESULTS
+      if (count == 0) {
+        a[a.length - 1].style.display = ''; //since the last <a></a> in the array is NO RESULTS
+      } else {
+        a[a.length - 1].style.display = 'none';
+      }
+      return input;
+    },
+    goToPage(path) {
+      this.noShowDropdown();
+      this.$router.push(`${path}`);
+      this.titleText = '';
+    },
+    showDropdown() {
+      document.getElementById('myDropdown').classList.add('show');
+    },
+    noShowDropdown() {
+      document.getElementById('myDropdown').classList.remove('show');
+    }
+  },
+  computed: {
+    posts() {
+      // let currentPage = this.page ? this.page : this.$page.path;
+      let posts = this.$site.pages.sort((a, b) => {
+        //filter alphabetically
+        if (a.frontmatter.title && b.frontmatter.title) {
+          if (a.frontmatter.title.toLowerCase() < b.frontmatter.title.toLowerCase()) {
+            return -1;
+          }
+          if (a.frontmatter.title.toLowerCase() > b.frontmatter.title.toLowerCase()) {
+            return 1;
+          }
+        }
+        return 0;
+      });
+
+      //remove white spaces
+      posts = posts.filter(function(item) {
+        return item.frontmatter.title;
+      });
+
+      return posts;
+    }
+  }
+};
 </script>
 
 <style scoped>
@@ -152,6 +162,9 @@
   position: relative;
 }
 
+@media (min-width: 48em) {
+}
+
 .searchContainer {
   width: 250px;
   display: inline-flex;
@@ -188,6 +201,23 @@ input[type='text'] {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
+
+@media (max-width: 48em) {
+  input[type='text'] {
+    width: 100%;
+    background-color: #fff;
+    border-color: black;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3;
+    border-radius: 0.3;
+  }
+
+  .searchContainer {
+    width: 100%;
+    overflow: visible;
+  }
+}
+
 input[type='text']:focus {
   width: 100%;
   background-color: #fff;
@@ -214,6 +244,19 @@ input::-webkit-input-placeholder {
 #demo-2 input[type='text']:hover {
   background-color: #fff;
 }
+
+@media (max-width: 48em) {
+  #demo-2 input[type='text'] {
+    width: 100%;
+    padding-left: 32px;
+    padding-top: 32px;
+    color: #000;
+    background-color: #fff;
+    cursor: auto;
+    border: 1px solid lightgray;
+  }
+}
+
 #demo-2 input[type='text']:focus {
   width: 100%;
   padding-left: 32px;

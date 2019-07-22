@@ -364,6 +364,7 @@ export default {
       files: [],
       uploads: [],
       dropOptions: {
+        dictDefaultMessage: 'Drop file here to upload',
         autoProcessQueue: false,
         thumbnailWidth: '150',
         thumbnailHeight: '150',
@@ -400,7 +401,7 @@ export default {
               myDropZone.removeFile(file);
             } else if (myDropZone.getQueuedFiles().length >= 1) {
               // error message for max file number exceeded (1)
-              alert('Form cannot contain more than 1 files');
+              alert('Form cannot contain more than 1 file');
               myDropZone.removeFile(file);
             } else if (!file.accepted) {
               successfulSubmission = false;
