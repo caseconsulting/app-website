@@ -9,6 +9,7 @@ title: Watch D.O.G.S.
 author: Paul Correll
 description: Yesterday, I spent the day as a Watch Dog at Greenville Elementary School where my daughter attends 1st grade. This was my second Watch Dog day since mid-October, and it was just as enjoyable as the first. As you'll see in the schedule below every minute is accounted for and it makes for a tired dog at the end of the day.
 date: 12-18-18 (mm-dd-yy)
+tags: ['WatchDogs', 'dads', 'volunteer', 'school']
 layout: BlogPost
 ---
 
@@ -36,4 +37,4 @@ Final Stats:
   <li>0 points in the paint during recess :-(</li>
 </ul><br/>
 
-If you'd like to learn more about the Watch D.O.G.S. program you can read more about it on their <a href="https://dadsofgreatstudents.com/">website</a> or watch <a href="https://www.youtube.com/watch?v=CM9nUoWOOvs">this feature from The Today Show</a> about the program.
+If you'd like to learn more about the Watch D.O.G.S. program you can read more about it on their <a href="https://dadsofgreatstudents.com/" target="_blank">website</a> or watch <a href="https://www.youtube.com/watch?v=CM9nUoWOOvs" target="_blank">this feature from The Today Show</a> about the program.
