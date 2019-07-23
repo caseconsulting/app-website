@@ -1,26 +1,32 @@
 <template>
   <section>
-    <Header />
+    <Header/>
     <div class="w3-display-container">
       <h1 class="title">{{ $page.frontmatter.title }}</h1>
-      <img class="mainImage" v-if="$page.frontmatter.postImage" :src="$withBase($page.frontmatter.postImage)" />
+      <img
+        class="mainImage"
+        v-if="$page.frontmatter.postImage"
+        :src="$withBase($page.frontmatter.postImage)"
+      >
     </div>
     <div class="content">
       <p class="meta" style="font-size: 15px; padding-top: 5px;">
-        <br />
+        <br>
         <a>{{ getTopic($page.path) }}</a>
-        <br />By
+        <br>By
         <a style="color: tomato;">{{ $page.frontmatter.author }}</a>
         ◆
         {{ $page.frontmatter.date.slice(0, 8) }}
         <!-- <a style="float: right">{{ getTopic($page.path) }}</a> -->
       </p>
-      <p><Content class="link" /></p>
-      <TagLinks class="links" />
-      <br />
+      <p>
+        <Content class="link"/>
+      </p>
+      <TagLinks class="links"/>
+      <br>
     </div>
     <ShareButtons :pageTitle="$page.frontmatter.title"></ShareButtons>
-    <br />
+    <br>
     <!-- <div style="border-top: 2px solid gray;"></div> -->
     <!-- <br /> -->
     <!-- <div class="postArrowNav">
@@ -54,7 +60,7 @@
       </div>
     </div>
     <!-- end test -->
-    <br />
+    <br>
   </section>
 </template>
 
@@ -71,10 +77,8 @@ function getTopic(path) {
   switch (topic[1]) {
     case 'case-cares':
       return 'Case Cares';
-    case 'new-hires':
-      return 'New Hires';
-    case 'awards':
-      return 'Awards';
+    case 'case-news':
+      return 'Case News';
     default:
       return 'Topic Not Found';
   }
