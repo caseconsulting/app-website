@@ -21,14 +21,14 @@ This past weekend our team was up. It's something I've done with some buddies of
 
 Over the years, I've learned many valuable lessons, this weekend was no different. Here are some random thoughts:
 
-<li>I am blessed to have the family, friends, and loved ones I have</li>
-<li>Loudoun County is not prepared to handle its growing homeless problem</li>
-<li>Not everyone is looking for a handout, but sometimes a helping hand and a smile</li>
-<li>Homelessness isn't a label, it can effect anyone at any time</li>
-<li>Someone offered US a donation for the food we gave them (that was tough)</li>
-<li>I served meals, offered a joke, tried to brighten someones day</li>
-<li>Some were very appreciative, some not so much</li>
-<li>CASE Cares, thank you for the opportunity to serve my community</li>
+- I am blessed to have the family, friends, and loved ones I have
+- Loudoun County is not prepared to handle its growing homeless problem
+- Not everyone is looking for a handout, but sometimes a helping hand and a smile
+- Homelessness isn't a label, it can effect anyone at any time
+- Someone offered US a donation for the food we gave them (that was tough)
+- I served meals, offered a joke, tried to brighten someones day
+- Some were very appreciative, some not so much
+- CASE Cares, thank you for the opportunity to serve my community
 
 Overall the four hours I spent were well worth it. It made me go back and think of ways I can help address the problem. Getting involved, writing my elected officials, and just raising awareness that others need help. Often Loudoun County is called "the richest county in the country", but in many cases we fall short of helping those that need it most. Mental health issues, unemployment, foster care til 18 then out on the street, lack of family support. The list is endless how people can become lost. I'm just happy the Salvation Army in Loudoun County continues their mission. Plus we got to run the red lights on Rt. 7 as we drove from Sterling to Leesburg which was REALLY COOL!
 
