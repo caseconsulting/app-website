@@ -7,7 +7,7 @@ image: /9D8F18C6-B66B-42A8-971E-AAB0C543420F.jpeg
 postImage: /9D8F18C6-B66B-42A8-971E-AAB0C543420F.jpeg
 title: Wreaths Across America Clean-Up
 author: Paul Correll
-description: On Saturday, January 19, several employees braved the cold to help clean-up wreaths at Arlington National Cemetery as part of the Wreaths Across America program.
+description: On Saturday, January 19, several of our employees and their families braved the cold to help clean up wreaths at Arlington National Cemetery as part of the Wreaths Across America program.
 date: 01-19-19 (mm-dd-yy)
 tags: ['remember', 'honor', 'teach', 'veterans', 'SomeGaveAll']
 layout: BlogPost
