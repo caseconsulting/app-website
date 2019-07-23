@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <SideBar />
+    <SideBar/>
     <div class="posts" v-if="posts.length">
       <div class="post" style="width: 110%" v-for="post in posts">
         <div class="w3-display-container">
@@ -15,12 +15,13 @@
                 style="padding-bottom: 5px;"
                 v-if="post.frontmatter.image"
                 :src="$withBase(post.frontmatter.image)"
-                alt=""
-              />
+                alt
+              >
             </div>
             <p class="meta">
               By
-              <a style="color: tomato;">{{ post.frontmatter.author }}</a> ◆ {{ post.frontmatter.date.slice(0, 8) }}
+              <a style="color: tomato;">{{ post.frontmatter.author }}</a>
+              ◆ {{ post.frontmatter.date.slice(0, 8) }}
             </p>
             <p class="description">{{ post.frontmatter.description }}</p>
           </router-link>
@@ -30,7 +31,9 @@
         </div>
       </div>
     </div>
-    <div v-else><h3>No results match search</h3></div>
+    <div v-else>
+      <h3>No results match search</h3>
+    </div>
   </div>
 </template>
 
@@ -83,10 +86,8 @@ export default {
       switch (topic[1]) {
         case 'case-cares':
           return 'Case Cares';
-        case 'new-hires':
-          return 'New Hires';
-        case 'awards':
-          return 'Awards';
+        case 'case-news':
+          return 'Case News';
         default:
           return 'No Topic';
       }
