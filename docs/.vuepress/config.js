@@ -40,14 +40,13 @@ module.exports = {
       }
     ]
   ],
-  description: 'Just playing around',
+  description: 'Case Consulting Blog',
   themeConfig: {
     logo: '/assets/img/case/navlogo.png'
     // nav: [
-    //   { text: 'Home', link: '/' },
+    //   { text: 'Blog Home', link: '/' },
     //   { text: 'Case Cares', link: '/case-cares/' },
-    //   { text: 'New Hires', link: '/new-hires/' },
-    //   { text: 'Awards', link: '/awards/' }
+    //   { text: 'Case News', link: '/case-news/' }
     // ]
   },
   configureWebpack: {
