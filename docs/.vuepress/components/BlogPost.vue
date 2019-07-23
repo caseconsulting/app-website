@@ -18,11 +18,17 @@
         {{ $page.frontmatter.date.slice(0, 8) }}
         <!-- <a style="float: right">{{ getTopic($page.path) }}</a> -->
       </p>
+<<<<<<< HEAD
       <p>
         <slot class="link"></slot>
       </p>
       <TagLinks class="links"/>
       <br>
+=======
+      <p><Content class="link" /></p>
+      <TagLinks class="links" />
+      <br />
+>>>>>>> bullets: changed BlogPost to be a custom layout
     </div>
     <ShareButtons :pageTitle="$page.frontmatter.title"></ShareButtons>
     <br>
