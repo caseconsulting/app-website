@@ -1,25 +1,31 @@
 <template>
   <section>
-    <div class="w3-display-container ">
+    <div class="w3-display-container">
       <h1 class="title">{{ $page.frontmatter.title }}</h1>
-      <img class="mainImage" v-if="$page.frontmatter.postImage" :src="$withBase($page.frontmatter.postImage)" />
+      <img
+        class="mainImage"
+        v-if="$page.frontmatter.postImage"
+        :src="$withBase($page.frontmatter.postImage)"
+      >
     </div>
     <div class="content">
       <p class="meta" style="font-size: 15px; padding-top: 5px;">
-        <br />
+        <br>
         <a>{{ getTopic($page.path) }}</a>
-        <br />
-        By
-        <a style="color: tomato;">{{ $page.frontmatter.author }}</a> ◆
+        <br>By
+        <a style="color: tomato;">{{ $page.frontmatter.author }}</a>
+        ◆
         {{ $page.frontmatter.date.slice(0, 8) }}
         <!-- <a style="float: right">{{ getTopic($page.path) }}</a> -->
       </p>
-      <p><slot class="link"></slot></p>
-      <TagLinks class="links" />
-      <br />
+      <p>
+        <slot class="link"></slot>
+      </p>
+      <TagLinks class="links"/>
+      <br>
     </div>
     <ShareButtons :pageTitle="$page.frontmatter.title"></ShareButtons>
-    <br />
+    <br>
     <!-- <div style="border-top: 2px solid gray;"></div> -->
     <!-- <br /> -->
     <!-- <div class="postArrowNav">
@@ -28,13 +34,13 @@
         <p class="nextTitle">{{ getPost('next').title }}</p>
         <button class="nextIcon">icon</button>
       </div>
-    </div> -->
+    </div>-->
 
     <!-- test -->
     <div class="arrow-nav">
       <div class="row">
         <div class="col left" @click="nav('back')">
-          <form action="" class="nav-form">
+          <form action class="nav-form">
             <div class="form-group">
               <span class="glyphicon glyphicon-circle-arrow-left form-control-feedback"></span>
               <p class="form-control">{{ getPost('back').title }}</p>
@@ -43,7 +49,7 @@
         </div>
 
         <div class="col right" @click="nav('next')">
-          <form action="" class="nav-form">
+          <form action class="nav-form">
             <div class="form-group">
               <p class="form-control">{{ getPost('next').title }}</p>
               <span class="glyphicon glyphicon-circle-arrow-right form-control-feedback"></span>
@@ -53,6 +59,7 @@
       </div>
     </div>
     <!-- end test -->
+    <br>
   </section>
 </template>
 
