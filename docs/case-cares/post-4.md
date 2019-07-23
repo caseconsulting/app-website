@@ -9,10 +9,9 @@ title: Watch D.O.G.S.
 author: Paul Correll
 description: Yesterday, I spent the day as a Watch Dog at Greenville Elementary School where my daughter attends 1st grade. This was my second Watch Dog day since mid-October, and it was just as enjoyable as the first. As you'll see in the schedule below every minute is accounted for and it makes for a tired dog at the end of the day.
 date: 12-18-18 (mm-dd-yy)
+layout: BlogPost
 ---
 
-<BlogPost>
-<p>
 Yesterday, I spent the day as a Watch Dog at my daughter's elementary school. This was my second Watch Dog day since mid-October, and it was just as enjoyable as the first. It is a packed schedule, with nearly every minute accounted for, which makes for a tired dog at the end of the day.
 
 In the morning I joined the art teacher with her 4th grade class in the school's Innnovation Lab watching the stop animation projects they have been working on. This was a cross-discipline project where the kids had to make multiple scenes/backdrops, multiple characters, and come up with a story for those characters and scenes. Once all of the art work was completed the kids used iPads to capture the images for the stop-motion animation. They then compiled all the images into a movie and then recorded and added the audio. Finally, the kids created credits scenes with the name of the movie and the names of all of the kids in the group. It was an impressive project!
@@ -28,6 +27,7 @@ I then ended the day with 2nd grade gym, 1st grade sight word evaluation, and sa
 <center><img src="/IMG_6668.jpg" width="600"/></center><br/>
 
 Final Stats:
+
 <ul>
   <li>Lots of high fives and fist bumps</li>
   <li>Several random hugs</li>
@@ -37,6 +37,3 @@ Final Stats:
 </ul><br/>
 
 If you'd like to learn more about the Watch D.O.G.S. program you can read more about it on their <a href="https://dadsofgreatstudents.com/">website</a> or watch <a href="https://www.youtube.com/watch?v=CM9nUoWOOvs">this feature from The Today Show</a> about the program.
-
-</p>
-</BlogPost>

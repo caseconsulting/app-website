@@ -10,12 +10,7 @@ author: Bryan Washam
 description: Test description for new hire 1.
 date: 03-15-19 (mm-dd-yy)
 tags: ['welcome', 'team', 'employee', 'softwareDeveloper', 'cats', 'aws', 'tag3', 'tag4']
+layout: BlogPost
 ---
 
-<BlogPost>
-<p>
-
 Test paragraph for new hire 1.
-
-</p>
-</BlogPost>
