@@ -1,5 +1,6 @@
 <template>
   <section>
+    <Header />
     <div class="w3-display-container">
       <h1 class="title">{{ $page.frontmatter.title }}</h1>
       <img class="mainImage" v-if="$page.frontmatter.postImage" :src="$withBase($page.frontmatter.postImage)" />
