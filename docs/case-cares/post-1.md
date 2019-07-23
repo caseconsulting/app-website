@@ -34,6 +34,6 @@ Overall the four hours I spent were well worth it. It made me go back and think 
 
 <center><img src="/20181208_151921.jpg" width="600"/></center><br/>
 
-If you'd like to learn more about the Loudoun County Salvation Army efforts, visit their Facebook page at <a href="https://www.facebook.com/SalvationArmyLoudoun/">www.facebook.com/SalvationArmyLoudoun</a>.
+If you'd like to learn more about the Loudoun County Salvation Army efforts, visit their Facebook page at <a href="https://www.facebook.com/SalvationArmyLoudoun/" target="_blank">www.facebook.com/SalvationArmyLoudoun</a>.
 
 Again, thank you Case Cares! - Bobby G. (my buddies John in Nats gear and Ronan in plaid, Bobby G in sweatshirt, and my nephew Kyle in the back)
