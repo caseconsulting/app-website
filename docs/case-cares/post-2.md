@@ -25,7 +25,7 @@ Our team, consisting of eight of us, had pre-registered for this event for a fou
 
 Throughout our work, we were given updates on our processing numbers for the day (somewhere around 41k boxes were processed through our shift) and told some uplifting stories on how the shoe boxes have impacted their recipients. We learned that the boxes we processed would be shipped to Columbia and Ukraine.
 
-<center><img src="/IMG_8908.jpg" width="600"/></center><br/>
+<img align="left" src="/IMG_8908.jpg" width="600"/><br/>
 
 Volunteers from states from all-around the mid-Atlantic have come to the Baltimore processing center. While it was hard work (my back is feeling it as I write this), it was very encouraging to me to know that people in need appreciate the gifts and learn about Jesus. Working with others to share our time and effort for a great cause was uplifting. We plan on making this a yearly tradition!
 
