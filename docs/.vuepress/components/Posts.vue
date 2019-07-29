@@ -75,7 +75,15 @@ export default {
           }
         })
         .sort((a, b) => {
-          return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
+          let aa = a.frontmatter.date.split(' ')[0];
+          let bb = b.frontmatter.date.split(' ')[0];
+
+          aa = aa.split('-');
+          bb = bb.split('-');
+          aa = `${aa[2]}.${aa[0]}.${aa[1]}`;
+          bb = `${bb[2]}.${bb[0]}.${bb[1]}`;
+
+          return bb > aa ? 1 : bb < aa ? -1 : 0;
         });
       return posts;
     }
@@ -95,7 +103,7 @@ export default {
   },
   mounted() {
     let currentPage = this.page ? this.page : this.$page.path;
-    let posts = this.$site.pages
+    let postsStart = this.$site.pages
       .filter(x => {
         // filter by topic
         return x.path.match(new RegExp(`(/)(?=.*html)`));
@@ -103,7 +111,7 @@ export default {
       .sort((a, b) => {
         return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
       });
-    this.orderedPosts = posts;
+    this.orderedPosts = postsStart;
   }
 };
 </script>
