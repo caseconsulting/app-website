@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <SideBar/>
+    <SideBar />
     <div class="posts" v-if="posts.length">
       <div class="post" style="width: 110%" v-for="post in posts">
         <div class="w3-display-container">
@@ -16,7 +16,7 @@
                 v-if="post.frontmatter.image"
                 :src="$withBase(post.frontmatter.image)"
                 alt
-              >
+              />
             </div>
             <p class="meta">
               By
