@@ -17,11 +17,6 @@
   background-color: white;
 }
 
-.post :hover {
-box-shadow: none;
-text-decoration: none;
-}
-
 .title {
   text-align: center;
   font-size: 40px;
@@ -74,8 +69,11 @@ padding-bottom: 0.25rem;
   width: 100%;
 }
 
+
+
+@media (pointer: fine) {
 .w3-display-container:hover .w3-display-hover {
-    display:none;
+  display:block;
 }
 
 .w3-display-container:hover {
@@ -87,20 +85,19 @@ padding-bottom: 0.25rem;
 }
 
 
-@media only screen and (min-width: 767px) {
-  .posts :hover {
-   box-shadow: 0px 2px 5px gray;
-  }
-
-  .post :hover {
-    box-shadow: none;
-    text-decoration: none;
-  }
-
-  .w3-display-container:hover .w3-display-hover {
-    display:block;
-  }
+.posts :hover {
+box-shadow: 0px 2px 5px gray;
 }
+
+.post :hover {
+box-shadow: none;
+text-decoration: none;
+}
+}
+
+//@media only screen and (max-width: 767px) {
+  
+//}
 
 
 .w3-display-topright {
@@ -112,9 +109,9 @@ padding-bottom: 0.25rem;
 }
 
 .w3-display-topright p {
-  line-height: 0;
-  font-size: 13px;
-  color: gray;
+line-height: 0;
+font-size: 13px;
+color: gray;
 }
 
 .tagsHome {
