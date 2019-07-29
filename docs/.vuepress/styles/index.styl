@@ -17,14 +17,6 @@
   background-color: white;
 }
 
-.posts :hover {
-  box-shadow: 0px 2px 5px gray;
-}
-
-.post :hover {
-box-shadow: none;
-text-decoration: none;
-}
 
 .title {
   text-align: center;
@@ -78,10 +70,6 @@ padding-bottom: 0.25rem;
   width: 100%;
 }
 
-.w3-display-container:hover .w3-display-hover {
-  display:block;
-}
-
 .w3-display-container:hover {
   display:inline-block;
 }
@@ -90,22 +78,18 @@ padding-bottom: 0.25rem;
   display:none;
 }
 
-@media only screen and (max-width: 767px) {
-  .w3-display-container:hover .w3-display-hover {
-    display:none;
-  }
-
+@media only screen and (min-width: 767px) {
   .posts :hover {
-  box-shadow: 0 2px 3px #ccc;
+   box-shadow: 0px 2px 5px gray;
   }
 
   .post :hover {
-box-shadow: none;
-text-decoration: none;
-}
+  box-shadow: none;
+  text-decoration: none;
+  }
 
-  .w3-display-hover {
-   display:none;
+  .w3-display-container:hover .w3-display-hover {
+    display:block;
   }
 }
 
