@@ -26,7 +26,7 @@ layout: BlogPost
 
 From nearly getting trapped in an escape room, to eating our way through Georgetown, we had a blast with Case Consulting this summer.
 
-Throughout the first three weeks, we started building our custom office (#vuepress). When visiting our themed office, you may have found a wide range of sights: from unicorns to pineapples to our attempt at a garden. Maybe even a ball pit, but you would have had to be here to find out.
+Throughout the first three weeks, we started building our custom theme office (#vuepress). When visiting our office, you may have found a wide range of sights: from unicorns to pineapples to our attempt at a garden. Maybe even a ball pit, but you would have had to be here to find out.
 
 Each week we enjoyed seeing different members of the Case Consulting team during our scrum and stand-ups, with our President, Paul Farmer, acting as our customer.
 
