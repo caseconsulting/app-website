@@ -14,7 +14,7 @@ tags:
     'CaseInterns',
     'CaseStrong',
     'LetsGetBreadToday',
-    '14Weeks',
+    '13Weeks',
     'ExpenseApp',
     'Unicorn',
     'CaseWebsite',
