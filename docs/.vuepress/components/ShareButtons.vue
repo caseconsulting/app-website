@@ -31,35 +31,30 @@
 <script>
 export default {
   props: ['pageTitle'],
-  data() {
-    return {
-      url: ''
-    };
-  },
   methods: {
-    test() {
-      console.log(this.fb);
+    getUrl() {
+      return window.location.href;
     },
     twitter() {
       return (
         'http://twitter.com/share?url=<URL>&text=Case Consulting: ' +
         this.pageTitle +
         '&via=consultwithcase%0D' +
-        this.url
+        this.getUrl()
       );
     },
     facebook() {
-      return 'https://www.facebook.com/sharer/sharer.php?u=' + this.url;
+      return 'https://www.facebook.com/sharer/sharer.php?u=' + this.getUrl();
     },
     linkedIn() {
-      return 'https://www.linkedin.com/sharing/share-offsite/?url=' + this.url;
+      return 'https://www.linkedin.com/sharing/share-offsite/?url=' + this.getUrl();
     },
     email() {
-      return 'mailto:?subject=Case Consulting: ' + this.pageTitle + '&body=' + this.url;
+      return 'mailto:?subject=Case Consulting: ' + this.pageTitle + '&body=' + this.getUrl();
     }
   },
   mounted() {
-    this.url = window.location.href;
+    this.getUrl();
   }
 };
 </script>
