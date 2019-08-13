@@ -4,7 +4,7 @@ meta:
     content: https://case-blog.netlify.com/example.png
 
 image: /IMG_3391.jpg
-postImage: /IMG_3388.jpg
+postImage: /bridge.jpg
 title: Summer Internship 2019
 author: Austin Lam, Megan Gilbert, Sneha Kuchipudi, and Zak Ramsis
 description: Check out what our 2019 Interns have been up to all summer.
