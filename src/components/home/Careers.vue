@@ -233,10 +233,6 @@
                   <strong>What you'll be doing...</strong>
                   <br />
                   <ul>
-                    <li>
-                      Designing modern, responsive web applications using frameworks such as Bootstrap and Material
-                      Design
-                    </li>
                     <li>Evaluating solutions and developing recommendations</li>
                     <li>Migrating and transforming data for use in new and large-scale applications</li>
                     <li>Supporting all phases of applications systems analysis and programming activities</li>
