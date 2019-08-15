@@ -1,22 +1,39 @@
 export default [
   {
-    id: 23,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1565786687/website/IMG_20190808_190651149.jpg',
-    title: '2019 Internship',
+    id: 25,
+    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1565876204/website/IMG_2036.jpg',
+    title: 'Georgetown Food Tour',
     driveLink: 'https://photos.app.goo.gl/c9htBMzfm8eBBCFR6',
     descrip: [
-      'We had another awesome summer with our interns which included several presentations to the company, an escape room, seeing Spiderman: Far From Home, a food tour in Georgetown, and a trip to the DC Spy Museum!'
+      'Several employees had a great time taking a food tour around Georgetown and ended the day at the DC Spy Museum.'
+    ]
+  },
+  {
+    id: 24,
+    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/a_360/v1565874862/website/IMG_0238.jpg',
+    title: 'Case Champion',
+    driveLink: 'https://photos.app.goo.gl/13fouJwCQNsArM19A',
+    descrip: [
+      'At our June All Hands meeting we awarded the inaugural Case Champion award to Paul Correll for his passion and dedication to the company. The recognition also came with a cool Case hoodie and 3 additional days of PTO, congrats Paul!'
+    ]
+  },
+  {
+    id: 23,
+    iconLink:
+      'https://res.cloudinary.com/consultwithcase/image/upload/v1565806746/website/60608281_2241778069244744_1119221383021199360_n.jpg',
+    title: '2019 Best Places to Work',
+    driveLink: 'https://photos.app.goo.gl/zChz9f7zhgUYkA8U8',
+    descrip: [
+      'We were recognized as the #1 medium-sized company in the Washington D.C. area by the Washington Business Journal! We are completely humbled and incredibly thankful to all of the amazing employees at Case.'
     ]
   },
   {
     id: 22,
-    iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/v1565806746/website/60608281_2241778069244744_1119221383021199360_n.jpg',
-    title: '2019 Best Places to Work',
-    driveLink:
-      'https://www.bizjournals.com/washington/news/2019/04/05/these-are-the-best-places-to-work-in-greater.html',
+    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1565881909/website/bridge.jpg',
+    title: '2019 Internship',
+    driveLink: 'https://photos.app.goo.gl/5m7aQVsUnvCcK2Vc9',
     descrip: [
-      'We were recognized as the #1 medium-sized company in the Washington D.C. area by the Washington Business Journal! We are completely humbled and incredibly thankful to all of the amazing employees at Case!'
+      'We had another awesome summer with our interns which included several presentations to the company, an escape room, seeing Spiderman: Far From Home, a food tour in Georgetown, and a trip to the DC Spy Museum!'
     ]
   },
   {
@@ -25,7 +42,7 @@ export default [
       'https://res.cloudinary.com/consultwithcase/image/upload/v1559827387/website/Screen_Shot_2019-06-06_at_9.21.52_AM.jpg',
     title: '2019 RailsConf',
     driveLink: 'https://photos.app.goo.gl/KGfxABoykFm1SkBn8',
-    descrip: ['Two of our employees learned a lot at the RailsConf in Minneapolis, MN this year!']
+    descrip: ['Two of our employees learned a lot at the RailsConf in Minneapolis, MN this year.']
   },
   {
     id: 20,
@@ -102,7 +119,7 @@ export default [
   },
   {
     id: 12,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1565787526/website/DSC_5082.jpg',
+    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1565874247/website/DSC_5187.jpg',
     title: '2017 Family Picnic',
     driveLink: 'https://photos.app.goo.gl/8RefFAJ1i7EY6yqT2',
     descrip: [
