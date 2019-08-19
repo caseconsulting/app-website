@@ -3,8 +3,7 @@ export default [
     slide: 1,
     first: true, //first slide needs to have id of active
     intern1: {
-      image:
-        'https://res-console.cloudinary.com/consultwithcase/thumbnails/transform/v1/image/upload//v1566217367/d2Vic2l0ZS9pbnRlcm5zL21lZ2Fu/drilldown',
+      image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1566217367/website/interns/megan.jpg',
       quote: [
         `During my internship with Case Consulting, I was able to learn more about real-world development. 
         The company truly cares about their interns: providing training, a custom office space, and planning 
@@ -41,8 +40,7 @@ export default [
       name: 'Austin Lam, 2019 Intern'
     },
     intern2: {
-      image:
-        'https://res-console.cloudinary.com/consultwithcase/thumbnails/transform/v1/image/upload//v1566217448/d2Vic2l0ZS9pbnRlcm5zL3phaw==/drilldown',
+      image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1566217448/website/interns/zak.jpg',
       quote: [
         `Interning at Case Consulting has been such an amazing experience where I have learned so much about 
         how a Software Developer functions in the workplace. Working on the intern team has given me a great 
