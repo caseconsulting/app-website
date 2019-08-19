@@ -1,8 +1,61 @@
 export default [
-  //first slide
   {
     slide: 1,
     first: true, //first slide needs to have id of active
+    intern1: {
+      image:
+        'https://res-console.cloudinary.com/consultwithcase/thumbnails/transform/v1/image/upload//v1566217367/d2Vic2l0ZS9pbnRlcm5zL21lZ2Fu/drilldown',
+      quote: [
+        `During my internship with Case Consulting, I was able to learn more about real-world development. 
+        The company truly cares about their interns: providing training, a custom office space, and planning 
+        various team building events throughout the summer. I learned a ton of new technical skills that I 
+        can’t wait to bring back to University this fall!`
+      ],
+
+      name: 'Megan Gilbert, 2019 Intern'
+    },
+    intern2: {
+      image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1566217026/website/interns/sneha.jpg',
+      quote: [
+        `My internship with Case helped me transcend the classroom and really understand what it is like to 
+          be a full stack developer working in an Agile environment. I was able to explore a versatile range 
+          of technologies such as Vue.js, Serverless, and AWS. And I really appreciated how the company put a 
+          lot of time and effort into making sure we had all of the tools we needed to succeed and ultimately 
+          deploy a real world application.`
+      ],
+
+      name: 'Sneha Kuchipudi, 2019 Intern'
+    }
+  },
+  {
+    slide: 2,
+    intern1: {
+      image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1566217029/website/interns/austin.jpg',
+      quote: [
+        `Case Consulting has far exceeded my expectations for any internship program. Being able to work 
+        hands-on with an amazing team and in an agile environment has prepared me for what it takes to be a 
+        full stack developer. Not only has it taught me to build a simple web application but to utilize other 
+        technologies such as Vue and AWS, taking my skills to another level.`
+      ],
+
+      name: 'Austin Lam, 2019 Intern'
+    },
+    intern2: {
+      image:
+        'https://res-console.cloudinary.com/consultwithcase/thumbnails/transform/v1/image/upload//v1566217448/d2Vic2l0ZS9pbnRlcm5zL3phaw==/drilldown',
+      quote: [
+        `Interning at Case Consulting has been such an amazing experience where I have learned so much about 
+        how a Software Developer functions in the workplace. Working on the intern team has given me a great 
+        understanding of git, full stack web development, what it's like to develop for a customer, and even 
+        AWS. It was also a lot of fun to spend time with the company during events and meetings. Overall, the 
+        Case internship has been both fulfilling and educational. I would recommend joining the Case intern 
+        team if you have any desire to learn and experience software development in the workplace.`
+      ],
+      name: 'Zak Ramsis, 2019 Intern'
+    }
+  },
+  {
+    slide: 3,
     intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535720007/website/interns/fahad.jpg',
       quote: [
@@ -23,9 +76,8 @@ export default [
       name: 'Jacob Boisseau, 2017/2018 Intern'
     }
   },
-  //second slide
   {
-    slide: 2,
+    slide: 4,
     intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535719942/website/interns/andrew.gif',
       quote: [
@@ -46,9 +98,8 @@ export default [
       name: 'Sam Peake, 2018 Intern'
     }
   },
-  //third slide
   {
-    slide: 3,
+    slide: 5,
     intern1: {
       image:
         'https://res.cloudinary.com/consultwithcase/image/upload/c_scale,w_160/v1536585437/website/interns/joe.gif',
