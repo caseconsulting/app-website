@@ -30,16 +30,13 @@
 
 <script>
 export default {
-  props: ['pageTitle'],
   data() {
     return {
       url: ''
     };
   },
+  props: ['pageTitle'],
   methods: {
-    test() {
-      console.log(this.fb);
-    },
     twitter() {
       return (
         'http://twitter.com/share?url=<URL>&text=Case Consulting: ' +
@@ -59,6 +56,9 @@ export default {
     }
   },
   mounted() {
+    this.url = window.location.href;
+  },
+  updated() {
     this.url = window.location.href;
   }
 };

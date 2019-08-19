@@ -15,12 +15,13 @@
                 style="padding-bottom: 5px;"
                 v-if="post.frontmatter.image"
                 :src="$withBase(post.frontmatter.image)"
-                alt=""
+                alt
               />
             </div>
             <p class="meta">
               By
-              <a style="color: tomato;">{{ post.frontmatter.author }}</a> ◆ {{ post.frontmatter.date.slice(0, 8) }}
+              <a style="color: tomato;">{{ post.frontmatter.author }}</a>
+              ◆ {{ post.frontmatter.date.slice(0, 8) }}
             </p>
             <p class="description">{{ post.frontmatter.description }}</p>
           </router-link>
@@ -30,7 +31,9 @@
         </div>
       </div>
     </div>
-    <div v-else><h3>No results match search</h3></div>
+    <div v-else>
+      <h3>No results match search</h3>
+    </div>
   </div>
 </template>
 
@@ -72,7 +75,15 @@ export default {
           }
         })
         .sort((a, b) => {
-          return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
+          let aa = a.frontmatter.date.split(' ')[0];
+          let bb = b.frontmatter.date.split(' ')[0];
+
+          aa = aa.split('-');
+          bb = bb.split('-');
+          aa = `${aa[2]}.${aa[0]}.${aa[1]}`;
+          bb = `${bb[2]}.${bb[0]}.${bb[1]}`;
+
+          return bb > aa ? 1 : bb < aa ? -1 : 0;
         });
       return posts;
     }
@@ -83,10 +94,8 @@ export default {
       switch (topic[1]) {
         case 'case-cares':
           return 'Case Cares';
-        case 'new-hires':
-          return 'New Hires';
-        case 'awards':
-          return 'Awards';
+        case 'case-news':
+          return 'Case News';
         default:
           return 'No Topic';
       }
@@ -94,7 +103,7 @@ export default {
   },
   mounted() {
     let currentPage = this.page ? this.page : this.$page.path;
-    let posts = this.$site.pages
+    let postsStart = this.$site.pages
       .filter(x => {
         // filter by topic
         return x.path.match(new RegExp(`(/)(?=.*html)`));
@@ -102,7 +111,7 @@ export default {
       .sort((a, b) => {
         return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
       });
-    this.orderedPosts = posts;
+    this.orderedPosts = postsStart;
   }
 };
 </script>
