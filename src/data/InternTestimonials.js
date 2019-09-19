@@ -11,7 +11,7 @@ export default [
         can’t wait to bring back to University this fall!`
       ],
 
-      name: 'Megan Gilbert, 2019 Intern'
+      name: 'Megan, 2019 Intern'
     },
     intern2: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1566217026/website/interns/sneha.jpg',
@@ -23,7 +23,7 @@ export default [
           deploy a real world application.`
       ],
 
-      name: 'Sneha Kuchipudi, 2019 Intern'
+      name: 'Sneha, 2019 Intern'
     }
   },
   {
@@ -37,7 +37,7 @@ export default [
         technologies such as Vue and AWS, taking my skills to another level.`
       ],
 
-      name: 'Austin Lam, 2019 Intern'
+      name: 'Austin, 2019 Intern'
     },
     intern2: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1566217448/website/interns/zak.jpg',
@@ -49,7 +49,7 @@ export default [
         Case internship has been both fulfilling and educational. I would recommend joining the Case intern 
         team if you have any desire to learn and experience software development in the workplace.`
       ],
-      name: 'Zak Ramsis, 2019 Intern'
+      name: 'Zak, 2019 Intern'
     }
   },
   {
@@ -62,7 +62,7 @@ export default [
           ' will do everything to help you succeed.'
       ],
 
-      name: 'Fahad Ashraf, 2017/2018 Intern'
+      name: 'Fahad, 2017/2018 Intern'
     },
     intern2: {
       image:
@@ -71,7 +71,7 @@ export default [
         'The Case internship gave me an amazing insight into what I was getting myself into when I said I wanted to be a software developer. The company is a big family which was a major factor in my decision to come on. I learned real-world programming languages' +
           ' and used tech that I found interesting every day I was there.'
       ],
-      name: 'Jacob Boisseau, 2017/2018 Intern'
+      name: 'Jacob, 2017/2018 Intern'
     }
   },
   {
@@ -83,7 +83,7 @@ export default [
           ' will learn how to be an agile developer, while working with cutting edge web technologies such as Vue, Node.js, AWS services, and Express.'
       ],
 
-      name: 'Andrew Cooper, 2018 Intern'
+      name: 'Andrew, 2018 Intern'
     },
     intern2: {
       image:
@@ -93,7 +93,7 @@ export default [
           " website and an expense app that would be used by the company's employees. In doing so, I was able to work with new technologies and agile programming that is used by employees in the company. This internship helped me get a good view of" +
           ' what being a software developer is like, as well as, helping me grow in the profession.'
       ],
-      name: 'Sam Peake, 2018 Intern'
+      name: 'Sam, 2018 Intern'
     }
   },
   {
@@ -108,7 +108,7 @@ export default [
           ' application development, without hesitation.'
       ],
 
-      name: 'Joseph Thompson, 2018 Intern'
+      name: 'Joseph, 2018 Intern'
     }
   }
 ];
