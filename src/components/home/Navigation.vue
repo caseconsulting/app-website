@@ -40,6 +40,9 @@
             <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
               <a href="#contact" class="nav-link p-0">Contact</a>
             </li>
+            <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
+              <a href="https://blog.consultwithcase.com" class="nav-link p-0">Blog</a>
+            </li>
           </ul>
         </div>
         <div class="bptw">
