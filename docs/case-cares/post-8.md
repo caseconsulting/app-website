@@ -1,7 +1,7 @@
 ---
 meta:
   - property: og:image
-    content: https://case-blog.netlify.com/wreaths.jpg
+    content: https://blog.consultwithcase.com/wreaths.jpg
 
 image: /9D8F18C6-B66B-42A8-971E-AAB0C543420F.jpeg
 postImage: /9D8F18C6-B66B-42A8-971E-AAB0C543420F.jpeg

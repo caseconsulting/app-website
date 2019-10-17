@@ -1,7 +1,7 @@
 ---
 meta:
   - property: og:image
-    content: https://case-blog.netlify.com/example.png
+    content: https://blog.consultwithcase.com/60608281_2241778069244744_1119221383021199360_n.jpg
 
 image: /60608281_2241778069244744_1119221383021199360_n.jpg
 postImage: /60608281_2241778069244744_1119221383021199360_n.jpg

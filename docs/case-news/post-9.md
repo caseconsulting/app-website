@@ -1,7 +1,7 @@
 ---
 meta:
   - property: og:image
-    content: https://case-blog.netlify.com/example.png
+    content: https://blog.consultwithcase.com/IMG_3391.jpg
 
 image: /IMG_3391.jpg
 postImage: /bridge.jpg
