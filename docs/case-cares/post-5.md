@@ -1,7 +1,7 @@
 ---
 meta:
   - property: og:image
-    content: https://case-blog.netlify.com/holidayParty.jpg
+    content: https://blog.consultwithcase.com/holidayParty.jpg
 
 image: /IMG_20181213_184735.jpg
 postImage: /IMG_20181213_184735.jpg

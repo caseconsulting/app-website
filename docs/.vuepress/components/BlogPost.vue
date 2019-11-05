@@ -4,7 +4,11 @@
     <section id="bp" class="postPage">
       <div class="w3-display-container">
         <h1 class="title">{{ $page.frontmatter.title }}</h1>
-        <img class="mainImage" v-if="$page.frontmatter.postImage" :src="$withBase($page.frontmatter.postImage)" />
+        <img
+          class="mainImage"
+          v-if="$page.frontmatter.postImage"
+          :src="$withBase($page.frontmatter.postImage)"
+        />
       </div>
       <div class="content">
         <p class="meta" style="font-size: 15px; padding-top: 5px;">
