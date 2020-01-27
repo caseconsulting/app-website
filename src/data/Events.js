@@ -1,5 +1,54 @@
 export default [
   {
+    id: 31,
+    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1580127613/website/DSC_7430_1_90.jpg',
+    title: '2019 Holiday Party',
+    driveLink: 'https://photos.app.goo.gl/JCusPE93AoEMiiTQ9',
+    descrip: ['We returned to Salamander Resort and Spa for our favorite holiday tradition!']
+  },
+  {
+    id: 30,
+    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/q_100/v1580127376/website/IMG_0081.jpg',
+    title: 'Star Wars: The Rise of Skywalker',
+    driveLink: 'https://photos.app.goo.gl/BiTgHAyDSXRVu5AJ6',
+    descrip: ['Everyone enjoyed taking in the final Star Wars film in the Skywalker saga at Alamo Drafthouse']
+  },
+  {
+    id: 29,
+    iconLink:
+      'https://res.cloudinary.com/consultwithcase/image/upload/v1580127326/website/88CB744A-AE25-41B1-A4A5-EFFF753877AD.jpg',
+    title: '2019 AWS re:Invent',
+    driveLink: 'https://photos.app.goo.gl/fnVBgGxKYn1kVPH6A',
+    descrip: ['It was a banner year for Case Consulting at AWS re:Invent as we sent 7 employees to Vegas!']
+  },
+  {
+    id: 28,
+    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/q_100/v1580127390/website/IMG_9258.jpg',
+    title: '2019 Recruiting',
+    driveLink: 'https://photos.app.goo.gl/XADq7TzxiR6AVvD76',
+    descrip: [
+      'We enjoyed meeting all of the bright minds of the future at the Virginia Tech Computer Science Resources Consortium Career Fair'
+    ]
+  },
+  {
+    id: 27,
+    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1580127408/website/IMG_9318.jpg',
+    title: '2019 Khowst Memorial Golf Tournament',
+    driveLink: 'https://photos.app.goo.gl/geB8td3Mv7HYmcJ27',
+    descrip: [
+      "We were thrilled to be able to sponsor two foursomes for the CIA Memorial Foundation's First Annual Khowst Memorial Golf Tournament"
+    ]
+  },
+  {
+    id: 26,
+    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1580127775/website/DSC_5347_50.jpg',
+    title: '2019 Family Picnic',
+    driveLink: 'https://photos.app.goo.gl/FC4kvGSZnZ5ibEPR6',
+    descrip: [
+      "Employees and their families gathered at Case Headquarters in Leesburg to reflect on the Summer, relax, and enjoy each other's company at the annual Case Family Picnic"
+    ]
+  },
+  {
     id: 25,
     iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1565876204/website/IMG_2036.jpg',
     title: 'Georgetown Food Tour',
