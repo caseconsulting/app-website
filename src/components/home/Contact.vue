@@ -45,17 +45,22 @@
                     <strong>case consulting</strong>
                   </a>
                 </div>
-                
+
                 <div class="g-pos-rel g-pl-35 g-mb-25">
                   <i class="fab fa-twitter g-absolute-centered--y g-left-0 g-font-size-20 g-color-primary fa-fw"></i>
                   <a class="g-color-white" href="https://twitter.com/consultwithcase" target="_blank" rel="noopener">
                     <strong>@ConsultWithCase</strong>
                   </a>
                 </div>
-                
+
                 <div class="g-pos-rel g-pl-35 g-mb-25">
                   <i class="fab fa-youtube g-absolute-centered--y g-left-0 g-font-size-20 g-color-primary fa-fw"></i>
-                  <a class="g-color-white" href="https://www.youtube.com/channel/UC_oJY4OrOpLNrIBAN7Y-9fA" target="_blank" rel="noopener">
+                  <a
+                    class="g-color-white"
+                    href="https://www.youtube.com/channel/UC_oJY4OrOpLNrIBAN7Y-9fA"
+                    target="_blank"
+                    rel="noopener"
+                  >
                     <strong>Case Consulting</strong>
                   </a>
                 </div>
