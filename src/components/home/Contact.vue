@@ -41,7 +41,7 @@
 
                 <div class="g-pos-rel g-pl-35 g-mb-25">
                   <i class="fab fa-github g-absolute-centered--y g-left-0 g-font-size-20 g-color-primary fa-fw"></i>
-                  <a class="g-color-white" href="https://github.com/caseconsulting">
+                  <a class="g-color-white" href="https://github.com/caseconsulting" target="_blank" rel="noopener">
                     <strong>case consulting</strong>
                   </a>
                 </div>
