@@ -114,14 +114,6 @@ export default {
 }
 /* header */
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: #fff;
-}
-
 /* menu */
 
 .menu {
@@ -196,14 +188,24 @@ ul {
   top: 0;
 }
 
+.navbar-collapse ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
 /* 48em = 768px */
 /* 62em = 992px */
 
 @media (min-width: 62em) {
-  li {
+
+
+  navbar-collapse li {
     float: left;
   }
-  li a {
+  navbar-collapse li a {
     padding: 20px 30px;
   }
   .menu {
