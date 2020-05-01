@@ -33,7 +33,7 @@
           <div
             id="promoSliderLayer10"
             class="tp-caption tp-shape tp-shapewrapper rs-parallaxlevel-0"
-            style="z-index: 5; background-color: rgba(78, 67, 83, .4); border-color: rgba(78, 67, 83, .5);"
+            style="z-index: 5; background-color: rgba(78, 67, 83, 0.4); border-color: rgba(78, 67, 83, 0.5);"
             data-x="['center','center','center','center']"
             data-y="['middle','middle','middle','middle']"
             data-hoffset="['0','0','0','0']"
@@ -108,7 +108,16 @@
           <div
             id="promoSliderLayer7"
             class="tp-caption NotGeneric-CallToAction rev-btn rs-parallaxlevel-0"
-            style="z-index: 9; font-weight: bold; white-space: nowrap; outline: none; box-shadow: none; box-sizing: border-box; text-transform: uppercase; border-width: 2px;"
+            style="
+              z-index: 9;
+              font-weight: bold;
+              white-space: nowrap;
+              outline: none;
+              box-shadow: none;
+              box-sizing: border-box;
+              text-transform: uppercase;
+              border-width: 2px;
+            "
             data-x="['center','center','center','center']"
             data-y="['middle','middle','middle','middle']"
             data-hoffset="['0','0','0','0']"
@@ -145,7 +154,7 @@ import HomeSlider from '../data/HomeSlider.js';
 import InternSlider from '../data/InternSlider.js';
 
 export default {
-  data: function() {
+  data: function () {
     return {
       homeSlider: HomeSlider,
       internSlider: InternSlider,

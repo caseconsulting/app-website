@@ -376,9 +376,9 @@ export default {
         maxFiles: 1,
         parallelUploads: 1,
         timeout: 180000,
-        init: function() {
+        init: function () {
           var myDropZone = this;
-          myDropZone.on('addedfile', function(file) {
+          myDropZone.on('addedfile', function (file) {
             if (file.type.match(/application.pdf/)) {
               myDropZone.emit('thumbnail', file, '/assets/custom/img/icons/pdfIcon.png');
             } else if (file.type.match(/application.msword/)) {
@@ -387,14 +387,14 @@ export default {
               myDropZone.emit('thumbnail', file, '/assets/custom/img/icons/docxIcon.png');
             }
 
-            myDropZone.getQueuedFiles().forEach(function(f) {
+            myDropZone.getQueuedFiles().forEach(function (f) {
               if (f.name === file.name) {
                 alert('Form cannot have duplicate file names');
                 myDropZone.removeFile(file);
               }
             });
           });
-          myDropZone.on('error', function(file, message) {
+          myDropZone.on('error', function (file, message) {
             if (file.size > 6000000) {
               // error message for max file size (6MB)
               alert('Files must be less than 6MB');
@@ -412,7 +412,7 @@ export default {
             }
           });
 
-          myDropZone.on('sending', function(file) {
+          myDropZone.on('sending', function (file) {
             if (!file.s3Signature) {
               file.accepted = false;
               myDropZone.removeFile(file);
@@ -421,7 +421,7 @@ export default {
         }
       },
       awss3: {
-        signingURL: file => {
+        signingURL: (file) => {
           // console.log('filesigning: ' + this.$refs.dropzone.key + '/' + file.upload.filename);
           return `${process.env.VUE_APP_API}/upload/` + this.$refs.dropzone.key + '/' + file.upload.filename;
         },
@@ -445,7 +445,7 @@ export default {
       email
     },
     jobTitles: {
-      hasJobTitle: val => {
+      hasJobTitle: (val) => {
         return val && val.length > 0;
       }
     },
@@ -453,7 +453,7 @@ export default {
       required
     },
     files: {
-      hasFiles: val => {
+      hasFiles: (val) => {
         return val && val.length > 0;
       }
     },

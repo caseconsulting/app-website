@@ -4,7 +4,7 @@
       <div class="u-heading-v2-2--bottom g-brd-primary g-mb-20">
         <h2
           class="text-uppercase u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md"
-          style="margin-top:100px"
+          style="margin-top: 100px;"
         >
           Testimonials
         </h2>
@@ -27,7 +27,7 @@
             <div class="container">
               <!--Intern at top of slide -->
               <div class="row">
-                <div class="col-md-2" style="text-align:center">
+                <div class="col-md-2" style="text-align: center;">
                   <img
                     :src="test.intern1.image"
                     class="rounded-circle potrait test-image"
@@ -35,10 +35,10 @@
                   />
                 </div>
                 <div class="col-md-10">
-                  <p class="test-par" style="text-align:justify; margin-left:15px;">
+                  <p class="test-par" style="text-align: justify; margin-left: 15px;">
                     "{{ test.intern1.quote[0] }}"
                     <template>
-                      <div style="text-align:right;">- {{ test.intern1.name }}</div>
+                      <div style="text-align: right;">- {{ test.intern1.name }}</div>
                     </template>
                   </p>
                 </div>
@@ -46,15 +46,19 @@
               <!--Intern at bottom of slide only displays if second intern is indicated on page -->
               <div v-if="test.intern2" class="row test-row">
                 <div class="col-md-10">
-                  <p class="test-par" style="text-align:justify;">
+                  <p class="test-par" style="text-align: justify;">
                     "{{ test.intern2.quote[0] }}"
                     <template>
-                      <div style="text-align:right;">- {{ test.intern2.name }}</div>
+                      <div style="text-align: right;">- {{ test.intern2.name }}</div>
                     </template>
                   </p>
                 </div>
-                <div class="col-md-2 order-md-2" style="text-align:center">
-                  <img :src="test.intern2.image" class="rounded-circle potrait test-image" style="text-align:center" />
+                <div class="col-md-2 order-md-2" style="text-align: center;">
+                  <img
+                    :src="test.intern2.image"
+                    class="rounded-circle potrait test-image"
+                    style="text-align: center;"
+                  />
                 </div>
               </div>
             </div>

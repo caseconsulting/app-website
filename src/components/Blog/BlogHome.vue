@@ -29,7 +29,7 @@ import dataPosts from '../../data/BlogPosts.js';
 import blogPost from './BlogPost.vue';
 
 export default {
-  data: function() {
+  data: function () {
     return {
       dataPosts: dataPosts,
       inputedText: '',
@@ -43,15 +43,15 @@ export default {
     filteredPosts() {
       let f = this.filterText;
       let text = f.toLowerCase().split(' ');
-      return dataPosts.filter(function(item) {
-        return text.every(function(el) {
+      return dataPosts.filter(function (item) {
+        return text.every(function (el) {
           return item.title.toLowerCase().indexOf(el) > -1;
         });
       });
     }
   },
   watch: {
-    inputedText: function() {
+    inputedText: function () {
       if (!this.inputedText.length) {
         this.filterText = '';
       }

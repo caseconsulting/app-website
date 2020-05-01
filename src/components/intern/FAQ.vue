@@ -33,7 +33,7 @@ import FAQData from '../../data/FAQ.js';
 import Question from './Question.vue';
 
 export default {
-  data: function() {
+  data: function () {
     return {
       faqQuestions: FAQData,
       color: 'g-color-white'

@@ -20,7 +20,17 @@
                 <canvas
                   class="rounded-circle img-fluid mobile-image award-shadow"
                   id="roles"
-                  style="max-width: 230px; max-height: 230px; padding-left: 0; padding-right: 0; margin-left: auto; margin-right: auto; display: block; width: 230px; height: 230px;"
+                  style="
+                    max-width: 230px;
+                    max-height: 230px;
+                    padding-left: 0;
+                    padding-right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    width: 230px;
+                    height: 230px;
+                  "
                 ></canvas>
               </div>
             </div>
@@ -31,7 +41,14 @@
               <div>
                 <canvas
                   id="bar"
-                  style="max-width: 350px; padding-left: 0; padding-right: 0; margin-left: auto; margin-right: auto; display: block;"
+                  style="
+                    max-width: 350px;
+                    padding-left: 0;
+                    padding-right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                  "
                 ></canvas>
               </div>
             </div>
@@ -43,7 +60,17 @@
                 <canvas
                   class="rounded-circle img-fluid mobile-image award-shadow"
                   id="technology"
-                  style="max-width: 230px; max-height: 230px; padding-left: 0; padding-right: 0; margin-left: auto; margin-right: auto; display: block; width: 230px; height: 230px;"
+                  style="
+                    max-width: 230px;
+                    max-height: 230px;
+                    padding-left: 0;
+                    padding-right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    width: 230px;
+                    height: 230px;
+                  "
                 ></canvas>
               </div>
             </div>

@@ -16,7 +16,7 @@ export default {
     appApply: Apply,
     appSubmit: Submit
   },
-  data: function() {
+  data: function () {
     return {
       show: true
     };
