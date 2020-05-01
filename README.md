@@ -7,7 +7,7 @@
 - Download and install Node.js v12.x from: https://nodejs.org/en/ or https://nodejs.org/dist/latest-v12.x/
 - Install required Node.js modules:
 
-```
+```bash
 npm ci
 ```
 
@@ -25,45 +25,45 @@ https://cli.vuejs.org/guide/mode-and-env.html#using-env-variables-in-client-side
 The `.env` file in the **case-consulting-website-code** S3 bucket in the company AWS account has up-to-date values to run locally.
 Download this file to the project root directory:
 
-```
-aws s3 cp s3://case-consulting-website-code/.env .env
+```bash
+npm run download:local:env
 ```
 
 ## Application tasks
 
 ### Compiles and hot-reloads for development
 
-```
+```bash
 npm run serve
 ```
 
 ### Compiles and minifies for production
 
-```
+```bash
 npm run build
 ```
 
 ### Run your tests
 
-```
+```bash
 npm run test
 ```
 
 ### Lints and fixes files
 
-```
+```bash
 npm run lint
 ```
 
 ### Run your end-to-end tests
 
-```
+```bash
 npm run test:e2e
 ```
 
 ### Run your unit tests
 
-```
+```bash
 npm run test:unit
 ```
 

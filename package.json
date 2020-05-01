@@ -6,6 +6,7 @@
     "build": "vue-cli-service build",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
+    "download:local:env": "aws s3 cp s3://case-consulting-website-code/.env .env",
     "eslint": "eslint . --ext .js --ignore-path .eslintignore --fix",
     "lint": "vue-cli-service lint",
     "precommit": "npm run validate && npm run lint && npm run stylelint && npm run unit",
