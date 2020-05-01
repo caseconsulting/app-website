@@ -11,7 +11,7 @@
     "lint": "vue-cli-service lint",
     "precommit": "npm run validate && npm run lint && npm run stylelint && npm run unit",
     "serve": "vue-cli-service serve",
-    "stylelint": "stylelint 'src/**/*.{css,scss,vue}'",
+    "stylelint": "stylelint src/**/*.{css,scss,vue}",
     "test": "npm run test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",
@@ -20,17 +20,17 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
-    "bootstrap-vue": "^2.4.0",
+    "bootstrap-vue": "^2.13.0",
     "core-js": "^2.6.11",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "vue": "^2.6.11",
     "vue-multiselect": "^2.1.6",
     "vue-router": "^3.1.6",
     "vue-uuid": "^1.1.1",
     "vue2-dropzone": "^3.6.0",
     "vuelidate": "^0.7.5",
-    "vuepress": "^1.3.1",
-    "vuex": "^3.1.3"
+    "vuepress": "^1.4.1",
+    "vuex": "^3.3.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.12.1",
@@ -46,7 +46,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.2.3",
     "jshint": "^2.11.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.0",
     "precommit-hook": "^3.0.0",
     "prettier": "^1.19.1",
     "sass-loader": "^7.3.1",
@@ -54,7 +54,7 @@
     "stylelint-checkstyle-formatter": "^0.1.2",
     "stylelint-config-standard": "^18.3.0",
     "stylelint-processor-html": "^1.0.0",
-    "stylelint-scss": "^3.14.2",
+    "stylelint-scss": "^3.17.1",
     "vue-template-compiler": "^2.6.11"
   },
   "pre-commit": [
