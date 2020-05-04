@@ -188,6 +188,7 @@ var successfulSubmission = false;
 // console log error on s3 upload
 function s3UploadError(errorMessage) {
   // console.log('s3 error');
+  // eslint-disable-next-line
   console.error('Error uploading:', errorMessage);
 }
 // push s3 location on successful upload
