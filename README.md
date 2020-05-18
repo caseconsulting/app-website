@@ -98,30 +98,30 @@ The markdown should be formatted as:
 ---
 meta:
   - property: og:image
-    content: https://blog.consultwithcase.com/Preview-Image.jpg
+    content: https://blog.consultwithcase.com/`Preview-Image.jpg`
 
-image: /Preview-Image.jpg
-postImage: /Post-Image.jpg
-title: Blog Title
-author: Blog Author
-description: Blog description
-date: 12-31-20 (mm-dd-yy)
+image: /`Preview-Image.jpg`
+postImage: /`Post-Image.jpg`
+title: `Blog Title`
+author: `Blog Author`
+description: `Blog description`
+date: `12-31-20` (mm-dd-yy)
 tags:
   [
-    'TagExample1',
-    'TagExample2',
-    'TagExample3',
-    'TagExample4',
-    'TagExample5',
+    '`TagExample1`',
+    '`TagExample2`',
+    '`TagExample3`',
+    '`TagExample4`',
+    '`TagExample5`',
   ]
 layout: BlogPost
 ---
 
-Blog Content...
+`Blog Content...`
 ```
 
 See example [markdown syntax](https://markdown-it.github.io/)
 
 ## Deployment
 
-Changes merged to GitHub will be automatically deployed to Netlify at https://app-website.netlify.app/ and https://blog.consultwithcase.com/. This may time some time. View Netlify status above.
+Changes merged to GitHub will be automatically deployed to Netlify at https://app-website.netlify.app/ and https://blog.consultwithcase.com/. It may take some time for Netlify to build, view status above.
