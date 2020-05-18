@@ -124,4 +124,4 @@ See example [markdown syntax](https://markdown-it.github.io/)
 
 ## Deployment
 
-Changes merged to GitHub will be automatically deployed to Netlify at https://app-website.netlify.app/ and https://blog.consultwithcase.com/
+Changes merged to GitHub will be automatically deployed to Netlify at https://app-website.netlify.app/ and https://blog.consultwithcase.com/. This may time some time. View Netlify status above.
