@@ -70,3 +70,50 @@ npm run test:unit
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+# blog
+
+## Application tasks
+
+To run locally (i.e., start a development server):
+
+```
+npm run docs:dev
+```
+
+To build for production deployment (i.e., create the _\dist_ directory):
+
+```
+npm run docs:build
+```
+
+To add a blog post, create a markdown file and add it to app-website/docs/case-cares or app-website/docs/case-news depending on the topic for your blog post
+
+The markdown should be formatted as:
+
+```
+---
+meta:
+  - property: og:image
+    content: https://blog.consultwithcase.com/Preview-Image.jpg
+
+image: /Preview-Image.jpg
+postImage: /Post-Image.jpg
+title: Blog Title
+author: Blog Author
+description: Blog description
+date: 12-31-20 (mm-dd-yy)
+tags:
+  [
+    'TagExample1',
+    'TagExample2',
+    'TagExample3',
+    'TagExample4',
+    'TagExample5',
+  ]
+layout: BlogPost
+---
+
+Blog Content...
+```
