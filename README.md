@@ -78,19 +78,19 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 To run locally (i.e., start a development server):
 
-```
+```bash
 npm run docs:dev
 ```
 
 To build for production deployment (i.e., create the _\dist_ directory):
 
-```
+```bash
 npm run docs:build
 ```
 
-To add a blog post, create a markdown file (post-#.md) and add it to app-website/docs/case-cares or app-website/docs/case-news depending on the topic for your blog post
+To add a blog post, create a markdown file (post-#.md) and add it to `app-website/docs/case-cares` or `app-website/docs/case-news` depending on the topic for your blog post
 
-Images should be added to app-website/docs/.vuepress/public directory and the path can be referenced in the markdown with the '/' character.
+Images should be added to the `app-website/docs/.vuepress/public` directory and the path can be referenced in the markdown with the '/' character.
 
 The markdown should be formatted as:
 
