@@ -112,7 +112,7 @@ tags:
     'TagExample2',
     'TagExample3',
     'TagExample4',
-    'TagExample5',
+    'TagExample5'
   ]
 layout: BlogPost
 ---
