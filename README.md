@@ -125,9 +125,9 @@ See example [markdown syntax](https://markdown-it.github.io/)
 
 ## Pre-deployment
 
-Netlify automatically builds deploy previews for all pull requests. Pull requests can be created for a branch at https://github.com/caseconsulting/app-website/pulls. The list of deployments and previews can be viewed by clicking the Netlify icon above. Note it may take some time for Netlify to build.
+Netlify automatically builds deploy previews for all pull requests. Pull requests can be created for a branch at https://github.com/caseconsulting/app-website/pulls. The list of deployments and previews can be viewed by clicking [here](https://app.netlify.com/sites/app-website/deploys) or the Netlify icon above. Note it may take a short time for Netlify to build and that deployments cannot be deleted.
 
 
 ## Deployment
 
-Changes merged to the app-website github master branch will be automatically deployed to Netlify at https://app-website.netlify.app/ and https://blog.consultwithcase.com/.
+Changes merged to the app-website github master branch will automatically deploy to Netlify at https://app-website.netlify.app/ and https://blog.consultwithcase.com/.
