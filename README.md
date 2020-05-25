@@ -1,6 +1,6 @@
 # app-website
 
-## Netlify Status
+## Netlify Status and Deployments
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0ed3cdf3-e0fd-493e-8320-159d510167b6/deploy-status)](https://app.netlify.com/sites/app-website/deploys)
 
 **app-website** is written in **Vue.js** and relies on **Node.js** v12.x+ and the **npm** package management system.
@@ -73,7 +73,7 @@ npm run test:unit
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
-# blog
+# Blog
 
 ## Application tasks
 
@@ -123,6 +123,11 @@ Blog Content...
 
 See example [markdown syntax](https://markdown-it.github.io/)
 
+## Pre-deployment
+
+Netlify automatically builds deploy previews for all pull requests. Pull requests can be created for a branch at https://github.com/caseconsulting/app-website/pulls. The list of deployments and previews can be viewed by clicking the Netlify icon above. Note it may take some time for Netlify to build.
+
+
 ## Deployment
 
-Changes merged to GitHub will be automatically deployed to Netlify at https://app-website.netlify.app/ and https://blog.consultwithcase.com/. It may take some time for Netlify to build, view status above.
+Changes merged to the app-website github master branch will be automatically deployed to Netlify at https://app-website.netlify.app/ and https://blog.consultwithcase.com/.
