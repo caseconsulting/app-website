@@ -26,7 +26,7 @@
               <p class="mb-0">
                 Case Consulting is a software services company that supports the mission critical requirements of the
                 federal government and private industry by providing highly talented and exceptionally skilled software
-                developers, architects, software testers, and program managers.
+                developers, architects, software testers, and program managers
               </p>
             </div>
           </article>
