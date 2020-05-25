@@ -6,9 +6,7 @@
         <div class="u-heading-v2-2--bottom g-brd-primary g-mb-20">
           <h2
             class="text-uppercase u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md g-color-white"
-          >
-            Careers
-          </h2>
+          >Careers</h2>
         </div>
       </div>
       <div class="whycase g-color-white container col-md-8 offset-md-2">
@@ -18,7 +16,7 @@
         <div class="col-xl">
           <ul class="g-font-size-16">
             <li>
-              <strong>You do absolutely exceptional work, everyday.</strong>
+              <strong>You do absolutely exceptional work, everyday</strong>
             </li>
             <li>You have high standards and love to build great products</li>
             <li>You like to attack and solve problems quickly not watch from the sidelines</li>
@@ -51,8 +49,7 @@
               role="tab"
               aria-controls="developer-tab"
               aria-selected="false"
-              >Software Developer</a
-            >
+            >Software Developer</a>
           </li>
           <li class="nav-item">
             <a
@@ -63,8 +60,7 @@
               role="tab"
               aria-controls="pm-tab"
               aria-selected="true"
-              >Project Manager</a
-            >
+            >Project Manager</a>
           </li>
           <li class="nav-item">
             <a
@@ -75,8 +71,7 @@
               role="tab"
               aria-controls="syseng-tab"
               aria-selected="false"
-              >System Engineer</a
-            >
+            >System Engineer</a>
           </li>
           <li class="nav-item">
             <a
@@ -87,8 +82,7 @@
               role="tab"
               aria-controls="cloud-tab"
               aria-selected="false"
-              >Cloud Engineer</a
-            >
+            >Cloud Engineer</a>
           </li>
           <li class="nav-item">
             <a
@@ -99,8 +93,7 @@
               role="tab"
               aria-controls="data-tab"
               aria-selected="false"
-              >Data Scientist</a
-            >
+            >Data Scientist</a>
           </li>
           <li class="nav-item">
             <a
@@ -111,8 +104,7 @@
               role="tab"
               aria-controls="tester-tab"
               aria-selected="false"
-              >Quality Assurance/Tester</a
-            >
+            >Quality Assurance/Tester</a>
           </li>
           <li class="nav-item">
             <a
@@ -123,12 +115,16 @@
               role="tab"
               aria-controls="intern-tab"
               aria-selected="false"
-              >Intern</a
-            >
+            >Intern</a>
           </li>
         </ul>
         <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="developer" role="tabpanel" aria-labelledby="developer-tab">
+          <div
+            class="tab-pane fade show active"
+            id="developer"
+            role="tabpanel"
+            aria-labelledby="developer-tab"
+          >
             <div>
               <div class="col-md-8 offset-md-2">
                 <h3 class="text-uppercase g-color-white">
@@ -195,9 +191,7 @@
                   <strong>What you'll be doing...</strong>
                   <br />
                   <ul>
-                    <li>
-                      Work closely with customers to capture needs and ensure the team is meeting those requirements
-                    </li>
+                    <li>Work closely with customers to capture needs and ensure the team is meeting those requirements</li>
                     <li>Form teams and guide them to delivery of solutions that exceed the customers' expectations</li>
                     <li>Work to identify and remove impediments for engineering teams</li>
                     <li>Help individuals meet professional development goals</li>
@@ -210,7 +204,12 @@
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="system-engineer" role="tabpanel" aria-labelledby="syseng-tab">
+          <div
+            class="tab-pane fade"
+            id="system-engineer"
+            role="tabpanel"
+            aria-labelledby="syseng-tab"
+          >
             <div>
               <div class="col-md-8 offset-md-2">
                 <h3 class="text-uppercase g-color-white">
@@ -247,7 +246,12 @@
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="cloud-engineer" role="tabpanel" aria-labelledby="cloud-tab">
+          <div
+            class="tab-pane fade"
+            id="cloud-engineer"
+            role="tabpanel"
+            aria-labelledby="cloud-tab"
+          >
             <div>
               <div class="col-md-8 offset-md-2">
                 <h3 class="text-uppercase g-color-white">
@@ -330,7 +334,12 @@
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="quality-assurance-tester" role="tabpanel" aria-labelledby="tester-tab">
+          <div
+            class="tab-pane fade"
+            id="quality-assurance-tester"
+            role="tabpanel"
+            aria-labelledby="tester-tab"
+          >
             <div>
               <div class="col-md-8 offset-md-2">
                 <h3 class="text-uppercase g-color-white">
@@ -404,9 +413,7 @@
                       Design
                     </li>
                     <li>Working with fellow interns to implement the best user experience possible</li>
-                    <li>
-                      Designing and implementing features in existing and new products that will be used by the company
-                    </li>
+                    <li>Designing and implementing features in existing and new products that will be used by the company</li>
                     <li>Creating single-page-applications using frameworks such as Angular, Vue, and React</li>
                     <li>Building RESTful APIs using frameworks such as Ruby on Rails and Node.js</li>
                     <li>
@@ -415,9 +422,7 @@
                     </li>
                     <li>Writing clean, unit-tested code in languages such as Java, Ruby, and JavaScript</li>
                     <li>Deploying applications in a serverless cloud environment using Amazon Web Services</li>
-                    <li>
-                      Working in an agile, collaborative environment both with fellow interns and software professionals
-                    </li>
+                    <li>Working in an agile, collaborative environment both with fellow interns and software professionals</li>
                     <li>Reviewing and providing detailed feedback on documentation and test plans for features</li>
                   </ul>
                 </div>
@@ -431,7 +436,7 @@
     <apply-button></apply-button>
     <!-- <div class="g-color-white g-font-size-16 text-center">
       <strong style="font-size: 18px;">Send an email to info@consultwithcase.com to apply!</strong>
-    </div> -->
+    </div>-->
     <br />
     <br />
     <!-- End Apply Button  -->
