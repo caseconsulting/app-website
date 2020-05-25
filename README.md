@@ -1,5 +1,6 @@
 # app-website
 
+## Netlify Status
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0ed3cdf3-e0fd-493e-8320-159d510167b6/deploy-status)](https://app.netlify.com/sites/app-website/deploys)
 
 **app-website** is written in **Vue.js** and relies on **Node.js** v12.x+ and the **npm** package management system.
