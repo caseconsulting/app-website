@@ -1,7 +1,11 @@
 # app-website
 
 ## Netlify Status and Deployments
+### App-Website
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0ed3cdf3-e0fd-493e-8320-159d510167b6/deploy-status)](https://app.netlify.com/sites/app-website/deploys)
+
+### Blog
+[![Netlify Status](https://api.netlify.com/api/v1/badges/34a6a4ef-5728-4ee4-bc54-e265c7eef8a3/deploy-status)](https://app.netlify.com/sites/case-blog/deploys/5ecd50adc5929b0006f125e2)
 
 **app-website** is written in **Vue.js** and relies on **Node.js** v12.x+ and the **npm** package management system.
 
@@ -125,7 +129,7 @@ See example [markdown syntax](https://markdown-it.github.io/)
 
 ## Pre-deployment
 
-Netlify automatically builds deploy previews for all pull requests. Pull requests can be created for a branch at https://github.com/caseconsulting/app-website/pulls. The list of deployments and previews can be viewed by clicking [here](https://app.netlify.com/sites/app-website/deploys) or the Netlify icon above. Note it may take a short time for Netlify to build and deployments cannot be deleted.
+Netlify automatically builds deploy previews for all pull requests. Pull requests can be created for a branch at https://github.com/caseconsulting/app-website/pulls. The list of deployments and previews can be viewed by clicking the Netlify icons above. Note it may take a short time for Netlify to build and deployments cannot be deleted.
 
 
 ## Deployment
