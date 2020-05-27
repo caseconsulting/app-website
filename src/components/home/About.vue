@@ -21,7 +21,7 @@
               style="min-height: 100%;"
             >
               <h3 class="text-uppercase g-line-height-1_1 g-font-weight-800 g-font-size-25 g-font-size-30--md g-mb-20">
-                <strong>Work that Matters</strong>
+                <strong>Work that Matters!</strong>
               </h3>
               <p class="mb-0">
                 Case Consulting is a software services company that supports the mission critical requirements of the
