@@ -48,15 +48,20 @@ body {
 
 .first-overlapped {
   position: absolute;
-  left: -10%;
+  left: -10%; /* og was -10 */
 }
 
 .award-overlapped {
   position: relative;
-  left: 23%;
+  left: 10%; /* og was 23 */
 }
 
 .award-overlapped-second {
+  position: absolute;
+  left: 33%; /*og was 56 */
+}
+
+.award-overlapped-third {
   position: absolute;
   left: 56%;
 }
@@ -109,6 +114,12 @@ body {
     margin-bottom: 20px;
   }
   .award-overlapped-second {
+    position: relative;
+    left: 0%;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+  .award-overlapped-third {
     position: relative;
     left: 0%;
     margin-top: -10px;

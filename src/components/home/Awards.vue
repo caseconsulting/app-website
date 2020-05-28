@@ -59,6 +59,20 @@
                     />
                   </a>
                 </div>
+                <div class="col-md-6 award-overlapped-third">
+                  <a
+                    href="https://www.bizjournals.com/washington/news/2020/05/15/best-places-to-work-honorees-covid19-response.html"
+                    target="_blank"
+                    rel="noopener"
+                    border="0"
+                  >
+                    <img
+                      src="../../../public/assets/custom/img/awards/2020_BPTW_EDIT.png"
+                      alt
+                      class="rounded-circle img-fluid mobile-image award-shadow"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
