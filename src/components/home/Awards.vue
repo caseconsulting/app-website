@@ -62,7 +62,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 g-mb-40">
             <p class="g-color-white">
               The Washington Business Journal's Best Places to Work program honors Greater Washington area companies
               that score highest in annual employee engagement. For the 3rd year in a row, Case Consulting Inc. has been
@@ -89,17 +89,17 @@
       </div>
     </div>
     <!-- Numbers Section Content -->
-    <app-numbers></app-numbers>
+    <!-- <app-numbers></app-numbers> -->
     <!-- End Numbers Section -->
   </section>
   <!-- End Awards Section -->
 </template>
 
 <script>
-import Numbers from './Numbers';
-export default {
-  components: {
-    'app-numbers': Numbers
-  }
-};
+// import Numbers from './Numbers';
+// export default {
+//   components: {
+//     'app-numbers': Numbers
+//   }
+// };
 </script>
