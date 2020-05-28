@@ -54,7 +54,13 @@
             <div class="col-xl-12">
               <div class="input" :class="{ invalid: !valid.jobTitles }">
                 <label class="control-label" for="job">*Job Title:</label>
-                <multiselect v-model="jobTitles" :options="jobOptions" :multiple="true" id="job"></multiselect>
+                <multiselect
+                  v-model="jobTitles"
+                  :options="jobOptions"
+                  :multiple="true"
+                  id="job"
+                  @select="internPopUp"
+                ></multiselect>
 
                 <!-- Other Job Title Text Field -->
                 <div
@@ -278,6 +284,10 @@ function validateResume() {
   this.$v.files.$touch();
   this.valid.resume = this.$v.files.hasFiles;
 }
+function internPopUp(jobTitle) {
+  if (jobTitle == 'Intern')
+    alert("If you have already applied on Handshake, there's no need to apply a second time here.");
+}
 // on form submission
 async function onSubmit() {
   this.submitEnabled = false; // disable submit button during form processing
@@ -487,6 +497,8 @@ export default {
     validateJobTitles,
     validateHearAboutUs,
     validateResume,
+    // create pop up with message for intern applicants
+    internPopUp,
     // on form submission
     onSubmit
   }
