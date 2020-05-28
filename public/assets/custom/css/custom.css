@@ -48,17 +48,23 @@ body {
 
 .first-overlapped {
   position: absolute;
-  left: -10%;
-}
-
-.award-overlapped {
-  position: relative;
-  left: 23%;
+  left: -16%;
 }
 
 .award-overlapped-second {
+  position: relative;
+  left: 12%;
+}
+
+
+.award-overlapped-third {
   position: absolute;
-  left: 56%;
+  left: 40%;
+}
+
+.award-overlapped-fourth {
+  position: relative;
+  left: 26%;
 }
 
 .award-shadow {
