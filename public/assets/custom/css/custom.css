@@ -141,7 +141,29 @@ body {
     max-width: 100px;
   }
 }
-
+/* for ipads and ipad pros -awards section */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .first-overlapped {
+    position: absolute;
+    left: -0%;
+  }
+  
+  .award-overlapped-second {
+    position: relative;
+    left: 22%;
+  }
+  
+  
+  .award-overlapped-third {
+    position: absolute;
+    left: 44%;
+  }
+  
+  .award-overlapped-fourth {
+    position: relative;
+    left: 25%;
+  }
+}
 /*master background color*/
 
 .g-theme-bg-color-1 {
