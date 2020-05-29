@@ -108,13 +108,20 @@ body {
     margin-top: 10px;
     margin-bottom: 20px;
   }
-  .award-overlapped {
+  .award-overlapped-second {
     position: relative;
     left: 0%;
     margin-top: -10px;
     margin-bottom: 20px;
   }
-  .award-overlapped-second {
+
+  .award-overlapped-third {
+    position: relative;
+    left: 0%;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+  .award-overlapped-fourth{
     position: relative;
     left: 0%;
     margin-top: -10px;
