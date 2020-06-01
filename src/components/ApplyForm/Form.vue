@@ -59,8 +59,9 @@
                   :options="jobOptions"
                   :multiple="true"
                   id="job"
-                  @select="onChangeDropdown"
+                  @select="checkIntern"
                 ></multiselect>
+                <v-alert type="info"></v-alert>
 
                 <!-- Other Job Title Text Field -->
                 <div
@@ -284,7 +285,7 @@ function validateResume() {
   this.$v.files.$touch();
   this.valid.resume = this.$v.files.hasFiles;
 }
-function onChangeDropdown(event) {
+function checkIntern(event) {
   if (event == 'Intern') {
     alert('NOTE: If you applied through Handshake, we already recievied your application.');
   }
@@ -490,7 +491,7 @@ export default {
     submittedRedirect,
     // populate data.files with dropzone process queue files
     getFiles,
-    onChangeDropdown,
+    checkIntern,
     // return true if all client-side validation passes
     isAllValid,
     validateFirstName,
