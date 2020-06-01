@@ -1,12 +1,8 @@
 <template>
   <!-- Awards Section Content -->
   <section id="awards" class="g-theme-bg-color-1 g-text-color-2 g-pt-10 g-pb-10">
-    <div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <div class="u-heading-v2-2--bottom text-center g-brd-primary g-mb-20">
+    <div class="g-mb-100 g-mt-100">
+      <div class="u-heading-v2-2--bottom text-center g-brd-primary g-mb-20 g-mt-20">
         <h2
           class="text-uppercase text-center u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md g-color-white"
         >
@@ -61,11 +57,7 @@
                     />
                   </a>
                 </div>
-<<<<<<< HEAD
-                <div class="col-md-6 award-overlapped-third">
-=======
                 <div class="col-md-5 award-overlapped-fourth">
->>>>>>> pturriagol-master-909-add-2020-BPTW-information-to-Awards-section
                   <a
                     href="https://www.bizjournals.com/washington/news/2020/05/15/best-places-to-work-honorees-covid19-response.html"
                     target="_blank"
@@ -73,11 +65,7 @@
                     border="0"
                   >
                     <img
-<<<<<<< HEAD
-                      src="../../../public/assets/custom/img/awards/2020_BPTW_EDIT.png"
-=======
                       src="../../../public/assets/custom/img/awards/bptw2020.jpg"
->>>>>>> pturriagol-master-909-add-2020-BPTW-information-to-Awards-section
                       alt
                       class="rounded-circle img-fluid mobile-image award-shadow"
                     />
@@ -118,18 +106,6 @@
       <br />
       <br />
     </div>
-    <!-- Numbers Section Content -->
-    <app-numbers></app-numbers>
-    <!-- End Numbers Section -->
   </section>
   <!-- End Awards Section -->
 </template>
-
-<script>
-import Numbers from './Numbers';
-export default {
-  components: {
-    'app-numbers': Numbers
-  }
-};
-</script>
