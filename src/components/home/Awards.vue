@@ -4,6 +4,8 @@
     <div>
       <br />
       <br />
+      <br />
+      <br />
       <div class="u-heading-v2-2--bottom text-center g-brd-primary g-mb-20">
         <h2
           class="text-uppercase text-center u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md g-color-white"
@@ -14,10 +16,10 @@
       <br />
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-7">
             <div class="container-fluid award-container">
               <div class="row award-row">
-                <div class="col-md-6 first-overlapped">
+                <div class="col-md-5 first-overlapped">
                   <a
                     href="https://www.bizjournals.com/washington/news/2017/05/05/these-are-the-best-places-to-work-in-greater.html"
                     target="_blank"
@@ -31,7 +33,7 @@
                     />
                   </a>
                 </div>
-                <div class="col-md-6 award-overlapped">
+                <div class="col-md-5 award-overlapped-second">
                   <a
                     href="https://www.bizjournals.com/washington/news/2018/04/13/see-the-best-places-to-work-in-greater-washington.html"
                     target="_blank"
@@ -45,7 +47,7 @@
                     />
                   </a>
                 </div>
-                <div class="col-md-6 award-overlapped-second">
+                <div class="col-md-5 award-overlapped-third">
                   <a
                     href="https://www.bizjournals.com/washington/subscriber-only/2019/05/17/best-places-to-work-medium-companies.html"
                     target="_blank"
@@ -59,7 +61,11 @@
                     />
                   </a>
                 </div>
+<<<<<<< HEAD
                 <div class="col-md-6 award-overlapped-third">
+=======
+                <div class="col-md-5 award-overlapped-fourth">
+>>>>>>> pturriagol-master-909-add-2020-BPTW-information-to-Awards-section
                   <a
                     href="https://www.bizjournals.com/washington/news/2020/05/15/best-places-to-work-honorees-covid19-response.html"
                     target="_blank"
@@ -67,7 +73,11 @@
                     border="0"
                   >
                     <img
+<<<<<<< HEAD
                       src="../../../public/assets/custom/img/awards/2020_BPTW_EDIT.png"
+=======
+                      src="../../../public/assets/custom/img/awards/bptw2020.jpg"
+>>>>>>> pturriagol-master-909-add-2020-BPTW-information-to-Awards-section
                       alt
                       class="rounded-circle img-fluid mobile-image award-shadow"
                     />
@@ -76,15 +86,19 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 g-mb-40">
+          <div class="col-md-5">
             <p class="g-color-white">
               The Washington Business Journal's Best Places to Work program honors Greater Washington area companies
-              that score highest in annual employee engagement. For the 3rd year in a row, Case Consulting Inc. has been
+              that score highest in annual employee engagement. For the 4th year in a row, Case Consulting Inc. has been
               recognized as one of the best places to work among small and medium companies:
               <br />
               <br />
             </p>
             <ul class="list-unstyled g-font-size-12 g-mb-30 g-mb-0--md">
+              <li class="g-pos-rel g-pl-10 g-mb-15">
+                <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-white"></i>
+                <p class="list_elem g-color-white">Finalist Medium Company in 2020</p>
+              </li>
               <li class="g-pos-rel g-pl-10 g-mb-15">
                 <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-white"></i>
                 <p class="list_elem g-color-white">#1 Medium Company in 2019</p>
@@ -101,19 +115,21 @@
           </div>
         </div>
       </div>
+      <br />
+      <br />
     </div>
     <!-- Numbers Section Content -->
-    <!-- <app-numbers></app-numbers> -->
+    <app-numbers></app-numbers>
     <!-- End Numbers Section -->
   </section>
   <!-- End Awards Section -->
 </template>
 
 <script>
-// import Numbers from './Numbers';
-// export default {
-//   components: {
-//     'app-numbers': Numbers
-//   }
-// };
+import Numbers from './Numbers';
+export default {
+  components: {
+    'app-numbers': Numbers
+  }
+};
 </script>

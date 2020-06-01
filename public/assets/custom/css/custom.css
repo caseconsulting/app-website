@@ -48,22 +48,40 @@ body {
 
 .first-overlapped {
   position: absolute;
+<<<<<<< HEAD
   left: -10%; /* og was -10 */
-}
-
-.award-overlapped {
-  position: relative;
-  left: 10%; /* og was 23 */
+=======
+  left: -16%;
+>>>>>>> pturriagol-master-909-add-2020-BPTW-information-to-Awards-section
 }
 
 .award-overlapped-second {
+  position: relative;
+<<<<<<< HEAD
+  left: 10%; /* og was 23 */
+=======
+  left: 12%;
+>>>>>>> pturriagol-master-909-add-2020-BPTW-information-to-Awards-section
+}
+
+
+.award-overlapped-third {
   position: absolute;
+<<<<<<< HEAD
   left: 33%; /*og was 56 */
 }
 
 .award-overlapped-third {
   position: absolute;
   left: 56%;
+=======
+  left: 40%;
+}
+
+.award-overlapped-fourth {
+  position: relative;
+  left: 26%;
+>>>>>>> pturriagol-master-909-add-2020-BPTW-information-to-Awards-section
 }
 
 .award-shadow {
@@ -107,13 +125,20 @@ body {
     margin-top: 10px;
     margin-bottom: 20px;
   }
-  .award-overlapped {
+  .award-overlapped-second {
     position: relative;
     left: 0%;
     margin-top: -10px;
     margin-bottom: 20px;
   }
-  .award-overlapped-second {
+
+  .award-overlapped-third {
+    position: relative;
+    left: 0%;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+  .award-overlapped-fourth{
     position: relative;
     left: 0%;
     margin-top: -10px;
@@ -139,7 +164,33 @@ body {
     max-width: 100px;
   }
 }
-
+/* for ipads and ipad pros -awards section */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .first-overlapped {
+    position: absolute;
+    left: -0%;
+    margin-top: 10%;
+  }
+  
+  .award-overlapped-second {
+    position: relative;
+    left: 22%;
+    margin-top: 10%;
+  }
+  
+  
+  .award-overlapped-third {
+    position: absolute;
+    left: 44%;
+    margin-top: 10%;
+  }
+  
+  .award-overlapped-fourth {
+    position: relative;
+    left: 25%;
+    margin-top: 10%;
+  }
+}
 /*master background color*/
 
 .g-theme-bg-color-1 {
