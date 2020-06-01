@@ -1,12 +1,8 @@
 <template>
   <!-- Awards Section Content -->
   <section id="awards" class="g-theme-bg-color-1 g-text-color-2 g-pt-10 g-pb-10">
-    <div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <div class="u-heading-v2-2--bottom text-center g-brd-primary g-mb-20">
+    <div class="g-mb-100 g-mt-100">
+      <div class="u-heading-v2-2--bottom text-center g-brd-primary g-mb-20 g-mt-20">
         <h2
           class="text-uppercase text-center u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md g-color-white"
         >
@@ -107,8 +103,6 @@
           </div>
         </div>
       </div>
-      <br />
-      <br />
     </div>
   </section>
   <!-- End Awards Section -->
