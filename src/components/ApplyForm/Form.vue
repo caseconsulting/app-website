@@ -59,8 +59,9 @@
                   :options="jobOptions"
                   :multiple="true"
                   id="job"
-                  @select="internPopUp"
+                  @select="checkIntern"
                 ></multiselect>
+                <v-alert type="info"></v-alert>
 
                 <!-- Other Job Title Text Field -->
                 <div
@@ -284,9 +285,10 @@ function validateResume() {
   this.$v.files.$touch();
   this.valid.resume = this.$v.files.hasFiles;
 }
-function internPopUp(jobTitle) {
-  if (jobTitle == 'Intern')
-    alert("If you have already applied on Handshake, there's no need to apply a second time here.");
+function checkIntern(event) {
+  if (event == 'Intern') {
+    alert('NOTE: If you applied through Handshake, we already recievied your application.');
+  }
 }
 // on form submission
 async function onSubmit() {
@@ -489,6 +491,7 @@ export default {
     submittedRedirect,
     // populate data.files with dropzone process queue files
     getFiles,
+    checkIntern,
     // return true if all client-side validation passes
     isAllValid,
     validateFirstName,
@@ -497,8 +500,6 @@ export default {
     validateJobTitles,
     validateHearAboutUs,
     validateResume,
-    // create pop up with message for intern applicants
-    internPopUp,
     // on form submission
     onSubmit
   }
