@@ -71,7 +71,7 @@ export default {
           ref: '/#home'
         },
         {
-          name: 'Case ❤️Cares',
+          name: 'Case ❤️ Cares',
           ref: '/#case-cares'
         },
         {
