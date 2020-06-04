@@ -61,7 +61,6 @@
                   id="job"
                   @select="checkIntern"
                 ></multiselect>
-                <v-alert type="info"></v-alert>
 
                 <!-- Other Job Title Text Field -->
                 <div
