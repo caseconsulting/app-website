@@ -1,9 +1,11 @@
 <template>
   <div id="app">
-    <!-- <app-apply v-if="show"></app-apply>
-    <app-submit v-else></app-submit>-->
-    <app-apply :showMe="show" @switched="show = $event" v-if="show"></app-apply>
-    <app-submit :showMe="show" @switched="show = $event" v-if="!show"></app-submit>
+    <v-app>
+      <!-- <app-apply v-if="show"></app-apply>
+      <app-submit v-else></app-submit>-->
+      <app-apply :showMe="show" @switched="show = $event" v-if="show"></app-apply>
+      <app-submit :showMe="show" @switched="show = $event" v-if="!show"></app-submit>
+    </v-app>
   </div>
 </template>
 
@@ -16,10 +18,14 @@ export default {
     appApply: Apply,
     appSubmit: Submit
   },
-  data: function() {
+  data: function () {
     return {
       show: true
     };
   }
 };
 </script>
+
+<style lang="scss">
+@import '../../../node_modules/vuetify/dist/vuetify.min.css';
+</style>

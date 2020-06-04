@@ -54,7 +54,13 @@
             <div class="col-xl-12">
               <div class="input" :class="{ invalid: !valid.jobTitles }">
                 <label class="control-label" for="job">*Job Title:</label>
-                <multiselect v-model="jobTitles" :options="jobOptions" :multiple="true" id="job"></multiselect>
+                <multiselect
+                  v-model="jobTitles"
+                  :options="jobOptions"
+                  :multiple="true"
+                  id="job"
+                  @select="checkIntern"
+                ></multiselect>
 
                 <!-- Other Job Title Text Field -->
                 <div
@@ -188,6 +194,7 @@ var successfulSubmission = false;
 // console log error on s3 upload
 function s3UploadError(errorMessage) {
   // console.log('s3 error');
+  // eslint-disable-next-line
   console.error('Error uploading:', errorMessage);
 }
 // push s3 location on successful upload
@@ -276,6 +283,11 @@ function validateResume() {
   this.getFiles();
   this.$v.files.$touch();
   this.valid.resume = this.$v.files.hasFiles;
+}
+function checkIntern(event) {
+  if (event == 'Intern') {
+    alert('NOTE: If you applied through Handshake, we already recievied your application.');
+  }
 }
 // on form submission
 async function onSubmit() {
@@ -376,9 +388,9 @@ export default {
         maxFiles: 1,
         parallelUploads: 1,
         timeout: 180000,
-        init: function() {
+        init: function () {
           var myDropZone = this;
-          myDropZone.on('addedfile', function(file) {
+          myDropZone.on('addedfile', function (file) {
             if (file.type.match(/application.pdf/)) {
               myDropZone.emit('thumbnail', file, '/assets/custom/img/icons/pdfIcon.png');
             } else if (file.type.match(/application.msword/)) {
@@ -387,14 +399,14 @@ export default {
               myDropZone.emit('thumbnail', file, '/assets/custom/img/icons/docxIcon.png');
             }
 
-            myDropZone.getQueuedFiles().forEach(function(f) {
+            myDropZone.getQueuedFiles().forEach(function (f) {
               if (f.name === file.name) {
                 alert('Form cannot have duplicate file names');
                 myDropZone.removeFile(file);
               }
             });
           });
-          myDropZone.on('error', function(file, message) {
+          myDropZone.on('error', function (file, message) {
             if (file.size > 6000000) {
               // error message for max file size (6MB)
               alert('Files must be less than 6MB');
@@ -412,7 +424,7 @@ export default {
             }
           });
 
-          myDropZone.on('sending', function(file) {
+          myDropZone.on('sending', function (file) {
             if (!file.s3Signature) {
               file.accepted = false;
               myDropZone.removeFile(file);
@@ -421,7 +433,7 @@ export default {
         }
       },
       awss3: {
-        signingURL: file => {
+        signingURL: (file) => {
           // console.log('filesigning: ' + this.$refs.dropzone.key + '/' + file.upload.filename);
           return `${process.env.VUE_APP_API}/upload/` + this.$refs.dropzone.key + '/' + file.upload.filename;
         },
@@ -445,7 +457,7 @@ export default {
       email
     },
     jobTitles: {
-      hasJobTitle: val => {
+      hasJobTitle: (val) => {
         return val && val.length > 0;
       }
     },
@@ -453,7 +465,7 @@ export default {
       required
     },
     files: {
-      hasFiles: val => {
+      hasFiles: (val) => {
         return val && val.length > 0;
       }
     },
@@ -478,6 +490,7 @@ export default {
     submittedRedirect,
     // populate data.files with dropzone process queue files
     getFiles,
+    checkIntern,
     // return true if all client-side validation passes
     isAllValid,
     validateFirstName,

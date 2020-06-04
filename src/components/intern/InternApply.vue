@@ -34,7 +34,7 @@ import Question from './Question.vue';
 import ApplyButton from '../ApplyButton.vue';
 
 export default {
-  data: function() {
+  data: function () {
     return {
       applyQuestions: applyData
     };

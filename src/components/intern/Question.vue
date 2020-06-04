@@ -24,7 +24,7 @@
 <script>
 export default {
   props: ['faq', 'color'],
-  data: function() {
+  data: function () {
     return {
       isInfo: true
     };

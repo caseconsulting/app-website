@@ -18,7 +18,7 @@
         <div class="col-xl">
           <ul class="g-font-size-16">
             <li>
-              <strong>You do absolutely exceptional work, everyday.</strong>
+              <strong>You do absolutely exceptional work, everyday</strong>
             </li>
             <li>You have high standards and love to build great products</li>
             <li>You like to attack and solve problems quickly not watch from the sidelines</li>
@@ -431,7 +431,7 @@
     <apply-button></apply-button>
     <!-- <div class="g-color-white g-font-size-16 text-center">
       <strong style="font-size: 18px;">Send an email to info@consultwithcase.com to apply!</strong>
-    </div> -->
+    </div>-->
     <br />
     <br />
     <!-- End Apply Button  -->

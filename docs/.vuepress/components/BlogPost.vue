@@ -109,6 +109,22 @@ export default {
     getTopic,
     getPost,
     nav
+  },
+  mounted() {
+    // JS Global Compulsory
+    let jQueryScript = document.createElement('script');
+    jQueryScript.setAttribute('src', 'https://code.jquery.com/jquery-3.4.1.min.js');
+    jQueryScript.setAttribute('integrity', 'sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=');
+    jQueryScript.setAttribute('crossorigin', 'anonymous');
+    document.head.appendChild(jQueryScript);
+
+    // bootstrap
+    let bootstrapLink = document.createElement('link');
+    bootstrapLink.setAttribute('href', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+    bootstrapLink.setAttribute('rel', 'stylesheet');
+    bootstrapLink.setAttribute('integrity', 'sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T');
+    bootstrapLink.setAttribute('crossorigin', 'anonymous');
+    document.head.appendChild(bootstrapLink);
   }
 };
 </script>

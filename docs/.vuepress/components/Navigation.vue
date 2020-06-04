@@ -51,8 +51,8 @@
       <div class="bptw">
         <a class="navbar-brand u-header__log">
           <img
-            src="/assets/img/awards/2019_BPTW_logo.png"
-            alt="Best places to work 2019 logo"
+            src="/assets/img/awards/2020_BPTW_logo.png"
+            alt="Best places to work 2020 logo"
             class="nav-pad"
           >
         </a>
@@ -113,14 +113,6 @@ export default {
   }
 }
 /* header */
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: #fff;
-}
 
 /* menu */
 
@@ -196,14 +188,24 @@ ul {
   top: 0;
 }
 
+.navbar-collapse ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
 /* 48em = 768px */
 /* 62em = 992px */
 
 @media (min-width: 62em) {
-  li {
+
+
+  navbar-collapse li {
     float: left;
   }
-  li a {
+  navbar-collapse li a {
     padding: 20px 30px;
   }
   .menu {

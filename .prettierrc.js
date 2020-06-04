@@ -2,5 +2,6 @@ module.exports = {
   bracketSpacing: true,
   printWidth: 120,
   semi: true,
-  singleQuote: true
+  singleQuote: true,
+  trailingComma: 'none'
 };

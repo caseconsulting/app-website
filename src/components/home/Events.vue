@@ -58,7 +58,7 @@
 <script>
 import EventsData from '../../data/Events.js';
 export default {
-  data: function() {
+  data: function () {
     return {
       events: EventsData
     };

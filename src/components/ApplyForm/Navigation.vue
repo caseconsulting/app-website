@@ -21,7 +21,7 @@
           </router-link>-->
 
           <li class="g-mr-30--lg g-mb-7 g-mb-0--lg" active-class="active">
-            <a href="/" class="nav-link p-0">Home</a>
+            <a href="/" class="nav-link p-0" style="color: black;">Home</a>
           </li>
           <!-- <li
             v-for="section in Sections"
@@ -36,7 +36,7 @@
           </li>-->
         </ul>
         <a class="navbar-brand u-header__log">
-          <img src="/assets/custom/img/awards/2019_BPTW_logo.png" alt="Best places to work 2019 logo" class="nav-pad" />
+          <img src="/assets/custom/img/awards/2020_BPTW_logo.png" alt="Best places to work 2020 logo" class="nav-pad" />
         </a>
       </div>
       <!-- End Navigation -->
