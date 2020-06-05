@@ -1,6 +1,14 @@
 <template>
   <div>
-    <v-alert type="info"></v-alert>
+    <v-dialog v-model="alertApplication" dismissible max-width="290">
+      <v-card>
+        <v-card-title class="headline">Already applied?</v-card-title>
+        <v-card-text>If you applied through Handshake, we already recieved your application.</v-card-text>
+        <v-card-actions>
+          <v-btn text color="rgb(231, 70, 60)" @click="alertApplication = false">Ok</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
     <form-header></form-header>
     <section id="apply" class="g-theme-bg-gray-light-v1 g-py-50">
       <div class="applyForm container col-sm-8 col-xl-6 col-lg-8 col-xs-9">
@@ -287,7 +295,7 @@ function validateResume() {
 }
 function checkIntern(event) {
   if (event == 'Intern') {
-    alert('NOTE: If you applied through Handshake, we already recievied your application.');
+    this.alertApplication = true;
   }
 }
 // on form submission
@@ -443,7 +451,8 @@ export default {
         sendFileToServer: false
       },
       comments: '',
-      submitEnabled: true
+      submitEnabled: true,
+      alertApplication: false
     };
   },
   validations: {
