@@ -1,5 +1,6 @@
 <template>
   <div>
+    <v-alert type="info"></v-alert>
     <form-header></form-header>
     <section id="apply" class="g-theme-bg-gray-light-v1 g-py-50">
       <div class="applyForm container col-sm-8 col-xl-6 col-lg-8 col-xs-9">
