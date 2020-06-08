@@ -12,7 +12,9 @@
       <br />
       <div class="container">
         <div class="row">
-          <div class="col-md-7">
+          <!-- spacer column -->
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
             <div class="container-fluid award-container">
               <div class="row award-row">
                 <div class="col-md-5 first-overlapped">
@@ -74,6 +76,8 @@
               </div>
             </div>
           </div>
+          <!-- spacer column -->
+          <div class="col-md-1"></div>
           <div class="col-md-5">
             <p class="g-color-white">
               The Washington Business Journal's Best Places to Work program honors Greater Washington area companies

@@ -77,97 +77,7 @@ body {
 .test-row {
   margin-top: 75px;
 }
-@media only screen and (max-width: 767px) {
-  /* Internship page formatted for iphone (show button) */
-  .intern-background {
-    /* The image used */
-    background-image: url('../img/office/kitchen_edit.jpg');
-    /* Set a specific height */
-    height: 800px;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 
-  .mobile-image {
-    max-height: 125px;
-  }
-  .award-container {
-    text-align: center;
-  }
-  .award-row {
-    max-width: inherit;
-    position: relative;
-  }
-  .first-overlapped {
-    position: relative;
-    left: 0%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  .award-overlapped-second {
-    position: relative;
-    left: 0%;
-    margin-top: -10px;
-    margin-bottom: 20px;
-  }
-
-  .award-overlapped-third {
-    position: relative;
-    left: 0%;
-    margin-top: -10px;
-    margin-bottom: 20px;
-  }
-
-  .award-overlapped-fourth {
-    position: relative;
-    left: 0%;
-    margin-top: -10px;
-    margin-bottom: 20px;
-  }
-
-  .test-par {
-    font-size: 11px;
-  }
-
-  .test-row {
-    margin-top: 25px;
-  }
-
-  .test-image {
-    max-height: 100px;
-    max-width: 100px;
-  }
-}
-/* for ipads and ipad pros -awards section */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .first-overlapped {
-    position: absolute;
-    left: -0%;
-    margin-top: 10%;
-  }
-
-  .award-overlapped-second {
-    position: relative;
-    left: 22%;
-    margin-top: 10%;
-  }
-
-
-  .award-overlapped-third {
-    position: absolute;
-    left: 44%;
-    margin-top: 10%;
-  }
-
-  .award-overlapped-fourth {
-    position: relative;
-    left: 25%;
-    margin-top: 10%;
-  }
-}
 /*master background color*/
 
 .g-theme-bg-color-1 {
@@ -586,6 +496,8 @@ h5 strong a:hover {
   max-height: 80px;
 }
 
+
+
 @media only screen and (max-width: 720px) {
   .logos-moible {
     width: 100%;
@@ -607,7 +519,7 @@ h5 strong a:hover {
   background-image: url('../img/office/kitchen_edit.jpg');
   /* Set a specific height */
   padding-bottom: 200px;
-  /* height: 700px; */
+  height: 800px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -648,4 +560,115 @@ h5 strong a:hover {
   background-color: white;
   padding: 30px;
   border: 1px solid #ebe7e7;
+}
+
+/* for ipads and ipad pros -awards section */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .first-overlapped {
+    position: absolute;
+    left: -0%;
+    margin-top: 10%;
+  }
+
+  .award-overlapped-second {
+    position: relative;
+    left: 22%;
+    margin-top: 10%;
+  }
+
+
+  .award-overlapped-third {
+    position: absolute;
+    left: 44%;
+    margin-top: 10%;
+  }
+
+  .award-overlapped-fourth {
+    position: relative;
+    left: 25%;
+    margin-top: 10%;
+  }
+
+
+  .intern-background {
+    /* The image used */
+    background-image: url('../img/office/kitchen_edit.jpg');
+    /* Set a specific height */
+    padding-bottom: 200px;
+    height: 600px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Internship page formatted for iphone (show button) */
+  .intern-background {
+    /* The image used */
+    background-image: url('../img/office/kitchen_edit.jpg');
+    /* Set a specific height */
+    height: 900px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .mobile-image {
+    max-height: 125px;
+  }
+
+  .award-container {
+    text-align: center;
+  }
+
+  .award-row {
+    max-width: inherit;
+    position: relative;
+  }
+
+  .first-overlapped {
+    position: relative;
+    left: 0%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .award-overlapped-second {
+    position: relative;
+    left: 0%;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+
+  .award-overlapped-third {
+    position: relative;
+    left: 0%;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+
+  .award-overlapped-fourth {
+    position: relative;
+    left: 0%;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+
+  .test-par {
+    font-size: 11px;
+  }
+
+  .test-row {
+    margin-top: 25px;
+  }
+
+  .test-image {
+    max-height: 100px;
+    max-width: 100px;
+  }
 }
