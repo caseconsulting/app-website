@@ -23,7 +23,7 @@
                     border="0"
                   >
                     <img
-                      src="../../../public/assets/custom/img/awards/2017_BPTW_HONOREE.png"
+                      src="../../../public/assets/custom/img/awards/BPTW-2017.png"
                       alt
                       class="rounded-circle img-fluid mobile-image award-shadow"
                     />
@@ -37,7 +37,7 @@
                     border="0"
                   >
                     <img
-                      src="../../../public/assets/custom/img/awards/2018_BPTW_HONOREE.png"
+                      src="../../../public/assets/custom/img/awards/BPTW-2018.png"
                       alt
                       class="rounded-circle img-fluid mobile-image award-shadow"
                     />
@@ -51,7 +51,7 @@
                     border="0"
                   >
                     <img
-                      src="../../../public/assets/custom/img/awards/bptw2019.jpg"
+                      src="../../../public/assets/custom/img/awards/BPTW-2019.png"
                       alt
                       class="rounded-circle img-fluid mobile-image award-shadow"
                     />
@@ -65,7 +65,7 @@
                     border="0"
                   >
                     <img
-                      src="../../../public/assets/custom/img/awards/bptw2020.jpg"
+                      src="../../../public/assets/custom/img/awards/BPTW-2020.png"
                       alt
                       class="rounded-circle img-fluid mobile-image award-shadow"
                     />
