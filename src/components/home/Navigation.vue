@@ -48,7 +48,7 @@
         <div class="bptw">
           <a class="navbar-brand u-header__log">
             <img
-              src="/assets/custom/img/awards/2020_BPTW_logo.png"
+              src="/assets/custom/img/awards/2020_bptw_Logo.png"
               alt="Best places to work 2020 logo"
               class="nav-pad"
             />
