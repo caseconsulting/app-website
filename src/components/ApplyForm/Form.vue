@@ -1,14 +1,6 @@
 <template>
   <div>
-    <v-dialog v-model="alertApplication" dismissible max-width="290">
-      <v-card>
-        <v-card-title class="headline">Already applied?</v-card-title>
-        <v-card-text>If you applied through Handshake, we already recieved your application.</v-card-text>
-        <v-card-actions>
-          <v-btn text color="rgb(231, 70, 60)" @click="alertApplication = false">Ok</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-dialog>
+    <Modal :headline="modalHeadline" :body="modalBody" closeButtonText="Ok" :show.sync="modalDisplay"> </Modal>
     <form-header></form-header>
     <section id="apply" class="g-theme-bg-gray-light-v1 g-py-50">
       <div class="applyForm container col-sm-8 col-xl-6 col-lg-8 col-xs-9">
@@ -150,6 +142,7 @@
                   @vdropzone-s3-upload-error="s3UploadError"
                   @vdropzone-s3-upload-success="s3UploadSuccess"
                   @vdropzone-queue-complete="submittedRedirect"
+                  @vdropzone-error="dropZoneError"
                 ></vue-dropzone>
                 <p class="invalidMsg" v-if="!valid.resume">Please upload a resume.</p>
               </div>
@@ -196,6 +189,7 @@ import vueDropzone from 'vue2-dropzone';
 import { required, email } from 'vuelidate/lib/validators';
 import Header from '../home/Header.vue';
 import axios from 'axios';
+import modal from '../AlertModal.vue';
 
 var successfulSubmission = false;
 
@@ -204,6 +198,9 @@ var successfulSubmission = false;
 function s3UploadError(errorMessage) {
   // console.log('s3 error');
   // eslint-disable-next-line
+  this.modalHeadline = errorMessage;
+  this.modalBody = errorMessage;
+  this.modalDisplay = true;
   console.error('Error uploading:', errorMessage);
 }
 // push s3 location on successful upload
@@ -211,11 +208,12 @@ function s3UploadSuccess(s3ObjectLocation) {
   // console.log('Upload was successful');
   this.uploads.push(s3ObjectLocation);
 }
-// function handleError(file, message) {
-//   console.log('handle error');
-//   console.error(message);
-//   alert(message);
-// }
+// Activate modal upon error event
+function dropZoneError(file, message) {
+  this.modalHeadline = 'Error';
+  this.modalBody = message;
+  this.modalDisplay = true;
+}
 // toggle apply form succesfully submitted page
 function submittedRedirect() {
   // console.log('attemptting to redirect');
@@ -293,11 +291,15 @@ function validateResume() {
   this.$v.files.$touch();
   this.valid.resume = this.$v.files.hasFiles;
 }
+// alert modal for duplicate intern applications via Handshake
 function checkIntern(event) {
   if (event == 'Intern') {
-    this.alertApplication = true;
+    this.modalHeadline = 'Already applied?';
+    this.modalBody = 'If you applied through Handshake, we already recieved your application.';
+    this.modalDisplay = true;
   }
 }
+
 // on form submission
 async function onSubmit() {
   this.submitEnabled = false; // disable submit button during form processing
@@ -339,8 +341,11 @@ async function onSubmit() {
       this.$refs.dropzone.processQueue();
       return response;
     } catch (err) {
+      // Error submitting apply form
       console.error(err); // eslint-disable-line no-console
-      alert('Error submitting apply form. Please try again.');
+      this.modalHeadline = 'Error';
+      this.modalBody = 'Error submitting apply form. Please try again.';
+      this.modalDisplay = true;
       this.submitEnabled = true;
       return err;
     }
@@ -410,26 +415,24 @@ export default {
 
             myDropZone.getQueuedFiles().forEach(function (f) {
               if (f.name === file.name) {
-                alert('Form cannot have duplicate file names');
+                // error max file number exceeded (1)
                 myDropZone.removeFile(file);
               }
             });
           });
           myDropZone.on('error', function (file, message) {
             if (file.size > 6000000) {
-              // error message for max file size (6MB)
-              alert('Files must be less than 6MB');
+              // error max file size (6MB)
               myDropZone.removeFile(file);
             } else if (myDropZone.getQueuedFiles().length >= 1) {
-              // error message for max file number exceeded (1)
-              alert('Form cannot contain more than 1 file');
+              // error max file number exceeded (1)s
               myDropZone.removeFile(file);
             } else if (!file.accepted) {
+              // rejected file upload to s3 bucket
+              // file type can not be uploaded
               successfulSubmission = false;
-              // console.log('rejected file upload to s3 bucket');
-              alert('Upload Canceled: File type ' + file.type + ' can not be uploaded');
             } else {
-              alert(message);
+              console.log(message);
             }
           });
 
@@ -452,7 +455,9 @@ export default {
       },
       comments: '',
       submitEnabled: true,
-      alertApplication: false
+      modalDisplay: false,
+      modalBody: '',
+      modalHeadline: ''
     };
   },
   validations: {
@@ -489,18 +494,19 @@ export default {
   components: {
     Multiselect,
     vueDropzone,
-    formHeader: Header
+    formHeader: Header,
+    Modal: modal
   },
   methods: {
     // console log error on s3 upload
     s3UploadError,
+    dropZoneError,
     // push s3 location on successful upload
     s3UploadSuccess,
     // toggle apply form succesfully submitted page
     submittedRedirect,
     // populate data.files with dropzone process queue files
     getFiles,
-    checkIntern,
     // return true if all client-side validation passes
     isAllValid,
     validateFirstName,
@@ -509,6 +515,8 @@ export default {
     validateJobTitles,
     validateHearAboutUs,
     validateResume,
+    // alerts user on intern application to prevent duplicate applications
+    checkIntern,
     // on form submission
     onSubmit
   }
