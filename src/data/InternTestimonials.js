@@ -1,7 +1,19 @@
 export default [
   {
     slide: 1,
-    first: true,
+    first: true, //first slide needs to have id of active
+    intern1: {
+      image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1596735069/website/interns/Pablo.jpg',
+      quote: [
+        `The amount of work experience that I accumulated at Case was incredible. I was working every day as
+        a full-stack developer in an agile environment. I was able to interact with real world tools such as
+        AWS and with a fully realized application to add to, and improve, functionality. We experienced full 
+        production cycles and were given free reigns to work on the application. Before this internship I 
+        wondered what a real work environment would feel like. Now I feel comfortable in one.`
+      ],
+
+      name: 'Pablo, 2020 Intern'
+    },
     intern2: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1596735069/website/interns/Zertash.jpg',
       quote: [
@@ -12,7 +24,10 @@ export default [
       ],
 
       name: 'Zertash, 2020 Intern'
-    },
+    }
+  },
+  {
+    slide: 2,
     intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1566217367/website/interns/megan.jpg',
       quote: [
@@ -23,11 +38,7 @@ export default [
       ],
 
       name: 'Megan, 2019 Intern'
-    }
-  },
-
-  {
-    slide: 2,
+    },
     intern2: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1566217026/website/interns/sneha.jpg',
       quote: [
@@ -39,8 +50,11 @@ export default [
       ],
 
       name: 'Sneha, 2019 Intern'
-    },
+    }
+  },
 
+  {
+    slide: 3,
     intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1566217029/website/interns/austin.jpg',
       quote: [
@@ -51,10 +65,7 @@ export default [
       ],
 
       name: 'Austin, 2019 Intern'
-    }
-  },
-  {
-    slide: 3,
+    },
     intern2: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1566217448/website/interns/zak.jpg',
       quote: [
@@ -66,8 +77,10 @@ export default [
         team if you have any desire to learn and experience software development in the workplace.`
       ],
       name: 'Zak, 2019 Intern'
-    },
-
+    }
+  },
+  {
+    slide: 4,
     intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535720007/website/interns/fahad.jpg',
       quote: [
@@ -77,10 +90,7 @@ export default [
       ],
 
       name: 'Fahad, 2017/2018 Intern'
-    }
-  },
-  {
-    slide: 4,
+    },
     intern2: {
       image:
         'https://res.cloudinary.com/consultwithcase/image/upload/c_crop,g_custom/c_scale,w_160/v1535719942/website/interns/jacob.jpg',
@@ -89,8 +99,10 @@ export default [
           ' and used tech that I found interesting every day I was there.'
       ],
       name: 'Jacob, 2017/2018 Intern'
-    },
-
+    }
+  },
+  {
+    slide: 5,
     intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535719942/website/interns/andrew.gif',
       quote: [
@@ -99,10 +111,7 @@ export default [
       ],
 
       name: 'Andrew, 2018 Intern'
-    }
-  },
-  {
-    slide: 5,
+    },
     intern2: {
       image:
         'https://res.cloudinary.com/consultwithcase/image/upload/c_crop,g_custom/c_scale,w_160/v1535719942/website/interns/sam.jpg',
@@ -112,7 +121,10 @@ export default [
           ' what being a software developer is like, as well as, helping me grow in the profession.'
       ],
       name: 'Sam, 2018 Intern'
-    },
+    }
+  },
+  {
+    slide: 6,
     intern1: {
       image:
         'https://res.cloudinary.com/consultwithcase/image/upload/c_scale,w_160/v1536585437/website/interns/joe.gif',
