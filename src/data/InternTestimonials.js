@@ -1,7 +1,18 @@
 export default [
   {
     slide: 1,
-    first: true, //first slide needs to have id of active
+    first: true,
+    intern2: {
+      image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1596735069/website/interns/Zertash.jpg',
+      quote: [
+        `My internship at Case was truly eye opening in helping me figure out what type of development and technologies I like working with by exposing me to web development, AWS services, and testing.
+         I can easily say I have learned so much more from this one summer program than I could've with a class.
+          Overall, it was a very well rounded experience, and I got to work with an amazing team!
+        `
+      ],
+
+      name: 'Zertash, 2020 Intern'
+    },
     intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1566217367/website/interns/megan.jpg',
       quote: [
@@ -12,7 +23,11 @@ export default [
       ],
 
       name: 'Megan, 2019 Intern'
-    },
+    }
+  },
+
+  {
+    slide: 2,
     intern2: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1566217026/website/interns/sneha.jpg',
       quote: [
@@ -24,10 +39,8 @@ export default [
       ],
 
       name: 'Sneha, 2019 Intern'
-    }
-  },
-  {
-    slide: 2,
+    },
+
     intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1566217029/website/interns/austin.jpg',
       quote: [
@@ -38,7 +51,10 @@ export default [
       ],
 
       name: 'Austin, 2019 Intern'
-    },
+    }
+  },
+  {
+    slide: 3,
     intern2: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1566217448/website/interns/zak.jpg',
       quote: [
@@ -50,10 +66,8 @@ export default [
         team if you have any desire to learn and experience software development in the workplace.`
       ],
       name: 'Zak, 2019 Intern'
-    }
-  },
-  {
-    slide: 3,
+    },
+
     intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535720007/website/interns/fahad.jpg',
       quote: [
@@ -63,7 +77,10 @@ export default [
       ],
 
       name: 'Fahad, 2017/2018 Intern'
-    },
+    }
+  },
+  {
+    slide: 4,
     intern2: {
       image:
         'https://res.cloudinary.com/consultwithcase/image/upload/c_crop,g_custom/c_scale,w_160/v1535719942/website/interns/jacob.jpg',
@@ -72,10 +89,8 @@ export default [
           ' and used tech that I found interesting every day I was there.'
       ],
       name: 'Jacob, 2017/2018 Intern'
-    }
-  },
-  {
-    slide: 4,
+    },
+
     intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535719942/website/interns/andrew.gif',
       quote: [
@@ -84,7 +99,10 @@ export default [
       ],
 
       name: 'Andrew, 2018 Intern'
-    },
+    }
+  },
+  {
+    slide: 5,
     intern2: {
       image:
         'https://res.cloudinary.com/consultwithcase/image/upload/c_crop,g_custom/c_scale,w_160/v1535719942/website/interns/sam.jpg',
@@ -94,10 +112,7 @@ export default [
           ' what being a software developer is like, as well as, helping me grow in the profession.'
       ],
       name: 'Sam, 2018 Intern'
-    }
-  },
-  {
-    slide: 5,
+    },
     intern1: {
       image:
         'https://res.cloudinary.com/consultwithcase/image/upload/c_scale,w_160/v1536585437/website/interns/joe.gif',
