@@ -3,7 +3,7 @@ export default [
     slide: 1,
     first: true, //first slide needs to have id of active
     intern1: {
-      image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1596735069/website/interns/Pablo.jpg',
+      image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1596809743/website/interns/Pablo.jpg',
       quote: [
         `The amount of work experience that I accumulated at Case was incredible. I was working every day as
         a full-stack developer in an agile environment. I was able to interact with real world tools such as
