@@ -15,7 +15,7 @@ export default [
       name: 'Pablo, 2020 Intern'
     },
     intern2: {
-      image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1596735069/website/interns/Zertash.jpg',
+      image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1596809857/website/interns/Zertash.jpg',
       quote: [
         `My internship at Case was truly eye opening in helping me figure out what type of development and technologies
         I like working with by exposing me to web development, AWS services, and testing. I had the ability to experience
