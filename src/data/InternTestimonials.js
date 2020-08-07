@@ -17,9 +17,12 @@ export default [
     intern2: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1596735069/website/interns/Zertash.jpg',
       quote: [
-        `My internship at Case was truly eye opening in helping me figure out what type of development and technologies I like working with by exposing me to web development, AWS services, and testing.
-         I can easily say I have learned so much more from this one summer program than I could've with a class.
-          Overall, it was a very well rounded experience, and I got to work with an amazing team!
+        `My internship at Case was truly eye opening in helping me figure out what type of development and technologies
+        I like working with by exposing me to web development, AWS services, and testing. I had the ability to experience
+        the life of a full stack developer in a real work environment including daily sprints, feedback on my code, and 
+        various talks on different technologies. I can easily say I have learned so much more from this one summer than 
+        I ever could have imagined. Overall, it was a very well rounded experience, and I got to work with an 
+        amazing team!
         `
       ],
 
