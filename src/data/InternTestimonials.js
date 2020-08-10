@@ -3,6 +3,21 @@ export default [
     slide: 1,
     first: true, //first slide needs to have id of active
     intern1: {
+      image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1596809743/website/interns/Rachel.jpg',
+      quote: [
+        `Interning with Case Consulting has been an amazing opportunity! I am so grateful for all the work
+        Case put in to doing this internship, completely virtual, during the COVID-19 pandemic. Coming into
+        this internship I had no experience in web development but I quickly learned through the help of the
+        Cadre, the other interns, and the training that Case provided. Not only was it a great learning experience
+        but it was a fun internship too!`
+      ],
+
+      name: 'Rachel, 2020 Intern'
+    }
+  },
+  {
+    slide: 2,
+    intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1596809743/website/interns/Pablo.jpg',
       quote: [
         `The amount of work experience that I accumulated at Case was incredible. I was working every day as
@@ -30,7 +45,7 @@ export default [
     }
   },
   {
-    slide: 2,
+    slide: 3,
     intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1566217367/website/interns/megan.jpg',
       quote: [
@@ -57,7 +72,7 @@ export default [
   },
 
   {
-    slide: 3,
+    slide: 4,
     intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1566217029/website/interns/austin.jpg',
       quote: [
@@ -83,7 +98,7 @@ export default [
     }
   },
   {
-    slide: 4,
+    slide: 5,
     intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535720007/website/interns/fahad.jpg',
       quote: [
@@ -105,7 +120,7 @@ export default [
     }
   },
   {
-    slide: 5,
+    slide: 6,
     intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535719942/website/interns/andrew.gif',
       quote: [
@@ -127,7 +142,7 @@ export default [
     }
   },
   {
-    slide: 6,
+    slide: 7,
     intern1: {
       image:
         'https://res.cloudinary.com/consultwithcase/image/upload/c_scale,w_160/v1536585437/website/interns/joe.gif',

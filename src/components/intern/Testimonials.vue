@@ -74,7 +74,7 @@
 
       <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
         <span>
-          <img src="/assets/custom/img/online/rightARrow.png" />
+          <img src="/assets/custom/img/online/rightArrow.png" />
         </span>
         <span class="sr-only">Next</span>
       </a>
