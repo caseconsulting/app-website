@@ -3,6 +3,21 @@ export default [
     slide: 1,
     first: true, //first slide needs to have id of active
     intern1: {
+      image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1597170205/website/interns/Helen.jpg',
+      quote: [
+        `My internship experience with Case Consulting was exactly what I needed; it gave me the chance to work
+        with peers on an interesting project that people actually use. I got to become more comfortable with
+        both new and familiar technologies, like AWS and Vue.js, all while working in a collaborative 
+        group setting under great mentorship. I wasn't sure what to expect with everything moving online due to 
+        COVID-19, but Case definitely didn't disappoint!`
+      ],
+
+      name: 'Helen, 2020 Intern'
+    }
+  },
+  {
+    slide: 2,
+    intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1596809743/website/interns/Rachel.jpg',
       quote: [
         `Interning with Case Consulting has been an amazing opportunity! I am so grateful for all the work
@@ -28,7 +43,7 @@ export default [
     }
   },
   {
-    slide: 2,
+    slide: 3,
     intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1596809743/website/interns/Pablo.jpg',
       quote: [
@@ -57,7 +72,7 @@ export default [
     }
   },
   {
-    slide: 3,
+    slide: 4,
     intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1566217367/website/interns/megan.jpg',
       quote: [
@@ -84,7 +99,7 @@ export default [
   },
 
   {
-    slide: 4,
+    slide: 5,
     intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1566217029/website/interns/austin.jpg',
       quote: [
@@ -110,7 +125,7 @@ export default [
     }
   },
   {
-    slide: 5,
+    slide: 6,
     intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535720007/website/interns/fahad.jpg',
       quote: [
@@ -132,7 +147,7 @@ export default [
     }
   },
   {
-    slide: 6,
+    slide: 7,
     intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535719942/website/interns/andrew.gif',
       quote: [
@@ -154,7 +169,7 @@ export default [
     }
   },
   {
-    slide: 7,
+    slide: 8,
     intern1: {
       image:
         'https://res.cloudinary.com/consultwithcase/image/upload/c_scale,w_160/v1536585437/website/interns/joe.gif',
