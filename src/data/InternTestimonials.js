@@ -13,6 +13,20 @@ export default [
       ],
 
       name: 'Helen, 2020 Intern'
+    },
+    intern2: {
+      image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1597179200/website/interns/Diego.jpg',
+      quote: [
+        `Interning with Case was a whole new experience for me especially during this new norm of 
+        remote work. Despite the entire internship being completely virtual, I quickly learned and adapted to new 
+        technologies with the guidance of Cadre and other employees whom were very helpful throughout the entire 
+        learning process. Not only did I get exposed to some of the most popular 
+        technologies in web development such as AWS services and Vue.js framework, I also had the opportunity interact
+        with other Case employees and deep dive into their area of specialty. After this experience, I definitely feel
+        more comfortable working in a team and adapting to any challenges that come up.`
+      ],
+
+      name: 'Diego, 2020 Intern'
     }
   },
   {
