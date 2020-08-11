@@ -13,6 +13,18 @@ export default [
       ],
 
       name: 'Rachel, 2020 Intern'
+    },
+    intern2: {
+      image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1597170205/website/interns/Charles.jpg',
+      quote: [
+        `Being an intern at Case, I got the opportunity to work with technologies and work on real world applications 
+        that I would have never been able to at school. I got to have first hand experience on what full-stack development
+        really means, and how to apply it to a truly dynamic web application. We got to work with multiple different AWS services and  
+        varied technology stacks, all in a fast-paced but manageable agile environment. I came in with almost no web development experience, 
+        but came out knowing more than I ever thought I would and only wanting to learn more!`
+      ],
+
+      name: 'Charles, 2020 Intern'
     }
   },
   {
