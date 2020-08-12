@@ -3,6 +3,91 @@ export default [
     slide: 1,
     first: true, //first slide needs to have id of active
     intern1: {
+      image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1597170205/website/interns/Helen.jpg',
+      quote: [
+        `My internship experience with Case Consulting was exactly what I needed; it gave me the chance to work
+        with peers on an interesting project that people actually use. I got to become more comfortable with
+        both new and familiar technologies, like AWS and Vue.js, all while working in a collaborative 
+        group setting under great mentorship. I wasn't sure what to expect with everything moving online due to 
+        COVID-19, but Case definitely didn't disappoint!`
+      ],
+
+      name: 'Helen, 2020 Intern'
+    },
+    intern2: {
+      image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1597179200/website/interns/Diego.jpg',
+      quote: [
+        `Interning with Case was a whole new experience for me especially during this new norm of 
+        remote work. Despite the entire internship being completely virtual, I quickly learned and adapted to new 
+        technologies with the guidance of Cadre and other employees whom were very helpful throughout the entire 
+        learning process. Not only did I get exposed to some of the most popular 
+        technologies in web development such as AWS services and Vue.js framework, I also had the opportunity to interact
+        with other Case employees and deep dive into their area of expertise. After this experience, I definitely feel
+        more comfortable working in a team and adapting to any challenges that come up.`
+      ],
+
+      name: 'Diego, 2020 Intern'
+    }
+  },
+  {
+    slide: 2,
+    intern1: {
+      image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1596809743/website/interns/Rachel.jpg',
+      quote: [
+        `Interning with Case Consulting has been an amazing opportunity! I am so grateful for all the work
+        Case put in to doing this internship, completely virtual, during the COVID-19 pandemic. Coming into
+        this internship I had no experience in web development but I quickly learned through the help of the
+        Cadre, the other interns, and the training that Case provided. Not only was it a great learning experience
+        but it was a fun internship too!`
+      ],
+
+      name: 'Rachel, 2020 Intern'
+    },
+    intern2: {
+      image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1597170205/website/interns/Charles.jpg',
+      quote: [
+        `Being an intern at Case, I got the opportunity to work with technologies and work on real world applications 
+        that I would have never been able to at school. I got to have first hand experience on what full-stack development
+        really means, and how to apply it to a truly dynamic web application. We got to work with multiple different AWS services and  
+        varied technology stacks, all in a fast-paced but manageable agile environment. I came in with almost no web development experience, 
+        but came out knowing more than I ever thought I would and only wanting to learn more!`
+      ],
+
+      name: 'Charles, 2020 Intern'
+    }
+  },
+  {
+    slide: 3,
+    intern1: {
+      image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1596809743/website/interns/Pablo.jpg',
+      quote: [
+        `The amount of work experience that I accumulated at Case was incredible. I was working every day as
+        a full-stack developer in an agile environment. I was able to interact with real world tools such as
+        AWS and with a fully realized application to add to, and improve, functionality. We experienced full 
+        production cycles and were given free reigns to work on the application. Before this internship I 
+        wondered what a real work environment would feel like. Now I feel comfortable in one.`
+      ],
+
+      name: 'Pablo, 2020 Intern'
+    },
+    intern2: {
+      image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1596809857/website/interns/Zertash.jpg',
+      quote: [
+        `My internship at Case was truly eye opening in helping me figure out what type of development and technologies
+        I like working with by exposing me to web development, AWS services, and testing. I had the ability to experience
+        the life of a full stack developer in a real work environment including daily sprints, feedback on my code, and 
+        various talks on different technologies. I can easily say I have learned so much more from this one summer than 
+        I ever could have imagined. Overall, it was a very well rounded experience, and I got to work with an 
+        amazing team!
+        `
+      ],
+
+      name: 'Zertash, 2020 Intern'
+    }
+  },
+  {
+    slide: 4,
+    intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1566217367/website/interns/megan.jpg',
       quote: [
         `During my internship with Case Consulting, I was able to learn more about real-world development. 
@@ -26,8 +111,9 @@ export default [
       name: 'Sneha, 2019 Intern'
     }
   },
+
   {
-    slide: 2,
+    slide: 5,
     intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1566217029/website/interns/austin.jpg',
       quote: [
@@ -53,7 +139,7 @@ export default [
     }
   },
   {
-    slide: 3,
+    slide: 6,
     intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535720007/website/interns/fahad.jpg',
       quote: [
@@ -75,7 +161,7 @@ export default [
     }
   },
   {
-    slide: 4,
+    slide: 7,
     intern1: {
       image: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535719942/website/interns/andrew.gif',
       quote: [
@@ -97,7 +183,7 @@ export default [
     }
   },
   {
-    slide: 5,
+    slide: 8,
     intern1: {
       image:
         'https://res.cloudinary.com/consultwithcase/image/upload/c_scale,w_160/v1536585437/website/interns/joe.gif',

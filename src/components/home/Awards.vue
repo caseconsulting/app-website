@@ -12,7 +12,8 @@
       <br />
       <div class="container">
         <div class="row">
-          <div class="col-md-7">
+          <!-- spacer column -->
+          <div class="col-lg-7 col-sm-12">
             <div class="container-fluid award-container">
               <div class="row award-row">
                 <div class="col-md-5 first-overlapped">
@@ -23,7 +24,7 @@
                     border="0"
                   >
                     <img
-                      src="../../../public/assets/custom/img/awards/2017_BPTW_HONOREE.png"
+                      src="../../../public/assets/custom/img/awards/BPTW-2017.png"
                       alt
                       class="rounded-circle img-fluid mobile-image award-shadow"
                     />
@@ -37,7 +38,7 @@
                     border="0"
                   >
                     <img
-                      src="../../../public/assets/custom/img/awards/2018_BPTW_HONOREE.png"
+                      src="../../../public/assets/custom/img/awards/BPTW-2018.png"
                       alt
                       class="rounded-circle img-fluid mobile-image award-shadow"
                     />
@@ -51,7 +52,7 @@
                     border="0"
                   >
                     <img
-                      src="../../../public/assets/custom/img/awards/bptw2019.jpg"
+                      src="../../../public/assets/custom/img/awards/BPTW-2019.png"
                       alt
                       class="rounded-circle img-fluid mobile-image award-shadow"
                     />
@@ -65,7 +66,7 @@
                     border="0"
                   >
                     <img
-                      src="../../../public/assets/custom/img/awards/bptw2020.jpg"
+                      src="../../../public/assets/custom/img/awards/BPTW-2020.png"
                       alt
                       class="rounded-circle img-fluid mobile-image award-shadow"
                     />
@@ -74,7 +75,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-5">
+          <!-- spacer column -->
+          <div class="col-lg-5 col-sm-12">
             <p class="g-color-white">
               The Washington Business Journal's Best Places to Work program honors Greater Washington area companies
               that score highest in annual employee engagement. For the 4th year in a row, Case Consulting Inc. has been

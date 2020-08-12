@@ -17,7 +17,7 @@
           :key="slide"
           :class="active(testimonials[slide - 1].first)"
           data-target="#carouselExampleIndicators"
-          :data-slide-to="slide"
+          :data-slide-to="slide - 1"
         ></li>
       </ol>
 
@@ -74,7 +74,7 @@
 
       <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
         <span>
-          <img src="/assets/custom/img/online/rightARrow.png" />
+          <img src="/assets/custom/img/online/rightArrow.png" />
         </span>
         <span class="sr-only">Next</span>
       </a>

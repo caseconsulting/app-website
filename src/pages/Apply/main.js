@@ -9,7 +9,7 @@ import(/* webpackMode: "eager" */ 'vuetify/dist/vuetify.min.css');
 Vue.use(Vuelidate);
 
 Vue.config.productionTip = false;
-
+window.EventBus = new Vue();
 new Vue({
   store,
   vuetify,
