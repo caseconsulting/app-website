@@ -17,7 +17,7 @@
           :key="slide"
           :class="active(testimonials[slide - 1].first)"
           data-target="#carouselExampleIndicators"
-          :data-slide-to="slide"
+          :data-slide-to="slide - 1"
         ></li>
       </ol>
 
