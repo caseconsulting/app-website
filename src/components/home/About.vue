@@ -66,7 +66,6 @@
           <!-- Article -->
           <article class="d-flex flex-wrap text-center g-color-gray-dark-v3" style="min-height: 100%;">
             <div class="order-2 w-100">
-              <!-- shutterstock_719340379 too large for cloudinary -->
               <img
                 class="w-100 img-fluid"
                 style="min-height: 100%;"
