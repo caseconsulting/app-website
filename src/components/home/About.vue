@@ -11,7 +11,7 @@
               <img
                 class="w-100 img-fluid"
                 style="min-height: 100%;"
-                src="https://res.cloudinary.com/consultwithcase/image/upload/v1596811743/website/home/shutterstock_321052289.jpg"
+                src="assets/custom/img/online/shutterstock_321052289.jpg"
                 alt="Sepia Desk"
               />
             </div>
@@ -39,7 +39,7 @@
               <img
                 class="w-100 h-100"
                 style="min-height: 100%;"
-                src="https://res.cloudinary.com/consultwithcase/image/upload/v1561333509/website/home/meeting-min.jpg"
+                src="assets/custom/img/online/meeting-min.jpg"
                 alt="Meeting"
               />
             </div>
@@ -66,11 +66,10 @@
           <!-- Article -->
           <article class="d-flex flex-wrap text-center g-color-gray-dark-v3" style="min-height: 100%;">
             <div class="order-2 w-100">
-              <!-- shutterstock_719340379 too large for cloudinary -->
               <img
                 class="w-100 img-fluid"
                 style="min-height: 100%;"
-                src="../../../public/assets/custom/img/online/shutterstock_719340379.jpg"
+                src="assets/custom/img/online/shutterstock_719340379.jpg"
                 alt="Image description"
               />
             </div>

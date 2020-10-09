@@ -1,27 +1,26 @@
 export default [
   {
     id: 31,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1580127613/website/DSC_7430_1_90.jpg',
+    iconLink: 'assets/custom/img/events/DSC_7430_1_90.jpg',
     title: '2019 Holiday Party',
     driveLink: 'https://www.youtube.com/watch?v=wYW0BcKOnU0',
     descrip: ['We returned to Salamander Resort and Spa for our favorite holiday tradition!']
   },
   {
     id: 30,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/q_100/v1580127376/website/IMG_0081.jpg',
+    iconLink: 'assets/custom/img/events/IMG_0081.jpg',
     title: 'Star Wars: The Rise of Skywalker',
     descrip: ['Everyone enjoyed taking in the final Star Wars film in the Skywalker saga at Alamo Drafthouse']
   },
   {
     id: 29,
-    iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/v1580127326/website/88CB744A-AE25-41B1-A4A5-EFFF753877AD.jpg',
+    iconLink: 'assets/custom/img/events/88CB744A-AE25-41B1-A4A5-EFFF753877AD.jpg',
     title: '2019 AWS re:Invent',
     descrip: ['It was a banner year for Case Consulting at AWS re:Invent as we sent 7 employees to Vegas!']
   },
   {
     id: 28,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/q_100/v1580127390/website/IMG_9258.jpg',
+    iconLink: 'assets/custom/img/events/IMG_9258.jpg',
     title: '2019 Recruiting',
     descrip: [
       'We enjoyed meeting all of the bright minds of the future at the Virginia Tech Computer Science Resources Consortium Career Fair'
@@ -29,7 +28,7 @@ export default [
   },
   {
     id: 27,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1580127408/website/IMG_9318.jpg',
+    iconLink: 'assets/custom/img/events/IMG_9318.jpg',
     title: '2019 Khowst Memorial Golf Tournament',
     descrip: [
       "We were thrilled to be able to sponsor two foursomes for the CIA Memorial Foundation's First Annual Khowst Memorial Golf Tournament"
@@ -37,7 +36,7 @@ export default [
   },
   {
     id: 26,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1580127775/website/DSC_5347_50.jpg',
+    iconLink: 'assets/custom/img/events/DSC_5347_50.jpg',
     title: '2019 Family Picnic',
     driveLink: 'https://www.youtube.com/watch?v=52lgxg1P9qQ',
     descrip: [
@@ -46,7 +45,7 @@ export default [
   },
   {
     id: 25,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1565876204/website/IMG_2036.jpg',
+    iconLink: 'assets/custom/img/events/IMG_2036.jpg',
     title: 'Georgetown Food Tour',
     driveLink: 'https://www.youtube.com/watch?v=3DOM5aCxY-k',
     descrip: [
@@ -55,7 +54,7 @@ export default [
   },
   {
     id: 24,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/a_360/v1565874862/website/IMG_0238.jpg',
+    iconLink: 'assets/custom/img/events/IMG_0238.jpg',
     title: 'Case Champion',
     descrip: [
       'At our June All Hands meeting we awarded the inaugural Case Champion award to Paul Correll for his passion and dedication to the company. The recognition also came with a cool Case hoodie and 3 additional days of PTO, congrats Paul!'
@@ -63,8 +62,7 @@ export default [
   },
   {
     id: 23,
-    iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/v1565806746/website/60608281_2241778069244744_1119221383021199360_n.jpg',
+    iconLink: 'assets/custom/img/events/60608281_2241778069244744_1119221383021199360_n.jpg',
     title: '2019 Best Places to Work',
     descrip: [
       'We were recognized as the #1 medium-sized company in the Washington D.C. area by the Washington Business Journal! We are completely humbled and incredibly thankful to all of the amazing employees at Case.'
@@ -72,7 +70,7 @@ export default [
   },
   {
     id: 22,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1565881909/website/bridge.jpg',
+    iconLink: 'assets/custom/img/events/bridge.jpg',
     title: '2019 Internship',
     driveLink: 'https://www.youtube.com/watch?v=0jQ8fZhTc3I',
     descrip: [
@@ -81,15 +79,13 @@ export default [
   },
   {
     id: 21,
-    iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/v1559827387/website/Screen_Shot_2019-06-06_at_9.21.52_AM.jpg',
+    iconLink: 'assets/custom/img/events/Screen_Shot_2019-06-06_at_9.21.52_AM.png',
     title: '2019 RailsConf',
     descrip: ['Two of our employees learned a lot at the RailsConf in Minneapolis, MN this year.']
   },
   {
     id: 20,
-    iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/v1559827815/website/Screen_Shot_2019-06-06_at_9.28.59_AM.jpg',
+    iconLink: 'assets/custom/img/events/Screen_Shot_2019-06-06_at_9.28.59_AM.png',
     title: '2019 Wreaths Across America',
     descrip: [
       'On January 19, several employees helped clean-up wreaths at Arlington National Cemetery as part of the Wreaths Across America program.Case employees were more than happy to put in a little work to honor those that are laid to rest in Arlington.'
@@ -97,8 +93,7 @@ export default [
   },
   {
     id: 19,
-    iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/v1560788481/website/Screen_Shot_2019-06-17_at_12.20.29_PM.jpg',
+    iconLink: 'assets/custom/img/events/Screen_Shot_2019-06-17_at_12.20.29_PM.png',
     title: '2018 Holiday Party',
     driveLink: 'https://www.youtube.com/watch?v=UF4IcoyzRP8',
     descrip: [
@@ -107,8 +102,7 @@ export default [
   },
   {
     id: 18,
-    iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/v1560516962/website/Screen_Shot_2019-06-14_at_8.51.40_AM.jpg',
+    iconLink: 'assets/custom/img/events/Screen_Shot_2019-06-14_at_8.51.40_AM.png',
     title: '2018 Family Picnic',
     driveLink: 'https://www.youtube.com/watch?v=yeNzYTd0TKQ',
     descrip: [
@@ -117,8 +111,7 @@ export default [
   },
   {
     id: 17,
-    iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/c_crop,g_center,h_811,w_1082/v1535029085/website/2018_leesburg_race.jpg',
+    iconLink: 'assets/custom/img/events/2018_leesburg_race.jpg',
     title: '2018 Leesburg 5k/20k',
     descrip: [
       'Many employees ran in the 2018 Leesburg 5k/20k race. We also had a really fun design for the race shirt thanks to the daughter of a Case Employee!'
@@ -126,7 +119,7 @@ export default [
   },
   {
     id: 16,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029084/website/IMG_5303.jpg',
+    iconLink: 'assets/custom/img/events/IMG_5303.jpg',
     title: '2018 Summer Internship',
     descrip: [
       'We had an awesome summer with our interns which included several presentations to the company, seeing Solo: A Star Wars Story, taking in a D.C.United game in a downpour, and some Top Golf!'
@@ -134,14 +127,13 @@ export default [
   },
   {
     id: 15,
-    iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/c_crop,g_custom:faces,h_738,w_1045/v1535029083/website/IMG_4328.jpg',
+    iconLink: 'assets/custom/img/events/IMG_4328.jpg',
     title: 'Solo: A Star Wars Story',
     descrip: ['We got the internship kicked off with a company movie event to see Solo: A Star Wars Story.']
   },
   {
     id: 14,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1565786129/website/DSC_8818.jpg',
+    iconLink: 'assets/custom/img/events/DSC_8818.jpg',
     title: '2017 Holiday Party',
     driveLink: 'https://www.youtube.com/watch?v=vKx7wLF5x4o',
     descrip: [
@@ -150,13 +142,13 @@ export default [
   },
   {
     id: 13,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029086/website/IMG_6485.jpg',
+    iconLink: 'assets/custom/img/events/IMG_6485.jpg',
     title: '2017 AWS re:Invent',
     descrip: ['This year we had a record number of employees go to AWS re:Invent in Las Vegas!']
   },
   {
     id: 12,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1565874247/website/DSC_5187.jpg',
+    iconLink: 'assets/custom/img/events/DSC_5187.jpg',
     title: '2017 Family Picnic',
     driveLink: 'https://www.youtube.com/watch?v=8TYU92pUAmY',
     descrip: [
@@ -165,8 +157,7 @@ export default [
   },
   {
     id: 11,
-    iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/v1535029075/website/AB880EA9-3749-4AB6-92E8-7F05B63A6A24.jpg',
+    iconLink: 'assets/custom/img/events/AB880EA9-3749-4AB6-92E8-7F05B63A6A24.jpg',
     title: 'Recruiting @ VT CSRC Career Fair',
     descrip: [
       'Several employees attended the Virginia Tech Computer Science Resources Consortium Career Fair in search of another group of interns for the Summer of 2018!'
@@ -174,7 +165,7 @@ export default [
   },
   {
     id: 10,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029082/website/IMG_1002.jpg',
+    iconLink: 'assets/custom/img/events/IMG_1002.jpg',
     title: '2017 Summer Internship',
     descrip: [
       'Big changes for Case Consulting in 2017 as we moved to new offices and embarked on our inaugural Summer Internship program!'
@@ -182,7 +173,7 @@ export default [
   },
   {
     id: 9,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1565787709/website/IMG_0620.jpg',
+    iconLink: 'assets/custom/img/events/IMG_0620.jpg',
     title: '2017 Best Places to Work',
     descrip: [
       "Several of our employees attended the Washington Business Journal's 2017 Best Places to Work ceremony in Washington D.C."
@@ -190,14 +181,13 @@ export default [
   },
   {
     id: 8,
-    iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/v1535029074/website/52237478987__477B81CD-3FD9-489A-9462-DFC6F13C3CE9.jpg',
+    iconLink: 'assets/custom/img/events/52237478987__477B81CD-3FD9-489A-9462-DFC6F13C3CE9.jpg',
     title: 'Game Nights',
     descrip: ['Employees always have a good time at our monthly game nights in our wonderful office space.']
   },
   {
     id: 7,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029080/website/IMG_0110.jpg',
+    iconLink: 'assets/custom/img/events/IMG_0110.jpg',
     title: '2017 Serverless Conf',
     descrip: [
       'Two of our employees learned a lot while taking in some of the sights at Serverless Conf in Austin, Texas!'
@@ -205,8 +195,7 @@ export default [
   },
   {
     id: 6,
-    iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/v1565787842/website/case-consulting-holiday-party-2016_31610416671_o.jpg',
+    iconLink: 'assets/custom/img/events/case-consulting-holiday-party-2016_31610416671_o.jpg',
     title: '2016 Holiday Party',
     driveLink: 'https://www.youtube.com/watch?v=agjygnhMYcY',
     descrip: [
@@ -215,8 +204,7 @@ export default [
   },
   {
     id: 5,
-    iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/v1535029073/website/2016-case-consulting-family-picnic_29175329344_o.jpg',
+    iconLink: 'assets/custom/img/events/2016-case-consulting-family-picnic_29175329344_o.jpg',
     title: '2016 Family Picnic',
     driveLink: 'https://www.youtube.com/watch?v=aCXGJwUJlFc',
     descrip: [
@@ -225,7 +213,7 @@ export default [
   },
   {
     id: 4,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029089/website/IMG_20161130_114803187.jpg',
+    iconLink: 'assets/custom/img/events/IMG_20161130_114803187.jpg',
     title: 're:Invent 2016',
     descrip: [
       'Case Consulting was well represented at AWS re:Invent this year. Employees enjoyed all of the talks and after - hours events and cant wait to go back next year.'
@@ -233,14 +221,13 @@ export default [
   },
   {
     id: 3,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029090/website/IMG_20161216_164441944.jpg',
+    iconLink: 'assets/custom/img/events/IMG_20161216_164441944.jpg',
     title: 'Rogue One: A Star Wars Movie',
     descrip: ['The force is strong with us as we watched Rogue One at the Alamo Drafthouse.']
   },
   {
     id: 2,
-    iconLink:
-      'https://res.cloudinary.com/consultwithcase/image/upload/v1535029076/website/case-consulting-holiday-party-2015_23844271536_o.jpg',
+    iconLink: 'assets/custom/img/events/case-consulting-holiday-party-2015_23844271536_o.jpg',
     title: '2015 Holiday Party',
     driveLink: 'https://www.youtube.com/watch?v=eDWpRXA6DWQ',
     descrip: [
@@ -249,7 +236,7 @@ export default [
   },
   {
     id: 1,
-    iconLink: 'https://res.cloudinary.com/consultwithcase/image/upload/v1535029088/website/IMG_20151218_161108726.jpg',
+    iconLink: 'assets/custom/img/events/IMG_20151218_161108726.jpg',
     title: 'Star Wars: The Force Awakens',
     descrip: ['Several employees viewed the latest Star Wars movie at the Udvar Hazy IMAX theater.']
   }
