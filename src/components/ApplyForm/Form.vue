@@ -172,7 +172,7 @@
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                 Submitting
               </button>
-              <button v-else type="submit" :disabled="!submitEnabled" class="btn btn-success" style="opacity: 0.8;">
+              <button v-else type="submit" :disabled="!submitEnabled" class="btn btn-success" style="opacity: 0.8">
                 Submit
               </button>
             </div>

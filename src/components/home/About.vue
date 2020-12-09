@@ -6,11 +6,11 @@
       <div class="row d-flex align-items-stretch no-gutters">
         <div class="col-md-4 g-parent g-bg-white">
           <!-- Article -->
-          <article class="d-flex flex-wrap text-center g-color-gray-dark-v3" style="min-height: 100%;">
+          <article class="d-flex flex-wrap text-center g-color-gray-dark-v3" style="min-height: 100%">
             <div class="order-2 w-100">
               <img
                 class="w-100 img-fluid"
-                style="min-height: 100%;"
+                style="min-height: 100%"
                 src="assets/custom/img/online/shutterstock_321052289.jpg"
                 alt="Sepia Desk"
               />
@@ -18,7 +18,7 @@
             <div
               id="work-that-matters"
               class="order-1 w-100 g-z-index-1 g-py-50 g-py-100--md g-px-15 g-px-50--md"
-              style="min-height: 100%;"
+              style="min-height: 100%"
             >
               <h3 class="text-uppercase g-line-height-1_1 g-font-weight-800 g-font-size-25 g-font-size-30--md g-mb-20">
                 <strong>Work that Matters</strong>
@@ -34,18 +34,18 @@
         </div>
         <div class="col-md-4 g-parent g-theme-bg-gray-dark-v1">
           <!-- Article -->
-          <article class="d-flex flex-wrap text-center g-color-white" style="min-height: 100%;">
+          <article class="d-flex flex-wrap text-center g-color-white" style="min-height: 100%">
             <div class="order-1 w-100">
               <img
                 class="w-100 h-100"
-                style="min-height: 100%;"
+                style="min-height: 100%"
                 src="assets/custom/img/online/meeting-min.jpg"
                 alt="Meeting"
               />
             </div>
             <div
               class="order-md-2 w-100 g-z-index-1 g-py-50 g-py-100--md g-px-15 g-px-50--md g-theme-bg-color-1"
-              style="min-height: 100%;"
+              style="min-height: 100%"
             >
               <h3
                 class="text-uppercase g-line-height-1_1 g-font-weight-800 g-font-size-25 g-font-size-30--md g-color-white g-mb-20"
@@ -64,11 +64,11 @@
         </div>
         <div class="col-md-4 g-parent g-bg-white">
           <!-- Article -->
-          <article class="d-flex flex-wrap text-center g-color-gray-dark-v3" style="min-height: 100%;">
+          <article class="d-flex flex-wrap text-center g-color-gray-dark-v3" style="min-height: 100%">
             <div class="order-2 w-100">
               <img
                 class="w-100 img-fluid"
-                style="min-height: 100%;"
+                style="min-height: 100%"
                 src="assets/custom/img/online/shutterstock_719340379.jpg"
                 alt="Image description"
               />
@@ -76,7 +76,7 @@
             <div
               id="leaders-that-captivate"
               class="order-1 w-100 g-z-index-1 g-py-50 g-py-100--md g-px-15 g-px-50--md"
-              style="min-height: 100%;"
+              style="min-height: 100%"
             >
               <h3 class="text-uppercase g-line-height-1_1 g-font-weight-800 g-font-size-25 g-font-size-30--md g-mb-20">
                 <strong>Leaders that captivate</strong>
