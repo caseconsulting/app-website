@@ -144,3 +144,53 @@ Steps to recreate the BPTW button for a new year:
 2. Import the BPTW-Template.png located at ./public/assets/custom/img/awards
 3. Add the year using Inter font in white (0xffffff), with size of 114 px, and Black style
 4. Save the image as a png titled BPTW-YEAR.png in the awards folder
+
+## Documentation
+
+**Axios:**
+
+https://github.com/axios/axios
+
+**Bootstrap-vue:**
+
+https://bootstrap-vue.org/docs
+
+**jQuery**
+
+https://api.jquery.com/
+
+**Vue:**
+
+https://vuejs.org/v2/guide/
+
+Please note we are currently using Vue2. When we migrate to Vue3 replace the above link.
+
+**Vue-Multiselect**
+
+https://vue-multiselect.js.org/
+
+**Vue-Router**
+
+https://router.vuejs.org/api/
+
+**Vue2-Dropzone**
+
+https://rowanwins.github.io/vue-dropzone/docs/dist/#/installation
+
+**Vuelidate**
+
+https://vuelidate.js.org/
+
+**Vuepress**
+
+https://vuepress.vuejs.org/ 
+
+**Vuetify:**
+
+https://vuetifyjs.com/en/
+
+**Vuex**
+
+https://vuex.vuejs.org/
+
+
