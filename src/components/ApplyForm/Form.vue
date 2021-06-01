@@ -196,12 +196,10 @@ var successfulSubmission = false;
 // METHODS -----
 // console log error on s3 upload
 function s3UploadError(errorMessage) {
-  // console.log('s3 error');
-  // eslint-disable-next-line
   this.modalHeadline = errorMessage;
   this.modalBody = errorMessage;
   this.modalDisplay = true;
-  console.error('Error uploading:', errorMessage);
+  console.error('Error uploading:', errorMessage); // eslint-disable-line no-console
 }
 // push s3 location on successful upload
 function s3UploadSuccess(s3ObjectLocation) {
@@ -432,7 +430,7 @@ export default {
               // file type can not be uploaded
               successfulSubmission = false;
             } else {
-              console.log(message);
+              console.log(message); // eslint-disable-line no-console
             }
           });
 
