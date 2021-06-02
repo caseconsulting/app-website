@@ -41,24 +41,30 @@ body {
   height: auto;
 }
 
+
 .first-overlapped {
   position: absolute;
-  left: -16%;
+  left: -10%;
 }
 
 .award-overlapped-second {
   position: relative;
-  left: 12%;
+  left: 20%;
 }
 
 .award-overlapped-third {
   position: absolute;
-  left: 40%;
+  left: 50%;
 }
 
 .award-overlapped-fourth {
   position: relative;
-  left: 26%;
+  left: 4.5%;
+}
+
+.award-overlapped-fifth {
+  position: relative;
+  left: -6%;
 }
 
 .award-shadow {
@@ -567,32 +573,41 @@ h5 strong a:hover {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .first-overlapped {
     position: absolute;
-    left: 0%;
+    left: 5%;
     margin-top: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 0%;
   }
 
   .award-overlapped-second {
     position: relative;
-    left: 22%;
+    left: 35%;
     margin-top: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 0%;
   }
 
 
   .award-overlapped-third {
     position: absolute;
-    left: 44%;
+    left: 65%;
     margin-top: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 0%;
   }
 
   .award-overlapped-fourth {
     position: relative;
-    left: 25%;
-    margin-top: 5%;
+    left: 20%;
+    margin-top: 0%;
     margin-bottom: 10%;
   }
+
+  .award-overlapped-fifth {
+    position: relative;
+    left: 9%;
+    margin-top: 0%;
+    margin-bottom: 10%;
+  }
+
+  
 
   .award-row {
     max-width: 80%;
@@ -667,6 +682,13 @@ h5 strong a:hover {
   }
 
   .award-overlapped-fourth {
+    position: relative;
+    left: 0%;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  } 
+
+  .award-overlapped-fifth {
     position: relative;
     left: 0%;
     margin-top: -10px;
