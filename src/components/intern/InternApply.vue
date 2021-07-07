@@ -18,9 +18,6 @@
             :faq="applyQuestion"
           ></question>
           <apply-button></apply-button>
-          <!-- <div class="g-font-size-16 text-center">
-            <strong style="color: #E74C3C;">Send an email to info@consultwithcase.com to apply!</strong>
-          </div> -->
         </div>
       </div>
     </div>

@@ -19,8 +19,8 @@
               <br />
               <br />Our team will review your application and contact you shortly. In the meantime, if you have any
               questions you may email
-              <a href="mailto:info@consultwithcase.com" style="color: #4e4353; text-decoration: underline"
-                >info@consultwithcase.com</a
+              <a href="mailto:resumes@consultwithcase.com" style="color: #4e4353; text-decoration: underline"
+                >resumes@consultwithcase.com</a
               >.
             </h5>
           </div>
