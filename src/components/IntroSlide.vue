@@ -2,11 +2,11 @@
   <!-- Section Content -->
   <section class="rev_slider_wrapper fullwidthbanner-container" data-alias="image-hero20">
     <!-- START REVOLUTION SLIDER 5.0.7 fullwidth mode -->
-    <div id="promoSlider" class="rev_slider fullwidthabanner" style="display: none;" data-version="5.0.7">
+    <div id="promoSlider" class="rev_slider fullwidthabanner" style="display: none" data-version="5.0.7">
       <ul>
         <!-- SLIDE  -->
         <li
-          style="text-align: center;"
+          style="text-align: center"
           data-index="rs-68"
           data-transition="zoomout"
           data-slotamount="default"
@@ -33,7 +33,7 @@
           <div
             id="promoSliderLayer10"
             class="tp-caption tp-shape tp-shapewrapper rs-parallaxlevel-0"
-            style="z-index: 5; background-color: rgba(78, 67, 83, 0.4); border-color: rgba(78, 67, 83, 0.5);"
+            style="z-index: 5; background-color: rgba(78, 67, 83, 0.4); border-color: rgba(78, 67, 83, 0.5)"
             data-x="['center','center','center','center']"
             data-y="['middle','middle','middle','middle']"
             data-hoffset="['0','0','0','0']"
@@ -53,7 +53,7 @@
           <div
             id="promoSliderLayer1"
             class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-0"
-            style="z-index: 7; white-space: nowrap; text-align: center; text-transform: uppercase;"
+            style="z-index: 7; white-space: nowrap; text-align: center; text-transform: uppercase"
             data-x="['center','center','center','center']"
             data-y="['middle','middle','middle','middle']"
             data-hoffset="['0','0','0','0']"
@@ -85,7 +85,7 @@
           <div
             id="promoSliderLayer4"
             class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-0"
-            style="z-index: 8; white-space: nowrap; text-align: center; text-transform: uppercase;"
+            style="z-index: 8; white-space: nowrap; text-align: center; text-transform: uppercase"
             data-x="['center','center','center','center']"
             data-hoffset="['0','0','0','0']"
             data-y="['middle','middle','middle','middle']"
@@ -143,7 +143,7 @@
         </li>
       </ul>
       <div class="tp-static-layers"></div>
-      <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+      <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important"></div>
     </div>
   </section>
   <!-- END REVOLUTION SLIDER -->

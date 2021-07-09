@@ -35,7 +35,7 @@
               <li>Likes to have fun</li>
             </ul>
           </div>
-          <div class="col-md-4" style="margin-bottom: 100px;">
+          <div class="col-md-4" style="margin-bottom: 100px">
             <ul>
               <h3 class="g-color-white">
                 <strong>Other Requirements</strong>

@@ -4,7 +4,13 @@
     <div class="g-mb-100 g-mt-100">
       <div class="u-heading-v2-2--bottom text-center g-brd-primary g-mb-20 g-mt-20">
         <h2
-          class="text-uppercase text-center u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md g-color-white"
+          class="
+            text-uppercase text-center
+            u-heading-v2__title
+            g-font-weight-800 g-font-size-30
+            g-font-size-40--md
+            g-color-white
+          "
         >
           Awards
         </h2>
@@ -58,6 +64,8 @@
                     />
                   </a>
                 </div>
+              </div>
+              <div class="row award-row">
                 <div class="col-md-5 award-overlapped-fourth">
                   <a
                     href="https://www.bizjournals.com/washington/news/2020/05/15/best-places-to-work-honorees-covid19-response.html"
@@ -72,6 +80,20 @@
                     />
                   </a>
                 </div>
+                <div class="col-md-5 award-overlapped-fifth">
+                  <a
+                    href="https://www.bizjournals.com/washington/subscriber-only/2021/05/21/best-places-to-work-medium-companies.html"
+                    target="_blank"
+                    rel="noopener"
+                    border="0"
+                  >
+                    <img
+                      src="../../../public/assets/custom/img/awards/BPTW-2021.png"
+                      alt
+                      class="rounded-circle img-fluid mobile-image award-shadow"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -79,7 +101,7 @@
           <div class="col-lg-5 col-sm-12">
             <p class="g-color-white">
               The Washington Business Journal's Best Places to Work program honors Greater Washington area companies
-              that score highest in annual employee engagement. For the 4th year in a row, Case Consulting Inc. has been
+              that score highest in annual employee engagement. For the 5th year in a row, Case Consulting Inc. has been
               recognized as one of the best places to work among small and medium companies:
               <br />
               <br />
@@ -87,7 +109,11 @@
             <ul class="list-unstyled g-font-size-12 g-mb-30 g-mb-0--md">
               <li class="g-pos-rel g-pl-10 g-mb-15">
                 <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-white"></i>
-                <p class="list_elem g-color-white">Finalist Medium Company in 2020</p>
+                <p class="list_elem g-color-white">#1 Medium Company in 2021</p>
+              </li>
+              <li class="g-pos-rel g-pl-10 g-mb-15">
+                <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-white"></i>
+                <p class="list_elem g-color-white">#2 Medium Company in 2020</p>
               </li>
               <li class="g-pos-rel g-pl-10 g-mb-15">
                 <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-white"></i>

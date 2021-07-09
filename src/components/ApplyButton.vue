@@ -16,7 +16,7 @@
         "
         href="/apply-form"
       >
-        <a style="color: white;">Apply Now</a>
+        <a style="color: white">Apply Now</a>
       </a>
     </div>
   </div>

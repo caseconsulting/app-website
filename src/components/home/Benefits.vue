@@ -164,7 +164,7 @@
                 <ul class="list-unstyled g-font-size-12 g-mb-30 g-mb-0--md">
                   <li class="g-pos-rel g-pl-10 g-mb-15">
                     <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
-                    <p class="list_elem">$5,000 referral bonus for fully-cleared candidates</p>
+                    <p class="list_elem">$10,000 referral bonus for fully-cleared candidates</p>
                   </li>
                   <li class="g-pos-rel g-pl-10 g-mb-15">
                     <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
