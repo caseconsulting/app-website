@@ -3,7 +3,7 @@ export default [
     slide: 1,
     first: true,
     intern1: {
-      image: 'assets/custom/img/Interns/spencer.gif',
+      image: 'assets/custom/img/interns/spencer.gif',
       quote: [
         `The past summer interning at Case was an incredible experience where I was able to hone my skills as a
          full-stack developer. We were exposed to so many practical tools and it was great having the help of 
@@ -15,7 +15,7 @@ export default [
       name: 'Spencer, 2021 Intern'
     },
     intern2: {
-      image: 'assets/custom/img/Interns/tom.gif',
+      image: 'assets/custom/img/interns/tom.gif',
       quote: [
         `Working as an intern this summer at Case has been a blast. Learning about current technology used in the
          real world like AWS and following agile methodologies has taught me what it’s like to be a full-stack 
@@ -31,7 +31,7 @@ export default [
   {
     slide: 2,
     intern1: {
-      image: 'assets/custom/img/Interns/keston.gif',
+      image: 'assets/custom/img/interns/keston.gif',
       quote: [
         `Being part of the internship program with Case Consulting was very beneficial. At the beginning of the 
         summer, I was intimidated to begin working on a real web app using unfamiliar technology. However, through 
@@ -44,7 +44,7 @@ export default [
       name: 'Keston, 2021 Intern'
     },
     intern2: {
-      image: 'assets/custom/img/Interns/chad.gif',
+      image: 'assets/custom/img/interns/chad.gif',
       quote: [
         `This internship was a blast for me. I got to collaborate daily with the other interns and cadre members, 
         constantly getting a new perspective on how to solve various problems. Despite being somewhat unfamiliar 
@@ -60,7 +60,7 @@ export default [
   {
     slide: 3,
     intern1: {
-      image: 'assets/custom/img/Interns/rahul.gif',
+      image: 'assets/custom/img/interns/rahul.gif',
       quote: [
         `Interning at Case was a surreal experience. Not only was the internship fun, but they taught us various 
         useful technologies and techniques that are used in the industry, while working on a real-world project. 
@@ -75,7 +75,7 @@ export default [
   {
     slide: 4,
     intern1: {
-      image: 'assets/custom/img/Interns/Helen.jpg',
+      image: 'assets/custom/img/interns/Helen.jpg',
       quote: [
         `My internship experience with Case Consulting was exactly what I needed; it gave me the chance to work
         with peers on an interesting project that people actually use. I got to become more comfortable with
@@ -87,7 +87,7 @@ export default [
       name: 'Helen, 2020 Intern'
     },
     intern2: {
-      image: 'assets/custom/img/Interns/Diego.jpg',
+      image: 'assets/custom/img/interns/Diego.jpg',
       quote: [
         `Interning with Case was a whole new experience for me especially during this new norm of
         remote work. Despite the entire internship being completely virtual, I quickly learned and adapted to new
@@ -104,7 +104,7 @@ export default [
   {
     slide: 5,
     intern1: {
-      image: 'assets/custom/img/Interns/Rachel.jpg',
+      image: 'assets/custom/img/interns/Rachel.jpg',
       quote: [
         `Interning with Case Consulting has been an amazing opportunity! I am so grateful for all the work
         Case put in to doing this internship, completely virtual, during the COVID-19 pandemic. Coming into
@@ -116,7 +116,7 @@ export default [
       name: 'Rachel, 2020 Intern'
     },
     intern2: {
-      image: 'assets/custom/img/Interns/Charles.jpg',
+      image: 'assets/custom/img/interns/Charles.jpg',
       quote: [
         `Being an intern at Case, I got the opportunity to work with technologies and work on real world applications
         that I would have never been able to at school. I got to have first hand experience on what full-stack development
@@ -131,7 +131,7 @@ export default [
   {
     slide: 6,
     intern1: {
-      image: 'assets/custom/img/Interns/Pablo.jpg',
+      image: 'assets/custom/img/interns/Pablo.jpg',
       quote: [
         `The amount of work experience that I accumulated at Case was incredible. I was working every day as
         a full-stack developer in an agile environment. I was able to interact with real world tools such as
@@ -143,7 +143,7 @@ export default [
       name: 'Pablo, 2020 Intern'
     },
     intern2: {
-      image: 'assets/custom/img/Interns/Zertash.jpg',
+      image: 'assets/custom/img/interns/Zertash.jpg',
       quote: [
         `My internship at Case was truly eye opening in helping me figure out what type of development and technologies
         I like working with by exposing me to web development, AWS services, and testing. I had the ability to experience
@@ -160,7 +160,7 @@ export default [
   {
     slide: 7,
     intern1: {
-      image: 'assets/custom/img/Interns/megan.jpg',
+      image: 'assets/custom/img/interns/megan.jpg',
       quote: [
         `During my internship with Case Consulting, I was able to learn more about real-world development.
         The company truly cares about their interns: providing training, a custom office space, and planning
@@ -171,7 +171,7 @@ export default [
       name: 'Megan, 2019 Intern'
     },
     intern2: {
-      image: 'assets/custom/img/Interns/sneha.jpg',
+      image: 'assets/custom/img/interns/sneha.jpg',
       quote: [
         `My internship with Case helped me transcend the classroom and really understand what it is like to
           be a full stack developer working in an Agile environment. I was able to explore a versatile range
@@ -187,7 +187,7 @@ export default [
   {
     slide: 8,
     intern1: {
-      image: 'assets/custom/img/Interns/austin.jpg',
+      image: 'assets/custom/img/interns/austin.jpg',
       quote: [
         `Case Consulting has far exceeded my expectations for any internship program. Being able to work
         hands-on with an amazing team and in an agile environment has prepared me for what it takes to be a
@@ -198,7 +198,7 @@ export default [
       name: 'Austin, 2019 Intern'
     },
     intern2: {
-      image: 'assets/custom/img/Interns/zak.jpg',
+      image: 'assets/custom/img/interns/zak.jpg',
       quote: [
         `Interning at Case Consulting has been such an amazing experience where I have learned so much about
         how a Software Developer functions in the workplace. Working on the intern team has given me a great
@@ -213,7 +213,7 @@ export default [
   {
     slide: 9,
     intern1: {
-      image: 'assets/custom/img/Interns/fahad.jpg',
+      image: 'assets/custom/img/interns/fahad.jpg',
       quote: [
         'Case Consulting is an awesome company that has its hands in a lot of interesting technology. At this internship, I learned what it meant to be professional in the field, I learned full-stack technologies such as NodeJS and industry standards such as' +
           ' OAuth. We also got opportunities to explore the Amazon ecosystem and deployed an application into the real world that will be used by real people. The Case internship is a rewarding opportunity that is centered around great mentors that' +
@@ -223,7 +223,7 @@ export default [
       name: 'Fahad, 2017/2018 Intern'
     },
     intern2: {
-      image: 'assets/custom/img/Interns/jacob.jpg',
+      image: 'assets/custom/img/interns/jacob.jpg',
       quote: [
         'The Case internship gave me an amazing insight into what I was getting myself into when I said I wanted to be a software developer. The company is a big family which was a major factor in my decision to come on. I learned real-world programming languages' +
           ' and used tech that I found interesting every day I was there.'
@@ -234,7 +234,7 @@ export default [
   {
     slide: 10,
     intern1: {
-      image: 'assets/custom/img/Interns/andrew.gif',
+      image: 'assets/custom/img/interns/andrew.gif',
       quote: [
         'After completing this internship, I feel as though I went from a programmer who only wanted to stay in the backend to a full stack developer who can switch between the frontend and backend depending on the needs of the team. Through the internship you' +
           ' will learn how to be an agile developer, while working with cutting edge web technologies such as Vue, Node.js, AWS services, and Express.'
@@ -243,7 +243,7 @@ export default [
       name: 'Andrew, 2018 Intern'
     },
     intern2: {
-      image: 'assets/custom/img/Interns/sam.jpg',
+      image: 'assets/custom/img/interns/sam.jpg',
       quote: [
         'Working at Case Consulting was a great opportunity for me to learn and experience what being a software developer is like in the real world. While I was at my internship, I was able to work in an encouraging, friendly environment where we designed a' +
           " website and an expense app that would be used by the company's employees. In doing so, I was able to work with new technologies and agile programming that is used by employees in the company. This internship helped me get a good view of" +
@@ -255,7 +255,7 @@ export default [
   {
     slide: 11,
     intern1: {
-      image: 'assets/custom/img/Interns/joe.gif',
+      image: 'assets/custom/img/interns/joe.gif',
       quote: [
         'My summer internship with Case Consulting provided me with a solid foundation for full-stack web application development that was lacking from my college education. Having the opportunity to work in an Agile environment with bleeding-edge technologies' +
           ' and experiencing how a software company operates has really prepared me for my career after graduation. Working in a collaborative team of other interns helped me to realize my own strengths as a developer, and we had an awesome time building' +
