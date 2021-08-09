@@ -3,7 +3,7 @@ export default [
     slide: 1,
     first: true,
     intern1: {
-      image: 'assets/custom.img.Interns/spencer.gif',
+      image: 'assets/custom/img/Interns/spencer.gif',
       quote: [
         `The past summer interning at Case was an incredible experience where I was able to hone my skills as a
          full-stack developer. We were exposed to so many practical tools and it was great having the help of 
@@ -15,7 +15,7 @@ export default [
       name: 'Spencer, 2021 Intern'
     },
     intern2: {
-      image: 'assets/custom.img.Interns/tom.gif',
+      image: 'assets/custom/img/Interns/tom.gif',
       quote: [
         `Working as an intern this summer at Case has been a blast. Learning about current technology used in the
          real world like AWS and following agile methodologies has taught me what it’s like to be a full-stack 
@@ -31,7 +31,7 @@ export default [
   {
     slide: 2,
     intern1: {
-      image: 'assets/custom.img.Interns/keston.gif',
+      image: 'assets/custom/img/Interns/keston.gif',
       quote: [
         `Being part of the internship program with Case Consulting was very beneficial. At the beginning of the 
         summer, I was intimidated to begin working on a real web app using unfamiliar technology. However, through 
@@ -44,7 +44,7 @@ export default [
       name: 'Keston, 2021 Intern'
     },
     intern2: {
-      image: 'assets/custom.img.Interns/chad.gif',
+      image: 'assets/custom/img/Interns/chad.gif',
       quote: [
         `This internship was a blast for me. I got to collaborate daily with the other interns and cadre members, 
         constantly getting a new perspective on how to solve various problems. Despite being somewhat unfamiliar 
@@ -60,7 +60,7 @@ export default [
   {
     slide: 3,
     intern1: {
-      image: 'assets/custom.img.Interns/rahul.gif',
+      image: 'assets/custom/img/Interns/rahul.gif',
       quote: [
         `Interning at Case was a surreal experience. Not only was the internship fun, but they taught us various 
         useful technologies and techniques that are used in the industry, while working on a real-world project. 
