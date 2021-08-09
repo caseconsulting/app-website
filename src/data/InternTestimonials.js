@@ -1,7 +1,79 @@
 export default [
   {
     slide: 1,
-    first: true, //first slide needs to have id of active
+    first: true,
+    intern1: {
+      image: 'assets/custom.img.Interns/spencer.gif',
+      quote: [
+        `The past summer interning at Case was an incredible experience where I was able to hone my skills as a
+         full-stack developer. We were exposed to so many practical tools and it was great having the help of 
+         other Case employees to guide us. It was great to work in an Agile environment, especially on a project 
+         where we had full control as a team. Overall, it was an amazing learning experience working alongside a 
+         great team!`
+      ],
+
+      name: 'Spencer, 2021 Intern'
+    },
+    intern2: {
+      image: 'assets/custom.img.Interns/tom.gif',
+      quote: [
+        `Working as an intern this summer at Case has been a blast. Learning about current technology used in the
+         real world like AWS and following agile methodologies has taught me what it’s like to be a full-stack 
+         developer. Alongside that, I also got to meet other people at the company, learning of new perspectives 
+         they have about the industry. Working closely with the other interns and getting to do demos and adding 
+         features to a real-world project provided such a great learning experience. I could not have asked for 
+         a better internship working at Case Consulting this summer!`
+      ],
+
+      name: 'Tom, 2021 Intern'
+    }
+  },
+  {
+    slide: 2,
+    intern1: {
+      image: 'assets/custom.img.Interns/keston.gif',
+      quote: [
+        `Being part of the internship program with Case Consulting was very beneficial. At the beginning of the 
+        summer, I was intimidated to begin working on a real web app using unfamiliar technology. However, through 
+        employee-led and online training, Case provided me with all the resources I needed to get up to speed on 
+        the technology we used. Throughout the summer, we covered a variety of topics including full-stack 
+        development, testing and project management. It is very exciting to look back on this experience and see 
+        the how much knowledge I’ve gained. Thank you to all the Case employees who helped make this happen!`
+      ],
+
+      name: 'Keston, 2021 Intern'
+    },
+    intern2: {
+      image: 'assets/custom.img.Interns/chad.gif',
+      quote: [
+        `This internship was a blast for me. I got to collaborate daily with the other interns and cadre members, 
+        constantly getting a new perspective on how to solve various problems. Despite being somewhat unfamiliar 
+        with the tech stack going into the summer, I felt like I had plenty of resources to get caught up to 
+        speed quickly. I loved actually working on a real-world project that benefits all of the Case employees 
+        with their day-to-day life. Choosing the Case internship has led me to becoming a much better developer 
+        and team member!`
+      ],
+
+      name: 'Chad, 2021 Intern'
+    }
+  },
+  {
+    slide: 3,
+    intern1: {
+      image: 'assets/custom.img.Interns/rahul.gif',
+      quote: [
+        `Interning at Case was a surreal experience. Not only was the internship fun, but they taught us various 
+        useful technologies and techniques that are used in the industry, while working on a real-world project. 
+        The company truly cares about its interns, with the numerous events they hosted to ensure we are comfortable 
+        working with the interns and other employees as well. I’m happy to meet the great folks and fellow interns 
+        working at Case and I look forward to working with them soon!`
+      ],
+
+      name: 'Rahul, 2021 Intern'
+    }
+  },
+  {
+    slide: 4,
     intern1: {
       image: 'assets/custom/img/Interns/Helen.jpg',
       quote: [
@@ -30,7 +102,7 @@ export default [
     }
   },
   {
-    slide: 2,
+    slide: 5,
     intern1: {
       image: 'assets/custom/img/Interns/Rachel.jpg',
       quote: [
@@ -57,7 +129,7 @@ export default [
     }
   },
   {
-    slide: 3,
+    slide: 6,
     intern1: {
       image: 'assets/custom/img/Interns/Pablo.jpg',
       quote: [
@@ -86,7 +158,7 @@ export default [
     }
   },
   {
-    slide: 4,
+    slide: 7,
     intern1: {
       image: 'assets/custom/img/Interns/megan.jpg',
       quote: [
@@ -113,7 +185,7 @@ export default [
   },
 
   {
-    slide: 5,
+    slide: 8,
     intern1: {
       image: 'assets/custom/img/Interns/austin.jpg',
       quote: [
@@ -139,7 +211,7 @@ export default [
     }
   },
   {
-    slide: 6,
+    slide: 9,
     intern1: {
       image: 'assets/custom/img/Interns/fahad.jpg',
       quote: [
@@ -160,7 +232,7 @@ export default [
     }
   },
   {
-    slide: 7,
+    slide: 10,
     intern1: {
       image: 'assets/custom/img/Interns/andrew.gif',
       quote: [
@@ -181,7 +253,7 @@ export default [
     }
   },
   {
-    slide: 8,
+    slide: 11,
     intern1: {
       image: 'assets/custom/img/Interns/joe.gif',
       quote: [
