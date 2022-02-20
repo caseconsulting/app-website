@@ -8,14 +8,7 @@
             <div class="col-md-6 col-lg-12 g-mb-60 g-mb-0--md g-mb-60--lg">
               <div class="u-heading-v2-2--bottom g-brd-primary g-mb-30">
                 <h2
-                  class="
-                    text-uppercase
-                    u-heading-v2__title
-                    g-font-weight-800 g-font-size-30
-                    g-font-size-40--md
-                    g-color-white
-                    mb-0
-                  "
+                  class="text-uppercase u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md g-color-white mb-0"
                 >
                   Get in touch
                 </h2>
@@ -74,14 +67,7 @@
 
                 <div class="g-pos-rel g-pl-35 g-mb-25">
                   <i
-                    class="
-                      fab
-                      fa-facebook-f
-                      red-icon
-                      g-absolute-centered--y
-                      g-left-0 g-font-size-20 g-color-primary
-                      fa-fw
-                    "
+                    class="fab fa-facebook-f red-icon g-absolute-centered--y g-left-0 g-font-size-20 g-color-primary fa-fw"
                   ></i>
                   <a
                     class="g-color-white"

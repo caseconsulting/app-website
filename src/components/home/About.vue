@@ -48,13 +48,7 @@
               style="min-height: 100%"
             >
               <h3
-                class="
-                  text-uppercase
-                  g-line-height-1_1
-                  g-font-weight-800 g-font-size-25
-                  g-font-size-30--md
-                  g-color-white g-mb-20
-                "
+                class="text-uppercase g-line-height-1_1 g-font-weight-800 g-font-size-25 g-font-size-30--md g-color-white g-mb-20"
               >
                 Clients that care
               </h3>
