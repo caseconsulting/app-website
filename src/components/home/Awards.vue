@@ -4,13 +4,7 @@
     <div class="g-mb-100 g-mt-100">
       <div class="u-heading-v2-2--bottom text-center g-brd-primary g-mb-20 g-mt-20">
         <h2
-          class="
-            text-uppercase text-center
-            u-heading-v2__title
-            g-font-weight-800 g-font-size-30
-            g-font-size-40--md
-            g-color-white
-          "
+          class="text-uppercase text-center u-heading-v2__title g-font-weight-800 g-font-size-30 g-font-size-40--md g-color-white"
         >
           Awards
         </h2>
