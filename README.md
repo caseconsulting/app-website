@@ -1,15 +1,18 @@
 # app-website
 
 ## Netlify Status and Deployments
+
 ### App-Website
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0ed3cdf3-e0fd-493e-8320-159d510167b6/deploy-status)](https://app.netlify.com/sites/app-website/deploys)
 
 ### Blog
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/34a6a4ef-5728-4ee4-bc54-e265c7eef8a3/deploy-status)](https://app.netlify.com/sites/case-blog/deploys/5ecd50adc5929b0006f125e2)
 
-**app-website** is written in **Vue.js** and relies on **Node.js** v12.x+ and the **npm** package management system.
+**app-website** is written in **Vue.js** and relies on **Node.js** v14.x+ and the **npm** package management system.
 
-- Download and install Node.js v12.x from: https://nodejs.org/en/ or https://nodejs.org/dist/latest-v12.x/
+- Download and install Node.js v14.x from: https://nodejs.org/en/ or https://nodejs.org/dist/latest-v14.x/
 - Install required Node.js modules:
 
 ```bash
@@ -76,7 +79,6 @@ npm run test:unit
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-
 # Blog
 
 ## Application tasks
@@ -140,6 +142,7 @@ To deploy changes to production at https://consultwithcase.com/ merge app-websit
 ## BPTW button
 
 Steps to recreate the BPTW button for a new year:
+
 1. Open a photoshop or image editor tool (ex: photopea)
 2. Import the BPTW-Template.png located at ./public/assets/custom/img/awards
 3. Add the year using Inter font in white (0xffffff), with size of 114 px, and Black style
@@ -183,7 +186,7 @@ https://vuelidate.js.org/
 
 **Vuepress**
 
-https://vuepress.vuejs.org/ 
+https://vuepress.vuejs.org/
 
 **Vuetify:**
 
@@ -192,5 +195,3 @@ https://vuetifyjs.com/en/
 **Vuex**
 
 https://vuex.vuejs.org/
-
-
