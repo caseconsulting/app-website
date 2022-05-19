@@ -33,6 +33,3 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
-
-# Vue Press
-/docs/.vuepress/dist
