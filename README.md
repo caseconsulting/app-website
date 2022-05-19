@@ -82,7 +82,6 @@ Netlify automatically builds deploy previews for all pull requests. After pushin
 ## Deployment
 
 Changes merged to the app-website github master branch will automatically deploy to Netlify at https://app-website.netlify.app/. The list of deployments and status can be viewed by clicking the Netlify icons above. Note it may take a short time for Netlify to build and deployments cannot be deleted.
-
 To deploy changes to production at https://consultwithcase.com/ merge app-website to GitHub release branch.
 
 ## BPTW button
