@@ -90,13 +90,13 @@
                 </div>
                 <div class="col-md-5 award-overlapped-sixth">
                   <a
-                    href="https://www.bizjournals.com/washington/news/2022/04/01/best-places-to-work-2022.html"
+                    href="https://www.bizjournals.com/washington/subscriber-only/2022/05/13/best-places-to-work-large-companies.html"
                     target="_blank"
                     rel="noopener"
                     border="0"
                   >
                     <img
-                      src="../../../public/assets/custom/img/awards/BPTW-2021.png"
+                      src="../../../public/assets/custom/img/awards/BPTW-2022.png"
                       alt
                       class="rounded-circle img-fluid mobile-image award-shadow"
                     />
