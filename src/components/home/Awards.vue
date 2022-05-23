@@ -16,7 +16,7 @@
           <div class="col-lg-7 col-sm-12">
             <div class="container-fluid award-container">
               <div class="row award-row">
-                <div class="col-md-5 first-overlapped">
+                <div class="col-md-5 award-overlapped-first">
                   <a
                     href="https://www.bizjournals.com/washington/news/2017/05/05/these-are-the-best-places-to-work-in-greater.html"
                     target="_blank"
@@ -77,6 +77,20 @@
                 <div class="col-md-5 award-overlapped-fifth">
                   <a
                     href="https://www.bizjournals.com/washington/subscriber-only/2021/05/21/best-places-to-work-medium-companies.html"
+                    target="_blank"
+                    rel="noopener"
+                    border="0"
+                  >
+                    <img
+                      src="../../../public/assets/custom/img/awards/BPTW-2021.png"
+                      alt
+                      class="rounded-circle img-fluid mobile-image award-shadow"
+                    />
+                  </a>
+                </div>
+                <div class="col-md-5 award-overlapped-sixth">
+                  <a
+                    href="https://www.bizjournals.com/washington/news/2022/04/01/best-places-to-work-2022.html"
                     target="_blank"
                     rel="noopener"
                     border="0"
