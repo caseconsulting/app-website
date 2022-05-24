@@ -1,5 +1,13 @@
 export default [
   {
+    id: 34,
+    iconLink: 'assets/custom/img/events/BPTW2022.jpg',
+    title: '2022 Best Places to Work',
+    descrip: [
+      'For the 6th year in a row, Case has been recognized as one of the Best Places to Work by the Washington Business Journal. It was an incredible night of celebration, and we are thankful for all of the amazing employees at Case.'
+    ]
+  },
+  {
     id: 33,
     iconLink: 'assets/custom/img/events/2021_HolidayParty.jpg',
     title: '2021 Holiday Party',
