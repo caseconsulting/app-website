@@ -1,5 +1,13 @@
 export default [
   {
+    id: 32,
+    iconLink: 'assets/custom/img/events/2021_HolidayChampion.jpeg',
+    title: 'Case Champion',
+    descrip: [
+      'At the 2021 Holiday Party, the "torch" aka trophy was passed to our new Case Champion, Patrick, Congratulations Patrick!'
+    ]
+  },
+  {
     id: 31,
     iconLink: 'assets/custom/img/events/DSC_7430_1_90.jpg',
     title: '2019 Holiday Party',
