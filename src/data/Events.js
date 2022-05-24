@@ -1,5 +1,13 @@
 export default [
   {
+    id: 33,
+    iconLink: 'assets/custom/img/events/2021_HolidayParty.jpg',
+    title: '2021 Holiday Party',
+    descrip: [
+      'All enjoyed the return of our holiday tradition, gathering together at National Harbor for the 2021 Holiday Party.'
+    ]
+  },
+  {
     id: 32,
     iconLink: 'assets/custom/img/events/2021_HolidayChampion.jpeg',
     title: 'Case Champion',
