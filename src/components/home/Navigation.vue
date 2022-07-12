@@ -44,11 +44,7 @@
         </div>
         <div class="bptw">
           <a class="navbar-brand u-header__log">
-            <img
-              src="/assets/custom/img/awards/2022_bptw_Logo.png"
-              alt="Best places to work 2022 logo"
-              class="nav-pad"
-            />
+            <img :src="bptw_logo" alt="Best places to work 2022 Logo" class="nav-pad" />
           </a>
         </div>
         <!-- End Navigation -->
@@ -76,14 +72,13 @@
 </template>
 
 <script>
+import vars from '@/shared/constants.js';
+
 export default {
-  mounted() {
-    // var tpj = jQuery,
-    //   promoSlider;
-    // // initialization of HSScrollNav
-    // $.HSCore.components.HSScrollNav.init($('#js-scroll-nav'), {
-    //   duration: 700
-    // });
+  data() {
+    return {
+      bptw_logo: vars.BPTW_LOGO
+    };
   }
 };
 </script>

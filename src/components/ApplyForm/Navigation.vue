@@ -36,7 +36,7 @@
           </li>-->
         </ul>
         <a class="navbar-brand u-header__log">
-          <img src="/assets/custom/img/awards/2021_bptw_Logo.png" alt="Best places to work 2021 logo" class="nav-pad" />
+          <img :src="bptw_logo" alt="Best places to work 2021 Logo" class="nav-pad" />
         </a>
       </div>
       <!-- End Navigation -->
@@ -60,3 +60,15 @@
     </div>
   </nav>
 </template>
+
+<script>
+import vars from '@/shared/constants.js';
+
+export default {
+  data() {
+    return {
+      bptw_logo: vars.BPTW_LOGO
+    };
+  }
+};
+</script>
