@@ -1,5 +1,11 @@
 export default [
   {
+    id: 35,
+    iconLink: 'assets/custom/img/events/2022-axe-throwing.jpg',
+    title: 'Axe Throwing Event',
+    descrip: [`A great time was had by all at the June Case First Friday event at Axes and O's!`]
+  },
+  {
     id: 34,
     iconLink: 'assets/custom/img/events/BPTW2022.jpg',
     title: '2022 Best Places to Work',
