@@ -1,5 +1,35 @@
 export default [
   {
+    id: 35,
+    iconLink: 'assets/custom/img/events/2022-axe-throwing.jpg',
+    title: 'Axe Throwing Event',
+    descrip: [`A great time was had by all at the June Case First Friday event at Axes and O's!`]
+  },
+  {
+    id: 34,
+    iconLink: 'assets/custom/img/events/BPTW2022.jpg',
+    title: '2022 Best Places to Work',
+    descrip: [
+      'For the 6th year in a row, Case has been recognized as one of the Best Places to Work by the Washington Business Journal. It was an incredible night of celebration, and we are thankful for all of the amazing employees at Case.'
+    ]
+  },
+  {
+    id: 33,
+    iconLink: 'assets/custom/img/events/2021_HolidayParty.jpg',
+    title: '2021 Holiday Party',
+    descrip: [
+      'All enjoyed the return of our holiday tradition, gathering together at National Harbor for the 2021 Holiday Party!'
+    ]
+  },
+  {
+    id: 32,
+    iconLink: 'assets/custom/img/events/2021_HolidayChampion.jpeg',
+    title: 'Case Champion',
+    descrip: [
+      'At the 2021 Holiday Party, the "torch" aka trophy was passed to our new Case Champion, Patrick, Congratulations Patrick!'
+    ]
+  },
+  {
     id: 31,
     iconLink: 'assets/custom/img/events/DSC_7430_1_90.jpg',
     title: '2019 Holiday Party',

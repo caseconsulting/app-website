@@ -41,31 +41,33 @@ body {
   height: auto;
 }
 
-
-.first-overlapped {
+.award-overlapped-first,
+.award-overlapped-fourth {
   position: absolute;
   left: -10%;
 }
 
-.award-overlapped-second {
+.award-overlapped-second,
+.award-overlapped-fifth {
   position: relative;
   left: 20%;
 }
 
-.award-overlapped-third {
+.award-overlapped-third,
+.award-overlapped-sixth {
   position: absolute;
   left: 50%;
 }
 
-.award-overlapped-fourth {
+/* .award-overlapped-fourth {
   position: relative;
   left: 4.5%;
-}
+} */
 
-.award-overlapped-fifth {
+/* .award-overlapped-fifth {
   position: relative;
   left: -6%;
-}
+} */
 
 .award-shadow {
   box-shadow: 0px 4px 20px 3px darkslategrey;
@@ -503,8 +505,6 @@ h5 strong a:hover {
   max-height: 80px;
 }
 
-
-
 @media only screen and (max-width: 720px) {
   .logos-moible {
     width: 100%;
@@ -571,7 +571,7 @@ h5 strong a:hover {
 
 /* for ipads and ipad pros -awards section */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .first-overlapped {
+  .award-overlapped-first {
     position: absolute;
     left: 5%;
     margin-top: 5%;
@@ -585,7 +585,6 @@ h5 strong a:hover {
     margin-bottom: 0%;
   }
 
-
   .award-overlapped-third {
     position: absolute;
     left: 65%;
@@ -594,27 +593,31 @@ h5 strong a:hover {
   }
 
   .award-overlapped-fourth {
-    position: relative;
-    left: 20%;
+    position: absolute;
+    left: 5%;
     margin-top: 0%;
     margin-bottom: 10%;
   }
 
   .award-overlapped-fifth {
     position: relative;
-    left: 9%;
+    left: 35%;
     margin-top: 0%;
     margin-bottom: 10%;
   }
 
-  
+  .award-overlapped-sixth {
+    position: absolute;
+    left: 65%;
+    margin-top: 0%;
+    margin-bottom: 10%;
+  }
 
   .award-row {
     max-width: 80%;
     margin-left: 6%;
     position: relative;
   }
-
 
   .intern-background {
     /* The image used */
@@ -660,7 +663,7 @@ h5 strong a:hover {
     position: relative;
   }
 
-  .first-overlapped {
+  .award-overlapped-first {
     position: relative;
     left: 0%;
     margin-top: 10px;
@@ -686,9 +689,16 @@ h5 strong a:hover {
     left: 0%;
     margin-top: -10px;
     margin-bottom: 20px;
-  } 
+  }
 
   .award-overlapped-fifth {
+    position: relative;
+    left: 0%;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+
+  .award-overlapped-sixth {
     position: relative;
     left: 0%;
     margin-top: -10px;

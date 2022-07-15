@@ -31,7 +31,7 @@
           </li>
         </ul>
         <a class="navbar-brand u-header__log">
-          <img src="/assets/custom/img/awards/2021_bptw_Logo.png" alt="Best places to work 2021 logo" class="nav-pad" />
+          <img src="/assets/custom/img/awards/2022_bptw_Logo.png" alt="Best places to work 2022 logo" class="nav-pad" />
         </a>
       </div>
       <!-- End Navigation -->
