@@ -12,10 +12,7 @@
       <!-- End Logo -->
       <!-- Navigation -->
       <div class="collapse navbar-collapse align-items-center flex-sm-row" id="navBar">
-        <ul
-          id="js-scroll-nav"
-          class="navbar-nav text-uppercase g-font-weight-700 g-font-size-11 g-pt-20 g-pt-5--lg ml-auto"
-        >
+        <ul class="js-scroll-nav navbar-nav text-uppercase g-font-weight-700 g-font-size-11 g-pt-20 g-pt-5--lg ml-auto">
           <!-- <router-link tag="li" to="/" class="g-mr-30--lg g-mb-7 g-mb-0--lg" active-class="active">
           <a class="nav-link p-0">Home</a>
           </router-link>-->
