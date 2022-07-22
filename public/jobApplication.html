@@ -9,7 +9,7 @@
     <title>Case Consulting, Inc.</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/public/assets/custom/img/case/navLogo.png" />
+    <link rel="shortcut icon" href="/public/assets/custom/img/case/nav_logo.png" />
 
     <!-- Google Fonts -->
     <link
@@ -46,7 +46,7 @@
     <link rel="stylesheet" href="/assets/custom/css/custom.css" />
 
     <!-- Apple-icon metadeta tag for case website desktop display -->
-    <link rel="icon" type="image/png" href="/assets/custom/img/case/navLogo.png" />
+    <link rel="icon" type="image/png" href="/assets/custom/img/case/nav_logo.png" />
   </head>
 
   <body>
@@ -111,7 +111,7 @@
       // initialization of revolution slider
       var tpj = jQuery,
         promoSlider;
-      tpj(document).on('ready', function() {
+      tpj(document).on('ready', function () {
         if (tpj('#promoSlider').revolution == undefined) {
           revslider_showDoubleJqueryError('#promoSlider');
         } else {
@@ -150,7 +150,7 @@
             });
         }
       });
-      $(document).on('ready', function() {
+      $(document).on('ready', function () {
         // initialization of carousel
         $.HSCore.components.HSCarousel.init('.js-carousel');
         // initialization of header
@@ -158,14 +158,14 @@
         $.HSCore.helpers.HSHamburgers.init('.hamburger');
         // initialization of go to section
       });
-      $(window).on('load', function() {
+      $(window).on('load', function () {
         // initialization of HSScrollNav
         $.HSCore.components.HSScrollNav.init($('.js-scroll-nav'), {
           duration: 700
         });
       });
 
-      $(window).on('click', 'a', function(e) {
+      $(window).on('click', 'a', function (e) {
         var href = $(e.target).attr('href');
         if (href && href[0] === '#') {
           window.location.replace(e.target.href);
@@ -187,7 +187,7 @@
         data-compensation="#js-header"
         data-show-effect="zoomIn "
       >
-        <i class="hs-icon hs-icon-arrow-top "></i>
+        <i class="hs-icon hs-icon-arrow-top"></i>
       </a>
     </main>
   </body>
