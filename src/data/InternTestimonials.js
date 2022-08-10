@@ -1,7 +1,18 @@
 export default [
   {
-    slide: 1,
     first: true,
+    intern1: {
+      image: 'assets/custom/img/interns/logburn.jpg',
+      quote: [
+        `The summer internship with Case was phenomenal. I learned a ton, not just about web development but also
+      about agile development in general. We used a lot of real-world technologies like AWS and VueJS. Everyone
+      at Case is caring and willing to teach, which creates a great learning environment that encouraged me to
+      grow in my development skills.`
+      ],
+      name: 'Luke, 2022 Intern'
+    }
+  },
+  {
     intern1: {
       image: 'assets/custom/img/interns/spencer.gif',
       quote: [
@@ -29,7 +40,6 @@ export default [
     }
   },
   {
-    slide: 2,
     intern1: {
       image: 'assets/custom/img/interns/keston.gif',
       quote: [
@@ -58,7 +68,6 @@ export default [
     }
   },
   {
-    slide: 3,
     intern1: {
       image: 'assets/custom/img/interns/rahul.gif',
       quote: [
@@ -73,7 +82,6 @@ export default [
     }
   },
   {
-    slide: 4,
     intern1: {
       image: 'assets/custom/img/interns/Helen.jpg',
       quote: [
@@ -102,7 +110,6 @@ export default [
     }
   },
   {
-    slide: 5,
     intern1: {
       image: 'assets/custom/img/interns/Rachel.jpg',
       quote: [
@@ -129,7 +136,6 @@ export default [
     }
   },
   {
-    slide: 6,
     intern1: {
       image: 'assets/custom/img/interns/Pablo.jpg',
       quote: [
@@ -158,7 +164,6 @@ export default [
     }
   },
   {
-    slide: 7,
     intern1: {
       image: 'assets/custom/img/interns/megan.jpg',
       quote: [
@@ -185,7 +190,6 @@ export default [
   },
 
   {
-    slide: 8,
     intern1: {
       image: 'assets/custom/img/interns/austin.jpg',
       quote: [
@@ -211,7 +215,6 @@ export default [
     }
   },
   {
-    slide: 9,
     intern1: {
       image: 'assets/custom/img/interns/fahad.jpg',
       quote: [
