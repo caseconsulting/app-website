@@ -21,6 +21,19 @@ export default [
   },
   {
     intern1: {
+      image: 'assets/custom/img/interns/benji.jpg',
+      quote: [
+        `Interning with Case Consulting over the Summer was a blast! I learned a lot of new technologies and skills such as Vue.js, many different AWS services, and 
+      learning about/working with testing suites such as Nightwatch and Jasmine! It was great to work in an agile envorimnent, knowing we had a demo at the
+      end of every week pushed us harder to make sure every demo was great! The Cadre were amazing, they helped us and answered all of our questions, I'll forever
+      cherish the bonds I made during my internship at Case Consulting!`
+      ],
+
+      name: 'Benji, 2022 Intern'
+    }
+  },
+  {
+    intern1: {
       image: 'assets/custom/img/interns/spencer.gif',
       quote: [
         `The past summer interning at Case was an incredible experience where I was able to hone my skills as a
