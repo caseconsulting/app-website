@@ -12,10 +12,7 @@
       <!-- End Logo -->
       <!-- Navigation -->
       <div class="collapse navbar-collapse align-items-center flex-sm-row" id="navBar">
-        <ul
-          id="js-scroll-nav"
-          class="navbar-nav text-uppercase g-font-weight-700 g-font-size-11 g-pt-20 g-pt-5--lg ml-auto"
-        >
+        <ul class="js-scroll-nav navbar-nav text-uppercase g-font-weight-700 g-font-size-11 g-pt-20 g-pt-5--lg ml-auto">
           <!-- <router-link tag="li" to="/" class="g-mr-30--lg g-mb-7 g-mb-0--lg" active-class="active">
           <a class="nav-link p-0">Home</a>
           </router-link>-->
@@ -36,7 +33,7 @@
           </li>-->
         </ul>
         <a class="navbar-brand u-header__log">
-          <img src="/assets/custom/img/awards/2021_bptw_Logo.png" alt="Best places to work 2021 logo" class="nav-pad" />
+          <img :src="bptw_logo" alt="Best places to work 2021 Logo" class="nav-pad" />
         </a>
       </div>
       <!-- End Navigation -->
@@ -60,3 +57,15 @@
     </div>
   </nav>
 </template>
+
+<script>
+import vars from '@/shared/constants.js';
+
+export default {
+  data() {
+    return {
+      bptw_logo: vars.BPTW_LOGO
+    };
+  }
+};
+</script>

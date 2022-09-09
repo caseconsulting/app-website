@@ -132,7 +132,7 @@ export default [
   },
   {
     id: 18,
-    iconLink: 'assets/custom/img/events/Screen_Shot_2019-06-14_at_8.51.40_AM.png',
+    iconLink: 'assets/custom/img/events/Screen_Shot_2019-06-14_at_8.51.40_AM.jpg',
     title: '2018 Family Picnic',
     driveLink: 'https://www.youtube.com/watch?v=yeNzYTd0TKQ',
     descrip: [

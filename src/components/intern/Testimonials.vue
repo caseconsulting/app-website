@@ -22,7 +22,7 @@
       </ol>
 
       <div class="carousel-inner">
-        <div v-for="test in testimonials" :key="test.slide" :class="carousel(test.first)" data-interval="10000">
+        <div v-for="(test, index) in testimonials" :key="index" :class="carousel(test.first)" data-interval="10000">
           <div class="container text-center g-max-width-750 g-mb-20 g-pt-10" alt="First slide">
             <div class="container">
               <!--Intern at top of slide -->

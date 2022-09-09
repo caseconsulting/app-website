@@ -28,11 +28,6 @@
                 </div>
 
                 <div class="g-pos-rel g-pl-35 g-mb-25">
-                  <i class="fa fa-phone g-absolute-centered--y g-left-0 g-font-size-20 g-color-primary fa-fw"></i>
-                  <strong>703-728-0294</strong>
-                </div>
-
-                <div class="g-pos-rel g-pl-35 g-mb-25">
                   <i class="fa fa-envelope g-absolute-centered--y g-left-0 g-font-size-20 g-color-primary fa-fw"></i>
                   <a class="g-color-white" href="mailto:info@consultwithcase.com">
                     <strong>info@consultwithcase.com</strong>

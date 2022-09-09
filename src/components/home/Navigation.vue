@@ -4,20 +4,23 @@
     <nav class="navbar navbar-expand-lg g-py-0">
       <div class="container-fluid justify-content-between g-pos-rel">
         <!-- Logo -->
-        <a href="#body" class="js-go-to navbar-brand u-header__logo" data-type="static">
-          <img
-            class="u-header__logo-img u-header__logo-img--main g-width-110"
-            src="/assets/custom/img/case/logo-banner.gif"
-            alt="Case Consulting, Inc."
-          />
-        </a>
+        <div class="js-scroll-nav">
+          <span class="nav-item">
+            <a href="#promoSlider" class="navbar-brand u-header__logo nav-link">
+              <img
+                class="u-header__logo-img u-header__logo-img--main g-width-110"
+                src="/assets/custom/img/case/logo-banner.gif"
+                alt="Case Consulting, Inc."
+              />
+            </a>
+          </span>
+        </div>
         <!-- End Logo -->
 
         <!-- Navigation -->
         <div class="collapse navbar-collapse align-items-center flex-sm-row" id="navBar">
           <ul
-            id="js-scroll-nav"
-            class="navbar-nav text-uppercase g-font-weight-700 g-font-size-11 g-pt-20 g-pt-5--lg ml-auto"
+            class="js-scroll-nav navbar-nav text-uppercase g-font-weight-700 g-font-size-11 g-pt-20 g-pt-5--lg ml-auto"
           >
             <li class="nav-item g-mr-15--lg g-mb-7 g-mb-0--lg active">
               <a href="#about" class="nav-link p-0">About</a>
@@ -44,11 +47,7 @@
         </div>
         <div class="bptw">
           <a class="navbar-brand u-header__log">
-            <img
-              src="/assets/custom/img/awards/2022_bptw_Logo.png"
-              alt="Best places to work 2022 logo"
-              class="nav-pad"
-            />
+            <img :src="bptw_logo" alt="Best places to work 2022 Logo" class="nav-pad" />
           </a>
         </div>
         <!-- End Navigation -->
@@ -76,14 +75,13 @@
 </template>
 
 <script>
+import vars from '@/shared/constants.js';
+
 export default {
-  mounted() {
-    // var tpj = jQuery,
-    //   promoSlider;
-    // // initialization of HSScrollNav
-    // $.HSCore.components.HSScrollNav.init($('#js-scroll-nav'), {
-    //   duration: 700
-    // });
+  data() {
+    return {
+      bptw_logo: vars.BPTW_LOGO
+    };
   }
 };
 </script>
