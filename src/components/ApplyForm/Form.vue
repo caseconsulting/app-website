@@ -326,8 +326,6 @@ async function onSubmit() {
         resumeFileName: this.files,
         resumeUpload: this.uploads
       };
-      console.log(this.files);
-      console.log(this.uploads);
 
       // content upload
       const baseUrl = process.env.VUE_APP_API;
