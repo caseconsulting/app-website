@@ -323,8 +323,7 @@ async function onSubmit() {
         referralHearAboutUs: this.referralHearAboutUs.trim(),
         otherHearAboutUs: this.otherHearAboutUs.trim(),
         comments: this.comments.trim(),
-        resumeFileName: this.files,
-        resumeUpload: this.uploads
+        fileNames: this.files
       };
 
       // content upload
