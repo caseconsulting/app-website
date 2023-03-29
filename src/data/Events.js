@@ -1,5 +1,13 @@
 export default [
   {
+    id: 36,
+    iconLink: 'assets/custom/img/events/_DSC6114.jpg',
+    title: 'Case Champion',
+    descrip: [
+      'At the 2022 Holiday Party, the tradition continues, with the "torch" aka trophy being passed to our new Case Champion, Megan. Congratulations Megan!'
+    ]
+  },
+  {
     id: 35,
     iconLink: 'assets/custom/img/events/2022-axe-throwing.jpg',
     title: 'Axe Throwing Event',
