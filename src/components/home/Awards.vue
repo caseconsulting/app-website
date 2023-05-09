@@ -109,8 +109,8 @@
           <div class="col-lg-5 col-sm-12">
             <p class="g-color-white">
               The Washington Business Journal's Best Places to Work program honors Greater Washington area companies
-              that score highest in annual employee engagement. For the 6th year in a row, Case Consulting Inc. has been
-              recognized as one of the best places to work among small, medium, and large companies:
+              that score highest in annual employee engagement. For the 6th year in a row, CASE has been recognized as
+              one of the best places to work among small, medium, and large companies:
               <br />
               <br />
             </p>

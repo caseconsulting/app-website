@@ -9,7 +9,7 @@
           </h2>
         </div>
         <p class="mb-0">
-          Case Consulting recognizes that employees are its number one asset and therefore offers a salary and
+          CASE recognizes that employees are its number one asset and therefore offers a salary and
           <a
             href="https://drive.google.com/file/d/1cBQzuO4g8YEcYskbQqj_MS3sNxIEMUh2/view?usp=sharing"
             target="_blank"
@@ -37,18 +37,17 @@
                   <li class="g-pos-rel g-pl-10 g-mb-15">
                     <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
                     <p class="list_elem">
-                      Monthly contribution of 3% of your salary in your
-                      <a href="https://www.sharebuilder401k.com/">401k</a>, without the requirement of an employee
+                      Company contribution made with each pay period, without the requirement of an employee
                       contribution
                     </p>
                   </li>
                   <li class="g-pos-rel g-pl-10 g-mb-15">
                     <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
-                    <p class="list_elem">Annual lump-sum profit sharing of 10%, deposited at the end of each year</p>
+                    <p class="list_elem">Plan provider Fidelity offers both a traditional and Roth 401k option</p>
                   </li>
                   <li class="g-pos-rel g-pl-10 g-mb-15">
                     <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
-                    <p class="list_elem">Employees are immediately fully vested in the plan</p>
+                    <p class="list_elem">Employees are immediately fully vested day one</p>
                   </li>
                 </ul>
               </div>
@@ -196,12 +195,12 @@
                   <li class="g-pos-rel g-pl-10 g-mb-15">
                     <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
                     <p class="list_elem">
-                      34 days of leave each year (20 PTO, 10 holidays, 3 training days, and 1 volunteer day)
+                      Competitive Paid time off to include vacation, holidays, training and volunteer time
                     </p>
                   </li>
                   <li class="g-pos-rel g-pl-10 g-mb-15">
                     <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
-                    <p class="list_elem">1 week leave of absence every 5th anniversary</p>
+                    <p class="list_elem">One additional week of absence with every 5 year anniversary</p>
                   </li>
                 </ul>
               </div>

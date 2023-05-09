@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
   Chart.defaults.global.defaultFontColor = 'white';
 
   // draw = Chart.controllers.horizontalBar.prototype.draw;
@@ -82,7 +82,7 @@ window.onload = function() {
               ticks: {
                 min: 0,
                 max: 100,
-                callback: function(value, index, values) {
+                callback: function (value, index, values) {
                   return value + '%';
                 }
               },

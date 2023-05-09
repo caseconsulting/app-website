@@ -8,7 +8,7 @@ describe('WHEN I visit the Home page', () => {
   });
 
   it('SHOULD have correct title', () => {
-    cy.title().should('eq', 'Case Consulting, Inc.');
+    cy.title().should('eq', 'CASE');
   });
 
   describe('Navigation', () => {

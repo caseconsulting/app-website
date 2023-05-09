@@ -2,23 +2,23 @@ export default [
   {
     id: 36,
     iconLink: 'assets/custom/img/events/_DSC6114.jpg',
-    title: 'Case Champion',
+    title: 'CASE Champion',
     descrip: [
-      'At the 2022 Holiday Party, the tradition continues, with the "torch" aka trophy being passed to our new Case Champion, Megan. Congratulations Megan!'
+      'At the 2022 Holiday Party, the tradition continues, with the "torch" aka trophy being passed to our new CASE Champion, Megan. Congratulations Megan!'
     ]
   },
   {
     id: 35,
     iconLink: 'assets/custom/img/events/2022-axe-throwing.jpg',
     title: 'Axe Throwing Event',
-    descrip: [`A great time was had by all at the June Case First Friday event at Axes and O's!`]
+    descrip: [`A great time was had by all at the June CASE First Friday event at Axes and O's!`]
   },
   {
     id: 34,
     iconLink: 'assets/custom/img/events/BPTW2022.jpg',
     title: '2022 Best Places to Work',
     descrip: [
-      'For the 6th year in a row, Case has been recognized as one of the Best Places to Work by the Washington Business Journal. It was an incredible night of celebration, and we are thankful for all of the amazing employees at Case.'
+      'For the 6th year in a row, CASE has been recognized as one of the Best Places to Work by the Washington Business Journal. It was an incredible night of celebration, and we are thankful for all of the amazing employees at CASE.'
     ]
   },
   {
@@ -32,9 +32,9 @@ export default [
   {
     id: 32,
     iconLink: 'assets/custom/img/events/2021_HolidayChampion.jpeg',
-    title: 'Case Champion',
+    title: 'CASE Champion',
     descrip: [
-      'At the 2021 Holiday Party, the "torch" aka trophy was passed to our new Case Champion, Patrick, Congratulations Patrick!'
+      'At the 2021 Holiday Party, the "torch" aka trophy was passed to our new CASE Champion, Patrick, Congratulations Patrick!'
     ]
   },
   {
@@ -54,7 +54,7 @@ export default [
     id: 29,
     iconLink: 'assets/custom/img/events/88CB744A-AE25-41B1-A4A5-EFFF753877AD.jpg',
     title: '2019 AWS re:Invent',
-    descrip: ['It was a banner year for Case Consulting at AWS re:Invent as we sent 7 employees to Vegas!']
+    descrip: ['It was a banner year for CASE at AWS re:Invent as we sent 7 employees to Vegas!']
   },
   {
     id: 28,
@@ -78,7 +78,7 @@ export default [
     title: '2019 Family Picnic',
     driveLink: 'https://www.youtube.com/watch?v=52lgxg1P9qQ',
     descrip: [
-      "Employees and their families gathered at Case Headquarters in Leesburg to reflect on the Summer, relax, and enjoy each other's company at the annual Case Family Picnic"
+      "Employees and their families gathered at CASE Headquarters in Leesburg to reflect on the Summer, relax, and enjoy each other's company at the annual CASE Family Picnic"
     ]
   },
   {
@@ -93,9 +93,9 @@ export default [
   {
     id: 24,
     iconLink: 'assets/custom/img/events/IMG_0238.jpg',
-    title: 'Case Champion',
+    title: 'CASE Champion',
     descrip: [
-      'At our June All Hands meeting we awarded the inaugural Case Champion award to Paul Correll for his passion and dedication to the company. The recognition also came with a cool Case hoodie and 3 additional days of PTO, congrats Paul!'
+      'At our June All Hands meeting we awarded the inaugural CASE Champion award to Paul Correll for his passion and dedication to the company. The recognition also came with a cool CASE hoodie and 3 additional days of PTO, congrats Paul!'
     ]
   },
   {
@@ -126,7 +126,7 @@ export default [
     iconLink: 'assets/custom/img/events/Screen_Shot_2019-06-06_at_9.28.59_AM.png',
     title: '2019 Wreaths Across America',
     descrip: [
-      'On January 19, several employees helped clean-up wreaths at Arlington National Cemetery as part of the Wreaths Across America program.Case employees were more than happy to put in a little work to honor those that are laid to rest in Arlington.'
+      'On January 19, several employees helped clean-up wreaths at Arlington National Cemetery as part of the Wreaths Across America program. CASE employees were more than happy to put in a little work to honor those that are laid to rest in Arlington.'
     ]
   },
   {
@@ -152,7 +152,7 @@ export default [
     iconLink: 'assets/custom/img/events/2018_leesburg_race.jpg',
     title: '2018 Leesburg 5k/20k',
     descrip: [
-      'Many employees ran in the 2018 Leesburg 5k/20k race. We also had a really fun design for the race shirt thanks to the daughter of a Case Employee!'
+      'Many employees ran in the 2018 Leesburg 5k/20k race. We also had a really fun design for the race shirt thanks to the daughter of a CASE Employee!'
     ]
   },
   {
@@ -206,7 +206,7 @@ export default [
     iconLink: 'assets/custom/img/events/IMG_1002.jpg',
     title: '2017 Summer Internship',
     descrip: [
-      'Big changes for Case Consulting in 2017 as we moved to new offices and embarked on our inaugural Summer Internship program!'
+      'Big changes for CASE in 2017 as we moved to new offices and embarked on our inaugural Summer Internship program!'
     ]
   },
   {
@@ -254,7 +254,7 @@ export default [
     iconLink: 'assets/custom/img/events/IMG_20161130_114803187.jpg',
     title: 're:Invent 2016',
     descrip: [
-      'Case Consulting was well represented at AWS re:Invent this year. Employees enjoyed all of the talks and after - hours events and cant wait to go back next year.'
+      'CASE was well represented at AWS re:Invent this year. Employees enjoyed all of the talks and after - hours events and cant wait to go back next year.'
     ]
   },
   {

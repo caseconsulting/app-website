@@ -16,7 +16,7 @@ export default [
   {
     question: 'What?',
     answer: [
-      'During your internship at Case Consulting you will be guided by our team of software professionals and previous interns to apply cutting edge software development tools and practices to a real software product. Throughout the program, you will use many software engineering best practices such as agile/scrum, pair programming, automated testing, and test-driven development.'
+      'During your internship at CASE you will be guided by our team of software professionals and previous interns to apply cutting edge software development tools and practices to a real software product. Throughout the program, you will use many software engineering best practices such as agile/scrum, pair programming, automated testing, and test-driven development.'
     ]
   },
   { question: 'When?', answer: ['Summer ' + year] },

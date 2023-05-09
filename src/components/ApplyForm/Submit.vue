@@ -15,7 +15,7 @@
         <div class="col submitBox">
           <div class="submitPage">
             <h5>
-              We appreciate your interest in Case Consulting, Inc.
+              We appreciate your interest in CASE
               <br />
               <br />Our team will review your application and contact you shortly. In the meantime, if you have any
               questions you may email

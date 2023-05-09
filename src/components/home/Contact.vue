@@ -14,9 +14,8 @@
                 </h2>
               </div>
               <p class="g-color-gray-light-v4 mb-0">
-                Case Consulting has an established reputation and level of trust with the client, so contact us to
-                discuss how we can continue to build a productive relationship and deliver impeccable results for our
-                clients.
+                CASE has an established reputation and level of trust with the client, so contact us to discuss how we
+                can continue to build a productive relationship and deliver impeccable results for our clients.
               </p>
             </div>
 
@@ -24,7 +23,7 @@
               <address class="text-uppercase g-font-size-12 mb-0">
                 <div class="g-pos-rel g-pl-35 g-mb-25">
                   <i class="fa fa-map-marker g-absolute-centered--y g-left-0 g-font-size-20 g-color-primary fa-fw"></i>
-                  <strong>18425 RUSTLING WOODS COURT LEESBURG, VA 20175</strong>
+                  <strong>LEESBURG, VA</strong>
                 </div>
 
                 <div class="g-pos-rel g-pl-35 g-mb-25">
@@ -70,7 +69,7 @@
                     target="_blank"
                     rel="noopener"
                   >
-                    <strong>Consult with Case</strong>
+                    <strong>ConsultwithCase</strong>
                   </a>
                 </div>
 
@@ -84,7 +83,7 @@
                     target="_blank"
                     rel="noopener"
                   >
-                    <strong>Case Consulting, Inc.</strong>
+                    <strong>Case Consulting LLC</strong>
                   </a>
                 </div>
               </address>

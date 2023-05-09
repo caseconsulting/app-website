@@ -1,32 +1,41 @@
 // https://developers.google.com/maps/documentation/javascript/examples/
 function initMap() {
-  var customMapType = new google.maps.StyledMapType([{
-      stylers: [{
-          'saturation': -100
-        },
-        {
-          'lightness': 51
-        },
-        {
-          'visibility': 'simplified'
-        }
-      ]
-    },
+  var customMapType = new google.maps.StyledMapType(
+    [
+      {
+        stylers: [
+          {
+            saturation: -100
+          },
+          {
+            lightness: 51
+          },
+          {
+            visibility: 'simplified'
+          }
+        ]
+      },
+      {
+        elementType: 'labels',
+        stylers: [
+          {
+            visibility: 'on'
+          }
+        ]
+      },
+      {
+        featureType: 'water',
+        stylers: [
+          {
+            color: '#f7f4f4'
+          }
+        ]
+      }
+    ],
     {
-      elementType: 'labels',
-      stylers: [{
-        visibility: 'on'
-      }]
-    },
-    {
-      featureType: 'water',
-      stylers: [{
-        color: '#f7f4f4'
-      }]
+      name: 'CASE View'
     }
-  ], {
-    name: 'Case View'
-  });
+  );
 
   var image = new google.maps.MarkerImage(
     './assets/custom/img/marker.png',
@@ -41,15 +50,15 @@ function initMap() {
     zoom: 12,
     scrollwheel: false,
     center: {
-      lat: 39.108,
-      lng: -77.635
+      lat: 39.1154,
+      lng: -77.564
     },
     mapTypeControlOptions: {
       mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
     }
   });
 
-  var infowindow = new google.maps.InfoWindow;
+  var infowindow = new google.maps.InfoWindow();
   infowindow.setContent('<b>Leesburg</b>');
 
   var marker = new google.maps.Marker({
@@ -57,8 +66,8 @@ function initMap() {
     clickable: false,
     icon: image,
     position: {
-      lat: 39.108,
-      lng: -77.635563
+      lat: 39.1154,
+      lng: -77.564563
     }
   });
 
