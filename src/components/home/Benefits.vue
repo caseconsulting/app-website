@@ -106,13 +106,9 @@
                   <li class="g-pos-rel g-pl-10 g-mb-15">
                     <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
                     <p class="list_elem">
-                      $1,800 per calendar year towards purchase of employee computer/tablet or other technology related
-                      device
+                      Employees are offered a technology package towards the purchase of employee computer/tablet, WFH
+                      supplies, or other technology related devices
                     </p>
-                  </li>
-                  <li class="g-pos-rel g-pl-10 g-mb-15">
-                    <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
-                    <p class="list_elem">Verizon 4G Mobile Wi-Fi Hotspot</p>
                   </li>
                 </ul>
               </div>
@@ -120,6 +116,35 @@
             <!-- End Icon Blocks -->
           </div>
           <div class="col-md-5 offset-md-2 g-mb-40">
+            <!-- Icon Blocks -->
+            <div class="media">
+              <div class="d-flex g-mt-25 g-mr-40">
+                <span class="d-block g-color-primary g-font-size-48 g-line-height-1">
+                  <i class="fas fa-calendar fa-fw"></i>
+                </span>
+              </div>
+              <div class="media-body align-self-center">
+                <h3 class="h5 text-uppercase g-font-weight-800">Time Off</h3>
+                <ul class="list-unstyled g-font-size-12 g-mb-30 g-mb-0--md">
+                  <li class="g-pos-rel g-pl-10 g-mb-15">
+                    <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
+                    <p class="list_elem">
+                      Competitive Paid time off to include vacation, holidays, training and volunteer time
+                    </p>
+                  </li>
+                  <li class="g-pos-rel g-pl-10 g-mb-15">
+                    <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
+                    <p class="list_elem">One additional week of absence with every 5 year anniversary</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- End Icon Blocks -->
+          </div>
+        </div>
+        <!-- Icon Blocks -->
+        <div class="row">
+          <div class="col-md-5 g-mb-40 g-mb-0--md">
             <!-- Icon Blocks -->
             <div class="media">
               <div class="d-flex g-mt-25 g-mr-40">
@@ -132,25 +157,27 @@
                 <ul class="list-unstyled g-font-size-12 g-mb-30 g-mb-0--md">
                   <li class="g-pos-rel g-pl-10 g-mb-15">
                     <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
-                    <p class="list_elem">$3,500 per year towards professional development</p>
+                    <p class="list_elem">
+                      CASE puts significant value on professional development and provides a training budget for all
+                      employees
+                    </p>
                   </li>
                   <li class="g-pos-rel g-pl-10 g-mb-15">
                     <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
-                    <p class="list_elem">Includes certifications, screencasts, CBTs, conferences, books, etc.</p>
+                    <p class="list_elem">
+                      This budget includes certifications, online trainings, conferences, books, etc.
+                    </p>
                   </li>
                   <li class="g-pos-rel g-pl-10 g-mb-15">
                     <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
-                    <p class="list_elem">3 days per year of PTO for professional development and certification</p>
+                    <p class="list_elem">PTO for professional development is also made available to employees</p>
                   </li>
                 </ul>
               </div>
             </div>
             <!-- End Icon Blocks -->
           </div>
-        </div>
-        <!-- Icon Blocks -->
-        <div class="row">
-          <div class="col-md-5 g-mb-40 g-mb-0--md">
+          <div class="col-md-5 offset-md-2">
             <!-- Icon Blocks -->
             <div class="media">
               <div class="d-flex g-mt-25 g-mr-40">
@@ -180,32 +207,6 @@
                 </ul>
               </div>
             </div>
-          </div>
-          <div class="col-md-5 offset-md-2">
-            <!-- Icon Blocks -->
-            <div class="media">
-              <div class="d-flex g-mt-25 g-mr-40">
-                <span class="d-block g-color-primary g-font-size-48 g-line-height-1">
-                  <i class="fas fa-calendar fa-fw"></i>
-                </span>
-              </div>
-              <div class="media-body align-self-center">
-                <h3 class="h5 text-uppercase g-font-weight-800">Time Off</h3>
-                <ul class="list-unstyled g-font-size-12 g-mb-30 g-mb-0--md">
-                  <li class="g-pos-rel g-pl-10 g-mb-15">
-                    <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
-                    <p class="list_elem">
-                      Competitive Paid time off to include vacation, holidays, training and volunteer time
-                    </p>
-                  </li>
-                  <li class="g-pos-rel g-pl-10 g-mb-15">
-                    <i class="fas fa-angle-right bullet_top g-left-0 g-font-size-16 g-color-primary"></i>
-                    <p class="list_elem">One additional week of absence with every 5 year anniversary</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- End Icon Blocks -->
           </div>
         </div>
         <!-- End Icon Blocks -->
