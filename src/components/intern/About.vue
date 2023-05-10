@@ -14,7 +14,7 @@
         agile/scrum, pair programming, automated testing, and test-driven development. If you are eager to hone the
         skills learned at school and want to work on a real-world problem, from concept to delivery, while working for
         an established company of software professionals, then please consider applying for a summer internship with
-        Case Consulting!
+        CASE!
       </p>
     </div>
     <br />

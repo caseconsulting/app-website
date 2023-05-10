@@ -10,7 +10,7 @@
               <img
                 class="u-header__logo-img u-header__logo-img--main g-width-110"
                 src="/assets/custom/img/case/logo-banner.gif"
-                alt="Case Consulting, Inc."
+                alt="CASE"
               />
             </a>
           </span>

@@ -24,8 +24,8 @@
                 <strong>Work that Matters</strong>
               </h3>
               <p class="mb-0">
-                Case Consulting is a software services company that supports the mission critical requirements of the
-                federal government and private industry by providing highly talented and exceptionally skilled software
+                CASE is a software services company that supports the mission critical requirements of the federal
+                government and private industry by providing highly talented and exceptionally skilled software
                 developers, architects, software testers, and program managers.
               </p>
             </div>
@@ -82,9 +82,9 @@
                 <strong>Leaders that captivate</strong>
               </h3>
               <p class="mb-0">
-                Case Consulting has a well-earned reputation for quality, responsiveness and absolute excellence. We
-                take pride in our ability to fully understand and embrace our customers and their needs, and provide
-                innovative, polished, and inspiring applications of systems and technology.
+                CASE has a well-earned reputation for quality, responsiveness and absolute excellence. We take pride in
+                our ability to fully understand and embrace our customers and their needs, and provide innovative,
+                polished, and inspiring applications of systems and technology.
               </p>
             </div>
           </article>
