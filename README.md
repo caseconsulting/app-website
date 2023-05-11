@@ -26,7 +26,7 @@ The following environment variables are required to support multiple environment
 will be included in the client bundle created by webpack. They will be accessible from your code using **process.env**.
 At build time, webpack will replace these references with their corresponding values. For more information, go to:
 https://cli.vuejs.org/guide/mode-and-env.html#using-env-variables-in-client-side-code.
-The `.env` file in the **case-website-code** S3 bucket in the company AWS account has up-to-date values to run locally.
+The `.env` file in the **case-consulting-website-code-dev** S3 bucket in the company AWS account has up-to-date values to run locally.
 Download this file to the project root directory:
 
 ```bash
