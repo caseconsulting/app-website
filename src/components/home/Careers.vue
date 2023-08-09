@@ -427,9 +427,17 @@
         </div>
       </div>
     </div>
+    <br />
     <!-- Apply Button -->
     <apply-button></apply-button>
     <br />
+    <!-- Equal Opportunity Employer -->
+    <p class="container g-max-width-750 g-color-white g-font-size-12">
+      CASE is an Affirmative Action and Equal Opportunity Employer. All qualified applicants will receive consideration
+      for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin,
+      or protected veteran status, and will not be discriminated against on the basis of disability.
+    </p>
+    <!-- End Equal Opportunity Employer -->
     <br />
     <!-- End Apply Button  -->
   </section>
