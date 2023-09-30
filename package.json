@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "build": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
+    "clean": "rm -rf dist",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "download:local:env": "aws s3 cp s3://case-consulting-website-code-dev/.env .env",
     "eslint": "eslint src/**/*.{js,vue} --fix",
     "lint": "npm run eslint && npm run stylelint",
-    "precommit": "npm run validate && npm run lint && npm run stylelint && npm run unit",
+    "precommit": "npm run validate && npm run eslint && npm run stylelint && npm run unit",
     "serve": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
     "stylelint": "stylelint src/**/*.{css,scss,vue}",
     "test": "npm run test:unit",
@@ -17,6 +18,10 @@
     "test:unit": "vue-cli-service test:unit",
     "unit": "npm run test:unit",
     "validate": "npm ci"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   },
   "dependencies": {
     "axios": "0.27.2",
