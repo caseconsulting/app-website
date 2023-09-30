@@ -10,7 +10,7 @@
     "download:local:env": "aws s3 cp s3://case-consulting-website-code-dev/.env .env",
     "eslint": "eslint src/**/*.{js,vue} --fix",
     "lint": "npm run eslint && npm run stylelint",
-    "precommit": "npm run validate && npm run eslint && npm run stylelint && npm run unit",
+    "precommit": "npm run validate && npm run eslint && npm run stylelint && npm run test",
     "serve": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
     "stylelint": "stylelint src/**/*.{css,scss,vue}",
     "test": "npm run test:unit",
@@ -50,7 +50,6 @@
     "eslint": "8.50.0",
     "eslint-plugin-prettier": "5.0.0",
     "eslint-plugin-vue": "9.17.0",
-    "jshint": "2.13.6",
     "postcss": "8.4.31",
     "postcss-html": "1.5.0",
     "postcss-loader": "4.3.0",
@@ -65,8 +64,9 @@
   },
   "pre-commit": [
     "validate",
-    "lint",
-    "unit"
+    "eslint",
+    "stylelint",
+    "test"
   ],
   "lint-staged": {
     "src/**/*.{js,jsx,json,css,md}": [
