@@ -6,7 +6,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0ed3cdf3-e0fd-493e-8320-159d510167b6/deploy-status)](https://app.netlify.com/sites/app-website/deploys)
 
-**app-website** is written in **Vue.js** and relies on **Node.js** v18.x+ and the **npm** package management system.
+**app-website** is written in **Vue.js** and relies on **Node.js** v18.x+ and the **npm** package management system. UI is enhanced with **bootstrap-vue** and **Vuetify.js**.
 
 - Download and install Node.js v18.x from: https://nodejs.org/en/ or https://nodejs.org/dist/latest-v18.x/
 - Install required Node.js modules:
