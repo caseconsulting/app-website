@@ -59,12 +59,6 @@ npm run test
 npm run lint
 ```
 
-### Run your end-to-end tests
-
-```bash
-npm run test:e2e
-```
-
 ### Run your unit tests
 
 ```bash
