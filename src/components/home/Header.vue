@@ -10,12 +10,10 @@
       data-header-fix-moment-exclude="g-py-18--md"
       data-header-fix-moment-classes="u-shadow-v18 g-py-13--md"
     >
-      <app-home-navigation v-if="this.$options.parent.$options._componentTag === 'app-home'"></app-home-navigation>
-      <app-intern-navigation
-        v-if="this.$options.parent.$options._componentTag === 'app-intern'"
-      ></app-intern-navigation>
-      <app-apply-navigation v-if="this.$options.parent.$options._componentTag === 'app-apply'"></app-apply-navigation>
-      <app-apply-navigation v-if="this.$options.parent.$options._componentTag === 'app-submit'"></app-apply-navigation>
+      <app-home-navigation v-if="this.$parent.$parent.$options.name === 'Home'"></app-home-navigation>
+      <app-intern-navigation v-if="this.$parent.$parent.$options.name === 'Intern'"></app-intern-navigation>
+      <app-apply-navigation v-if="this.$parent.$parent.$options.name === 'VApp'"></app-apply-navigation>
+      <app-apply-navigation v-if="this.$parent.$parent.$options.name === 'Submit'"></app-apply-navigation>
     </div>
   </header>
   <!-- End Header -->

@@ -1,8 +1,6 @@
 <template>
   <div id="app">
     <v-app>
-      <!-- <app-apply v-if="show"></app-apply>
-      <app-submit v-else></app-submit>-->
       <app-apply :showMe="show" @switched="show = $event" v-if="show"></app-apply>
       <app-submit :showMe="show" @switched="show = $event" v-if="!show"></app-submit>
     </v-app>
@@ -25,7 +23,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss">
-@import '../../../node_modules/vuetify/dist/vuetify.min.css';
-</style>

@@ -37,7 +37,7 @@
           "
           href="intern"
         >
-          <a style="color: white">Learn More</a>
+          Learn More
         </a>
       </div>
     </div>

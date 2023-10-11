@@ -163,9 +163,9 @@ export default {
   },
   computed: {
     finalSlide() {
-      if (this.$options.parent.$options._componentTag === 'app-home') {
+      if (this.$parent.$parent.$options.name === 'Home') {
         return this.homeSlider;
-      } else if (this.$options.parent.$options._componentTag === 'app-intern') {
+      } else if (this.$parent.$parent.$options.name === 'Intern') {
         return this.internSlider;
       }
       return [

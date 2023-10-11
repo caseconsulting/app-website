@@ -93,31 +93,17 @@ Steps to recreate the BPTW button for a new year:
 
 https://github.com/axios/axios
 
-**Bootstrap-vue:**
-
-https://bootstrap-vue.org/docs
-
 **jQuery**
 
 https://api.jquery.com/
 
 **Vue:**
 
-https://vuejs.org/v2/guide/
-
-Please note we are currently using Vue2. When we migrate to Vue3 replace the above link.
-
-**Vue-Multiselect**
-
-https://vue-multiselect.js.org/
+https://vuejs.org/guide/introduction.html
 
 **Vue-Router**
 
 https://router.vuejs.org/api/
-
-**Vue2-Dropzone**
-
-https://rowanwins.github.io/vue-dropzone/docs/dist/#/installation
 
 **Vuelidate**
 

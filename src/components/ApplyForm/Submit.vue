@@ -29,7 +29,7 @@
         <div>
           <div class="col-sm-offset-2 col-sm-10">
             <a href="/">
-              <button type="button" class="btn btn-success" style="opacity: 0.8">Return to Home</button>
+              <button type="button" class="btn btn-success" style="opacity: 0.8; color: white">Return to Home</button>
             </a>
           </div>
         </div>
