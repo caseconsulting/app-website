@@ -169,7 +169,7 @@
                   bg-color="white"
                   class=""
                   color="green"
-                  :base-color="!valid.resume ? 'blue' : 'grey-darken-1'"
+                  :base-color="!valid.resume ? 'red' : 'grey-darken-1'"
                   variant="outlined"
                   single-line
                   show-size
