@@ -6,7 +6,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0ed3cdf3-e0fd-493e-8320-159d510167b6/deploy-status)](https://app.netlify.com/sites/app-website/deploys)
 
-**app-website** is written in **Vue.js** and relies on **Node.js** v18.x+ and the **npm** package management system.
+**app-website** is written in **Vue.js** and relies on **Node.js** v18.x+ and the **npm** package management system. UI is enhanced with **bootstrap-vue** and **Vuetify.js**.
 
 - Download and install Node.js v18.x from: https://nodejs.org/en/ or https://nodejs.org/dist/latest-v18.x/
 - Install required Node.js modules:
@@ -59,12 +59,6 @@ npm run test
 npm run lint
 ```
 
-### Run your end-to-end tests
-
-```bash
-npm run test:e2e
-```
-
 ### Run your unit tests
 
 ```bash
@@ -99,31 +93,17 @@ Steps to recreate the BPTW button for a new year:
 
 https://github.com/axios/axios
 
-**Bootstrap-vue:**
-
-https://bootstrap-vue.org/docs
-
 **jQuery**
 
 https://api.jquery.com/
 
 **Vue:**
 
-https://vuejs.org/v2/guide/
-
-Please note we are currently using Vue2. When we migrate to Vue3 replace the above link.
-
-**Vue-Multiselect**
-
-https://vue-multiselect.js.org/
+https://vuejs.org/guide/introduction.html
 
 **Vue-Router**
 
 https://router.vuejs.org/api/
-
-**Vue2-Dropzone**
-
-https://rowanwins.github.io/vue-dropzone/docs/dist/#/installation
 
 **Vuelidate**
 

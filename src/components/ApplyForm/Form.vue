@@ -1,6 +1,13 @@
 <template>
   <div>
-    <Modal :headline="modalHeadline" :body="modalBody" closeButtonText="Ok" :show.sync="modalDisplay"> </Modal>
+    <Modal
+      :headline="modalHeadline"
+      :body="modalBody"
+      closeButtonText="Ok"
+      :show.sync="modalDisplay"
+      @update:show="modalDisplay = $event"
+    >
+    </Modal>
     <form-header></form-header>
     <section id="apply" class="g-theme-bg-gray-light-v1 g-py-50">
       <div class="applyForm container col-sm-8 col-xl-6 col-lg-8 col-xs-9">
@@ -55,13 +62,21 @@
             <div class="col-xl-12">
               <div class="input" :class="{ invalid: !valid.jobTitles }">
                 <label class="control-label" for="job">*Job Title:</label>
-                <multiselect
+                <v-autocomplete
+                  placeholder="Select an option"
                   v-model="jobTitles"
-                  :options="jobOptions"
-                  :multiple="true"
+                  :items="jobOptions"
+                  bg-color="white"
+                  :base-color="!valid.jobTitles ? 'red' : 'grey-darken-1'"
+                  density="compact"
+                  variant="outlined"
+                  hide-details
+                  multiple
+                  chips
+                  closable-chips
                   id="job"
-                  @select="checkIntern"
-                ></multiselect>
+                ></v-autocomplete>
+                <p class="invalidMsg" v-if="!valid.jobTitles">Please select at least one job title.</p>
 
                 <!-- Other Job Title Text Field -->
                 <div
@@ -69,7 +84,6 @@
                   :class="{ invalid: !valid.otherJobTitle }"
                   v-if="jobTitles && jobTitles.includes('Other')"
                 >
-                  <br />
                   <textarea
                     v-if="jobTitles && jobTitles.includes('Other')"
                     class="form-control"
@@ -78,18 +92,31 @@
                     id="other"
                     v-model="otherJobTitle"
                   ></textarea>
-                  <p class="invalidMsg" v-if="!valid.otherJobTitle">Other field cannott be blank.</p>
+                  <p class="invalidMsg" v-if="!valid.otherJobTitle">Other field cannot be blank.</p>
                 </div>
-                <p class="invalidMsg" v-if="!valid.jobTitles">Please select at least one job title.</p>
               </div>
             </div>
           </div>
+          <br />
 
           <!-- How Did You Hear About Us Field -->
           <div class="form-group">
             <div class="col-xl-12">
               <label class="control-label" for="job">How did you hear about us?:</label>
-              <multiselect v-model="hearAboutUs" :options="hearOptions" :multiple="true" id="job"></multiselect>
+              <v-autocomplete
+                placeholder="Select an option"
+                v-model="hearAboutUs"
+                :items="hearOptions"
+                bg-color="white"
+                base-color="grey-darken-1"
+                density="compact"
+                variant="outlined"
+                hide-details
+                multiple
+                chips
+                closable-chips
+                id="job"
+              ></v-autocomplete>
               <!-- Referral Text Field -->
               <div
                 class="input"
@@ -116,7 +143,6 @@
               >
                 <br />
                 <textarea
-                  v-if="hearAboutUs && hearAboutUs.includes('Other')"
                   class="form-control"
                   rows="5"
                   placeholder="Other"
@@ -134,17 +160,25 @@
             <div class="col-xl-12">
               <div class="input" :class="{ invalid: !valid.resume }">
                 <label class="control-label" for="uploadResume">*Upload Resume</label>
-                <vue-dropzone
-                  ref="dropzone"
-                  id="drop1"
-                  :options="dropOptions"
-                  :awss3="awss3"
-                  @vdropzone-s3-upload-error="s3UploadError"
-                  @vdropzone-s3-upload-success="s3UploadSuccess"
-                  @vdropzone-queue-complete="submittedRedirect"
-                  @vdropzone-error="dropZoneError"
-                ></vue-dropzone>
-                <p class="invalidMsg" v-if="!valid.resume">Please upload a resume.</p>
+                <v-file-input
+                  v-model="files"
+                  accept="image/jpeg, image/png, image/gif, application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                  :rules="fileRules"
+                  prepend-inner-icon="mdi-paperclip"
+                  prepend-icon=""
+                  bg-color="white"
+                  class=""
+                  color="green"
+                  :base-color="!valid.resume ? 'red' : 'grey-darken-1'"
+                  variant="outlined"
+                  single-line
+                  show-size
+                >
+                  <template v-slot:label>
+                    <span class="text-grey-darken-1">Drop here to upload</span>
+                  </template>
+                </v-file-input>
+                <p class="invalidMsg" v-if="!valid.resume">Please upload a valid resume.</p>
               </div>
             </div>
           </div>
@@ -184,56 +218,17 @@
 </template>
 
 <script>
-import Multiselect from 'vue-multiselect';
-import vueDropzone from 'vue2-dropzone';
-import { required, email } from 'vuelidate/lib/validators';
+import useValidate from '@vuelidate/core';
+import { required, email } from '@vuelidate/validators';
 import Header from '../home/Header.vue';
 import axios from 'axios';
 import modal from '../AlertModal.vue';
 
-var successfulSubmission = false;
-
 // METHODS -----
-// console log error on s3 upload
-function s3UploadError(errorMessage) {
-  this.modalHeadline = errorMessage;
-  this.modalBody = errorMessage;
-  this.modalDisplay = true;
-  console.error('Error uploading:', errorMessage); // eslint-disable-line no-console
-}
-// push s3 location on successful upload
-function s3UploadSuccess(s3ObjectLocation) {
-  // console.log('Upload was successful');
-  this.uploads.push(s3ObjectLocation);
-}
-// Activate modal upon error event
-function dropZoneError(file, message) {
-  this.modalHeadline = 'Error';
-  this.modalBody = message;
-  this.modalDisplay = true;
-}
 // toggle apply form succesfully submitted page
 function submittedRedirect() {
-  // console.log('attemptting to redirect');
-  if (successfulSubmission) {
-    // console.log('redirect successful');
-    this.showMe = false;
-    this.$emit('switched', this.showMe);
-  } else {
-    // console.log('should not redirect');
-    this.submitEnabled = true; // reenable submit button after form processing
-    // DELETE THE OLD FILES IN DYNAMO AND S3
-    // console.log(`${baseUrl}/apply`);
-    // console.log(data);
-    // console.log(axios.delete(`${baseUrl}/apply`, data));
-  }
-}
-// populate data.files with dropzone process queue files
-function getFiles() {
-  this.files = [];
-  for (let i = 0; i < this.$refs.dropzone.getQueuedFiles().length; i++) {
-    this.files.push(this.$refs.dropzone.getQueuedFiles()[i].name);
-  }
+  this.showMe = false;
+  this.$emit('switched', this.showMe);
 }
 // return true if all client-side validation passes
 function isAllValid() {
@@ -245,23 +240,23 @@ function isAllValid() {
   return true;
 }
 function validateFirstName() {
-  this.$v.firstName.$touch();
-  this.valid.firstName = this.$v.firstName.required;
+  this.v$.firstName.$touch();
+  this.valid.firstName = this.v$.firstName.$errors.length === 0;
 }
 function validateLastName() {
-  this.$v.lastName.$touch();
-  this.valid.lastName = this.$v.lastName.required;
+  this.v$.lastName.$touch();
+  this.valid.lastName = this.v$.lastName.$errors.length === 0;
 }
 function validateEmail() {
-  this.$v.email.$touch();
-  this.valid.email = this.$v.email.email && this.$v.email.required;
+  this.v$.email.$touch();
+  this.valid.email = this.v$.email.$errors.length === 0;
 }
 function validateJobTitles() {
-  this.$v.jobTitles.$touch();
-  this.valid.jobTitles = this.$v.jobTitles.hasJobTitle;
+  this.v$.jobTitles.$touch();
+  this.valid.jobTitles = this.v$.jobTitles.$errors.length === 0;
   if (this.jobTitles.includes('Other')) {
-    this.$v.otherJobTitle.$touch();
-    this.valid.otherJobTitle = this.$v.otherJobTitle.required;
+    this.v$.otherJobTitle.$touch();
+    this.valid.otherJobTitle = this.v$.otherJobTitle.$errors.length === 0;
   } else {
     this.valid.otherJobTitle = true;
     this.otherJobTitle = '';
@@ -269,25 +264,24 @@ function validateJobTitles() {
 }
 function validateHearAboutUs() {
   if (this.hearAboutUs.includes('Other')) {
-    this.$v.otherHearAboutUs.$touch();
-    this.valid.otherHearAboutUs = this.$v.otherHearAboutUs.required;
+    this.v$.otherHearAboutUs.$touch();
+    this.valid.otherHearAboutUs = this.v$.otherHearAboutUs.$errors.length === 0;
   } else {
     this.valid.otherHearAboutUs = true;
     this.otherHearAboutUs = '';
   }
 
   if (this.hearAboutUs.includes('Employee Referral')) {
-    this.$v.referralHearAboutUs.$touch();
-    this.valid.referralHearAboutUs = this.$v.referralHearAboutUs.required;
+    this.v$.referralHearAboutUs.$touch();
+    this.valid.referralHearAboutUs = this.v$.referralHearAboutUs.$errors.length === 0;
   } else {
     this.valid.referralHearAboutUs = true;
     this.referralHearAboutUs = '';
   }
 }
 function validateResume() {
-  this.getFiles();
-  this.$v.files.$touch();
-  this.valid.resume = this.$v.files.hasFiles;
+  this.v$.files.$touch();
+  this.valid.resume = this.v$.files.$errors.length === 0;
 }
 // alert modal for duplicate intern applications via Handshake
 function checkIntern(event) {
@@ -297,7 +291,14 @@ function checkIntern(event) {
     this.modalDisplay = true;
   }
 }
-
+// uploads a signatured file to S3
+async function uploadResumeToS3(data, file) {
+  const awsFormData = new FormData();
+  Object.keys(data.signature).forEach((key) => awsFormData.append(key, data.signature[key]));
+  awsFormData.append('file', file);
+  let resp = await axios.post(data.postEndpoint, awsFormData);
+  return resp;
+}
 // on form submission
 async function onSubmit() {
   this.submitEnabled = false; // disable submit button during form processing
@@ -323,21 +324,22 @@ async function onSubmit() {
         referralHearAboutUs: this.referralHearAboutUs.trim(),
         otherHearAboutUs: this.otherHearAboutUs.trim(),
         comments: this.comments.trim(),
-        fileNames: this.files,
-        resumeUpload: this.uploads
+        fileNames: this.files.map((f) => f.name)
       };
 
       // content upload
       const baseUrl = process.env.VUE_APP_API;
       const response = await axios.post(`${baseUrl}/apply`, data);
-
-      successfulSubmission = true;
-
-      this.$refs.dropzone.key = response.data.id;
+      const key = response.data.id;
+      const file = this.files[0];
+      const formData = new FormData();
+      formData.append('filePath', file.name);
+      formData.append('contentType', file.type);
+      let resp = await axios.post(`${baseUrl}/upload/${key}/${file.name}`, formData);
+      await this.uploadResumeToS3(resp.data, file);
+      this.submittedRedirect();
 
       // file upload
-
-      this.$refs.dropzone.processQueue();
       return response;
     } catch (err) {
       // Error submitting apply form
@@ -356,6 +358,7 @@ async function onSubmit() {
 export default {
   data() {
     return {
+      v$: useValidate(),
       valid: {
         firstName: true,
         lastName: true,
@@ -387,71 +390,11 @@ export default {
       referralHearAboutUs: '',
       otherHearAboutUs: '',
       files: [],
-      uploads: [],
-      dropOptions: {
-        dictDefaultMessage: 'Drop file here to upload',
-        autoProcessQueue: false,
-        thumbnailWidth: '150',
-        thumbnailHeight: '150',
-        key: '',
-        acceptedFiles:
-          'image/jpeg, image/png, image/gif, application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-        addRemoveLinks: true,
-        maxFilesize: 6,
-        maxFiles: 1,
-        parallelUploads: 1,
-        timeout: 180000,
-        init: function () {
-          var myDropZone = this;
-          myDropZone.on('addedfile', function (file) {
-            if (file.type.match(/application.pdf/)) {
-              myDropZone.emit('thumbnail', file, '/assets/custom/img/icons/pdfIcon.png');
-            } else if (file.type.match(/application.msword/)) {
-              myDropZone.emit('thumbnail', file, '/assets/custom/img/icons/docIcon.png');
-            } else if (file.type.match(/application.vnd.openxmlformats-officedocument.wordprocessingml.document/)) {
-              myDropZone.emit('thumbnail', file, '/assets/custom/img/icons/docxIcon.png');
-            }
-
-            myDropZone.getQueuedFiles().forEach(function (f) {
-              if (f.name === file.name) {
-                // error max file number exceeded (1)
-                myDropZone.removeFile(file);
-              }
-            });
-          });
-          myDropZone.on('error', function (file, message) {
-            if (file.size > 6000000) {
-              // error max file size (6MB)
-              myDropZone.removeFile(file);
-            } else if (myDropZone.getQueuedFiles().length >= 1) {
-              // error max file number exceeded (1)s
-              myDropZone.removeFile(file);
-            } else if (!file.accepted) {
-              // rejected file upload to s3 bucket
-              // file type can not be uploaded
-              successfulSubmission = false;
-            } else {
-              console.log(message); // eslint-disable-line no-console
-            }
-          });
-
-          myDropZone.on('sending', function (file) {
-            if (!file.s3Signature) {
-              file.accepted = false;
-              myDropZone.removeFile(file);
-            }
-          });
+      fileRules: [
+        (v) => {
+          return !v || !v.length || v[0].size < 6000000 || 'File exceeds maximum size of 6 MB';
         }
-      },
-      awss3: {
-        signingURL: (file) => {
-          // console.log('filesigning: ' + this.$refs.dropzone.key + '/' + file.upload.filename);
-          return `${process.env.VUE_APP_API}/upload/` + this.$refs.dropzone.key + '/' + file.upload.filename;
-        },
-        headers: {},
-        params: {},
-        sendFileToServer: false
-      },
+      ],
       comments: '',
       submitEnabled: true,
       modalDisplay: false,
@@ -459,53 +402,51 @@ export default {
       modalHeadline: ''
     };
   },
-  validations: {
-    firstName: {
-      required
-    },
-    lastName: {
-      required
-    },
-    email: {
-      required,
-      email
-    },
-    jobTitles: {
-      hasJobTitle: (val) => {
-        return val && val.length > 0;
+  validations() {
+    return {
+      firstName: {
+        required
+      },
+      lastName: {
+        required
+      },
+      email: {
+        required,
+        email
+      },
+      jobTitles: {
+        hasJobTitle: (val) => {
+          return val && val.length > 0;
+        }
+      },
+      otherJobTitle: {
+        required
+      },
+      files: {
+        hasFiles: (val) => {
+          return val && val.length > 0;
+        },
+        validFileSize: (val) => {
+          return val && val[0] && val[0].size < 6000000;
+        }
+      },
+      otherHearAboutUs: {
+        required
+      },
+      referralHearAboutUs: {
+        required
       }
-    },
-    otherJobTitle: {
-      required
-    },
-    files: {
-      hasFiles: (val) => {
-        return val && val.length > 0;
-      }
-    },
-    otherHearAboutUs: {
-      required
-    },
-    referralHearAboutUs: {
-      required
-    }
+    };
   },
   components: {
-    Multiselect,
-    vueDropzone,
     formHeader: Header,
     Modal: modal
   },
   methods: {
-    // console log error on s3 upload
-    s3UploadError,
-    dropZoneError,
-    // push s3 location on successful upload
-    s3UploadSuccess,
     // toggle apply form succesfully submitted page
     submittedRedirect,
     // populate data.files with dropzone process queue files
-    getFiles,
+    uploadResumeToS3,
     // return true if all client-side validation passes
     isAllValid,
     validateFirstName,
@@ -521,9 +462,6 @@ export default {
   }
 };
 </script>
-
-<style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
-<style src="vue2-dropzone/dist/vue2Dropzone.min.css"></style>
 
 <style>
 .input.invalid label {
@@ -543,11 +481,7 @@ export default {
   border-color: #42b883;
 }
 
-.vue-dropzone > .dz-preview .dz-remove {
-  border: 2px #fff solid !important;
-}
-
-.dropzone .dz-preview .dz-progress {
-  opacity: 0 !important;
+.v-input--error * {
+  color: red !important;
 }
 </style>

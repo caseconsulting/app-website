@@ -22,6 +22,7 @@
  */
 function close() {
   this.$emit('update:show', false);
+  this.display = false;
 }
 
 // |--------------------------------------------------|

@@ -1,17 +1,9 @@
-import Vue from 'vue';
+import { createApp } from 'vue';
 import App from './App.vue';
 import vuetify from './vuetify';
-import Vuelidate from 'vuelidate';
+import vuex from '../../store';
 
-import store from '../../store.js';
+import '@mdi/font/css/materialdesignicons.css';
 import(/* webpackMode: "eager" */ 'vuetify/dist/vuetify.min.css');
 
-Vue.use(Vuelidate);
-
-Vue.config.productionTip = false;
-window.EventBus = new Vue();
-new Vue({
-  store,
-  vuetify,
-  render: (h) => h(App)
-}).$mount('#app');
+createApp(App).use(vuetify).use(vuex).mount('#app');
