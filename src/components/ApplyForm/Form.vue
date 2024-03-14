@@ -314,6 +314,12 @@ async function onSubmit() {
   // process form to back-end if client-side validation passes
   if (this.isAllValid()) {
     try {
+      // use our own naming convention
+      let ext = this.files[0].name.split('.').pop();
+      let customFilename = `${this.lastName}${this.firstName}Resume`;
+      customFilename = customFilename.replace(/[^a-zA-Z]/ig, '');
+      customFilename += `.${ext}`
+
       const data = {
         firstName: this.firstName.trim(),
         lastName: this.lastName.trim(),
@@ -324,7 +330,7 @@ async function onSubmit() {
         referralHearAboutUs: this.referralHearAboutUs.trim(),
         otherHearAboutUs: this.otherHearAboutUs.trim(),
         comments: this.comments.trim(),
-        fileNames: this.files.map((f) => f.name)
+        fileNames: [customFilename]
       };
 
       // content upload
@@ -333,9 +339,9 @@ async function onSubmit() {
       const key = response.data.id;
       const file = this.files[0];
       const formData = new FormData();
-      formData.append('filePath', file.name);
+      formData.append('filePath', customFilename);
       formData.append('contentType', file.type);
-      let resp = await axios.post(`${baseUrl}/upload/${key}/${file.name}`, formData);
+      let resp = await axios.post(`${baseUrl}/upload/${key}/${customFilename}`, formData);
       await this.uploadResumeToS3(resp.data, file);
       this.submittedRedirect();
 
