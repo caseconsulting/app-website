@@ -4111,7 +4111,10 @@ readers do not read off random characters that represent icons */
   content: "\f1e8"; }
 
 .fa-twitter:before {
-  content: "𝕏"; }
+  content: "𝕏";
+  font-size: 1.3em;
+  font-weight: bold;
+}
 
 .fa-twitter-square:before {
   content: "\f081"; }
