@@ -61,7 +61,7 @@
           </div>
         </div>
       </div>
-      <div class="d-none d-sm-flex">
+      <div class="d-none d-lg-flex">
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span>
             <img src="/assets/custom/img/online/leftArrow.png" />
@@ -71,7 +71,7 @@
       </div>
 
 
-      <div class="d-none d-sm-flex">
+      <div class="d-none d-lg-flex">
         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
           <span>
             <img src="/assets/custom/img/online/rightArrow.png" />
