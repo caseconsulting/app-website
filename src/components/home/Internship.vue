@@ -11,7 +11,7 @@
           </h2>
         </div>
         <p class="g-color-white">
-          Summer Internships take place from May to August in the Make Offices in Reston, Virginia, within the
+          Summer Internships take place from May to August in the Workspaces at Reston Town Center in Reston, Virginia, within the
           metropolitan area of Washington, D.C. The interns will design and implement software applications as part of a
           collaborative team of interns and professional software developers. The intern will gain experience in full
           stack development using modern web technologies, including Amazon Web Services (AWS). Interns will also learn
