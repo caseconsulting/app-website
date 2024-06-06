@@ -61,19 +61,24 @@
           </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span>
-          <img src="/assets/custom/img/online/leftArrow.png" />
-        </span>
-        <span class="sr-only">Previous</span>
-      </a>
+      <div class="d-none d-sm-flex">
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span>
+            <img src="/assets/custom/img/online/leftArrow.png" />
+          </span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </div>
 
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span>
-          <img src="/assets/custom/img/online/rightArrow.png" />
-        </span>
-        <span class="sr-only">Next</span>
-      </a>
+
+      <div class="d-none d-sm-flex">
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span>
+            <img src="/assets/custom/img/online/rightArrow.png" />
+          </span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
   </section>
   <!-- End Section Content -->
