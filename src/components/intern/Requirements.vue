@@ -57,3 +57,9 @@
   </section>
   <!-- End Requirements Section Content -->
 </template>
+
+<style scoped>
+ul {
+  padding-inline-start: 40px !important;
+}
+</style>
