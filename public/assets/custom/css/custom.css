@@ -41,30 +41,30 @@ body {
   height: auto;
 }
 
-.award-overlapped-first,
-.award-overlapped-fourth {
+.award-overlapped-1,
+.award-overlapped-4 {
   position: absolute;
   left: -10%;
 }
 
-.award-overlapped-second,
-.award-overlapped-fifth {
+.award-overlapped-2,
+.award-overlapped-5 {
   position: relative;
   left: 20%;
 }
 
-.award-overlapped-third,
-.award-overlapped-sixth {
+.award-overlapped-3,
+.award-overlapped-6 {
   position: absolute;
   left: 50%;
 }
 
-/* .award-overlapped-fourth {
+/* .award-overlapped-4 {
   position: relative;
   left: 4.5%;
 } */
 
-/* .award-overlapped-fifth {
+/* .award-overlapped-5 {
   position: relative;
   left: -6%;
 } */
@@ -571,42 +571,42 @@ h5 strong a:hover {
 
 /* for ipads and ipad pros -awards section */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .award-overlapped-first {
+  .award-overlapped-1 {
     position: absolute;
     left: 5%;
     margin-top: 5%;
     margin-bottom: 0%;
   }
 
-  .award-overlapped-second {
+  .award-overlapped-2 {
     position: relative;
     left: 35%;
     margin-top: 5%;
     margin-bottom: 0%;
   }
 
-  .award-overlapped-third {
+  .award-overlapped-3 {
     position: absolute;
     left: 65%;
     margin-top: 5%;
     margin-bottom: 0%;
   }
 
-  .award-overlapped-fourth {
+  .award-overlapped-4 {
     position: absolute;
     left: 5%;
     margin-top: 0%;
     margin-bottom: 10%;
   }
 
-  .award-overlapped-fifth {
+  .award-overlapped-5 {
     position: relative;
     left: 35%;
     margin-top: 0%;
     margin-bottom: 10%;
   }
 
-  .award-overlapped-sixth {
+  .award-overlapped-6 {
     position: absolute;
     left: 65%;
     margin-top: 0%;
@@ -656,7 +656,7 @@ h5 strong a:hover {
   .award-container {
     text-align: center;
     display: flex;
-    flex-direction: row;
+    flex-flow: row;
     justify-content: center;
   }
 
@@ -673,40 +673,40 @@ h5 strong a:hover {
     display: inline-block;
   }
 
-  .award-overlapped-first {
+  .award-overlapped-1 {
     position: relative;
     left: 0%;
     margin-bottom: 20px;
   }
 
-  .award-overlapped-second {
-    position: relative;
-    left: 0%;
-    margin-top: -10px;
-    margin-bottom: 20px;
-  }
-
-  .award-overlapped-third {
+  .award-overlapped-2 {
     position: relative;
     left: 0%;
     margin-top: -10px;
     margin-bottom: 20px;
   }
 
-  .award-overlapped-fourth {
-    position: relative;
-    left: 0%;
-    margin-bottom: 20px;
-  }
-
-  .award-overlapped-fifth {
+  .award-overlapped-3 {
     position: relative;
     left: 0%;
     margin-top: -10px;
     margin-bottom: 20px;
   }
 
-  .award-overlapped-sixth {
+  .award-overlapped-4 {
+    position: relative;
+    left: 0%;
+    margin-bottom: 20px;
+  }
+
+  .award-overlapped-5 {
+    position: relative;
+    left: 0%;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+
+  .award-overlapped-6 {
     position: relative;
     left: 0%;
     margin-top: -10px;

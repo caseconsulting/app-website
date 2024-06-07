@@ -16,90 +16,24 @@
           <div class="col-lg-7 col-sm-12">
             <div class="container-fluid award-container">
               <div class="row award-row">
-                <div class="col-md-5 award-overlapped-first">
-                  <a
-                    href="https://www.bizjournals.com/washington/news/2017/05/05/these-are-the-best-places-to-work-in-greater.html"
-                    target="_blank"
-                    rel="noopener"
-                    border="0"
-                  >
-                    <img
-                      src="../../../public/assets/custom/img/awards/BPTW-2017.png"
-                      alt
-                      class="rounded-circle img-fluid mobile-image award-shadow"
-                    />
-                  </a>
-                </div>
-                <div class="col-md-5 award-overlapped-second">
-                  <a
-                    href="https://www.bizjournals.com/washington/news/2018/04/13/see-the-best-places-to-work-in-greater-washington.html"
-                    target="_blank"
-                    rel="noopener"
-                    border="0"
-                  >
-                    <img
-                      src="../../../public/assets/custom/img/awards/BPTW-2018.png"
-                      alt
-                      class="rounded-circle img-fluid mobile-image award-shadow"
-                    />
-                  </a>
-                </div>
-                <div class="col-md-5 award-overlapped-third">
-                  <a
-                    href="https://www.bizjournals.com/washington/subscriber-only/2019/05/17/best-places-to-work-medium-companies.html"
-                    target="_blank"
-                    rel="noopener"
-                    border="0"
-                  >
-                    <img
-                      src="../../../public/assets/custom/img/awards/BPTW-2019.png"
-                      alt
-                      class="rounded-circle img-fluid mobile-image award-shadow"
-                    />
+                <div
+                  :class="'col-md-5 award-overlapped-' + (index + 1)"
+                  v-for="(award, index) in awardsArray.slice(0, 3)"
+                  :key="index"
+                >
+                  <a :href="award.href" target="_blank" rel="noopener" border="0">
+                    <img :src="award.src" alt class="rounded-circle img-fluid mobile-image award-shadow" />
                   </a>
                 </div>
               </div>
               <div class="row award-row">
-                <div class="col-md-5 award-overlapped-fourth">
-                  <a
-                    href="https://www.bizjournals.com/washington/news/2020/05/15/best-places-to-work-honorees-covid19-response.html"
-                    target="_blank"
-                    rel="noopener"
-                    border="0"
-                  >
-                    <img
-                      src="../../../public/assets/custom/img/awards/BPTW-2020.png"
-                      alt
-                      class="rounded-circle img-fluid mobile-image award-shadow"
-                    />
-                  </a>
-                </div>
-                <div class="col-md-5 award-overlapped-fifth">
-                  <a
-                    href="https://www.bizjournals.com/washington/subscriber-only/2021/05/21/best-places-to-work-medium-companies.html"
-                    target="_blank"
-                    rel="noopener"
-                    border="0"
-                  >
-                    <img
-                      src="../../../public/assets/custom/img/awards/BPTW-2021.png"
-                      alt
-                      class="rounded-circle img-fluid mobile-image award-shadow"
-                    />
-                  </a>
-                </div>
-                <div class="col-md-5 award-overlapped-sixth">
-                  <a
-                    href="https://www.bizjournals.com/washington/subscriber-only/2022/05/13/best-places-to-work-large-companies.html"
-                    target="_blank"
-                    rel="noopener"
-                    border="0"
-                  >
-                    <img
-                      src="../../../public/assets/custom/img/awards/BPTW-2022.png"
-                      alt
-                      class="rounded-circle img-fluid mobile-image award-shadow"
-                    />
+                <div
+                  :class="'col-md-5 award-overlapped-' + (index + 1)"
+                  v-for="(award, index) in awardsArray.slice(3, 6)"
+                  :key="index"
+                >
+                  <a :href="award.href" target="_blank" rel="noopener" border="0">
+                    <img :src="award.src" alt class="rounded-circle img-fluid mobile-image award-shadow" />
                   </a>
                 </div>
               </div>
@@ -149,3 +83,50 @@
   </section>
   <!-- End Awards Section -->
 </template>
+
+<script>
+import Img2017 from '../../../public/assets/custom/img/awards/BPTW-2017.png';
+import Img2018 from '../../../public/assets/custom/img/awards/BPTW-2018.png';
+import Img2019 from '../../../public/assets/custom/img/awards/BPTW-2019.png';
+import Img2020 from '../../../public/assets/custom/img/awards/BPTW-2020.png';
+import Img2021 from '../../../public/assets/custom/img/awards/BPTW-2021.png';
+import Img2022 from '../../../public/assets/custom/img/awards/BPTW-2022.png';
+export default {
+  setup() {
+    let awardsArray = [
+      {
+        href: 'https://www.bizjournals.com/washington/news/2017/05/05/these-are-the-best-places-to-work-in-greater.html',
+        src: Img2017
+      },
+      {
+        href: 'https://www.bizjournals.com/washington/news/2018/04/13/see-the-best-places-to-work-in-greater-washington.html',
+        src: Img2018
+      },
+      {
+        href: 'https://www.bizjournals.com/washington/subscriber-only/2019/05/17/best-places-to-work-medium-companies.html',
+        src: Img2019
+      },
+      {
+        href: 'https://www.bizjournals.com/washington/news/2020/05/15/best-places-to-work-honorees-covid19-response.html',
+        src: Img2020
+      },
+      {
+        href: 'https://www.bizjournals.com/washington/subscriber-only/2021/05/21/best-places-to-work-medium-companies.html',
+        src: Img2021
+      },
+      {
+        href: 'https://www.bizjournals.com/washington/subscriber-only/2022/05/13/best-places-to-work-large-companies.html',
+        src: Img2022
+      }
+    ];
+
+    const windowWidth = window.innerWidth;
+    if (windowWidth < 767) {
+      awardsArray = [awardsArray[0], awardsArray[2], awardsArray[4], awardsArray[1], awardsArray[3], awardsArray[5]];
+    }
+    return {
+      awardsArray
+    };
+  }
+};
+</script>
