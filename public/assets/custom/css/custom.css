@@ -619,6 +619,10 @@ h5 strong a:hover {
     position: relative;
   }
 
+  .award-row + .award-row {
+    padding-bottom: 30px;
+  }
+
   .intern-background {
     /* The image used */
     background-image: url('../img/office/kitchen_edit.jpg');

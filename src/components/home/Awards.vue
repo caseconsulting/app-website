@@ -119,7 +119,6 @@ export default {
         src: Img2022
       }
     ];
-
     const windowWidth = window.innerWidth;
     if (windowWidth < 767) {
       awardsArray = [awardsArray[0], awardsArray[2], awardsArray[4], awardsArray[1], awardsArray[3], awardsArray[5]];
