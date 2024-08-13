@@ -99,6 +99,28 @@
           </div>
           <br />
 
+          <!-- Clearance Field -->
+          <div class="form-group">
+            <div class="col-xl-12">
+              <div class="input" :class="{ invalid: !valid.clearance }">
+                <label class="control-label" for="job">*Clearance Level:</label>
+                <v-autocomplete
+                  placeholder="Select an option"
+                  v-model="clearance"
+                  :items="clearanceLevels"
+                  bg-color="white"
+                  :base-color="!valid.clearance ? 'red' : 'grey-darken-1'"
+                  density="compact"
+                  variant="outlined"
+                  hide-details
+                  id="job"
+                ></v-autocomplete>
+                <p class="invalidMsg" v-if="!valid.clearance">Please select a clearance level.</p>
+              </div>
+            </div>
+          </div>
+          <br />
+
           <!-- How Did You Hear About Us Field -->
           <div class="form-group">
             <div class="col-xl-12">
@@ -162,7 +184,7 @@
                 <label class="control-label" for="uploadResume">*Upload Resume</label>
                 <v-file-input
                   v-model="files"
-                  accept="image/jpeg, image/png, image/gif, application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                  accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document, application/rtf"
                   :rules="fileRules"
                   prepend-inner-icon="mdi-paperclip"
                   prepend-icon=""
@@ -175,7 +197,7 @@
                   show-size
                 >
                   <template v-slot:label>
-                    <span class="text-grey-darken-1">Drop here to upload</span>
+                    <span class="text-grey-darken-1">Drop here to upload (accepted formats: pdf, doc, docx, rtf)</span>
                   </template>
                 </v-file-input>
                 <p class="invalidMsg" v-if="!valid.resume">Please upload a valid resume.</p>
@@ -262,6 +284,10 @@ function validateJobTitles() {
     this.otherJobTitle = '';
   }
 }
+function validateClearance() {
+  this.v$.clearance.$touch();
+  this.valid.clearance = this.v$.clearance.$errors.length === 0;
+}
 function validateHearAboutUs() {
   if (this.hearAboutUs.includes('Other')) {
     this.v$.otherHearAboutUs.$touch();
@@ -307,6 +333,7 @@ async function onSubmit() {
   this.validateLastName();
   this.validateEmail();
   this.validateJobTitles();
+  this.validateClearance();
   this.validateHearAboutUs();
   this.validateResume();
   /* end client-side validation check */
@@ -317,14 +344,15 @@ async function onSubmit() {
       // use our own naming convention
       let ext = this.files[0].name.split('.').pop();
       let customFilename = `${this.lastName}${this.firstName}Resume`;
-      customFilename = customFilename.replace(/[^a-zA-Z]/ig, '');
-      customFilename += `.${ext}`
+      customFilename = customFilename.replace(/[^a-zA-Z]/gi, '');
+      customFilename += `.${ext}`;
 
       const data = {
         firstName: this.firstName.trim(),
         lastName: this.lastName.trim(),
         email: this.email.trim(),
         jobTitles: this.jobTitles,
+        clearance: this.clearance,
         otherJobTitle: this.otherJobTitle.trim(),
         hearAboutUs: this.hearAboutUs,
         referralHearAboutUs: this.referralHearAboutUs.trim(),
@@ -370,6 +398,7 @@ export default {
         lastName: true,
         email: true,
         jobTitles: true,
+        clearance: true,
         otherJobTitle: true,
         resume: true,
         comments: true,
@@ -391,6 +420,8 @@ export default {
         'Intern',
         'Other'
       ],
+      clearance: null,
+      clearanceLevels: ['None', 'Public Trust', 'Secret', 'TS', 'TS/SCI', 'TS/SCI with CI', 'TS/SCI with FSP'],
       hearAboutUs: [],
       hearOptions: ['Website', 'LinkedIn', 'Facebook', 'Twitter', 'Indeed', 'Glassdoor', 'Employee Referral', 'Other'],
       referralHearAboutUs: '',
@@ -424,6 +455,9 @@ export default {
         hasJobTitle: (val) => {
           return val && val.length > 0;
         }
+      },
+      clearance: {
+        required
       },
       otherJobTitle: {
         required
@@ -459,6 +493,7 @@ export default {
     validateLastName,
     validateEmail,
     validateJobTitles,
+    validateClearance,
     validateHearAboutUs,
     validateResume,
     // alerts user on intern application to prevent duplicate applications
