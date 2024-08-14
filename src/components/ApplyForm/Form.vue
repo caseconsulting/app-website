@@ -113,7 +113,7 @@
                   density="compact"
                   variant="outlined"
                   hide-details
-                  id="job"
+                  id="clearances"
                 ></v-autocomplete>
                 <p class="invalidMsg" v-if="!valid.clearance">Please select a clearance level.</p>
               </div>
