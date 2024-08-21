@@ -1,7 +1,7 @@
 export default [
   // Image collages made with https://pixlr.com/photo-collage/ (corners are rounded and margin between is 25px)
   {
-    id: 36,
+    id: 37,
     iconLink: 'assets/custom/img/events/internship-2024-collage.png',
     title: '2024 Internship',
     descrip: [
