@@ -2,6 +2,48 @@ export default [
   {
     first: true,
     intern1: {
+      image: 'assets/custom/img/interns/Dylan.jpg',
+      quote: [
+        `Working at CASE this summer was fun and along with bonding activities, the community here is very welcoming and allowed me to grow close with my peers.
+         Through agile development and learning AWS, Vue, and Express, this internship solidified my experience in working on real world applications as a developer.`
+      ],
+      name: 'Dylan, 2024 Intern'
+    },
+    intern2: {
+      image: 'assets/custom/img/interns/Madeline.jpg',
+      quote: [
+        `My internship with CASE was great! Over the summer, we were given the opportunity to redesign a large component on the companies portal. 
+        Throughout this process, I got to learn how to work well on a development team all the way from design to deployment. 
+        On top of that, I was able to learn a lot about full-stack web development, agile methodologies, Vue.js, AWS services, and more. 
+        There were also multiple chances to get to know the internship leadership team (Cadre) through events and day to day interactions. 
+        I am so thankful for the CASE team and their intentionality towards me and my learning over the summer. 
+        I am super excited to take what I have learned this summer back to school this fall!`
+      ],
+      name: 'Madeline, 2024 Intern'
+    }
+  },
+  {
+    intern1: {
+      image: 'assets/custom/img/interns/Max.jpg',
+      quote: [
+        `The summer internship at CASE was amazing and one of a kind. I learned a bunch about full stack web development
+         and agile development. We were exposed to many different technologies like AWS and VueJs. CASE has so many incredible people who are 
+         all willing to teach and help you develop your skills and they are always more than happy to answer any of your questions.`
+      ],
+      name: 'Max, 2024 Intern'
+    },
+    intern2: {
+      image: 'assets/custom/img/interns/Sammy.jpg',
+      quote: [
+        `I had a great time at the CASE internship. I was able to work on a practical application that we actually used and gained experience working with a team. 
+        The Cadre were very understanding and willing to help us learn. They worked with us throughout the internship and we could always reach out to them. 
+        They really cared about making a great experience!`
+      ],
+      name: 'Sammy, 2024 Intern'
+    }
+  },
+  {
+    intern1: {
       image: 'assets/custom/img/interns/logburn.jpg',
       quote: [
         `The summer internship with CASE was phenomenal. I learned a ton, not just about web development but also

@@ -1,4 +1,13 @@
 export default [
+  // Image collages made with https://pixlr.com/photo-collage/ (corners are rounded and margin between is 25px)
+  {
+    id: 37,
+    iconLink: 'assets/custom/img/events/internship-2024-collage.png',
+    title: '2024 Internship',
+    descrip: [
+      'We had another fantastic summer with our interns which included an escape room, board games, Top Golf, Dave & Busters, and concluded with a presentation to the whole company!'
+    ]
+  },
   {
     id: 36,
     iconLink: 'assets/custom/img/events/_DSC6114.jpg',
