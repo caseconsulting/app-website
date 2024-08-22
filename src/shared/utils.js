@@ -1,5 +1,6 @@
 // https://developers.google.com/maps/documentation/javascript/examples/
-function initMap() {
+export function initMap() {
+  /* eslint-disable no-undef */
   var customMapType = new google.maps.StyledMapType(
     [
       {
@@ -45,7 +46,6 @@ function initMap() {
   );
 
   var customMapTypeId = 'custom_style';
-  console.log(document.getElementById('map'));
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 12,
     scrollwheel: false,
@@ -61,7 +61,7 @@ function initMap() {
   var infowindow = new google.maps.InfoWindow();
   infowindow.setContent('<b>Leesburg</b>');
 
-  var marker = new google.maps.Marker({
+  new google.maps.Marker({
     map: map,
     clickable: false,
     icon: image,

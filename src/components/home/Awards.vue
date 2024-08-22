@@ -85,12 +85,12 @@
 </template>
 
 <script>
-import Img2017 from '../../../public/assets/custom/img/awards/BPTW-2017.png';
-import Img2018 from '../../../public/assets/custom/img/awards/BPTW-2018.png';
-import Img2019 from '../../../public/assets/custom/img/awards/BPTW-2019.png';
-import Img2020 from '../../../public/assets/custom/img/awards/BPTW-2020.png';
-import Img2021 from '../../../public/assets/custom/img/awards/BPTW-2021.png';
-import Img2022 from '../../../public/assets/custom/img/awards/BPTW-2022.png';
+import Img2017 from '/assets/custom/img/awards/BPTW-2017.png';
+import Img2018 from '/assets/custom/img/awards/BPTW-2018.png';
+import Img2019 from '/assets/custom/img/awards/BPTW-2019.png';
+import Img2020 from '/assets/custom/img/awards/BPTW-2020.png';
+import Img2021 from '/assets/custom/img/awards/BPTW-2021.png';
+import Img2022 from '/assets/custom/img/awards/BPTW-2022.png';
 export default {
   setup() {
     let awardsArray = [

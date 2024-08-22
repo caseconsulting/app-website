@@ -96,3 +96,12 @@
   </section>
   <!-- End Section Content -->
 </template>
+
+<script setup>
+import { onMounted } from 'vue';
+import { initMap } from '@/shared/utils.js';
+
+onMounted(() => {
+  initMap();
+});
+</script>

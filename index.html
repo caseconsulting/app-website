@@ -5,11 +5,11 @@
     <meta name="description" content="CASE" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <link rel="icon" href="/favicon.ico" />
     <title>CASE</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/public/assets/custom/img/case/nav_logo.png" />
+    <link rel="shortcut icon" href="/assets/custom/img/case/nav_logo.png" />
 
     <!-- Google Fonts -->
     <link
@@ -27,6 +27,8 @@
       crossorigin="anonymous"
     />
 
+    <link rel="stylesheet" href="/assets/vendor/icon-awesome/css/all.css" />
+    <!-- font-awesome 5 -->
     <link rel="stylesheet" href="/assets/vendor/icon-hs/style.css" />
 
     <!-- CSS Implementing Plugins -->
@@ -69,6 +71,7 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- DO WE NEED THIS BOOTSTRAP SCRIPT IMPORT? -->
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
@@ -78,7 +81,7 @@
     <!-- JS Implementing Plugins -->
     <script src="/assets/vendor/appear/appear.js "></script>
     <script src="/assets/vendor/slick-carousel/slick/slick.js "></script>
-    <script src="/assets/custom/js/plugins/gmaps-ini.js "></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf66JJmp2VOldGTrVNOmMumlB5U6sVBSI" defer></script>
 
     <!-- JS Revolution Slider -->
     <script src="/assets/vendor/revolution-slider/revolution/js/jquery.themepunch.tools.min.js "></script>
@@ -86,7 +89,7 @@
     <script src="/assets/vendor/revolution-slider/revolution-addons/slicey/js/revolution.addon.slicey.min.js"></script>
     <script src="/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.actions.min.js "></script>
 
-    <script src="./assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.carousel.min.js "></script>
+    <script src="/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.carousel.min.js "></script>
     <script src="/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.kenburn.min.js "></script>
     <script src="/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.layeranimation.min.js "></script>
     <script src="/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.migration.min.js "></script>
@@ -189,5 +192,6 @@
         <i class="hs-icon hs-icon-arrow-top"></i>
       </a>
     </main>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
