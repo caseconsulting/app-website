@@ -42,7 +42,7 @@
               </h3>
               <li>
                 Ability to obtain a security clearance
-                <ul>
+                <ul class="ml-6">
                   <li>Must be a U.S. Citizen</li>
                   <li>No recreational drug use within the last year</li>
                 </ul>
