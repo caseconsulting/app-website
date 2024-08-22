@@ -11,7 +11,7 @@
               <img
                 class="w-100 img-fluid"
                 style="min-height: 100%"
-                src="/assets/custom/img/online/shutterstock_321052289.jpg"
+                src="assets/custom/img/online/shutterstock_321052289.jpg"
                 alt="Sepia Desk"
               />
             </div>
@@ -39,7 +39,7 @@
               <img
                 class="w-100 h-100"
                 style="min-height: 100%"
-                src="/assets/custom/img/online/meeting-min.jpg"
+                src="assets/custom/img/online/meeting-min.jpg"
                 alt="Meeting"
               />
             </div>
@@ -69,7 +69,7 @@
               <img
                 class="w-100 img-fluid"
                 style="min-height: 100%"
-                src="/assets/custom/img/online/shutterstock_719340379.jpg"
+                src="assets/custom/img/online/shutterstock_719340379.jpg"
                 alt="Image description"
               />
             </div>

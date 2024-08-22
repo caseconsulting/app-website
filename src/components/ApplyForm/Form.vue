@@ -4,7 +4,7 @@
       :headline="modalHeadline"
       :body="modalBody"
       closeButtonText="Ok"
-      :show="modalDisplay"
+      :show.sync="modalDisplay"
       @update:show="modalDisplay = $event"
     >
     </Modal>
@@ -362,7 +362,7 @@ async function onSubmit() {
       };
 
       // content upload
-      const baseUrl = import.meta.env.VUE_APP_API;
+      const baseUrl = process.env.VUE_APP_API;
       const response = await axios.post(`${baseUrl}/apply`, data);
       const key = response.data.id;
       const file = this.files[0];

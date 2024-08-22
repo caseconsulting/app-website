@@ -38,14 +38,14 @@ function initMap() {
   );
 
   var image = new google.maps.MarkerImage(
-    '/assets/custom/img/marker.png',
+    './assets/custom/img/marker.png',
     new google.maps.Size(48, 54),
     new google.maps.Point(0, 0),
     new google.maps.Point(24, 54)
   );
 
   var customMapTypeId = 'custom_style';
-  console.log(document.getElementById('map'));
+
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 12,
     scrollwheel: false,

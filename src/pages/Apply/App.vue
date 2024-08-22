@@ -1,7 +1,9 @@
 <template>
-  <div>
-    <app-apply :showMe="show" @switched="show = $event" v-if="show"></app-apply>
-    <app-submit :showMe="show" @switched="show = $event" v-if="!show"></app-submit>
+  <div id="app">
+    <v-app>
+      <app-apply :showMe="show" @switched="show = $event" v-if="show"></app-apply>
+      <app-submit :showMe="show" @switched="show = $event" v-if="!show"></app-submit>
+    </v-app>
   </div>
 </template>
 
