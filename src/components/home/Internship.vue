@@ -11,13 +11,13 @@
           </h2>
         </div>
         <p class="g-color-white">
-          Summer Internships take place from May to August in the Workspaces at Reston Town Center in Reston, Virginia, within the
-          metropolitan area of Washington, D.C. The interns will design and implement software applications as part of a
-          collaborative team of interns and professional software developers. The intern will gain experience in full
-          stack development using modern web technologies, including Amazon Web Services (AWS). Interns will also learn
-          best practices in version control systems using GitHub, and will incorporate Agile methodologies for
-          self-organization and regular delivery of code for production. The intern will develop communication skills
-          with customers to produce useful software for the client.
+          Summer Internships take place from May to August in the Workspaces at Reston Town Center in Reston, Virginia,
+          within the metropolitan area of Washington, D.C. The interns will design and implement software applications
+          as part of a collaborative team of interns and professional software developers. The intern will gain
+          experience in full stack development using modern web technologies, including Amazon Web Services (AWS).
+          Interns will also learn best practices in version control systems using GitHub, and will incorporate Agile
+          methodologies for self-organization and regular delivery of code for production. The intern will develop
+          communication skills with customers to produce useful software for the client.
         </p>
       </div>
       <br />
