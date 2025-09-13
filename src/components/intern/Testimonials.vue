@@ -70,7 +70,6 @@
         </a>
       </div>
 
-
       <div class="d-none d-lg-flex">
         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
           <span>
