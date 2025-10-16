@@ -23,7 +23,7 @@
       <br />
       <div class="container g-pb-30 text-center">
         <!-- <router-link to="/intern" active-class="active" exact> -->
-        <a
+        <router-link
           class="button tp-caption NotGeneric-CallToAction rev-btn rs-parallaxlevel-0"
           style="
             z-index: 9;
@@ -35,10 +35,10 @@
             text-transform: uppercase;
             border-width: 2px;
           "
-          href="intern"
+          to="/intern"
         >
           Learn More
-        </a>
+        </router-link>
       </div>
     </div>
   </section>

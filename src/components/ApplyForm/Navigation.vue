@@ -2,13 +2,13 @@
   <nav class="navbar navbar-expand-lg g-py-0">
     <div class="container-fluid g-pos-rel">
       <!-- Logo -->
-      <a href="./index.html" class="navbar-brand u-header__logo" data-type="static">
+      <router-link to="/" class="navbar-brand u-header__logo" data-type="static">
         <img
           class="u-header__logo-img u-header__logo-img--main g-width-110"
           src="/assets/custom/img/case/logo-banner.gif"
           alt="CASE"
         />
-      </a>
+      </router-link>
       <!-- End Logo -->
       <!-- Navigation -->
       <div class="collapse navbar-collapse align-items-center flex-sm-row" id="navBar">
@@ -18,7 +18,7 @@
           </router-link>-->
 
           <li class="g-mr-30--lg g-mb-7 g-mb-0--lg" active-class="active">
-            <a href="/" class="nav-link p-0" style="color: black">Home</a>
+            <router-link to="/" class="nav-link p-0" style="color: black">Home</router-link>
           </li>
           <!-- <li
             v-for="section in Sections"

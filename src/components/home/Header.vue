@@ -11,9 +11,8 @@
       data-header-fix-moment-classes="u-shadow-v18 g-py-13--md"
     >
       <app-home-navigation v-if="this.$parent.$parent.$options.name === 'Home'"></app-home-navigation>
-      <app-intern-navigation v-if="this.$parent.$parent.$options.name === 'Intern'"></app-intern-navigation>
-      <app-apply-navigation v-if="this.$parent.$parent.$options.name === 'VApp'"></app-apply-navigation>
-      <app-apply-navigation v-if="this.$parent.$parent.$options.name === 'Submit'"></app-apply-navigation>
+      <app-intern-navigation v-else-if="this.$parent.$parent.$options.name === 'Intern'"></app-intern-navigation>
+      <app-apply-navigation v-else></app-apply-navigation>
     </div>
   </header>
   <!-- End Header -->

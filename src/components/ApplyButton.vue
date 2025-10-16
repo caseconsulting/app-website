@@ -1,7 +1,7 @@
 <template>
   <div class="container g-pb-30 col-xl-2">
     <div class="text-center">
-      <a
+      <router-link
         class="button tp-caption NotGeneric-CallToAction rev-btn rs-parallaxlevel-0"
         style="
           background-color: #e74c3c;
@@ -14,10 +14,10 @@
           text-transform: uppercase;
           border-width: 2px;
         "
-        href="/apply-form"
+        to="/apply-form"
       >
         <a style="color: white">Apply Now</a>
-      </a>
+      </router-link>
     </div>
   </div>
 </template>

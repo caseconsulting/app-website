@@ -1,9 +1,7 @@
 <template>
-  <div id="app">
-    <v-app>
-      <app-apply :showMe="show" @switched="show = $event" v-if="show"></app-apply>
-      <app-submit :showMe="show" @switched="show = $event" v-if="!show"></app-submit>
-    </v-app>
+  <div>
+    <app-apply :showMe="show" @switched="show = $event" v-if="show"></app-apply>
+    <app-submit :showMe="show" @switched="show = $event" v-if="!show"></app-submit>
   </div>
 </template>
 
@@ -11,7 +9,7 @@
 import Apply from '@/components/ApplyForm/Form.vue';
 import Submit from '@/components/ApplyForm/Submit.vue';
 export default {
-  name: 'Apply',
+  name: 'Apply Form',
   components: {
     appApply: Apply,
     appSubmit: Submit
