@@ -730,3 +730,10 @@ h5 strong a:hover {
     max-width: 100px;
   }
 }
+
+
+/* Vuetify Styling */
+
+.v-btn:focus, .v-btn:active {
+  outline: none;
+}

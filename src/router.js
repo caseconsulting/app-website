@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Home from '@/views/Home.vue';
 import Intern from '@/views/Intern.vue';
 import ApplyForm from '@/views/ApplyForm.vue';
+import Redesign from '@/views/Redesign.vue';
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: '/apply-form',
     name: 'ApplyForm',
     component: ApplyForm
+  },
+  {
+    path: '/redesign',
+    name: 'Redesign',
+    component: Redesign
   }
 ];
 
