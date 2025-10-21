@@ -3,7 +3,7 @@
     <v-app-bar :elevation="2" height='100'>
       <v-app-bar-title><logo class="pl-6" /></v-app-bar-title>
       <template v-slot:append>
-        <nav-dropdown :items="items" title='about us' color='primary'></nav-dropdown>
+        <btn-dropdown :items="items" title='about us' color='primary'></btn-dropdown>
         <v-btn color="primary" v-bind="props"> capabilities </v-btn>
         <v-btn color="primary" v-bind="props"> culture </v-btn>
         <v-btn color="primary" v-bind="props"> careers </v-btn>
@@ -14,12 +14,12 @@
 </template>
 
 <script>
-import NavDropdown from './NavDropdown';
+import ButtonDropdown from './ButtonDropdown';
 import Logo from './Logo';
 
 export default {
   components: {
-    'nav-dropdown': NavDropdown,
+    'btn-dropdown': ButtonDropdown,
     'logo': Logo
   },
   data: () => ({
