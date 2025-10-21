@@ -7,7 +7,7 @@
         <v-btn color="primary" v-bind="props"> capabilities </v-btn>
         <v-btn color="primary" v-bind="props"> culture </v-btn>
         <v-btn color="primary" v-bind="props"> careers </v-btn>
-        <v-btn color="secondary" variant="flat" v-bind="props"> apply now </v-btn>
+        <v-btn color="secondary" variant="flat" v-bind="props" class="mr-6"> apply now </v-btn>
       </template>
     </v-app-bar>
   </div>
