@@ -48,6 +48,10 @@ const routes = [
     path: '/old',
     name: 'OldHome',
     component: OldHome
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: '/'
   }
 ];
 
