@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
-    "deploy:test": "npm run build && aws s3 sync dist s3://test-case-website-app --delete --sse",
+    "deploy:test": "npm run build && aws s3 sync dist s3://case-website-front-end-test --delete --sse",
     "clean": "rm -rf dist",
     "download:local:env": "aws s3 cp s3://case-consulting-website-code-dev/.env .env",
     "eslint": "eslint src/**/*.{js,vue} --fix",
