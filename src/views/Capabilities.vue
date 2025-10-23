@@ -1,7 +1,5 @@
 <template>
-  <div>
-    Capabilities
-  </div>
+  <div>Capabilities</div>
 </template>
 
 <script>

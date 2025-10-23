@@ -1,7 +1,5 @@
 <template>
-  <div>
-    Culture
-  </div>
+  <div>Culture</div>
 </template>
 
 <script>

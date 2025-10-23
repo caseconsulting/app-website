@@ -1,9 +1,9 @@
 <template>
   <div>
-    <v-app-bar :elevation="2" height='100'>
+    <v-app-bar :elevation="2" height="100">
       <v-app-bar-title><logo class="pl-6" /></v-app-bar-title>
       <template v-slot:append>
-        <btn-dropdown :items="items" title='about us' color='primary'></btn-dropdown>
+        <btn-dropdown :items="items" title="about us" color="primary"></btn-dropdown>
         <v-btn color="primary" v-bind="props"> capabilities </v-btn>
         <v-btn color="primary" v-bind="props"> culture </v-btn>
         <v-btn color="primary" v-bind="props"> careers </v-btn>
@@ -20,15 +20,10 @@ import Logo from './Logo';
 export default {
   components: {
     'btn-dropdown': ButtonDropdown,
-    'logo': Logo
+    logo: Logo
   },
   data: () => ({
-    items: [
-      { title: 'Option One' },
-      { title: 'Option Two' },
-      { title: 'Option Three' },
-      { title: 'Option Four' },
-    ],
-  }),
-}
+    items: [{ title: 'Option One' }, { title: 'Option Two' }, { title: 'Option Three' }, { title: 'Option Four' }]
+  })
+};
 </script>

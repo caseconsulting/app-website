@@ -2,11 +2,7 @@
   <div class="js-scroll-nav">
     <span class="nav-item">
       <a href="/">
-        <img
-          class="logo"
-          src="/assets/custom/img/case/logo-banner.gif"
-          alt="CASE"
-        />
+        <img class="logo" src="/assets/custom/img/case/logo-banner.gif" alt="CASE" />
       </a>
     </span>
   </div>
