@@ -1,9 +1,7 @@
 <template>
-  <div>Careers</div>
+  <job-descriptions />
 </template>
 
-<script>
-export default {
-  name: 'Careers'
-};
+<script setup>
+import JobDescriptions from '@/components/careers/JobDescriptions.vue';
 </script>

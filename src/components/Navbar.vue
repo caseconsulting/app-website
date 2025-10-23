@@ -4,10 +4,10 @@
       <v-app-bar-title><logo class="pl-6" /></v-app-bar-title>
       <template v-slot:append>
         <btn-dropdown :items="items" title="about us" color="primary"></btn-dropdown>
-        <v-btn color="primary" v-bind="props"> capabilities </v-btn>
-        <v-btn color="primary" v-bind="props"> culture </v-btn>
-        <v-btn color="primary" v-bind="props"> careers </v-btn>
-        <v-btn color="secondary" variant="flat" v-bind="props" class="mr-6"> apply now </v-btn>
+        <v-btn color="primary" to="capabilities"> capabilities </v-btn>
+        <v-btn color="primary" to="culture"> culture </v-btn>
+        <v-btn color="primary" to="careers"> careers </v-btn>
+        <v-btn color="secondary" variant="flat" class="mr-6" to="apply-form"> apply now </v-btn>
       </template>
     </v-app-bar>
   </div>

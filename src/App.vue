@@ -3,7 +3,7 @@
     <v-app>
       <!-- Router view will render the component matching current route -->
       <app-navbar></app-navbar>
-      <router-view></router-view>
+      <router-view class="my-12 mx-24"></router-view>
     </v-app>
   </div>
 </template>
@@ -15,6 +15,6 @@ export default {
   name: 'App',
   components: {
     'app-navbar': Navbar
-  },
+  }
 };
 </script>
