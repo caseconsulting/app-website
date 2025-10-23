@@ -20,8 +20,8 @@ import Requirements from './Requirements.vue';
 import InternApply from './InternApply.vue';
 import FAQ from './FAQ.vue';
 import Testimonials from './Testimonials.vue';
-import Contact from '../home/Contact.vue';
-import Header from '../home/Header.vue';
+import Contact from '../oldhome/Contact.vue';
+import Header from '../oldhome/Header.vue';
 
 export default {
   components: {

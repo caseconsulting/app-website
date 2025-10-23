@@ -242,7 +242,7 @@
 <script>
 import useValidate from '@vuelidate/core';
 import { required, email } from '@vuelidate/validators';
-import Header from '../home/Header.vue';
+import Header from '../oldhome/Header.vue';
 import axios from 'axios';
 import modal from '../AlertModal.vue';
 

@@ -38,7 +38,7 @@
   </div>
 </template>
 <script>
-import Header from '../home/Header.vue';
+import Header from '../oldhome/Header.vue';
 
 export default {
   components: {

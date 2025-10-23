@@ -1,4 +1,4 @@
-import Events from '@/components/home/Events.vue';
+import Events from '@/components/oldhome/Events.vue';
 import EventsData from '@/data/Events.js';
 
 import { shallowMount } from '@vue/test-utils';

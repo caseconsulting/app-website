@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils';
-import About from '@/components/home/About.vue';
+import About from '@/components/oldhome/About.vue';
 
 describe('About.vue', () => {
   let wrapper;
