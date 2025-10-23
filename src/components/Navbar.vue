@@ -4,7 +4,13 @@
       <v-app-bar-title><logo class="pl-6" /></v-app-bar-title>
       <template v-slot:append>
         <btn-dropdown :items="dropdownItems"> temp </btn-dropdown>
-        <v-btn v-for="(item, index) in navBtns" :key="index" :value="index" color="primary" @click="handleNavigation(item.path)">
+        <v-btn
+          v-for="(item, index) in navBtns"
+          :key="index"
+          :value="index"
+          color="primary"
+          @click="handleNavigation(item.path)"
+        >
           {{ item.title || item.path }}
         </v-btn>
         <v-btn color="secondary" variant="flat" class="mr-6" @click="handleNavigation('applyForm')"> apply now </v-btn>
@@ -33,13 +39,11 @@ const navBtns = [
 ];
 const dropdownItems = [{ title: 'Old Home Page', link: 'old' }];
 
-
 // |--------------------------------------------------|
 // |                                                  |
 // |                     METHODS                      |
 // |                                                  |
 // |--------------------------------------------------|
-
 
 function handleNavigation(item) {
   router.push({ name: item });
