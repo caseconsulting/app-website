@@ -18,6 +18,10 @@ const routes = [
     path: '/apply-form',
     name: 'ApplyForm',
     component: ApplyForm
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: '/'
   }
 ];
 
