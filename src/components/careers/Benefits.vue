@@ -23,7 +23,7 @@
       </v-col>
 
       <v-col cols="12" md="6">
-        <v-divider />
+        <v-divider v-if="!xs" />
         <div v-for="(s, i) in sectionsRight" :key="'R' + i" class="d-flex align-start mb-8">
           <v-icon :icon="s.icon" size="36" class="text-primary mr-3" />
           <div>

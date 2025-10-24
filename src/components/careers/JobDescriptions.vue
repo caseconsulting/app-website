@@ -8,7 +8,13 @@
       </v-tab>
     </v-tabs>
 
-    <v-window v-model="tab" class="mt-4 mx-auto" show-arrows center-active style="max-width: 1000px; width: 100%">
+    <v-window
+      v-model="tab"
+      class="mt-4 mx-auto"
+      show-arrows="hover"
+      center-active
+      style="max-width: 1000px; width: 100%"
+    >
       <v-window-item v-for="job in jobs" :key="job.title" :value="job.title">
         <v-card variant="tonal" class="py-2">
           <v-row no-gutters>

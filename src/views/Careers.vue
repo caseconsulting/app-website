@@ -2,7 +2,7 @@
   <span>
     <job-descriptions class="mt-12" />
     <benefits class="mt-12" />
-    <Internship class="my-12" />
+    <Internship class="mt-12" />
   </span>
 </template>
 
