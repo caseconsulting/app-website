@@ -1,44 +1,42 @@
 <template>
-  <div class="text-center">
-    <h3 class="text-secondary" color="secondary">Reach out if you are a...</h3>
-    <div class="mx-auto d-inline-block">
-      <v-tabs v-model="tab" class="d-inline-flex" align-tabs="center">
-        <v-tab value="Software Developer">Software Developer</v-tab>
-        <v-tab value="Project Manager">Project Manager</v-tab>
-        <v-tab value="System Engineer">System Engineer</v-tab>
-        <v-tab value="Cloud Engineer">Cloud Engineer</v-tab>
-        <v-tab value="Data Scientist">Data Scientist</v-tab>
-        <v-tab value="QA Tester">QA Tester</v-tab>
-      </v-tabs>
+  <div class="text-center px-2">
+    <h3 class="text-secondary mb-4">Reach out if you are a...</h3>
 
-      <v-window v-model="tab" class="mt-4" style="max-width: 1000px; margin: auto">
-        <v-window-item v-for="job in jobs" :key="job.title" :value="job.title">
-          <v-card variant="tonal" class="py-2">
-            <v-row>
-              <v-col cols="9">
-                <v-card-title>{{ job.title }}</v-card-title>
-                <v-card-text>
-                  {{ job.description }}
-                </v-card-text>
-                <v-card-actions class="justify-center">
-                  <v-btn variant="elevated" class="mr-6 bg-secondary text-white" to="apply-form"> apply now </v-btn>
-                </v-card-actions>
-              </v-col>
-              <v-col cols="3" class="justify-center align-center d-flex">
-                <v-img src="/assets/custom/img/case/nav_logo.png" alt="Job Image" width="150" />
-              </v-col>
-            </v-row>
-          </v-card>
-        </v-window-item>
-      </v-window>
-    </div>
+    <v-tabs v-if="!xs" v-model="tab" color="secondary" align-tabs="center" class="mx-auto">
+      <v-tab v-for="job in jobs" :key="job.title" :value="job.title">
+        {{ job.title }}
+      </v-tab>
+    </v-tabs>
+
+    <v-window v-model="tab" class="mt-4 mx-auto" show-arrows center-active style="max-width: 1000px; width: 100%">
+      <v-window-item v-for="job in jobs" :key="job.title" :value="job.title">
+        <v-card variant="tonal" class="py-2">
+          <v-row no-gutters>
+            <v-col :cols="xs ? 12 : 9" class="pa-4">
+              <v-card-title class="text-secondary">{{ job.title }}</v-card-title>
+              <v-card-text>
+                {{ job.description }}
+              </v-card-text>
+              <v-card-actions class="justify-center">
+                <v-btn variant="elevated" color="secondary" class="text-white" to="/apply-form"> Apply Now </v-btn>
+              </v-card-actions>
+            </v-col>
+            <v-col v-if="!xs" cols="3" class="justify-center align-center d-flex pa-4">
+              <v-img src="/assets/custom/img/case/nav_logo.png" alt="Job Image" width="150" />
+            </v-col>
+          </v-row>
+        </v-card>
+      </v-window-item>
+    </v-window>
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue';
-const tab = ref('one');
+import { useDisplay } from 'vuetify';
 
+const { xs, smAndDown, mdAndUp } = useDisplay();
+const tab = ref('Software Developer');
 const jobs = ref([
   {
     title: 'Software Developer',
