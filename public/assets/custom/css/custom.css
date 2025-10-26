@@ -189,22 +189,11 @@ body {
   vertical-align: top;
 }
 
-a,
-a:focus {
-  color: purple;
-  text-decoration: none;
-}
-
-a,
-a:hover {
-  color: blue;
-  text-decoration: none;
-}
-
-a,
-a:active {
-  color: red;
-  text-decoration: none;
+a {
+  color: rgb(var(--v-theme-secondary));
+  &:hover, &:focus {
+    color: rgb(var(--v-theme-secondary-lighten-1));
+  }
 }
 
 /*changes header color - master*/
@@ -671,9 +660,9 @@ h5 strong a:hover {
     position: relative;
     display: inline-block;
   }
-  
+
   .award-row + .award-row { /* Second Award Row */
-    margin-left: -3%; 
+    margin-left: -3%;
     display: inline-block;
   }
 

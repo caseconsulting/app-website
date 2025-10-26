@@ -18,7 +18,8 @@ const defaultTheme = {
     info: '#2196F3',
     success: '#4CAF50',
     warning: '#FB8C00',
-    'on-surface': '#293641'
+    'on-surface': '#293641',
+    'on-background': '#293641'
   }
 }
 
