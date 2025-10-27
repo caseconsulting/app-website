@@ -72,8 +72,8 @@ const dropdownNav = [
     title: 'Apply Now',
     link: 'apply-form',
     action: true
-  },
-]
+  }
+];
 
 function handleNavigation(item) {
   router.push({ name: item });
