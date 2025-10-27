@@ -20,7 +20,7 @@ const defaultTheme = {
     warning: '#FB8C00',
     'on-surface': '#293641'
   }
-}
+};
 
 export default createVuetify({
   components,
@@ -31,8 +31,8 @@ export default createVuetify({
       defaultTheme,
       light: {
         colors: {
-          primary: '#68caa6',
-          radioactive: '#0ACF23'
+          primary: '#415464',
+          secondary: '#8A3648' // required for text-secondary to work
         }
       }
     }

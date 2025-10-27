@@ -1,9 +1,13 @@
 <template>
-  <div>Careers</div>
+  <span>
+    <job-descriptions class="mt-12" />
+    <benefits class="mt-12" />
+    <Internship class="mt-12" />
+  </span>
 </template>
 
-<script>
-export default {
-  name: 'Careers'
-};
+<script setup>
+import JobDescriptions from '@/components/careers/JobDescriptions.vue';
+import Benefits from '@/components/careers/Benefits.vue';
+import Internship from '../components/careers/Internship.vue';
 </script>
