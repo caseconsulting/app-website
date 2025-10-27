@@ -11,42 +11,42 @@ import OldHome from '@/views/OldHome.vue';
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'home',
     component: Home
   },
   {
     path: '/about-us',
-    name: 'About Us',
+    name: 'aboutUs',
     component: AboutUs
   },
   {
     path: '/capabilities',
-    name: 'Capabilities',
+    name: 'capabilities',
     component: Capabilities
   },
   {
     path: '/culture',
-    name: 'Culture',
+    name: 'culture',
     component: Culture
   },
   {
     path: '/careers',
-    name: 'Careers',
+    name: 'careers',
     component: Careers
   },
   {
     path: '/intern',
-    name: 'Intern',
+    name: 'intern',
     component: Intern
   },
   {
     path: '/apply-form',
-    name: 'ApplyForm',
+    name: 'applyForm',
     component: ApplyForm
   },
   {
     path: '/old',
-    name: 'OldHome',
+    name: 'oldHome',
     component: OldHome
   },
   {
