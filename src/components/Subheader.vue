@@ -11,6 +11,6 @@
   font-size: 1.25rem;
 }
 .subtitle {
-  font-size: 2.35rem;
+  font-size: 2.25rem;
 }
 </style>
