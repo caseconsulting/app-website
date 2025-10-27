@@ -29,13 +29,7 @@ export default createVuetify({
   theme: {
     defaultTheme: 'defaultTheme',
     themes: {
-      defaultTheme,
-      light: {
-        colors: {
-          primary: '#415464',
-          secondary: '#8A3648' // required for text-secondary to work
-        }
-      }
+      defaultTheme
     }
   },
   icons: {

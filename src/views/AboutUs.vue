@@ -1,6 +1,14 @@
 <template>
   <div>
     <v-container>
+      <subheader class="mb-6">
+        <template #title>Meet our leadership.</template>
+        <template #description>
+          Our leadership team is dedicated to making sure CASE delivers the quality that sets us apart. Connect with
+          us<br />
+          on social media and reach out!
+        </template>
+      </subheader>
       <v-row justify="center">
         <v-col cols="12">
           <leadership-card class="mb-2" :person="ceo" />
@@ -20,6 +28,7 @@
 
 <script setup>
 import LeadershipCard from '@/components/about-us/LeadershipCard.vue';
+import Subheader from '@/components/Subheader';
 
 const ceo = {
   name: 'Paul Farmer',
