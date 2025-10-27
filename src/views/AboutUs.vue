@@ -5,8 +5,7 @@
         <template #title>Meet our leadership.</template>
         <template #description>
           Our leadership team is dedicated to making sure CASE delivers the quality that sets us apart. Connect with
-          us<br />
-          on social media and reach out!
+          us on social media and reach out!
         </template>
       </subheader>
       <v-row justify="center">
