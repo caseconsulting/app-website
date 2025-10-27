@@ -3,17 +3,31 @@
     <v-app-bar :elevation="2" height="100">
       <v-app-bar-title><logo class="pl-6" /></v-app-bar-title>
       <template v-slot:append>
-        <btn-dropdown :items="dropdownItems"> temp </btn-dropdown>
+        <btn-dropdown class="hidden-md-and-down" :items="tempDropdownItems"> temp </btn-dropdown>
         <v-btn
           v-for="(item, index) in navBtns"
           :key="index"
           :value="index"
           color="primary"
           @click="handleNavigation(item.path)"
+          class="hidden-sm-and-down"
         >
           {{ item.title || item.path }}
         </v-btn>
-        <v-btn color="secondary" variant="flat" class="mr-6" @click="handleNavigation('applyForm')"> apply now </v-btn>
+        <v-btn
+          v-if="$vuetify.display.mdAndUp"
+          color="secondary"
+          variant="flat"
+          class="mr-6"
+          @click="handleNavigation('applyForm')"
+        >
+          apply now
+        </v-btn>
+        <div v-else>
+          <btn-dropdown class="mr-6" :items="dropdownNav" variant="flat" color="secondary">
+            <v-icon class="fas fa-bars"></v-icon>
+          </btn-dropdown>
+        </div>
       </template>
     </v-app-bar>
   </div>
@@ -24,12 +38,6 @@ import { useRouter } from 'vue-router';
 import BtnDropdown from '@/components/ButtonDropdown';
 import Logo from '@/components/Logo';
 
-// |--------------------------------------------------|
-// |                                                  |
-// |                      SETUP                       |
-// |                                                  |
-// |--------------------------------------------------|
-
 const router = useRouter();
 const navBtns = [
   { path: 'aboutUs', title: 'About Us' },
@@ -37,13 +45,35 @@ const navBtns = [
   { path: 'culture' },
   { path: 'careers' }
 ];
-const dropdownItems = [{ title: 'Old Home Page', link: 'old' }];
+const tempDropdownItems = [{ title: 'Old Home Page', link: 'old' }, { title: 'Option Two' }];
+const dropdownNav = [
+  {
+    title: 'About Us',
+    link: 'about-us'
+  },
+  {
+    title: 'Capabilities',
+    link: 'capabilities'
+  },
+  {
+    title: 'Culture',
+    link: 'culture'
+  },
+  {
+    title: 'Careers',
+    link: 'careers'
+  },
+  {
+    title: 'Temp',
+    submenu: tempDropdownItems
+  },
 
-// |--------------------------------------------------|
-// |                                                  |
-// |                     METHODS                      |
-// |                                                  |
-// |--------------------------------------------------|
+  {
+    title: 'Apply Now',
+    link: 'apply-form',
+    action: true
+  },
+]
 
 function handleNavigation(item) {
   router.push({ name: item });
