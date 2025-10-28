@@ -18,7 +18,8 @@ const defaultTheme = {
     info: '#2196F3',
     success: '#4CAF50',
     warning: '#FB8C00',
-    'on-surface': '#293641'
+    'on-surface': '#293641',
+    'on-background': '#293641'
   }
 };
 
@@ -28,13 +29,7 @@ export default createVuetify({
   theme: {
     defaultTheme: 'defaultTheme',
     themes: {
-      defaultTheme,
-      light: {
-        colors: {
-          primary: '#415464',
-          secondary: '#8A3648' // required for text-secondary to work
-        }
-      }
+      defaultTheme
     }
   },
   icons: {

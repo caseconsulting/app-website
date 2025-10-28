@@ -1,5 +1,27 @@
 /* Add here all your css styles (customizations) */
 
+
+/* Added in for redesign. */
+
+a {
+  color: rgb(var(--v-theme-secondary));
+  text-decoration: none !important;
+
+  &:hover,
+  &:focus {
+    color: rgb(var(--v-theme-secondary-lighten-1));
+  }
+}
+
+/* Vuetify Styling */
+
+.v-btn:focus,
+.v-btn:active {
+  outline: none;
+}
+
+/* End of new redesign css. */
+
 /* Acsent bar custom*/
 
 .bar-up {
@@ -187,24 +209,6 @@ body {
 
 .benefits-container {
   vertical-align: top;
-}
-
-a,
-a:focus {
-  color: purple;
-  text-decoration: none;
-}
-
-a,
-a:hover {
-  color: blue;
-  text-decoration: none;
-}
-
-a,
-a:active {
-  color: red;
-  text-decoration: none;
 }
 
 /*changes header color - master*/
@@ -671,9 +675,9 @@ h5 strong a:hover {
     position: relative;
     display: inline-block;
   }
-  
+
   .award-row + .award-row { /* Second Award Row */
-    margin-left: -3%; 
+    margin-left: -3%;
     display: inline-block;
   }
 
@@ -729,11 +733,4 @@ h5 strong a:hover {
     max-height: 100px;
     max-width: 100px;
   }
-}
-
-
-/* Vuetify Styling */
-
-.v-btn:focus, .v-btn:active {
-  outline: none;
 }
