@@ -24,9 +24,13 @@
           <ceo-card class="mb-2" :person="ceo" />
         </v-col>
       </v-row>
-      <v-row justify="space-around">
-        <v-col cols="3" v-for="(item, index) in leadershipInfo" :key="index" :value="index">
-          <leadership-card :person="item" />
+      <v-row justify="center">
+        <v-col cols="10">
+          <v-row justify="center">
+            <v-col class="d-flex justify-center" cols="5" md="4" lg="3" v-for="(item, index) in leadershipInfo" :key="index" :value="index">
+              <leadership-card class="pa-2" :person="item" />
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
     </v-container>
@@ -42,49 +46,58 @@ import TitleHeader from '@/components/TitleHeader.vue';
 const ceo = {
   name: 'Paul Farmer',
   title: 'Chief Executive Officer',
+  founder: 'CASE Founder',
   bio: "Here's a blurb about Paul! This should be more in depth than the other leadership team members' cards. This is the spot to let everyone know everything you want to! Brag! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  image: '/assets/custom/img/6.png',
-  facebook: 'https://www.facebook.com/',
-  twitter: 'https://www.x.com/',
-  linkedin: 'https://www.linkedin.com',
-  picWidth: '300px'
+  image: '/assets/custom/img/leadership/paul_farmer.jpeg',
+  linkedin: 'https://www.linkedin.com/in/paul-farmer-jr-4aa68b11/'
 };
 const leadershipInfo = [
   {
-    name: 'Zak Ramsis',
-    title: 'Basket Weaver',
-    bio: "Here's a blurb about Full Name! I like long walks on the beach and submitting my timecard on time each week.",
-    image: '/assets/custom/img/interns/zak.jpg',
-    facebook: 'https://www.facebook.com/',
-    twitter: 'https://www.x.com/',
-    linkedin: 'https://www.linkedin.com'
+    name: 'Amy Farmer',
+    title: 'Chief Operations Officer',
+    image: '/assets/custom/img/leadership/amy_farmer.jpeg',
+    linkedin: 'https://www.linkedin.com/in/amy-farmer-787b255/'
   },
   {
-    name: 'Full Name',
-    title: 'Basket Weaver',
-    bio: "Here's a blurb about Full Name! I like long walks on the beach and submitting my timecard on time each week.",
-    image: '/assets/custom/img/6.png',
-    facebook: 'https://www.facebook.com/',
-    twitter: 'https://www.x.com/',
-    linkedin: 'https://www.linkedin.com'
+    name: 'Dave Bromberg',
+    title: 'Chief Financial Officer',
+    image: '/assets/custom/img/leadership/david_bromberg.jpeg',
+    linkedin: 'https://www.linkedin.com/in/david-bromberg-b5b02331/ '
   },
   {
-    name: 'Helen Dekker',
-    title: 'Basket Weaver',
-    bio: "Here's a blurb about Full Name! I like long walks on the beach and submitting my timecard on time each week.",
-    image: '/assets/custom/img/interns/Helen.jpg',
-    facebook: 'https://www.facebook.com/',
-    twitter: 'https://www.x.com/',
-    linkedin: 'https://www.linkedin.com'
+    name: 'Bryan Walter',
+    title: 'Chief Growth Officer',
+    image: '/assets/custom/img/leadership/bwalter.jpg',
+    linkedin: 'https://www.linkedin.com/in/bryanjwalter/ '
   },
   {
-    name: 'Full Name',
-    title: 'Basket Weaver',
-    bio: "Here's a blurb about Full Name! I like long walks on the beach and submitting my timecard on time each week.",
-    image: '/assets/custom/img/6.png',
-    facebook: 'https://www.facebook.com/',
-    twitter: 'https://www.x.com/',
-    linkedin: 'https://www.linkedin.com'
+    name: 'Chris Santiago',
+    title: 'Chief Technology Office',
+    subtitle: 'EVP Engineering',
+    founder: 'Ragnarok Founder',
+    image: '/assets/custom/img/leadership/csantiago.jpg',
+    linkedin: 'https://www.linkedin.com/in/chris-santiago-4731b69/'
+  },
+  {
+    name: 'Ethan Grambow',
+    title: 'Chief Strategy Officer',
+    founder: 'Ragnarok Founder',
+    image: '/assets/custom/img/leadership/no_linkedin_photo.svg',
+    linkedin: 'https://www.linkedin.com/in/ethan-g-6b6024107/'
+  },
+  {
+    name: 'Brandon Lally',
+    title: 'Chief Customer Officer',
+    founder: 'CYK Founder',
+    image: '/assets/custom/img/leadership/blally.jpg',
+    linkedin: 'https://www.linkedin.com/in/brandonlally/'
+  },
+  {
+    name: 'Tom Dougherty',
+    title: 'EVP Mission',
+    founder: 'Ragnarok Founder',
+    image: '/assets/custom/img/leadership/thomas_dougherty.jpeg',
+    linkedin: 'https://www.linkedin.com/in/thomas-dougherty-4899821/'
   }
 ];
 </script>
