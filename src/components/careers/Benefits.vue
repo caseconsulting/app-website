@@ -1,12 +1,12 @@
 <template>
   <div class="text-center">
-    <subheader>
+    <title-header>
       <template #title>There are benefits for working at CASE.</template>
       <template #description>
         CASE recognizes that employees are its number one asset, so we offer a salary and benefits package that will
         treat you right.
       </template>
-    </subheader>
+    </title-header>
 
     <!-- Benefits grid -->
     <v-row class="mt-8 justify-center text-left" :style="xs ? { margin: '0 16px' } : { margin: '0 200px' }">
@@ -42,7 +42,7 @@
 
 <script setup>
 import { useDisplay } from 'vuetify';
-import Subheader from '@/components/Subheader';
+import TitleHeader from '@/components/TitleHeader.vue';
 const { xs } = useDisplay();
 
 const sectionsLeft = [
