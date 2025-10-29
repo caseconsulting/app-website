@@ -1,10 +1,14 @@
 <template>
-  <div class="text-center">
+  <div :class="main ? 'text-center main pt-7 pb-6' : 'text-center'">
     <h2 class="subtitle text-primary"><slot name="title"></slot></h2>
     <v-divider thickness="6" class="bg-tertiary border-opacity-75 mt-4 mb-7 mx-auto" style="max-width: 200px" />
     <v-container class="pt-0"><slot name="description"></slot></v-container>
   </div>
 </template>
+
+<script setup>
+defineProps(['main']);
+</script>
 
 <style scoped>
 .v-container {
@@ -12,5 +16,9 @@
 }
 .subtitle {
   font-size: 2.25rem;
+}
+.main {
+  background-image: url('../../public/assets/custom/img/seigaiha.png');
+  background-repeat: repeat;
 }
 </style>
