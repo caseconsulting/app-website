@@ -21,15 +21,12 @@
       </title-header>
       <v-row justify="center">
         <v-col cols="12">
-          <leadership-card class="mb-2" :person="ceo" />
+          <ceo-card class="mb-2" :person="ceo" />
         </v-col>
       </v-row>
       <v-row justify="space-around">
-        <v-col cols="12" md="6">
-          <leadership-card v-for="(item, index) in leadershipColOne" :key="index" :value="index" :person="item" />
-        </v-col>
-        <v-col cols="12" md="6">
-          <leadership-card v-for="(item, index) in leadershipColTwo" :key="index" :value="index" :person="item" />
+        <v-col cols="3" v-for="(item, index) in leadershipInfo" :key="index" :value="index">
+          <leadership-card :person="item" />
         </v-col>
       </v-row>
     </v-container>
@@ -37,6 +34,7 @@
 </template>
 
 <script setup>
+import CeoCard from '@/components/about-us/DetailedLeadershipCard.vue';
 import LeadershipCard from '@/components/about-us/LeadershipCard.vue';
 import History from '@/components/about-us/History.vue';
 import TitleHeader from '@/components/TitleHeader.vue';
@@ -51,7 +49,7 @@ const ceo = {
   linkedin: 'https://www.linkedin.com',
   picWidth: '300px'
 };
-const leadershipColOne = [
+const leadershipInfo = [
   {
     name: 'Zak Ramsis',
     title: 'Basket Weaver',
@@ -69,9 +67,7 @@ const leadershipColOne = [
     facebook: 'https://www.facebook.com/',
     twitter: 'https://www.x.com/',
     linkedin: 'https://www.linkedin.com'
-  }
-];
-const leadershipColTwo = [
+  },
   {
     name: 'Helen Dekker',
     title: 'Basket Weaver',
