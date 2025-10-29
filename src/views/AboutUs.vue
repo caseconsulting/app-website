@@ -9,6 +9,10 @@
     </title-header>
     <v-container>
       <title-header class="mb-6">
+        <template #title>We've worked hard to get where we are today.</template>
+      </title-header>
+      <history class="mb-8" />
+      <title-header class="mb-6">
         <template #title>Meet our leadership.</template>
         <template #description>
           Our leadership team is dedicated to making sure CASE delivers the quality that sets us apart. Connect with us
@@ -34,6 +38,7 @@
 
 <script setup>
 import LeadershipCard from '@/components/about-us/LeadershipCard.vue';
+import History from '@/components/about-us/History.vue';
 import TitleHeader from '@/components/TitleHeader.vue';
 
 const ceo = {

@@ -20,6 +20,10 @@ a {
   outline: none;
 }
 
+.font-emphasis {
+  font-weight: 600;
+}
+
 /* End of new redesign css. */
 
 /* Acsent bar custom*/

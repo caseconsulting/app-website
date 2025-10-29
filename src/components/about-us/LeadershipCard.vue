@@ -13,7 +13,7 @@
         </v-col>
         <v-col>
           <div>
-            <span class="name text-primary font-weight-bold mr-8">{{ person.name }}</span>
+            <span class="text-primary h5 font-emphasis mr-8">{{ person.name }}</span>
             <span class="d-inline-flex">
               <a :href="person.facebook" target="_blank">
                 <v-icon class="fab fa-facebook-square mt-n1" size="small"></v-icon>
@@ -39,9 +39,3 @@
 <script setup>
 defineProps(['person']);
 </script>
-
-<style scoped>
-.name {
-  font-size: 1.15rem;
-}
-</style>
