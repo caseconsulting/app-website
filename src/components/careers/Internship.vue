@@ -1,11 +1,11 @@
 <template>
   <div>
-    <subheader class="mx-2">
+    <title-header class="mx-2">
       <template #title>Investing in the future by supporting students.</template>
       <template #description>
         CASE holds summer Internships whenever we can to help grow the next generation of technical talent.
       </template>
-    </subheader>
+    </title-header>
 
     <v-row class="mt-3 justify-center text-left" :style="marginStyle">
       <v-col cols="12" md="6" height="400" class="d-flex align-center justify-center">
@@ -20,8 +20,9 @@
       <v-col cols="12" md="6" class="d-flex align-center justify-center">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum
       </v-col>
 
       <v-card variant="tonal" class="px-15 py-5 mt-3 mb-5">
@@ -37,7 +38,7 @@
 <script setup>
 import { computed } from 'vue';
 import { useDisplay } from 'vuetify';
-import Subheader from '@/components/Subheader';
+import TitleHeader from '@/components/TitleHeader.vue';
 const { xs, mdAndDown } = useDisplay();
 
 const marginStyle = computed(() => {

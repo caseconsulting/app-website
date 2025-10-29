@@ -1,17 +1,24 @@
 <template>
   <div>
+    <title-header main="true">
+      <template #title>Get to know CASE.</template>
+      <template #description>
+        Here at CASE, we do a lot of cool stuff. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor,
+        diam vel convallis sagittis, enim ante vestibulum sem, sed vehicula ligula risus vel justo.
+      </template>
+    </title-header>
     <v-container>
-      <subheader class="mb-6">
+      <title-header class="mb-6">
         <template #title>We've worked hard to get where we are today.</template>
-      </subheader>
+      </title-header>
       <history class="mb-8" />
-      <subheader class="mb-6">
+      <title-header class="mb-6">
         <template #title>Meet our leadership.</template>
         <template #description>
-          Our leadership team is dedicated to making sure CASE delivers the quality that sets us apart. Connect with
-          us on social media and reach out!
+          Our leadership team is dedicated to making sure CASE delivers the quality that sets us apart. Connect with us
+          on social media and reach out!
         </template>
-      </subheader>
+      </title-header>
       <v-row justify="center">
         <v-col cols="12">
           <leadership-card class="mb-2" :person="ceo" />
@@ -32,7 +39,7 @@
 <script setup>
 import LeadershipCard from '@/components/about-us/LeadershipCard.vue';
 import History from '@/components/about-us/History.vue';
-import Subheader from '@/components/Subheader';
+import TitleHeader from '@/components/TitleHeader.vue';
 
 const ceo = {
   name: 'Paul Farmer',
