@@ -21,7 +21,9 @@
       class="elevation-2 my-12"
       src="/assets/custom/img/events/IMG_20161129_091532386_HDR.jpg"
       cover
-    />
+      gradient="to top, rgba(0,0,0,.15), rgba(0,0,0,.15)"
+    >
+    </v-img>
 
     <div :style="xs ? { margin: '0 1rem' } : sm ? { margin: '0 5rem' } : { margin: '0 15rem' }">
       <TechPartners />
