@@ -27,7 +27,15 @@
       <v-row justify="center">
         <v-col cols="10">
           <v-row justify="center">
-            <v-col class="d-flex justify-center" cols="5" md="4" lg="3" v-for="(item, index) in leadershipInfo" :key="index" :value="index">
+            <v-col
+              class="d-flex justify-center"
+              cols="5"
+              md="4"
+              lg="3"
+              v-for="(item, index) in leadershipInfo"
+              :key="index"
+              :value="index"
+            >
               <leadership-card class="pa-2" :person="item" />
             </v-col>
           </v-row>
