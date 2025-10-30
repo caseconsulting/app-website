@@ -16,13 +16,13 @@
             <span class="text-primary h5 font-emphasis mr-8">{{ person.name }}</span>
             <span class="d-inline-flex">
               <a :href="person.facebook" target="_blank">
-                <v-icon class="fab fa-facebook-square mt-n1" size="small"></v-icon>
+                <v-icon class="fab fa-facebook-square icon_link mt-n1" size="small"></v-icon>
               </a>
               <a :href="person.twitter" target="_blank">
-                <v-icon class="fab fa-twitter ml-2 mt-n1" size="x-small"></v-icon>
+                <v-icon class="fab fa-twitter icon_link ml-2 mt-n1" size="x-small"></v-icon>
               </a>
               <a :href="person.linkedin" target="_blank">
-                <v-icon class="fab fa-linkedin ml-2 mt-n1" size="small"></v-icon>
+                <v-icon class="fab fa-linkedin icon_link ml-2 mt-n1" size="small"></v-icon>
               </a>
             </span>
           </div>

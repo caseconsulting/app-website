@@ -4,8 +4,11 @@
 /* Added in for redesign. */
 
 a {
-  color: rgb(var(--v-theme-secondary));
   text-decoration: none !important;
+}
+
+.icon_link {
+  color: rgb(var(--v-theme-secondary));
 
   &:hover,
   &:focus {
