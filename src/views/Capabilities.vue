@@ -1,10 +1,10 @@
 <template>
   <div>
     <div :style="xs ? { margin: '0 1rem' } : sm ? { margin: '0 5rem' } : { margin: '0 15rem' }">
-      <Subheader class="mt-12">
+      <title-header class="mt-12">
         <template #title>Here's our brag corner</template>
         <template #description> </template>
-      </Subheader>
+      </title-header>
       <h3 class="text-secondary mb-5">Experts that deliver</h3>
       <v-row>
         <v-col cols="0" md="1"> </v-col>
@@ -32,7 +32,7 @@
 </template>
 
 <script setup>
-import Subheader from '@/components/Subheader.vue';
+import TitleHeader from '@/components/TitleHeader.vue';
 import StatsCard from '@/components/capabilities/StatsCard.vue';
 import CertificationsSection from '@/components/capabilities/CertificationsSection.vue';
 import TechPartners from '@/components/capabilities/TechPartners.vue';

@@ -11,6 +11,7 @@
           size="x-large"
           variant="text"
           :href="icon.url"
+          target="_blank"
         ></v-btn>
       </v-col>
       <v-col class="text-white h6 mt-2 mr-2" cols="12" sm="auto">
