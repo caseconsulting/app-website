@@ -47,7 +47,7 @@ const icons = [
     name: 'fa-github',
     url: 'https://github.com/caseconsulting'
   }
-]
+];
 </script>
 
 <style scoped>

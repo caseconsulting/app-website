@@ -23,7 +23,12 @@
         apply now
       </v-btn>
       <div v-else>
-        <btn-dropdown :class="$vuetify.display.smAndUp ? 'mr-6' : 'mr-2'" :items="dropdownNav" variant="flat" color="secondary">
+        <btn-dropdown
+          :class="$vuetify.display.smAndUp ? 'mr-6' : 'mr-2'"
+          :items="dropdownNav"
+          variant="flat"
+          color="secondary"
+        >
           <v-icon class="fas fa-bars"></v-icon>
         </btn-dropdown>
       </div>
