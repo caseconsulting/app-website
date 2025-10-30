@@ -4,7 +4,7 @@
     <v-row class="pt-4">
       <span class="text-primary h5 font-emphasis">{{ person.name }}</span>
       <a :href="person.linkedin" target="_blank">
-        <v-icon class="fab fa-linkedin ml-2" size="small"></v-icon>
+        <v-icon class="fab fa-linkedin icon_link ml-2" size="small"></v-icon>
       </a>
     </v-row>
     <v-row v-if="person.founder">
