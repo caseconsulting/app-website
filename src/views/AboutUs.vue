@@ -12,6 +12,7 @@
         <template #title>We've worked hard to get where we are today.</template>
       </title-header>
       <history class="mb-8" />
+      <timeline class="mb-8" />
       <title-header class="mb-6">
         <template #title>Meet our leadership.</template>
         <template #description>
@@ -50,6 +51,7 @@ import CeoCard from '@/components/about-us/DetailedLeadershipCard.vue';
 import LeadershipCard from '@/components/about-us/LeadershipCard.vue';
 import History from '@/components/about-us/History.vue';
 import TitleHeader from '@/components/TitleHeader.vue';
+import Timeline from '@/components/about-us/Timeline.vue';
 
 const ceo = {
   name: 'Paul Farmer',

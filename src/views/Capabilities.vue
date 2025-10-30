@@ -1,10 +1,10 @@
 <template>
   <div>
     <div :style="xs ? { margin: '0 1rem' } : sm ? { margin: '0 5rem' } : { margin: '0 15rem' }">
-      <TitleHeader class="mt-12">
+      <title-header class="mt-12">
         <template #title>Here's our brag corner</template>
         <template #description> </template>
-      </TitleHeader>
+      </title-header>
       <h3 class="text-secondary mb-5">Experts that deliver</h3>
       <v-row>
         <v-col cols="0" md="1"> </v-col>
