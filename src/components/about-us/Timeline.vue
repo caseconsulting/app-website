@@ -1,6 +1,9 @@
 <template>
   <v-timeline align="center">
     <v-timeline-item side="start" dot-color="secondary">
+      <template v-slot:opposite>
+        <v-img src="/assets/custom/img/logos/original_case_logo.jpg" alt="Original CASE logo" width="150" />
+      </template>
       <div class="text-end">
         <div>Feb 2012</div>
         <div class="text-secondary h5 font-emphasis">Founding of Case Consulting</div>
@@ -23,12 +26,9 @@
         </p>
       </div>
     </v-timeline-item>
-    <v-timeline-item side="start" size="large">
+    <v-timeline-item side="start" dot-color="secondary">
       <template v-slot:opposite>
         <v-img src="/assets/custom/img/case/nav_logo.png" alt="CASE logo" width="150" />
-      </template>
-      <template v-slot:icon>
-        <v-avatar image="/assets/custom/img/case/nav_logo.png"></v-avatar>
       </template>
       <div class="text-end">
         <div>Early 2023</div>
@@ -40,6 +40,9 @@
       </div>
     </v-timeline-item>
     <v-timeline-item side="end" dot-color="secondary">
+      <template v-slot:opposite>
+        <v-img src="/assets/custom/img/logos/cyk_logo.png" alt="CyberKinetics logo" width="150" />
+      </template>
       <div>
         <div>Apr 2024</div>
         <div class="text-secondary h5 font-emphasis">Merger with CYK</div>
