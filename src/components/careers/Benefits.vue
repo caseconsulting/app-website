@@ -16,8 +16,7 @@
           <div>
             <div class="text-secondary font-weight-bold mb-2">{{ s.title }}</div>
             <div v-for="(item, j) in s.items" :key="j" class="d-flex mb-1">
-              <v-icon icon="mdi-arrow-right" size="18" class="text-secondary mr-2" />
-              <span>{{ item }}</span>
+              <bullet>{{ item }}</bullet>
             </div>
           </div>
         </div>
@@ -30,8 +29,7 @@
           <div>
             <div class="text-secondary font-weight-bold mb-2">{{ s.title }}</div>
             <div v-for="(item, j) in s.items" :key="j" class="d-flex mb-1">
-              <v-icon icon="mdi-arrow-right" size="18" class="text-secondary mr-2" />
-              <span>{{ item }}</span>
+              <bullet>{{ item }}</bullet>
             </div>
           </div>
         </div>
@@ -43,6 +41,7 @@
 <script setup>
 import { useDisplay } from 'vuetify';
 import TitleHeader from '@/components/TitleHeader.vue';
+import Bullet from '../shared/Bullet.vue';
 const { xs } = useDisplay();
 
 const sectionsLeft = [
