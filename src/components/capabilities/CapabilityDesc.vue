@@ -4,11 +4,12 @@
       <h3 class="text-center text-secondary mb-4"><slot name="header"></slot></h3>
     </v-row>
     <v-row>
-      <v-col cols="auto">
-        <div class="text-center h5 font-emphasis"><slot name="name"></slot></div>
-        <v-img min-width="300px" height="100px" :src="url" alt="" />
+      <v-col :order="swap ? 2 : 1" cols="6">
+        <!-- <div class="text-center h5 font-emphasis"><slot name="name"></slot></div> -->
+        <v-img class="rounded" min-width="300px" :src="url" alt="" />
       </v-col>
-      <v-col class="pt-10">
+      <v-col :order="swap ? 1 : 2" cols="6" class="pt-10" align-self="center">
+        <div class="h5 font-emphasis"><slot name="name"></slot></div>
         <slot name="desc"></slot>
       </v-col>
     </v-row>
@@ -22,5 +23,5 @@
 </template>
 
 <script setup>
-defineProps(['url', 'last']);
+defineProps(['url', 'swap', 'last']);
 </script>
