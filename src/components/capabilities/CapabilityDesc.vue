@@ -1,26 +1,17 @@
 <template>
   <div>
-    <v-row justify="center">
-      <h3 class="text-center text-secondary mb-4"><slot name="header"></slot></h3>
-    </v-row>
-    <v-row>
-      <v-col cols="auto">
-        <div class="text-center h5 font-emphasis"><slot name="name"></slot></div>
-        <v-img min-width="300px" height="100px" :src="url" alt="" />
+    <v-row justify="space">
+      <v-col :order="swap ? 2 : 1" align-self="center">
+        <v-img cover class="rounded" height="300px" min-width="150px" max-width="450px" :src="url" alt="" />
       </v-col>
-      <v-col class="pt-10">
+      <v-col :order="swap ? 1 : 2" class="pt-10" align-self="center">
+        <div class="h5 font-emphasis"><slot name="name"></slot></div>
         <slot name="desc"></slot>
       </v-col>
     </v-row>
-    <v-divider
-      v-if="!last"
-      thickness="6"
-      class="bg-tertiary border-opacity-75 mt-6 mb-12 mx-auto"
-      style="max-width: 125px"
-    />
   </div>
 </template>
 
 <script setup>
-defineProps(['url', 'last']);
+defineProps(['url', 'swap']);
 </script>

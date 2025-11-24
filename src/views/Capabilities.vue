@@ -1,24 +1,26 @@
 <template>
   <div>
-    <div :style="xs ? { margin: '0 1rem' } : sm ? { margin: '0 5rem' } : { margin: '0 15rem' }">
-      <title-header class="mt-12">
-        <template #title>CASE can do a lot of things.</template>
-      </title-header>
+    <title-header main="true">
+      <template #title>CASE's Capabilities</template>
+      <template #description>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor, diam vel convallis sagittis, enim ante
+        vestibulum sem, sed vehicula ligula risus vel justo.
+      </template>
+    </title-header>
+    <div class="mt-6" :style="xs ? { margin: '0 1rem' } : sm ? { margin: '0 5rem' } : { margin: '0 10rem' }">
       <capability-desc
         v-for="(item, index) in capabilities"
         :key="index"
         :value="index"
         :url="item.url"
+        :swap="item.swap"
         :last="item.last"
       >
         <template #header>{{ item.header }}</template>
         <template #name>{{ item.name }}</template>
         <template #desc>
           <div class="mb-4">
-            {{ item.desc_one }}
-          </div>
-          <div v-if="item.desc_two" class="mb-4">
-            {{ item.desc_two }}
+            {{ item.desc }}
           </div>
         </template>
       </capability-desc>
@@ -98,47 +100,37 @@ const statsRight = [
 ];
 const capabilities = [
   {
-    header: 'We develop quality software that meets and exceeds.',
     name: 'Software Delivery',
-    desc_one: 'CASE delivers tailored software solutions across a range of technologies.',
-    desc_two:
-      'We can build the custom code to make your low-code/no-code solution work for your mission or we can start from scratch using the latest technologies for application development, with security built-in from the beginning.',
-    url: '/assets/custom/img/capabilities/software_delivery.png'
+    desc: 'CASE delivers tailored software solutions across a range of technologies. We can build the custom code to make your low-code/no-code solution work for your mission or we can start from scratch using the latest technologies for application development, with security built-in from the beginning.',
+    url: '/assets/custom/img/capabilities/software_development.jpg'
   },
   {
-    header: 'We know how to keep the cloud airtight.',
     name: 'Secure Cloud',
-    desc_one: 'CASE delivers tailored software solutions across a range of technologies.',
-    desc_two:
-      'We can build the custom code to make your low-code/no-code solution work for your mission or we can start from scratch using the latest technologies for application development, with security built-in from the beginning.',
-    url: '/assets/custom/img/capabilities/secure_cloud.png'
+    desc: 'CASE delivers tailored software solutions across a range of technologies. We can build the custom code to make your low-code/no-code solution work for your mission or we can start from scratch using the latest technologies for application development, with security built-in from the beginning.',
+    url: '/assets/custom/img/capabilities/cloud_engineering.jpg',
+    swap: true
   },
   {
-    header: 'CASE is at the forefront of security based architecture design.',
     name: 'Cyber',
-    desc_one:
-      'We implement security from the beginning and shepherd systems through risk management frameworks and authorization and accreditation to achieve compliance. Our team has experience developing secure network and communications solutions to support systems across the world.',
-    url: '/assets/custom/img/capabilities/cyber.png'
+    desc: 'We implement security from the beginning and shepherd systems through risk management frameworks and authorization and accreditation to achieve compliance. Our team has experience developing secure network and communications solutions to support systems across the world.',
+    url: '/assets/custom/img/capabilities/cybersecurity.jpg'
   },
   {
-    header: "CASE's data experts can tell you how it is.",
     name: 'Data Insights',
-    desc_one:
-      "CASE's team of data engineers and data scientists deliver solutions to help govern large data sets and extract value leveraging AI/ML and LLM.",
-    url: '/assets/custom/img/capabilities/data_insights.png'
+    desc: "CASE's team of data engineers and data scientists deliver solutions to help govern large data sets and extract value leveraging AI/ML and LLM.",
+    url: '/assets/custom/img/capabilities/data_ai_ml.jpg',
+    swap: true
   },
   {
-    header: 'Everything we do is grounded in the missions we support.',
     name: 'Mission Engineering',
-    desc_one:
-      'Our project managers and mission support teams help our customers get our technology solutions to the mission on time, every time to give operators the tools they need to do their jobs.',
-    url: '/assets/custom/img/capabilities/mission_engineering.png'
+    desc: 'Our project managers and mission support teams help our customers get our technology solutions to the mission on time, every time to give operators the tools they need to do their jobs.',
+    url: '/assets/custom/img/capabilities/mission_engineering.jpg'
   },
   {
     name: 'FinTech Solutions',
-    desc_one: 'CASE leverages technology solutions for financial problems. Need content on this.',
-    url: '/assets/custom/img/capabilities/fintech_solutions.png',
-    last: true
+    desc: 'CASE leverages technology solutions for financial problems. Need content on this.',
+    url: '/assets/custom/img/capabilities/fintech_solutions.jpg',
+    swap: true
   }
 ];
 </script>
