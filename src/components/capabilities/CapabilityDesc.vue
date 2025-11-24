@@ -13,7 +13,5 @@
 </template>
 
 <script setup>
-import { useDisplay } from 'vuetify';
-const { xs } = useDisplay();
 defineProps(['url', 'swap']);
 </script>
