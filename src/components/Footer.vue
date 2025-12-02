@@ -42,7 +42,7 @@ const icons = [
   },
   {
     name: 'fa-linkedin',
-    url: 'http://linkedin.com/uas/login?session_redirect=%2Fcompany%2F2558032%2F'
+    url: 'https://www.linkedin.com/company/case-llc/'
   },
   {
     name: 'fa-github',
