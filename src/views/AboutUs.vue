@@ -56,7 +56,7 @@ const ceo = {
   name: 'Paul Farmer',
   title: 'Chief Executive Officer',
   founder: 'CASE Founder',
-  bio: "Here's a blurb about Paul! This should be more in depth than the other leadership team members' cards. This is the spot to let everyone know everything you want to! Brag! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  bio: 'Paul Farmer founded Case Consulting in 2013 with a straightforward mission: build a company where talented engineers could do meaningful work and deliver for customers without layers of bureaucracy. Under his leadership, the firm has grown from a small consulting shop into the broader CASE platform, expanding through multiple acquisitions and a unified culture centered on people, performance, and long-term vision.',
   image: '/assets/custom/img/leadership/paul_farmer.jpeg',
   linkedin: 'https://www.linkedin.com/in/paul-farmer-jr-4aa68b11/'
 };
