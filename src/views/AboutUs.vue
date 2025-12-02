@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-6">
     <title-header main="true">
       <template #title>Get to know CASE.</template>
       <template #description>
@@ -21,7 +21,7 @@
         </template>
       </title-header>
       <v-row justify="center">
-        <v-col cols="12">
+        <v-col cols="11">
           <ceo-card class="mb-2" :person="ceo" />
         </v-col>
       </v-row>
@@ -32,7 +32,6 @@
               class="d-flex justify-center"
               cols="5"
               md="4"
-              lg="3"
               v-for="(item, index) in leadershipInfo"
               :key="index"
               :value="index"
@@ -82,8 +81,8 @@ const leadershipInfo = [
   },
   {
     name: 'Chris Santiago',
-    title: 'Chief Technology Office',
-    subtitle: 'EVP Engineering',
+    title: 'Chief Technology Officer',
+    subtitle: 'EVP',
     founder: 'Ragnarok Founder',
     image: '/assets/custom/img/leadership/csantiago.jpg',
     linkedin: 'https://www.linkedin.com/in/chris-santiago-4731b69/'
@@ -98,16 +97,9 @@ const leadershipInfo = [
   {
     name: 'Brandon Lally',
     title: 'Chief Customer Officer',
-    founder: 'CYK Founder',
+    founder: 'CyberKinetics Founder',
     image: '/assets/custom/img/leadership/blally.jpg',
     linkedin: 'https://www.linkedin.com/in/brandonlally/'
-  },
-  {
-    name: 'Tom Dougherty',
-    title: 'EVP Mission',
-    founder: 'Ragnarok Founder',
-    image: '/assets/custom/img/leadership/thomas_dougherty.jpeg',
-    linkedin: 'https://www.linkedin.com/in/thomas-dougherty-4899821/'
   }
 ];
 </script>

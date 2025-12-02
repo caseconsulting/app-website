@@ -45,11 +45,25 @@
       </template>
       <div>
         <div>Apr 2024</div>
-        <div class="text-secondary h5 font-emphasis">Merger with CYK</div>
+        <div class="text-secondary h5 font-emphasis">Merger with CyberKinetics</div>
         <p class="text-tertiary">
           Founded by Brandon Lally in 2015, CyberKinetics brought additional expertise in cybersecurity, cloud
           engineering, and data analytics to CASE through a merger in April 2024. This integration aligns with CASE's
           strategy to expand its portfolio, adding unique capabilities that enhance CASE's position in key markets.
+        </p>
+      </div>
+    </v-timeline-item>
+    <v-timeline-item side="start" dot-color="secondary">
+      <template v-slot:opposite>
+        <v-img src="/assets/custom/img/logos/rag_logo.png" alt="CyberKinetics logo" width="150" />
+      </template>
+      <div class="text-end">
+        <div>July 2025</div>
+        <div class="text-secondary h5 font-emphasis">Merger with Ragnarok</div>
+        <p class="text-tertiary">
+          Founded in 2015 by Ethan Grambow, Thomas Dougherty, and Chris Santiago, Ragnarok joined the CASE team in July
+          2025, bringing with it a passion for delivering innovative, tailored solutions. This union reinforces a shared
+          ‘Mission First’ mindset dedicated to addressing the challenges facing their federal and commercial clients.
         </p>
       </div>
     </v-timeline-item>

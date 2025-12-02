@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-6">
     <title-header main="true">
       <template #title>CASE's Capabilities</template>
       <template #description>
@@ -43,10 +43,10 @@
         <v-col cols="12" lg="6">
           <v-img class="g-rounded-4" cover height="225px" src="/assets/custom/img/online/developer-min.jpg"></v-img>
           <bullet class="pt-6 pb-6" size="large">Over 1000 combined years of IC experience.</bullet>
-          <bullet size="large">Retention rate of 71% over 5 Years.</bullet>
+          <bullet size="large">Retention rate of 95% over 5 Years.</bullet>
         </v-col>
       </v-row>
-      <CertificationsSection class="mt-12" />
+      <certifications-section class="mt-12" />
     </div>
     <v-img
       height="30em"
