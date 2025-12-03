@@ -91,7 +91,7 @@ const leadershipInfo = [
     name: 'Ethan Grambow',
     title: 'Chief Strategy Officer',
     founder: 'Ragnarok Founder',
-    image: '/assets/custom/img/leadership/no_linkedin_photo.svg',
+    image: '/assets/custom/img/leadership/ethan_grambow.jpg',
     linkedin: 'https://www.linkedin.com/in/ethan-g-6b6024107/'
   },
   {
