@@ -8,7 +8,6 @@
       @update:show="modalDisplay = $event"
     >
     </Modal>
-    <form-header></form-header>
     <section id="apply" class="g-theme-bg-gray-light-v1 g-py-50">
       <div class="applyForm container col-sm-8 col-xl-6 col-lg-8 col-xs-9">
         <div class="container text-center g-max-width-750 g-mb-20 g-pt-10 g-pb-10">
@@ -224,11 +223,11 @@
           <!-- Submit Button -->
           <div>
             <div class="col-sm-offset-2 col-sm-10">
-              <button v-if="!submitEnabled" class="btn btn-success" type="button" :disabled="submitEnabled">
+              <button v-if="!submitEnabled" class="btn bg-secondary" type="button" :disabled="submitEnabled">
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                 Submitting
               </button>
-              <button v-else type="submit" :disabled="!submitEnabled" class="btn btn-success" style="opacity: 0.8">
+              <button v-else type="submit" :disabled="!submitEnabled" class="btn bg-secondary" style="opacity: 0.8">
                 Submit
               </button>
             </div>
@@ -242,7 +241,6 @@
 <script>
 import useValidate from '@vuelidate/core';
 import { required, email } from '@vuelidate/validators';
-import Header from '../oldhome/Header.vue';
 import axios from 'axios';
 import modal from '../AlertModal.vue';
 
@@ -479,7 +477,6 @@ export default {
     };
   },
   components: {
-    formHeader: Header,
     Modal: modal
   },
   methods: {
