@@ -128,7 +128,7 @@ const capabilities = [
   },
   {
     name: 'FinTech Solutions',
-    desc: 'CASE leverages technology solutions for financial problems. Need content on this.',
+    desc: 'CASE provides modern financial technology solutions designed to help organizations operate securely, efficiently, and in full compliance. Our team delivers expertise in cryptocurrency ecosystems, blockchain analysis, and advanced fraud detection and avoidance. We also support clients in developing and implementing robust policies, regulatory frameworks, and KYC compliance programs—ensuring mission-critical financial operations remain trusted, transparent, and secure.',
     url: '/assets/custom/img/capabilities/fintech_solutions.jpg',
     swap: true
   }
