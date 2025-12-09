@@ -35,7 +35,7 @@
         v-for="partner in additionalPartners"
         :key="partner.name"
         cols="6"
-        sm="3"
+        sm="2"
         class="d-flex flex-column align-center text-center"
       >
         <v-avatar size="80" class="mb-2">
@@ -51,6 +51,7 @@
 import { ref } from 'vue';
 
 const additionalPartners = ref([
+  { name: 'Google Cloud', image: '/assets/custom/img/stats/partners/google_cloud_partner.png' },
   { name: 'Kovr.ai', image: '/assets/custom/img/stats/partners/kovr-ai.png' },
   { name: 'ServiceNow', image: '/assets/custom/img/stats/partners/servicenow.png' },
   { name: 'Snowflake', image: '/assets/custom/img/stats/partners/snowflake.png' },

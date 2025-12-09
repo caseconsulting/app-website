@@ -16,7 +16,7 @@
       </v-col>
       <v-col class="text-white h6 mt-2 mr-2" cols="12" sm="auto">
         <i class="fa fa-map-marker-alt"></i>
-        Leesburg, VA
+        Chantilly, VA
       </v-col>
       <v-col class="text-white h6 mt-2" cols="12" sm="auto">
         Contact us at:

@@ -9,7 +9,7 @@
       <v-col cols="12" md="6" class="justify-center align-center">
         <v-pie
           animation
-          :legend="{ position: 'right' }"
+          :legend="{ position: xs ? 'bottom' : 'right' }"
           :palette="['#8A3648', '#415464', '#534D5D', '#5a8a96', '#a64d5f']"
           tooltip
           reveal
@@ -32,6 +32,8 @@
 
 <script setup>
 import { ref } from 'vue';
+import { useDisplay } from 'vuetify';
+const { xs } = useDisplay();
 
 const items = ref([
   { key: 1, title: 'AWS Certified Solutions Architect', value: 13 },
