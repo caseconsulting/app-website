@@ -1,11 +1,7 @@
 <template>
   <div class="mb-6">
-    <title-header main="true">
+    <title-header>
       <template #title>CASE's Capabilities</template>
-      <template #description>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor, diam vel convallis sagittis, enim ante
-        vestibulum sem, sed vehicula ligula risus vel justo.
-      </template>
     </title-header>
     <div class="mt-6" :style="xs ? { margin: '0 1rem' } : sm ? { margin: '0 5rem' } : { margin: '0 10rem' }">
       <capability-desc
