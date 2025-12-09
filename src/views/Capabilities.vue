@@ -12,7 +12,6 @@
         :swap="item.swap"
         :last="item.last"
       >
-        <template #header>{{ item.header }}</template>
         <template #name>{{ item.name }}</template>
         <template #desc>
           <div class="mb-4">
