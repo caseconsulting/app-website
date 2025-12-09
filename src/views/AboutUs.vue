@@ -1,12 +1,5 @@
 <template>
   <div class="mb-6">
-    <title-header main="true">
-      <template #title>Get to know CASE.</template>
-      <template #description>
-        Here at CASE, we do a lot of cool stuff. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor,
-        diam vel convallis sagittis, enim ante vestibulum sem, sed vehicula ligula risus vel justo.
-      </template>
-    </title-header>
     <v-container>
       <title-header class="mb-6">
         <template #title>We've worked hard to get where we are today.</template>

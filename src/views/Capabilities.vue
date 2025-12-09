@@ -1,11 +1,7 @@
 <template>
   <div class="mb-6">
-    <title-header main="true">
+    <title-header>
       <template #title>CASE's Capabilities</template>
-      <template #description>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor, diam vel convallis sagittis, enim ante
-        vestibulum sem, sed vehicula ligula risus vel justo.
-      </template>
     </title-header>
     <div class="mt-6" :style="xs ? { margin: '0 1rem' } : sm ? { margin: '0 5rem' } : { margin: '0 10rem' }">
       <capability-desc
@@ -16,7 +12,6 @@
         :swap="item.swap"
         :last="item.last"
       >
-        <template #header>{{ item.header }}</template>
         <template #name>{{ item.name }}</template>
         <template #desc>
           <div class="mb-4">
@@ -128,7 +123,7 @@ const capabilities = [
   },
   {
     name: 'FinTech Solutions',
-    desc: 'CASE leverages technology solutions for financial problems. Need content on this.',
+    desc: 'CASE provides modern financial technology solutions designed to help organizations operate securely, efficiently, and in full compliance. Our team delivers expertise in cryptocurrency ecosystems, blockchain analysis, and advanced fraud detection and avoidance. We also support clients in developing and implementing robust policies, regulatory frameworks, and KYC compliance programs—ensuring mission-critical financial operations remain trusted, transparent, and secure.',
     url: '/assets/custom/img/capabilities/fintech_solutions.jpg',
     swap: true
   }
