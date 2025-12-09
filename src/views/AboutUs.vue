@@ -1,12 +1,5 @@
 <template>
-  <div>
-    <title-header main="true">
-      <template #title>Get to know CASE.</template>
-      <template #description>
-        Here at CASE, we do a lot of cool stuff. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor,
-        diam vel convallis sagittis, enim ante vestibulum sem, sed vehicula ligula risus vel justo.
-      </template>
-    </title-header>
+  <div class="mb-6">
     <v-container>
       <title-header class="mb-6">
         <template #title>We've worked hard to get where we are today.</template>
@@ -21,7 +14,7 @@
         </template>
       </title-header>
       <v-row justify="center">
-        <v-col cols="12">
+        <v-col cols="11">
           <ceo-card class="mb-2" :person="ceo" />
         </v-col>
       </v-row>
@@ -32,7 +25,6 @@
               class="d-flex justify-center"
               cols="5"
               md="4"
-              lg="3"
               v-for="(item, index) in leadershipInfo"
               :key="index"
               :value="index"
@@ -57,7 +49,7 @@ const ceo = {
   name: 'Paul Farmer',
   title: 'Chief Executive Officer',
   founder: 'CASE Founder',
-  bio: "Here's a blurb about Paul! This should be more in depth than the other leadership team members' cards. This is the spot to let everyone know everything you want to! Brag! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  bio: 'Paul Farmer founded Case Consulting in 2013 with a straightforward mission: build a company where talented engineers could do meaningful work and deliver for customers without layers of bureaucracy. Under his leadership, the firm has grown from a small consulting shop into the broader CASE platform, expanding through multiple acquisitions and a unified culture centered on people, performance, and long-term vision.',
   image: '/assets/custom/img/leadership/paul_farmer.jpeg',
   linkedin: 'https://www.linkedin.com/in/paul-farmer-jr-4aa68b11/'
 };
@@ -82,8 +74,8 @@ const leadershipInfo = [
   },
   {
     name: 'Chris Santiago',
-    title: 'Chief Technology Office',
-    subtitle: 'EVP Engineering',
+    title: 'Chief Technology Officer',
+    subtitle: 'EVP',
     founder: 'Ragnarok Founder',
     image: '/assets/custom/img/leadership/csantiago.jpg',
     linkedin: 'https://www.linkedin.com/in/chris-santiago-4731b69/'
@@ -92,22 +84,15 @@ const leadershipInfo = [
     name: 'Ethan Grambow',
     title: 'Chief Strategy Officer',
     founder: 'Ragnarok Founder',
-    image: '/assets/custom/img/leadership/no_linkedin_photo.svg',
+    image: '/assets/custom/img/leadership/ethan_grambow.jpg',
     linkedin: 'https://www.linkedin.com/in/ethan-g-6b6024107/'
   },
   {
     name: 'Brandon Lally',
     title: 'Chief Customer Officer',
-    founder: 'CYK Founder',
+    founder: 'CyberKinetics Founder',
     image: '/assets/custom/img/leadership/blally.jpg',
     linkedin: 'https://www.linkedin.com/in/brandonlally/'
-  },
-  {
-    name: 'Tom Dougherty',
-    title: 'EVP Mission',
-    founder: 'Ragnarok Founder',
-    image: '/assets/custom/img/leadership/thomas_dougherty.jpeg',
-    linkedin: 'https://www.linkedin.com/in/thomas-dougherty-4899821/'
   }
 ];
 </script>
