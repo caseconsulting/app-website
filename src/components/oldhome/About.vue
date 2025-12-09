@@ -11,7 +11,7 @@
               <img
                 class="w-100 img-fluid"
                 style="min-height: 100%"
-                src="assets/custom/img/online/shutterstock_321052289.jpg"
+                src="assets/custom/img/online/working.jpg"
                 alt="Sepia Desk"
               />
             </div>
