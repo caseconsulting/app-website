@@ -8,7 +8,7 @@
         :value="index"
         color="primary"
         :to="item.link"
-        class="hidden-sm-and-down"
+        class="nav hidden-sm-and-down"
       >
         {{ item.title || item.path }}
       </v-btn>
@@ -77,8 +77,8 @@ function handleNavigation(item) {
 </script>
 
 <style scoped>
-.v-btn:hover,
-.v-btn:focus {
+.nav:hover,
+.nav:focus {
   color: rgb(var(--v-theme-primary)) !important;
 }
 </style>

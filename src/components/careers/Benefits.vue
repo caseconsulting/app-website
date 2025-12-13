@@ -1,8 +1,8 @@
 <template>
   <div class="text-center">
     <title-header>
-      <template #title>There are benefits for working at CASE.</template>
-      <template #description>
+      <template #title>There are many benefits for working at CASE.</template>
+      <template #desc>
         CASE recognizes that employees are its number one asset, so we offer a salary and benefits package that will
         treat you right.
       </template>
@@ -41,7 +41,7 @@
 <script setup>
 import { useDisplay } from 'vuetify';
 import TitleHeader from '@/components/TitleHeader.vue';
-import Bullet from '../shared/Bullet.vue';
+import Bullet from '@/components/shared/Bullet.vue';
 const { xs } = useDisplay();
 
 const sectionsLeft = [
