@@ -86,7 +86,7 @@ const techEvents = [
     desc: 'Employees are encouraged to attend high profile tech events in order to expand their horizons and keep up with technology trends - with CASE footing the bill.',
     url: '/assets/custom/img/events/serverlessconf.jpg',
     secondDesc: 'Sponsored events include:',
-    bullets: ['AWS Summit', 'AWS re:Invent', 'AWS Tech Days' ],
+    bullets: ['AWS Summit', 'AWS re:Invent', 'AWS Tech Days'],
     swap: true
   },
   {
