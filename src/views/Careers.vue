@@ -11,5 +11,5 @@
 <script setup>
 import JobDescriptions from '@/components/careers/JobDescriptions.vue';
 import Benefits from '@/components/careers/Benefits.vue';
-import TitleHeader from '@/components/TitleHeader.vue';
+import TitleHeader from '@/components/shared/TitleHeader.vue';
 </script>

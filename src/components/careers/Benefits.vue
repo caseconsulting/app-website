@@ -40,7 +40,7 @@
 
 <script setup>
 import { useDisplay } from 'vuetify';
-import TitleHeader from '@/components/TitleHeader.vue';
+import TitleHeader from '@/components/shared/TitleHeader.vue';
 import Bullet from '@/components/shared/Bullet.vue';
 const { xs } = useDisplay();
 

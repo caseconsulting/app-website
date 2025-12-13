@@ -23,7 +23,7 @@
       <title-header class="mt-12">
         <template #title>Here's our brag corner.</template>
       </title-header>
-      <h3 class="text-secondary mb-5">Experts that deliver</h3>
+      <h3 class="text-secondary font-emphasis mb-5">Experts that deliver</h3>
       <v-row justify="space-around">
         <v-col>
           <v-row justify="center" v-for="(stat, index) in statsLeft" :key="index">
@@ -60,7 +60,7 @@
 </template>
 
 <script setup>
-import TitleHeader from '@/components/TitleHeader.vue';
+import TitleHeader from '@/components/shared/TitleHeader.vue';
 import StatsCard from '@/components/capabilities/StatsCard.vue';
 import CertificationsSection from '@/components/capabilities/CertificationsSection.vue';
 import TechPartners from '@/components/capabilities/TechPartners.vue';

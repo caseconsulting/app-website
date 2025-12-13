@@ -42,7 +42,7 @@
 import CeoCard from '@/components/about-us/DetailedLeadershipCard.vue';
 import LeadershipCard from '@/components/about-us/LeadershipCard.vue';
 import History from '@/components/about-us/History.vue';
-import TitleHeader from '@/components/TitleHeader.vue';
+import TitleHeader from '@/components/shared/TitleHeader.vue';
 import Timeline from '@/components/about-us/Timeline.vue';
 
 const ceo = {

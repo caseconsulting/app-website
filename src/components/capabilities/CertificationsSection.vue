@@ -2,7 +2,7 @@
   <div>
     <v-row>
       <v-col cols="12" md="6" class="justify-center align-center">
-        <h3 class="text-secondary mb-5">Certified Excellence</h3>
+        <h3 class="text-secondary font-emphasis mb-5">Certified Excellence</h3>
         Our commitment to excellence drives us to support continuous learning. Our team holds an extensive portfolio of
         industry certifications, demonstrating our expertise across diverse technologies and methodologies.
       </v-col>

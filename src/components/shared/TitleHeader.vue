@@ -25,7 +25,7 @@ defineProps(['main']);
   margin: auto;
 }
 .main {
-  background-image: url('../../public/assets/custom/img/seigaiha.png');
+  background-image: url('../../../public/assets/custom/img/seigaiha.png');
   background-repeat: repeat;
 }
 </style>

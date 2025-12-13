@@ -65,7 +65,7 @@
 <script setup>
 import DisplayBlock from '@/components/shared/DisplayBlock.vue';
 import Bullet from '@/components/shared/Bullet.vue';
-import TitleHeader from '@/components/TitleHeader.vue';
+import TitleHeader from '@/components/shared/TitleHeader.vue';
 import { useDisplay } from 'vuetify';
 
 const { xs, sm, md } = useDisplay();
