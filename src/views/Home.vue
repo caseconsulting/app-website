@@ -47,8 +47,7 @@ const pages = [
     swap: true
   },
   {
-    title:
-      'CASE employees are empowered to excel and provided the support to build rewarding careers.',
+    title: 'CASE employees are empowered to excel and provided the support to build rewarding careers.',
     url: '/assets/custom/img/events/case_internship.jpeg',
     button: 'careers at case',
     link: 'careers'
