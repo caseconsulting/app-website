@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container class="mx-auto">
-      <v-row class="flex-nowrap" justify="center">
+      <v-row :class="xs ? '' : 'flex-nowrap'" justify="center">
         <v-col class="mr-3" cols="auto" align-self="center">
           <v-img class="rounded" height="200px" min-width="200px" :src="person.image" :alt="'Picture of ' + person.name" />
         </v-col>
@@ -26,6 +26,9 @@
 </template>
 
 <script setup>
+import { useDisplay } from 'vuetify';
+
+const { xs } = useDisplay();
 defineProps(['person']);
 </script>
 

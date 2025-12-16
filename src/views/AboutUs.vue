@@ -23,7 +23,8 @@
           <v-row justify="center">
             <v-col
               class="d-flex justify-center"
-              cols="5"
+              cols="12"
+              sm="5"
               md="4"
               v-for="(item, index) in leadershipInfo"
               :key="index"

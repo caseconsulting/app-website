@@ -48,7 +48,7 @@ const pages = [
   },
   {
     title:
-      'CASE employees are empowered to excel in high-visibility environments and provided the support to build long, rewarding careers.',
+      'CASE employees are empowered to excel and provided the support to build rewarding careers.',
     url: '/assets/custom/img/events/case_internship.jpeg',
     button: 'careers at case',
     link: 'careers'

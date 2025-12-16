@@ -8,17 +8,11 @@
       </v-tab>
     </v-tabs>
 
-    <v-window
-      v-model="tab"
-      class="mt-4 mx-auto"
-      show-arrows="hover"
-      center-active
-      style="max-width: 1000px; width: 100%"
-    >
-      <v-window-item v-for="job in jobs" :key="job.title" :value="job.title">
-        <v-card variant="tonal" class="py-2">
+    <v-window v-model="tab" class="mt-4 mx-auto" show-arrows center-active style="max-width: 1050px">
+      <v-window-item v-for="job in jobs" :key="job.title" :value="job.title" class="mx-auto" style="width: 62vw">
+        <v-card variant="tonal" class="py-2" rounded="xl">
           <v-row no-gutters>
-            <v-col :cols="xs ? 12 : 9" class="pa-4">
+            <v-col class="pa-4">
               <v-card-title class="text-secondary">{{ job.title }}</v-card-title>
               <v-card-text>
                 {{ job.description }}
@@ -26,9 +20,6 @@
               <v-card-actions class="justify-center">
                 <v-btn variant="elevated" color="secondary" class="text-white" to="/apply-form"> Apply Now </v-btn>
               </v-card-actions>
-            </v-col>
-            <v-col v-if="!xs" cols="3" class="justify-center align-center d-flex pa-4">
-              <v-img src="/assets/custom/img/case/nav_logo.png" alt="Job Image" width="150" />
             </v-col>
           </v-row>
         </v-card>
@@ -41,7 +32,7 @@
 import { ref } from 'vue';
 import { useDisplay } from 'vuetify';
 
-const { xs, smAndDown, mdAndUp } = useDisplay();
+const { xs } = useDisplay();
 const tab = ref('Software Developer');
 const jobs = ref([
   {

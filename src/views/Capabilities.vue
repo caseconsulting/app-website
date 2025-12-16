@@ -11,6 +11,7 @@
         :url="item.url"
         :swap="item.swap"
         :last="item.last"
+        height="200px"
       >
         <template #title>{{ item.title }}</template>
         <template #desc>
@@ -101,7 +102,7 @@ const capabilities = [
   },
   {
     title: 'Secure Cloud',
-    desc: 'CASE delivers tailored software solutions across a range of technologies. We can build the custom code to make your low-code/no-code solution work for your mission or we can start from scratch using the latest technologies for application development, with security built-in from the beginning.',
+    desc: 'CASE develops secure cloud solutions to host data and applications. We leverage DevSecOps best practices to deliver infrastructure as code, CI/CD pipelines, and build the foundation for secure, cloud-native solutions.',
     url: '/assets/custom/img/capabilities/cloud_engineering.jpg',
     swap: true
   },
