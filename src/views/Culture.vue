@@ -44,7 +44,7 @@
       <v-carousel style="height: 400px" class="mx-auto mt-12" hide-delimiter-background>
         <v-carousel-item v-for="(item, index) in caseCares" :key="index" :value="index">
           <v-sheet align="center">
-            <v-img :src="item.url" height="325px" width="64vw" rounded="xl" cover></v-img>
+            <v-img :src="item.url" height="325px" width="70%" rounded="xl" cover></v-img>
             <div class="h5 font-emphasis pt-2">{{ item.title }}</div>
           </v-sheet>
         </v-carousel-item>

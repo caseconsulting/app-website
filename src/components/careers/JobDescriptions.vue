@@ -9,7 +9,7 @@
     </v-tabs>
 
     <v-window v-model="tab" class="mt-4 mx-auto" show-arrows center-active style="max-width: 1050px">
-      <v-window-item v-for="job in jobs" :key="job.title" :value="job.title" class="mx-auto" style="width: 62vw">
+      <v-window-item v-for="job in jobs" :key="job.title" :value="job.title" class="mx-auto" style="max-width: 70%">
         <v-card variant="tonal" class="py-2" rounded="xl">
           <v-row no-gutters>
             <v-col class="pa-4">
