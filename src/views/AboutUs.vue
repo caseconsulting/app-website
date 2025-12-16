@@ -1,14 +1,14 @@
 <template>
   <div class="mb-6">
+    <title-header main="true">
+      <template #title>We've worked hard to get where we are today.</template>
+    </title-header>
+    <history class="mb-8" />
     <v-container>
-      <title-header class="mb-6">
-        <template #title>We've worked hard to get where we are today.</template>
-      </title-header>
-      <history class="mb-8" />
       <timeline class="mb-8" />
       <title-header class="mb-6">
         <template #title>Meet our leadership.</template>
-        <template #description>
+        <template #desc>
           Our leadership team is dedicated to making sure CASE delivers the quality that sets us apart. Connect with us
           on social media and reach out!
         </template>
@@ -23,7 +23,8 @@
           <v-row justify="center">
             <v-col
               class="d-flex justify-center"
-              cols="5"
+              cols="12"
+              sm="5"
               md="4"
               v-for="(item, index) in leadershipInfo"
               :key="index"
@@ -42,7 +43,7 @@
 import CeoCard from '@/components/about-us/DetailedLeadershipCard.vue';
 import LeadershipCard from '@/components/about-us/LeadershipCard.vue';
 import History from '@/components/about-us/History.vue';
-import TitleHeader from '@/components/TitleHeader.vue';
+import TitleHeader from '@/components/shared/TitleHeader.vue';
 import Timeline from '@/components/about-us/Timeline.vue';
 
 const ceo = {

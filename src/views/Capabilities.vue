@@ -1,29 +1,30 @@
 <template>
   <div class="mb-6">
-    <title-header>
-      <template #title>CASE's Capabilities</template>
+    <title-header main="true">
+      <template #title>CASE leverages our expertise to provide custom delivery to IC partners.</template>
     </title-header>
     <div class="mt-6" :style="xs ? { margin: '0 1rem' } : sm ? { margin: '0 5rem' } : { margin: '0 10rem' }">
-      <capability-desc
+      <display-block
         v-for="(item, index) in capabilities"
         :key="index"
         :value="index"
         :url="item.url"
         :swap="item.swap"
         :last="item.last"
+        height="200px"
       >
-        <template #name>{{ item.name }}</template>
+        <template #title>{{ item.title }}</template>
         <template #desc>
           <div class="mb-4">
             {{ item.desc }}
           </div>
         </template>
-      </capability-desc>
+      </display-block>
 
       <title-header class="mt-12">
-        <template #title>Here's our brag corner</template>
+        <template #title>Here's our brag corner.</template>
       </title-header>
-      <h3 class="text-secondary mb-5">Experts that deliver</h3>
+      <h3 class="text-secondary font-emphasis mb-5">Experts that deliver</h3>
       <v-row justify="space-around">
         <v-col>
           <v-row justify="center" v-for="(stat, index) in statsLeft" :key="index">
@@ -36,7 +37,7 @@
           </v-row>
         </v-col>
         <v-col cols="12" lg="6">
-          <v-img class="g-rounded-4" cover height="225px" src="/assets/custom/img/online/developer-min.jpg"></v-img>
+          <v-img class="g-rounded-4" cover height="225px" src="/assets/custom/img/online/meeting-min.jpg"></v-img>
           <bullet class="pt-6 pb-6" size="large">Over 1000 combined years of IC experience.</bullet>
           <bullet size="large">Retention rate of 95% over 5 Years.</bullet>
         </v-col>
@@ -60,12 +61,12 @@
 </template>
 
 <script setup>
-import TitleHeader from '@/components/TitleHeader.vue';
+import TitleHeader from '@/components/shared/TitleHeader.vue';
 import StatsCard from '@/components/capabilities/StatsCard.vue';
 import CertificationsSection from '@/components/capabilities/CertificationsSection.vue';
 import TechPartners from '@/components/capabilities/TechPartners.vue';
 import Bullet from '@/components/shared/Bullet.vue';
-import CapabilityDesc from '@/components/capabilities/CapabilityDesc.vue';
+import DisplayBlock from '@/components/shared/DisplayBlock.vue';
 import { useDisplay } from 'vuetify';
 
 const { xs, sm } = useDisplay();
@@ -95,34 +96,34 @@ const statsRight = [
 ];
 const capabilities = [
   {
-    name: 'Software Delivery',
+    title: 'Software Delivery',
     desc: 'CASE delivers tailored software solutions across a range of technologies. We can build the custom code to make your low-code/no-code solution work for your mission or we can start from scratch using the latest technologies for application development, with security built-in from the beginning.',
     url: '/assets/custom/img/capabilities/software_development.jpg'
   },
   {
-    name: 'Secure Cloud',
-    desc: 'CASE delivers tailored software solutions across a range of technologies. We can build the custom code to make your low-code/no-code solution work for your mission or we can start from scratch using the latest technologies for application development, with security built-in from the beginning.',
+    title: 'Secure Cloud',
+    desc: 'CASE develops secure cloud solutions to host data and applications. We leverage DevSecOps best practices to deliver infrastructure as code, CI/CD pipelines, and build the foundation for secure, cloud-native solutions.',
     url: '/assets/custom/img/capabilities/cloud_engineering.jpg',
     swap: true
   },
   {
-    name: 'Cyber',
+    title: 'Cyber',
     desc: 'We implement security from the beginning and shepherd systems through risk management frameworks and authorization and accreditation to achieve compliance. Our team has experience developing secure network and communications solutions to support systems across the world.',
     url: '/assets/custom/img/capabilities/cybersecurity.jpg'
   },
   {
-    name: 'Data Insights',
+    title: 'Data Insights',
     desc: "CASE's team of data engineers and data scientists deliver solutions to help govern large data sets and extract value leveraging AI/ML and LLM.",
     url: '/assets/custom/img/capabilities/data_ai_ml.jpg',
     swap: true
   },
   {
-    name: 'Mission Engineering',
+    title: 'Mission Engineering',
     desc: 'Our project managers and mission support teams help our customers get our technology solutions to the mission on time, every time to give operators the tools they need to do their jobs.',
     url: '/assets/custom/img/capabilities/mission_engineering.jpg'
   },
   {
-    name: 'FinTech Solutions',
+    title: 'FinTech Solutions',
     desc: 'CASE provides modern financial technology solutions designed to help organizations operate securely, efficiently, and in full compliance. Our team delivers expertise in cryptocurrency ecosystems, blockchain analysis, and advanced fraud detection and avoidance. We also support clients in developing and implementing robust policies, regulatory frameworks, and KYC compliance programs—ensuring mission-critical financial operations remain trusted, transparent, and secure.',
     url: '/assets/custom/img/capabilities/fintech_solutions.jpg',
     swap: true

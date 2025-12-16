@@ -4,9 +4,7 @@ import AboutUs from '@/views/AboutUs.vue';
 import Capabilities from '@/views/Capabilities.vue';
 import Culture from '@/views/Culture.vue';
 import Careers from '@/views/Careers.vue';
-import Intern from '@/views/Intern.vue';
 import ApplyForm from '@/views/ApplyForm.vue';
-import OldHome from '@/views/OldHome.vue';
 
 const routes = [
   {
@@ -35,19 +33,9 @@ const routes = [
     component: Careers
   },
   {
-    path: '/intern',
-    name: 'intern',
-    component: Intern
-  },
-  {
     path: '/apply-form',
     name: 'applyForm',
     component: ApplyForm
-  },
-  {
-    path: '/old',
-    name: 'oldHome',
-    component: OldHome
   },
   {
     path: '/:pathMatch(.*)*',
