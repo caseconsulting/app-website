@@ -119,12 +119,12 @@ const capabilities = [
   },
   {
     title: 'Mission Engineering',
-    desc: 'Our project managers and mission support teams help our customers get our technology solutions to the mission on time, every time to give operators the tools they need to do their jobs.',
+    desc: 'Our project managers and mission support teams help our customers get technology solutions to the mission on time, every time to give operators the tools they need to do their jobs.',
     url: '/assets/custom/img/capabilities/mission_engineering.jpg'
   },
   {
     title: 'FinTech Solutions',
-    desc: 'CASE provides modern financial technology solutions designed to help organizations operate securely, efficiently, and in full compliance. Our team delivers expertise in cryptocurrency ecosystems, blockchain analysis, and advanced fraud detection and avoidance. We also support clients in developing and implementing robust policies, regulatory frameworks, and KYC compliance programs—ensuring mission-critical financial operations remain trusted, transparent, and secure.',
+    desc: 'CASE provides modern financial technology solutions designed to help organizations operate securely, efficiently, and in full compliance. Our team delivers expertise in cryptocurrency ecosystems, blockchain analysis, and advanced fraud detection and avoidance. We also support clients in developing and implementing robust policies, regulatory frameworks, and KYC compliance programs ensuring mission-critical financial operations remain trusted, transparent, and secure.',
     url: '/assets/custom/img/capabilities/fintech_solutions.jpg',
     swap: true
   }

@@ -10,7 +10,7 @@
     <!-- Featured Partners -->
     <v-row class="mb-8 align-center">
       <v-col cols="12" md="4" class="d-flex justify-center align-center">
-        <v-img src="/assets/custom/img/awards/aws-partner-advanced.png" max-width="15em" contain />
+        <v-img src="/assets/custom/img/stats/partners/aws-partner-advanced.png" max-width="15em" contain />
       </v-col>
       <v-col cols="12" md="8" class="d-flex align-center">
         <div>

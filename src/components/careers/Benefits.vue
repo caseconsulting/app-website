@@ -59,7 +59,7 @@ const sectionsLeft = [
     icon: 'mdi-clock-outline',
     items: [
       'Competitive paid time off to include vacation, holidays, training and volunteer time',
-      'One additional week of absence with every 5 year anniversary'
+      'One additional week of sabbatical leave at each 5 year anniversary'
     ]
   },
   {
@@ -78,9 +78,9 @@ const sectionsRight = [
     title: 'Healthcare',
     icon: 'mdi-heart-pulse',
     items: [
-      'Full Medical, Dental, and Vision insurance coverage (company paid premiums)',
+      'Full Medical, Dental, and Vision insurance coverage, with company paid premiums',
       'Health Savings Account (HSA) and Flexible Spending Account (FSA) options',
-      'Short Term Disability, Long Term Disability, and Life Insurance',
+      'Short Term Disability, Long Term Disability, and Life Insurance, also company paid',
       'Dependent Care Account providing tax-deferred savings for child care'
     ]
   },

@@ -24,7 +24,7 @@ import DisplayRow from '@/components/shared/DisplayRow.vue';
 const history = [
   {
     title: 'We started off small...',
-    desc: 'CASE started with just a handful of employees, with the goal to make their impact by bringing customers the best products and service they possibly could.',
+    desc: 'CASE started with just a handful of employees, with the goal to make their impact by bringing customers the best products and services they possibly could.',
     url: '/assets/custom/img/events/case_annual_gala_2015.png',
     alt: 'CASE 2015 Annual Gala'
   },

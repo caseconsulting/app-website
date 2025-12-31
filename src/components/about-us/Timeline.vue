@@ -15,6 +15,9 @@
       </div>
     </v-timeline-item>
     <v-timeline-item side="end" dot-color="secondary">
+      <template v-slot:opposite>
+        <v-img src="/assets/custom/img/logos/fireteam_logo.png" alt="FireTeam Solutions logo" width="150" />
+      </template>
       <div>
         <div>Oct 2022</div>
         <div class="text-secondary h5 font-emphasis">Merger with FireTeam Solutions</div>
@@ -34,8 +37,8 @@
         <div>Early 2023</div>
         <div class="text-secondary h5 font-emphasis">Rebranded to CASE</div>
         <p class="text-tertiary">
-          Following the merger, the combined entity rebranded to CASE in early 2023, unifying all employees and
-          capabilities under one identity.
+          Following the merger, the combined entity rebranded to CASE, unifying all employees and capabilities under one
+          identity.
         </p>
       </div>
     </v-timeline-item>
@@ -48,8 +51,8 @@
         <div class="text-secondary h5 font-emphasis">Merger with CyberKinetics</div>
         <p class="text-tertiary">
           Founded by Brandon Lally in 2015, CyberKinetics brought additional expertise in cybersecurity, cloud
-          engineering, and data analytics to CASE through a merger in April 2024. This integration aligns with CASE's
-          strategy to expand its portfolio, adding unique capabilities that enhance CASE's position in key markets.
+          engineering, and data analytics. This integration aligns with CASE's strategy to expand its portfolio, adding
+          unique capabilities that enhance CASE's position in key markets.
         </p>
       </div>
     </v-timeline-item>
