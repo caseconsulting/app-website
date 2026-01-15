@@ -30,7 +30,7 @@ const history = [
   },
   {
     title: 'But we hit a growth spurt.',
-    desc: 'CASE is now a company of over 100+ employees, who can confidently say they meet those goals every single (work) day.',
+    desc: 'CASE is now a company of nearly 200 employees, who can confidently say they meet those goals every single (work) day.',
     url: '/assets/custom/img/events/case_annual_gala_2025.jpg',
     alt: 'CASE 2025 Annual Gala',
     swap: true

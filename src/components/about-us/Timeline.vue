@@ -22,10 +22,10 @@
         <div>Oct 2022</div>
         <div class="text-secondary h5 font-emphasis">Merger with FireTeam Solutions</div>
         <p class="text-tertiary">
-          In October 2022, Case Consulting merged with Fire Team Solutions, a secure engineering and cloud-focused
+          In October 2022, Case Consulting merged with FireTeam Solutions, a secure engineering and cloud-focused
           company founded by Nick Harscher and backed by AE Industrial Partners. This merger combined Case Consulting's
-          technical strengths with Fire Team's expertise in the OSINT mission area, creating a more comprehensive
-          service provider for defense and intelligence sectors.
+          technical strengths with FireTeam's expertise in the OSINT mission area, creating a more comprehensive
+          provider for defense and intelligence sectors.
         </p>
       </div>
     </v-timeline-item>

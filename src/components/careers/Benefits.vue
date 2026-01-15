@@ -3,7 +3,7 @@
     <title-header>
       <template #title>There are many benefits for working at CASE.</template>
       <template #desc>
-        CASE recognizes that employees are its number one asset, so we offer a salary and benefits package that will
+        CASE recognizes that employees are our number one asset, so we offer a salary and benefits package that will
         treat you right.
       </template>
     </title-header>
@@ -23,7 +23,6 @@
       </v-col>
 
       <v-col cols="12" md="6">
-        <v-divider v-if="!xs" />
         <div v-for="(s, i) in sectionsRight" :key="'R' + i" class="d-flex align-start mb-8">
           <v-icon :icon="s.icon" size="36" class="text-primary mr-3" />
           <div>
@@ -51,15 +50,15 @@ const sectionsLeft = [
     items: [
       'Company contribution always made each pay period',
       'Plan provider Fidelity offers both a traditional and Roth 401k option',
-      'Employees are immediately fully vested day one'
+      'Employees are fully vested day one'
     ]
   },
   {
     title: 'Time Off',
     icon: 'mdi-clock-outline',
     items: [
-      'Competitive paid time off to include vacation, holidays, training and volunteer time',
-      'One additional week of sabbatical leave at each 5 year anniversary'
+      'Competitive paid time off (PTO) to include vacation, holidays, training and volunteer time',
+      'One additional week of PTO with every 5 year anniversary'
     ]
   },
   {
