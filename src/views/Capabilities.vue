@@ -3,24 +3,19 @@
     <title-header main="true">
       <template #title>CASE leverages our expertise to provide custom delivery to IC partners.</template>
     </title-header>
+    <v-row justify="center" :style="xs ? { margin: '0 1rem' } : sm ? { margin: '0 5rem' } : { margin: '0 9rem' }">
+      <v-col cols="12" md="6" lg="4" v-for="(item, index) in capabilities" :key="index" :value="index">
+        <capability-row :url="item.url" :swap="item.swap" :last="item.last">
+          <template #title>{{ item.title }}</template>
+          <template #desc>
+            <div class="mb-4">
+              {{ item.desc }}
+            </div>
+          </template>
+        </capability-row>
+      </v-col>
+    </v-row>
     <div class="mt-6" :style="xs ? { margin: '0 1rem' } : sm ? { margin: '0 5rem' } : { margin: '0 10rem' }">
-      <display-block
-        v-for="(item, index) in capabilities"
-        :key="index"
-        :value="index"
-        :url="item.url"
-        :swap="item.swap"
-        :last="item.last"
-        height="200px"
-      >
-        <template #title>{{ item.title }}</template>
-        <template #desc>
-          <div class="mb-4">
-            {{ item.desc }}
-          </div>
-        </template>
-      </display-block>
-
       <title-header class="mt-12">
         <template #title>Here's our brag corner.</template>
       </title-header>
@@ -37,7 +32,7 @@
           </v-row>
         </v-col>
         <v-col cols="12" lg="6">
-          <v-img class="g-rounded-4" cover height="225px" src="/assets/custom/img/online/meeting-min.jpg"></v-img>
+          <v-img cover height="225px" rounded="xl" src="/assets/custom/img/online/meeting-min.jpg"></v-img>
           <bullet class="pt-6 pb-6" size="large">Over 1000 combined years of IC experience.</bullet>
           <bullet size="large">Retention rate of 95% over 5 Years.</bullet>
         </v-col>
@@ -66,7 +61,7 @@ import StatsCard from '@/components/capabilities/StatsCard.vue';
 import CertificationsSection from '@/components/capabilities/CertificationsSection.vue';
 import TechPartners from '@/components/capabilities/TechPartners.vue';
 import Bullet from '@/components/shared/Bullet.vue';
-import DisplayBlock from '@/components/shared/DisplayBlock.vue';
+import CapabilityRow from '@/components/capabilities/CapabilityRow.vue';
 import { useDisplay } from 'vuetify';
 
 const { xs, sm } = useDisplay();
