@@ -3,7 +3,11 @@
     <title-header main="true">
       <template #title>CASE leverages our expertise to provide custom delivery to IC partners.</template>
     </title-header>
-    <v-row justify="center" :style="xs ? { margin: '0 1rem' } : sm ? { margin: '0 5rem' } : { margin: '0 9rem' }">
+    <v-row
+      class="mt-6"
+      justify="center"
+      :style="xs ? { margin: '0 1rem' } : sm ? { margin: '0 5rem' } : { margin: '0 9rem' }"
+    >
       <v-col cols="12" md="6" lg="4" v-for="(item, index) in capabilities" :key="index" :value="index">
         <capability-row :url="item.url" :swap="item.swap" :last="item.last">
           <template #title>{{ item.title }}</template>
@@ -119,7 +123,7 @@ const capabilities = [
   },
   {
     title: 'FinTech Solutions',
-    desc: 'CASE provides modern financial technology solutions designed to help organizations operate securely, efficiently, and in full compliance. Our team delivers expertise in cryptocurrency ecosystems, blockchain analysis, and advanced fraud detection and avoidance. We also support clients in developing and implementing robust policies, regulatory frameworks, and KYC compliance programs ensuring mission-critical financial operations remain trusted, transparent, and secure.',
+    desc: 'CASE delivers modern financial technology enabling secure, efficient operations. We provide expertise in crypto ecosystems, blockchain analysis, fraud prevention, and KYC and regulatory compliance.',
     url: '/assets/custom/img/capabilities/fintech_solutions.jpg',
     swap: true
   }
