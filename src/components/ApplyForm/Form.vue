@@ -477,7 +477,7 @@ export default {
           };
 
           // content upload
-          const baseUrl = window.location.origin;
+          const baseUrl = process.env.VUE_APP_API;
           const response = await axios.post(`${baseUrl}/apply`, data);
           const key = response.data.id;
           const requestFormData = new FormData();
