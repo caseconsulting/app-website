@@ -222,7 +222,6 @@
 
           <!-- Submit Button -->
           <div>
-            test
             <div class="col-sm-offset-2 col-sm-10">
               <button v-if="!submitEnabled" class="btn bg-secondary" type="button" :disabled="submitEnabled">
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
