@@ -455,7 +455,7 @@ export default {
           } else {
             throw new Error('No file selected');
           }
-          
+
           // use our own naming convention
           let ext = file.name.split('.').pop();
           let customFilename = `${lastName.value}${firstName.value}Resume`;

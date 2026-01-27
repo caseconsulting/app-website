@@ -24,14 +24,6 @@
             </h5>
           </div>
         </div>
-        <br />
-        <div>
-          <div class="col-sm-offset-2 col-sm-10">
-            <router-link to="/">
-              <button type="button" class="btn btn-success" style="opacity: 0.8; color: white">Return to Home</button>
-            </router-link>
-          </div>
-        </div>
       </div>
     </section>
   </div>

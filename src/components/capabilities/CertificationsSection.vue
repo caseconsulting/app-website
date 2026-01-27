@@ -39,6 +39,7 @@ const items = ref([
   { key: 1, title: 'AWS Certified Solutions Architect', value: 13 },
   { key: 2, title: 'Certified Scrum Master', value: 10 },
   { key: 3, title: 'AWS Certified Cloud Practitioner', value: 9 },
-  { key: 4, title: 'Security+ (CompTia)', value: 8 }
+  { key: 4, title: 'AWS Professional and Specialty Certs', value: 9 },
+  { key: 5, title: 'Security+ (CompTia)', value: 8 }
 ]);
 </script>

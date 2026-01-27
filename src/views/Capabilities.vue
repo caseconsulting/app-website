@@ -3,24 +3,23 @@
     <title-header main="true">
       <template #title>CASE leverages our expertise to provide custom delivery to IC partners.</template>
     </title-header>
+    <v-row
+      class="mt-6"
+      justify="center"
+      :style="xs ? { margin: '0 1rem' } : sm ? { margin: '0 5rem' } : { margin: '0 9rem' }"
+    >
+      <v-col cols="12" md="6" lg="4" v-for="(item, index) in capabilities" :key="index" :value="index">
+        <capability-row :url="item.url" :swap="item.swap" :last="item.last">
+          <template #title>{{ item.title }}</template>
+          <template #desc>
+            <div class="mb-4">
+              {{ item.desc }}
+            </div>
+          </template>
+        </capability-row>
+      </v-col>
+    </v-row>
     <div class="mt-6" :style="xs ? { margin: '0 1rem' } : sm ? { margin: '0 5rem' } : { margin: '0 10rem' }">
-      <display-block
-        v-for="(item, index) in capabilities"
-        :key="index"
-        :value="index"
-        :url="item.url"
-        :swap="item.swap"
-        :last="item.last"
-        height="200px"
-      >
-        <template #title>{{ item.title }}</template>
-        <template #desc>
-          <div class="mb-4">
-            {{ item.desc }}
-          </div>
-        </template>
-      </display-block>
-
       <title-header class="mt-12">
         <template #title>Here's our brag corner.</template>
       </title-header>
@@ -37,7 +36,7 @@
           </v-row>
         </v-col>
         <v-col cols="12" lg="6">
-          <v-img class="g-rounded-4" cover height="225px" src="/assets/custom/img/online/meeting-min.jpg"></v-img>
+          <v-img cover height="225px" rounded="xl" src="/assets/custom/img/online/meeting-min.jpg"></v-img>
           <bullet class="pt-6 pb-6" size="large">Over 1000 combined years of IC experience.</bullet>
           <bullet size="large">Retention rate of 95% over 5 Years.</bullet>
         </v-col>
@@ -66,7 +65,7 @@ import StatsCard from '@/components/capabilities/StatsCard.vue';
 import CertificationsSection from '@/components/capabilities/CertificationsSection.vue';
 import TechPartners from '@/components/capabilities/TechPartners.vue';
 import Bullet from '@/components/shared/Bullet.vue';
-import DisplayBlock from '@/components/shared/DisplayBlock.vue';
+import CapabilityRow from '@/components/capabilities/CapabilityRow.vue';
 import { useDisplay } from 'vuetify';
 
 const { xs, sm } = useDisplay();
@@ -119,12 +118,12 @@ const capabilities = [
   },
   {
     title: 'Mission Engineering',
-    desc: 'Our project managers and mission support teams help our customers get our technology solutions to the mission on time, every time to give operators the tools they need to do their jobs.',
+    desc: 'Our project managers and mission support teams help our customers get technology solutions to the mission on time, every time to give operators the tools they need to do their jobs.',
     url: '/assets/custom/img/capabilities/mission_engineering.jpg'
   },
   {
     title: 'FinTech Solutions',
-    desc: 'CASE provides modern financial technology solutions designed to help organizations operate securely, efficiently, and in full compliance. Our team delivers expertise in cryptocurrency ecosystems, blockchain analysis, and advanced fraud detection and avoidance. We also support clients in developing and implementing robust policies, regulatory frameworks, and KYC compliance programs—ensuring mission-critical financial operations remain trusted, transparent, and secure.',
+    desc: 'CASE delivers modern financial technology enabling secure, efficient operations. We provide expertise in crypto ecosystems, blockchain analysis, fraud prevention, and KYC and regulatory compliance.',
     url: '/assets/custom/img/capabilities/fintech_solutions.jpg',
     swap: true
   }

@@ -15,7 +15,7 @@
       <template #title>{{ item.title }}</template>
       <template #desc>
         <v-btn color="primary" :to="item.link" class="mt-4">
-          {{ item.button }} <v-icon icon="mdi-arrow-right" :size="iconSize" class="ml-1" />
+          {{ item.button }} <v-icon icon="mdi-arrow-right" class="ml-1" />
         </v-btn>
       </template>
     </display-row>

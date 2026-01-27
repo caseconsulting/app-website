@@ -15,14 +15,17 @@
       </div>
     </v-timeline-item>
     <v-timeline-item side="end" dot-color="secondary">
+      <template v-slot:opposite>
+        <v-img src="/assets/custom/img/logos/fireteam_logo.png" alt="FireTeam Solutions logo" width="150" />
+      </template>
       <div>
         <div>Oct 2022</div>
         <div class="text-secondary h5 font-emphasis">Merger with FireTeam Solutions</div>
         <p class="text-tertiary">
-          In October 2022, Case Consulting merged with Fire Team Solutions, a secure engineering and cloud-focused
+          In October 2022, Case Consulting merged with FireTeam Solutions, a secure engineering and cloud-focused
           company founded by Nick Harscher and backed by AE Industrial Partners. This merger combined Case Consulting's
-          technical strengths with Fire Team's expertise in the OSINT mission area, creating a more comprehensive
-          service provider for defense and intelligence sectors.
+          technical strengths with FireTeam's expertise in the OSINT mission area, creating a more comprehensive
+          provider for defense and intelligence sectors.
         </p>
       </div>
     </v-timeline-item>
@@ -34,8 +37,8 @@
         <div>Early 2023</div>
         <div class="text-secondary h5 font-emphasis">Rebranded to CASE</div>
         <p class="text-tertiary">
-          Following the merger, the combined entity rebranded to CASE in early 2023, unifying all employees and
-          capabilities under one identity.
+          Following the merger, the combined entity rebranded to CASE, unifying all employees and capabilities under one
+          identity.
         </p>
       </div>
     </v-timeline-item>
@@ -48,8 +51,8 @@
         <div class="text-secondary h5 font-emphasis">Merger with CyberKinetics</div>
         <p class="text-tertiary">
           Founded by Brandon Lally in 2015, CyberKinetics brought additional expertise in cybersecurity, cloud
-          engineering, and data analytics to CASE through a merger in April 2024. This integration aligns with CASE's
-          strategy to expand its portfolio, adding unique capabilities that enhance CASE's position in key markets.
+          engineering, and data analytics. This integration aligns with CASE's strategy to expand its portfolio, adding
+          unique capabilities that enhance CASE's position in key markets.
         </p>
       </div>
     </v-timeline-item>

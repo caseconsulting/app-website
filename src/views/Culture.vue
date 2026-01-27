@@ -4,14 +4,7 @@
       <template #title>CASE invests in you as much as you invest in your work.</template>
     </title-header>
     <div class="mt-6" :style="xs ? { margin: '0 1rem' } : sm ? { margin: '0 5rem' } : { margin: '0 10rem' }">
-      <display-block
-        v-for="(item, index) in techEvents"
-        :key="index"
-        :value="index"
-        :url="item.url"
-        :swap="item.swap"
-        :last="item.last"
-      >
+      <display-block v-for="(item, index) in techEvents" :key="index" :value="index" :url="item.url" :swap="item.swap">
         <template #title>{{ item.title }}</template>
         <template #desc>
           <div class="mb-4">
@@ -30,7 +23,6 @@
         :value="index"
         :url="item.url"
         :swap="item.swap"
-        :last="item.last"
       >
         <template #title>{{ item.title }}</template>
         <template #desc>
@@ -50,6 +42,7 @@
         </v-carousel-item>
       </v-carousel>
 
+      <h3 class="text-secondary mt-15 mb-7 text-center">Connect with CASE on LinkedIn.</h3>
       <iframe
         src="https://widgets.sociablekit.com/linkedin-page-posts/iframe/25630086"
         frameborder="0"
@@ -86,7 +79,11 @@ const techEvents = [
     desc: 'Employees are encouraged to attend high profile tech events in order to expand their horizons and keep up with technology trends - with CASE footing the bill.',
     url: '/assets/custom/img/events/serverlessconf.jpg',
     secondDesc: 'Sponsored events include:',
-    bullets: ['AWS Summit', 'AWS re:Invent', 'AWS Tech Days'],
+    bullets: [
+      'AWS Public Sector Summit, AWS re:Invent, AWS Tech Days',
+      'Google Cloud Next, Google Public Sector Summit',
+      'Defcon, Nvidia GTC, Kubecon, and more local summits and forums'
+    ],
     swap: true
   },
   {
