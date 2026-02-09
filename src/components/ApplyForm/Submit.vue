@@ -1,6 +1,5 @@
 <template>
   <div>
-    <form-header></form-header>
     <section id="apply" class="g-theme-bg-gray-light-v1 g-py-50">
       <div class="applyForm container col-sm-8 col-xl-6 col-lg-8 col-xs-9">
         <div
@@ -25,24 +24,7 @@
             </h5>
           </div>
         </div>
-        <br />
-        <div>
-          <div class="col-sm-offset-2 col-sm-10">
-            <router-link to="/">
-              <button type="button" class="btn btn-success" style="opacity: 0.8; color: white">Return to Home</button>
-            </router-link>
-          </div>
-        </div>
       </div>
     </section>
   </div>
 </template>
-<script>
-import Header from '../home/Header.vue';
-
-export default {
-  components: {
-    formHeader: Header
-  }
-};
-</script>

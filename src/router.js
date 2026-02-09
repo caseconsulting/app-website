@@ -1,22 +1,40 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '@/views/Home.vue';
-import Intern from '@/views/Intern.vue';
+import AboutUs from '@/views/AboutUs.vue';
+import Capabilities from '@/views/Capabilities.vue';
+import Culture from '@/views/Culture.vue';
+import Careers from '@/views/Careers.vue';
 import ApplyForm from '@/views/ApplyForm.vue';
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'home',
     component: Home
   },
   {
-    path: '/intern',
-    name: 'Intern',
-    component: Intern
+    path: '/about-us',
+    name: 'aboutUs',
+    component: AboutUs
+  },
+  {
+    path: '/capabilities',
+    name: 'capabilities',
+    component: Capabilities
+  },
+  {
+    path: '/culture',
+    name: 'culture',
+    component: Culture
+  },
+  {
+    path: '/careers',
+    name: 'careers',
+    component: Careers
   },
   {
     path: '/apply-form',
-    name: 'ApplyForm',
+    name: 'applyForm',
     component: ApplyForm
   },
   {

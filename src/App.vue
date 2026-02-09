@@ -1,12 +1,15 @@
 <template>
   <div id="app">
-    <!-- Router view will render the component matching current route -->
-    <router-view></router-view>
+    <v-app>
+      <!-- Router view will render the component matching current route -->
+      <app-navbar></app-navbar>
+      <router-view></router-view>
+      <app-footer></app-footer>
+    </v-app>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'App'
-};
+<script setup>
+import AppNavbar from '@/components/Navbar.vue';
+import AppFooter from '@/components/Footer.vue';
 </script>

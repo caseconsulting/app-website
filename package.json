@@ -4,9 +4,12 @@
   "private": true,
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
-    "deploy:test": "npm run build && aws s3 sync dist s3://case-website-front-end-test --delete --sse",
+    "deploy:test": "npm run download:test:env && npm run build && aws s3 sync dist s3://case-website-front-end-test --delete --sse && npm run download:local:env",
+    "deploy:prod": "npm run download:prod:env && npm run build && aws s3 sync dist s3://case-website-front-end-prod --delete --sse && npm run download:local:env",
     "clean": "rm -rf dist",
-    "download:local:env": "aws s3 cp s3://case-consulting-website-code-dev/.env .env",
+    "download:local:env": "cross-env AWS_PROFILE=default && aws s3 cp s3://case-website-env-dev-test/.dev-env .env",
+    "download:test:env": "aws s3 cp s3://case-website-env-dev-test/.test-env .env",
+    "download:prod:env": "cross-env AWS_PROFILE=prod && aws s3 cp s3://case-website-env/.env .env",
     "eslint": "eslint src/**/*.{js,vue} --fix",
     "lint": "npm run eslint && npm run stylelint",
     "precommit": "npm run validate && npm run eslint && npm run stylelint && npm run test",
@@ -28,9 +31,9 @@
     "axios": "1.13.4",
     "cross-env": "10.1.0",
     "jquery": "3.7.1",
-    "vue": "3.3.13",
+    "vue": "3.5.2",
     "vue-router": "4.2.5",
-    "vuetify": "3.4.11",
+    "vuetify": "3.9.3",
     "vuex": "4.1.0"
   },
   "devDependencies": {
