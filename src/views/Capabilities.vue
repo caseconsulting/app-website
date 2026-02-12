@@ -24,18 +24,22 @@
         <template #title>Here's our brag corner.</template>
       </title-header>
       <h3 class="text-secondary font-emphasis mb-5">Experts that deliver</h3>
-      <v-row justify="space-around">
-        <v-col>
-          <v-row justify="center" v-for="(stat, index) in statsLeft" :key="index">
-            <stats-card :stat="stat" />
+      <v-row justify="space-around" :class="width <= 800 ? '' : 'flex-nowrap'">
+        <v-col cols="auto" md="auto" lg="6">
+          <v-row>
+            <v-col :cols="mobile ? '6' : ''">
+              <v-row :justify="smAndDown ? 'start' : 'center'" v-for="(stat, index) in statsLeft" :key="index">
+                <stats-card :stat="stat" />
+              </v-row>
+            </v-col>
+            <v-col :cols="mobile ? '6' : ''">
+              <v-row :justify="smAndDown ? 'end' : 'center'" v-for="(stat, index) in statsRight" :key="index">
+                <stats-card :stat="stat" />
+              </v-row>
+            </v-col>
           </v-row>
         </v-col>
-        <v-col>
-          <v-row justify="center" v-for="(stat, index) in statsRight" :key="index">
-            <stats-card :stat="stat" />
-          </v-row>
-        </v-col>
-        <v-col cols="12" lg="6">
+        <v-col cols="auto" :sm="width <= 800 ? 'auto' : '5'" md="6">
           <v-img cover height="225px" rounded="xl" src="/assets/custom/img/online/meeting-min.jpg"></v-img>
           <bullet class="pt-6 pb-6" size="large">Over 1000 combined years of IC experience.</bullet>
           <bullet size="large">Retention rate of 95% over 5 Years.</bullet>
@@ -68,7 +72,7 @@ import Bullet from '@/components/shared/Bullet.vue';
 import CapabilityRow from '@/components/capabilities/CapabilityRow.vue';
 import { useDisplay } from 'vuetify';
 
-const { xs, sm } = useDisplay();
+const { xs, sm, mobile, width } = useDisplay();
 const statsLeft = [
   {
     value: '92%',
