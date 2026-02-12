@@ -223,13 +223,11 @@
           <!-- Submit Button -->
           <div>
             <div class="col-sm-offset-2 col-sm-10">
-              <button v-if="!submitEnabled" class="btn bg-secondary" type="button" :disabled="submitEnabled">
-                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              <v-btn v-if="!submitEnabled" class="bg-secondary" type="button" :disabled="!submitEnabled">
                 Submitting
-              </button>
-              <button v-else type="submit" :disabled="!submitEnabled" class="btn bg-secondary" style="opacity: 0.8">
-                Submit
-              </button>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              </v-btn>
+              <v-btn v-else type="submit" :disabled="!submitEnabled" class="bg-secondary"> Submit </v-btn>
             </div>
           </div>
         </form>
@@ -304,12 +302,16 @@ export default {
         (v) => {
           return !v || !v.length || v[0].size < 6000000 || 'File exceeds maximum size of 6 MB';
         }
-      ],
-      submitEnabled: true,
-      modalDisplay: false,
-      modalBody: '',
-      modalHeadline: ''
+      ]
     });
+
+    // Indicates currently submitting
+    const submitEnabled = ref(true);
+
+    // Modal Values
+    const modalDisplay = ref(false);
+    const modalBody = ref('');
+    const modalHeadline = ref('');
 
     // Validation rules
     const validationRules = computed(() => ({
@@ -417,9 +419,9 @@ export default {
 
     const checkIntern = (event) => {
       if (event == 'Intern') {
-        state.modalHeadline = 'Already applied?';
-        state.modalBody = 'If you applied through Handshake, we already recieved your application.';
-        state.modalDisplay = true;
+        modalHeadline.value = 'Already applied?';
+        modalBody.value = 'If you applied through Handshake, we already recieved your application.';
+        modalDisplay.value = true;
       }
     };
 
@@ -432,7 +434,9 @@ export default {
     };
 
     const onSubmit = async () => {
-      state.submitEnabled = false; // disable submit button during form processing
+      if (!submitEnabled.value) return;
+
+      submitEnabled.value = false; // disable submit button during form processing
       /* start client-side validation check */
       validateFirstName();
       validateLastName();
@@ -492,14 +496,14 @@ export default {
         } catch (err) {
           // Error submitting apply form
           console.error(err); // eslint-disable-line no-console
-          state.modalHeadline = 'Error';
-          state.modalBody = 'Error submitting apply form. Please try again.';
-          state.modalDisplay = true;
-          state.submitEnabled = true;
+          modalHeadline.value = 'Error';
+          modalBody.value = 'Error submitting apply form. Please try again.';
+          modalDisplay.value = true;
+          submitEnabled.value = true;
           return err;
         }
       }
-      state.submitEnabled = true; // reenable submit button after form processing
+      submitEnabled.value = true; // reenable submit button after form processing
     };
 
     return {
@@ -517,6 +521,10 @@ export default {
       comments,
       // State
       ...state,
+      submitEnabled,
+      modalDisplay,
+      modalBody,
+      modalHeadline,
       // Validation
       v$,
       // Methods
