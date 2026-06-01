@@ -5,7 +5,7 @@
         <v-col class="mr-3" cols="auto" align-self="center">
           <v-img class="rounded" height="200px" min-width="200px" :src="person.image" :alt="'Picture of ' + person.name" />
         </v-col>
-        <v-col>
+        <v-col cols="auto">
           <v-row class="pt-4">
             <span class="text-primary h5 font-emphasis">{{ person.name }}</span>
             <a :href="person.linkedin" target="_blank">

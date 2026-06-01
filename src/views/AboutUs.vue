@@ -47,14 +47,21 @@ import TitleHeader from '@/components/shared/TitleHeader.vue';
 import Timeline from '@/components/about-us/Timeline.vue';
 
 const ceo = {
-  name: 'Paul Farmer',
+  name: 'Ethan Grambow',
   title: 'Chief Executive Officer',
-  founder: 'CASE Founder',
-  bio: 'Paul Farmer founded Case Consulting in 2012 with a straightforward mission: build a company where talented engineers could do meaningful work and deliver for customers without layers of bureaucracy. Under his leadership, the company has grown from a small consulting shop into the broader CASE platform, expanding through multiple acquisitions and a unified culture centered on people, performance, and long-term vision.',
-  image: '/assets/custom/img/leadership/paul_farmer.jpeg',
-  linkedin: 'https://www.linkedin.com/in/paul-farmer-jr-4aa68b11/'
+  founder: 'Ragnarok Founder',
+  bio: '',
+  image: '/assets/custom/img/leadership/ethan_grambow.jpg',
+  linkedin: 'https://www.linkedin.com/in/ethan-g-6b6024107/'
 };
 const leadershipInfo = [
+  {
+    name: 'Paul Farmer',
+    title: 'Chief of Strategic Initiatives',
+    founder: 'CASE Founder',
+    image: '/assets/custom/img/leadership/paul_farmer.jpeg',
+    linkedin: 'https://www.linkedin.com/in/paul-farmer-jr-4aa68b11/'
+  },
   {
     name: 'Amy Farmer',
     title: 'Chief Operations Officer',
@@ -68,25 +75,12 @@ const leadershipInfo = [
     linkedin: 'https://www.linkedin.com/in/david-bromberg-b5b02331/ '
   },
   {
-    name: 'Bryan Walter',
-    title: 'Chief Growth Officer',
-    image: '/assets/custom/img/leadership/bwalter.jpg',
-    linkedin: 'https://www.linkedin.com/in/bryanjwalter/ '
-  },
-  {
     name: 'Chris Santiago',
     title: 'Chief Technology Officer',
     subtitle: 'EVP',
     founder: 'Ragnarok Founder',
     image: '/assets/custom/img/leadership/csantiago.jpg',
     linkedin: 'https://www.linkedin.com/in/chris-santiago-4731b69/'
-  },
-  {
-    name: 'Ethan Grambow',
-    title: 'Chief Strategy Officer',
-    founder: 'Ragnarok Founder',
-    image: '/assets/custom/img/leadership/ethan_grambow.jpg',
-    linkedin: 'https://www.linkedin.com/in/ethan-g-6b6024107/'
   },
   {
     name: 'Brandon Lally',
