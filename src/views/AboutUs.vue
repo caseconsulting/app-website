@@ -53,7 +53,7 @@ const ceo = {
   bio: '',
   image: '/assets/custom/img/leadership/ethan_grambow.jpg',
   linkedin: 'https://www.linkedin.com/in/ethan-g-6b6024107/'
-}
+};
 const leadershipInfo = [
   {
     name: 'Paul Farmer',
