@@ -18,14 +18,14 @@
           <ceo-card class="mb-2" :person="ceo" />
         </v-col>
       </v-row>
-      <v-row justify="center">
+      <v-row justify="center" class="pb-6">
         <v-col cols="10">
           <v-row justify="center">
             <v-col
               class="d-flex justify-center"
               cols="12"
-              sm="5"
-              md="4"
+              sm="6"
+              lg="3"
               v-for="(item, index) in leadershipInfo"
               :key="index"
               :value="index"
@@ -50,7 +50,6 @@ const ceo = {
   name: 'Ethan Grambow',
   title: 'Chief Executive Officer',
   founder: 'Ragnarok Founder',
-  bio: '',
   image: '/assets/custom/img/leadership/ethan_grambow.jpg',
   linkedin: 'https://www.linkedin.com/in/ethan-g-6b6024107/'
 };
@@ -63,24 +62,10 @@ const leadershipInfo = [
     linkedin: 'https://www.linkedin.com/in/paul-farmer-jr-4aa68b11/'
   },
   {
-    name: 'Amy Farmer',
-    title: 'Chief Operations Officer',
-    image: '/assets/custom/img/leadership/amy_farmer.jpeg',
-    linkedin: 'https://www.linkedin.com/in/amy-farmer-787b255/'
-  },
-  {
     name: 'Dave Bromberg',
     title: 'Chief Financial Officer',
     image: '/assets/custom/img/leadership/david_bromberg.jpeg',
     linkedin: 'https://www.linkedin.com/in/david-bromberg-b5b02331/ '
-  },
-  {
-    name: 'Chris Santiago',
-    title: 'Chief Technology Officer',
-    subtitle: 'EVP',
-    founder: 'Ragnarok Founder',
-    image: '/assets/custom/img/leadership/csantiago.jpg',
-    linkedin: 'https://www.linkedin.com/in/chris-santiago-4731b69/'
   },
   {
     name: 'Brandon Lally',
@@ -88,6 +73,12 @@ const leadershipInfo = [
     founder: 'CyberKinetics Founder',
     image: '/assets/custom/img/leadership/blally.jpg',
     linkedin: 'https://www.linkedin.com/in/brandonlally/'
+  },
+  {
+    name: 'Janelle Levasseur',
+    title: 'VP of Operations',
+    image: '/assets/custom/img/leadership/janelle_levasseur.png',
+    linkedin: 'https://www.linkedin.com/in/janelle-levasseur-76051b6a/'
   }
 ];
 </script>
