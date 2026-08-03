@@ -4,7 +4,14 @@
       <slot></slot>
       <v-menu activator="parent">
         <v-list>
-          <v-list-item v-for="(item, index) in items" :key="index" :value="index" :to="item.link ? item.link : ''">
+          <v-list-item
+            v-for="(item, index) in items"
+            :key="index"
+            :value="index"
+            :href="item.link && item.link.startsWith('http') ? item.link : undefined"
+            :target="item.link && item.link.startsWith('http') ? '_blank' : undefined"
+            :to="item.link && !item.link.startsWith('http') ? item.link : undefined"
+          >
             <v-list-item-title>
               <v-icon v-if="item.submenu" icon="mdi-menu-left" size="x-small"></v-icon>
               <span :class="item.action ? 'text-secondary' : ''">{{ item.title }}</span>

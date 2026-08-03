@@ -18,7 +18,7 @@
                 {{ job.description }}
               </v-card-text>
               <v-card-actions class="justify-center">
-                <v-btn variant="elevated" color="secondary" class="text-white" to="/apply-form"> Apply Now </v-btn>
+                <v-btn variant="elevated" color="secondary" class="text-white" href="https://consultwithcase.bamboohr.com/careers/28" target="_blank"> Apply Now </v-btn>
               </v-card-actions>
             </v-col>
           </v-row>

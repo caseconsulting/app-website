@@ -17,7 +17,8 @@
         color="secondary"
         variant="flat"
         class="ml-1 mr-6"
-        @click="handleNavigation('applyForm')"
+        href="https://consultwithcase.bamboohr.com/careers/28"
+        target="_blank"
       >
         apply now
       </v-btn>
@@ -36,11 +37,11 @@
 </template>
 
 <script setup>
-import { useRouter } from 'vue-router';
+// import { useRouter } from 'vue-router';
 import BtnDropdown from '@/components/ButtonDropdown';
 import Logo from '@/components/Logo';
 
-const router = useRouter();
+// const router = useRouter();
 const navBtns = [
   {
     title: 'Home',
@@ -66,14 +67,14 @@ const navBtns = [
 const applyNow = [
   {
     title: 'Apply Now',
-    link: 'apply-form',
+    link: 'https://consultwithcase.bamboohr.com/careers/28',
     action: true
   }
 ];
 
-function handleNavigation(item) {
-  router.push({ name: item });
-}
+// function handleNavigation(item) {
+//   router.push({ name: item });
+// }
 </script>
 
 <style scoped>
