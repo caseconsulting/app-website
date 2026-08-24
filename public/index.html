@@ -33,12 +33,7 @@
 
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="/assets/vendor/hamburgers/hamburgers.min.css" />
-    <link rel="stylesheet" href="/assets/vendor/slick-carousel/slick/slick.css" />
-
-    <!-- Revolution Slider -->
-    <link rel="stylesheet" href="/assets/vendor/revolution-slider/revolution/css/settings.css" />
-    <link rel="stylesheet" href="/assets/vendor/revolution-slider/revolution/css/layers.css" />
-    <link rel="stylesheet" href="/assets/vendor/revolution-slider/revolution/css/navigation.css" />
+    <!-- <link rel="stylesheet" href="/assets/vendor/slick-carousel/slick/slick.css" /> -->
 
     <!-- CSS Template -->
     <link rel="stylesheet" href="assets/vendor/unity/styles.op-lawyer.css" />
@@ -81,24 +76,6 @@
     <!-- JS Implementing Plugins -->
     <script src="/assets/vendor/appear/appear.js "></script>
     <script src="/assets/vendor/slick-carousel/slick/slick.js "></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf66JJmp2VOldGTrVNOmMumlB5U6sVBSI&callback=initMap "
-      defer
-    ></script>
-    <script src="/assets/custom/js/plugins/gmaps-ini.js "></script>
-
-    <!-- JS Revolution Slider -->
-    <script src="/assets/vendor/revolution-slider/revolution/js/jquery.themepunch.tools.min.js "></script>
-    <script src="/assets/vendor/revolution-slider/revolution/js/jquery.themepunch.revolution.min.js "></script>
-    <script src="/assets/vendor/revolution-slider/revolution-addons/slicey/js/revolution.addon.slicey.min.js"></script>
-    <script src="/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.actions.min.js "></script>
-
-    <script src="./assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.carousel.min.js "></script>
-    <script src="/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.kenburn.min.js "></script>
-    <script src="/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.layeranimation.min.js "></script>
-    <script src="/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.migration.min.js "></script>
-    <script src="/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.parallax.min.js "></script>
-    <script src="/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.slideanims.min.js "></script>
 
     <!-- Charts.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js "></script>
@@ -114,48 +91,6 @@
     <!-- JS Customization -->
 
     <script>
-      // initialization of revolution slider
-      var tpj = jQuery,
-        promoSlider;
-      tpj(document).on('ready', function () {
-        if (tpj('#promoSlider').revolution == undefined) {
-          revslider_showDoubleJqueryError('#promoSlider');
-        } else {
-          promoSlider = tpj('#promoSlider')
-            .show()
-            .revolution({
-              sliderType: 'hero',
-              jsFileLocation: '../../revolution/js/',
-              sliderLayout: 'fullwidth',
-              dottedOverlay: 'none',
-              delay: 9000,
-              navigation: {},
-              responsiveLevels: [1240, 1024, 778, 480],
-              gridwidth: [1240, 1024, 778, 480],
-              gridheight: [600, 500, 400, 300],
-              lazyType: 'none',
-              parallax: {
-                type: 'mouse',
-                origo: 'slidercenter',
-                speed: 2000,
-                levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50]
-              },
-              shadow: 0,
-              spinner: 'off',
-              autoHeight: 'off',
-              disableProgressBar: 'on',
-              hideThumbsOnMobile: 'off',
-              hideSliderAtLimit: 0,
-              hideCaptionAtLimit: 0,
-              hideAllCaptionAtLilmit: 0,
-              debugMode: false,
-              fallbacks: {
-                simplifyAll: 'off',
-                disableFocusListener: false
-              }
-            });
-        }
-      });
       $(document).on('ready', function () {
         // initialization of carousel
         $.HSCore.components.HSCarousel.init('.js-carousel');

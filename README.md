@@ -6,9 +6,9 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0ed3cdf3-e0fd-493e-8320-159d510167b6/deploy-status)](https://app.netlify.com/sites/app-website/deploys)
 
-**app-website** is written in **Vue.js** and relies on **Node.js** v18.x+ and the **npm** package management system. UI is enhanced with **bootstrap-vue** and **Vuetify.js**.
+**app-website** is written in **Vue.js** and relies on **Node.js** v20.x+ and the **npm** package management system. UI is enhanced with **bootstrap-vue** and **Vuetify.js**.
 
-- Download and install Node.js v18.x from: https://nodejs.org/en/ or https://nodejs.org/dist/latest-v18.x/
+- Download and install Node.js v20.x from: https://nodejs.org/en/ or https://nodejs.org/dist/latest-v20.x/
 - Install required Node.js modules:
 
 ```bash
@@ -22,7 +22,7 @@ The following environment variables are required to support multiple environment
 - **VUE_APP_API**
 - **NODE_ENV**
 
-**vue-cli** automatically picks up environment variables in `.env` files. Any variables that begin with **VUE*APP***
+**vue-cli** automatically picks up environment variables in `.env` files. Any variables that begin with **VUE_APP**
 will be included in the client bundle created by webpack. They will be accessible from your code using **process.env**.
 At build time, webpack will replace these references with their corresponding values. For more information, go to:
 https://cli.vuejs.org/guide/mode-and-env.html#using-env-variables-in-client-side-code.

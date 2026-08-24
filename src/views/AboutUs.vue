@@ -1,0 +1,84 @@
+<template>
+  <div class="mb-6">
+    <title-header main="true">
+      <template #title>We've worked hard to get where we are today.</template>
+    </title-header>
+    <history class="mb-8" />
+    <v-container>
+      <timeline class="mb-8" />
+      <title-header class="mb-6">
+        <template #title>Meet our leadership.</template>
+        <template #desc>
+          Our leadership team is dedicated to making sure CASE delivers the quality that sets us apart. Connect with us
+          on social media and reach out!
+        </template>
+      </title-header>
+      <v-row justify="center">
+        <v-col cols="11">
+          <ceo-card class="mb-2" :person="ceo" />
+        </v-col>
+      </v-row>
+      <v-row justify="center" class="pb-6">
+        <v-col cols="10">
+          <v-row justify="center">
+            <v-col
+              class="d-flex justify-center"
+              cols="12"
+              sm="6"
+              lg="3"
+              v-for="(item, index) in leadershipInfo"
+              :key="index"
+              :value="index"
+            >
+              <leadership-card class="pa-2" :person="item" />
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
+    </v-container>
+  </div>
+</template>
+
+<script setup>
+import CeoCard from '@/components/about-us/DetailedLeadershipCard.vue';
+import LeadershipCard from '@/components/about-us/LeadershipCard.vue';
+import History from '@/components/about-us/History.vue';
+import TitleHeader from '@/components/shared/TitleHeader.vue';
+import Timeline from '@/components/about-us/Timeline.vue';
+
+const ceo = {
+  name: 'Ethan Grambow',
+  title: 'Chief Executive Officer',
+  founder: 'Ragnarok Founder',
+  image: '/assets/custom/img/leadership/ethan_grambow.jpg',
+  linkedin: 'https://www.linkedin.com/in/ethan-g-6b6024107/'
+};
+const leadershipInfo = [
+  {
+    name: 'Paul Farmer',
+    title: 'Chief of Strategic Initiatives',
+    founder: 'CASE Founder',
+    image: '/assets/custom/img/leadership/paul_farmer.jpeg',
+    linkedin: 'https://www.linkedin.com/in/paul-farmer-jr-4aa68b11/'
+  },
+  {
+    name: 'Dave Bromberg',
+    title: 'Chief Financial Officer',
+    image: '/assets/custom/img/leadership/david_bromberg.jpeg',
+    linkedin: 'https://www.linkedin.com/in/david-bromberg-b5b02331/ '
+  },
+  {
+    name: 'Brandon Lally',
+    title: 'Chief Customer Officer',
+    founder: 'CyberKinetics Founder',
+    image: '/assets/custom/img/leadership/blally.jpg',
+    linkedin: 'https://www.linkedin.com/in/brandonlally/'
+  },
+  {
+    name: 'Janelle Levasseur',
+    title: 'VP of Operations',
+    image: '/assets/custom/img/leadership/janelle_levasseur.png',
+    linkedin: 'https://www.linkedin.com/in/janelle-levasseur-76051b6a/'
+  }
+];
+</script>
