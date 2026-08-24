@@ -4,7 +4,6 @@ import AboutUs from '@/views/AboutUs.vue';
 import Capabilities from '@/views/Capabilities.vue';
 import Culture from '@/views/Culture.vue';
 import Careers from '@/views/Careers.vue';
-import ApplyForm from '@/views/ApplyForm.vue';
 
 const routes = [
   {
@@ -34,8 +33,12 @@ const routes = [
   },
   {
     path: '/apply-form',
-    name: 'applyForm',
-    component: ApplyForm
+    component: {
+      template: '<div>Redirecting...</div>',
+      created() {
+        window.location.replace('https://consultwithcase.bamboohr.com/careers/28');
+      }
+    }
   },
   {
     path: '/:pathMatch(.*)*',
